@@ -1,0 +1,179 @@
+:root {
+  --background: #0a0d12;
+  --background-dark: #04070b;
+  --background-darker: #04070b;
+  --background-light: #12171e;
+  --side-active: #171d26;
+  --accent: #b3b3d1;
+  --theory: #f3d86a;
+  --yellow: #ffca63;
+  --practical: #70fa70;
+  --green: #64f58d;
+  --red: #f56464;
+  --color: #d4d4d4;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  font-family: var(--main-font), system-ui, sans-serif;
+}
+button,
+a {
+  -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  -o-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+button:active {
+  opacity: 0.8;
+  -webkit-transform: scale(0.95) rotate(-2deg);
+  -ms-transform: scale(0.95) rotate(-2deg);
+  transform: scale(0.95) rotate(-2deg);
+}
+button:hover,
+a:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+a:active {
+  opacity: 0.8;
+  -webkit-transform: scale(0.94);
+  -ms-transform: scale(0.94);
+  transform: scale(0.94);
+}
+
+.download {
+  text-decoration: none;
+  background: #171d26;
+  font-size: 14px;
+  color: var(--accent) !important;
+  font-weight: 600;
+  border: 0px none;
+  border-radius: 100px;
+  padding: 4px 12px;
+}
+
+.react-loading-skeleton {
+  --base-color: #0d1116 !important;
+  --highlight-color: #495362ee !important;
+  --pseudo-element-display: block !important;
+  --animation-direction: alternate !important;
+  -webkit-animation-timing-function: cubic-bezier(
+    0.88,
+    -0.8,
+    0.58,
+    1
+  ) !important;
+  animation-timing-function: cubic-bezier(0.88, -0.8, 0.58, 1) !important;
+}
+
+.react-loading-skeleton:nth-of-type(2n + 1) {
+  -webkit-animation-duration: 3s !important;
+  animation-duration: 3s !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+div {
+  margin-bottom: 0px;
+
+  color: var(--color);
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: var(--background);
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+  background: var(--background-dark);
+  border-radius: 16px;
+  border: 6px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 3px solid var(--background-dark);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background-dark);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+html {
+  background: var(--background) !important;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--background) !important;
+  padding: 18px !important;
+  margin: 0px !important;
+}
+
+hr {
+  margin: 0px !important;
+  border-top: 3px solid var(--side-active) !important;
+}
+
+.markGrid:active .markCard {
+  opacity: 0.2;
+}
+
+.markGrid:active .markCard:active {
+  opacity: 1;
+  box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+}
+
+.attTable:active .attCard {
+  opacity: 0.2;
+}
+
+.attTable:active .attCard:active {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 766px) {
+  .markGrid:active .markCard {
+    opacity: 1;
+  }
+
+  .markGrid:active .markCard:active {
+    opacity: 1;
+  }
+
+  .attTable:active .attCard {
+    opacity: 1;
+  }
+
+  .attTable:active .attCard:active {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 440px) {
+  body {
+    padding: 8px !important;
+  }
+}

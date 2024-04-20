@@ -1,0 +1,12 @@
+.badge {
+  background: #171d26;
+  padding: 4px 12px;
+  border-radius: 500px;
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 16px;
+}
+.holiday {
+  background: #261717 !important;
+  color: var(--red) !important;
+}

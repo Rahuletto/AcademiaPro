@@ -1,0 +1,91 @@
+
+.card {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border: 2px solid var(--background-dark);
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+
+.card h4 {
+  font-size: 16px;
+  max-width: 300px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.marks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.muted_title {
+  color: rgba(197, 197, 197, 0.70);
+  font-size: 16px;
+  user-select: none;
+}
+
+
+.circle {
+  border-radius: 50px;
+  background-color: #f3d86a;
+  border: 2px solid transparent;
+  display: inline-block;
+  min-width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.greenCircle {
+  background: transparent;
+  border: 2px solid #70fa70;
+
+}
+
+.markPill {
+  background-color: #04070B;
+  padding: 2px 10px;
+  padding-right: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.markPill span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.mark {
+  color: var(--green);
+}
+
+.red {
+  color: var(--red);
+}
+
+.total {
+  user-select: none;
+  background-color: var(--color);
+  color: var(--background);
+  padding: 0px 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}

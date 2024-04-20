@@ -1,0 +1,306 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 94vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 320px;
+  gap: 12px;
+  height: 100%;
+  padding: 24px 18px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.login {
+  opacity: 0;
+
+  -webkit-animation: 0.7s fade forwards;
+
+  animation: 0.7s fade forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+
+  background-color: #04070b;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 79vw;
+  min-width: 320px;
+  height: 60vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 24px 32px;
+  border-radius: 54px;
+  gap: 32px;
+  align-items: center;
+  -webkit-border-radius: 54px;
+  -moz-border-radius: 54px;
+  -ms-border-radius: 54px;
+  -o-border-radius: 54px;
+}
+
+.titles p {
+  color: rgba(236, 236, 236, 0.54);
+  font-weight: 300;
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+}
+.titles h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #fff !important;
+  opacity: 1;
+  font-weight: 500;
+}
+
+.lefty {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+
+.lefty button {
+  position: relative;
+}
+
+.titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  padding: 24px 18px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.login h2 {
+  color: var(--color);
+}
+
+.login select {
+  background-color: rgb(17 21 26);
+  border: none;
+  border-radius: 10px;
+  color: var(--color);
+  padding: 4px 12px !important;
+  border: 2px solid transparent;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: auto;
+  -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  -o-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  text-transform: capitalize;
+}
+
+.login select:hover {
+  background: rgb(17 21 26);
+  border: 2px solid rgba(48, 54, 61, 0.3);
+}
+
+.login button {
+  background-color: #0a0d12;
+  color: var(--accent);
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 6px 18px;
+  font-size: 16px;
+  font-weight: 500;
+
+  width: -webkit-fit-content;
+
+  width: -moz-fit-content;
+
+  width: fit-content;
+}
+
+.login button:disabled {
+  border: 2px solid var(--yellow) !important;
+  background: #ffca630e !important;
+  color: var(--yellow) !important;
+}
+.login input {
+  background-color: rgba(48, 54, 61, 0.3);
+  border: none;
+  border-radius: 14px;
+  color: var(--color);
+  padding: 6px 14px !important;
+  outline: none;
+  -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  -o-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.name svg {
+  font-size: 38px;
+  color: var(--yellow);
+}
+
+.credits {
+  position: absolute;
+  bottom: 16px;
+  color: #adadaf;
+  font-size: 14px;
+  width: 100vw;
+  left: 0;
+  text-align: center;
+}
+
+.credits a {
+  color: #adadaf;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 999px) {
+  .login {
+    width: 89vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .titles svg {
+    display: none;
+  }
+  .titles,
+  .inputs {
+    padding: 12px 0px !important;
+  }
+
+  .inputs {
+    min-width: 268px !important;
+  }
+}
+
+.lefty button::after {
+  content: "NEW";
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: -12px;
+  margin-right: -24px;
+  font-size: 14px;
+  background: var(--green);
+  padding: 0px 6px;
+  border-radius: 50px;
+  color: var(--background-darker);
+  font-weight: 800;
+}
+@media only screen and (max-width: 620px) {
+  .lefty button {
+    position: absolute;
+    bottom: 69px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--background-dark);
+  }
+
+  .login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    gap: 18px;
+    height: auto;
+  }
+  .titles,
+  .inputs {
+    height: initial;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .login {
+    width: 96vw;
+  }
+
+  .inputs {
+    min-width: initial !important;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
