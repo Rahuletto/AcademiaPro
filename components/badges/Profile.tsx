@@ -4,21 +4,21 @@ import "react-loading-skeleton/dist/skeleton.css";
 import styles from "@/styles/Profile.module.css";
 import { useEffect, useState } from "react";
 import { clearCookies } from "@/utils/cookies";
+import { InfoResponse } from "@/types/UserInfo";
 
-export default function Profile() {
+export default function Profile({ data }: { data: InfoResponse | null }) {
   const [name, setName] = useState("");
 
   useEffect(() => {
-    const data = localStorage.getItem('userData')
-    if(data)
+    if (data)
       setName(
-        JSON.parse(data)
+        data
           .userInfo.name.toLowerCase()
           .split(" ")
           .filter((a: string) => a.length != 1)
           .join(" ")
       );
-  }, []);
+  }, [data]);
 
   return (
     <>
