@@ -3,7 +3,24 @@
     "short_name": "Academia",
     "description": "University data, beautifully presented at your fingertips",
     "theme_color": "#D4D4D4",
+    "lang": "en",
+    "screenshots": [
+      {
+        "src": "/screenshot/narrow.png",
+        "type": "image/png",
+        "sizes": "540x720",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "/screenshot/wide.png",
+        "type": "image/png",
+        "sizes": "1024x593",
+        "form_factor": "wide"
+      }
+    ],
     "background_color": "#0a0d12",
+    "start_url": "/",
+    "display_override": ["fullscreen"],
     "display": "standalone",
     "icons": [
       {

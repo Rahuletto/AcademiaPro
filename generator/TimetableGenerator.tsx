@@ -1,5 +1,6 @@
 import { startingTimesSlot, endingTimesSlot } from "@/types/Times";
 import { TimeTableResponse } from "@/types/TimeTable";
+
 const styled = {
   color: "#0a0d12",
   fontWeight: 600,
@@ -87,8 +88,8 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
                     }}
                     key={`table-${i}-${j}`}
                   >
-                    <td style={constructStyles(i, j, elem[0])}>
-                      {elem[0].split("(")[0]}
+                    <td style={constructStyles(i, j, elem)}>
+                      {elem.split("(")[0]}
                     </td>
                   </div>
                 ) : (
@@ -111,10 +112,11 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
 }
 
 function constructStyles(i: number, j: number, name: string) {
+  console.log(name)
   let obj: any = { ...styled };
 
   if (name.includes("Theory")) obj = { background: "#f3d86a", ...obj };
-  else if (name.includes("Lab")) obj = { background: "#70fa70", ...obj };
+  else if (name.includes("Practical")) obj = { background: "#70fa70", ...obj };
 
   if (i == 0 && j == 0) obj = { borderTopLeftRadius: "6px", ...obj };
   else if (i == 0 && j == 9) obj = { borderTopRightRadius: "6px", ...obj };

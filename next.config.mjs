@@ -2,11 +2,12 @@ import million from 'million/compiler';
 /** @type {import('next').NextConfig} */
 
 import pwa from 'next-pwa';
-const withPWA = pwa({
-  dest: 'public',
-});
+// const withPWA = pwa({
+//   dest: 'public/serviceWorker',
+// });
 
-const config = withPWA({
+// const config = withPWA({
+  const config = {
   poweredByHeader: false,
   swcMinify: true,
   reactStrictMode: true,
@@ -27,6 +28,7 @@ const config = withPWA({
       },
     ]
   }
-});
+};
 
-export default million.next(config, { auto: true });
+// export default million.next(config, { auto: true });
+export default config;

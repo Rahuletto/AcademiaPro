@@ -15,7 +15,7 @@ const TimeTableComponent = ({
 
   function openGen() {
     router.push(
-      `/timetable/${userInfo.userInfo.regNo}.png?batch=${userInfo.userInfo.batch}`
+      `/api/${userInfo.userInfo.regNo}?batch=${userInfo.userInfo.batch}`
     );
   }
   return (
