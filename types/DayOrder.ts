@@ -1,5 +1,4 @@
 export interface DayOrderResponse {
-    date: string
-    dayOrder: string
-  }
-  
+  date: string;
+  dayOrder: string;
+}

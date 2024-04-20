@@ -1,8 +1,8 @@
 .main {
   min-height: 94vh;
   height: 100%;
-  -webkit-transition: 0.1s cubic-bezier(0.51, 0.69, 0.46, 0.96);
-  -o-transition: 0.1s cubic-bezier(0.51, 0.69, 0.46, 0.96);
+  -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  -o-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   transition: 0.1s cubic-bezier(0.51, 0.69, 0.46, 0.96);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,6 +14,8 @@
   -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   -o-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  -moz-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  -ms-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
 }
 .hero {
   background-color: var(--background-darker);

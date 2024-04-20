@@ -8,7 +8,6 @@
   display: none;
 }
 
-
 @media only screen and (max-width: 665px) {
   .attr {
     display: -webkit-box;
