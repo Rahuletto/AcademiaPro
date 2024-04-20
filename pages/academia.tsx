@@ -110,7 +110,7 @@ export default function Academia() {
           window.location.reload();
         } else {
           localStorage.setItem("dayOrder", JSON.stringify(res));
-          setDay({ date: "20-Apr-24", dayOrder: "2" });
+          setDay(res);
         }
       });
 
