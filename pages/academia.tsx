@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import type { MarksResponse } from "@/types/Marks";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function Academia() {
   const router = useRouter() 
@@ -242,6 +243,9 @@ export default function Academia() {
   return (
     <>
       <Loader />
+      <Head>
+        <title>Academia | AcademiaPro</title>
+      </Head>
       <style>{`
     body {
         padding-left: 0px !important;
