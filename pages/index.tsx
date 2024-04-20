@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import styles from "@/styles/Home.module.css";
 import { getCookie } from "@/utils/cookies";
 import Head from "next/head";
@@ -6,17 +7,16 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 export default function Home() {
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     if (getCookie("token")) router.push("/academia");
-  }, [])
-  
+  }, []);
+
   return (
     <>
-      <Head>
-        <title>AcademiaPro</title>
-      </Head>
+      <Header />
+
       <main className={styles.main}>
         <div className={styles.hero}>
           <svg

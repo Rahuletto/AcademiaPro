@@ -2,9 +2,13 @@ import { FaDoorOpen } from 'react-icons/fa6';
 import { LuServerCrash } from 'react-icons/lu';
 
 import styles from '@/styles/Error.module.css';
+import Header from '@/components/Header';
 
 export default function ErrorStack({ error }: { error: Error }) {
   return (
+    <>
+     <Header title={'Error | Ac4D3m1APr0'} />
+    
     <main className={styles.main}>
       <div className={styles.container}>
         <h1
@@ -29,5 +33,6 @@ export default function ErrorStack({ error }: { error: Error }) {
         </pre>
       </div>
     </main>
+    </>
   );
 }

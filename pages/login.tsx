@@ -7,6 +7,7 @@ import styles from "@/styles/Login.module.css";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Header from "@/components/Header";
 
 export default function Login() {
   const [uid, setUid] = useState("");
@@ -14,13 +15,12 @@ export default function Login() {
 
   const [error, setError] = useState(0);
 
-  const router = useRouter()
+  const router = useRouter();
 
   function push() {
     setError(-1);
     try {
       fetch("https://proscrape.vercel.app/api/login", {
-        
         method: "POST",
         headers: {
           Connection: "keep-alive",
@@ -53,13 +53,12 @@ export default function Login() {
 
   useEffect(() => {
     if (getCookie("token")) router.push("/academia");
-  }, [])
+  }, []);
 
   return (
     <>
-      <Head>
-        <title>Login | AcademiaPro</title>
-      </Head>
+      <Header title={"Login | AcademiaPro"} />
+
       <main className={styles.main}>
         <div className={styles.container}>
           <div className={styles.login}>

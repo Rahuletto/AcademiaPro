@@ -1,7 +1,10 @@
+import Header from "@/components/Header";
 import styles from "@/styles/Error.module.css";
 
 export default function Error404() {
   return (
+    <>
+    <Header title={'404 | Ac4D3m1APr0'} />
     <main className={styles.main}>
       <div className={styles.container}>
         <h1 style={{ fontSize: "98px", color: "var(--yellow)" }}>
@@ -39,5 +42,6 @@ export default function Error404() {
         </button>
       </div>
     </main>
+    </>
   );
 }
