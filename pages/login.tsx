@@ -5,6 +5,7 @@ import LoginInput from "@/components/Login/LoginInput";
 import { setCookie } from "@/utils/cookies";
 import styles from "@/styles/Login.module.css";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Login() {
   const [uid, setUid] = useState("");
@@ -109,7 +110,7 @@ export default function Login() {
               </div>
             </form>
             <p className={styles.credits}>
-              Made by <a href="https://marban.is-a.dev">Marban</a>
+              Made by <Link href="https://marban.is-a.dev">Marban</Link>
             </p>
           </div>
         </div>

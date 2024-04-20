@@ -14,6 +14,7 @@ import type { InfoResponse } from "@/types/UserInfo";
 import { getCookie, clearCookies } from "@/utils/cookies";
 import { useEffect, useState } from "react";
 import type { MarksResponse } from "@/types/Marks";
+import Link from "next/link";
 
 export default function Academia() {
   const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
@@ -190,7 +191,7 @@ export default function Academia() {
             <hr />
 
             <div className="nav-buttons">
-              <a className="h-button active" href="#timetable">
+              <Link className="h-button active" href="#timetable">
                 Time Table
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -205,9 +206,9 @@ export default function Academia() {
                     fill="currentColor"
                   ></path>
                 </svg>
-              </a>
+              </Link>
 
-              <a className="h-button" href="#attendance">
+              <Link className="h-button" href="#attendance">
                 Attendance
                 <svg
                   width="25"
@@ -221,9 +222,9 @@ export default function Academia() {
                     fill="currentColor"
                   ></path>
                 </svg>
-              </a>
+              </Link>
 
-              <a className="h-button" href="#marks">
+              <Link className="h-button" href="#marks">
                 Marks
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +238,7 @@ export default function Academia() {
                     fill="currentColor"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           <Profile />

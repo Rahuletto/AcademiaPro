@@ -1,5 +1,6 @@
 import styles from "@/styles/Home.module.css";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,9 +28,9 @@ export default function Home() {
             <p>University data, beautifully presented at your fingertips</p>
           </div>
           <div className={styles.buttons}>
-            <a className={styles.login} href="/login">
+            <Link className={styles.login} href="/login">
               Login
-            </a>
+            </Link>
           </div>
         </div>
 
