@@ -62,6 +62,7 @@ export const GET = async ({ request }: { request: Request }) => {
         method: "GET",
         
         headers: {
+          "X-CSRF-Token": getCookie("token") as string,
           "Set-Cookie": getCookie("token") as string,
           "Cookie": getCookie("token") as string,
           Connection: "keep-alive",

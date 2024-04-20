@@ -43,11 +43,12 @@ export default function Academia() {
     if (da) setMarks(JSON.parse(da));
 
     const info = localStorage.getItem("userData");
-    if (info) setUserInfo(JSON.parse(info));
+    if (info && info?.length > 1) setUserInfo(JSON.parse(info));
     else {
       fetch("https://proscrape.vercel.app/api/info", {
         method: "GET",
         headers: {
+          "X-CSRF-Token": getCookie("token") as string,
           "Set-Cookie": getCookie("token") as string,
           Cookie: getCookie("token") as string,
           Connection: "keep-alive",
@@ -60,14 +61,15 @@ export default function Academia() {
       })
         .then((e) => e.json())
         .then((data) => {
-          setUserInfo(data.userInfo);
-          localStorage.setItem("userData", data.userInfo);
+          setUserInfo(data);
+          localStorage.setItem("userData", JSON.stringify(data));
         });
     }
 
     fetch("https://proscrape.vercel.app/api/dayorder", {
       method: "GET",
       headers: {
+        "X-CSRF-Token": getCookie("token") as string,
         "Set-Cookie": getCookie("token") as string,
         Cookie: getCookie("token") as string,
         Connection: "keep-alive",
@@ -154,6 +156,7 @@ export default function Academia() {
       fetch("https://proscrape.vercel.app/api/attendance", {
         method: "GET",
         headers: {
+          "X-CSRF-Token": getCookie("token") as string,
           "Set-Cookie": getCookie("token") as string,
           Cookie: getCookie("token") as string,
           Connection: "keep-alive",
@@ -178,6 +181,7 @@ export default function Academia() {
         {
           method: "GET",
           headers: {
+            "X-CSRF-Token": getCookie("token") as string,
             "Set-Cookie": getCookie("token") as string,
             Cookie: getCookie("token") as string,
             Connection: "keep-alive",
@@ -207,6 +211,7 @@ export default function Academia() {
         method: "GET",
 
         headers: {
+          "X-CSRF-Token": getCookie("token") as string,
           "Set-Cookie": getCookie("token") as string,
           Cookie: getCookie("token") as string,
           Connection: "keep-alive",

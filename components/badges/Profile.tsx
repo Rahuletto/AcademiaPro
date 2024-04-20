@@ -5,9 +5,11 @@ import styles from "@/styles/Profile.module.css";
 import { useEffect, useState } from "react";
 import { clearCookies } from "@/utils/cookies";
 import { InfoResponse } from "@/types/UserInfo";
+import { useRouter } from "next/router";
 
 export default function Profile({ data }: { data: InfoResponse | null }) {
   const [name, setName] = useState("");
+  const router = useRouter()
 
   useEffect(() => {
     if (data)
@@ -36,7 +38,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
             title="Log out"
             onClick={() => {
               clearCookies();
-              window.location.href = "/";
+              router.push('/')
             }}
           >
             <svg
