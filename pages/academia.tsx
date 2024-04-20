@@ -1,22 +1,47 @@
-import AttendanceTable from "@/components/Attendance";
-import DayOrder from "@/components/badges/DayOrder";
-import Hour from "@/components/badges/Hour";
-import Profile from "@/components/badges/Profile";
-import Loader from "@/components/Loader";
-import MarksTable from "@/components/Marks";
-import TimeTableComponent from "@/components/Timetable";
+import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
+const AttendanceTable = dynamic(
+  () => import("@/components/Attendance").then((mod) => mod.default),
+  { ssr: false }
+);
+
+const MarksTable = dynamic(
+  () => import("@/components/Marks").then((mod) => mod.default),
+  { ssr: false }
+);
+
+const TimeTableComponent = dynamic(
+  () => import("@/components/Timetable").then((mod) => mod.default),
+  { ssr: false }
+);
+
+const DayOrder = dynamic(
+  () => import("@/components/badges/DayOrder").then((mod) => mod.default),
+  { ssr: false }
+);
+
+const Hour = dynamic(
+  () => import("@/components/badges/Hour").then((mod) => mod.default),
+  { ssr: false }
+);
+
+const Profile = dynamic(
+  () => import("@/components/badges/Profile").then((mod) => mod.default),
+  { ssr: false }
+);
 
 import type { AttendanceResponse } from "@/types/Attendance";
 import type { DayOrderResponse } from "@/types/DayOrder";
 import type { Table, TimeTableResponse } from "@/types/TimeTable";
 import type { InfoResponse } from "@/types/UserInfo";
+import type { MarksResponse } from "@/types/Marks";
 
 import { getCookie, clearCookies } from "@/utils/cookies";
-import { useEffect, useState } from "react";
-import type { MarksResponse } from "@/types/Marks";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Head from "next/head";
+
+import Loader from "@/components/Loader";
 import Header from "@/components/Header";
 
 export default function Academia() {
@@ -328,7 +353,7 @@ export default function Academia() {
 
         <div className="content">
           <h2
-          id="timetable"
+            id="timetable"
             style={{
               marginTop: 0,
               display: "flex",
@@ -347,7 +372,7 @@ export default function Academia() {
               </a>
             ) : null}
           </h2>
-          <section className="table-responsive" >
+          <section className="table-responsive">
             <table className="table table-bordered text-center">
               <thead>
                 <tr className="bg-light-gray">
@@ -395,7 +420,7 @@ export default function Academia() {
           </section>
 
           <section className="marks" id="marks">
-          <h2 className="subtitle">Marks</h2>
+            <h2 className="subtitle">Marks</h2>
             <MarksTable data={marks} />
           </section>
         </div>

@@ -1,10 +1,9 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import LoginButton from "@/components/Login/LoginButton";
 import LoginInput from "@/components/Login/LoginInput";
 
 import { getCookie, setCookie } from "@/utils/cookies";
 import styles from "@/styles/Login.module.css";
-import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Header from "@/components/Header";

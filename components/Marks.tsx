@@ -1,5 +1,5 @@
 import MarksCard from "@/components/MarksCard";
-import type { Marks, MarksResponse } from "@/types/Marks";
+import type { MarksResponse } from "@/types/Marks";
 
 const MarksTable = ({ data }: { data: MarksResponse | null }) => {
   return (
@@ -15,7 +15,7 @@ const MarksTable = ({ data }: { data: MarksResponse | null }) => {
           marginBottom: 32,
         }}
       >
-        {data && data.marks? (
+        {data && data.marks ? (
           data.marks.map((element, index: any) => (
             <MarksCard
               key={index}

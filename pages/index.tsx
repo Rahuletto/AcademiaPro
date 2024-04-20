@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import styles from "@/styles/Home.module.css";
 import { getCookie } from "@/utils/cookies";
-import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect } from "react";

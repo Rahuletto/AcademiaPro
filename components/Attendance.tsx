@@ -4,8 +4,8 @@ import "react-loading-skeleton/dist/skeleton.css";
 import styles from "@/styles/Attendance.module.css";
 import type { AttendanceResponse, Course } from "@/types/Attendance";
 
-const AttendanceTable = ({ data } : {data: AttendanceResponse | null}) => {
-  if(!data) return <></>;
+const AttendanceTable = ({ data }: { data: AttendanceResponse | null }) => {
+  if (!data) return <></>;
   return (
     <>
       <table style={{ width: "-webkit-fill-available" }}>

@@ -1,8 +1,6 @@
 import Head from "next/head";
 
-const Header = (
-  { title }: { title?: string } = { title: "AcademiaPro" }
-) => (
+const Header = ({ title }: { title?: string } = { title: "AcademiaPro" }) => (
   <Head>
     <title>{title || "AcademiaPro"}</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.svg"></link>

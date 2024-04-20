@@ -1,27 +1,25 @@
-import '@/styles/globals.css';
-import '@/styles/academia.css'
+import "@/styles/globals.css";
+import "@/styles/academia.css";
 
-import 'react-loading-skeleton/dist/skeleton.css';
+import "react-loading-skeleton/dist/skeleton.css";
 
-import type { AppProps } from 'next/app';
-import Head from 'next/head';
+import type { AppProps } from "next/app";
 
-import { Analytics } from '@vercel/analytics/react';
-import { Inter} from 'next/font/google';
-import { Component } from 'react';
-import ErrorStack from "./error"
+import { Analytics } from "@vercel/analytics/react";
+import { Inter } from "next/font/google";
+import { Component } from "react";
+import ErrorStack from "./error";
 
 const inter = Inter({
-  fallback: ['sans-serif'],
-  weight: ['500', '600'],
-  display: 'swap',
-  style: ['normal'],
-  subsets: ['latin'],
-  variable: '--main-font',
+  fallback: ["sans-serif"],
+  weight: ["500", "600"],
+  display: "swap",
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--main-font",
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-
   return (
     <>
       <style jsx global>

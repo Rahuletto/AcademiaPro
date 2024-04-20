@@ -1,7 +1,5 @@
-// NextJS Stuff
 import React from "react";
 
-// Styles
 import styles from "@/styles/Loader.module.css";
 
 const Loader: React.FC = () => {

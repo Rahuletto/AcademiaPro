@@ -1,13 +1,11 @@
-import million from 'million/compiler';
 /** @type {import('next').NextConfig} */
 
 import pwa from 'next-pwa';
-// const withPWA = pwa({
-//   dest: 'public/serviceWorker',
-// });
+const withPWA = pwa({
+  dest: 'public/serviceWorker',
+});
 
-// const config = withPWA({
-  const config = {
+const config = withPWA({
   poweredByHeader: false,
   swcMinify: true,
   reactStrictMode: true,
@@ -22,13 +20,12 @@ import pwa from 'next-pwa';
   async redirects() {
     return [
       {
-        source: '/academia',
-        destination: 'https://academia-pro.vercel.app',
+        source: '/betterlab',
+        destination: 'https://better-lab.vercel.app',
         permanent: true,
       },
     ]
   }
-};
+});
 
-// export default million.next(config, { auto: true });
 export default config;

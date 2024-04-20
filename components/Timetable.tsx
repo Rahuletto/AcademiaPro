@@ -1,4 +1,3 @@
-import { TimeTableResponse } from "@/types/TimeTable";
 import styles from "@/styles/Timetable.module.css";
 import { useRouter } from "next/router";
 import type { InfoResponse } from "@/types/UserInfo";
