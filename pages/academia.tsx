@@ -337,7 +337,7 @@ export default function Academia() {
           {userInfo && <Profile data={userInfo} />}
         </div>
 
-        <button className="open" name="open-nav">
+        <button name="Open navbar" className="open">
           <svg
             stroke="currentColor"
             fill="currentColor"

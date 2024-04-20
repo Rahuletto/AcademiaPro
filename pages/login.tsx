@@ -81,6 +81,8 @@ export default function Login() {
                 <p>University data, beautifully presented at your fingertips</p>
               </div>
               <button
+              name="Better lab"
+              title="Redirect to Better-Lab"
                 onClick={() =>
                   window.location.replace("https://better-lab.vercel.app")
                 }

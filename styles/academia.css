@@ -117,7 +117,6 @@ section {
   display: -ms-flexbox;
   display: flex;
   height: -webkit-fill-available;
-  max-height: 96vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -231,7 +230,6 @@ section {
     transform: translateX(-200px);
     display: none;
     background: var(--background);
-    height: 100vh;
     top: 0;
     left: 0;
     z-index: 5;
@@ -309,10 +307,6 @@ section {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .nav {
-    height: 95vh;
   }
 }
 @media only screen and (max-width: 440px) {

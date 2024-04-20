@@ -30,6 +30,7 @@ export default function Error404() {
           <h3>uh oh.</h3>
           <p>You are not supposed to be here comrade</p>
           <button
+            name="Go home"
             className={styles.closebutton}
             type="button"
             style={{

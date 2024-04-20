@@ -41,6 +41,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
               (name.length == name.slice(0, 20).length ? "" : "...")}
           </h3>
           <button
+            name="logout"
             className={styles.logout}
             title="Log out"
             onClick={() => {
