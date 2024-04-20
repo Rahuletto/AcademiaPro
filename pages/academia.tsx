@@ -15,8 +15,11 @@ import { getCookie, clearCookies } from "@/utils/cookies";
 import { useEffect, useState } from "react";
 import type { MarksResponse } from "@/types/Marks";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Academia() {
+  const router = useRouter() 
+
   const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
   const [day, setDay] = useState<DayOrderResponse | null>(null);
   const [attendance, setAttendance] = useState<AttendanceResponse | null>(null);
@@ -83,7 +86,77 @@ export default function Academia() {
           setDay(res);
         }
       });
-  }, []);
+
+      document.addEventListener(
+        "DOMContentLoaded",
+        async function () {
+          if (!getCookie("token")) router.push('/login');
+    
+          const sections = document.querySelectorAll("section");
+          const menu_links = document.querySelectorAll(".h-button");
+    
+          const loader = document.querySelector<HTMLElement>(".loadScreen");
+          if (loader)
+            setTimeout(() => {
+              loader.style.opacity = "0";
+              setTimeout(() => {
+                loader.style.display = "none";
+              }, 100);
+            }, 5000);
+    
+          const makeActive = (link: number) =>
+            menu_links[link].classList.add("active");
+          const removeActive = (link: number) =>
+            menu_links[link].classList.remove("active");
+          const removeAllActive = () =>
+            [...Array(sections.length).keys()].forEach((link) =>
+              removeActive(link)
+            );
+    
+          const sectionMargin = 100;
+    
+          let currentActive = 0;
+    
+          window.addEventListener("scroll", () => {
+            const current =
+              sections.length -
+              [...sections]
+                .reverse()
+                .findIndex(
+                  (section) => window.scrollY >= section.offsetTop - sectionMargin
+                ) -
+              1;
+    
+            if (current !== currentActive) {
+              removeAllActive();
+              currentActive = current;
+              makeActive(current);
+            }
+          });
+        },
+        false
+      );
+    
+      const btn = document.querySelector(".open");
+      const nav = document.querySelector(".nav");
+      const navCloser = document.querySelector(".nav-hider");
+    
+      btn?.addEventListener("click", (e) => {
+        e.preventDefault();
+        nav?.classList.toggle("viewable");
+        navCloser?.classList.toggle("viewable");
+      });
+    
+      navCloser?.addEventListener("click", () => {
+        nav?.classList.remove("viewable");
+        navCloser?.classList.remove("viewable");
+      });
+    
+      const home = document.querySelector(".h-button[href='#timetable']");
+      home?.addEventListener("click", () => {
+        setTimeout(() => window.scroll(0, 0), 20);
+      });
+  }, [router]);
 
   useEffect(() => {
     if (userInfo) {
