@@ -112,7 +112,6 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
 }
 
 function constructStyles(i: number, j: number, name: string) {
-  console.log(name)
   let obj: any = { ...styled };
 
   if (name.includes("Theory")) obj = { background: "#f3d86a", ...obj };

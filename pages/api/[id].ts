@@ -4,7 +4,7 @@ import Timetabler from "@/generator/TimetableGenerator";
 export const runtime = 'edge';
 
 export default async function GET(request: Request) {
-
+  
 
   const cookie = request.headers.getSetCookie()[0] || request.headers.get('cookie');
 
@@ -52,7 +52,6 @@ export default async function GET(request: Request) {
             headers: {
               "Accept-Encoding": "gzip, deflate, br, zstd",
             },
-            
           }
         )
     
