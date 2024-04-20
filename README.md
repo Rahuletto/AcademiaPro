@@ -6,14 +6,15 @@ University data, beautifully presented at your fingertips.
 > [!IMPORTANT]
 > We completely rewritten AcademiaPro, reducing more bloat, useless algorithms and infact whole new engine under the hood!
 > AcademiaPro now uses its very own web scraper instead of some third-party APIs. We call it `proscrape`
-> Our proscrape uses `Edge Networks` which helped us to make all of our data requests under 2 seconds. I mean *ALL* of the data needed. Instead of taking 6-10 seconds on just logging in.
+> 
+> Our proscrape uses `Edge Networks` which helped us to make all of our data requests under 2 seconds. I mean **ALL** of the data needed. Instead of taking 6-10 seconds on just logging in like [srmcheck](https://a.srmcheck.me)
 
 ## Why Academia ?
 
 - Mobile-First approach
 - Fast, Zippy and RAM Friendly
 - Open source
-- Time table generator
+- Generates Timetable
 - Safe, Secure yet transparent
 - No bloat
 
