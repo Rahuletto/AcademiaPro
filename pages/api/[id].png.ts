@@ -60,7 +60,7 @@ export const GET = async ({ request }: { request: Request }) => {
     else {
       fetch(`https://proscrape.vercel.app/api/timetable?batch=${batch}`, {
         method: "GET",
-        
+        credentials: 'include',
         headers: {
           "Set-Cookie": getCookie("token") as string,
           "Cookie": getCookie("token") as string,

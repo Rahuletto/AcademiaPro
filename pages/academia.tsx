@@ -42,7 +42,7 @@ export default function Academia() {
     if (info) setUserInfo(JSON.parse(info));
     else {
       fetch("https://proscrape.vercel.app/api/info", {
-        
+        credentials: 'include',
         method: "GET",
         headers: {
           "Set-Cookie": getCookie("token") as string,
@@ -63,7 +63,7 @@ export default function Academia() {
     }
 
     fetch("https://proscrape.vercel.app/api/dayorder", {
-      
+      credentials: 'include',
       method: "GET",
       headers: {
         "Set-Cookie": getCookie("token") as string,
@@ -88,7 +88,7 @@ export default function Academia() {
   useEffect(() => {
     if (userInfo) {
       fetch("https://proscrape.vercel.app/api/attendance", {
-        
+        credentials: 'include',
         method: "GET",
         headers: {
           "Set-Cookie": getCookie("token") as string,
@@ -113,7 +113,7 @@ export default function Academia() {
       fetch(
         `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo.batch}`,
         {
-        
+          credentials: 'include',
           method: "GET",
           headers: {
             "Set-Cookie": getCookie("token") as string,
@@ -143,7 +143,7 @@ export default function Academia() {
 
       fetch("https://proscrape.vercel.app/api/marks", {
         method: "GET",
-        
+        credentials: 'include',
         headers: {
           "Set-Cookie": getCookie("token") as string,
           "Cookie": getCookie("token") as string,
