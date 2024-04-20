@@ -1,22 +1,29 @@
 import { TimeTableResponse } from "@/types/TimeTable";
 import styles from "@/styles/Timetable.module.css";
 import { useRouter } from "next/router";
-import type { InfoResponse } from '@/types/UserInfo';
+import type { InfoResponse } from "@/types/UserInfo";
 import { endingTimesSlot, startingTimesSlot } from "@/types/Times";
 
-const TimeTableComponent = ({ table, userInfo }: { userInfo: InfoResponse, table: TimeTableResponse }) => {
+const TimeTableComponent = ({
+  table,
+  userInfo,
+}: {
+  userInfo: InfoResponse;
+  table: (string | undefined)[] | undefined;
+}) => {
+  const router = useRouter();
 
-    const router = useRouter()
-
-    function openGen() {
-        router.push(`/timetable/${userInfo.userInfo.regNo}.png?batch=${userInfo.userInfo.batch}`)
-    }
+  function openGen() {
+    router.push(
+      `/timetable/${userInfo.userInfo.regNo}.png?batch=${userInfo.userInfo.batch}`
+    );
+  }
   return (
     <>
       <tbody onClick={() => openGen()} className={styles.body}>
         <tr className={styles.tr}>
           {table &&
-            table.table.map((element: any, index: any) =>
+            table.map((element: any, index: any) =>
               element ? (
                 <td
                   key={index}

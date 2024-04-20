@@ -1,8 +1,17 @@
 import styles from "@/styles/Home.module.css";
+import { getCookie } from "@/utils/cookies";
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function Home() {
+  const router = useRouter()
+
+  useEffect(() => {
+    if (getCookie("token")) router.push("/academia");
+  }, [])
+  
   return (
     <>
       <Head>

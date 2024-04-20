@@ -100,7 +100,7 @@ export default function Academia() {
         setTimeout(() => {
           loader.style.display = "none";
         }, 100);
-      }, 5000);
+      }, 3000);
 
     const makeActive = (link: number) =>
       menu_links[link].classList.add("active");
@@ -149,7 +149,7 @@ export default function Academia() {
     home?.addEventListener("click", () => {
       setTimeout(() => window.scroll(0, 0), 20);
     });
-  }, [router]);
+  }, []);
 
   useEffect(() => {
     if (userInfo) {
@@ -209,7 +209,6 @@ export default function Academia() {
 
       fetch("https://proscrape.vercel.app/api/marks", {
         method: "GET",
-
         headers: {
           "X-CSRF-Token": getCookie("token") as string,
           "Set-Cookie": getCookie("token") as string,
@@ -330,6 +329,7 @@ export default function Academia() {
 
         <div className="content">
           <h2
+          id="timetable"
             style={{
               marginTop: 0,
               display: "flex",
@@ -348,7 +348,7 @@ export default function Academia() {
               </a>
             ) : null}
           </h2>
-          <section className="table-responsive" id="timetable">
+          <section className="table-responsive" >
             <table className="table table-bordered text-center">
               <thead>
                 <tr className="bg-light-gray">
@@ -385,7 +385,7 @@ export default function Academia() {
                 </tr>
               </thead>
               {table && userInfo && (
-                <TimeTableComponent table={table} userInfo={userInfo} />
+                <TimeTableComponent table={todayTable} userInfo={userInfo} />
               )}
             </table>
           </section>
@@ -395,8 +395,8 @@ export default function Academia() {
             <AttendanceTable data={attendance} />
           </section>
 
-          <h2 className="subtitle">Marks</h2>
           <section className="marks" id="marks">
+          <h2 className="subtitle">Marks</h2>
             <MarksTable data={marks} />
           </section>
         </div>

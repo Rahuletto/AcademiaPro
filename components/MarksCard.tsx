@@ -62,7 +62,7 @@ const MarksCard = ({ name, marks, code, category }: Props) => {
                   >
                     {element.marks.scored}
                   </span>
-                  <span className={styles.total}>{element.marks.total}</span>
+                  <span className={styles.total}>{element.marks.total.split('.')[0]}</span>
                 </div>
               </div>
             ))}

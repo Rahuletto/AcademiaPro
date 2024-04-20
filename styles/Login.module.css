@@ -120,35 +120,13 @@
   color: var(--color);
 }
 
-.login select {
-  background-color: rgb(17 21 26);
-  border: none;
-  border-radius: 10px;
-  color: var(--color);
-  padding: 4px 12px !important;
-  border: 2px solid transparent;
-  outline: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  width: auto;
-  -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-  -o-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
-  text-transform: capitalize;
-}
-
-.login select:hover {
-  background: rgb(17 21 26);
-  border: 2px solid rgba(48, 54, 61, 0.3);
-}
-
 .login button {
   background-color: #0a0d12;
   color: var(--accent);
+  cursor: pointer;
   border: 2px solid transparent;
   border-radius: 12px;
-  padding: 6px 18px;
+  padding: 8px 18px;
   font-size: 16px;
   font-weight: 500;
 
@@ -169,7 +147,8 @@
   border: none;
   border-radius: 14px;
   color: var(--color);
-  padding: 6px 14px !important;
+  padding: 10px 16px !important;
+  font-size: 16px;
   outline: none;
   -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   -o-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
@@ -230,21 +209,6 @@
   }
 }
 
-.lefty button::after {
-  content: "NEW";
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: -12px;
-  margin-right: -24px;
-  font-size: 14px;
-  background: var(--green);
-  padding: 0px 6px;
-  border-radius: 50px;
-  color: var(--background-darker);
-  font-weight: 800;
-}
 @media only screen and (max-width: 620px) {
   .lefty button {
     position: absolute;

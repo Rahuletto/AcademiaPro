@@ -42,7 +42,6 @@ const Loader: React.FC = () => {
           strokeDashoffset="10"
         />
       </svg>
-      <h2 className={styles.loadTitle}>Loading..</h2>
     </div>
   );
 };

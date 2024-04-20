@@ -41,7 +41,7 @@ const Card = ({ percent, title, code, data, category }: Props) => {
         className={[styles.card, "attCard"].join(" ")}
         title={`${code} (${category})`}
       >
-        <td style={{ height: "10vh" }}>
+        <td style={{ height: "70px" }}>
           <div
             style={{
               display: "flex",

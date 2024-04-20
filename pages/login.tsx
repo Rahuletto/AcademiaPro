@@ -1,17 +1,20 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import LoginButton from "@/components/Login/LoginButton";
 import LoginInput from "@/components/Login/LoginInput";
 
-import { setCookie } from "@/utils/cookies";
+import { getCookie, setCookie } from "@/utils/cookies";
 import styles from "@/styles/Login.module.css";
 import Head from "next/head";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Login() {
   const [uid, setUid] = useState("");
   const [pass, setPass] = useState("");
 
   const [error, setError] = useState(0);
+
+  const router = useRouter()
 
   function push() {
     setError(-1);
@@ -47,6 +50,10 @@ export default function Login() {
       console.warn(error);
     }
   }
+
+  useEffect(() => {
+    if (getCookie("token")) router.push("/academia");
+  }, [])
 
   return (
     <>

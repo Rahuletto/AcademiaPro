@@ -1,7 +1,6 @@
 import '@/styles/globals.css';
 import '@/styles/academia.css'
 
-import 'bootstrap/dist/css/bootstrap.css';
 import 'react-loading-skeleton/dist/skeleton.css';
 
 import type { AppProps } from 'next/app';
@@ -14,7 +13,7 @@ import ErrorStack from "./error"
 
 const inter = Inter({
   fallback: ['sans-serif'],
-  weight: ['500', '600', '700', '800'],
+  weight: ['500', '600'],
   display: 'swap',
   style: ['normal'],
   subsets: ['latin'],
@@ -34,6 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </style>
 
       <Head>
+        
         <link
           rel="shortcut icon"
           type="image/x-icon"

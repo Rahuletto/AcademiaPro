@@ -9,13 +9,20 @@ import { useRouter } from "next/router";
 
 export default function Profile({ data }: { data: InfoResponse | null }) {
   const [name, setName] = useState("");
-  const router = useRouter()
+  const router = useRouter();
 
+  function logoutSequence() {
+    const out = prompt("Are you sure want to log out?");
+    if (out) {
+      clearCookies();
+      router.push("/");
+    } else return;
+  }
   useEffect(() => {
     if (data)
       setName(
-        data
-          .userInfo.name.toLowerCase()
+        data.userInfo.name
+          .toLowerCase()
           .split(" ")
           .filter((a: string) => a.length != 1)
           .join(" ")
@@ -37,8 +44,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
             className={styles.logout}
             title="Log out"
             onClick={() => {
-              clearCookies();
-              router.push('/')
+              logoutSequence();
             }}
           >
             <svg
