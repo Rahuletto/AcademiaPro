@@ -17,7 +17,7 @@ export default function Login() {
     setError(-1);
     try {
       fetch("https://proscrape.vercel.app/api/login", {
-        credentials: 'include',
+        
         method: "POST",
         headers: {
           Connection: "keep-alive",
