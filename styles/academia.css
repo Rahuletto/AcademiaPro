@@ -117,7 +117,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 96vh;
+  max-height: 96vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -309,6 +309,10 @@ section {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .nav {
+    height: 80vh;
   }
 }
 @media only screen and (max-width: 440px) {

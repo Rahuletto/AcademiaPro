@@ -12,7 +12,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
   const router = useRouter();
 
   function logoutSequence() {
-    const out = prompt("Are you sure want to log out?");
+    const out = confirm("Are you sure want to log out?");
     if (out) {
       clearCookies();
       router.push("/");
