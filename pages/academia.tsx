@@ -110,7 +110,7 @@ export default function Academia() {
           window.location.reload();
         } else {
           localStorage.setItem("dayOrder", JSON.stringify(res));
-          setDay(res);
+          setDay({ date: "20-Apr-24", dayOrder: "2" });
         }
       });
 
@@ -223,11 +223,6 @@ export default function Academia() {
             window.location.reload();
           } else {
             setTable(res);
-            if (day && !day.dayOrder.includes("No"))
-              setToday(
-                res.table.find((a: Table) => a.dayOrder == day?.dayOrder)
-                  ?.subjects
-              );
             localStorage.setItem("timetable", JSON.stringify(res));
           }
         })
@@ -258,6 +253,12 @@ export default function Academia() {
     }
   }, [userInfo]);
 
+  useEffect(() => {
+    if (day && !day.dayOrder.includes("No"))
+      setToday(table?.table[Number(day.dayOrder) - 1].subjects);
+    console.log(table?.table[Number(day?.dayOrder) - 1]);
+  }, [table, day]);
+
   return (
     <>
       <Loader />
@@ -277,7 +278,7 @@ export default function Academia() {
               {DayOrder && Hour && (
                 <>
                   <DayOrder data={day} />
-                  {todayTable && <Hour data={todayTable?.length} />}
+                  {todayTable && <Hour data={todayTable.filter((e) => e)?.length} />}
                 </>
               )}
             </div>
@@ -353,7 +354,6 @@ export default function Academia() {
 
         <div className="content">
           <h2
-            id="timetable"
             style={{
               marginTop: 0,
               display: "flex",
@@ -372,7 +372,7 @@ export default function Academia() {
               </a>
             ) : null}
           </h2>
-          <section className="table-responsive">
+          <section id="timetable" className="table-responsive">
             <table className="table table-bordered text-center">
               <thead>
                 <tr className="bg-light-gray">

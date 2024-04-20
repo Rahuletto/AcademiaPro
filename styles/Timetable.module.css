@@ -16,12 +16,7 @@
   border: 1px solid;
   position: relative;
 }
-
-.tr {
-  border: 0px none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.body {
   background: #0a0d12;
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -30,15 +25,17 @@
   -o-border-radius: 12px;
 }
 
-.tr td:first-child {
+.body td:first-child {
   border-radius: 12px 0 0 12px;
 }
 
-.tr td:last-child {
+.body td:last-child {
   border-radius: 0 12px 12px 0;
 }
-.tr td {
+.body td {
   width: 10%;
+  vertical-align: baseline;
+  height: 80px;
 }
 
 .timeSlot {
@@ -56,10 +53,8 @@
     width: max-content;
     user-select: none;
   }
+  
   .body {
-    width: -webkit-fill-available;
-  }
-  .tr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -70,12 +65,12 @@
     width: -webkit-fill-available;
   }
 
-  .tr td {
+  .body td {
     width: initial;
     height: 50px;
   }
 
-  .tr td:first-child {
+  .body td:first-child {
     border-radius: 12px 12px 0 0;
     -webkit-border-radius: 12px 12px 0 0;
     -moz-border-radius: 12px 12px 0 0;
@@ -83,7 +78,7 @@
     -o-border-radius: 12px 12px 0 0;
   }
 
-  .tr td:last-child {
+  .body td:last-child {
     border-radius: 0 0 12px 12px;
     -webkit-border-radius: 0 0 12px 12px;
     -moz-border-radius: 0 0 12px 12px;
@@ -91,7 +86,13 @@
     -o-border-radius: 0 0 12px 12px;
   }
 
-  .tr td {
+  .body td span {
+    width: 100px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: right;
+  }
+  .body td {
     padding: 4px 6px;
   }
 }

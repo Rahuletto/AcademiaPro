@@ -113,6 +113,7 @@ section {
   width: -webkit-fill-available;
   max-width: 300px;
   min-width: 200px;
+  min-height: 95vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,14 +300,17 @@ section {
   }
 
   .table {
-    width: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    gap: 12px
+  }
+
+  .table thead tr {
+    text-align: left;
+    padding-right: 4px;
   }
 }
 @media only screen and (max-width: 440px) {
