@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import styles from "@/styles/Loader.module.css";
 
 const Loader: React.FC = () => {
+  useEffect(() => {
+    const loader = document.querySelector<HTMLElement>(".loadScreen");
+    if (loader)
+      setTimeout(() => {
+        loader.style.opacity = "0";
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 100);
+      }, 2000);
+  }, []);
   return (
     <div className={[styles.loader, "loadScreen"].join(" ")}>
       <svg

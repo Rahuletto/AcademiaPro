@@ -27,7 +27,7 @@ import Loader from "@/components/Loader";
 import Header from "@/components/Header";
 import { CalendarResponse } from "@/types/Calendar";
 import CalendarGenerator from "@/components/CalendarGenerator";
-import { FaCalendar, FaCaretLeft, FaCaretRight } from "react-icons/fa6";
+import { FaCalendar, FaCaretLeft, FaCaretRight, FaLink } from "react-icons/fa6";
 
 export default function Academia() {
   const router = useRouter();
@@ -89,18 +89,15 @@ export default function Academia() {
 
     if (!getCookie("token")) router.push("/login");
 
-    const loader = document.querySelector<HTMLElement>(".loadScreen");
-    if (loader)
-      setTimeout(() => {
-        loader.style.opacity = "0";
-        setTimeout(() => {
-          loader.style.display = "none";
-        }, 100);
-      }, 3000);
-
     const btn = document.querySelector(".open");
     const nav = document.querySelector(".nav");
     const navCloser = document.querySelector(".nav-hider");
+
+    setTimeout(() => {
+      const todayScroll = document.getElementById("today");
+
+      todayScroll?.scrollIntoView();
+    }, 2000);
 
     btn?.addEventListener("click", (e) => {
       e.preventDefault();
@@ -153,12 +150,6 @@ export default function Academia() {
     <>
       <Loader />
       <Header title={"Calendar | AcademiaPro"} />
-      <style>{`
-    body {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-      }
-      `}</style>
       <main className="root">
         <div className="nav-hider"></div>
         <div className="nav">
@@ -223,9 +214,14 @@ export default function Academia() {
                 </svg>
               </Link>
 
-              <Link className="h-button active" href="/calendar">
+              <Link className="h-button active" href="/calendar#today">
                 Calendar
                 <FaCalendar />
+              </Link>
+
+              <Link className="h-button" href="/links">
+                Useful Links
+                <FaLink />
               </Link>
             </div>
           </div>

@@ -19,6 +19,7 @@ const MarksTable = ({ data }: { data: MarksResponse | null }) => {
           data.marks.map((element, index: any) => (
             <MarksCard
               key={index}
+              overall={element.overall}
               code={element.courseCode}
               category={element.courseType}
               name={element.courseName}

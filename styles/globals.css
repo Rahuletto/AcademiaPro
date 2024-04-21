@@ -247,6 +247,8 @@ body {
   background-color: var(--background) !important;
   padding: 18px !important;
   margin: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 hr {
