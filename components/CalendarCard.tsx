@@ -9,7 +9,7 @@ export default function CalendarCard({ element, month }: { element: Day, month: 
   ].join(" ");
   return (
     <>
-      <td className={classes}>{element.date}</td>
+      <td id={new Date().getMonth() == month && new Date().getDate() == Number(element.date) ? 'today' : ""} className={classes}>{element.date}</td>
       <td className={classes}>{element.day}</td>
       <td className={classes}>{element.holiday}</td>
       <td className={classes}>{element.dayOrder}</td>
