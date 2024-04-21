@@ -22,10 +22,6 @@
     text-align: center;
 }
 
-.month {
-    text-align: center;
-}
-
 
 .today {
     opacity: 1 !important;
@@ -51,6 +47,7 @@
     min-width: 60vw;
     padding: 8px;
     padding-top: 18px;
+    margin-bottom: 42px;
 
     background: var(--background-light);
     border-radius: 32px;
@@ -70,6 +67,14 @@
 .calendarElem {
     border-right: 2px solid var(--background);
     border-bottom: 2px solid var(--background)
+}
+
+.calendarElem:first-child
+  {
+    border-top-left-radius: 20px;
+}
+.calendarElem:nth-child(4)  {
+    border-top-right-radius: 20px;
 }
 
 .calendarElem:last-child

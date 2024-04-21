@@ -18,19 +18,16 @@ const Profile = dynamic(
   { ssr: false }
 );
 
-import type { AttendanceResponse } from "@/types/Attendance";
 import type { DayOrderResponse } from "@/types/DayOrder";
-import type { TimeTableResponse } from "@/types/TimeTable";
 import type { InfoResponse } from "@/types/UserInfo";
-import type { MarksResponse } from "@/types/Marks";
 
 import { getCookie, clearCookies } from "@/utils/cookies";
 
 import Loader from "@/components/Loader";
 import Header from "@/components/Header";
-import { BiCalendar } from "react-icons/bi";
 import { CalendarResponse } from "@/types/Calendar";
 import CalendarGenerator from "@/components/CalendarGenerator";
+import { FaCalendar, FaCaretLeft, FaCaretRight } from "react-icons/fa6";
 
 export default function Academia() {
   const router = useRouter();
@@ -228,7 +225,7 @@ export default function Academia() {
 
               <Link className="h-button active" href="/calendar">
                 Calendar
-                <BiCalendar />
+                <FaCalendar />
               </Link>
             </div>
           </div>
@@ -250,7 +247,28 @@ export default function Academia() {
         </button>
 
         <div className="content">
-          {calendar && <CalendarGenerator data={calendar.calendar[page]} />}
+          {calendar && (
+            <>
+              <CalendarGenerator page={page} data={calendar.calendar[page]}>
+                <div className="paginate">
+                  <button
+                    onClick={() => setPage((e) => e - 1)}
+                    disabled={page <= 0}
+                  >
+                    <FaCaretLeft />
+                  </button>
+                  <h3 className="month">{calendar.calendar[page].month}</h3>
+
+                  <button
+                    onClick={() => setPage((e) => e + 1)}
+                    disabled={page >= calendar?.calendar.length - 1}
+                  >
+                    <FaCaretRight />
+                  </button>
+                </div>
+              </CalendarGenerator>
+            </>
+          )}
         </div>
       </main>
     </>

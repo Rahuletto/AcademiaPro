@@ -43,7 +43,7 @@ import { getCookie, clearCookies } from "@/utils/cookies";
 
 import Loader from "@/components/Loader";
 import Header from "@/components/Header";
-import { BiCalendar } from "react-icons/bi";
+import { FaCalendar } from "react-icons/fa6";
 
 export default function Academia() {
   const router = useRouter();
@@ -335,9 +335,9 @@ export default function Academia() {
                 </svg>
               </Link>
 
-              <Link className="h-button" href="/calendar">
+              <Link className="h-button" href="/calendar#today">
                 Calendar
-                <BiCalendar />
+                <FaCalendar />
               </Link>
             </div>
           </div>

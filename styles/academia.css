@@ -173,6 +173,37 @@ section {
   color: #ebebeb;
 }
 
+.paginate {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+}
+
+.paginate button {
+  background-color: var(--background-light);
+  border: 2px solid var(--background-dark) !important;
+  color: var(--accent);
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 4px 12px;
+  display: flex;
+  font-size: 22px;
+  font-weight: 500;
+  width: -webkit-fit-content;
+
+  width: -moz-fit-content;
+
+  width: fit-content;
+}
+
+.paginate button:disabled {
+  opacity: 0.3;
+  color: var(--red);
+  border-color: var(--red) !important;
+}
+
+
 .open {
   display: none;
   position: fixed;

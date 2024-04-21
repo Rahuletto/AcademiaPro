@@ -4,15 +4,15 @@ import styles from "@/styles/Calendar.module.css";
 import { Calendar, Day } from "@/types/Calendar";
 import CalendarCard from "./CalendarCard";
 
-const CalendarGenerator = ({ data }: { data: Calendar }) => {
+const CalendarGenerator = ({ data, page, children }: { data: Calendar, page: number, children: any }) => {
   return (
     <div className={styles.calendar}>
       {data && data.days && data.month ? (
         <>
-          <h3 className={styles.month}>{data.month}</h3>
+          {children}
           <div className={styles.calendarGrid}>
             {data.days.map((element: Day, index: any) => (
-                <CalendarCard key={index} element={element} />
+                <CalendarCard key={index} month={page} element={element} />
             ))}
           </div>
         </>
