@@ -152,7 +152,7 @@ export default function Academia() {
   return (
     <>
       <Loader />
-      <Header title={"Academia | AcademiaPro"} />
+      <Header title={"Calendar | AcademiaPro"} />
       <style>{`
     body {
         padding-left: 0px !important;
