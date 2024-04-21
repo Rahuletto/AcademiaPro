@@ -1,4 +1,4 @@
-![image](https://github.com/root-daemon/academiapro/blob/dev/public/og.png?raw=true)
+![image](https://github.com/Rahuletto/academiapro/blob/main/public/og.png?raw=true)
 
 # Academia
 University data, beautifully presented at your fingertips.
