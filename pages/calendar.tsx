@@ -3,21 +3,6 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const AttendanceTable = dynamic(
-  () => import("@/components/Attendance").then((mod) => mod.default),
-  { ssr: false }
-);
-
-const MarksTable = dynamic(
-  () => import("@/components/Marks").then((mod) => mod.default),
-  { ssr: false }
-);
-
-const TimeTableComponent = dynamic(
-  () => import("@/components/Timetable").then((mod) => mod.default),
-  { ssr: false }
-);
-
 const DayOrder = dynamic(
   () => import("@/components/badges/DayOrder").then((mod) => mod.default),
   { ssr: false }
@@ -35,7 +20,7 @@ const Profile = dynamic(
 
 import type { AttendanceResponse } from "@/types/Attendance";
 import type { DayOrderResponse } from "@/types/DayOrder";
-import type { Table, TimeTableResponse } from "@/types/TimeTable";
+import type { TimeTableResponse } from "@/types/TimeTable";
 import type { InfoResponse } from "@/types/UserInfo";
 import type { MarksResponse } from "@/types/Marks";
 
@@ -44,30 +29,20 @@ import { getCookie, clearCookies } from "@/utils/cookies";
 import Loader from "@/components/Loader";
 import Header from "@/components/Header";
 import { BiCalendar } from "react-icons/bi";
+import { CalendarResponse } from "@/types/Calendar";
+import CalendarGenerator from "@/components/CalendarGenerator";
 
 export default function Academia() {
   const router = useRouter();
 
   const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
   const [day, setDay] = useState<DayOrderResponse | null>(null);
-  const [attendance, setAttendance] = useState<AttendanceResponse | null>(null);
-  const [table, setTable] = useState<TimeTableResponse | null>(null);
-  const [todayTable, setToday] = useState<(string | undefined)[] | undefined>(
-    []
-  );
-  const [marks, setMarks] = useState<MarksResponse | null>(null);
+
+  const [page, setPage] = useState(0);
+  const [calendar, setCalendar] = useState<CalendarResponse | null>(null);
 
   useEffect(() => {
     // marks timetable attendance dayorder
-    const m = localStorage.getItem("marks");
-    const tt = localStorage.getItem("timetable");
-    const a = localStorage.getItem("attendance");
-    const da = localStorage.getItem("dayOrder");
-
-    if (m) setMarks(JSON.parse(m));
-    if (tt) setMarks(JSON.parse(tt));
-    if (a) setMarks(JSON.parse(a));
-    if (da) setMarks(JSON.parse(da));
 
     const info = localStorage.getItem("userData");
     if (info && info?.length > 1) setUserInfo(JSON.parse(info));
@@ -117,9 +92,6 @@ export default function Academia() {
 
     if (!getCookie("token")) router.push("/login");
 
-    const sections = document.querySelectorAll("section");
-    const menu_links = document.querySelectorAll(".h-button");
-
     const loader = document.querySelector<HTMLElement>(".loadScreen");
     if (loader)
       setTimeout(() => {
@@ -128,34 +100,6 @@ export default function Academia() {
           loader.style.display = "none";
         }, 100);
       }, 3000);
-
-    const makeActive = (link: number) =>
-      menu_links[link].classList.add("active");
-    const removeActive = (link: number) =>
-      menu_links[link].classList.remove("active");
-    const removeAllActive = () =>
-      [...Array(sections.length).keys()].forEach((link) => removeActive(link));
-
-    const sectionMargin = 100;
-
-    let currentActive = 0;
-
-    window.addEventListener("scroll", () => {
-      const current =
-        sections.length -
-        [...sections]
-          .reverse()
-          .findIndex(
-            (section) => window.scrollY >= section.offsetTop - sectionMargin
-          ) -
-        1;
-
-      if (current !== currentActive) {
-        removeAllActive();
-        currentActive = current;
-        makeActive(current);
-      }
-    });
 
     const btn = document.querySelector(".open");
     const nav = document.querySelector(".nav");
@@ -180,7 +124,7 @@ export default function Academia() {
 
   useEffect(() => {
     if (userInfo) {
-      fetch("https://proscrape.vercel.app/api/attendance", {
+      fetch("https://proscrape.vercel.app/api/calendar", {
         method: "GET",
         headers: {
           "X-CSRF-Token": getCookie("token") as string,
@@ -197,57 +141,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
-            setAttendance(res);
-            localStorage.setItem("attendance", JSON.stringify(res));
-          }
-        })
-        .catch(() => {});
-
-      fetch(
-        `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo.batch}`,
-        {
-          method: "GET",
-          headers: {
-            "X-CSRF-Token": getCookie("token") as string,
-            "Set-Cookie": getCookie("token") as string,
-            Cookie: getCookie("token") as string,
-            Connection: "keep-alive",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
-          },
-        }
-      )
-        .then((r) => r.json())
-        .then((res) => {
-          if (res.token_refresh) {
-            clearCookies();
-            window.location.reload();
-          } else {
-            setTable(res);
-            localStorage.setItem("timetable", JSON.stringify(res));
-          }
-        })
-        .catch(() => {});
-
-      fetch("https://proscrape.vercel.app/api/marks", {
-        method: "GET",
-        headers: {
-          "X-CSRF-Token": getCookie("token") as string,
-          "Set-Cookie": getCookie("token") as string,
-          Cookie: getCookie("token") as string,
-          Connection: "keep-alive",
-          "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
-        },
-      })
-        .then((r) => r.json())
-        .then((res) => {
-          if (res.token_refresh) {
-            clearCookies();
-            window.location.reload();
-          } else {
-            setMarks(res);
-            localStorage.setItem("marks", JSON.stringify(res));
+            setCalendar(res);
           }
         })
         .catch(() => {});
@@ -255,10 +149,8 @@ export default function Academia() {
   }, [userInfo]);
 
   useEffect(() => {
-    if (day && !day.dayOrder.includes("No"))
-      setToday(table?.table[Number(day.dayOrder) - 1].subjects);
-    console.log(table?.table[Number(day?.dayOrder) - 1]);
-  }, [table, day]);
+    setPage(new Date().getMonth());
+  }, [calendar]);
 
   return (
     <>
@@ -279,14 +171,13 @@ export default function Academia() {
               {DayOrder && Hour && (
                 <>
                   <DayOrder data={day} />
-                  {todayTable && <Hour data={todayTable.filter((e) => e)?.length} />}
                 </>
               )}
             </div>
             <hr />
 
             <div className="nav-buttons">
-              <Link className="h-button active" href="#timetable">
+              <Link className="h-button" href="/academia#timetable">
                 Time Table
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -303,7 +194,7 @@ export default function Academia() {
                 </svg>
               </Link>
 
-              <Link className="h-button" href="#attendance">
+              <Link className="h-button" href="/academia#attendance">
                 Attendance
                 <svg
                   width="25"
@@ -319,7 +210,7 @@ export default function Academia() {
                 </svg>
               </Link>
 
-              <Link className="h-button" href="#marks">
+              <Link className="h-button" href="/academia#marks">
                 Marks
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -335,7 +226,7 @@ export default function Academia() {
                 </svg>
               </Link>
 
-              <Link className="h-button" href="/calendar">
+              <Link className="h-button active" href="/calendar">
                 Calendar
                 <BiCalendar />
               </Link>
@@ -359,76 +250,7 @@ export default function Academia() {
         </button>
 
         <div className="content">
-          <h2
-            style={{
-              marginTop: 0,
-              display: "flex",
-              alignItems: "center",
-              gap: 12,
-            }}
-            className="subtitle"
-          >
-            Timetable{" "}
-            {userInfo ? (
-              <a
-                href={`/api/${userInfo.userInfo.regNo}?batch=${userInfo.userInfo.batch}`}
-                className="download"
-              >
-                View all
-              </a>
-            ) : null}
-          </h2>
-          <section id="timetable" className="table-responsive">
-            <table className="table table-bordered text-center">
-              <thead>
-                <tr className="bg-light-gray">
-                  <th title="08:00 - 08:50" className="text-uppercase">
-                    1
-                  </th>
-                  <th title="08:50 - 09:40" className="text-uppercase">
-                    2
-                  </th>
-                  <th title="09:45 - 10:35" className="text-uppercase">
-                    3
-                  </th>
-                  <th title="10:40 - 11:30" className="text-uppercase">
-                    4
-                  </th>
-                  <th title="11:35 - 12:25" className="text-uppercase">
-                    5
-                  </th>
-                  <th title="12:30 - 01:20" className="text-uppercase">
-                    6
-                  </th>
-                  <th title="01:25 - 02:15" className="text-uppercase">
-                    7
-                  </th>
-                  <th title="02:20 - 03:10" className="text-uppercase">
-                    8
-                  </th>
-                  <th title="03:10 - 04:00" className="text-uppercase">
-                    9
-                  </th>
-                  <th title="04:00 - 04:50" className="text-uppercase">
-                    10
-                  </th>
-                </tr>
-              </thead>
-              {table && userInfo && (
-                <TimeTableComponent table={todayTable} userInfo={userInfo} />
-              )}
-            </table>
-          </section>
-
-          <section id="attendance" className="attendance">
-            <h2 className="subtitle">Attendance</h2>
-            <AttendanceTable data={attendance} />
-          </section>
-
-          <section className="marks" id="marks">
-            <h2 className="subtitle">Marks</h2>
-            <MarksTable data={marks} />
-          </section>
+          {calendar && <CalendarGenerator data={calendar.calendar[page]} />}
         </div>
       </main>
     </>
