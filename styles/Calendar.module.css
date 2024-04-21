@@ -1,6 +1,6 @@
 .calendarGrid {
   display: grid;
-  grid-template-columns: 0.1fr 0.2fr 1fr 0.1fr;
+  grid-template-columns: 0.2fr 0.3fr 1fr 0.2fr;
   grid-column-gap: 0px;
   padding: 2px;
   padding-top: 10px;
