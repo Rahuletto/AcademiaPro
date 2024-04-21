@@ -10,6 +10,7 @@
   -ms-border-radius: 26px;
   -o-border-radius: 26px;
   -webkit-border-radius: 26px;
+  overflow: auto;
 }
 
 .calendarElem {
