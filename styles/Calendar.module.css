@@ -69,11 +69,11 @@
     border-bottom: 2px solid var(--background)
 }
 
-.calendarElem:first-child
+.calendarElem:nth-child(5)
   {
     border-top-left-radius: 20px;
 }
-.calendarElem:nth-child(4)  {
+.calendarElem:nth-child(8)  {
     border-top-right-radius: 20px;
 }
 
