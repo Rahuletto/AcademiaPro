@@ -5,7 +5,7 @@ export const runtime = "edge";
 
 export default async function GET(request: Request) {
   const cookie =
-    request.headers.getSetCookie()[0] || request.headers.get("cookie");
+    request.headers.getSetCookie()[0] || request.headers.get("X-CSRF-Token");
 
   const { searchParams } = new URL(request.url);
 
