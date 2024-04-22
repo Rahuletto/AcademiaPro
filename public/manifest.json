@@ -20,6 +20,10 @@
   ],
   "background_color": "#0a0d12",
   "start_url": "/",
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
   "display_override": [
     "fullscreen",
     "window-controls-overlay"
@@ -39,7 +43,8 @@
     {
       "src": "/favicons/android-launchericon-512-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
       {
       "src": "/favicons/maskable.png",
@@ -59,6 +64,9 @@
     "personalization",
     "productivity"
   ],
+  "edge_side_panel": {
+    "preferred_width": 300
+  },
   "shortcuts": [
     {
       "name": "Calendar",
