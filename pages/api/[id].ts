@@ -4,7 +4,8 @@ import Timetabler from "@/generator/TimetableGenerator";
 export const runtime = "edge";
 
 export default async function GET(request: Request) {
-      const cookie = request.headers.getSetCookie()[0] || request.headers.get('X-CSRF-Token') as string;
+      try {
+  const cookie = request.headers.getSetCookie()[0] || request.headers.get('X-CSRF-Token') as string;
 
   const { searchParams } = new URL(request.url);
 
@@ -12,19 +13,6 @@ export default async function GET(request: Request) {
 
   const key = cookie;
 
-  if (!key)
-    return new Response(
-      JSON.stringify({
-        error: "Not signed in!",
-        message:
-          "Cannot find a user token! Most probably you didn't login. Try again after logging in.",
-        url: "https://academia-pro.vercel.app/login",
-      }),
-      {
-        status: 401,
-        statusText: "Unauthorized",
-      }
-    );
   else {
     const res = await fetch(
       `https://proscrape.vercel.app/api/timetable?batch=${batch}`,
@@ -52,4 +40,18 @@ export default async function GET(request: Request) {
       },
     });
   }
+      } catch(err) {
+return new Response(
+      JSON.stringify({
+        error: "Not signed in!",
+        message:
+          "Cannot find a user token! Most probably you didn't login. Try again after logging in.",
+        url: "https://academia-pro.vercel.app/login",
+      }),
+      {
+        status: 401,
+        statusText: "Unauthorized",
+      }
+    );
+      }
 }
