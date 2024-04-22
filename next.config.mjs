@@ -4,8 +4,7 @@ import pwa from 'next-pwa';
 const withPWA = pwa({
   dest: 'public/serviceWorker',
   register: true,
-  disable: process.env.NODE_ENV === "development"
-  
+  disable: process.env.NODE_ENV === "development"l
 });
 
 const config = withPWA({
