@@ -5,15 +5,12 @@ export const runtime = "edge";
 
 export default async function GET(request: Request) {
       try {
-  const cookie = request.headers.getSetCookie()[0] || request.headers.get('X-CSRF-Token') as string;
+  const cookie = (request.headers.getSetCookie()[0] || request.headers.get('cookie') as string).replace('token=', '');
 
   const { searchParams } = new URL(request.url);
 
   const batch = searchParams.get("batch") || "2";
-
-  const key = cookie;
-
-  
+            
     const res = await fetch(
       `https://proscrape.vercel.app/api/timetable?batch=${batch}`,
       {
