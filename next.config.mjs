@@ -1,11 +1,14 @@
 /** @type {import('next').NextConfig} */
 
 import pwa from 'next-pwa';
-// const withPWA = pwa({
-//   dest: 'public/serviceWorker',
-// });
+const withPWA = pwa({
+  dest: 'public/serviceWorker',
+  register: true,
+  disable: process.env.NODE_ENV === "development"
+  
+});
 
-const config = {
+const config = withPWA({
   poweredByHeader: false,
   swcMinify: true,
   reactStrictMode: true,
@@ -36,6 +39,6 @@ const config = {
       }
     ]
   }
-}
+})
 
 export default config;
