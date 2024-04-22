@@ -41,6 +41,7 @@ export default async function GET(request: Request) {
     });
   
       } catch(err) {
+            console.log(err)
 return new Response(
       JSON.stringify({
         error: "Not signed in!",
