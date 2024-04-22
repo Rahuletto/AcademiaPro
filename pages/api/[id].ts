@@ -13,7 +13,7 @@ export default async function GET(request: Request) {
 
   const key = cookie;
 
-  else {
+  
     const res = await fetch(
       `https://proscrape.vercel.app/api/timetable?batch=${batch}`,
       {
@@ -39,7 +39,7 @@ export default async function GET(request: Request) {
         "Accept-Encoding": "gzip, deflate, br, zstd",
       },
     });
-  }
+  
       } catch(err) {
 return new Response(
       JSON.stringify({
