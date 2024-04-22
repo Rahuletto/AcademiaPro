@@ -4,8 +4,7 @@ import Timetabler from "@/generator/TimetableGenerator";
 export const runtime = "edge";
 
 export default async function GET(request: Request) {
-  const cookie =
-    request.headers.getSetCookie()[0] || request.headers.get("X-CSRF-Token");
+      const cookie = request.headers.getSetCookie()[0] || request.headers.get('X-CSRF-Token') as string;
 
   const { searchParams } = new URL(request.url);
 
