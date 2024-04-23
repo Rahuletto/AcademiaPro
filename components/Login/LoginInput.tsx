@@ -1,4 +1,5 @@
-import type { ChangeEventHandler } from "react";
+import { useState, type ChangeEventHandler } from "react";
+import { BsEye, BsEyeFill, BsEyeSlash, BsEyeSlashFill } from "react-icons/bs";
 
 export default function LoginInput({
   type,
@@ -11,6 +12,8 @@ export default function LoginInput({
   uid: string;
   error: number;
 }) {
+  const [visible, setVisible] = useState(false);
+
   if (type === "UID")
     return (
       <input
@@ -43,32 +46,37 @@ export default function LoginInput({
     );
   else
     return (
-      <input
-        type="password"
-        value={uid}
-        style={
-          error === 1
-            ? {
-                border: "1px solid var(--red)",
-                background: "#D133330e !important",
-                borderTopLeftRadius: 4,
-                borderTopRightRadius: 4,
-              }
-            : error === 2
-            ? {
-                border: "1px solid var(--practical)",
-                background: "#45d1330e !important",
-                borderTopLeftRadius: 4,
-                borderTopRightRadius: 4,
-              }
-            : {
-                border: "1px solid transparent",
-                borderTopLeftRadius: 4,
-                borderTopRightRadius: 4,
-              }
-        }
-        onChange={onChange}
-        placeholder="Passw*rd"
-      />
+      <>
+        <input
+          type={visible ? "text" : "password"}
+          value={uid}
+          style={
+            error === 1
+              ? {
+                  border: "1px solid var(--red)",
+                  background: "#D133330e !important",
+                  borderTopLeftRadius: 4,
+                  borderTopRightRadius: 4,
+                }
+              : error === 2
+              ? {
+                  border: "1px solid var(--practical)",
+                  background: "#45d1330e !important",
+                  borderTopLeftRadius: 4,
+                  borderTopRightRadius: 4,
+                }
+              : {
+                  border: "1px solid transparent",
+                  borderTopLeftRadius: 4,
+                  borderTopRightRadius: 4,
+                }
+          }
+          onChange={onChange}
+          placeholder="Passw*rd"
+        />
+        <span className="eyeIcon" onClick={() => setVisible((e) => !e)}>
+          {visible ? <BsEyeSlashFill /> : <BsEyeFill />}
+        </span>
+      </>
     );
 }

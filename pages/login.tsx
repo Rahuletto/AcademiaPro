@@ -30,7 +30,7 @@ export default function Login() {
           "content-type": "application/json",
         },
         body: JSON.stringify({
-          account: uid,
+          account: uid.replaceAll(' ', '').replace('@srmist.edu.in', ''),
           password: pass,
         }),
       })
@@ -92,7 +92,7 @@ export default function Login() {
             </div>
 
             <form className={styles.inputs}>
-              <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 2, position: 'relative' }}>
                 <LoginInput
                   onChange={(e) => {
                     setError(0);

@@ -8,8 +8,7 @@ export default async function GET(request: Request) {
     const cookie = decodeURIComponent(
       (
         request.headers.getSetCookie()[0] ||
-        (request.headers.get("cookie") as string) ||
-        (getC("token") as string)
+        (request.headers.get("cookie") as string)
       )?.replace("token=", "")
     );
 
@@ -20,6 +19,7 @@ export default async function GET(request: Request) {
           status: 401,
           message:
             "Cannot find a session cookie, you might've blocked cookies 🍪 for me or you didn't login.",
+          fix: "If you logged in, then your browser blocked me from eatin ya cookies ;(  Change your browser settings"
         }),
         {
           status: 500,
@@ -69,20 +69,5 @@ export default async function GET(request: Request) {
         statusText: "Server Error",
       }
     );
-  }
-}
-
-function getC(c_name: string) {
-  var i,
-    x,
-    y,
-    ARRcookies = document?.cookie?.split(";");
-  for (i = 0; i < ARRcookies.length; i++) {
-    x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-    y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-    x = x.replace(/^\s+|\s+$/g, "");
-    if (x == c_name) {
-      return unescape(y);
-    }
   }
 }
