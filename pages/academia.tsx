@@ -266,7 +266,7 @@ export default function Academia() {
               {DayOrder && Hour && (
                 <>
                   <DayOrder data={day} />
-                  {todayTable && (
+                  {todayTable && todayTable[0] && (
                     <Hour data={todayTable.filter((e) => e)?.length} />
                   )}
                 </>
@@ -408,7 +408,7 @@ export default function Academia() {
                   </th>
                 </tr>
               </thead>
-              {table && userInfo && (
+              {todayTable && userInfo && (
                 <TimeTableComponent table={todayTable} userInfo={userInfo} />
               )}
             </table>
@@ -416,12 +416,12 @@ export default function Academia() {
 
           <section id="attendance" className="attendance">
             <h2 className="subtitle">Attendance</h2>
-            <AttendanceTable data={attendance} />
+            {attendance && <AttendanceTable data={attendance} />}
           </section>
 
           <section className="marks" id="marks">
             <h2 className="subtitle">Marks</h2>
-            <MarksTable data={marks} />
+            {marks && <MarksTable data={marks} />}
           </section>
         </div>
       </main>
