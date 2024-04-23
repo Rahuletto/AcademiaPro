@@ -35,7 +35,7 @@ const Profile = dynamic(
 
 import type { AttendanceResponse } from "@/types/Attendance";
 import type { DayOrderResponse } from "@/types/DayOrder";
-import type { Table, TimeTableResponse } from "@/types/TimeTable";
+import type { TimeTableResponse } from "@/types/TimeTable";
 import type { InfoResponse } from "@/types/UserInfo";
 import type { MarksResponse } from "@/types/Marks";
 
@@ -65,9 +65,9 @@ export default function Academia() {
     const da = localStorage.getItem("dayOrder");
 
     if (m) setMarks(JSON.parse(m));
-    if (tt) setMarks(JSON.parse(tt));
-    if (a) setMarks(JSON.parse(a));
-    if (da) setMarks(JSON.parse(da));
+    if (tt) setTable(JSON.parse(tt));
+    if (a) setAttendance(JSON.parse(a));
+    if (da) setDay(JSON.parse(da));
 
     const info = localStorage.getItem("userData");
     if (info && info?.length > 1) setUserInfo(JSON.parse(info));
@@ -119,8 +119,6 @@ export default function Academia() {
 
     const sections = document.querySelectorAll("section");
     const menu_links = document.querySelectorAll(".h-button");
-
-
 
     const makeActive = (link: number) =>
       menu_links[link].classList.add("active");
@@ -196,31 +194,33 @@ export default function Academia() {
         })
         .catch(() => {});
 
-      fetch(
-        `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo.batch}`,
-        {
-          method: "GET",
-          headers: {
-            "X-CSRF-Token": getCookie("token") as string,
-            "Set-Cookie": getCookie("token") as string,
-            Cookie: getCookie("token") as string,
-            Connection: "keep-alive",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
-          },
-        }
-      )
-        .then((r) => r.json())
-        .then((res) => {
-          if (res.token_refresh) {
-            clearCookies();
-            window.location.reload();
-          } else {
-            setTable(res);
-            localStorage.setItem("timetable", JSON.stringify(res));
+      if (!table) {
+        fetch(
+          `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo.batch}`,
+          {
+            method: "GET",
+            headers: {
+              "X-CSRF-Token": getCookie("token") as string,
+              "Set-Cookie": getCookie("token") as string,
+              Cookie: getCookie("token") as string,
+              Connection: "keep-alive",
+              "Accept-Encoding": "gzip, deflate, br, zstd",
+              "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
+            },
           }
-        })
-        .catch(() => {});
+        )
+          .then((r) => r.json())
+          .then((res) => {
+            if (res.token_refresh) {
+              clearCookies();
+              window.location.reload();
+            } else {
+              setTable(res);
+              localStorage.setItem("timetable", JSON.stringify(res));
+            }
+          })
+          .catch(() => {});
+      }
 
       fetch("https://proscrape.vercel.app/api/marks", {
         method: "GET",
@@ -250,7 +250,6 @@ export default function Academia() {
   useEffect(() => {
     if (day && !day.dayOrder.includes("No"))
       setToday(table?.table[Number(day.dayOrder) - 1].subjects);
-    console.log(table?.table[Number(day?.dayOrder) - 1]);
   }, [table, day]);
 
   return (
@@ -267,7 +266,9 @@ export default function Academia() {
               {DayOrder && Hour && (
                 <>
                   <DayOrder data={day} />
-                  {todayTable && <Hour data={todayTable.filter((e) => e)?.length} />}
+                  {todayTable && (
+                    <Hour data={todayTable.filter((e) => e)?.length} />
+                  )}
                 </>
               )}
             </div>

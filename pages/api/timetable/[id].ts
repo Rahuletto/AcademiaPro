@@ -8,18 +8,26 @@ export default async function GET(request: Request) {
     const cookie = decodeURIComponent(
       (
         request.headers.getSetCookie()[0] ||
-        (request.headers.get("cookie") as string) || getC('token') as string
-      ).replace("token=", "")
+        (request.headers.get("cookie") as string) ||
+        (getC("token") as string)
+      )?.replace("token=", "")
     );
 
-    if(!cookie) return new Response(JSON.stringify({
-      error: 'Unauthorized',
-      status: 401,
-      message: "Cannot find a session cookie, you might've blocked cookies 🍪 for me or you didn't login."
-    }), {
-      status: 500,
-      
-    })
+    if (!cookie)
+      return new Response(
+        JSON.stringify({
+          error: "Unauthorized",
+          status: 401,
+          message:
+            "Cannot find a session cookie, you might've blocked cookies 🍪 for me or you didn't login.",
+        }),
+        {
+          status: 500,
+          headers: {
+            "content-type": "application/json",
+          },
+        }
+      );
 
     const { searchParams } = new URL(request.url);
 
@@ -50,11 +58,11 @@ export default async function GET(request: Request) {
         "Accept-Encoding": "gzip, deflate, br, zstd",
       },
     });
-  } catch (err) {
+  } catch (err: any) {
     console.log(err);
     return new Response(
       JSON.stringify({
-        error: err
+        error: err.stack,
       }),
       {
         status: 500,
@@ -66,15 +74,15 @@ export default async function GET(request: Request) {
 
 function getC(c_name: string) {
   var i,
-  x,
-  y,
-  ARRcookies = document.cookie.split(";");
-for (i = 0; i < ARRcookies.length; i++) {
-  x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
-  y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
-  x = x.replace(/^\s+|\s+$/g, "");
-  if (x == c_name) {
-    return unescape(y);
+    x,
+    y,
+    ARRcookies = document?.cookie?.split(";");
+  for (i = 0; i < ARRcookies.length; i++) {
+    x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+    y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+    x = x.replace(/^\s+|\s+$/g, "");
+    if (x == c_name) {
+      return unescape(y);
+    }
   }
-}
 }

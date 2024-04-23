@@ -133,7 +133,7 @@ export default function Urls() {
   useEffect(() => {
     if (fuse) {
       const searched = fuse.search(search);
-      console.log(searched);
+
       setArray(searched[0] ? searched : urls);
     }
   }, [search, fuse]);
