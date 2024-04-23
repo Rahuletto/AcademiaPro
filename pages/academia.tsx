@@ -70,6 +70,7 @@ export default function Academia() {
     if (da) setDay(JSON.parse(da));
 
     fetch("https://proscrape.vercel.app/api/info", {
+      cache: "force-cache",
       method: "GET",
       headers: {
         "X-CSRF-Token": getCookie("token") as string,
@@ -90,6 +91,7 @@ export default function Academia() {
       });
 
     fetch("https://proscrape.vercel.app/api/dayorder", {
+      cache: "default",
       method: "GET",
       headers: {
         "X-CSRF-Token": getCookie("token") as string,
@@ -168,6 +170,8 @@ export default function Academia() {
   useEffect(() => {
     if (userInfo) {
       fetch("https://proscrape.vercel.app/api/attendance", {
+        cache: "default",
+        next: { revalidate: 3600 },
         method: "GET",
         headers: {
           "X-CSRF-Token": getCookie("token") as string,
@@ -194,6 +198,7 @@ export default function Academia() {
         fetch(
           `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo?.batch}`,
           {
+            cache: "force-cache",
             method: "GET",
             headers: {
               "X-CSRF-Token": getCookie("token") as string,
@@ -219,6 +224,8 @@ export default function Academia() {
       }
 
       fetch("https://proscrape.vercel.app/api/marks", {
+        cache: "default",
+        next: { revalidate: 3600 },
         method: "GET",
         headers: {
           "X-CSRF-Token": getCookie("token") as string,
