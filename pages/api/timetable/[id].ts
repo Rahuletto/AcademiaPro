@@ -7,8 +7,10 @@ export default async function GET(request: Request) {
   try {
     const cookie = decodeURIComponent(
       (
-        request.headers.getSetCookie()[0] ||
-        (request.headers.get("cookie") as string)
+        (request.headers?.getSetCookie()
+          ? request.headers?.getSetCookie()[0]
+          : (request.headers.get("cookie") as string)) ||
+        (request.headers.get("X-CSRF-Token") as string)
       )?.replace("token=", "")
     );
 
@@ -19,7 +21,7 @@ export default async function GET(request: Request) {
           status: 401,
           message:
             "Cannot find a session cookie, you might've blocked cookies 🍪 for me or you didn't login.",
-          fix: "If you logged in, then your browser blocked me from eatin ya cookies ;(  Change your browser settings"
+          fix: "If you logged in, then your browser blocked me from eatin ya cookies ;(  Change your browser settings",
         }),
         {
           status: 500,
