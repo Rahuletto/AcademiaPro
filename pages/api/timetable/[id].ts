@@ -6,10 +6,10 @@ export const runtime = "edge";
 export default async function GET(request: Request) {
   try {
 
-    const cookie = decodeURIComponent(
+    const cookie = decodeURIComponent((
       (request.headers.get("cookie") as string) ||
         (request.headers.get("X-CSRF-Token") as string)
-      )?.replace("token=", "")
+      )?.replace("token=", ""))
     
 
     if (!cookie)
