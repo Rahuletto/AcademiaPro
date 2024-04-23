@@ -9,6 +9,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import { Component } from "react";
 import ErrorStack from "./error";
+import Script from "next/script";
 
 const inter = Inter({
   fallback: ["sans-serif"],
@@ -30,6 +31,10 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </style>
       <Analytics />
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-WP4J311ZNK"
+      ></Script>
       <ErrorBoundary>
         <Component {...pageProps} />
       </ErrorBoundary>

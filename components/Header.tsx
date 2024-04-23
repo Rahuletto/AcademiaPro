@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 
 const Header = ({ title }: { title?: string } = { title: "AcademiaPro" }) => (
   <Head>
@@ -46,6 +47,14 @@ const Header = ({ title }: { title?: string } = { title: "AcademiaPro" }) => (
     />
     <meta name="twitter:image" content="/og.png" />
     <meta name="twitter:creator" content="@rahul_marban" />
+
+    <script>
+      {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WP4J311ZNK');`}
+    </script>
 
     <meta
       name="google-site-verification"
