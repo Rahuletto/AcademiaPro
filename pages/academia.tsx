@@ -194,7 +194,7 @@ export default function Academia() {
         })
         .catch(() => {});
 
-      if (!table) {
+      if (!table?.table) {
         fetch(
           `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo.batch}`,
           {
@@ -363,9 +363,9 @@ export default function Academia() {
             className="subtitle"
           >
             Timetable{" "}
-            {userInfo ? (
+            {userInfo?.userInfo ? (
               <a
-                href={`/api/timetable/${userInfo.userInfo.regNo}?batch=${userInfo.userInfo.batch}`}
+                href={`/api/timetable/${userInfo.userInfo?.regNo}?batch=${userInfo.userInfo?.batch}`}
                 className="download"
               >
                 View all
