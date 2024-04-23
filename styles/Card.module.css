@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .total {
   background: #d4d4d4;
   padding: 0px 12px;
@@ -25,7 +32,10 @@
   background-color: #04070b;
   border-radius: 50px;
   display: -webkit-box;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
@@ -71,7 +81,10 @@
   color: #9e9e9e;
   font-weight: 700;
   font-size: 14px;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .red {
@@ -87,7 +100,10 @@
   font-weight: 700;
 }
 .blue {
-  user-select: initial;
+  -webkit-user-select: initial;
+     -moz-user-select: initial;
+      -ms-user-select: initial;
+          user-select: initial;
   font-size: 16px;
   font-weight: 700;
   color: #66a3ff;

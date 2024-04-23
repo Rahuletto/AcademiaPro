@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .pill {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -29,7 +36,10 @@
   height: 38px;
   color: var(--background-dark);
   background: #64f58d;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;

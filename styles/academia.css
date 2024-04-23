@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .root {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,7 +78,10 @@ section {
   padding-top: 18px;
 }
 .nav-buttons a {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #ebebeb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +162,10 @@ section {
 }
 
 .nav h1 {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #fff;
   font-weight: 500;
   font-size: 32px;
@@ -166,7 +179,10 @@ section {
 }
 
 .subtitle {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   font-size: 24px;
   font-weight: bold;
   margin: 18px 0px;
@@ -174,10 +190,16 @@ section {
 }
 
 .paginate {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   gap: 32px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .paginate button {
@@ -187,6 +209,8 @@ section {
   cursor: pointer;
   border-radius: 12px;
   padding: 4px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 22px;
   font-weight: 500;
@@ -334,7 +358,10 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: -webkit-fill-available;
     gap: 12px
   }

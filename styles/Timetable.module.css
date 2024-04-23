@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .theory {
   background: var(--theory);
 }
@@ -50,8 +57,13 @@
     position: absolute;
     bottom: 4px;
     right: 6px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   
   .body {

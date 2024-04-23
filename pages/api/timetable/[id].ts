@@ -4,13 +4,27 @@ import Timetabler from "@/generator/TimetableGenerator";
 export const runtime = "edge";
 
 export default async function GET(request: Request) {
-      try {
-  const cookie = decodeURIComponent((request.headers.getSetCookie()[0] || request.headers.get('cookie') as string).replace('token=', ''));
+  try {
+    const cookie = decodeURIComponent(
+      (
+        request.headers.getSetCookie()[0] ||
+        (request.headers.get("cookie") as string)
+      ).replace("token=", "")
+    );
 
-  const { searchParams } = new URL(request.url);
+    if(!cookie) return new Response(JSON.stringify({
+      error: 'Unauthorized',
+      status: 401,
+      message: "Cannot find a session cookie, you might've blocked cookies 🍪 for me or you didn't login."
+    }), {
+      status: 500,
+      
+    })
 
-  const batch = searchParams.get("batch") || "2";
-            
+    const { searchParams } = new URL(request.url);
+
+    const batch = searchParams.get("batch") || "2";
+
     const res = await fetch(
       `https://proscrape.vercel.app/api/timetable?batch=${batch}`,
       {
@@ -36,20 +50,16 @@ export default async function GET(request: Request) {
         "Accept-Encoding": "gzip, deflate, br, zstd",
       },
     });
-  
-      } catch(err) {
-            console.log(err)
-return new Response(
+  } catch (err) {
+    console.log(err);
+    return new Response(
       JSON.stringify({
-        error: "Not signed in!",
-        message:
-          "Cannot find a user token! Most probably you didn't login. Try again after logging in.",
-        url: "https://academia-pro.vercel.app/login",
+        error: err
       }),
       {
-        status: 401,
-        statusText: "Unauthorized",
+        status: 500,
+        statusText: "Server Error",
       }
     );
-      }
+  }
 }
