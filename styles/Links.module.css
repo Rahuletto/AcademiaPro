@@ -76,6 +76,28 @@
 .mobile {
   display: none;
 }
+.priority {
+  border: 2px solid #6C479A;
+  padding: 12px 24px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  padding-top: 18px !important;
+}
+
+.priority::before {
+  content: 'Our sites';
+  color: var(--background-dark);
+  background-color: #6C479A;
+  padding: 4px 12px;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 12px;
+  top: -14px;
+}
 
 @media only screen and (max-width: 1015px) {
   .search {
