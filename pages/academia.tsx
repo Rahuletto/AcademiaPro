@@ -69,29 +69,25 @@ export default function Academia() {
     if (a) setAttendance(JSON.parse(a));
     if (da) setDay(JSON.parse(da));
 
-    const info = localStorage.getItem("userData");
-    if (info && info?.length > 1) setUserInfo(JSON.parse(info));
-    else {
-      fetch("https://proscrape.vercel.app/api/info", {
-        method: "GET",
-        headers: {
-          "X-CSRF-Token": getCookie("token") as string,
-          "Set-Cookie": getCookie("token") as string,
-          Cookie: getCookie("token") as string,
-          Connection: "keep-alive",
-          Origin: "https://proscrape.vercel.app",
-          Referer: "https://proscrape.vercel.app",
-          Host: "proscrape.vercel.app",
+    fetch("https://proscrape.vercel.app/api/info", {
+      method: "GET",
+      headers: {
+        "X-CSRF-Token": getCookie("token") as string,
+        "Set-Cookie": getCookie("token") as string,
+        Cookie: getCookie("token") as string,
+        Connection: "keep-alive",
+        Origin: "https://proscrape.vercel.app",
+        Referer: "https://proscrape.vercel.app",
+        Host: "proscrape.vercel.app",
 
-          "content-type": "application/json",
-        },
-      })
-        .then((e) => e.json())
-        .then((data) => {
-          setUserInfo(data);
-          localStorage.setItem("userData", JSON.stringify(data));
-        });
-    }
+        "content-type": "application/json",
+      },
+    })
+      .then((e) => e.json())
+      .then((data) => {
+        setUserInfo(data);
+        localStorage.setItem("userData", JSON.stringify(data));
+      });
 
     fetch("https://proscrape.vercel.app/api/dayorder", {
       method: "GET",
@@ -196,7 +192,7 @@ export default function Academia() {
 
       if (!table?.table) {
         fetch(
-          `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo.batch}`,
+          `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo?.batch}`,
           {
             method: "GET",
             headers: {
