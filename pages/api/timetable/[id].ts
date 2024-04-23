@@ -8,7 +8,7 @@ export default async function GET(request: Request) {
     const cookie = decodeURIComponent(
       (
         request.headers.getSetCookie()[0] ||
-        (request.headers.get("cookie") as string)
+        (request.headers.get("cookie") as string) || getC('token') as string
       ).replace("token=", "")
     );
 
@@ -62,4 +62,19 @@ export default async function GET(request: Request) {
       }
     );
   }
+}
+
+function getC(c_name: string) {
+  var i,
+  x,
+  y,
+  ARRcookies = document.cookie.split(";");
+for (i = 0; i < ARRcookies.length; i++) {
+  x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+  y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+  x = x.replace(/^\s+|\s+$/g, "");
+  if (x == c_name) {
+    return unescape(y);
+  }
+}
 }
