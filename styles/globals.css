@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --background: #0a0d12;
   --background-dark: #04070b;
@@ -136,7 +143,8 @@ th {
 *,
 ::after,
 ::before {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: var(--main-font), system-ui, sans-serif;
 }
 button,
@@ -262,7 +270,8 @@ hr {
 
 .markGrid:active .markCard:active {
   opacity: 1;
-  box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+  -webkit-box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+          box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
 }
 
 .attTable:active .attCard {
