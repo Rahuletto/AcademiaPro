@@ -5,12 +5,12 @@ export const runtime = "edge";
 
 export default async function GET(request: Request) {
   try {
-
-    const cookie = decodeURIComponent((
-      (request.headers.get("cookie") as string) ||
+    const cookie = decodeURIComponent(
+      (
+        (request.headers.get("cookie") as string) ||
         (request.headers.get("X-CSRF-Token") as string)
-      )?.replace("token=", ""))
-    
+      )?.replace("token=", "")
+    );
 
     if (!cookie)
       return new Response(
@@ -22,7 +22,7 @@ export default async function GET(request: Request) {
           fix: "If you logged in, then your browser blocked me from eatin ya cookies ;(  Change your browser settings",
         }),
         {
-          status: 500,
+          status: 401,
           headers: {
             "content-type": "application/json",
           },
@@ -51,13 +51,27 @@ export default async function GET(request: Request) {
 
     const response = await res.json();
 
-    return new ImageResponse(Timetabler({ body: response }), {
-      width: 2400,
-      height: 920,
-      headers: {
-        "Accept-Encoding": "gzip, deflate, br, zstd",
-      },
-    });
+    if (!response.table || !response.table[0])
+      return new Response(
+        JSON.stringify({
+          message:
+            "Hmm, An error occured while s̶t̶e̶a̶l̶i̶n̶g̶ grabbing your timetable data. Try this one more time sometime later.",
+        }),
+        {
+          status: 500,
+          headers: {
+            "content-type": "application/json",
+          },
+        }
+      );
+    else
+      return new ImageResponse(Timetabler({ body: response }), {
+        width: 2400,
+        height: 920,
+        headers: {
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+        },
+      });
   } catch (err: any) {
     console.log(err);
     return new Response(

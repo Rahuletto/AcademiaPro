@@ -49,7 +49,7 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
             display: "flex",
           }}
         >
-          {body.table[0].subjects.map((_e, i) => (
+          {body?.table[0].subjects.map((_e, i) => (
             <div
               key={`timeslot-${i}`}
               style={{
@@ -76,7 +76,7 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
             borderRadius: "6px",
           }}
         >
-          {body.table.map((row, i) => (
+          {body?.table.map((row, i) => (
             <div style={{ display: "flex" }} key={i}>
               {row.subjects.map((elem, j) =>
                 elem ? (
