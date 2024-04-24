@@ -84,7 +84,7 @@ const Card = ({ percent, title, code, data, category }: Props) => {
         </td>
         <td>
           <h3
-            style={{fontSize: 22}}
+            style={{fontSize: 28}}
             className={
               Number(percent.split(".")[0]) === 100
                 ? styles.green
