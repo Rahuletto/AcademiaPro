@@ -54,8 +54,8 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                   <span
                     className={
                       element.marks.scored == "Abs" ||
-                      parseFloat(element.marks.scored) / 2 >
-                        parseFloat(element.marks.total)
+                      parseFloat(element.marks.total) / 2 >
+                        parseFloat(element.marks.scored)
                         ? styles.red
                         : styles.mark
                     }
