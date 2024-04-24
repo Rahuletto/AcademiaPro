@@ -32,7 +32,7 @@ export default async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
 
     const batch = searchParams.get("batch") || "2";
-
+    console.log(cookie)
     const res = await fetch(
       `https://proscrape.vercel.app/api/timetable?batch=${batch}`,
       {
