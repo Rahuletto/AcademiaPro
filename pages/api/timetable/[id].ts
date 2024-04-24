@@ -32,7 +32,7 @@ export default async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
 
     const batch = searchParams.get("batch") || "2";
-    console.log(cookie)
+    
     const res = await fetch(
       `https://proscrape.vercel.app/api/timetable?batch=${batch}`,
       {
@@ -55,7 +55,8 @@ export default async function GET(request: Request) {
       return new Response(
         JSON.stringify({
           message:
-            "Hmm, An error occured while s̶t̶e̶a̶l̶i̶n̶g̶ grabbing your timetable data. Try this one more time sometime later.",
+            "Hmm, An error occured while grabbing your timetable data. Logout and login again.",
+          fix: "Logout and retry. Its better be old expired cookies 🍪"
         }),
         {
           status: 500,
