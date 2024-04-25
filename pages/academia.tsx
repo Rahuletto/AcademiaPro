@@ -269,7 +269,7 @@ export default function Academia() {
               {DayOrder && Hour && (
                 <>
                   <DayOrder data={day} />
-                  {todayTable && todayTable[0] && (
+                  {todayTable && userInfo && (
                     <Hour data={todayTable.filter((e) => e)?.length} />
                   )}
                 </>
