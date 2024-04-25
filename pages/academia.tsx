@@ -44,6 +44,7 @@ import { getCookie, clearCookies } from "@/utils/cookies";
 import Loader from "@/components/Loader";
 import Header from "@/components/Header";
 import { FaCalendar, FaLink } from "react-icons/fa6";
+import Skeleton from "react-loading-skeleton";
 
 export default function Academia() {
   const router = useRouter();
@@ -201,7 +202,8 @@ export default function Academia() {
               Cookie: getCookie("token") as string,
               Connection: "keep-alive",
               "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+              "Cache-Control":
+                "private, maxage=86400, stale-while-revalidate=7200",
             },
           }
         )
@@ -261,14 +263,21 @@ export default function Academia() {
           <div className="navbox">
             <h1>Academia</h1>
             <div style={{ display: "flex", gap: 12 }}>
-
-                <>
-                  <DayOrder data={day} />
-                  {todayTable && userInfo && (
-                    <Hour data={todayTable.filter((e) => e)?.length} />
-                  )}
-                </>
-              
+              <>
+                <DayOrder data={day} />
+                {todayTable && userInfo ? (
+                  <Hour data={todayTable.filter((e) => e)?.length} />
+                ) : (
+                  <Skeleton
+                    style={{
+                      width: "100px",
+                      height: "30px",
+                      borderRadius: "12px",
+                      opacity: 0.6,
+                    }}
+                  />
+                )}
+              </>
             </div>
             <hr />
 
@@ -333,7 +342,7 @@ export default function Academia() {
               </Link>
             </div>
           </div>
-          {userInfo?.userInfo && <Profile data={userInfo} />}
+           <Profile data={userInfo} />
         </div>
 
         <button name="Open navbar" className="open">
@@ -362,10 +371,7 @@ export default function Academia() {
           >
             Timetable{" "}
             {userInfo?.userInfo ? (
-              <a
-                href={`/timetable`}
-                className="download"
-              >
+              <a href={`/timetable`} className="download">
                 View all
               </a>
             ) : null}
@@ -414,12 +420,12 @@ export default function Academia() {
 
           <section id="attendance" className="attendance">
             <h2 className="subtitle">Attendance</h2>
-            {attendance && <AttendanceTable data={attendance} />}
+            <AttendanceTable data={attendance} />
           </section>
 
           <section className="marks" id="marks">
             <h2 className="subtitle">Marks</h2>
-            {marks && <MarksTable data={marks} />}
+            <MarksTable data={marks} />
           </section>
         </div>
       </main>

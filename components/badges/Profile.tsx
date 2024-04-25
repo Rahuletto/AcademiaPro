@@ -18,8 +18,9 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
       router.push("/");
     } else return;
   }
+
   useEffect(() => {
-    if (data)
+    if (data && data?.userInfo)
       setName(
         data?.userInfo?.name
           .toLowerCase()
@@ -31,7 +32,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
 
   return (
     <>
-      {data && name ? (
+      {data?.userInfo  && name ? (
         <div className={styles.pill}>
           <div className={styles.pic}>
             <span>{name[0]}</span>
