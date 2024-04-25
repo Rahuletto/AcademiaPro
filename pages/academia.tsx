@@ -81,6 +81,7 @@ export default function Academia() {
         Referer: "https://proscrape.vercel.app",
         Host: "proscrape.vercel.app",
         "content-type": "application/json",
+        "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
       },
     })
       .then((e) => e.json())
@@ -98,7 +99,7 @@ export default function Academia() {
         Cookie: getCookie("token") as string,
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br, zstd",
-        "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
+        "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=7200",
       },
     })
       .then((r) => r.json())
@@ -159,11 +160,6 @@ export default function Academia() {
       nav?.classList.remove("viewable");
       navCloser?.classList.remove("viewable");
     });
-
-    const home = document.querySelector(".h-button[href='#timetable']");
-    home?.addEventListener("click", () => {
-      setTimeout(() => window.scroll(0, 0), 20);
-    });
   }, []);
 
   useEffect(() => {
@@ -178,7 +174,7 @@ export default function Academia() {
           Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
         },
       })
         .then((r) => r.json())
@@ -205,7 +201,7 @@ export default function Academia() {
               Cookie: getCookie("token") as string,
               Connection: "keep-alive",
               "Accept-Encoding": "gzip, deflate, br, zstd",
-
+          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
             },
           }
         )
@@ -232,7 +228,7 @@ export default function Academia() {
           Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
         },
       })
         .then((r) => r.json())
