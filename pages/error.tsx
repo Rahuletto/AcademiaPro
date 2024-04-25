@@ -12,7 +12,7 @@ export default function ErrorStack({ error }: { error: Error }) {
 
   useEffect(() => {
     clearCookies()
-    setTimeout(() => router.reload(), 6000)
+    setTimeout(() => router.push('/login'), 6000)
   }, [])
 
   return (

@@ -3,45 +3,19 @@ import Timetabler from "@/generator/TimetableGenerator";
 
 export const runtime = "edge";
 
-export default async function GET(request: Request) {
+export default async function POST(request: Request) {
   try {
-    const cookie = decodeURIComponent(
-      (
-        (request.headers.get("cookie") as string) ||
-        (request.headers.get("X-CSRF-Token") as string)
-      )?.replace("token=", "")
-    );
+    const c = await request.json();
 
-    if (!cookie)
-      return new Response(
-        JSON.stringify({
-          error: "Unauthorized",
-          status: 401,
-          message:
-            "Cannot find a session cookie, you might've blocked cookies 🍪 for me or you didn't login.",
-          fix: "If you logged in, then your browser blocked me from eatin ya cookies ;(  Change your browser settings",
-        }),
-        {
-          status: 401,
-          headers: {
-            "content-type": "application/json",
-          },
-        }
-      );
-
-    const { searchParams } = new URL(request.url);
-
-    const batch = searchParams.get("batch") || "2";
-    
-    const res = await fetch(
-      `https://proscrape.vercel.app/api/timetable?batch=${batch}`,
+    const t = await fetch(
+      `https://proscrape.vercel.app/api/timetable?batch=${c.batch}`,
       {
+        cache: "force-cache",
         method: "GET",
-
         headers: {
-          "X-CSRF-Token": cookie,
-          "Set-Cookie": cookie,
-          Cookie: cookie,
+          "X-CSRF-Token": c.cookies,
+          "Set-Cookie": c.cookies,
+          Cookie: c.cookies,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
@@ -49,14 +23,14 @@ export default async function GET(request: Request) {
       }
     );
 
-    const response = await res.json();
+    const table = await t.json();
 
-    if (!response.table || !response.table[0])
+    if (!table.table || !table.table[0])
       return new Response(
         JSON.stringify({
           message:
             "Hmm, An error occured while grabbing your timetable data. Logout and login again.",
-          fix: "Logout and retry. Its better be old expired cookies 🍪"
+          fix: "Logout and retry. Its better be old expired cookies 🍪",
         }),
         {
           status: 500,
@@ -66,7 +40,7 @@ export default async function GET(request: Request) {
         }
       );
     else
-      return new ImageResponse(Timetabler({ body: response }), {
+      return new ImageResponse(Timetabler({ body: table }), {
         width: 2400,
         height: 920,
         headers: {

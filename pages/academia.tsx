@@ -368,7 +368,7 @@ export default function Academia() {
             Timetable{" "}
             {userInfo?.userInfo ? (
               <a
-                href={`/api/timetable/${userInfo.userInfo?.regNo}?batch=${userInfo.userInfo?.batch}`}
+                href={`/timetable`}
                 className="download"
               >
                 View all

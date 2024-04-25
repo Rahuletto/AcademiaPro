@@ -282,6 +282,10 @@ hr {
   right: 0px;
   color: var(--accent)
 }
+.tt-page {
+  width: 100vw;
+  height: auto;
+}
 
 .attTable:active .attCard {
   opacity: 0.2;
