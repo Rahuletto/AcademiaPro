@@ -266,14 +266,14 @@ export default function Academia() {
           <div className="navbox">
             <h1>Academia</h1>
             <div style={{ display: "flex", gap: 12 }}>
-              {DayOrder && Hour && (
+
                 <>
                   <DayOrder data={day} />
                   {todayTable && userInfo && (
                     <Hour data={todayTable.filter((e) => e)?.length} />
                   )}
                 </>
-              )}
+              
             </div>
             <hr />
 
