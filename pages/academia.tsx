@@ -80,7 +80,7 @@ export default function Academia() {
         Origin: "https://proscrape.vercel.app",
         Referer: "https://proscrape.vercel.app",
         Host: "proscrape.vercel.app",
-
+        "Cache-Control": "maxage=86400, stale-while-revalidate=7200",
         "content-type": "application/json",
       },
     })
@@ -179,7 +179,7 @@ export default function Academia() {
           Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "maxage=86400, stale-while-revalidate=7200",
         },
       })
         .then((r) => r.json())
@@ -206,7 +206,7 @@ export default function Academia() {
               Cookie: getCookie("token") as string,
               Connection: "keep-alive",
               "Accept-Encoding": "gzip, deflate, br, zstd",
-              "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
+              "Cache-Control": "maxage=86400, stale-while-revalidate=7200",
             },
           }
         )
@@ -233,7 +233,7 @@ export default function Academia() {
           Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "maxage=86400, stale-while-revalidate=7200",
         },
       })
         .then((r) => r.json())

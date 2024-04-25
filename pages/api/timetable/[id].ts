@@ -45,6 +45,7 @@ export default async function POST(request: Request) {
         height: 920,
         headers: {
           "Accept-Encoding": "gzip, deflate, br, zstd",
+          'cache-control': 'private, maxage=86400'
         },
       });
   } catch (err: any) {
