@@ -338,7 +338,7 @@ export default function Academia() {
               </Link>
             </div>
           </div>
-          {userInfo && <Profile data={userInfo} />}
+          {userInfo?.userInfo && <Profile data={userInfo} />}
         </div>
 
         <button name="Open navbar" className="open">
