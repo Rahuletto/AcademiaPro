@@ -237,7 +237,7 @@ export default function Urls() {
           <div className="navbox">
             <h1>Academia</h1>
             <div style={{ display: "flex", gap: 12 }}>
-              {DayOrder && Hour && (
+              {day && (
                 <>
                   <DayOrder data={day} />
                 </>

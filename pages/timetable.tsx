@@ -5,8 +5,11 @@ import { getCookie } from "@/utils/cookies";
 import Header from "@/components/Header";
 import Image from "next/image";
 import Loader from "@/components/Loader";
+import { FaCaretLeft } from "react-icons/fa6";
+import { useRouter } from "next/router";
 
 export default function Timetable() {
+    const router = useRouter()
   const [data, setData] = useState("");
 
   useEffect(() => {
@@ -33,8 +36,9 @@ export default function Timetable() {
     <>
       <Loader />
       <Header title={"Timetable | AcademiaPro"} />
-
-      <main className="root">
+    
+      <main className="root" style={{minHeight: '89vh', alignItems: 'center'}}>
+        <button className="back-tt" onClick={() => router.back()}><FaCaretLeft /></button>
         {data && (
           <Image
             className="tt-page"

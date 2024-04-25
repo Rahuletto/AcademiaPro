@@ -287,6 +287,22 @@ hr {
   height: auto;
 }
 
+.back-tt {
+  font-size: 18px;
+  background:var(--red);
+  padding: 8px 12px;
+  color: var(--background-dark);
+  border-radius: 12px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 0px none;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
 .attTable:active .attCard {
   opacity: 0.2;
 }
