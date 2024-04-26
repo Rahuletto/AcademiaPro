@@ -1,26 +1,25 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
-import { getCookie } from "@/utils/cookies";
+import { getCookie } from '@/utils/cookies';
 
-import Header from "@/components/Header";
-import Image from "next/image";
-import Loader from "@/components/Loader";
-import { FaCaretLeft } from "react-icons/fa6";
-import { useRouter } from "next/router";
+import Header from '@/components/Header';
+import Image from 'next/image';
+import Loader from '@/components/Loader';
+import { FaCaretLeft } from 'react-icons/fa6';
+import { useRouter } from 'next/router';
 
 export default function Timetable() {
-    const router = useRouter()
-  const [data, setData] = useState("");
+  const router = useRouter();
+  const [data, setData] = useState('');
 
   useEffect(() => {
-    const da = localStorage.getItem("userData");
-    console.log(da);
+    const da = localStorage.getItem('userData');
     const user = JSON.parse(da as string);
 
     fetch(`/api/timetable/${user.userInfo?.regNo}`, {
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify({
-        cookies: getCookie("token") as string,
+        cookies: getCookie('token') as string,
         batch: user.userInfo?.batch,
       }),
     })
@@ -28,17 +27,21 @@ export default function Timetable() {
       .then((res: any) => {
         const imageUrl = URL.createObjectURL(res);
         setData(imageUrl);
-        console.log(imageUrl);
       });
   }, []);
 
   return (
     <>
       <Loader />
-      <Header title={"Timetable | AcademiaPro"} />
-    
-      <main className="root" style={{minHeight: '89vh', alignItems: 'center'}}>
-        <button className="back-tt" onClick={() => router.back()}><FaCaretLeft /></button>
+      <Header title={'Timetable | AcademiaPro'} />
+
+      <main
+        className="root"
+        style={{ minHeight: '89vh', alignItems: 'center' }}
+      >
+        <button className="back-tt" onClick={() => router.back()}>
+          <FaCaretLeft />
+        </button>
         {data && (
           <Image
             className="tt-page"

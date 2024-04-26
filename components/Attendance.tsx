@@ -1,10 +1,17 @@
 import Card from "@/components/Card";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
 import styles from "@/styles/Attendance.module.css";
 import type { AttendanceResponse, Course } from "@/types/Attendance";
 
-const AttendanceTable = ({ data }: { data: AttendanceResponse | null }) => {
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+
+const AttendanceTable = ({
+  data,
+  todayTable,
+}: {
+  data: AttendanceResponse | null;
+  todayTable?: (string | undefined)[];
+}) => {
   return (
     <>
       <table style={{ width: "-webkit-fill-available" }}>
@@ -26,6 +33,7 @@ const AttendanceTable = ({ data }: { data: AttendanceResponse | null }) => {
                   total: Number(element.hoursConducted),
                 }}
                 percent={element.attendancePercentage}
+                todayTable={todayTable}
               />
             ))
           ) : (

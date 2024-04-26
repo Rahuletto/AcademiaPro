@@ -1,48 +1,48 @@
-import { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const AttendanceTable = dynamic(
   () => import("@/components/Attendance").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const MarksTable = dynamic(
   () => import("@/components/Marks").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const TimeTableComponent = dynamic(
   () => import("@/components/Timetable").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const DayOrder = dynamic(
   () => import("@/components/badges/DayOrder").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const Hour = dynamic(
   () => import("@/components/badges/Hour").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const Profile = dynamic(
   () => import("@/components/badges/Profile").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 import type { AttendanceResponse } from "@/types/Attendance";
 import type { DayOrderResponse } from "@/types/DayOrder";
+import type { MarksResponse } from "@/types/Marks";
 import type { TimeTableResponse } from "@/types/TimeTable";
 import type { InfoResponse } from "@/types/UserInfo";
-import type { MarksResponse } from "@/types/Marks";
 
-import { getCookie, clearCookies } from "@/utils/cookies";
+import { clearCookies, getCookie } from "@/utils/cookies";
 
-import Loader from "@/components/Loader";
 import Header from "@/components/Header";
+import Loader from "@/components/Loader";
 import { FaCalendar, FaLink } from "react-icons/fa6";
 import Skeleton from "react-loading-skeleton";
 
@@ -54,7 +54,7 @@ export default function Academia() {
   const [attendance, setAttendance] = useState<AttendanceResponse | null>(null);
   const [table, setTable] = useState<TimeTableResponse | null>(null);
   const [todayTable, setToday] = useState<(string | undefined)[] | undefined>(
-    []
+    [],
   );
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
@@ -136,7 +136,7 @@ export default function Academia() {
         [...sections]
           .reverse()
           .findIndex(
-            (section) => window.scrollY >= section.offsetTop - sectionMargin
+            (section) => window.scrollY >= section.offsetTop - sectionMargin,
           ) -
         1;
 
@@ -205,7 +205,7 @@ export default function Academia() {
               "Cache-Control":
                 "private, maxage=86400, stale-while-revalidate=7200",
             },
-          }
+          },
         )
           .then((r) => r.json())
           .then((res) => {
@@ -342,7 +342,7 @@ export default function Academia() {
               </Link>
             </div>
           </div>
-           <Profile data={userInfo} />
+          <Profile data={userInfo} />
         </div>
 
         <button name="Open navbar" className="open">
@@ -377,7 +377,7 @@ export default function Academia() {
             ) : null}
           </h2>
           <section id="timetable" className="table-responsive">
-            <table className="table table-bordered text-center">
+            <table className="table-bordered table text-center">
               <thead>
                 <tr className="bg-light-gray">
                   <th title="08:00 - 08:50" className="text-uppercase">
@@ -420,7 +420,7 @@ export default function Academia() {
 
           <section id="attendance" className="attendance">
             <h2 className="subtitle">Attendance</h2>
-            <AttendanceTable data={attendance} />
+            <AttendanceTable data={attendance} todayTable={todayTable} />
           </section>
 
           <section className="marks" id="marks">
