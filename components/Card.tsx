@@ -8,11 +8,11 @@ interface Props {
     total: number;
   };
   category: "Theory" | "Practical" | string;
-  todayTable: any;
+  todayTable?: (string | undefined)[];
 }
 
-import { useEffect, useState } from "react";
 import styles from "@/styles/Card.module.css";
+import { useEffect, useState } from "react";
 
 const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
   const [margin, setMargin] = useState(0);
@@ -22,11 +22,14 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
 
   const countHoursPerDay = (title: string) => {
     var count = 0;
-    todayTable?.map((item: string) => {
-      if (item?.includes(title)) {
-        count += 1;
-      }
-    });
+    if (todayTable && todayTable[0]) {
+      todayTable?.map((item) => {
+        if (item?.includes(title)) {
+          count += 1;
+        }
+      });
+      
+    }
     return count;
   };
   const calculateMargin = (present: number, total: number) => {

@@ -1,7 +1,7 @@
 import Card from "@/components/Card";
 import styles from "@/styles/Attendance.module.css";
 import type { AttendanceResponse, Course } from "@/types/Attendance";
-import { useEffect } from "react";
+
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
@@ -10,7 +10,7 @@ const AttendanceTable = ({
   todayTable,
 }: {
   data: AttendanceResponse | null;
-  todayTable: any;
+  todayTable?: (string | undefined)[];
 }) => {
   return (
     <>
