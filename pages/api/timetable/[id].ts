@@ -1,5 +1,5 @@
-import { ImageResponse } from "@vercel/og";
 import Timetabler from "@/generator/TimetableGenerator";
+import { ImageResponse } from "@vercel/og";
 
 export const runtime = "edge";
 
@@ -49,7 +49,7 @@ export default async function POST(request: Request) {
         },
       });
   } catch (err: any) {
-    console.log(err);
+    console.warn(err);
     return new Response(
       JSON.stringify({
         error: err.stack,

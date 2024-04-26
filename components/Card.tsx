@@ -8,16 +8,27 @@ interface Props {
     total: number;
   };
   category: "Theory" | "Practical" | string;
+  todayTable: any;
 }
 
 import { useEffect, useState } from "react";
 import styles from "@/styles/Card.module.css";
 
-const Card = ({ percent, title, code, data, category }: Props) => {
+const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
   const [margin, setMargin] = useState(0);
   useEffect(() => {
     setMargin(calculateMargin(data.present, data.total));
   }, []);
+
+  const countHoursPerDay = (title: string) => {
+    var count = 0;
+    todayTable?.map((item: string) => {
+      if (item?.includes(title)) {
+        count += 1;
+      }
+    });
+    return count;
+  };
   const calculateMargin = (present: number, total: number) => {
     const p_min = 75;
     if ((present / total) * 100 >= p_min) {
@@ -65,7 +76,15 @@ const Card = ({ percent, title, code, data, category }: Props) => {
         <td>
           <p className={styles.margin}>
             Margin:{" "}
-            <span className={margin > 0 ? styles.blue : styles.red}>
+            <span
+              className={
+                margin <= countHoursPerDay(title)
+                  ? styles.yellow
+                  : margin > 0
+                    ? styles.blue
+                    : styles.red
+              }
+            >
               {margin}
             </span>
           </p>
@@ -84,13 +103,13 @@ const Card = ({ percent, title, code, data, category }: Props) => {
         </td>
         <td>
           <h3
-            style={{fontSize: 28}}
+            style={{ fontSize: 28 }}
             className={
               Number(percent.split(".")[0]) === 100
                 ? styles.green
                 : Number(percent.split(".")[0]) < 75
-                ? styles.red
-                : styles.percent
+                  ? styles.red
+                  : styles.percent
             }
           >
             {Number(percent.split(".")[0]) === 100 ? 100 : percent}%
