@@ -3,37 +3,19 @@ import Timetabler from "@/generator/TimetableGenerator";
 
 export const runtime = "edge";
 
-export default async function GET(request: Request) {
+export default async function POST(request: Request) {
   try {
-    const cookie = decodeURIComponent(
-      (
-        request.headers.getSetCookie()[0] ||
-        (request.headers.get("cookie") as string)
-      ).replace("token=", "")
-    );
+    const c = await request.json();
 
-    if(!cookie) return new Response(JSON.stringify({
-      error: 'Unauthorized',
-      status: 401,
-      message: "Cannot find a session cookie, you might've blocked cookies 🍪 for me or you didn't login."
-    }), {
-      status: 500,
-      
-    })
-
-    const { searchParams } = new URL(request.url);
-
-    const batch = searchParams.get("batch") || "2";
-
-    const res = await fetch(
-      `https://proscrape.vercel.app/api/timetable?batch=${batch}`,
+    const t = await fetch(
+      `https://proscrape.vercel.app/api/timetable?batch=${c.batch}`,
       {
+        cache: "force-cache",
         method: "GET",
-
         headers: {
-          "X-CSRF-Token": cookie,
-          "Set-Cookie": cookie,
-          Cookie: cookie,
+          "X-CSRF-Token": c.cookies,
+          "Set-Cookie": c.cookies,
+          Cookie: c.cookies,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
@@ -41,20 +23,36 @@ export default async function GET(request: Request) {
       }
     );
 
-    const response = await res.json();
+    const table = await t.json();
 
-    return new ImageResponse(Timetabler({ body: response }), {
-      width: 2400,
-      height: 920,
-      headers: {
-        "Accept-Encoding": "gzip, deflate, br, zstd",
-      },
-    });
-  } catch (err) {
+    if (!table.table || !table.table[0])
+      return new Response(
+        JSON.stringify({
+          message:
+            "Hmm, An error occured while grabbing your timetable data. Logout and login again.",
+          fix: "Logout and retry. Its better be old expired cookies 🍪",
+        }),
+        {
+          status: 500,
+          headers: {
+            "content-type": "application/json",
+          },
+        }
+      );
+    else
+      return new ImageResponse(Timetabler({ body: table }), {
+        width: 2400,
+        height: 920,
+        headers: {
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+          'cache-control': 'private, maxage=86400'
+        },
+      });
+  } catch (err: any) {
     console.log(err);
     return new Response(
       JSON.stringify({
-        error: err
+        error: err.stack,
       }),
       {
         status: 500,

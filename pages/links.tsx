@@ -133,7 +133,6 @@ export default function Urls() {
   useEffect(() => {
     if (fuse) {
       const searched = fuse.search(search);
-      console.log(searched);
       setArray(searched[0] ? searched : urls);
     }
   }, [search, fuse]);
@@ -238,7 +237,7 @@ export default function Urls() {
           <div className="navbox">
             <h1>Academia</h1>
             <div style={{ display: "flex", gap: 12 }}>
-              {DayOrder && Hour && (
+              {day && (
                 <>
                   <DayOrder data={day} />
                 </>
@@ -337,6 +336,7 @@ export default function Urls() {
               <h2>Websites</h2>
               <h2>URLs</h2>
             </div>
+            <div className={styles.priority}>
             {!search && priorityUrl.map((k, i) => (
               <div className={styles.urlBox} title="Sites we made" key={i}>
                 <span
@@ -360,6 +360,7 @@ export default function Urls() {
                 </Link>
               </div>
             ))}
+            </div>
             <span> </span>
             {array.map((k: any, i) => (
               <div className={styles.urlBox} key={i}>
@@ -375,7 +376,7 @@ export default function Urls() {
                 </Link>
               </div>
             ))}
-            <div style={{ marginBottom: 38 }} />
+            <div style={{ marginBottom: 64 }} />
           </div>
         </div>
       </main>

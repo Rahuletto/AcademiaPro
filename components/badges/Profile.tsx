@@ -18,10 +18,11 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
       router.push("/");
     } else return;
   }
+
   useEffect(() => {
-    if (data)
+    if (data && data?.userInfo)
       setName(
-        data.userInfo.name
+        data?.userInfo?.name
           .toLowerCase()
           .split(" ")
           .filter((a: string) => a.length != 1)
@@ -31,7 +32,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
 
   return (
     <>
-      {name ? (
+      {data?.userInfo  && name ? (
         <div className={styles.pill}>
           <div className={styles.pic}>
             <span>{name[0]}</span>
