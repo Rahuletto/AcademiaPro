@@ -11,8 +11,8 @@ export default function ErrorStack({ error }: { error: Error }) {
   const router = useRouter()
 
   useEffect(() => {
-    // clearCookies()
-    // setTimeout(() => router.push('/login'), 4000)
+    clearCookies()
+    setTimeout(() => router.push('/login'), 4000)
   }, [])
 
   return (

@@ -151,7 +151,9 @@ export default function Urls() {
       fetch(`${URL}/api/info`, {
         method: "GET",
         headers: {
-          Authorization: getCookie("token") as string,
+          "X-CSRF-Token": getCookie("token") as string,
+          "Set-Cookie": getCookie("token") as string,
+          Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "content-type": "application/json",
         },
@@ -166,7 +168,9 @@ export default function Urls() {
     fetch(`${URL}/api/dayorder`, {
       method: "GET",
       headers: {
-        Authorization: getCookie("token") as string,
+        "X-CSRF-Token": getCookie("token") as string,
+        "Set-Cookie": getCookie("token") as string,
+        Cookie: getCookie("token") as string,
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
@@ -330,29 +334,29 @@ export default function Urls() {
               <h2>URLs</h2>
             </div>
             <div className={styles.priority}>
-              {priorityUrl.map((k, i) => (
-                <div className={styles.urlBox} title="Sites we made" key={i}>
-                  <span
-                    style={{
-                      display: "inline-flex",
-                      gap: 16,
-                      alignItems: "center",
-                    }}
-                  >
-                    {k.site}{" "}
-                    <GoDotFill
-                      title="Starlet websites"
-                      style={{ color: "#6C479A" }}
-                    />
-                  </span>
-                  <Link href={k.url} className={styles.url}>
-                    {k.url}
-                  </Link>
-                  <Link href={k.url} className={styles.mobile}>
-                    Open
-                  </Link>
-                </div>
-              ))}
+            {priorityUrl.map((k, i) => (
+              <div className={styles.urlBox} title="Sites we made" key={i}>
+                <span
+                  style={{
+                    display: "inline-flex",
+                    gap: 16,
+                    alignItems: "center",
+                  }}
+                >
+                  {k.site}{" "}
+                  <GoDotFill
+                    title="Starlet websites"
+                    style={{ color: "#6C479A" }}
+                  />
+                </span>
+                <Link href={k.url} className={styles.url}>
+                  {k.url}
+                </Link>
+                <Link href={k.url} className={styles.mobile}>
+                  Open
+                </Link>
+              </div>
+            ))}
             </div>
             <span> </span>
             {array.map((k: any, i) => (

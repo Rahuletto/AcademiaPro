@@ -8,16 +8,21 @@ export default async function POST(request: Request) {
   try {
     const c = await request.json();
 
-    const t = await fetch(`${URL}/api/timetable?batch=${c.batch}`, {
-      cache: "force-cache",
-      method: "GET",
-      headers: {
-        Authorization: c.cookies,
-        Connection: "keep-alive",
-        "Accept-Encoding": "gzip, deflate, br, zstd",
-        "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
-      },
-    });
+    const t = await fetch(
+      `${URL}/api/timetable?batch=${c.batch}`,
+      {
+        cache: "force-cache",
+        method: "GET",
+        headers: {
+          "X-CSRF-Token": c.cookies,
+          "Set-Cookie": c.cookies,
+          Cookie: c.cookies,
+          Connection: "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+          "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
+        },
+      }
+    );
 
     const table = await t.json();
 
@@ -41,7 +46,7 @@ export default async function POST(request: Request) {
         height: 920,
         headers: {
           "Accept-Encoding": "gzip, deflate, br, zstd",
-          "cache-control": "private, maxage=86400",
+          'cache-control': 'private, maxage=86400'
         },
       });
   } catch (err: any) {

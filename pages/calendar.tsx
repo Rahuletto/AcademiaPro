@@ -48,7 +48,9 @@ export default function Academia() {
       fetch(`${URL}/api/info`, {
         method: "GET",
         headers: {
-          Authorization: getCookie("token") as string,
+          "X-CSRF-Token": getCookie("token") as string,
+          "Set-Cookie": getCookie("token") as string,
+          Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "content-type": "application/json",
         },
@@ -63,7 +65,9 @@ export default function Academia() {
     fetch(`${URL}/api/dayorder`, {
       method: "GET",
       headers: {
-        Authorization: getCookie("token") as string,
+        "X-CSRF-Token": getCookie("token") as string,
+        "Set-Cookie": getCookie("token") as string,
+        Cookie: getCookie("token") as string,
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
@@ -114,7 +118,9 @@ export default function Academia() {
       fetch(`${URL}/api/calendar`, {
         method: "GET",
         headers: {
-          Authorization: getCookie("token") as string,
+          "X-CSRF-Token": getCookie("token") as string,
+          "Set-Cookie": getCookie("token") as string,
+          Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",

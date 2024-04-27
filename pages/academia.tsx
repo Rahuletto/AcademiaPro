@@ -5,32 +5,32 @@ import { useEffect, useState } from "react";
 
 const AttendanceTable = dynamic(
   () => import("@/components/Attendance").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const MarksTable = dynamic(
   () => import("@/components/Marks").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const TimeTableComponent = dynamic(
   () => import("@/components/Timetable").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const DayOrder = dynamic(
   () => import("@/components/badges/DayOrder").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const Hour = dynamic(
   () => import("@/components/badges/Hour").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 const Profile = dynamic(
   () => import("@/components/badges/Profile").then((mod) => mod.default),
-  { ssr: false }
+  { ssr: false },
 );
 
 import type { AttendanceResponse } from "@/types/Attendance";
@@ -55,7 +55,7 @@ export default function Academia() {
   const [attendance, setAttendance] = useState<AttendanceResponse | null>(null);
   const [table, setTable] = useState<TimeTableResponse | null>(null);
   const [todayTable, setToday] = useState<(string | undefined)[] | undefined>(
-    []
+    [],
   );
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
@@ -71,13 +71,13 @@ export default function Academia() {
     if (a) setAttendance(JSON.parse(a));
     if (da) setDay(JSON.parse(da));
 
-    if (!getCookie("token")) router.push("/login");
-
     fetch(`${URL}/api/info`, {
       cache: "default",
       method: "GET",
       headers: {
-        Authorization: getCookie("token") as string,
+        "X-CSRF-Token": getCookie("token") as string,
+        "Set-Cookie": getCookie("token") as string,
+        Cookie: getCookie("token") as string,
         Connection: "keep-alive",
         "content-type": "application/json",
         "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
@@ -93,7 +93,9 @@ export default function Academia() {
       cache: "default",
       method: "GET",
       headers: {
-        Authorization: getCookie("token") as string,
+        "X-CSRF-Token": getCookie("token") as string,
+        "Set-Cookie": getCookie("token") as string,
+        Cookie: getCookie("token") as string,
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=7200",
@@ -109,6 +111,8 @@ export default function Academia() {
           setDay(res);
         }
       });
+
+    if (!getCookie("token")) router.push("/login");
 
     const sections = document.querySelectorAll("section");
     const menu_links = document.querySelectorAll(".h-button");
@@ -130,7 +134,7 @@ export default function Academia() {
         [...sections]
           .reverse()
           .findIndex(
-            (section) => window.scrollY >= section.offsetTop - sectionMargin
+            (section) => window.scrollY >= section.offsetTop - sectionMargin,
           ) -
         1;
 
@@ -164,7 +168,9 @@ export default function Academia() {
         next: { revalidate: 3600 },
         method: "GET",
         headers: {
-          Authorization: getCookie("token") as string,
+          "X-CSRF-Token": getCookie("token") as string,
+          "Set-Cookie": getCookie("token") as string,
+          Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
@@ -183,17 +189,22 @@ export default function Academia() {
         .catch(() => {});
 
       if (!table?.table) {
-        fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
-          cache: "default",
-          method: "GET",
-          headers: {
-            Authorization: getCookie("token") as string,
-            Connection: "keep-alive",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "Cache-Control":
-              "private, maxage=86400, stale-while-revalidate=7200",
+        fetch(
+          `${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`,
+          {
+            cache: "default",
+            method: "GET",
+            headers: {
+              "X-CSRF-Token": getCookie("token") as string,
+              "Set-Cookie": getCookie("token") as string,
+              Cookie: getCookie("token") as string,
+              Connection: "keep-alive",
+              "Accept-Encoding": "gzip, deflate, br, zstd",
+              "Cache-Control":
+                "private, maxage=86400, stale-while-revalidate=7200",
+            },
           },
-        })
+        )
           .then((r) => r.json())
           .then((res) => {
             if (res.token_refresh) {
@@ -212,7 +223,9 @@ export default function Academia() {
         next: { revalidate: 3600 },
         method: "GET",
         headers: {
-          Authorization: getCookie("token") as string,
+          "X-CSRF-Token": getCookie("token") as string,
+          "Set-Cookie": getCookie("token") as string,
+          Cookie: getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
