@@ -118,6 +118,7 @@ import Header from "@/components/Header";
 import { FaCalendar, FaLink } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import Fuse from "fuse.js";
+import { URL } from "@/utils/url";
 
 export default function Urls() {
   const router = useRouter();
@@ -147,17 +148,11 @@ export default function Urls() {
     const info = localStorage.getItem("userData");
     if (info && info?.length > 1) setUserInfo(JSON.parse(info));
     else {
-      fetch("https://proscrape.vercel.app/api/info", {
+      fetch(`${URL}/api/info`, {
         method: "GET",
         headers: {
-          "X-CSRF-Token": getCookie("token") as string,
-          "Set-Cookie": getCookie("token") as string,
-          Cookie: getCookie("token") as string,
+          "Authorization": getCookie("token") as string,
           Connection: "keep-alive",
-          Origin: "https://proscrape.vercel.app",
-          Referer: "https://proscrape.vercel.app",
-          Host: "proscrape.vercel.app",
-
           "content-type": "application/json",
         },
       })
@@ -168,12 +163,10 @@ export default function Urls() {
         });
     }
 
-    fetch("https://proscrape.vercel.app/api/dayorder", {
+    fetch(`${URL}/api/dayorder`, {
       method: "GET",
       headers: {
-        "X-CSRF-Token": getCookie("token") as string,
-        "Set-Cookie": getCookie("token") as string,
-        Cookie: getCookie("token") as string,
+        "Authorization": getCookie("token") as string,
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",
@@ -337,7 +330,7 @@ export default function Urls() {
               <h2>URLs</h2>
             </div>
             <div className={styles.priority}>
-            {!search && priorityUrl.map((k, i) => (
+            {priorityUrl.map((k, i) => (
               <div className={styles.urlBox} title="Sites we made" key={i}>
                 <span
                   style={{

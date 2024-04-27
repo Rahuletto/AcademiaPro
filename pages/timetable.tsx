@@ -1,25 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import { getCookie } from '@/utils/cookies';
+import { getCookie } from "@/utils/cookies";
 
-import Header from '@/components/Header';
-import Image from 'next/image';
-import Loader from '@/components/Loader';
-import { FaCaretLeft } from 'react-icons/fa6';
-import { useRouter } from 'next/router';
+import Header from "@/components/Header";
+import Image from "next/image";
+import Loader from "@/components/Loader";
+import { FaCaretLeft } from "react-icons/fa6";
+import { useRouter } from "next/router";
+import Skeleton from "react-loading-skeleton";
 
 export default function Timetable() {
   const router = useRouter();
-  const [data, setData] = useState('');
+  const [data, setData] = useState("");
 
   useEffect(() => {
-    const da = localStorage.getItem('userData');
+    const da = localStorage.getItem("userData");
     const user = JSON.parse(da as string);
 
     fetch(`/api/timetable/${user.userInfo?.regNo}`, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({
-        cookies: getCookie('token') as string,
+        cookies: getCookie("token") as string,
         batch: user.userInfo?.batch,
       }),
     })
@@ -33,16 +34,16 @@ export default function Timetable() {
   return (
     <>
       <Loader />
-      <Header title={'Timetable | AcademiaPro'} />
+      <Header title={"Timetable | AcademiaPro"} />
 
       <main
         className="root"
-        style={{ minHeight: '89vh', alignItems: 'center' }}
+        style={{ minHeight: "89vh", alignItems: "center" }}
       >
         <button className="back-tt" onClick={() => router.back()}>
           <FaCaretLeft />
         </button>
-        {data && (
+        {data ? (
           <Image
             className="tt-page"
             alt="timetable"
@@ -50,6 +51,8 @@ export default function Timetable() {
             width={2400}
             height={920}
           />
+        ) : (
+          <Skeleton width={2400} height={920} className="tt-page" />
         )}
       </main>
     </>

@@ -45,6 +45,7 @@ import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import { FaCalendar, FaLink } from "react-icons/fa6";
 import Skeleton from "react-loading-skeleton";
+import { URL } from "@/utils/url";
 
 export default function Academia() {
   const router = useRouter();
@@ -70,17 +71,12 @@ export default function Academia() {
     if (a) setAttendance(JSON.parse(a));
     if (da) setDay(JSON.parse(da));
 
-    fetch("https://proscrape.vercel.app/api/info", {
+    fetch(`${URL}/api/info`, {
       cache: "default",
       method: "GET",
       headers: {
-        "X-CSRF-Token": getCookie("token") as string,
-        "Set-Cookie": getCookie("token") as string,
-        Cookie: getCookie("token") as string,
+        "Authorization": getCookie("token") as string,
         Connection: "keep-alive",
-        Origin: "https://proscrape.vercel.app",
-        Referer: "https://proscrape.vercel.app",
-        Host: "proscrape.vercel.app",
         "content-type": "application/json",
         "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
       },
@@ -91,13 +87,11 @@ export default function Academia() {
         localStorage.setItem("userData", JSON.stringify(data));
       });
 
-    fetch("https://proscrape.vercel.app/api/dayorder", {
+    fetch(`${URL}/api/dayorder`, {
       cache: "default",
       method: "GET",
       headers: {
-        "X-CSRF-Token": getCookie("token") as string,
-        "Set-Cookie": getCookie("token") as string,
-        Cookie: getCookie("token") as string,
+        "Authorization": getCookie("token") as string,
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=7200",
@@ -165,14 +159,12 @@ export default function Academia() {
 
   useEffect(() => {
     if (userInfo) {
-      fetch("https://proscrape.vercel.app/api/attendance", {
+      fetch(`${URL}/api/attendance`, {
         cache: "default",
         next: { revalidate: 3600 },
         method: "GET",
         headers: {
-          "X-CSRF-Token": getCookie("token") as string,
-          "Set-Cookie": getCookie("token") as string,
-          Cookie: getCookie("token") as string,
+          "Authorization": getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
@@ -192,14 +184,12 @@ export default function Academia() {
 
       if (!table?.table) {
         fetch(
-          `https://proscrape.vercel.app/api/timetable?batch=${userInfo?.userInfo?.batch}`,
+          `${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`,
           {
             cache: "default",
             method: "GET",
             headers: {
-              "X-CSRF-Token": getCookie("token") as string,
-              "Set-Cookie": getCookie("token") as string,
-              Cookie: getCookie("token") as string,
+              "Authorization": getCookie("token") as string,
               Connection: "keep-alive",
               "Accept-Encoding": "gzip, deflate, br, zstd",
               "Cache-Control":
@@ -220,14 +210,12 @@ export default function Academia() {
           .catch(() => {});
       }
 
-      fetch("https://proscrape.vercel.app/api/marks", {
+      fetch(`${URL}/api/marks`, {
         cache: "default",
         next: { revalidate: 3600 },
         method: "GET",
         headers: {
-          "X-CSRF-Token": getCookie("token") as string,
-          "Set-Cookie": getCookie("token") as string,
-          Cookie: getCookie("token") as string,
+          "Authorization": getCookie("token") as string,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",

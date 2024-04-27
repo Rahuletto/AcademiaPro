@@ -32,14 +32,12 @@ export default function App({ Component, pageProps }: AppProps) {
       </style>
       <Analytics />
       <Script
-        async
         src="https://www.googletagmanager.com/gtag/js?id=G-WP4J311ZNK"
       ></Script>
 
 
       <Script
         id="gtag-init"
-        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];

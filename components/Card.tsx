@@ -28,7 +28,6 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
           count += 1;
         }
       });
-      
     }
     return count;
   };
@@ -77,15 +76,22 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
           </div>
         </td>
         <td>
-          <p className={styles.margin}>
+          <p
+            className={styles.margin}
+            title={
+              margin <= countHoursPerDay(title)
+                ? "You are at the verge of going below 75%"
+                : "The hours you can skip"
+            }
+          >
             Margin:{" "}
             <span
               className={
                 margin <= countHoursPerDay(title)
                   ? styles.yellow
                   : margin > 0
-                    ? styles.blue
-                    : styles.red
+                  ? styles.blue
+                  : styles.red
               }
             >
               {margin}
@@ -111,8 +117,8 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
               Number(percent.split(".")[0]) === 100
                 ? styles.green
                 : Number(percent.split(".")[0]) < 75
-                  ? styles.red
-                  : styles.percent
+                ? styles.red
+                : styles.percent
             }
           >
             {Number(percent.split(".")[0]) === 100 ? 100 : percent}%

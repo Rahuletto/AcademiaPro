@@ -1,4 +1,5 @@
 import Timetabler from "@/generator/TimetableGenerator";
+import { URL } from "@/utils/url";
 import { ImageResponse } from "@vercel/og";
 
 export const runtime = "edge";
@@ -8,14 +9,12 @@ export default async function POST(request: Request) {
     const c = await request.json();
 
     const t = await fetch(
-      `https://proscrape.vercel.app/api/timetable?batch=${c.batch}`,
+      `${URL}/api/timetable?batch=${c.batch}`,
       {
         cache: "force-cache",
         method: "GET",
         headers: {
-          "X-CSRF-Token": c.cookies,
-          "Set-Cookie": c.cookies,
-          Cookie: c.cookies,
+          "Authorization": c.cookies,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "Cache-Control": "s-maxage=86400, stale-while-revalidate=7200",

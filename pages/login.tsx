@@ -7,6 +7,7 @@ import styles from "@/styles/Login.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Header from "@/components/Header";
+import { URL } from "@/utils/url";
 
 export default function Login() {
   const [uid, setUid] = useState("");
@@ -18,15 +19,12 @@ export default function Login() {
 
   function push() {
     setError(-1);
+    setTimeout(() => setError(0),6000)
     try {
-      fetch("https://proscrape.vercel.app/api/login", {
+      fetch(`${URL}/api/login`, {
         method: "POST",
         headers: {
           Connection: "keep-alive",
-          Origin: "https://proscrape.vercel.app",
-          Referer: "https://proscrape.vercel.app",
-          Host: "proscrape.vercel.app",
-
           "content-type": "application/json",
         },
         body: JSON.stringify({
