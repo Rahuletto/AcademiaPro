@@ -315,7 +315,7 @@ hr {
     -ms-border-radius: 0px 0px 6px 6px;
     -o-border-radius: 0px 0px 6px 6px;
 }
-#gradex select {
+#gradex select, input {
   outline: none;
   background: var(--background-dark);
   padding: 4px 8px;
@@ -331,6 +331,19 @@ hr {
   text-indent: 1px;
   text-overflow: '';
 }
+#gradex input{
+  width: 40px ;
+}
+#gradex input[type="number"]::-webkit-inner-spin-button, 
+#gradex input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#gradex input[type="number"] {
+  -moz-appearance: textfield; 
+}
+
 
 #gradex {
   display: flex;

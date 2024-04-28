@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
-import LoginButton from "@/components/Login/LoginButton";
-import LoginInput from "@/components/Login/LoginInput";
+import LoginButton from '@/components/Login/LoginButton';
+import LoginInput from '@/components/Login/LoginInput';
+import { useEffect, useState } from 'react';
 
-import { getCookie, setCookie } from "@/utils/cookies";
-import styles from "@/styles/Login.module.css";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import Header from "@/components/Header";
-import { URL } from "@/utils/url";
+import Header from '@/components/Header';
+import styles from '@/styles/Login.module.css';
+import { getCookie, setCookie } from '@/utils/cookies';
+import { URL } from '@/utils/url';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 export default function Login() {
-  const [uid, setUid] = useState("");
-  const [pass, setPass] = useState("");
+  const [uid, setUid] = useState('');
+  const [pass, setPass] = useState('');
 
   const [error, setError] = useState(0);
 
@@ -19,13 +19,13 @@ export default function Login() {
 
   function push() {
     setError(-1);
-    setTimeout(() => setError(0),6000)
+    setTimeout(() => setError(0), 6000);
     try {
       fetch(`${URL}/api/login`, {
-        method: "POST",
+        method: 'POST',
         headers: {
-          Connection: "keep-alive",
-          "content-type": "application/json",
+          Connection: 'keep-alive',
+          'content-type': 'application/json',
         },
         body: JSON.stringify({
           account: uid.replaceAll(' ', '').replace('@srmist.edu.in', ''),
@@ -36,9 +36,9 @@ export default function Login() {
         .then((res) => {
           if (res.cookies) {
             setError(2);
-            setCookie("token", res.cookies);
+            setCookie('token', res.cookies);
 
-            window.location.href = "/academia";
+            window.location.href = '/academia';
           } else if (res.message) {
             setError(1);
           }
@@ -49,12 +49,12 @@ export default function Login() {
   }
 
   useEffect(() => {
-    if (getCookie("token")) router.push("/academia");
+    if (getCookie('token')) router.push('/academia');
   }, []);
 
   return (
     <>
-      <Header title={"Login | AcademiaPro"} />
+      <Header title={'Login | AcademiaPro'} />
 
       <main className={styles.main}>
         <div className={styles.container}>
@@ -79,10 +79,10 @@ export default function Login() {
                 <p>University data, beautifully presented at your fingertips</p>
               </div>
               <button
-              name="Better lab"
-              title="Redirect to Better-Lab"
+                name="Better lab"
+                title="Redirect to Better-Lab"
                 onClick={() =>
-                  window.location.replace("https://better-lab.vercel.app")
+                  window.location.replace('https://better-lab.vercel.app')
                 }
               >
                 Better-Lab
@@ -90,7 +90,14 @@ export default function Login() {
             </div>
 
             <form className={styles.inputs}>
-              <div style={{ display: "flex", flexDirection: "column", gap: 2, position: 'relative' }}>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 2,
+                  position: 'relative',
+                }}
+              >
                 <LoginInput
                   onChange={(e) => {
                     setError(0);
@@ -111,12 +118,15 @@ export default function Login() {
                 />
               </div>
 
-              <div style={{ display: "flex", gap: 12 }}>
+              <div style={{ display: 'flex', gap: 12 }}>
                 <LoginButton error={error} onClick={push} />
               </div>
             </form>
             <p className={styles.credits}>
-              Made by <Link href="https://marban.is-a.dev">Marban</Link> and <Link href="https://www.linkedin.com/in/srivishal-sivasubramanian-1a09b9240/">root-daemon</Link>
+              Made by <Link href="https://marban.is-a.dev">Marban</Link> and{' '}
+              <Link href="https://www.linkedin.com/in/srivishal-sivasubramanian-1a09b9240/">
+                root-daemon
+              </Link>
             </p>
           </div>
         </div>
