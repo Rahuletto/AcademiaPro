@@ -166,7 +166,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
               </div>
             </div>
             <div id="gradex">
-              {60 - parseFloat(overall.total) && (
+              {60 - parseFloat(overall.total) > 0 && (
                 <>
                   <div>
                     <p>
