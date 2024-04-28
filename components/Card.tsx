@@ -22,7 +22,7 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
 
   const countHoursPerDay = (title: string) => {
     var count = 0;
-    if (todayTable && todayTable[0]) {
+    if (todayTable && todayTable.length != 0) {
       todayTable?.map((item) => {
         if (item?.includes(title)) {
           count += 1;
@@ -84,10 +84,10 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
                 : "The hours you can skip"
             }
           >
-            Margin:{" "}
+            {margin < 0 ? "Required" : "Margin"}:{" "}
             <span
               className={
-                margin <= countHoursPerDay(title)
+                margin <= countHoursPerDay(title) && margin > 0
                   ? styles.yellow
                   : margin > 0
                   ? styles.blue
