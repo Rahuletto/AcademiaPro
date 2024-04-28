@@ -9,11 +9,13 @@
   padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
+  height: -webkit-fill-available;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+          
   gap: 14px;
   border: 2px solid var(--background-dark);
   -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
@@ -136,4 +138,11 @@
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+}
+
+.markContainer {
+  display: flex;
+  gap: 16px;
+  position: relative;
+  flex-direction: column;
 }

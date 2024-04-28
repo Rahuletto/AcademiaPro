@@ -144,7 +144,7 @@ th {
 ::after,
 ::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: var(--main-font), system-ui, sans-serif;
 }
 button,
@@ -264,14 +264,84 @@ hr {
   border-top: 3px solid var(--side-active) !important;
 }
 
-.markGrid:active .markCard {
+.markGrid:has(.markExpand) .markCard {
   opacity: 0.2;
 }
 
-.markGrid:active .markCard:active {
-  opacity: 1;
+.markGrid .markExpand .markCard {
+  opacity: 1 !important;
   -webkit-box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
-          box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+  box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+}
+
+.grade {
+  width: -webkit-fill-available;
+  display: none;
+}
+
+.markExpand .grade {
+  display: flex;
+  -webkit-box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+  box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+  z-index: 2;
+  position: absolute;
+  bottom: -76px;
+  flex-direction: column;
+  padding: 6px 14px;
+  background: var(--background-light);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.grade p {
+  color: rgba(197, 197, 197, 0.5);
+  font-size: 14px;
+}
+
+#warn {
+    color: rgba(255,255,255,0.45);
+    background: #ffcb6343;
+    font-size: 12px;
+    margin: 0px -14px;
+    margin-top: 6px;
+    padding: 4px 12px;
+    margin-bottom: -6px;
+    border-radius: 0px 0px 6px 6px;
+    -webkit-border-radius: 0px 0px 6px 6px;
+    -moz-border-radius: 0px 0px 6px 6px;
+    -ms-border-radius: 0px 0px 6px 6px;
+    -o-border-radius: 0px 0px 6px 6px;
+}
+#gradex select {
+  outline: none;
+  background: var(--background-dark);
+  padding: 4px 8px;
+  color: var(--color);
+  border-radius: 6px;
+  border: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+#gradex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#gradex div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .eyeIcon {
@@ -280,7 +350,7 @@ hr {
   position: absolute;
   bottom: 10px;
   right: 0px;
-  color: var(--accent)
+  color: var(--accent);
 }
 .tt-page {
   width: 100vw;
@@ -289,7 +359,7 @@ hr {
 
 .back-tt {
   font-size: 18px;
-  background:var(--red);
+  background: var(--red);
   padding: 8px 12px;
   color: var(--background-dark);
   border-radius: 12px;
@@ -312,14 +382,6 @@ hr {
 }
 
 @media only screen and (max-width: 766px) {
-  .markGrid:active .markCard {
-    opacity: 1;
-  }
-
-  .markGrid:active .markCard:active {
-    opacity: 1;
-  }
-
   .attTable:active .attCard {
     opacity: 1;
   }
