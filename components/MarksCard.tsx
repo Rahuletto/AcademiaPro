@@ -138,6 +138,29 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
           </div>
 
           <div className="grade">
+            
+              {60 - parseFloat(overall.total) > 0 && (
+                <div id="gradex">
+                  
+                    <p>
+                      Expected Internal of {60 - parseFloat(overall.total)}:
+                    </p>
+                    <input
+                      type="number"
+                      value={expectedInternal}
+                      onChange={(e) => {
+                        if (
+                          Number(e.target.value) > 0 &&
+                          Number(e.target.value) <=
+                            Number(60 - parseFloat(overall.total))
+                        ) {
+                          setExpectedInternal(Number(e.target.value));
+                        }
+                      }}
+                    />
+                </div>
+              )}
+            
             <div id="gradex">
               <div>
                 <p>Required for</p>{' '}
@@ -165,32 +188,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                 <span className={styles.total}>75</span>
               </div>
             </div>
-            <div id="gradex">
-              {60 - parseFloat(overall.total) > 0 && (
-                <>
-                  <div>
-                    <p>
-                      Expected Internal of {60 - parseFloat(overall.total)}:
-                    </p>
-                  </div>
-                  <div>
-                    <input
-                      type="number"
-                      value={expectedInternal}
-                      onChange={(e) => {
-                        if (
-                          Number(e.target.value) > 0 &&
-                          Number(e.target.value) <=
-                            Number(60 - parseFloat(overall.total))
-                        ) {
-                          setExpectedInternal(Number(e.target.value));
-                        }
-                      }}
-                    />
-                  </div>
-                </>
-              )}
-            </div>
+            
             <span id="warn">
               This shows how many marks you want to get in the final semester
               exam! So make sure ur total internal is at 60

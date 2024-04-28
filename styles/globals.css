@@ -284,8 +284,9 @@ hr {
   -webkit-box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
   box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
   z-index: 2;
+  gap: 6px;
   position: absolute;
-  bottom: -76px;
+  top: 220px;
   flex-direction: column;
   padding: 6px 14px;
   background: var(--background-light);
@@ -306,7 +307,6 @@ hr {
     background: #ffcb6343;
     font-size: 12px;
     margin: 0px -14px;
-    margin-top: 6px;
     padding: 4px 12px;
     margin-bottom: -6px;
     border-radius: 0px 0px 6px 6px;
