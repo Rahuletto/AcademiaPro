@@ -148,9 +148,11 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                     <input
                       type="number"
                       value={expectedInternal}
+                      min={0}
+                      max={60 - parseFloat(overall.total)}
                       onChange={(e) => {
                         if (
-                          Number(e.target.value) > 0 &&
+                          Number(e.target.value) >= 0 &&
                           Number(e.target.value) <=
                             Number(60 - parseFloat(overall.total))
                         ) {
