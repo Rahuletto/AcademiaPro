@@ -157,7 +157,7 @@
   animation-delay: 1.2s;
   opacity: 0;
 
-  background: #04070b;
+  background: var(--background-darker);
   padding: 12px 20px;
   border-radius: 50px;
   width: -webkit-fill-available;

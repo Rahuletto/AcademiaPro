@@ -11,18 +11,21 @@
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
     "@vercel/og": "^0.6.2",
+    "@wojtekmaj/react-hooks": "^1.20.0",
     "fuse.js": "^7.0.0",
     "next": "^14.2.3",
     "next-pwa": "^5.6.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.1.0",
-    "react-loading-skeleton": "^3.4.0"
+    "react-loading-skeleton": "^3.4.0",
+    "react-pdf": "^6.0.2"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-pdf": "^7.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.2",
     "typescript": "^5"

@@ -9,7 +9,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #04070b;
+  background-color: var(--background-darker);
   padding: 6px;
   border-radius: 50px;
   -webkit-border-radius: 50px;

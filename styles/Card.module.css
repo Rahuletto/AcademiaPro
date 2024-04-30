@@ -10,7 +10,7 @@
     padding: 0px 12px;
     border-radius: 50px;
     font-weight: 700;
-    color: #0a0d12;
+    color: var(--background-darker);
 }
 
 .card {
@@ -29,7 +29,7 @@
 
 .attendance {
     max-width: 108px;
-    background-color: #04070b;
+    background-color: var(--background-darker);
     border-radius: 50px;
     display: -webkit-box;
     -webkit-user-select: none;
@@ -54,7 +54,7 @@
 }
 .circle {
     border-radius: 50px;
-    background-color: #f3d86a;
+    background-color: var(--theory);
     border: 2px solid transparent;
     display: inline-block;
     min-width: 10px;
@@ -66,7 +66,7 @@
 }
 .greenCircle {
     background: transparent;
-    border: 2px solid #70fa70;
+    border: 2px solid var(--practical);
 }
 .subjectCode {
     background: #d4d4d4;
@@ -118,15 +118,23 @@
 }
 
 .card td:first-child {
-    border-radius: 12px 0 0 12px;
+    border-radius: 16px 0 0 16px;
+    -webkit-border-radius: 16px 0 0 16px;
+    -moz-border-radius: 16px 0 0 16px;
+    -ms-border-radius: 16px 0 0 16px;
+    -o-border-radius: 16px 0 0 16px;
 }
 
 .card td:last-child {
-    border-radius: 0 12px 12px 0;
+    border-radius: 0 16px 16px 0;
+    -webkit-border-radius: 0 16px 16px 0;
+    -moz-border-radius: 0 16px 16px 0;
+    -ms-border-radius: 0 16px 16px 0;
+    -o-border-radius: 0 16px 16px 0;
 }
 
 .practical {
-    background: #70fa70 !important;
+    background: var(--practical) !important;
 }
 
 .card h4 {
@@ -135,7 +143,7 @@
 }
 
 .card:nth-child(2n + 1) td {
-    background: #0a0d12;
+    background: var(--background);
 }
 
 @media only screen and (max-width: 766px) {

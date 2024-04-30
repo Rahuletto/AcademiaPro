@@ -29,6 +29,7 @@ import { CalendarResponse } from "@/types/Calendar";
 import CalendarGenerator from "@/components/CalendarGenerator";
 import { FaCalendar, FaCaretLeft, FaCaretRight, FaLink } from "react-icons/fa6";
 import { URL } from "@/utils/url";
+import { BiHelpCircle } from "react-icons/bi";
 
 export default function Academia() {
   const router = useRouter();
@@ -146,7 +147,10 @@ export default function Academia() {
         <div className="nav-hider"></div>
         <div className="nav">
           <div className="navbox">
+          <div className="nav-title">
             <h1>Academia</h1>
+              <Link href="/docs"><BiHelpCircle title="How to use it like a pro?" /></Link>
+            </div>
             <div style={{ display: "flex", gap: 12 }}>
               {day && (
                 <>

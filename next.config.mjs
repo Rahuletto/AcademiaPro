@@ -16,6 +16,7 @@ const config = withPWA({
   reactStrictMode: true,
   compress: true,
   webpack: (config) => {
+    config.resolve.alias.canvas = false
     config.experiments = {
       topLevelAwait: true,
       layers: true,

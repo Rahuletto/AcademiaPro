@@ -6,10 +6,11 @@
 */
 
 :root {
-  --background: #0f131a;
-  --background-dark: #04070b;
+  --background: #0c1015;
+  --background-dark: #030609;
   --background-darker: #04070b;
-  --background-light: #12171e;
+  --background-light: #1b2129;
+  --buttons: #11151c;
   --side-active: #171d26;
   --accent: #b3b3d1;
   --theory: #f3d86a;
@@ -205,6 +206,12 @@ a:active {
   animation-duration: 3s !important;
 }
 
+.react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1,
 h2,
 h3,
@@ -275,16 +282,16 @@ hr {
 }
 
 .markGrid{
-  border-radius: 34;
-  -webkit-border-radius: 34;
-  -moz-border-radius: 34;
-  -ms-border-radius: 34;
-  -o-border-radius: 34;
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
   background: var(--background);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   grid-template-rows: min-content;
-  margin-bottom: 32;  
+  margin-bottom: 32;
 }
 .grade {
   width: -webkit-fill-available;

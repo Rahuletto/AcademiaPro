@@ -119,6 +119,7 @@ import { FaCalendar, FaLink } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import Fuse from "fuse.js";
 import { URL } from "@/utils/url";
+import { BiHelpCircle } from "react-icons/bi";
 
 export default function Urls() {
   const router = useRouter();
@@ -232,7 +233,12 @@ export default function Urls() {
         <div className="nav-hider"></div>
         <div className="nav">
           <div className="navbox">
-            <h1>Academia</h1>
+            <div className="nav-title">
+              <h1>Academia</h1>
+              <Link href="/docs">
+                <BiHelpCircle title="How to use it like a pro?" />
+              </Link>
+            </div>
             <div style={{ display: "flex", gap: 12 }}>
               {day && (
                 <>
@@ -303,7 +309,12 @@ export default function Urls() {
               </Link>
             </div>
           </div>
-          {userInfo && <Profile data={userInfo} />}
+          <div className="nav-foot">
+            <Link href="/docs">
+              <BiHelpCircle title="How to use it like a pro?" /> Use it like a pro
+            </Link>
+            {userInfo && <Profile data={userInfo} />}
+          </div>
         </div>
 
         <button name="Open navbar" className="open">
@@ -334,29 +345,29 @@ export default function Urls() {
               <h2>URLs</h2>
             </div>
             <div className={styles.priority}>
-            {priorityUrl.map((k, i) => (
-              <div className={styles.urlBox} title="Sites we made" key={i}>
-                <span
-                  style={{
-                    display: "inline-flex",
-                    gap: 16,
-                    alignItems: "center",
-                  }}
-                >
-                  {k.site}{" "}
-                  <GoDotFill
-                    title="Starlet websites"
-                    style={{ color: "#6C479A" }}
-                  />
-                </span>
-                <Link href={k.url} className={styles.url}>
-                  {k.url}
-                </Link>
-                <Link href={k.url} className={styles.mobile}>
-                  Open
-                </Link>
-              </div>
-            ))}
+              {priorityUrl.map((k, i) => (
+                <div className={styles.urlBox} title="Sites we made" key={i}>
+                  <span
+                    style={{
+                      display: "inline-flex",
+                      gap: 16,
+                      alignItems: "center",
+                    }}
+                  >
+                    {k.site}{" "}
+                    <GoDotFill
+                      title="Starlet websites"
+                      style={{ color: "#6C479A" }}
+                    />
+                  </span>
+                  <Link href={k.url} className={styles.url}>
+                    {k.url}
+                  </Link>
+                  <Link href={k.url} className={styles.mobile}>
+                    Open
+                  </Link>
+                </div>
+              ))}
             </div>
             <span> </span>
             {array.map((k: any, i) => (

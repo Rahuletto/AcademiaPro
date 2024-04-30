@@ -79,9 +79,9 @@ section {
 }
 .nav-buttons a {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #ebebeb;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,9 +163,9 @@ section {
 
 .nav h1 {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   color: #fff;
   font-weight: 500;
   font-size: 32px;
@@ -180,9 +180,9 @@ section {
 
 .subtitle {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   font-size: 24px;
   font-weight: bold;
   margin: 18px 0px;
@@ -194,12 +194,12 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   gap: 32px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .paginate button {
@@ -227,6 +227,44 @@ section {
   border-color: var(--red) !important;
 }
 
+.nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-title a {
+  color: rgba(255, 255, 255, 0.4) !important;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.nav-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-foot a {
+  color: var(--accent);
+  background: var(--side-active);
+  padding: 8px 22px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.nav-foot a svg {
+  font-size: 20px;
+}
 
 .open {
   display: none;
@@ -276,7 +314,7 @@ section {
     transform: translateX(0px);
   }
 }
-@media only screen and (max-width: 1015px) {
+@media only screen and (max-width: 1100px) {
   body {
     padding-left: 12px !important;
   }
@@ -360,10 +398,10 @@ section {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     width: -webkit-fill-available;
-    gap: 12px
+    gap: 12px;
   }
 
   .table thead tr {

@@ -45,7 +45,7 @@
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 
-  background-color: #04070b;
+  background-color: var(--background-darker);
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -128,7 +128,7 @@
 }
 
 .login button {
-  background-color: #0a0d12;
+  background-color: var(--buttons);
   color: var(--accent);
   cursor: pointer;
   border: 2px solid transparent;
