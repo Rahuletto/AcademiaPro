@@ -262,7 +262,7 @@ export default function Academia() {
           <div className="navbox">
             <div className="nav-title">
             <h1>Academia</h1>
-              <Link href="/docs"><BiHelpCircle title="How to use it like a pro?" /></Link>
+              {/* <Link href="/docs"><BiHelpCircle title="How to use it like a pro?" /></Link> */}
             </div>
             
             <div style={{ display: "flex", gap: 12 }}>

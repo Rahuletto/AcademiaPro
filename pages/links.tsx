@@ -235,9 +235,9 @@ export default function Urls() {
           <div className="navbox">
             <div className="nav-title">
               <h1>Academia</h1>
-              <Link href="/docs">
+              {/* <Link href="/docs">
                 <BiHelpCircle title="How to use it like a pro?" />
-              </Link>
+              </Link> */}
             </div>
             <div style={{ display: "flex", gap: 12 }}>
               {day && (
@@ -311,9 +311,10 @@ export default function Urls() {
           </div>
           <div className="nav-foot">
             <Link href="/docs">
-              <BiHelpCircle title="How to use it like a pro?" /> Use it like a pro
+              <BiHelpCircle title="How to use it like a pro?" /> Use it like a
+              pro
             </Link>
-            {userInfo && <Profile data={userInfo} />}
+            <Profile data={userInfo} />
           </div>
         </div>
 

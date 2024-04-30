@@ -147,9 +147,9 @@ export default function Academia() {
         <div className="nav-hider"></div>
         <div className="nav">
           <div className="navbox">
-          <div className="nav-title">
-            <h1>Academia</h1>
-              <Link href="/docs"><BiHelpCircle title="How to use it like a pro?" /></Link>
+            <div className="nav-title">
+              <h1>Academia</h1>
+              {/* <Link href="/docs"><BiHelpCircle title="How to use it like a pro?" /></Link> */}
             </div>
             <div style={{ display: "flex", gap: 12 }}>
               {day && (
@@ -221,7 +221,13 @@ export default function Academia() {
               </Link>
             </div>
           </div>
-          {userInfo && <Profile data={userInfo} />}
+          <div className="nav-foot">
+            <Link href="/docs">
+              <BiHelpCircle title="How to use it like a pro?" /> Use it like a
+              pro
+            </Link>
+            <Profile data={userInfo} />
+          </div>
         </div>
 
         <button name="Open navbar" className="open">
