@@ -1,23 +1,25 @@
-import "@/styles/globals.css";
-import "@/styles/academia.css";
+import '@/styles/globals.css';
+import '@/styles/academia.css';
 
-import "react-loading-skeleton/dist/skeleton.css";
+import 'react-loading-skeleton/dist/skeleton.css';
 
-import type { AppProps } from "next/app";
+import type { AppProps } from 'next/app';
 
-import { Analytics } from "@vercel/analytics/react";
-import { Inter } from "next/font/google";
-import { Component } from "react";
-import ErrorStack from "./error";
-import Script from "next/script";
+import { Analytics } from '@vercel/analytics/react';
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
+
+import { Inter } from 'next/font/google';
+import { Component } from 'react';
+import ErrorStack from './error';
+import Script from 'next/script';
 
 const inter = Inter({
-  fallback: ["sans-serif"],
-  weight: ["500", "600"],
-  display: "swap",
-  style: ["normal"],
-  subsets: ["latin"],
-  variable: "--main-font",
+  fallback: ['sans-serif'],
+  weight: ['500', '600'],
+  display: 'swap',
+  style: ['normal'],
+  subsets: ['latin'],
+  variable: '--main-font',
 });
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -31,22 +33,9 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </style>
       <Analytics />
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-WP4J311ZNK"
-      ></Script>
+      <GoogleAnalytics gaId="G-WP4J311ZNK" />
+      <GoogleTagManager gtmId="G-WP4J311ZNK" />
 
-
-      <Script
-        id="gtag-init"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-WP4J311ZNK');
-          `,
-        }}
-      />
       <ErrorBoundary>
         <Component {...pageProps} />
       </ErrorBoundary>

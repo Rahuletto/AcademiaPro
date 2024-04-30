@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.3",
     "@vercel/analytics": "^1.2.2",
     "@vercel/og": "^0.6.2",
     "@wojtekmaj/react-hooks": "^1.20.0",
