@@ -274,6 +274,18 @@ hr {
   box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
 }
 
+.markGrid{
+  border-radius: 34;
+  -webkit-border-radius: 34;
+  -moz-border-radius: 34;
+  -ms-border-radius: 34;
+  -o-border-radius: 34;
+  background: var(--background);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-template-rows: min-content;
+  margin-bottom: 32;  
+}
 .grade {
   width: -webkit-fill-available;
   display: none;
@@ -315,6 +327,7 @@ hr {
     -ms-border-radius: 0px 0px 6px 6px;
     -o-border-radius: 0px 0px 6px 6px;
 }
+
 #gradex select, input {
   outline: none;
   background: var(--background-dark);

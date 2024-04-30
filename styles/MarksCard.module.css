@@ -10,6 +10,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   height: -webkit-fill-available;
+  max-height: max-content;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -145,4 +146,10 @@
   gap: 16px;
   position: relative;
   flex-direction: column;
+}
+@media (max-width: 900px) {
+  .card{
+    height: auto !important;
+  }
+
 }
