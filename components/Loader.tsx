@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import styles from "@/styles/Loader.module.css";
+import Link from "next/link";
 
 const Loader: React.FC = () => {
   useEffect(() => {
@@ -11,7 +12,7 @@ const Loader: React.FC = () => {
         setTimeout(() => {
           loader.style.display = "none";
         }, 100);
-      }, 2000);
+      }, 1500);
   }, []);
   return (
     <div className={[styles.loader, "loadScreen"].join(" ")}>
@@ -50,6 +51,12 @@ const Loader: React.FC = () => {
           strokeDashoffset="10"
         />
       </svg>
+      <p className={styles.credits}>
+        Made by <Link href="https://marban.is-a.dev">Marban</Link> and{" "}
+        <Link href="https://www.linkedin.com/in/srivishal-sivasubramanian-1a09b9240/">
+          root-daemon
+        </Link>
+      </p>
     </div>
   );
 };

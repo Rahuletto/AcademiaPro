@@ -106,11 +106,6 @@ export default function Academia() {
       nav?.classList.remove("viewable");
       navCloser?.classList.remove("viewable");
     });
-
-    const home = document.querySelector(".h-button[href='#timetable']");
-    home?.addEventListener("click", () => {
-      setTimeout(() => window.scroll(0, 0), 20);
-    });
   }, []);
 
   useEffect(() => {

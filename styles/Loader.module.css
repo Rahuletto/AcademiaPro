@@ -13,6 +13,27 @@
   animation-iteration-count: infinite;
 }
 
+.credits {
+  color: #adadafd9;
+  font-size: 14px;
+  width: 100vw;
+  position: absolute;
+  bottom: 24px;
+  text-align: center;
+}
+
+.credits a {
+  background-color: var(--accent);
+  color: var(--background-dark);
+  padding: 2px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
 .loadingRing {
   -webkit-animation-name: bump;
   animation-name: bump;
