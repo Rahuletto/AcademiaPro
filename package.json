@@ -6,7 +6,8 @@
     "dev": "next dev --port 243",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky"
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
