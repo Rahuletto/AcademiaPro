@@ -172,10 +172,17 @@ section {
 }
 
 .content {
+  scroll-behavior: smooth;
   width: -webkit-fill-available;
   background: var(--background-dark);
   border-radius: 28px;
+  height: 96vh;
+  overflow: auto;
   padding: 24px 32px;
+}
+
+.content::-webkit-scrollbar {
+  width: 0px;
 }
 
 .subtitle {
@@ -281,7 +288,7 @@ section {
   border-radius: 50px;
   width: 48px;
   height: 48px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 700;
   border: 2px solid #0a0d12;
   font-size: 14px;

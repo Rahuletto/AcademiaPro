@@ -105,6 +105,8 @@ export default function Academia() {
     const sections = document.querySelectorAll('section');
     const menu_links = document.querySelectorAll('.h-button');
 
+    const container = document.querySelector('.content');
+
     const makeActive = (link: number) =>
       menu_links[link].classList.add('active');
     const removeActive = (link: number) =>
@@ -116,13 +118,14 @@ export default function Academia() {
 
     let currentActive = 0;
 
-    window.addEventListener('scroll', () => {
+    container?.addEventListener('scroll', (e) => {
       const current =
         sections.length -
         [...sections]
           .reverse()
           .findIndex(
-            (section) => window.scrollY >= section.offsetTop - sectionMargin,
+            (section) =>
+              container.scrollTop >= section.offsetTop - sectionMargin,
           ) -
         1;
 

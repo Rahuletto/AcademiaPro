@@ -6,7 +6,7 @@ const Header = ({ title }: { title?: string } = { title: 'AcademiaPro' }) => (
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="/favicons/maskable.png"
+      href="/favicons/256.png"
     ></link>
     <link rel="manifest" href="/manifest.json" />
     {/* PWA */}
