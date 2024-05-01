@@ -177,6 +177,9 @@ section {
   background: var(--background-dark);
   border-radius: 28px;
   height: 96vh;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
   overflow: auto;
   padding: 24px 32px;
 }
@@ -192,7 +195,7 @@ section {
   user-select: none;
   font-size: 24px;
   font-weight: bold;
-  margin: 18px 0px;
+  margin-bottom: 18px;
   color: #ebebeb;
 }
 
@@ -278,21 +281,16 @@ section {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 5;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 5;
   background: #0a0d12;
   color: #d4d4d4;
   border-radius: 50px;
   width: 48px;
   height: 48px;
-  font-family: 'Inter';
-  font-weight: 700;
   border: 2px solid #0a0d12;
-  font-size: 14px;
   border: 2px solid rgb(7, 7, 7);
+
+  z-index: 20;
+  font-size: 28px;
 }
 .viewable {
   -webkit-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
@@ -360,8 +358,10 @@ section {
     animation: 0.4s slide forwards;
   }
   .open {
-    display: block;
     z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

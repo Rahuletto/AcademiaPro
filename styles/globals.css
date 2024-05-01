@@ -281,7 +281,7 @@ hr {
   box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
 }
 
-.markGrid{
+.markGrid {
   border-radius: 34px;
   -webkit-border-radius: 34px;
   -moz-border-radius: 34px;
@@ -322,20 +322,21 @@ hr {
 }
 
 #warn {
-    color: rgba(255,255,255,0.45);
-    background: #ffcb6343;
-    font-size: 12px;
-    margin: 0px -14px;
-    padding: 4px 12px;
-    margin-bottom: -6px;
-    border-radius: 0px 0px 6px 6px;
-    -webkit-border-radius: 0px 0px 6px 6px;
-    -moz-border-radius: 0px 0px 6px 6px;
-    -ms-border-radius: 0px 0px 6px 6px;
-    -o-border-radius: 0px 0px 6px 6px;
+  color: rgba(255, 255, 255, 0.45);
+  background: #ffcb6343;
+  font-size: 12px;
+  margin: 0px -14px;
+  padding: 4px 12px;
+  margin-bottom: -6px;
+  border-radius: 0px 0px 6px 6px;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  -moz-border-radius: 0px 0px 6px 6px;
+  -ms-border-radius: 0px 0px 6px 6px;
+  -o-border-radius: 0px 0px 6px 6px;
 }
 
-#gradex select, input {
+#gradex select,
+input {
   outline: none;
   background: var(--background-dark);
   padding: 4px 8px;
@@ -351,19 +352,18 @@ hr {
   text-indent: 1px;
   text-overflow: '';
 }
-#gradex input{
-  width: 40px ;
+#gradex input {
+  width: 40px;
 }
-#gradex input[type="number"]::-webkit-inner-spin-button, 
-#gradex input[type="number"]::-webkit-outer-spin-button {
+#gradex input[type='number']::-webkit-inner-spin-button,
+#gradex input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-#gradex input[type="number"] {
-  -moz-appearance: textfield; 
+#gradex input[type='number'] {
+  -moz-appearance: textfield;
 }
-
 
 #gradex {
   display: flex;
@@ -388,6 +388,19 @@ hr {
 .tt-page {
   width: 100vw;
   height: auto;
+}
+
+.head-time span {
+  padding: 2px 6px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.current-time {
+  background: var(--green);
+  color: var(--background-darker);
 }
 
 .back-tt {
