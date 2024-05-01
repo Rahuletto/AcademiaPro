@@ -6,7 +6,7 @@ export default function Offline() {
         <title>Offline | AcademiaPro?</title>
       </Head>
       <div className="container">
-        <h1 style={{ fontSize: '98px', color: 'var(--red)' }}>
+        <h1 style={{ fontSize: '98px', color: '#f75b5b' }}>
           <svg
             stroke="currentColor"
             fill="currentColor"
@@ -24,104 +24,86 @@ export default function Offline() {
       </div>
       <style>
         {`
+          .h1,
+          .h2,
+          .h3,
+          .h4,
+          .h5,
+          .h6,
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            line-height: 1.2;
+            color: #d4d4d4;
+            font-family: var(--main-font), system-ui;
+          }
+          
+          body {
+            background-color: #0c1015 !important;
+            padding: 18px !important;
+            margin: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+          }
+          
+          .main {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 94vh;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+          }
+          
+          .container {
+            width: 80vw;
+            height: 80vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: #0f1217;
+            border-radius: 32px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            gap: 8px;
+          }
+          
+          @media only screen and (max-width: 540px) {
+            .container {
+              width: 95vw;
+              height: 95vh;
+            }
+          }
+          
+          @media only screen and (max-width: 460px) {
             .main {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                height: 94vh;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-              }
-              
-              .closebutton {
-                background-color: var(--background);
-                color: var(--accent);
-                border: 2px solid #b3b3d127;
-                border-radius: 12px;
-                padding: 6px 12px;
-                font-size: 16px;
-                font-weight: 500;
-                z-index: 3;
-                cursor: pointer;
-              }
-              
-              .container {
-                width: 80vw;
-                height: 80vh;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                background: #0f1217;
-                border-radius: 32px;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                flex-direction: column;
-                gap: 8px;
-              }
-              
-              .container p {
-                color: var(--level-color);
-                font-size: 16px;
-                text-align: center;
-              }
-              
-              .errorStack {
-                color: var(--red) !important;
-                white-space: break-spaces;
-              
-                background: transparent !important;
-                border: 0px solid transparent;
-                padding: 0px !important;
-              }
-              
-              .errorPre {
-                margin: 10px 32px;
-                background: var(--background);
-                border: 1px solid var(--border);
-                padding: 4px 10px;
-                border-radius: 12px;
-                width: -webkit-fill-available;
-                font-family: var(--jb-font);
-                font-size: 14px;
-                display: block;
-                white-space: pre-line;
-                color: var(--color) !important;
-                margin-bottom: 30px;
-              }
-              @media only screen and (max-width: 540px) {
-                .container {
-                  width: 95vw;
-                  height: 95vh;
-                }
-              }
-              
-              @media only screen and (max-width: 460px) {
-                .main {
-                  margin: 12px;
-                }
-                .errorPre {
-                  margin: 0px !important;
-                  width: 100%;
-                }
-              
-                .container {
-                  padding: 24px;
-                }
-                .container p {
-                  font-size: 16px;
-                }
-              }`}
+              margin: 12px;
+            }
+          
+            .container {
+              padding: 24px;
+            }
+          }
+          
+        `}
       </style>
     </main>
   );

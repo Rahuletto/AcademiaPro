@@ -10,7 +10,7 @@ const withPWA = pwa({
   skipWaiting: true,
   fallbacks: {
     image: '/fallback.png',
-    document: '/offline',
+    document: '/_offline',
   },
 });
 
