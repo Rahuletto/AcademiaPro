@@ -1,9 +1,13 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-const Header = ({ title }: { title?: string } = { title: "AcademiaPro" }) => (
+const Header = ({ title }: { title?: string } = { title: 'AcademiaPro' }) => (
   <Head>
-    <title>{title || "AcademiaPro"}</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.svg"></link>
+    <title>{title || 'AcademiaPro'}</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/favicons/maskable.png"
+    ></link>
     <link rel="manifest" href="/manifest.json" />
     {/* PWA */}
     <meta name="application-name" content="AcademiaPro" />

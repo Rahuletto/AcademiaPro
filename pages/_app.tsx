@@ -11,7 +11,6 @@ import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
 import { Inter } from 'next/font/google';
 import { Component } from 'react';
 import ErrorStack from './error';
-import Script from 'next/script';
 
 const inter = Inter({
   fallback: ['sans-serif'],
@@ -35,7 +34,6 @@ export default function App({ Component, pageProps }: AppProps) {
       <Analytics />
       <GoogleAnalytics gaId="G-WP4J311ZNK" />
       <GoogleTagManager gtmId="G-WP4J311ZNK" />
-
       <ErrorBoundary>
         <Component {...pageProps} />
       </ErrorBoundary>
