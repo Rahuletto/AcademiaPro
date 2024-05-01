@@ -12,6 +12,7 @@ interface Props {
 }
 
 import styles from '@/styles/Card.module.css';
+import { calculateMargin } from '@/utils/margin';
 import { useEffect, useState } from 'react';
 
 const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
@@ -31,23 +32,7 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
     }
     return count;
   };
-  const calculateMargin = (present: number, total: number) => {
-    const p_min = 75;
-    if ((present / total) * 100 >= p_min) {
-      return Math.floor((present - 0.75 * total) / 0.75);
-    } else {
-      let requiredClassesToAttend = 0;
-      while (
-        ((present + requiredClassesToAttend) /
-          (total + requiredClassesToAttend)) *
-          100 <
-        p_min
-      ) {
-        requiredClassesToAttend++;
-      }
-      return -requiredClassesToAttend;
-    }
-  };
+
   return (
     <>
       <tr
