@@ -17,7 +17,7 @@ const MarksTable = ({ data }: { data: MarksResponse | null }) => {
             />
           ))
         ) : (
-          <h4 style={{ opacity: '0.6', fontSize: '16px' }}>
+          <h4 style={{ opacity: '0.8', fontSize: '16px', margin: '12px 24px' }}>
             No Marks have been updated. You can catch this.
           </h4>
         )}

@@ -14,6 +14,7 @@ interface Props {
 import styles from '@/styles/Card.module.css';
 import { calculateMargin } from '@/utils/margin';
 import { useEffect, useState } from 'react';
+import { truncateString } from '../utils/truncate';
 
 const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
   const [margin, setMargin] = useState(0);
@@ -49,7 +50,7 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
               width: '-webkit-fill-available',
             }}
           >
-            <h4>{title}</h4>
+            <h4>{truncateString(title)}</h4>
 
             <div
               className={
