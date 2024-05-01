@@ -6,7 +6,7 @@ const withPWA = pwa({
   dest: 'public',
   runtimeCaching,
   register: true,
-  disable: process.env.NODE_ENV === 'development',
+  // disable: process.env.NODE_ENV === 'development',
   skipWaiting: true,
   fallbacks: {
     image: '/fallback.png',
