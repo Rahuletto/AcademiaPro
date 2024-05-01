@@ -6,7 +6,6 @@
 */
 
 .root {
-  padding-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +172,7 @@ section {
 }
 
 .content {
+  margin: 0px 6px;
   scroll-behavior: smooth;
   width: -webkit-fill-available;
   background: var(--background-dark);
