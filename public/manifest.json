@@ -34,6 +34,12 @@
       "purpose": "maskable"
     },
     {
+      "src": "/favicons/mono.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "monochrome"
+    },
+    {
       "src": "/favicons/192.png",
       "sizes": "192x192",
       "type": "image/png"
