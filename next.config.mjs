@@ -8,7 +8,6 @@ const withPWA = pwa({
   register: true,
   disable: process.env.NODE_ENV === 'development',
   skipWaiting: true,
-  customWorkerDir: 'worker',
   fallbacks: {
     image: '/fallback.png',
     document: '/offline',
