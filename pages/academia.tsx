@@ -61,17 +61,6 @@ export default function Academia() {
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
   useEffect(() => {
-    // marks timetable attendance dayorder
-    const m = localStorage.getItem('marks');
-    const tt = localStorage.getItem('timetable');
-    const a = localStorage.getItem('attendance');
-    const da = localStorage.getItem('dayOrder');
-
-    if (m) setMarks(JSON.parse(m));
-    if (tt) setTable(JSON.parse(tt));
-    if (a) setAttendance(JSON.parse(a));
-    if (da) setDay(JSON.parse(da));
-
     fetch(`${URL}/api/info`, {
       cache: 'default',
       method: 'GET',
@@ -87,7 +76,6 @@ export default function Academia() {
       .then((e) => e.json())
       .then((data) => {
         setUserInfo(data);
-        localStorage.setItem('userData', JSON.stringify(data));
       });
 
     fetch(`${URL}/api/dayorder`, {
@@ -108,7 +96,6 @@ export default function Academia() {
           clearCookies();
           window.location.reload();
         } else {
-          localStorage.setItem('dayOrder', JSON.stringify(res));
           setDay(res);
         }
       });
@@ -184,7 +171,6 @@ export default function Academia() {
             window.location.reload();
           } else {
             setAttendance(res);
-            localStorage.setItem('attendance', JSON.stringify(res));
           }
         })
         .catch(() => {});
@@ -210,7 +196,6 @@ export default function Academia() {
               window.location.reload();
             } else {
               setTable(res);
-              localStorage.setItem('timetable', JSON.stringify(res));
             }
           })
           .catch(() => {});
@@ -236,7 +221,6 @@ export default function Academia() {
             window.location.reload();
           } else {
             setMarks(res);
-            localStorage.setItem('marks', JSON.stringify(res));
           }
         })
         .catch(() => {});
