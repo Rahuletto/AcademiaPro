@@ -3,7 +3,9 @@ export function timeRange(timeRange: string) {
   const [startHour, startMinute] = startTime.split(':').map(Number);
   const [endHour, endMinute] = endTime.split(':').map(Number);
 
-  const now = new Date();
+  const now = new Date(
+    new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }),
+  );
   const currentHour = now.getHours();
   const currentMinute = now.getMinutes();
 
