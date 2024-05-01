@@ -16,7 +16,7 @@ export function TableHeader() {
               : ''
           }
         >
-          {i}
+          {i + 1}
         </span>
       </th>,
     );
