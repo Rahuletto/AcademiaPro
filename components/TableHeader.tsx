@@ -1,5 +1,5 @@
 import { endingTimesSlot, startingTimesSlot } from '@/types/Times';
-import { useState, useEffect } from 'react';
+import { timeRange } from '@/utils/range';
 
 export function TableHeader() {
   const arr = [];
@@ -11,7 +11,7 @@ export function TableHeader() {
       >
         <span
           className={
-            isTimeInRange(startingTimesSlot[i] + '-' + endingTimesSlot[i])
+            timeRange(startingTimesSlot[i] + '-' + endingTimesSlot[i])
               ? 'current-time'
               : ''
           }
@@ -22,27 +22,4 @@ export function TableHeader() {
     );
   }
   return <tr className="bg-light-gray">{...arr}</tr>;
-}
-
-function isTimeInRange(timeRange: string) {
-  const [startTime, endTime] = timeRange.split('-');
-  const [startHour, startMinute] = startTime.split(':').map(Number);
-  const [endHour, endMinute] = endTime.split(':').map(Number);
-
-  const now = new Date();
-  const currentHour = now.getHours();
-  const currentMinute = now.getMinutes();
-
-  if (
-    currentHour > startHour ||
-    (currentHour === startHour && currentMinute >= startMinute)
-  ) {
-    if (
-      currentHour < endHour ||
-      (currentHour === endHour && currentMinute < endMinute)
-    ) {
-      return true;
-    }
-  }
-  return false;
 }
