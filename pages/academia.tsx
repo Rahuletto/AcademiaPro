@@ -1,52 +1,52 @@
-import dynamic from "next/dynamic";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import dynamic from 'next/dynamic';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 const AttendanceTable = dynamic(
-  () => import("@/components/Attendance").then((mod) => mod.default),
+  () => import('@/components/Attendance').then((mod) => mod.default),
   { ssr: false },
 );
 
 const MarksTable = dynamic(
-  () => import("@/components/Marks").then((mod) => mod.default),
+  () => import('@/components/Marks').then((mod) => mod.default),
   { ssr: false },
 );
 
 const TimeTableComponent = dynamic(
-  () => import("@/components/Timetable").then((mod) => mod.default),
+  () => import('@/components/Timetable').then((mod) => mod.default),
   { ssr: false },
 );
 
 const DayOrder = dynamic(
-  () => import("@/components/badges/DayOrder").then((mod) => mod.default),
+  () => import('@/components/badges/DayOrder').then((mod) => mod.default),
   { ssr: false },
 );
 
 const Hour = dynamic(
-  () => import("@/components/badges/Hour").then((mod) => mod.default),
+  () => import('@/components/badges/Hour').then((mod) => mod.default),
   { ssr: false },
 );
 
 const Profile = dynamic(
-  () => import("@/components/badges/Profile").then((mod) => mod.default),
+  () => import('@/components/badges/Profile').then((mod) => mod.default),
   { ssr: false },
 );
 
-import type { AttendanceResponse } from "@/types/Attendance";
-import type { DayOrderResponse } from "@/types/DayOrder";
-import type { MarksResponse } from "@/types/Marks";
-import type { TimeTableResponse } from "@/types/TimeTable";
-import type { InfoResponse } from "@/types/UserInfo";
+import type { AttendanceResponse } from '@/types/Attendance';
+import type { DayOrderResponse } from '@/types/DayOrder';
+import type { MarksResponse } from '@/types/Marks';
+import type { TimeTableResponse } from '@/types/TimeTable';
+import type { InfoResponse } from '@/types/UserInfo';
 
-import { clearCookies, getCookie } from "@/utils/cookies";
+import { clearCookies, getCookie } from '@/utils/cookies';
 
-import Header from "@/components/Header";
-import Loader from "@/components/Loader";
-import { FaCalendar, FaLink } from "react-icons/fa6";
-import Skeleton from "react-loading-skeleton";
-import { URL } from "@/utils/url";
-import { BiHelpCircle } from "react-icons/bi";
+import Header from '@/components/Header';
+import Loader from '@/components/Loader';
+import { FaCalendar, FaLink } from 'react-icons/fa6';
+import Skeleton from 'react-loading-skeleton';
+import { URL } from '@/utils/url';
+import { BiHelpCircle } from 'react-icons/bi';
 
 export default function Academia() {
   const router = useRouter();
@@ -62,10 +62,10 @@ export default function Academia() {
 
   useEffect(() => {
     // marks timetable attendance dayorder
-    const m = localStorage.getItem("marks");
-    const tt = localStorage.getItem("timetable");
-    const a = localStorage.getItem("attendance");
-    const da = localStorage.getItem("dayOrder");
+    const m = localStorage.getItem('marks');
+    const tt = localStorage.getItem('timetable');
+    const a = localStorage.getItem('attendance');
+    const da = localStorage.getItem('dayOrder');
 
     if (m) setMarks(JSON.parse(m));
     if (tt) setTable(JSON.parse(tt));
@@ -73,33 +73,33 @@ export default function Academia() {
     if (da) setDay(JSON.parse(da));
 
     fetch(`${URL}/api/info`, {
-      cache: "default",
-      method: "GET",
+      cache: 'default',
+      method: 'GET',
       headers: {
-        "X-CSRF-Token": getCookie("token") as string,
-        "Set-Cookie": getCookie("token") as string,
-        Cookie: getCookie("token") as string,
-        Connection: "keep-alive",
-        "content-type": "application/json",
-        "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+        'X-CSRF-Token': getCookie('token') as string,
+        'Set-Cookie': getCookie('token') as string,
+        Cookie: getCookie('token') as string,
+        Connection: 'keep-alive',
+        'content-type': 'application/json',
+        'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
       },
     })
       .then((e) => e.json())
       .then((data) => {
         setUserInfo(data);
-        localStorage.setItem("userData", JSON.stringify(data));
+        localStorage.setItem('userData', JSON.stringify(data));
       });
 
     fetch(`${URL}/api/dayorder`, {
-      cache: "default",
-      method: "GET",
+      cache: 'default',
+      method: 'GET',
       headers: {
-        "X-CSRF-Token": getCookie("token") as string,
-        "Set-Cookie": getCookie("token") as string,
-        Cookie: getCookie("token") as string,
-        Connection: "keep-alive",
-        "Accept-Encoding": "gzip, deflate, br, zstd",
-        "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=7200",
+        'X-CSRF-Token': getCookie('token') as string,
+        'Set-Cookie': getCookie('token') as string,
+        Cookie: getCookie('token') as string,
+        Connection: 'keep-alive',
+        'Accept-Encoding': 'gzip, deflate, br, zstd',
+        'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=7200',
       },
     })
       .then((r) => r.json())
@@ -108,20 +108,20 @@ export default function Academia() {
           clearCookies();
           window.location.reload();
         } else {
-          localStorage.setItem("dayOrder", JSON.stringify(res));
+          localStorage.setItem('dayOrder', JSON.stringify(res));
           setDay(res);
         }
       });
 
-    if (!getCookie("token")) router.push("/login");
+    if (!getCookie('token')) router.push('/login');
 
-    const sections = document.querySelectorAll("section");
-    const menu_links = document.querySelectorAll(".h-button");
+    const sections = document.querySelectorAll('section');
+    const menu_links = document.querySelectorAll('.h-button');
 
     const makeActive = (link: number) =>
-      menu_links[link].classList.add("active");
+      menu_links[link].classList.add('active');
     const removeActive = (link: number) =>
-      menu_links[link].classList.remove("active");
+      menu_links[link].classList.remove('active');
     const removeAllActive = () =>
       [...Array(sections.length).keys()].forEach((link) => removeActive(link));
 
@@ -129,7 +129,7 @@ export default function Academia() {
 
     let currentActive = 0;
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       const current =
         sections.length -
         [...sections]
@@ -146,35 +146,35 @@ export default function Academia() {
       }
     });
 
-    const btn = document.querySelector(".open");
-    const nav = document.querySelector(".nav");
-    const navCloser = document.querySelector(".nav-hider");
+    const btn = document.querySelector('.open');
+    const nav = document.querySelector('.nav');
+    const navCloser = document.querySelector('.nav-hider');
 
-    btn?.addEventListener("click", (e) => {
+    btn?.addEventListener('click', (e) => {
       e.preventDefault();
-      nav?.classList.toggle("viewable");
-      navCloser?.classList.toggle("viewable");
+      nav?.classList.toggle('viewable');
+      navCloser?.classList.toggle('viewable');
     });
 
-    navCloser?.addEventListener("click", () => {
-      nav?.classList.remove("viewable");
-      navCloser?.classList.remove("viewable");
+    navCloser?.addEventListener('click', () => {
+      nav?.classList.remove('viewable');
+      navCloser?.classList.remove('viewable');
     });
   }, []);
 
   useEffect(() => {
     if (userInfo) {
       fetch(`${URL}/api/attendance`, {
-        cache: "default",
+        cache: 'default',
         next: { revalidate: 3600 },
-        method: "GET",
+        method: 'GET',
         headers: {
-          "X-CSRF-Token": getCookie("token") as string,
-          "Set-Cookie": getCookie("token") as string,
-          Cookie: getCookie("token") as string,
-          Connection: "keep-alive",
-          "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+          'X-CSRF-Token': getCookie('token') as string,
+          'Set-Cookie': getCookie('token') as string,
+          Cookie: getCookie('token') as string,
+          Connection: 'keep-alive',
+          'Accept-Encoding': 'gzip, deflate, br, zstd',
+          'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
         },
       })
         .then((r) => r.json())
@@ -184,28 +184,25 @@ export default function Academia() {
             window.location.reload();
           } else {
             setAttendance(res);
-            localStorage.setItem("attendance", JSON.stringify(res));
+            localStorage.setItem('attendance', JSON.stringify(res));
           }
         })
         .catch(() => {});
 
       if (!table?.table) {
-        fetch(
-          `${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`,
-          {
-            cache: "default",
-            method: "GET",
-            headers: {
-              "X-CSRF-Token": getCookie("token") as string,
-              "Set-Cookie": getCookie("token") as string,
-              Cookie: getCookie("token") as string,
-              Connection: "keep-alive",
-              "Accept-Encoding": "gzip, deflate, br, zstd",
-              "Cache-Control":
-                "private, maxage=86400, stale-while-revalidate=7200",
-            },
+        fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
+          cache: 'default',
+          method: 'GET',
+          headers: {
+            'X-CSRF-Token': getCookie('token') as string,
+            'Set-Cookie': getCookie('token') as string,
+            Cookie: getCookie('token') as string,
+            Connection: 'keep-alive',
+            'Accept-Encoding': 'gzip, deflate, br, zstd',
+            'Cache-Control':
+              'private, maxage=86400, stale-while-revalidate=7200',
           },
-        )
+        })
           .then((r) => r.json())
           .then((res) => {
             if (res.token_refresh) {
@@ -213,23 +210,23 @@ export default function Academia() {
               window.location.reload();
             } else {
               setTable(res);
-              localStorage.setItem("timetable", JSON.stringify(res));
+              localStorage.setItem('timetable', JSON.stringify(res));
             }
           })
           .catch(() => {});
       }
 
       fetch(`${URL}/api/marks`, {
-        cache: "default",
+        cache: 'default',
         next: { revalidate: 3600 },
-        method: "GET",
+        method: 'GET',
         headers: {
-          "X-CSRF-Token": getCookie("token") as string,
-          "Set-Cookie": getCookie("token") as string,
-          Cookie: getCookie("token") as string,
-          Connection: "keep-alive",
-          "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+          'X-CSRF-Token': getCookie('token') as string,
+          'Set-Cookie': getCookie('token') as string,
+          Cookie: getCookie('token') as string,
+          Connection: 'keep-alive',
+          'Accept-Encoding': 'gzip, deflate, br, zstd',
+          'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
         },
       })
         .then((r) => r.json())
@@ -239,7 +236,7 @@ export default function Academia() {
             window.location.reload();
           } else {
             setMarks(res);
-            localStorage.setItem("marks", JSON.stringify(res));
+            localStorage.setItem('marks', JSON.stringify(res));
           }
         })
         .catch(() => {});
@@ -247,25 +244,28 @@ export default function Academia() {
   }, [userInfo]);
 
   useEffect(() => {
-    if (day && !day.dayOrder.includes("No"))
+    if (day && !day.dayOrder.includes('No'))
       setToday(table?.table[Number(day.dayOrder) - 1].subjects);
+    else if (day && day.dayOrder.includes('No')) {
+      setToday([]);
+    }
   }, [table, day]);
 
   return (
     <>
       <Loader />
-      <Header title={"Academia | AcademiaPro"} />
+      <Header title={'Academia | AcademiaPro'} />
 
       <main className="root">
         <div className="nav-hider"></div>
         <div className="nav">
           <div className="navbox">
             <div className="nav-title">
-            <h1>Academia</h1>
+              <h1>Academia</h1>
               {/* <Link href="/docs"><BiHelpCircle title="How to use it like a pro?" /></Link> */}
             </div>
-            
-            <div style={{ display: "flex", gap: 12 }}>
+
+            <div style={{ display: 'flex', gap: 12 }}>
               <>
                 <DayOrder data={day} />
                 {todayTable && userInfo ? (
@@ -273,9 +273,9 @@ export default function Academia() {
                 ) : (
                   <Skeleton
                     style={{
-                      width: "100px",
-                      height: "30px",
-                      borderRadius: "12px",
+                      width: '100px',
+                      height: '30px',
+                      borderRadius: '12px',
                       opacity: 0.6,
                     }}
                   />
@@ -347,7 +347,8 @@ export default function Academia() {
           </div>
           <div className="nav-foot">
             <Link href="/docs">
-              <BiHelpCircle title="How to use it like a pro?" /> Use it like a pro
+              <BiHelpCircle title="How to use it like a pro?" /> Use it like a
+              pro
             </Link>
             <Profile data={userInfo} />
           </div>
@@ -371,13 +372,13 @@ export default function Academia() {
           <h2
             style={{
               marginTop: 0,
-              display: "flex",
-              alignItems: "center",
+              display: 'flex',
+              alignItems: 'center',
               gap: 12,
             }}
             className="subtitle"
           >
-            Timetable{" "}
+            Timetable{' '}
             {userInfo?.userInfo ? (
               <a href={`/timetable`} className="download">
                 View all
