@@ -1,7 +1,12 @@
 import { endingTimesSlot, startingTimesSlot } from '@/types/Times';
 import { timeRange } from '@/utils/range';
+import { useState } from 'react'
 
 export function TableHeader() {
+  const [d, setD] = useState(new Date(
+    new Date().toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }),
+  ))
+  
   const arr = [];
   for (let i = 0; i < startingTimesSlot.length; i++) {
     arr.push(
@@ -11,7 +16,7 @@ export function TableHeader() {
       >
         <span
           className={
-            timeRange(startingTimesSlot[i] + '-' + endingTimesSlot[i])
+            timeRange(d, startingTimesSlot[i] + '-' + endingTimesSlot[i])
               ? 'current-time'
               : ''
           }
