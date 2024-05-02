@@ -1,6 +1,6 @@
 import { endingTimesSlot, startingTimesSlot } from "@/types/Times";
 import { timeRange } from "@/utils/range";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export function TableHeader() {
   const [d, setD] = useState(
