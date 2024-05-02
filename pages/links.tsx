@@ -1,8 +1,7 @@
-import { useEffect, useState } from 'react';
-import dynamic from 'next/dynamic';
+import styles from '@/styles/Links.module.css';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '@/styles/Links.module.css';
+import { useEffect, useState } from 'react';
 
 const priorityUrl = [
   {
@@ -20,68 +19,84 @@ const urls = [
   {
     site: "What's in my mess",
     url: 'https://whatsinmess.vercel.app/',
+    type: 'unofficial',
   },
   {
     site: 'Leave Portal',
     url: 'http://10.1.105.62/srmleaveapp',
+    type: 'official',
   },
   {
     site: 'Map',
     url: '/map',
+    type: 'official',
   },
 
   {
     site: 'Events',
     url: 'https://www.srmist.edu.in/events/',
+    type: 'official',
   },
 
   {
     site: 'Weather',
     url: 'https://srmaoml.wixsite.com/home/forecast',
+    type: 'official',
   },
   {
     site: 'Staff Finder',
     url: 'https://www.srmist.edu.in/staff-finder/',
+    type: 'official',
   },
   {
     site: 'Course Feedback',
     url: 'https://academia.srmist.edu.in/#Course_Feedback',
+    type: 'official',
   },
   {
     site: 'Online Education',
     url: 'https://www.srmonline.in/',
+    type: 'official',
   },
   {
     site: 'Online Resources',
     url: 'https://www.srmist.edu.in/library/online-resources/',
+    type: 'official',
   },
   {
     site: 'Student Portal',
     url: 'https://sp.srmist.edu.in',
+    type: 'official',
   },
   {
     site: 'E-Library',
     url: 'https://emanager.srmist.edu.in/elibrary/',
+    type: 'official',
   },
   {
     site: 'Service Request',
     url: '/ssr',
+    type: 'official',
   },
   {
     site: 'Hostel Booking',
     url: 'https://sp.srmist.edu.in',
+    type: 'official',
   },
   {
     site: 'Bus Booking',
     url: 'https://sp.srmist.edu.in',
+    type: 'official',
   },
   {
     site: 'SRM Website',
     url: 'https://srmist.edu.in',
+    type: 'official',
   },
   {
     site: 'SRM Wifi',
     url: 'https://iac.srmist.edu.in/Connect/PortalMain',
+    type: 'official',
   },
 ].sort(function (a, b) {
   if (a.site < b.site) {
@@ -93,34 +108,17 @@ const urls = [
   return 0;
 });
 
-const DayOrder = dynamic(
-  () => import('@/components/badges/DayOrder').then((mod) => mod.default),
-  { ssr: false },
-);
-
-const Hour = dynamic(
-  () => import('@/components/badges/Hour').then((mod) => mod.default),
-  { ssr: false },
-);
-
-const Profile = dynamic(
-  () => import('@/components/badges/Profile').then((mod) => mod.default),
-  { ssr: false },
-);
-
 import type { DayOrderResponse } from '@/types/DayOrder';
 import type { InfoResponse } from '@/types/UserInfo';
 
-import { getCookie, clearCookies } from '@/utils/cookies';
+import { clearCookies, getCookie } from '@/utils/cookies';
 
-import Loader from '@/components/Loader';
 import Header from '@/components/Header';
-import { FaCalendar, FaLink } from 'react-icons/fa6';
-import { GoDotFill } from 'react-icons/go';
-import Fuse from 'fuse.js';
-import { URL } from '@/utils/url';
-import { BiHelpCircle } from 'react-icons/bi';
+import Loader from '@/components/Loader';
 import { Sidebar } from '@/components/Sidebar';
+import { URL } from '@/utils/url';
+import Fuse from 'fuse.js';
+import { GoDotFill } from 'react-icons/go';
 
 export default function Urls() {
   const router = useRouter();
@@ -250,20 +248,28 @@ export default function Urls() {
               ))}
             </div>
             <span> </span>
-            {array.map((k: any, i) => (
-              <div className={styles.urlBox} key={i}>
-                <span>{k.item ? k.item.site : k.site}</span>
-                <Link href={k.item ? k.item.url : k.url} className={styles.url}>
-                  {k.item ? k.item.url : k.url}
-                </Link>
-                <Link
-                  href={k.item ? k.item.url : k.url}
-                  className={styles.mobile}
-                >
-                  Open
-                </Link>
-              </div>
-            ))}
+            <div className={styles.priority}>
+              {array
+                .filter((link) => link.type == 'official')
+                .map((k: any, i) => (
+                  <div className={styles.urlBox} key={i}>
+                    <span>{k.item ? k.item.site : k.site}</span>
+                    <Link
+                      href={k.item ? k.item.url : k.url}
+                      className={styles.url}
+                    >
+                      {k.item ? k.item.url : k.url}
+                    </Link>
+                    <Link
+                      href={k.item ? k.item.url : k.url}
+                      className={styles.mobile}
+                    >
+                      Open
+                    </Link>
+                  </div>
+                ))}
+            </div>
+
             <div style={{ marginBottom: 64 }} />
           </div>
         </div>
