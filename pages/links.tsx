@@ -1,112 +1,8 @@
 import styles from '@/styles/Links.module.css';
+import { priorityUrl, urls } from '@/utils/links';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-
-const priorityUrl = [
-  {
-    site: 'Better-Lab',
-    url: 'https://better-lab.vercel.app',
-    starlet: true,
-  },
-  {
-    site: 'Grade Calculator',
-    url: 'https://gradex.vercel.app',
-    starlet: true,
-  },
-];
-const urls = [
-  {
-    site: "What's in my mess",
-    url: 'https://whatsinmess.vercel.app/',
-    type: 'unofficial',
-  },
-  {
-    site: 'Leave Portal',
-    url: 'http://10.1.105.62/srmleaveapp',
-    type: 'official',
-  },
-  {
-    site: 'Map',
-    url: '/map',
-    type: 'official',
-  },
-
-  {
-    site: 'Events',
-    url: 'https://www.srmist.edu.in/events/',
-    type: 'official',
-  },
-
-  {
-    site: 'Weather',
-    url: 'https://srmaoml.wixsite.com/home/forecast',
-    type: 'official',
-  },
-  {
-    site: 'Staff Finder',
-    url: 'https://www.srmist.edu.in/staff-finder/',
-    type: 'official',
-  },
-  {
-    site: 'Course Feedback',
-    url: 'https://academia.srmist.edu.in/#Course_Feedback',
-    type: 'official',
-  },
-  {
-    site: 'Online Education',
-    url: 'https://www.srmonline.in/',
-    type: 'official',
-  },
-  {
-    site: 'Online Resources',
-    url: 'https://www.srmist.edu.in/library/online-resources/',
-    type: 'official',
-  },
-  {
-    site: 'Student Portal',
-    url: 'https://sp.srmist.edu.in',
-    type: 'official',
-  },
-  {
-    site: 'E-Library',
-    url: 'https://emanager.srmist.edu.in/elibrary/',
-    type: 'official',
-  },
-  {
-    site: 'Service Request',
-    url: '/ssr',
-    type: 'official',
-  },
-  {
-    site: 'Hostel Booking',
-    url: 'https://sp.srmist.edu.in',
-    type: 'official',
-  },
-  {
-    site: 'Bus Booking',
-    url: 'https://sp.srmist.edu.in',
-    type: 'official',
-  },
-  {
-    site: 'SRM Website',
-    url: 'https://srmist.edu.in',
-    type: 'official',
-  },
-  {
-    site: 'SRM Wifi',
-    url: 'https://iac.srmist.edu.in/Connect/PortalMain',
-    type: 'official',
-  },
-].sort(function (a, b) {
-  if (a.site < b.site) {
-    return -1;
-  }
-  if (a.site > b.site) {
-    return 1;
-  }
-  return 0;
-});
 
 import type { DayOrderResponse } from '@/types/DayOrder';
 import type { InfoResponse } from '@/types/UserInfo';
@@ -118,7 +14,6 @@ import Loader from '@/components/Loader';
 import { Sidebar } from '@/components/Sidebar';
 import { URL } from '@/utils/url';
 import Fuse from 'fuse.js';
-import { url } from 'inspector';
 import { GoDotFill } from 'react-icons/go';
 
 export default function Urls() {
