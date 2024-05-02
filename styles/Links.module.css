@@ -76,7 +76,7 @@
 .mobile {
   display: none;
 }
-.priority {
+.priority, .official, .unofficial {
   border: 2px solid #6C479A;
   padding: 12px 24px;
   gap: 16px;
@@ -87,7 +87,7 @@
   padding-top: 18px !important;
 }
 
-.priority::before {
+.official::before,.unofficial::before,.priority::before{
   content: 'Our sites';
   color: var(--background-dark);
   background-color: #6C479A;
@@ -97,6 +97,13 @@
   font-weight: 700;
   border-radius: 12px;
   top: -14px;
+}
+
+.official::before{
+  content: 'Offical Sites';
+}
+.unofficial::before{
+  content: 'UnOfficial Sites';
 }
 
 @media only screen and (max-width: 1100px) {

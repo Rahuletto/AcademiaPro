@@ -248,9 +248,30 @@ export default function Urls() {
               ))}
             </div>
             <span> </span>
-            <div className={styles.priority}>
+            <div className={styles.official}>
               {array
                 .filter((link) => link.type == 'official')
+                .map((k: any, i) => (
+                  <div className={styles.urlBox} key={i}>
+                    <span>{k.item ? k.item.site : k.site}</span>
+                    <Link
+                      href={k.item ? k.item.url : k.url}
+                      className={styles.url}
+                    >
+                      {k.item ? k.item.url : k.url}
+                    </Link>
+                    <Link
+                      href={k.item ? k.item.url : k.url}
+                      className={styles.mobile}
+                    >
+                      Open
+                    </Link>
+                  </div>
+                ))}
+            </div>
+            <div className={styles.unofficial}>
+              {array
+                .filter((link) => link.type == 'unofficial')
                 .map((k: any, i) => (
                   <div className={styles.urlBox} key={i}>
                     <span>{k.item ? k.item.site : k.site}</span>
