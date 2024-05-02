@@ -118,6 +118,7 @@ import Loader from '@/components/Loader';
 import { Sidebar } from '@/components/Sidebar';
 import { URL } from '@/utils/url';
 import Fuse from 'fuse.js';
+import { url } from 'inspector';
 import { GoDotFill } from 'react-icons/go';
 
 export default function Urls() {
@@ -248,48 +249,52 @@ export default function Urls() {
               ))}
             </div>
             <span> </span>
-            <div className={styles.official}>
-              {array
-                .filter((link) => link.type == 'official')
-                .map((k: any, i) => (
-                  <div className={styles.urlBox} key={i}>
-                    <span>{k.item ? k.item.site : k.site}</span>
-                    <Link
-                      href={k.item ? k.item.url : k.url}
-                      className={styles.url}
-                    >
-                      {k.item ? k.item.url : k.url}
-                    </Link>
-                    <Link
-                      href={k.item ? k.item.url : k.url}
-                      className={styles.mobile}
-                    >
-                      Open
-                    </Link>
-                  </div>
-                ))}
-            </div>
-            <div className={styles.unofficial}>
-              {array
-                .filter((link) => link.type == 'unofficial')
-                .map((k: any, i) => (
-                  <div className={styles.urlBox} key={i}>
-                    <span>{k.item ? k.item.site : k.site}</span>
-                    <Link
-                      href={k.item ? k.item.url : k.url}
-                      className={styles.url}
-                    >
-                      {k.item ? k.item.url : k.url}
-                    </Link>
-                    <Link
-                      href={k.item ? k.item.url : k.url}
-                      className={styles.mobile}
-                    >
-                      Open
-                    </Link>
-                  </div>
-                ))}
-            </div>
+            {array.filter((url) => url.type == 'official').length > 0 ? (
+              <div className={styles.official}>
+                {array
+                  .filter((link) => link.type == 'official')
+                  .map((k: any, i) => (
+                    <div className={styles.urlBox} key={i}>
+                      <span>{k.item ? k.item.site : k.site}</span>
+                      <Link
+                        href={k.item ? k.item.url : k.url}
+                        className={styles.url}
+                      >
+                        {k.item ? k.item.url : k.url}
+                      </Link>
+                      <Link
+                        href={k.item ? k.item.url : k.url}
+                        className={styles.mobile}
+                      >
+                        Open
+                      </Link>
+                    </div>
+                  ))}
+              </div>
+            ) : null}
+            {array.filter((url) => url.type == 'unofficial').length > 0 ? (
+              <div className={styles.unofficial}>
+                {array
+                  .filter((link) => link.type == 'unofficial')
+                  .map((k: any, i) => (
+                    <div className={styles.urlBox} key={i}>
+                      <span>{k.item ? k.item.site : k.site}</span>
+                      <Link
+                        href={k.item ? k.item.url : k.url}
+                        className={styles.url}
+                      >
+                        {k.item ? k.item.url : k.url}
+                      </Link>
+                      <Link
+                        href={k.item ? k.item.url : k.url}
+                        className={styles.mobile}
+                      >
+                        Open
+                      </Link>
+                    </div>
+                  ))}
+              </div>
+            ) : null}
 
             <div style={{ marginBottom: 64 }} />
           </div>
