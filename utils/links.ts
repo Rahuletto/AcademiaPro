@@ -18,6 +18,16 @@ export const urls = [
     type: 'unofficial',
   },
   {
+    site: "EveHubSrm",
+    url: "https://evehubsrm.vercel.app/",
+    type: 'unofficial',
+  },
+  {
+    site: "MessMenu",
+    url: 'https://evehubsrm.vercel.app/',
+    type: 'unofficial',
+  },
+  {
     site: 'Leave Portal',
     url: 'http://10.1.105.62/srmleaveapp',
     type: 'official',
