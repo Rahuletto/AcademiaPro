@@ -30,6 +30,12 @@
   "display": "standalone",
   "icons": [
     {
+      "src": "/favicon.svg",
+      "sizes": "1024x1024",
+      "type": "image/svg",
+      "purpose": "any"
+    },
+    {
       "src": "/favicons/maskable.png",
       "sizes": "512x512",
       "type": "image/png",
@@ -50,12 +56,6 @@
       "src": "/favicons/256.png",
       "sizes": "256x256",
       "type": "image/png"
-    },
-    {
-      "src": "/favicons/android-launchericon-512-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
     }
   ],
   "id": "13542005",
