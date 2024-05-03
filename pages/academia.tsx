@@ -46,7 +46,7 @@ export default function Academia() {
     const m = sessionStorage.getItem('marks');
     const tt = localStorage.getItem('timetable');
     const a = sessionStorage.getItem('attendance');
-    
+
     if (m) setMarks(JSON.parse(m));
     if (tt) setTable(JSON.parse(tt));
     if (a) setAttendance(JSON.parse(a));
@@ -90,30 +90,32 @@ export default function Academia() {
 
   useEffect(() => {
     if (userInfo) {
-      fetch(`${URL}/api/attendance`, {
-        next: { revalidate: 2 * 3600 },
-        cache: 'default',
-        method: 'GET',
-        headers: {
-          'X-CSRF-Token': getCookie('token') as string,
-          'Set-Cookie': getCookie('token') as string,
-          Cookie: getCookie('token') as string,
-          Connection: 'keep-alive',
-          'Accept-Encoding': 'gzip, deflate, br, zstd',
-          'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
-        },
-      })
-        .then((r) => r.json())
-        .then((res) => {
-          if (res.token_refresh) {
-            clearCookies();
-            window.location.reload();
-          } else {
-            sessionStorage.setItem('attendance', JSON.stringify(res));
-            setAttendance(res);
-          }
+      if (!attendance)
+        fetch(`${URL}/api/attendance`, {
+          next: { revalidate: 2 * 3600 },
+          cache: 'default',
+          method: 'GET',
+          headers: {
+            'X-CSRF-Token': getCookie('token') as string,
+            'Set-Cookie': getCookie('token') as string,
+            Cookie: getCookie('token') as string,
+            Connection: 'keep-alive',
+            'Accept-Encoding': 'gzip, deflate, br, zstd',
+            'Cache-Control':
+              'private, maxage=86400, stale-while-revalidate=7200',
+          },
         })
-        .catch(() => {});
+          .then((r) => r.json())
+          .then((res) => {
+            if (res.token_refresh) {
+              clearCookies();
+              window.location.reload();
+            } else {
+              sessionStorage.setItem('attendance', JSON.stringify(res));
+              setAttendance(res);
+            }
+          })
+          .catch(() => {});
 
       if (!table?.table) {
         fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
@@ -143,30 +145,32 @@ export default function Academia() {
           .catch(() => {});
       }
 
-      fetch(`${URL}/api/marks`, {
-        cache: 'default',
-        next: { revalidate: 2 * 3600 },
-        method: 'GET',
-        headers: {
-          'X-CSRF-Token': getCookie('token') as string,
-          'Set-Cookie': getCookie('token') as string,
-          Cookie: getCookie('token') as string,
-          Connection: 'keep-alive',
-          'Accept-Encoding': 'gzip, deflate, br, zstd',
-          'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
-        },
-      })
-        .then((r) => r.json())
-        .then((res) => {
-          if (res.token_refresh) {
-            clearCookies();
-            window.location.reload();
-          } else {
-            sessionStorage.setItem('marks', JSON.stringify(res));
-            setMarks(res);
-          }
+      if (!marks)
+        fetch(`${URL}/api/marks`, {
+          cache: 'default',
+          next: { revalidate: 2 * 3600 },
+          method: 'GET',
+          headers: {
+            'X-CSRF-Token': getCookie('token') as string,
+            'Set-Cookie': getCookie('token') as string,
+            Cookie: getCookie('token') as string,
+            Connection: 'keep-alive',
+            'Accept-Encoding': 'gzip, deflate, br, zstd',
+            'Cache-Control':
+              'private, maxage=86400, stale-while-revalidate=7200',
+          },
         })
-        .catch(() => {});
+          .then((r) => r.json())
+          .then((res) => {
+            if (res.token_refresh) {
+              clearCookies();
+              window.location.reload();
+            } else {
+              sessionStorage.setItem('marks', JSON.stringify(res));
+              setMarks(res);
+            }
+          })
+          .catch(() => {});
     }
   }, [userInfo]);
 
