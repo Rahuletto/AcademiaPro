@@ -6,8 +6,16 @@ export function timeRange(now: Date, timeRange: string) {
   const currentHour = now.getHours();
   const currentMinute = now.getMinutes();
 
-  console.log('Current: ', currentHour, currentMinute);
-  console.log('Time: ', startHour, endHour);
+  console.log(
+    'First cond: ',
+    currentHour > startHour ||
+      (currentHour === startHour && currentMinute >= startMinute),
+  );
+  console.log(
+    'Second cond: ',
+    currentHour < endHour ||
+      (currentHour === endHour && currentMinute < endMinute),
+  );
   if (
     currentHour > startHour ||
     (currentHour === startHour && currentMinute >= startMinute)
