@@ -13,17 +13,18 @@ export function UserProvider({ children }: any) {
   const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
 
   useEffect(() => {
+    const cookie = getCookie('token');
 
     const u = localStorage.getItem('userInfo');
     if (u) setUserInfo(JSON.parse(u));
-    else
+    else if (cookie)
       fetch(`${URL}/api/info`, {
         cache: 'default',
         method: 'GET',
         headers: {
-          'X-CSRF-Token': getCookie('token') as string,
-          'Set-Cookie': getCookie('token') as string,
-          Cookie: getCookie('token') as string,
+          'X-CSRF-Token': cookie,
+          'Set-Cookie': cookie,
+          Cookie: cookie,
           Connection: 'keep-alive',
           'content-type': 'application/json',
           'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
