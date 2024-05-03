@@ -18,7 +18,6 @@ const TimeTableComponent = dynamic(
 );
 
 import type { AttendanceResponse } from '@/types/Attendance';
-import type { DayOrderResponse } from '@/types/DayOrder';
 import type { MarksResponse } from '@/types/Marks';
 import type { TimeTableResponse } from '@/types/TimeTable';
 
@@ -91,8 +90,8 @@ export default function Academia() {
   useEffect(() => {
     if (userInfo) {
       fetch(`${URL}/api/attendance`, {
+        next: { revalidate: 2 * 3600 },
         cache: 'default',
-        next: { revalidate: 3600 },
         method: 'GET',
         headers: {
           'X-CSRF-Token': getCookie('token') as string,
@@ -117,6 +116,7 @@ export default function Academia() {
 
       if (!table?.table) {
         fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
+          next: { revalidate: 30 * 24 * 3600 },
           cache: 'default',
           method: 'GET',
           headers: {
@@ -144,7 +144,7 @@ export default function Academia() {
 
       fetch(`${URL}/api/marks`, {
         cache: 'default',
-        next: { revalidate: 3600 },
+        next: { revalidate: 2 * 3600 },
         method: 'GET',
         headers: {
           'X-CSRF-Token': getCookie('token') as string,
