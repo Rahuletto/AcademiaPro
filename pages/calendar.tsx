@@ -24,22 +24,26 @@ export default function Academia() {
 
     setTimeout(() => {
       const todayScroll = document.getElementById('today');
+      const c = localStorage.getItem('calendar');
 
+      if (c) setCalendar(JSON.parse(c));
       todayScroll?.scrollIntoView();
     }, 2000);
   }, []);
 
   useEffect(() => {
-    if (userInfo) {
+    if (userInfo && !calendar) {
       fetch(`${URL}/api/calendar`, {
+        next: { revalidate: 31 * 24 * 3600 },
         method: 'GET',
+        cache: 'force-cache',
         headers: {
           'X-CSRF-Token': getCookie('token') as string,
           'Set-Cookie': getCookie('token') as string,
           Cookie: getCookie('token') as string,
           Connection: 'keep-alive',
           'Accept-Encoding': 'gzip, deflate, br, zstd',
-          'Cache-Control': 's-maxage=86400, stale-while-revalidate=7200',
+          'Cache-Control': 'public, s-maxage=86400',
         },
       })
         .then((r) => r.json())
@@ -48,6 +52,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
+            localStorage.setItem('calendar', JSON.stringify(res));
             setCalendar(res);
           }
         })

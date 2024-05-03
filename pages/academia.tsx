@@ -18,7 +18,6 @@ const TimeTableComponent = dynamic(
 );
 
 import type { AttendanceResponse } from '@/types/Attendance';
-import type { DayOrderResponse } from '@/types/DayOrder';
 import type { MarksResponse } from '@/types/Marks';
 import type { TimeTableResponse } from '@/types/TimeTable';
 
@@ -44,9 +43,10 @@ export default function Academia() {
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
   useEffect(() => {
-    const m = localStorage.getItem('marks');
+    const m = sessionStorage.getItem('marks');
     const tt = localStorage.getItem('timetable');
-    const a = localStorage.getItem('attendance');
+    const a = sessionStorage.getItem('attendance');
+    
     if (m) setMarks(JSON.parse(m));
     if (tt) setTable(JSON.parse(tt));
     if (a) setAttendance(JSON.parse(a));
@@ -91,8 +91,8 @@ export default function Academia() {
   useEffect(() => {
     if (userInfo) {
       fetch(`${URL}/api/attendance`, {
+        next: { revalidate: 2 * 3600 },
         cache: 'default',
-        next: { revalidate: 3600 },
         method: 'GET',
         headers: {
           'X-CSRF-Token': getCookie('token') as string,
@@ -109,7 +109,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
-            localStorage.setItem('attendance', JSON.stringify(res));
+            sessionStorage.setItem('attendance', JSON.stringify(res));
             setAttendance(res);
           }
         })
@@ -117,6 +117,7 @@ export default function Academia() {
 
       if (!table?.table) {
         fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
+          next: { revalidate: 30 * 24 * 3600 },
           cache: 'default',
           method: 'GET',
           headers: {
@@ -144,7 +145,7 @@ export default function Academia() {
 
       fetch(`${URL}/api/marks`, {
         cache: 'default',
-        next: { revalidate: 3600 },
+        next: { revalidate: 2 * 3600 },
         method: 'GET',
         headers: {
           'X-CSRF-Token': getCookie('token') as string,
@@ -161,7 +162,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
-            localStorage.setItem('marks', JSON.stringify(res));
+            sessionStorage.setItem('marks', JSON.stringify(res));
             setMarks(res);
           }
         })
