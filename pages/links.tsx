@@ -145,7 +145,8 @@ export default function Urls() {
             </div>
             <span> </span>
             {array.filter((url) => url.type == 'official').length > 0 ? (
-              <div className={styles.official}>
+              <div className={styles.usefulLinks}>
+                <h3>Official Sites</h3>
                 {array
                   .filter((link) => link.type == 'official')
                   .map((k: any, i) => (
@@ -168,7 +169,8 @@ export default function Urls() {
               </div>
             ) : null}
             {array.filter((url) => url.type == 'unofficial').length > 0 ? (
-              <div className={styles.unofficial}>
+              <div className={styles.usefulLinks}>
+                <h3>Unofficial Sites</h3>
                 {array
                   .filter((link) => link.type == 'unofficial')
                   .map((k: any, i) => (
