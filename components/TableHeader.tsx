@@ -19,6 +19,8 @@ export function TableHeader() {
   }, []);
 
   useEffect(() => {
+    if (arr.length > 10) return;
+
     for (let i = 0; i < startingTimesSlot.length; i++) {
       const newValue = (
         <th
