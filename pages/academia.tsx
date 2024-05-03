@@ -18,21 +18,6 @@ const TimeTableComponent = dynamic(
   { ssr: false },
 );
 
-const DayOrder = dynamic(
-  () => import('@/components/badges/DayOrder').then((mod) => mod.default),
-  { ssr: false },
-);
-
-const Hour = dynamic(
-  () => import('@/components/badges/Hour').then((mod) => mod.default),
-  { ssr: false },
-);
-
-const Profile = dynamic(
-  () => import('@/components/badges/Profile').then((mod) => mod.default),
-  { ssr: false },
-);
-
 import type { AttendanceResponse } from '@/types/Attendance';
 import type { DayOrderResponse } from '@/types/DayOrder';
 import type { MarksResponse } from '@/types/Marks';
@@ -43,10 +28,7 @@ import { clearCookies, getCookie } from '@/utils/cookies';
 
 import Header from '@/components/Header';
 import Loader from '@/components/Loader';
-import { FaCalendar, FaLink } from 'react-icons/fa6';
-import Skeleton from 'react-loading-skeleton';
 import { URL } from '@/utils/url';
-import { BiHelpCircle } from 'react-icons/bi';
 import { TableHeader } from '@/components/TableHeader';
 import { Sidebar } from '@/components/Sidebar';
 
@@ -63,22 +45,36 @@ export default function Academia() {
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
   useEffect(() => {
-    fetch(`${URL}/api/info`, {
-      cache: 'default',
-      method: 'GET',
-      headers: {
-        'X-CSRF-Token': getCookie('token') as string,
-        'Set-Cookie': getCookie('token') as string,
-        Cookie: getCookie('token') as string,
-        Connection: 'keep-alive',
-        'content-type': 'application/json',
-        'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
-      },
-    })
-      .then((e) => e.json())
-      .then((data) => {
-        setUserInfo(data);
-      });
+    const m = localStorage.getItem('marks');
+    const tt = localStorage.getItem('timetable');
+    const a = localStorage.getItem('attendance');
+    const da = localStorage.getItem('dayOrder');
+    const u = localStorage.getItem('userData');
+
+    if (u) setUserInfo(JSON.parse(u));
+    if (m) setMarks(JSON.parse(m));
+    if (tt) setTable(JSON.parse(tt));
+    if (a) setAttendance(JSON.parse(a));
+    if (da) setDay(JSON.parse(da));
+
+    if (!u)
+      fetch(`${URL}/api/info`, {
+        cache: 'default',
+        method: 'GET',
+        headers: {
+          'X-CSRF-Token': getCookie('token') as string,
+          'Set-Cookie': getCookie('token') as string,
+          Cookie: getCookie('token') as string,
+          Connection: 'keep-alive',
+          'content-type': 'application/json',
+          'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
+        },
+      })
+        .then((e) => e.json())
+        .then((data) => {
+          localStorage.setItem('userData', JSON.stringify(data));
+          setUserInfo(data);
+        });
 
     fetch(`${URL}/api/dayorder`, {
       cache: 'default',
@@ -98,6 +94,7 @@ export default function Academia() {
           clearCookies();
           window.location.reload();
         } else {
+          localStorage.setItem('dayOrder', JSON.stringify(res));
           setDay(res);
         }
       });
@@ -160,6 +157,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
+            localStorage.setItem('attendance', JSON.stringify(res));
             setAttendance(res);
           }
         })
@@ -185,6 +183,7 @@ export default function Academia() {
               clearCookies();
               window.location.reload();
             } else {
+              localStorage.setItem('timetable', JSON.stringify(res));
               setTable(res);
             }
           })
@@ -210,6 +209,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
+            localStorage.setItem('marks', JSON.stringify(res));
             setMarks(res);
           }
         })
