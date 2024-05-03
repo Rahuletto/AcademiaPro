@@ -76,7 +76,7 @@
 .mobile {
   display: none;
 }
-.priority, .official, .unofficial {
+.priority, .usefulLinks{
   border: 2px solid #6C479A;
   padding: 12px 24px;
   gap: 16px;
@@ -86,8 +86,11 @@
   border-radius: 16px;
   padding-top: 18px !important;
 }
+.usefulLinks{
+  border: 2px solid var(--background-light);
+}
 
-.official::before,.unofficial::before,.priority::before{
+.priority::before{
   content: 'Our sites';
   color: var(--background-dark);
   background-color: #6C479A;
@@ -99,12 +102,8 @@
   top: -14px;
 }
 
-.official::before{
-  content: 'Offical Sites';
-}
-.unofficial::before{
-  content: 'UnOfficial Sites';
-}
+
+
 
 @media only screen and (max-width: 1100px) {
   .search {
