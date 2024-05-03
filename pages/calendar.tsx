@@ -1,22 +1,6 @@
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-
-const DayOrder = dynamic(
-  () => import('@/components/badges/DayOrder').then((mod) => mod.default),
-  { ssr: false },
-);
-
-const Hour = dynamic(
-  () => import('@/components/badges/Hour').then((mod) => mod.default),
-  { ssr: false },
-);
-
-const Profile = dynamic(
-  () => import('@/components/badges/Profile').then((mod) => mod.default),
-  { ssr: false },
-);
 
 import type { DayOrderResponse } from '@/types/DayOrder';
 import type { InfoResponse } from '@/types/UserInfo';
@@ -27,9 +11,8 @@ import Loader from '@/components/Loader';
 import Header from '@/components/Header';
 import { CalendarResponse } from '@/types/Calendar';
 import CalendarGenerator from '@/components/CalendarGenerator';
-import { FaCalendar, FaCaretLeft, FaCaretRight, FaLink } from 'react-icons/fa6';
+import { FaCaretLeft, FaCaretRight } from 'react-icons/fa6';
 import { URL } from '@/utils/url';
-import { BiHelpCircle } from 'react-icons/bi';
 import { Sidebar } from '@/components/Sidebar';
 
 export default function Academia() {
@@ -43,21 +26,25 @@ export default function Academia() {
 
   useEffect(() => {
     // marks timetable attendance dayorder
+    const u = localStorage.getItem('userData');
 
-    fetch(`${URL}/api/info`, {
-      method: 'GET',
-      headers: {
-        'X-CSRF-Token': getCookie('token') as string,
-        'Set-Cookie': getCookie('token') as string,
-        Cookie: getCookie('token') as string,
-        Connection: 'keep-alive',
-        'content-type': 'application/json',
-      },
-    })
-      .then((e) => e.json())
-      .then((data) => {
-        setUserInfo(data);
-      });
+    if (u) setUserInfo(JSON.parse(u));
+
+    if (!u)
+      fetch(`${URL}/api/info`, {
+        method: 'GET',
+        headers: {
+          'X-CSRF-Token': getCookie('token') as string,
+          'Set-Cookie': getCookie('token') as string,
+          Cookie: getCookie('token') as string,
+          Connection: 'keep-alive',
+          'content-type': 'application/json',
+        },
+      })
+        .then((e) => e.json())
+        .then((data) => {
+          setUserInfo(data);
+        });
 
     fetch(`${URL}/api/dayorder`, {
       method: 'GET',
