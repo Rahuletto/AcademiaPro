@@ -1,12 +1,9 @@
-import { useEffect, useState } from 'react';
-
-import { getCookie } from '@/utils/cookies';
-
 import Header from '@/components/Header';
+import { getCookie } from '@/utils/cookies';
 import Image from 'next/image';
-import Loader from '@/components/Loader';
-import { FaCaretLeft } from 'react-icons/fa6';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { FaCaretLeft } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 
 export default function Timetable() {
