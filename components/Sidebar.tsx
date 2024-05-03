@@ -140,7 +140,7 @@ export function Sidebar({ todayTable, userInfo, day, page }: SidebarProps) {
           </div>
         </div>
         <div className="nav-foot">
-          <Link href="/docs">
+          <Link href="/docs.pdf">
             <BiHelpCircle title="How to use it like a pro?" /> Use it like a pro
           </Link>
           {userInfo ? (
