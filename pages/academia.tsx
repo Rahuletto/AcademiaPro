@@ -43,9 +43,9 @@ export default function Academia() {
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
   useEffect(() => {
-    const m = localStorage.getItem('marks');
+    const m = sessionStorage.getItem('marks');
     const tt = localStorage.getItem('timetable');
-    const a = localStorage.getItem('attendance');
+    const a = sessionStorage.getItem('attendance');
     if (m) setMarks(JSON.parse(m));
     if (tt) setTable(JSON.parse(tt));
     if (a) setAttendance(JSON.parse(a));
@@ -108,7 +108,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
-            localStorage.setItem('attendance', JSON.stringify(res));
+            sessionStorage.setItem('attendance', JSON.stringify(res));
             setAttendance(res);
           }
         })
@@ -161,7 +161,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
-            localStorage.setItem('marks', JSON.stringify(res));
+            sessionStorage.setItem('marks', JSON.stringify(res));
             setMarks(res);
           }
         })
