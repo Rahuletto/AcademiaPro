@@ -22,17 +22,10 @@ export default function Academia() {
   useEffect(() => {
     if (!getCookie('token')) router.push('/login');
 
-    setTimeout(() => {
-      const todayScroll = document.getElementById('today');
-      const c = localStorage.getItem('calendar');
+    const c = localStorage.getItem('calendar');
 
-      if (c) setCalendar(JSON.parse(c));
-      todayScroll?.scrollIntoView();
-    }, 2000);
-  }, []);
-
-  useEffect(() => {
-    if (userInfo && !calendar) {
+    if (c) setCalendar(JSON.parse(c));
+    else
       fetch(`${URL}/api/calendar`, {
         next: { revalidate: 31 * 24 * 3600 },
         method: 'GET',
@@ -57,8 +50,12 @@ export default function Academia() {
           }
         })
         .catch(() => {});
-    }
-  }, [userInfo]);
+
+    setTimeout(() => {
+      const todayScroll = document.getElementById('today');
+      todayScroll?.scrollIntoView();
+    }, 2000);
+  }, []);
 
   useEffect(() => {
     setPage(new Date().getMonth());
