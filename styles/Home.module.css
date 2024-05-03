@@ -27,6 +27,7 @@
   -ms-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
 }
 .hero {
+  margin: 0px 14px;
   background-color: var(--background-darker);
   border-radius: 50px;
   -webkit-border-radius: 50px;
