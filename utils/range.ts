@@ -1,4 +1,5 @@
 export function timeRange(now: Date, timeRange: string) {
+  console.log(now);
   const [startTime, endTime] = timeRange.split('-');
   const [startHour, startMinute] = startTime.split(':').map(Number);
   const [endHour, endMinute] = endTime.split(':').map(Number);

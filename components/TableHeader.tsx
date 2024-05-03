@@ -1,55 +1,40 @@
-import { endingTimesSlot, startingTimesSlot } from "@/types/Times";
-import { timeRange } from "@/utils/range";
-import { useState, useRef, useEffect } from "react";
+import { endingTimesSlot, startingTimesSlot } from '@/types/Times';
+import { timeRange } from '@/utils/range';
+import { useState, useEffect } from 'react';
 
 export function TableHeader() {
-  const [d, setD] = useState(
-    new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }))
-  );
+  const [time, setTime] = useState(new Date());
 
-  const intervalRef = useInterval(() => {
-    setD(
-      new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }))
+  useEffect(() => {
+    const currentTime = new Date();
+
+    const currentOffset = currentTime.getTimezoneOffset();
+
+    const ISTOffset = 330;
+
+    setTime(
+      new Date(currentTime.getTime() + (ISTOffset + currentOffset) * 60000),
     );
-  }, 60 * 1000);
+  }, []);
 
   const arr = [];
   for (let i = 0; i < startingTimesSlot.length; i++) {
     arr.push(
       <th
-        title={startingTimesSlot[i] + "-" + endingTimesSlot[i]}
+        title={startingTimesSlot[i] + '-' + endingTimesSlot[i]}
         className="head-time"
       >
         <span
           className={
-            timeRange(d, startingTimesSlot[i] + "-" + endingTimesSlot[i])
-              ? "current-time"
-              : ""
+            timeRange(time, startingTimesSlot[i] + '-' + endingTimesSlot[i])
+              ? 'current-time'
+              : ''
           }
         >
           {i + 1}
         </span>
-      </th>
+      </th>,
     );
   }
   return <tr className="bg-light-gray">{...arr}</tr>;
-}
-
-function useInterval(callback: any, delay: number | null) {
-  const intRef: any = useRef();
-  const cb = useRef(callback);
-
-  useEffect(() => {
-    cb.current = callback;
-  }, [callback]);
-
-  useEffect(() => {
-    if (typeof delay === "number") {
-      intRef.current = window.setInterval(() => cb.current(), delay);
-
-      return () => window.clearInterval(intRef.current);
-    }
-  }, [delay]);
-
-  return intRef;
 }
