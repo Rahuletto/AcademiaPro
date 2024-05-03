@@ -24,15 +24,11 @@ export function TableHeader() {
         title={startingTimesSlot[i] + '-' + endingTimesSlot[i]}
         className="head-time"
       >
-        <span
-          className={
-            timeRange(time, startingTimesSlot[i] + '-' + endingTimesSlot[i])
-              ? 'current-time'
-              : ''
-          }
-        >
-          {i + 1}
-        </span>
+        {timeRange(time, startingTimesSlot[i] + '-' + endingTimesSlot[i]) ? (
+          <span className={'current-time'}>{i + 1}</span>
+        ) : (
+          <span>{i + 1}</span>
+        )}
       </th>,
     );
   }

@@ -14,7 +14,6 @@ export function timeRange(now: Date, timeRange: string) {
       currentHour < endHour ||
       (currentHour === endHour && currentMinute < endMinute)
     ) {
-      console.log(startTime, endTime);
       return true;
     }
   }
