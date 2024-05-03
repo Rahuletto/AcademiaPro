@@ -1,5 +1,4 @@
 export function timeRange(now: Date, timeRange: string) {
-  console.log(now);
   const [startTime, endTime] = timeRange.split('-');
   const [startHour, startMinute] = startTime.split(':').map(Number);
   const [endHour, endMinute] = endTime.split(':').map(Number);
@@ -7,6 +6,8 @@ export function timeRange(now: Date, timeRange: string) {
   const currentHour = now.getHours();
   const currentMinute = now.getMinutes();
 
+  console.log('Current: ', currentHour, currentMinute);
+  console.log('Time: ', startHour, endHour);
   if (
     currentHour > startHour ||
     (currentHour === startHour && currentMinute >= startMinute)
