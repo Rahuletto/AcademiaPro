@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 export function TableHeader() {
   const [time, setTime] = useState(new Date());
+  const [arr, setArr] = useState<any[]>([]);
 
   useEffect(() => {
     const currentTime = new Date();
@@ -17,20 +18,23 @@ export function TableHeader() {
     );
   }, []);
 
-  const arr = [];
-  for (let i = 0; i < startingTimesSlot.length; i++) {
-    arr.push(
-      <th
-        title={startingTimesSlot[i] + '-' + endingTimesSlot[i]}
-        className="head-time"
-      >
-        {timeRange(time, startingTimesSlot[i] + '-' + endingTimesSlot[i]) ? (
-          <span className={'current-time'}>{i + 1}</span>
-        ) : (
-          <span>{i + 1}</span>
-        )}
-      </th>,
-    );
-  }
+  useEffect(() => {
+    for (let i = 0; i < startingTimesSlot.length; i++) {
+      const newValue = (
+        <th
+          title={startingTimesSlot[i] + '-' + endingTimesSlot[i]}
+          className="head-time"
+        >
+          {timeRange(time, startingTimesSlot[i] + '-' + endingTimesSlot[i]) ? (
+            <span className={'current-time'}>{i + 1}</span>
+          ) : (
+            <span>{i + 1}</span>
+          )}
+        </th>
+      );
+      setArr((oldArray) => [...oldArray, newValue]);
+    }
+  }, [time]);
+
   return <tr className="bg-light-gray">{...arr}</tr>;
 }
