@@ -9,4 +9,4 @@ Allow: /calendar
 Host: https://academia-pro.vercel.app
 
 # Sitemaps
-Sitemap: https://academia-pro.vercel.app/sitemap.xml
+Sitemap: https://academia-pro.vercel.app/sitemap-0.xml

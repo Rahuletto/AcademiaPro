@@ -58,7 +58,7 @@ const Header = ({ title }: { title?: string } = { title: 'AcademiaPro' }) => (
       <meta property="og:color" content="#a0aab6" />
       <meta
         name="keywords"
-        content="academia pro, academia srm, srm, academiapro vercel, academia, srm pro"
+        content="academia pro, academia srm, srm, academiapro vercel, academia, srm pro, academia info, university, srmcheck, srm check me, student portal, srm student, srm university, timetable, calendar, srm calendar, srm mess, academia website"
       />
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
@@ -77,12 +77,6 @@ const Header = ({ title }: { title?: string } = { title: 'AcademiaPro' }) => (
           '@type': 'WebSite',
           name: 'AcademiaPro',
           url: 'https://academia-pro.vercel.app',
-          potentialAction: {
-            '@type': 'SearchAction',
-            target:
-              'https://academia-pro.vercel.app/academia{search_term_string}academia pro',
-            'query-input': 'required name=search_term_string',
-          },
         }),
       }}
     />
