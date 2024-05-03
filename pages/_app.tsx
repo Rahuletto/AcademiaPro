@@ -1,13 +1,14 @@
-import '@/styles/globals.css';
 import '@/styles/academia.css';
+import '@/styles/globals.css';
 
 import 'react-loading-skeleton/dist/skeleton.css';
 
 import type { AppProps } from 'next/app';
 
-import { Analytics } from '@vercel/analytics/react';
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google';
+import { Analytics } from '@vercel/analytics/react';
 
+import { AppProvider } from '@/providers';
 import { Inter } from 'next/font/google';
 import { Component } from 'react';
 import ErrorStack from './error';
@@ -34,9 +35,11 @@ export default function App({ Component, pageProps }: AppProps) {
       <Analytics />
       <GoogleAnalytics gaId="G-WP4J311ZNK" />
       <GoogleTagManager gtmId="G-WP4J311ZNK" />
-      <ErrorBoundary>
-        <Component {...pageProps} />
-      </ErrorBoundary>
+      <AppProvider>
+        <ErrorBoundary>
+          <Component {...pageProps} />
+        </ErrorBoundary>
+      </AppProvider>
     </>
   );
 }
