@@ -1,72 +1,31 @@
-import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 import type { DayOrderResponse } from '@/types/DayOrder';
 import type { InfoResponse } from '@/types/UserInfo';
 
-import { getCookie, clearCookies } from '@/utils/cookies';
+import { clearCookies, getCookie } from '@/utils/cookies';
 
-import Loader from '@/components/Loader';
-import Header from '@/components/Header';
-import { CalendarResponse } from '@/types/Calendar';
 import CalendarGenerator from '@/components/CalendarGenerator';
-import { FaCaretLeft, FaCaretRight } from 'react-icons/fa6';
-import { URL } from '@/utils/url';
+import Header from '@/components/Header';
+import Loader from '@/components/Loader';
 import { Sidebar } from '@/components/Sidebar';
+import { useDay } from '@/providers/DayProvider';
+import { useUser } from '@/providers/UserProvider';
+import { CalendarResponse } from '@/types/Calendar';
+import { URL } from '@/utils/url';
+import { FaCaretLeft, FaCaretRight } from 'react-icons/fa6';
 
 export default function Academia() {
   const router = useRouter();
 
-  const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
-  const [day, setDay] = useState<DayOrderResponse | null>(null);
-
+  const userInfo = useUser();
+  const day = useDay();
   const [page, setPage] = useState(0);
   const [calendar, setCalendar] = useState<CalendarResponse | null>(null);
 
   useEffect(() => {
-    // marks timetable attendance dayorder
-    const u = localStorage.getItem('userData');
-
-    if (u) setUserInfo(JSON.parse(u));
-
-    if (!u)
-      fetch(`${URL}/api/info`, {
-        method: 'GET',
-        headers: {
-          'X-CSRF-Token': getCookie('token') as string,
-          'Set-Cookie': getCookie('token') as string,
-          Cookie: getCookie('token') as string,
-          Connection: 'keep-alive',
-          'content-type': 'application/json',
-        },
-      })
-        .then((e) => e.json())
-        .then((data) => {
-          setUserInfo(data);
-        });
-
-    fetch(`${URL}/api/dayorder`, {
-      method: 'GET',
-      headers: {
-        'X-CSRF-Token': getCookie('token') as string,
-        'Set-Cookie': getCookie('token') as string,
-        Cookie: getCookie('token') as string,
-        Connection: 'keep-alive',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Cache-Control': 's-maxage=86400, stale-while-revalidate=7200',
-      },
-    })
-      .then((r) => r.json())
-      .then((res) => {
-        if (res.token_refresh) {
-          clearCookies();
-          window.location.reload();
-        } else {
-          setDay(res);
-        }
-      });
-
     if (!getCookie('token')) router.push('/login');
 
     setTimeout(() => {

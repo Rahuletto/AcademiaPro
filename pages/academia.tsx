@@ -1,5 +1,4 @@
 import dynamic from 'next/dynamic';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
@@ -22,21 +21,21 @@ import type { AttendanceResponse } from '@/types/Attendance';
 import type { DayOrderResponse } from '@/types/DayOrder';
 import type { MarksResponse } from '@/types/Marks';
 import type { TimeTableResponse } from '@/types/TimeTable';
-import type { InfoResponse } from '@/types/UserInfo';
 
 import { clearCookies, getCookie } from '@/utils/cookies';
 
 import Header from '@/components/Header';
 import Loader from '@/components/Loader';
-import { URL } from '@/utils/url';
-import { TableHeader } from '@/components/TableHeader';
 import { Sidebar } from '@/components/Sidebar';
+import { TableHeader } from '@/components/TableHeader';
+import { useDay } from '@/providers/DayProvider';
+import { useUser } from '@/providers/UserProvider';
+import { URL } from '@/utils/url';
 
 export default function Academia() {
   const router = useRouter();
-
-  const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
-  const [day, setDay] = useState<DayOrderResponse | null>(null);
+  const userInfo = useUser();
+  const day = useDay();
   const [attendance, setAttendance] = useState<AttendanceResponse | null>(null);
   const [table, setTable] = useState<TimeTableResponse | null>(null);
   const [todayTable, setToday] = useState<(string | undefined)[] | undefined>(
@@ -48,56 +47,9 @@ export default function Academia() {
     const m = localStorage.getItem('marks');
     const tt = localStorage.getItem('timetable');
     const a = localStorage.getItem('attendance');
-    const da = localStorage.getItem('dayOrder');
-    const u = localStorage.getItem('userData');
-
-    if (u) setUserInfo(JSON.parse(u));
     if (m) setMarks(JSON.parse(m));
     if (tt) setTable(JSON.parse(tt));
     if (a) setAttendance(JSON.parse(a));
-    if (da) setDay(JSON.parse(da));
-
-    if (!u)
-      fetch(`${URL}/api/info`, {
-        cache: 'default',
-        method: 'GET',
-        headers: {
-          'X-CSRF-Token': getCookie('token') as string,
-          'Set-Cookie': getCookie('token') as string,
-          Cookie: getCookie('token') as string,
-          Connection: 'keep-alive',
-          'content-type': 'application/json',
-          'Cache-Control': 'private, maxage=86400, stale-while-revalidate=7200',
-        },
-      })
-        .then((e) => e.json())
-        .then((data) => {
-          localStorage.setItem('userData', JSON.stringify(data));
-          setUserInfo(data);
-        });
-
-    fetch(`${URL}/api/dayorder`, {
-      cache: 'default',
-      method: 'GET',
-      headers: {
-        'X-CSRF-Token': getCookie('token') as string,
-        'Set-Cookie': getCookie('token') as string,
-        Cookie: getCookie('token') as string,
-        Connection: 'keep-alive',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=7200',
-      },
-    })
-      .then((r) => r.json())
-      .then((res) => {
-        if (res.token_refresh) {
-          clearCookies();
-          window.location.reload();
-        } else {
-          localStorage.setItem('dayOrder', JSON.stringify(res));
-          setDay(res);
-        }
-      });
 
     if (!getCookie('token')) router.push('/login');
 
