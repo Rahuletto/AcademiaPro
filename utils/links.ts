@@ -2,12 +2,12 @@ export const priorityUrl = [
   {
     site: 'Better-Lab',
     url: 'https://better-lab.vercel.app',
-    starlet: true,
+    type: 'starlet',
   },
   {
     site: 'Grade Calculator',
     url: 'https://gradex.vercel.app',
-    starlet: true,
+    type: 'starlet'
   },
 ]
 

@@ -1,26 +1,21 @@
-import styles from '@/styles/Links.module.css';
-import { priorityUrl, urls } from '@/utils/links';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-
-import type { DayOrderResponse } from '@/types/DayOrder';
-import type { InfoResponse } from '@/types/UserInfo';
-
-import { clearCookies, getCookie } from '@/utils/cookies';
-
 import Header from '@/components/Header';
 import Loader from '@/components/Loader';
 import { Sidebar } from '@/components/Sidebar';
-import { URL } from '@/utils/url';
+import { useDay } from '@/providers/DayProvider';
+import { useUser } from '@/providers/UserProvider';
+import styles from '@/styles/Links.module.css';
+import { getCookie } from '@/utils/cookies';
+import { priorityUrl, urls } from '@/utils/links';
 import Fuse from 'fuse.js';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import { GoDotFill } from 'react-icons/go';
 
 export default function Urls() {
   const router = useRouter();
-
-  const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
-  const [day, setDay] = useState<DayOrderResponse | null>(null);
+  const userInfo = useUser();
+  const day = useDay();
 
   const [array, setArray] = useState(urls);
   const [fuse, setFuse] = useState<any>(null);
@@ -40,46 +35,6 @@ export default function Urls() {
         keys: ['site', 'url'],
       }),
     );
-
-    const info = localStorage.getItem('userData');
-    if (info && info?.length > 1) setUserInfo(JSON.parse(info));
-    else {
-      fetch(`${URL}/api/info`, {
-        method: 'GET',
-        headers: {
-          'X-CSRF-Token': getCookie('token') as string,
-          'Set-Cookie': getCookie('token') as string,
-          Cookie: getCookie('token') as string,
-          Connection: 'keep-alive',
-          'content-type': 'application/json',
-        },
-      })
-        .then((e) => e.json())
-        .then((data) => {
-          setUserInfo(data);
-        });
-    }
-
-    fetch(`${URL}/api/dayorder`, {
-      method: 'GET',
-      headers: {
-        'X-CSRF-Token': getCookie('token') as string,
-        'Set-Cookie': getCookie('token') as string,
-        Cookie: getCookie('token') as string,
-        Connection: 'keep-alive',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Cache-Control': 's-maxage=86400, stale-while-revalidate=7200',
-      },
-    })
-      .then((r) => r.json())
-      .then((res) => {
-        if (res.token_refresh) {
-          clearCookies();
-          window.location.reload();
-        } else {
-          setDay(res);
-        }
-      });
 
     if (!getCookie('token')) router.push('/login');
 
