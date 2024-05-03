@@ -1,9 +1,8 @@
 import { FaDoorOpen } from 'react-icons/fa6';
 import { LuServerCrash } from 'react-icons/lu';
 
-import styles from '@/styles/Error.module.css';
 import Header from '@/components/Header';
-import { useRouter } from 'next/router';
+import styles from '@/styles/Error.module.css';
 
 export default function ErrorStack({ error }: { error: Error }) {
   return (
