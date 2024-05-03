@@ -46,6 +46,7 @@ export default function Academia() {
     const m = sessionStorage.getItem('marks');
     const tt = localStorage.getItem('timetable');
     const a = sessionStorage.getItem('attendance');
+    
     if (m) setMarks(JSON.parse(m));
     if (tt) setTable(JSON.parse(tt));
     if (a) setAttendance(JSON.parse(a));

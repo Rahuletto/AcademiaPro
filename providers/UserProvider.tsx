@@ -13,6 +13,7 @@ export function UserProvider({ children }: any) {
   const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
 
   useEffect(() => {
+
     const u = localStorage.getItem('userInfo');
     if (u) setUserInfo(JSON.parse(u));
     else
