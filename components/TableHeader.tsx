@@ -38,5 +38,9 @@ export function TableHeader() {
     }
   }, [time]);
 
-  return <tr className="bg-light-gray">{...arr}</tr>;
+  return (
+    <tr className="bg-light-gray">
+      {...arr.length > 10 ? arr.splice(0, 10) : arr}
+    </tr>
+  );
 }
