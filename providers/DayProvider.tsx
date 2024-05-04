@@ -15,7 +15,9 @@ export function DayProvider({ children }: any) {
 
   useEffect(() => {
     const cookie = getCookie('token');
-    if (cookie)
+    const u = sessionStorage.getItem('dayOrder');
+    if (u && JSON.parse(u).expireAt > Date.now()) setDay(JSON.parse(u));
+    else if (cookie)
       fetch(`${URL}/api/dayorder`, {
         cache: 'default',
         method: 'GET',
@@ -35,6 +37,7 @@ export function DayProvider({ children }: any) {
             clearCookies();
             window.location.reload();
           } else {
+            sessionStorage.setItem('dayOrder', JSON.stringify(res));
             setDay(res);
           }
         });

@@ -42,7 +42,7 @@ const Header = ({ title }: { title?: string } = { title: 'AcademiaPro' }) => (
         type="image/x-icon"
         href="/favicons/256.png"
       ></link>
-      <link key="icon" rel="icon" href={'/favicon.svg'} />
+      <link key="icon" rel="icon" href={'/favicons/256.png'} />
       <link rel="manifest" href="/manifest.json" />
       {/* PWA */}
       <meta name="application-name" content="AcademiaPro" />
