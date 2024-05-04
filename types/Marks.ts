@@ -1,5 +1,6 @@
 export interface MarksResponse {
   marks: Mark[];
+  expireAt: number;
 }
 
 export interface Mark {

@@ -1,5 +1,6 @@
 export interface InfoResponse {
   userInfo: UserInfo;
+  expireAt: number;
 }
 
 export interface UserInfo {
