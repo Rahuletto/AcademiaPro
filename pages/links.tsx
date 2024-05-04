@@ -4,6 +4,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { useDay } from '@/providers/DayProvider';
 import { useUser } from '@/providers/UserProvider';
 import styles from '@/styles/Links.module.css';
+import { LinkUrl } from '@/types/Links';
 import { getCookie } from '@/utils/cookies';
 import { priorityUrl, urls } from '@/utils/links';
 import Fuse from 'fuse.js';
@@ -17,15 +18,17 @@ export default function Urls() {
   const userInfo = useUser();
   const day = useDay();
 
-  const [array, setArray] = useState(urls);
-  const [fuse, setFuse] = useState<any>(null);
+  const [array, setArray] = useState<LinkUrl[]>(urls);
+  const [fuse, setFuse] = useState<Fuse<LinkUrl> | null>(null);
 
   const [search, setSearch] = useState('');
 
   useEffect(() => {
     if (fuse) {
       const searched = fuse.search(search);
-      setArray(searched[0] ? searched : urls);
+      console.log(searched);
+      const tempArr = searched.map((obj) => obj.item);
+      setArray(tempArr[0] ? tempArr : urls);
     }
   }, [search, fuse]);
 
