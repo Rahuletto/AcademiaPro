@@ -198,6 +198,9 @@ section {
   font-weight: bold;
   margin-bottom: 18px;
   color: #ebebeb;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .paginate {

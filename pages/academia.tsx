@@ -217,7 +217,14 @@ export default function Academia() {
           </section>
 
           <section className="marks" id="marks">
-            <h2 className="subtitle">Marks</h2>
+            <h2 className="subtitle">
+              Marks{' '}
+              {userInfo?.userInfo ? (
+                <a href={`https://gradex.vercel.app`} className="download">
+                  Calculate
+                </a>
+              ) : null}
+            </h2>
             <MarksTable data={marks} />
           </section>
         </div>
