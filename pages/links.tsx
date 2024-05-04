@@ -26,7 +26,6 @@ export default function Urls() {
   useEffect(() => {
     if (fuse) {
       const searched = fuse.search(search);
-      console.log(searched);
       const tempArr = searched.map((obj) => obj.item);
       setArray(tempArr[0] ? tempArr : urls);
     }
