@@ -106,19 +106,13 @@ export default function Urls() {
                 <h3>Official Sites</h3>
                 {array
                   .filter((link) => link.type == 'official')
-                  .map((k: any, i) => (
+                  .map((k: LinkUrl, i) => (
                     <div className={styles.urlBox} key={i}>
-                      <span>{k.item ? k.item.site : k.site}</span>
-                      <Link
-                        href={k.item ? k.item.url : k.url}
-                        className={styles.url}
-                      >
-                        {k.item ? k.item.url : k.url}
+                      <span>{k.site}</span>
+                      <Link href={k.url} className={styles.url}>
+                        {k.url}
                       </Link>
-                      <Link
-                        href={k.item ? k.item.url : k.url}
-                        className={styles.mobile}
-                      >
+                      <Link href={k.url} className={styles.mobile}>
                         Open
                       </Link>
                     </div>
@@ -130,19 +124,13 @@ export default function Urls() {
                 <h3>Unofficial Sites</h3>
                 {array
                   .filter((link) => link.type == 'unofficial')
-                  .map((k: any, i) => (
+                  .map((k: LinkUrl, i) => (
                     <div className={styles.urlBox} key={i}>
-                      <span>{k.item ? k.item.site : k.site}</span>
-                      <Link
-                        href={k.item ? k.item.url : k.url}
-                        className={styles.url}
-                      >
-                        {k.item ? k.item.url : k.url}
+                      <span>{k.site}</span>
+                      <Link href={k.url} className={styles.url}>
+                        {k.url}
                       </Link>
-                      <Link
-                        href={k.item ? k.item.url : k.url}
-                        className={styles.mobile}
-                      >
+                      <Link href={k.url} className={styles.mobile}>
                         Open
                       </Link>
                     </div>

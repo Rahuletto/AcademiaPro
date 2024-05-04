@@ -1,9 +1,9 @@
-import Card from "@/components/Card";
-import styles from "@/styles/Attendance.module.css";
-import type { AttendanceResponse, Course } from "@/types/Attendance";
+import Card from '@/components/Card';
+import styles from '@/styles/Attendance.module.css';
+import type { AttendanceResponse, Course } from '@/types/Attendance';
 
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const AttendanceTable = ({
   data,
@@ -14,12 +14,12 @@ const AttendanceTable = ({
 }) => {
   return (
     <>
-      <table style={{ width: "-webkit-fill-available" }}>
+      <table style={{ width: '-webkit-fill-available' }}>
         <thead />
         <thead />
-        <tbody className={[styles.attr, "attTable"].join(" ")}>
+        <tbody className={[styles.attr, 'attTable'].join(' ')}>
           {data && data.attendance ? (
-            data.attendance.map((element: Course, index: any) => (
+            data.attendance.map((element: Course, index: number) => (
               <Card
                 key={index}
                 title={element.courseTitle}
@@ -39,37 +39,37 @@ const AttendanceTable = ({
           ) : (
             <>
               <Skeleton
-                style={{ width: "60vw", height: "64px", borderRadius: "12px" }}
+                style={{ width: '60vw', height: '64px', borderRadius: '12px' }}
               />
               <Skeleton
                 style={{
-                  width: "60vw",
-                  height: "64px",
-                  borderRadius: "12px",
+                  width: '60vw',
+                  height: '64px',
+                  borderRadius: '12px',
                   opacity: 0.1,
                 }}
               />
               <Skeleton
-                style={{ width: "60vw", height: "64px", borderRadius: "12px" }}
+                style={{ width: '60vw', height: '64px', borderRadius: '12px' }}
               />
 
               <Skeleton
                 style={{
-                  width: "60vw",
-                  height: "64px",
-                  borderRadius: "12px",
+                  width: '60vw',
+                  height: '64px',
+                  borderRadius: '12px',
                   opacity: 0.1,
                 }}
               />
 
               <Skeleton
-                style={{ width: "60vw", height: "64px", borderRadius: "12px" }}
+                style={{ width: '60vw', height: '64px', borderRadius: '12px' }}
               />
               <Skeleton
                 style={{
-                  width: "60vw",
-                  height: "64px",
-                  borderRadius: "12px",
+                  width: '60vw',
+                  height: '64px',
+                  borderRadius: '12px',
                   opacity: 0.1,
                 }}
               />

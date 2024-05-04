@@ -6,7 +6,7 @@ const MarksTable = ({ data }: { data: MarksResponse | null }) => {
     <>
       <div className="markGrid">
         {data && data.marks ? (
-          data.marks.map((element, index: any) => (
+          data.marks.map((element, index: number) => (
             <MarksCard
               key={index}
               overall={element.overall}

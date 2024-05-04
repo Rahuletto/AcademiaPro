@@ -21,7 +21,7 @@ export default function Timetable() {
       }),
     })
       .then((d) => d.blob())
-      .then((res: any) => {
+      .then((res: Blob | MediaSource) => {
         const imageUrl = URL.createObjectURL(res);
         setData(imageUrl);
       });

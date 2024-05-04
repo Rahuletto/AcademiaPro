@@ -1,11 +1,11 @@
 import { endingTimesSlot, startingTimesSlot } from '@/types/Times';
 import { timeRange } from '@/utils/range';
 import { useInterval } from '@/utils/useInterval';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 
 export function TableHeader() {
   const [time, setTime] = useState(new Date());
-  const [arr, setArr] = useState<any[]>([]);
+  const [arr, setArr] = useState<ReactNode[]>([]);
 
   useEffect(() => {
     const currentTime = new Date();

@@ -1,7 +1,13 @@
 import { InfoResponse } from '@/types/UserInfo';
 import { getCookie } from '@/utils/cookies';
 import { URL } from '@/utils/url';
-import { createContext, useContext, useEffect, useState } from 'react';
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 
 const UserContext = createContext<InfoResponse | null>(null);
 
@@ -9,7 +15,7 @@ export function useUser() {
   return useContext(UserContext);
 }
 
-export function UserProvider({ children }: any) {
+export function UserProvider({ children }: { children: ReactNode }) {
   const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
 
   useEffect(() => {

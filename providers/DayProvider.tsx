@@ -2,7 +2,13 @@ import { DayOrderResponse } from '@/types/DayOrder';
 import { clearCookies, getCookie } from '@/utils/cookies';
 import { URL } from '@/utils/url';
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useState,
+} from 'react';
 
 const DayContext = createContext<DayOrderResponse | null>(null);
 
@@ -10,7 +16,7 @@ export function useDay() {
   return useContext(DayContext);
 }
 
-export function DayProvider({ children }: any) {
+export function DayProvider({ children }: { children: ReactNode }) {
   const [day, setDay] = useState<DayOrderResponse | null>(null);
 
   useEffect(() => {

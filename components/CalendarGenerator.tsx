@@ -1,8 +1,9 @@
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-import styles from "@/styles/Calendar.module.css";
-import { Calendar, Day } from "@/types/Calendar";
-import CalendarCard from "./CalendarCard";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import styles from '@/styles/Calendar.module.css';
+import { Calendar, Day } from '@/types/Calendar';
+import CalendarCard from './CalendarCard';
+import { ReactNode } from 'react';
 
 const CalendarGenerator = ({
   data,
@@ -11,7 +12,7 @@ const CalendarGenerator = ({
 }: {
   data: Calendar;
   page: number;
-  children: any;
+  children: ReactNode;
 }) => {
   return (
     <div className={styles.calendar}>
@@ -24,7 +25,7 @@ const CalendarGenerator = ({
             <span className={styles.calendarElem}>Event</span>
             <span className={styles.calendarElem}>Day Order</span>
 
-            {data.days.map((element: Day, index: any) => (
+            {data.days.map((element: Day, index: number) => (
               <CalendarCard key={index} month={page} element={element} />
             ))}
           </div>
@@ -32,7 +33,7 @@ const CalendarGenerator = ({
       ) : (
         <>
           <Skeleton
-            style={{ width: "60vw", height: "70vh", borderRadius: "12px" }}
+            style={{ width: '60vw', height: '70vh', borderRadius: '12px' }}
           />
         </>
       )}
