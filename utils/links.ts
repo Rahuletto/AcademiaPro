@@ -1,3 +1,5 @@
+import { LinkUrl } from '@/types/Links';
+
 export const priorityUrl = [
   {
     site: 'Better-Lab',
@@ -7,19 +9,19 @@ export const priorityUrl = [
   {
     site: 'Grade Calculator',
     url: 'https://gradex.vercel.app',
-    type: 'starlet'
+    type: 'starlet',
   },
-]
+];
 
-export const urls = [
+export const urls: LinkUrl[] = [
   {
     site: "What's in my mess",
     url: 'https://whatsinmess.vercel.app/',
     type: 'unofficial',
   },
   {
-    site: "EveHubSrm",
-    url: "https://evehubsrm.vercel.app/",
+    site: 'EveHubSrm',
+    url: 'https://evehubsrm.vercel.app/',
     type: 'unofficial',
   },
   // {
@@ -102,6 +104,11 @@ export const urls = [
   {
     site: 'SRM Wifi',
     url: 'https://iac.srmist.edu.in/Connect/PortalMain',
+    type: 'official',
+  },
+  {
+    site: 'Service desk',
+    url: 'https://itkmservicedesk.srmist.edu.in/',
     type: 'official',
   },
 ].sort(function (a, b) {
