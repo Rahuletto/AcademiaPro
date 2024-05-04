@@ -43,9 +43,9 @@ export default function Academia() {
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
   useEffect(() => {
-    const m = sessionStorage.getItem('marks');
+    const m = localStorage.getItem('marks');
     const tt = localStorage.getItem('timetable');
-    const a = sessionStorage.getItem('attendance');
+    const a = localStorage.getItem('attendance');
 
     if (m) setMarks(JSON.parse(m));
     if (tt) setTable(JSON.parse(tt));
@@ -90,7 +90,7 @@ export default function Academia() {
 
   useEffect(() => {
     if (userInfo) {
-      if (!attendance)
+      if (!attendance || attendance.expireAt < Date.now())
         fetch(`${URL}/api/attendance`, {
           next: { revalidate: 2 * 3600 },
           cache: 'default',
@@ -111,13 +111,13 @@ export default function Academia() {
               clearCookies();
               window.location.reload();
             } else {
-              sessionStorage.setItem('attendance', JSON.stringify(res));
+              localStorage.setItem('attendance', JSON.stringify(res));
               setAttendance(res);
             }
           })
           .catch(() => {});
 
-      if (!table?.table) {
+      if (table && (!table?.table || table.expireAt < Date.now())) {
         fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
           next: { revalidate: 30 * 24 * 3600 },
           cache: 'default',
@@ -145,7 +145,7 @@ export default function Academia() {
           .catch(() => {});
       }
 
-      if (!marks)
+      if (!marks || marks.expireAt < Date.now())
         fetch(`${URL}/api/marks`, {
           cache: 'default',
           next: { revalidate: 2 * 3600 },
@@ -166,7 +166,7 @@ export default function Academia() {
               clearCookies();
               window.location.reload();
             } else {
-              sessionStorage.setItem('marks', JSON.stringify(res));
+              localStorage.setItem('marks', JSON.stringify(res));
               setMarks(res);
             }
           })

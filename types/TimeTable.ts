@@ -1,5 +1,6 @@
 export interface TimeTableResponse {
   table: Table[];
+  expireAt: number;
 }
 
 export interface Table {

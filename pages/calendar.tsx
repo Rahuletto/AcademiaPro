@@ -23,8 +23,7 @@ export default function Academia() {
     if (!getCookie('token')) router.push('/login');
 
     const c = localStorage.getItem('calendar');
-
-    if (c) setCalendar(JSON.parse(c));
+    if (c && JSON.parse(c).expireAt > Date.now()) setCalendar(JSON.parse(c));
     else
       fetch(`${URL}/api/calendar`, {
         next: { revalidate: 31 * 24 * 3600 },
