@@ -16,7 +16,7 @@ export function UserProvider({ children }: any) {
     const cookie = getCookie('token');
 
     const u = localStorage.getItem('userInfo');
-    if (u) setUserInfo(JSON.parse(u));
+    if (u && JSON.parse(u).expireAt > Date.now()) setUserInfo(JSON.parse(u));
     else if (cookie)
       fetch(`${URL}/api/info`, {
         cache: 'default',
