@@ -9,7 +9,7 @@ export default async function POST(request: Request) {
     const c = await request.json();
 
     const t = await fetch(`${URL}/api/timetable?batch=${c.batch}`, {
-      cache: 'force-cache',
+      cache: 'default',
       method: 'GET',
       headers: {
         'X-CSRF-Token': c.cookies,
