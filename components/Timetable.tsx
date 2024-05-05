@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import type { InfoResponse } from '@/types/UserInfo';
 import { endingTimesSlot, startingTimesSlot } from '@/types/Times';
 import { convertUnicode } from '@/utils/unicode';
+import { truncateString } from '@/utils/truncate';
 
 const TimeTableComponent = ({
   table,
@@ -29,7 +30,7 @@ const TimeTableComponent = ({
                     : styles.lab
                 }
               >
-                {convertUnicode(element).split('(')[0]}
+                {truncateString(convertUnicode(element).split('(')[0])}
                 <span className={styles.timeSlot}>
                   {startingTimesSlot[index]} - {endingTimesSlot[index]}
                 </span>

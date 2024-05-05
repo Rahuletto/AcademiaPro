@@ -1,6 +1,7 @@
 import { startingTimesSlot, endingTimesSlot } from '@/types/Times';
 import { TimeTableResponse } from '@/types/TimeTable';
 import { timeConvert } from '@/utils/convert';
+import { truncateString } from '@/utils/truncate';
 import { convertUnicode } from '@/utils/unicode';
 
 const styled = {
@@ -91,7 +92,7 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
                     key={`table-${i}-${j}`}
                   >
                     <td style={constructStyles(i, j, elem)}>
-                      {convertUnicode(elem).split('(')[0]}
+                      {truncateString(convertUnicode(elem).split('(')[0])}
                     </td>
                   </div>
                 ) : (
