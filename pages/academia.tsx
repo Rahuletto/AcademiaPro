@@ -117,10 +117,9 @@ export default function Academia() {
           })
           .catch(() => {});
 
-      if (table && (!table?.table || table.expireAt < Date.now())) {
+      if (!table || table.expireAt < Date.now()) {
         fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
-          next: { revalidate: 30 * 24 * 3600 },
-          cache: 'default',
+          next: { revalidate: 12 * 3600 },
           method: 'GET',
           headers: {
             'X-CSRF-Token': getCookie('token') as string,
@@ -128,8 +127,7 @@ export default function Academia() {
             Cookie: getCookie('token') as string,
             Connection: 'keep-alive',
             'Accept-Encoding': 'gzip, deflate, br, zstd',
-            'Cache-Control':
-              'private, maxage=86400, stale-while-revalidate=7200',
+            'Cache-Control': 'private, maxage=86400',
           },
         })
           .then((r) => r.json())
