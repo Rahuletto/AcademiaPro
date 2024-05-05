@@ -26,7 +26,7 @@ export default function Academia() {
     if (c && JSON.parse(c).expireAt > Date.now()) setCalendar(JSON.parse(c));
     else
       fetch(`${URL}/api/calendar`, {
-        next: { revalidate: 31 * 24 * 3600 },
+        next: { revalidate: 2 * 3600 },
         method: 'GET',
         cache: 'force-cache',
         headers: {
@@ -35,7 +35,6 @@ export default function Academia() {
           Cookie: getCookie('token') as string,
           Connection: 'keep-alive',
           'Accept-Encoding': 'gzip, deflate, br, zstd',
-          'Cache-Control': 'public, s-maxage=86400',
         },
       })
         .then((r) => r.json())
