@@ -2,7 +2,7 @@ import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import styles from '@/styles/Calendar.module.css';
 import { Calendar, Day } from '@/types/Calendar';
-import CalendarCard from './CalendarCard';
+import CalendarCard from '../components/CalendarCard';
 import { ReactNode } from 'react';
 
 const CalendarGenerator = ({

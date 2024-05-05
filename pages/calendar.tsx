@@ -1,4 +1,4 @@
-import CalendarGenerator from '@/components/CalendarGenerator';
+import CalendarGenerator from '@/generator/CalendarGenerator';
 import Header from '@/components/Header';
 import Loader from '@/components/Loader';
 import { Sidebar } from '@/components/Sidebar';

@@ -2,6 +2,7 @@ import styles from '@/styles/Timetable.module.css';
 import { useRouter } from 'next/router';
 import type { InfoResponse } from '@/types/UserInfo';
 import { endingTimesSlot, startingTimesSlot } from '@/types/Times';
+import { convertUnicode } from '@/utils/unicode';
 
 const TimeTableComponent = ({
   table,
@@ -28,7 +29,7 @@ const TimeTableComponent = ({
                     : styles.lab
                 }
               >
-                {String(element).split('(')[0]}
+                {convertUnicode(element).split('(')[0]}
                 <span className={styles.timeSlot}>
                   {startingTimesSlot[index]} - {endingTimesSlot[index]}
                 </span>
