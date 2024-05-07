@@ -50,7 +50,8 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
 
     setExpanded((e) => !e);
   }
-
+  console.log(name);
+  console.log(parseFloat(overall.total));
   return (
     <>
       {arr[0] ? (
@@ -128,9 +129,12 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
               </span>
 
               <button
-                onClick={expand}
+                onClick={() =>
+                  parseFloat(overall.total) !== 100 ? expand() : null
+                }
                 id="calc-btn"
                 className="download"
+
               ></button>
 
               <div
