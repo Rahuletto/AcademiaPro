@@ -10,6 +10,7 @@ import Profile from './badges/Profile';
 import { InfoResponse } from '@/types/UserInfo';
 import { DayOrderResponse } from '@/types/DayOrder';
 import { useEffect } from 'react';
+import Script from 'next/script';
 
 interface SidebarProps {
   todayTable?: (string | undefined)[] | undefined;
@@ -37,12 +38,41 @@ export function Sidebar({ todayTable, userInfo, day, page }: SidebarProps) {
   }, []);
   return (
     <>
+      <Script src="https://hyperping.io/badge.js" async></Script>
+      <Script id="hyperping">
+        {`
+  window.onload = function () {
+    Hyperping.init({
+      "statuspage": "https://academia-pro.hyperping.app",
+      "border": "none",
+      "borderColor": "",
+      "uptime": false,
+      "dot": true,
+      "dotSize": 10,
+      "isNeutral": false,
+      "dotOk": "#2BAC76",
+      "dotIncident": "#FFAF36",
+      "dotOutage": "#E95858",
+      "dotMaintenance": "#0070F3",
+      "dotNeutral": "#0070F3",
+      "operational": "",
+      "incident": "",
+      "outage": "",
+      "maintenance": ""
+    });
+  }
+  `}
+      </Script>
+
       <div className="nav-hider"></div>
 
       <div className="nav">
         <div className="navbox">
           <div className="nav-title">
             <h1>Academia</h1>
+
+            <div id="hyperping-badge"></div>
+
             {/* <Link href="/docs"><BiHelpCircle title="How to use it like a pro?" /></Link> */}
           </div>
 

@@ -220,49 +220,6 @@ input {
   gap: 6px;
 }
 
-.nav-buttons a:hover,
-.h-button.active {
-  color: var(--accent) !important;
-  background: #171d26;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: -webkit-fill-available;
-}
-
-.nav {
-  width: -webkit-fill-available;
-  max-width: 300px;
-  min-width: 200px;
-  min-height: 95vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: -webkit-fill-available;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: sticky;
-  top: 12px;
-  padding: 22px !important;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
-  -o-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
-  transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
-  -moz-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
-  -ms-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
-  padding-left: 32px !important;
-}
-
 #total-row #calc-btn {
   display: none;
   opacity: 0;
@@ -304,31 +261,6 @@ input {
 .markExpand #total-row #total {
   animation: 0.05s fadeout forwards;
   -webkit-animation: 0.05s fadeout forwards;
-}
-
-.nav-hider {
-  display: none;
-}
-
-.navbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.nav h1 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #fff;
-  font-weight: 500;
-  font-size: 32px;
 }
 
 .content {
@@ -401,131 +333,9 @@ input {
   border-color: var(--red) !important;
 }
 
-.nav-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav-title a {
-  color: rgba(255, 255, 255, 0.4) !important;
-  font-size: 22px;
-  cursor: pointer;
-}
-
-.nav-foot {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.nav-foot a {
-  color: var(--accent);
-  background: var(--side-active);
-  padding: 8px 22px;
-  border-radius: 12px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-flex;
-  justify-content: center;
-  gap: 6px;
-  align-items: center;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-}
-
-.nav-foot a svg {
-  font-size: 20px;
-}
-
-.open {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #0a0d12;
-  color: #d4d4d4;
-  border-radius: 50px;
-  width: 48px;
-  height: 48px;
-  border: 2px solid #0a0d12;
-  border: 2px solid rgb(7, 7, 7);
-
-  z-index: 20;
-  font-size: 28px;
-}
-.viewable {
-  -webkit-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
-  -o-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
-  transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
-}
-
-@-webkit-keyframes slide {
-  from {
-    -webkit-transform: translateX(-200px);
-    transform: translateX(-200px);
-  }
-  to {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-}
-
-@keyframes slide {
-  from {
-    -webkit-transform: translateX(-200px);
-    transform: translateX(-200px);
-  }
-  to {
-    -webkit-transform: translateX(0px);
-    transform: translateX(0px);
-  }
-}
 @media only screen and (max-width: 1100px) {
   body {
     padding-left: 12px !important;
-  }
-  .nav {
-    -webkit-transform: translateX(-200px);
-    -ms-transform: translateX(-200px);
-    transform: translateX(-200px);
-    display: none;
-    background: var(--background);
-    top: 0;
-    left: 0;
-    z-index: 5;
-  }
-
-  .nav-hider.viewable {
-    z-index: 2;
-
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 98vw;
-    background: rgba(7, 7, 7, 0.2);
-  }
-
-  .nav.viewable {
-    -webkit-box-shadow: 20px 0px 200px 120px rgb(4 7 11);
-    box-shadow: 20px 0px 200px 120px rgb(4 7 11);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: fixed;
-    z-index: 8;
-    -webkit-animation: 0.4s slide forwards;
-    animation: 0.4s slide forwards;
-  }
-  .open {
-    z-index: 20;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
