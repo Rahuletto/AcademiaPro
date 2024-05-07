@@ -1,4 +1,4 @@
-import MarksCard from '@/components/MarksCard';
+import MarksCard from '@/components/cards/MarksCard';
 import type { MarksResponse } from '@/types/Marks';
 
 const MarksTable = ({ data }: { data: MarksResponse | null }) => {

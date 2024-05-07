@@ -14,7 +14,7 @@ interface Props {
 import styles from '@/styles/Card.module.css';
 import { calculateMargin } from '@/utils/margin';
 import { useEffect, useState } from 'react';
-import { truncateString } from '../utils/truncate';
+import { truncateString } from '../../utils/truncate';
 
 const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
   const [margin, setMargin] = useState(0);

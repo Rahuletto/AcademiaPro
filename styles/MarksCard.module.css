@@ -6,6 +6,7 @@
 */
 
 .card {
+  cursor: crosshair;
   padding: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,17 +15,17 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-          
+  -ms-flex-direction: column;
+  flex-direction: column;
+
   gap: 14px;
   border: 2px solid var(--background-dark);
   -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   -o-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .card h4 {
@@ -37,8 +38,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .marks {
@@ -47,8 +48,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 8px;
 }
 
@@ -58,11 +59,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   gap: 18px;
 }
 
@@ -70,9 +71,9 @@
   color: rgba(197, 197, 197, 0.7);
   font-size: 16px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .circle {
@@ -100,11 +101,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -128,9 +129,9 @@
 
 .total {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: var(--color);
   color: var(--background);
   padding: 0px 10px;
@@ -148,8 +149,7 @@
   flex-direction: column;
 }
 @media (max-width: 900px) {
-  .card{
+  .card {
     height: auto !important;
   }
-
 }

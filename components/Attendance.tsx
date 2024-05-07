@@ -1,4 +1,4 @@
-import Card from '@/components/Card';
+import Card from '@/components/cards/Card';
 import styles from '@/styles/Attendance.module.css';
 import type { AttendanceResponse, Course } from '@/types/Attendance';
 

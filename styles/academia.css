@@ -103,6 +103,123 @@ section {
   transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
 }
 
+.markGrid:has(.markExpand) .markCard {
+  opacity: 0.2;
+}
+
+.markGrid .markExpand .markCard {
+  opacity: 1 !important;
+  -webkit-box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+  box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+}
+
+.markGrid {
+  border-radius: 34px;
+  -webkit-border-radius: 34px;
+  -moz-border-radius: 34px;
+  -ms-border-radius: 34px;
+  -o-border-radius: 34px;
+  background: var(--background);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  grid-template-rows: min-content;
+  margin-bottom: 32;
+}
+.grade {
+  width: -webkit-fill-available;
+  display: none;
+}
+
+.markExpand .grade {
+  height: fit-content;
+  bottom: -100px;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+  box-shadow: 0px 0px 200px 300px rgba(4, 7, 11, 0.13);
+  z-index: 2;
+  gap: 6px;
+  position: absolute;
+  flex-direction: column;
+  padding: 6px 14px;
+  background: var(--background-light);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.markExpand #total-row #calc-btn {
+  background-color: var(--red);
+  color: var(--background-dark) !important;
+}
+
+.markExpand #total-row #calc-btn::after {
+  content: 'Close' !important;
+}
+
+.grade p {
+  color: rgba(197, 197, 197, 0.5);
+
+  font-size: 14px;
+}
+
+#warn {
+  color: rgba(255, 255, 255, 0.45);
+  background: #ffcb6343;
+  font-size: 12px;
+  margin: 0px -14px;
+  padding: 4px 12px;
+  margin-bottom: -6px;
+  border-radius: 0px 0px 6px 6px;
+  -webkit-border-radius: 0px 0px 6px 6px;
+  -moz-border-radius: 0px 0px 6px 6px;
+  -ms-border-radius: 0px 0px 6px 6px;
+  -o-border-radius: 0px 0px 6px 6px;
+}
+
+#gradex select,
+input {
+  outline: none;
+  background: var(--background-dark);
+  padding: 4px 8px;
+  color: var(--color);
+  border-radius: 6px;
+  border: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+#gradex input {
+  width: 40px;
+}
+#gradex input[type='number']::-webkit-inner-spin-button,
+#gradex input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#gradex input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+#gradex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#gradex div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .nav-buttons a:hover,
 .h-button.active {
   color: var(--accent) !important;
@@ -144,6 +261,49 @@ section {
   -moz-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
   -ms-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
   padding-left: 32px !important;
+}
+
+#total-row #calc-btn {
+  display: none;
+  opacity: 0;
+  padding: 2px 12px;
+}
+
+#total-row #calc-btn::after {
+  content: 'Calculate';
+}
+
+.markCard#theory:hover #total-row #calc-btn,
+.markExpand #total-row #calc-btn {
+  display: block;
+  animation: 0.15s 0.05s fadein forwards;
+  -webkit-animation: 0.15s 0.05s fadein forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.markCard#theory:hover #total,
+.markExpand #total-row #total {
+  animation: 0.05s fadeout forwards;
+  -webkit-animation: 0.05s fadeout forwards;
 }
 
 .nav-hider {

@@ -62,7 +62,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
         >
           <div
             title={`${code} (${category})`}
-            id="markCard"
+            id={category.toLowerCase()}
             onDoubleClick={expand}
             className={[styles.card, 'markCard'].join(' ')}
           >
@@ -113,15 +113,25 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
             </div>
 
             <div
+              id="total-row"
               className={styles.row}
               style={{
                 borderTop: '1px solid var(--side-active)',
                 paddingTop: 12,
               }}
             >
-              <span className={[styles.muted_title, 'col-6'].join(' ')}>
+              <span
+                id="total"
+                className={[styles.muted_title, 'col-6'].join(' ')}
+              >
                 Total
               </span>
+
+              <button
+                onClick={expand}
+                id="calc-btn"
+                className="download"
+              ></button>
 
               <div
                 className={styles.markPill}
