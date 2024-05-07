@@ -108,7 +108,11 @@ export class Hyperping {
     let parentElement = document.getElementById('hyperping-badge');
     if (parentElement) {
       parentElement.setAttribute('style', getParentStyles());
-      parentElement.setAttribute('href', 'https://' + params.statuspage);
+      let statuspageUrl = params.statuspage;
+      statuspageUrl = statuspageUrl.replace('https://', '');
+      statuspageUrl = statuspageUrl.replace('http://', '');
+
+      parentElement.setAttribute('href', 'https://' + statuspageUrl);
       parentElement.setAttribute('target', '_blank');
       parentElement.insertAdjacentHTML('beforeend', badge);
     }

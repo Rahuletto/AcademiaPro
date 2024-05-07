@@ -515,6 +515,8 @@ hr {
   body:has(.viewable) .open {
     color: var(--background-darker) !important;
     background-color: var(--red) !important;
+    padding: 2px 12px;
+    opacity: 0.5;
     border: 2px solid transparent !important;
   }
 }
