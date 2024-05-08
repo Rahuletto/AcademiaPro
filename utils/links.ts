@@ -45,6 +45,16 @@ export const urls: LinkUrl[] = [
     url: 'https://www.srmist.edu.in/events/',
     type: 'official',
   },
+{
+    site: 'E-Library',
+    url: 'https://emanager.srmist.edu.in/elibrary/Home.jsp',
+    type: 'official',
+  },
+{
+    site: 'Question papers',
+    url: 'http://dspace.srmist.edu.in/dspace',
+    type: 'official',
+  },
 
   {
     site: 'Weather',
