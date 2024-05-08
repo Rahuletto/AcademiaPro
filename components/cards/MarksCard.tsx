@@ -50,8 +50,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
 
     setExpanded((e) => !e);
   }
-  console.log(name);
-  console.log(parseFloat(overall.total));
+  
   return (
     <>
       {arr[0] ? (
