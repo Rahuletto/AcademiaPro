@@ -155,6 +155,10 @@ a {
   transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   cursor: pointer;
 }
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 button:active {
   opacity: 0.8;
   -webkit-transform: scale(0.95) rotate(-2deg);
