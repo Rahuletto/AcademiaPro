@@ -47,8 +47,9 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
     Array.from(e).forEach((w) => {
       w.classList.toggle('markExpand');
     });
-
-    setExpanded((e) => !e);
+    if(parseFloat(overall.total) !== 100) {
+      setExpanded((e) => !e);
+    }
   }
   
   return (
@@ -128,9 +129,8 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
               </span>
 
               <button
-                onClick={() =>
-                  parseFloat(overall.total) !== 100 ? expand() : null
-                }
+                disabled={parseFloat(overall.total) == 100}
+                onClick={expand}
                 id="calc-btn"
                 className="download"
 
