@@ -86,9 +86,9 @@ export const urls: LinkUrl[] = [
     url: 'https://sp.srmist.edu.in',
     type: 'official',
   },
-  {
-    site: 'E-Library',
-    url: 'https://emanager.srmist.edu.in/elibrary/',
+{
+    site: 'Service Desk',
+    url: 'https://sd.srmist.edu.in',
     type: 'official',
   },
   {
