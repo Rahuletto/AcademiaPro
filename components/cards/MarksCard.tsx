@@ -47,11 +47,11 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
     Array.from(e).forEach((w) => {
       w.classList.toggle('markExpand');
     });
-    if(parseFloat(overall.total) !== 100) {
+    if (parseFloat(overall.total) !== 100) {
       setExpanded((e) => !e);
     }
   }
-  
+
   return (
     <>
       {arr[0] ? (
@@ -133,7 +133,6 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                 onClick={expand}
                 id="calc-btn"
                 className="download"
-
               ></button>
 
               <div
@@ -181,9 +180,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                   value={grade}
                   onChange={(e) => setGrade(e.target.value)}
                 >
-                  <option selected value="O">
-                    O
-                  </option>
+                  <option value="O">O</option>
                   <option value="A+">A+</option>
                   <option value="A">A</option>
                   <option value="B+">B+</option>

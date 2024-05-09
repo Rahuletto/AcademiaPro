@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
+import { useTimeTable } from '@/providers/TableProvider';
 import { useUser } from '@/providers/UserProvider';
-import { getCookie } from '@/utils/cookies';
+
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
@@ -10,14 +11,15 @@ import Skeleton from 'react-loading-skeleton';
 export default function Timetable() {
   const router = useRouter();
   const userInfo = useUser();
+  const table = useTimeTable();
+
   const [data, setData] = useState('');
 
   useEffect(() => {
     fetch(`/api/timetable/${userInfo?.userInfo?.regNo}`, {
       method: 'POST',
       body: JSON.stringify({
-        cookies: getCookie('token') as string,
-        batch: userInfo?.userInfo?.batch,
+        table: table,
       }),
     })
       .then((d) => d.blob())
