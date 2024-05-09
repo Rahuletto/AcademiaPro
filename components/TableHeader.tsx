@@ -37,6 +37,7 @@ export function TableHeader() {
     for (let i = 0; i < startingTimesSlot.length; i++) {
       const newValue = (
         <th
+          key={i}
           title={startingTimesSlot[i] + '-' + endingTimesSlot[i]}
           className="head-time"
         >

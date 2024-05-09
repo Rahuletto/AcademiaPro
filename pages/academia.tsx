@@ -19,7 +19,6 @@ const TimeTableComponent = dynamic(
 
 import type { AttendanceResponse } from '@/types/Attendance';
 import type { MarksResponse } from '@/types/Marks';
-import type { TimeTableResponse } from '@/types/TimeTable';
 
 import { clearCookies, getCookie } from '@/utils/cookies';
 
@@ -30,13 +29,15 @@ import { TableHeader } from '@/components/TableHeader';
 import { useDay } from '@/providers/DayProvider';
 import { useUser } from '@/providers/UserProvider';
 import { URL } from '@/utils/url';
+import { useTimeTable } from '@/providers/TableProvider';
 
 export default function Academia() {
   const router = useRouter();
   const userInfo = useUser();
   const day = useDay();
+  const table = useTimeTable();
+
   const [attendance, setAttendance] = useState<AttendanceResponse | null>(null);
-  const [table, setTable] = useState<TimeTableResponse | null>(null);
   const [todayTable, setToday] = useState<(string | undefined)[] | undefined>(
     [],
   );
@@ -44,11 +45,9 @@ export default function Academia() {
 
   useEffect(() => {
     const m = localStorage.getItem('marks');
-    const tt = localStorage.getItem('timetable');
     const a = localStorage.getItem('attendance');
 
     if (m) setMarks(JSON.parse(m));
-    if (tt) setTable(JSON.parse(tt));
     if (a) setAttendance(JSON.parse(a));
 
     if (!getCookie('token')) router.push('/login');
@@ -116,32 +115,6 @@ export default function Academia() {
             }
           })
           .catch(() => {});
-
-      if (!table || table.expireAt < Date.now()) {
-        fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
-          next: { revalidate: 12 * 3600 },
-          method: 'GET',
-          headers: {
-            'X-CSRF-Token': getCookie('token') as string,
-            'Set-Cookie': getCookie('token') as string,
-            Cookie: getCookie('token') as string,
-            Connection: 'keep-alive',
-            'Accept-Encoding': 'gzip, deflate, br, zstd',
-            'Cache-Control': 'private, maxage=86400',
-          },
-        })
-          .then((r) => r.json())
-          .then((res) => {
-            if (res.token_refresh) {
-              clearCookies();
-              window.location.reload();
-            } else {
-              localStorage.setItem('timetable', JSON.stringify(res));
-              setTable(res);
-            }
-          })
-          .catch(() => {});
-      }
 
       if (!marks || marks.expireAt < Date.now())
         fetch(`${URL}/api/marks`, {

@@ -6,22 +6,7 @@ export const runtime = 'edge';
 
 export default async function POST(request: Request) {
   try {
-    const c = await request.json();
-
-    const t = await fetch(`${URL}/api/timetable?batch=${c.batch}`, {
-      cache: 'default',
-      method: 'GET',
-      headers: {
-        'X-CSRF-Token': c.cookies,
-        'Set-Cookie': c.cookies,
-        Cookie: c.cookies,
-        Connection: 'keep-alive',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Cache-Control': 'maxage=86400',
-      },
-    });
-
-    const table = await t.json();
+    const { table } = await request.json();
 
     if (!table.table || !table.table[0])
       return new Response(
