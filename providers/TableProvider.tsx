@@ -45,7 +45,7 @@ export function TableProvider({ children }: { children: ReactNode }) {
             setTable(res);
           }
         });
-  }, []);
+  }, [userInfo]);
 
   return (
     <TableContext.Provider value={table}>{children}</TableContext.Provider>
