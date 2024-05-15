@@ -12,7 +12,6 @@ import Fuse from 'fuse.js';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { GoDotFill } from 'react-icons/go';
 
 export default function Urls() {
   const router = useRouter();
@@ -87,15 +86,25 @@ export default function Urls() {
                     }}
                   >
                     {k.site}{' '}
-                    <GoDotFill
-                      title="Starlet websites"
-                      style={{ color: '#6C479A' }}
-                    />
                   </span>
-                  <Link href={k.url} className={styles.url}>
+                  <Link
+                    style={{
+                      backgroundColor: '#3E80D7',
+                      color: 'var(--background-dark)',
+                    }}
+                    href={k.url}
+                    className={styles.url}
+                  >
                     {k.url}
                   </Link>
-                  <Link href={k.url} className={styles.mobile}>
+                  <Link
+                    style={{
+                      backgroundColor: '#3E80D7',
+                      color: 'var(--background-dark)',
+                    }}
+                    href={k.url}
+                    className={styles.mobile}
+                  >
                     Open
                   </Link>
                 </div>
@@ -139,9 +148,12 @@ export default function Urls() {
               </div>
             ) : null}
 
+            <div style={{ marginTop: 64 }}>
+              <Footer />
+            </div>
+
             <div style={{ marginBottom: 64 }} />
           </div>
-          <Footer />
         </div>
       </main>
     </>

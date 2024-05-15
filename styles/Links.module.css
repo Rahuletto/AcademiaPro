@@ -78,7 +78,6 @@
 }
 .priority,
 .usefulLinks {
-  border: 2px solid #6c479a;
   padding: 12px 24px;
   gap: 16px;
   display: flex;
@@ -89,18 +88,6 @@
 }
 .usefulLinks {
   border: 2px solid var(--background-light);
-}
-
-.priority::before {
-  content: 'Our sites';
-  color: var(--background-dark);
-  background-color: #6c479a;
-  padding: 4px 12px;
-  position: absolute;
-  font-size: 12px;
-  font-weight: 700;
-  border-radius: 12px;
-  top: -14px;
 }
 
 @media only screen and (max-width: 1100px) {

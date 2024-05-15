@@ -9,7 +9,7 @@ import Hour from './badges/Hour';
 import Profile from './badges/Profile';
 import { InfoResponse } from '@/types/UserInfo';
 import { DayOrderResponse } from '@/types/DayOrder';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Script from 'next/script';
 import { Hyperping } from '@/utils/hyperping';
 
@@ -21,40 +21,53 @@ interface SidebarProps {
 }
 
 export function Sidebar({ todayTable, userInfo, day, page }: SidebarProps) {
+  const hyper = useRef<any>(null);
+
   useEffect(() => {
-    Hyperping.init({
-      statuspage: 'https://academia-pro.hyperping.app',
-      border: 'none',
-      borderColor: '',
-      uptime: false,
-      dot: true,
-      dotSize: 10,
-      isNeutral: false,
-      dotOk: '#2BAC76',
-      dotIncident: '#FFAF36',
-      dotOutage: '#E95858',
-      dotMaintenance: '#0070F3',
-      dotNeutral: '#0070F3',
-      operational: '',
-      incident: '',
-      outage: '',
-      maintenance: '',
-    });
+    if (!hyper.current) {
+      hyper.current = Hyperping.init({
+        statuspage: 'https://academia-pro.hyperping.app',
+        border: 'none',
+        borderColor: '',
+        uptime: false,
+        dot: true,
+        dotSize: 10,
+        isNeutral: false,
+        dotOk: '#2BAC76',
+        dotIncident: '#FFAF36',
+        dotOutage: '#E95858',
+        dotMaintenance: '#0070F3',
+        dotNeutral: '#0070F3',
+        operational: '',
+        incident: '',
+        outage: '',
+        maintenance: '',
+      });
+    }
 
     const btn = document.querySelector('.open');
     const nav = document.querySelector('.nav');
     const navCloser = document.querySelector('.nav-hider');
 
-    btn?.addEventListener('click', (e) => {
+    function visible(e: any) {
       e.preventDefault();
       nav?.classList.toggle('viewable');
       navCloser?.classList.toggle('viewable');
-    });
+    }
 
-    navCloser?.addEventListener('click', () => {
+    function hide() {
       nav?.classList.remove('viewable');
       navCloser?.classList.remove('viewable');
-    });
+    }
+
+    btn?.addEventListener('click', visible);
+
+    navCloser?.addEventListener('click', hide);
+
+    return () => {
+      btn?.removeEventListener('click', visible);
+      navCloser?.removeEventListener('click', hide);
+    };
   }, []);
   return (
     <>
