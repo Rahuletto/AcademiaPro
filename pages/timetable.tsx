@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import { useTimeTable } from '@/providers/TableProvider';
 import { useUser } from '@/providers/UserProvider';
@@ -51,6 +52,7 @@ export default function Timetable() {
         ) : (
           <Skeleton width={2400} height={920} className="tt-page" />
         )}
+        <Footer />
       </main>
     </>
   );

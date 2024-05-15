@@ -257,6 +257,39 @@ input {
   }
 }
 
+.credits {
+  color: #adadafd9;
+  font-size: 14px;
+  position: sticky;
+  bottom: 24px;
+  text-align: center;
+}
+
+.credits a {
+  background-color: var(--accent);
+  color: var(--background-dark);
+  padding: 2px 6px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  display: inline-block;
+  transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
+  -webkit-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
+  -moz-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
+  -ms-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
+  -o-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
+}
+
+.credits a:hover {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background-color: transparent !important;
+}
+
 .markCard#theory:hover #total,
 .markExpand #total-row #total {
   animation: 0.05s fadeout forwards;

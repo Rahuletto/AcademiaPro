@@ -10,6 +10,7 @@ import { URL } from '@/utils/url';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { FaCaretLeft, FaCaretRight } from 'react-icons/fa6';
+import Footer from '@/components/Footer';
 
 export default function Academia() {
   const router = useRouter();
@@ -89,6 +90,7 @@ export default function Academia() {
               </CalendarGenerator>
             </>
           )}
+          <Footer />
         </div>
       </main>
     </>

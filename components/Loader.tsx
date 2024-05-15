@@ -1,21 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
-import styles from "@/styles/Loader.module.css";
-import Link from "next/link";
+import styles from '@/styles/Loader.module.css';
+import Link from 'next/link';
+import Footer from './Footer';
 
 const Loader: React.FC = () => {
   useEffect(() => {
-    const loader = document.querySelector<HTMLElement>(".loadScreen");
+    const loader = document.querySelector<HTMLElement>('.loadScreen');
     if (loader)
       setTimeout(() => {
-        loader.style.opacity = "0";
+        loader.style.opacity = '0';
         setTimeout(() => {
-          loader.style.display = "none";
+          loader.style.display = 'none';
         }, 100);
       }, 1500);
   }, []);
   return (
-    <div className={[styles.loader, "loadScreen"].join(" ")}>
+    <div className={[styles.loader, 'loadScreen'].join(' ')}>
       <svg
         className={styles.loadingRing}
         viewBox="0 0 128 128"
@@ -51,12 +52,9 @@ const Loader: React.FC = () => {
           strokeDashoffset="10"
         />
       </svg>
-      <p className={styles.credits}>
-        Made by <Link href="https://marban.is-a.dev">Marban</Link> and{" "}
-        <Link href="https://www.linkedin.com/in/srivishal-sivasubramanian-1a09b9240/">
-          root-daemon
-        </Link>
-      </p>
+      <div style={{ position: 'absolute', bottom: 24 }}>
+        <Footer />
+      </div>
     </div>
   );
 };

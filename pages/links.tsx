@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Loader from '@/components/Loader';
 import { Sidebar } from '@/components/Sidebar';
@@ -140,6 +141,7 @@ export default function Urls() {
 
             <div style={{ marginBottom: 64 }} />
           </div>
+          <Footer />
         </div>
       </main>
     </>

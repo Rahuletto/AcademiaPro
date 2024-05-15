@@ -30,6 +30,7 @@ import { useDay } from '@/providers/DayProvider';
 import { useUser } from '@/providers/UserProvider';
 import { URL } from '@/utils/url';
 import { useTimeTable } from '@/providers/TableProvider';
+import Footer from '@/components/Footer';
 
 export default function Academia() {
   const router = useRouter();
@@ -198,6 +199,7 @@ export default function Academia() {
             </h2>
             <MarksTable data={marks} />
           </section>
+          <Footer />
         </div>
       </main>
     </>
