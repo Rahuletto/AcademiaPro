@@ -387,41 +387,8 @@ hr {
   gap: 12px;
 }
 
-@keyframes shimmer {
-  0% {
-    background-position: 0px 0;
-  }
-  90% {
-    background-position: -900px 0;
-  }
-  100% {
-    background-position: -900px 0;
-
-    color: var(--background-dark);
-  }
-}
-
-@keyframes go-back {
-  from {
-    background-position: -900px 0;
-  }
-  to {
-    background-position: 0px 0;
-    color: var(--accent);
-  }
-}
-
 .nav-foot a {
   background-color: #171d26;
-  background-image: linear-gradient(
-    to right,
-    #171d26 0%,
-    #171d26 40%,
-    rgba(62, 128, 215, 0.8) 45%,
-    rgba(62, 128, 215, 0.8) 90%,
-    #171d26 100%
-  );
-  background-size: 600px 100%;
   transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   color: var(--accent);
   padding: 8px 22px;
@@ -439,12 +406,6 @@ hr {
   animation: go-back 0.5s forwards;
   -webkit-animation: go-back 0.5s forwards;
 }
-
-.nav-foot a:hover {
-  animation: shimmer 1.5s forwards;
-  -webkit-animation: shimmer 1.5s forwards;
-}
-
 .nav-foot a svg {
   font-size: 20px;
 }
