@@ -257,6 +257,14 @@ input {
   }
 }
 
+.credHold {
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: 14px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .credits {
   color: #adadafd9;
   font-size: 14px;

@@ -123,7 +123,9 @@ export default function Login() {
                 <LoginButton error={error} onClick={push} />
               </div>
             </form>
-            <Footer />
+            <div className="credHold">
+              <Footer />
+            </div>
           </div>
         </div>
       </main>

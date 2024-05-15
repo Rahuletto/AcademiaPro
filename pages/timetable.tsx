@@ -41,18 +41,22 @@ export default function Timetable() {
         <button className="back-tt" onClick={() => router.back()}>
           <FaCaretLeft />
         </button>
-        {data ? (
-          <Image
-            className="tt-page"
-            alt="timetable"
-            src={data}
-            width={2400}
-            height={920}
-          />
-        ) : (
-          <Skeleton width={2400} height={920} className="tt-page" />
-        )}
-        <Footer />
+        <div style={{ width: '100vw', maxWidth: '100vw' }}>
+          {data ? (
+            <Image
+              className="tt-page"
+              alt="timetable"
+              src={data}
+              width={2400}
+              height={920}
+            />
+          ) : (
+            <Skeleton width={2400} height={920} className="tt-page" />
+          )}
+        </div>
+        <div className="credHold">
+          <Footer />
+        </div>
       </main>
     </>
   );

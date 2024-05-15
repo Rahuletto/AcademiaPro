@@ -52,7 +52,7 @@ const Loader: React.FC = () => {
           strokeDashoffset="10"
         />
       </svg>
-      <div style={{ position: 'absolute', bottom: 24 }}>
+      <div className="credHold">
         <Footer />
       </div>
     </div>
