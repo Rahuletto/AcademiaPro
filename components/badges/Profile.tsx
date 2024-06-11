@@ -5,7 +5,7 @@ import styles from '@/styles/Profile.module.css';
 import { useEffect, useState } from 'react';
 
 import { InfoResponse } from '@/types/UserInfo';
-import { FaUserGraduate } from 'react-icons/fa6';
+import { FaUser } from "react-icons/fa";
 import { getColor } from '@/utils/color';
 
 export default function Profile({ data }: { data: InfoResponse | null }) {
@@ -49,7 +49,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
               profilePage();
             }}
           >
-            <FaUserGraduate />
+            <FaUser />
           </button>
         </div>
       ) : (

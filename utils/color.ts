@@ -17,8 +17,9 @@ const colors: string[] = [
   '#9CA3DB',
   '#8789AB',
   '#EFE9AE',
-  '#EA8592',
   '#64f58d',
+  '#EA8592',
+
 ];
 
 export function getColor(registrationNumber: string): string {
