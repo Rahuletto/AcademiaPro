@@ -28,7 +28,11 @@ export default function Academia() {
 
         <div className="content" style={{ height: 'auto' }}>
           <h2>Course List</h2>
-          <div className="markGrid">
+          <div
+            className="markGrid"
+            style={{ background: 'transparent', gap: '8px' }}
+          >
+            {' '}
             {courses &&
               courses[0] &&
               courses.map((course) => (

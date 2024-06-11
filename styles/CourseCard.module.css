@@ -8,7 +8,7 @@
    }
 .courseTitle{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 8px;
 }
 
@@ -18,8 +18,7 @@
     gap: 8px;
 }
 .card {
-    cursor: crosshair;
-    padding: 16px 22px; 
+    padding: 16px 22px;
     display: -webkit-box;
     display: -ms-flexbox;
     height: -webkit-fill-available;
@@ -29,7 +28,8 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  
+    background: var(--background);
+    border-radius:16px;
     gap: 32px;
     border: 2px solid var(--background-dark);
     -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
@@ -38,7 +38,11 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    -ms-border-radius:16px;
+    -o-border-radius:16px;
+}
   .card h3{
     font-size: 16px;
     }
