@@ -140,13 +140,13 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
               <BsCalendar2WeekFill style={{ fontSize: 24 }} />
             </Link>
 
-            <Link
+            {/* <Link
               className={'h-button' + (page == 'Link' ? ' active' : '')}
               href="/courses"
             >
               Course list
               <FaGraduationCap style={{ fontSize: 22 }} />
-            </Link>
+            </Link> */}
 
             <Link
               className={'h-button' + (page == 'Link' ? ' active' : '')}
