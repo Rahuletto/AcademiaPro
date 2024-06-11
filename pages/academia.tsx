@@ -160,7 +160,7 @@ export default function Academia() {
       <Header title={'Academia | AcademiaPro'} />
 
       <main className="root">
-        <Sidebar userInfo={userInfo} day={day} todayTable={todayTable} />
+        <Sidebar day={day} todayTable={todayTable} />
         <div className="content">
           <section id="timetable">
             <h2 className="subtitle">

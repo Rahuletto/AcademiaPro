@@ -4,12 +4,15 @@ export interface InfoResponse {
 }
 
 export interface UserInfo {
-  regNo: string;
+  reg: string;
   name: string;
-  program: string;
-  department: string;
-  specialization: string;
-  semester: string;
   combo: string;
+  mobile: string;
+  program: string;
+  dept: string;
+  year: number;
+  semester: number;
+  classroom: string;
+  section: string;
   batch: string;
 }

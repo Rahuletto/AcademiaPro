@@ -65,7 +65,7 @@ export default function Academia() {
       <Loader />
       <Header title={'Calendar | AcademiaPro'} />
       <main className="root">
-        <Sidebar userInfo={userInfo} day={day} page="Calendar" />
+        <Sidebar day={day} page="Calendar" />
 
         <div className="content" style={{ height: 'auto' }}>
           {calendar?.calendar && (

@@ -406,6 +406,42 @@ hr {
   -webkit-animation: go-back 0.5s forwards;
 }
 
+#profileDialog::backdrop {
+  z-index: 5;
+  background: rgba(7, 7, 7, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+#profileDialog {
+  animation: 0.3s popout forwards;
+  position: relative;
+  border: none;
+  outline: none;
+  background-color: var(--background);
+  padding: 48px 56px;
+  min-width: 300px;
+  max-width: 900px;
+  border-radius: 48px;
+  -webkit-border-radius: 48px;
+  -moz-border-radius: 48px;
+  -ms-border-radius: 48px;
+  -o-border-radius: 48px;
+  -webkit-animation: 0.3s popout forwards;
+}
+
+#profileDialog h2 {
+  text-transform: capitalize;
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+#profileDialog h4 {
+  opacity: 0.8;
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 500;
+}
+
 .open {
   display: none;
   position: fixed;
@@ -445,6 +481,25 @@ hr {
   to {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
+  }
+}
+
+@keyframes popout {
+  from {
+    transform: translate(-200px, 200px);
+    scale: 0.6;
+    -webkit-transform: translate(-200px, 200px);
+    -moz-transform: translate(-200px, 200px);
+    -ms-transform: translate(-200px, 200px);
+    -o-transform: translate(-200px, 200px);
+  }
+  to {
+    -webkit-transform: translate(0px 0px);
+    transform: translate(0px 0px);
+    scale: 1;
+    -moz-transform: translate(0px 0px);
+    -ms-transform: translate(0px 0px);
+    -o-transform: translate(0px 0px);
   }
 }
 
@@ -547,6 +602,17 @@ hr {
   opacity: 1;
 }
 
+@media only screen and (max-width: 630px) {
+  #profileDialog {
+    margin: auto 12px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #profileDialog {
+    padding: 2.5rem 3rem;
+  }
+}
 @media only screen and (max-width: 766px) {
   .attTable:active .attCard {
     opacity: 1;

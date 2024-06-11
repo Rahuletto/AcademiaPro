@@ -60,7 +60,7 @@ export default function Urls() {
       <Header title={'Directory | AcademiaPro'} />
 
       <main className="root">
-        <Sidebar userInfo={userInfo} day={day} page="Link" />
+        <Sidebar day={day} page="Link" />
 
         <div className="content">
           <input

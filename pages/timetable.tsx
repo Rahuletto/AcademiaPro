@@ -17,7 +17,7 @@ export default function Timetable() {
   const [data, setData] = useState('');
 
   useEffect(() => {
-    fetch(`/api/timetable/${userInfo?.userInfo?.regNo}`, {
+    fetch(`/api/timetable/${userInfo?.userInfo?.reg}`, {
       method: 'POST',
       body: JSON.stringify({
         table: table,

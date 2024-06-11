@@ -2,12 +2,11 @@ import Link from 'next/link';
 import { TbMenu2 } from 'react-icons/tb';
 
 import { BiHelpCircle } from 'react-icons/bi';
-import { FaLink } from 'react-icons/fa6';
+import { FaGraduationCap, FaLink } from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 import DayOrder from './badges/DayOrder';
 import Hour from './badges/Hour';
 import Profile from './badges/Profile';
-import { InfoResponse } from '@/types/UserInfo';
 import { DayOrderResponse } from '@/types/DayOrder';
 import { useEffect, useRef } from 'react';
 
@@ -15,16 +14,19 @@ import { Hyperping } from '@/utils/hyperping';
 import { MdOutlineAutoGraph, MdViewTimeline } from 'react-icons/md';
 import { PiExamFill } from 'react-icons/pi';
 import { BsCalendar2WeekFill } from 'react-icons/bs';
+import ProfileDialog from './ProfileDialog';
+import { useUser } from '@/providers/UserProvider';
 
 interface SidebarProps {
   todayTable?: (string | undefined)[] | undefined;
-  userInfo?: InfoResponse | null;
   day?: DayOrderResponse | null;
   page?: 'Home' | 'Calendar' | 'Link';
 }
 
-export function Sidebar({ todayTable, userInfo, day, page }: SidebarProps) {
+export function Sidebar({ todayTable, day, page }: SidebarProps) {
   const hyper = useRef<any>(null);
+
+  const userInfo = useUser();
 
   useEffect(() => {
     if (!hyper.current) {
@@ -75,7 +77,7 @@ export function Sidebar({ todayTable, userInfo, day, page }: SidebarProps) {
   return (
     <>
       <div className="nav-hider"></div>
-
+      <ProfileDialog />
       <div className="nav">
         <div className="navbox">
           <div className="nav-title">
@@ -136,6 +138,14 @@ export function Sidebar({ todayTable, userInfo, day, page }: SidebarProps) {
             >
               Calendar
               <BsCalendar2WeekFill style={{ fontSize: 24 }} />
+            </Link>
+
+            <Link
+              className={'h-button' + (page == 'Link' ? ' active' : '')}
+              href="/courses"
+            >
+              Course list
+              <FaGraduationCap style={{ fontSize: 22 }} />
             </Link>
 
             <Link

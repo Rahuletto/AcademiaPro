@@ -24,7 +24,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
     const u = localStorage.getItem('userInfo');
     if (u && JSON.parse(u).expireAt > Date.now()) setUserInfo(JSON.parse(u));
     else if (cookie)
-      fetch(`${URL}/api/info`, {
+      fetch(`${URL}/api/user`, {
         cache: 'default',
         method: 'GET',
         headers: {
@@ -37,7 +37,11 @@ export function UserProvider({ children }: { children: ReactNode }) {
         },
       })
         .then((e) => e.json())
-        .then((data) => {
+        .then((res) => {
+          const data = {
+            userInfo: res.user,
+            expireAt: res.expireAt,
+          };
           localStorage.setItem('userInfo', JSON.stringify(data));
           setUserInfo(data);
         });

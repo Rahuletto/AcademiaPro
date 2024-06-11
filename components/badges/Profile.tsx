@@ -43,7 +43,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
           </h3>
           <button
             name="user"
-            className={styles.userInfo}
+            className={styles.profileButton}
             title="User Info"
             onClick={() => {
               profilePage();

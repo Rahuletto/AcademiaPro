@@ -9,16 +9,16 @@ function hashString(str: string): number {
 }
 
 const colors: string[] = [
-  '#64f58d',
   '#FFAC81',
-  '#FF928B',
-  '#EFE9AE',
   '#8BCAE5',
   '#7EC8BD',
   '#E0FE9A',
+  '#FF928B',
   '#9CA3DB',
   '#8789AB',
+  '#EFE9AE',
   '#EA8592',
+  '#64f58d',
 ];
 
 export function getColor(registrationNumber: string): string {
