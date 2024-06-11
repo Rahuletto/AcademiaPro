@@ -18,7 +18,7 @@ const AttendanceTable = ({
         <thead />
         <thead />
         <tbody className={[styles.attr, 'attTable'].join(' ')}>
-          {data && data.attendance ? (
+          {data && data.attendance[0] ? (
             data.attendance.map((element: Course, index: number) => (
               <Card
                 key={index}
@@ -36,6 +36,28 @@ const AttendanceTable = ({
                 todayTable={todayTable}
               />
             ))
+          ) : data?.expireAt ? (
+            <div
+              style={{
+                background: 'var(--background-light)',
+                borderRadius: '22px',
+                height: '280px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '12px 24px',
+              }}
+            >
+              <h4
+                style={{
+                  textAlign: 'center',
+                  opacity: '0.8',
+                  fontSize: '16px',
+                }}
+              >
+                There is no attendance here, Interesting...
+              </h4>
+            </div>
           ) : (
             <>
               <Skeleton

@@ -68,7 +68,7 @@ export default function Academia() {
         <Sidebar userInfo={userInfo} day={day} page="Calendar" />
 
         <div className="content" style={{ height: 'auto' }}>
-          {calendar && (
+          {calendar?.calendar && (
             <>
               <CalendarGenerator page={page} data={calendar.calendar[page]}>
                 <div className="paginate">
@@ -78,7 +78,7 @@ export default function Academia() {
                   >
                     <FaCaretLeft />
                   </button>
-                  <h3 className="month">{calendar.calendar[page].month}</h3>
+                  <h3 className="month">{calendar?.calendar[page]?.month}</h3>
 
                   <button
                     onClick={() => setPage((e) => e + 1)}

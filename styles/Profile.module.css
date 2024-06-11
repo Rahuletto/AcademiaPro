@@ -37,9 +37,9 @@
   color: var(--background-dark);
   background: #64f58d;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,4 +75,27 @@
   -ms-flex-pack: center;
   justify-content: center;
   font-size: 24px;
+}
+.userInfo {
+  width: 52px;
+  height: 38px;
+  background: var(--side-active);
+  color: var(--accent);
+  border-radius: 50px;
+  outline: none;
+  border: 0px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 18px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }

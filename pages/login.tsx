@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 
 import Header from '@/components/Header';
 import styles from '@/styles/Login.module.css';
-import { getCookie, setCookie } from '@/utils/cookies';
+import { clearCookies, getCookie, setCookie } from '@/utils/cookies';
 import { URL } from '@/utils/url';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -21,6 +21,7 @@ export default function Login() {
   function push() {
     setError(-1);
     setTimeout(() => setError(0), 6000);
+    clearCookies();
     try {
       fetch(`${URL}/api/login`, {
         method: 'POST',

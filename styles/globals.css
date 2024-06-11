@@ -182,7 +182,7 @@ a:active {
 
 .download {
   text-decoration: none;
-  background: #171d26;
+  background: var(--side-active);
   font-size: 14px;
   color: var(--accent) !important;
   font-weight: 600;
@@ -304,7 +304,7 @@ hr {
 .nav-buttons a:hover,
 .h-button.active {
   color: var(--accent) !important;
-  background: #171d26;
+  background: var(--side-active);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,15 +388,14 @@ hr {
 }
 
 .nav-foot a {
-  background-color: #171d26;
   transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   color: var(--accent);
-  padding: 8px 22px;
+  padding: 12px 22px;
   border-radius: 12px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 6px;
   align-items: center;
   -webkit-border-radius: 12px;
@@ -405,9 +404,6 @@ hr {
   -o-border-radius: 12px;
   animation: go-back 0.5s forwards;
   -webkit-animation: go-back 0.5s forwards;
-}
-.nav-foot a svg {
-  font-size: 20px;
 }
 
 .open {

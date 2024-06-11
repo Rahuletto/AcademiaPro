@@ -18,7 +18,10 @@ const TimeTableComponent = ({
   }
   return (
     <>
-      <tbody onClick={() => openGen()} className={[styles.body].join(' ')}>
+      <tbody
+        onClick={() => table && openGen()}
+        className={[styles.body].join(' ')}
+      >
         {table &&
           table.map((element: string | undefined, index: number) =>
             element ? (

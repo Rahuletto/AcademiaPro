@@ -6,7 +6,7 @@
 */
 
 .badge {
-  background: #171d26;
+  background: var(--side-active);
   padding: 4px 12px;
   border-radius: 500px;
   color: var(--accent);

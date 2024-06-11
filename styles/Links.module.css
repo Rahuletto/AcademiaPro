@@ -24,7 +24,7 @@
 .search {
   -webkit-box-shadow: 0px 0px 20px 3px var(--background-dark);
   box-shadow: 0px 0px 20px 3px var(--background-dark);
-  background: #171d26;
+  background: var(--side-active);
   border: 0px;
   outline: 0px;
   padding: 10px 16px;

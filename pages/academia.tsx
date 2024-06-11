@@ -165,7 +165,9 @@ export default function Academia() {
           <section id="timetable">
             <h2 className="subtitle">
               Timetable{' '}
-              {userInfo?.userInfo ? (
+              {userInfo?.userInfo &&
+              todayTable &&
+              todayTable?.filter((a) => a != null).length > 0 ? (
                 <a href={`/timetable`} className="download">
                   View all
                 </a>
