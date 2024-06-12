@@ -17,10 +17,6 @@ export class Hyperping {
     dotSize: any;
     uptime: any;
   }) {
-    let data: any = {
-      uptime: '100.000%',
-      status: 'up',
-    };
     try {
       let statuspageUrl = params.statuspage;
       statuspageUrl = statuspageUrl.replace('https://', '');
@@ -31,28 +27,10 @@ export class Hyperping {
         },
         method: 'GET',
       });
-      data = await response.json();
     } catch (error) {}
-
-    const getDotColor = () => {
-      if (params.isNeutral) return params.dotNeutral;
-      if (data.indicator === 'up') return params.dotOk;
-      if (data.indicator === 'incident') return params.dotIncident;
-      if (data.indicator === 'outage') return params.dotOutage;
-      if (data.indicator === 'maintenance') return params.dotMaintenance;
-    };
-
-    const getParentStyles = () => {
-      return `
-          text-decoration: underline;
-          text-decoration-style: wavy;
-          text-decoration-color: ${getDotColor()};
-        `;
-    };
 
     let parentElement = document.getElementById('hyperping-badge');
     if (parentElement) {
-      parentElement.setAttribute('style', getParentStyles());
       let statuspageUrl = params.statuspage;
       statuspageUrl = statuspageUrl.replace('https://', '');
       statuspageUrl = statuspageUrl.replace('http://', '');

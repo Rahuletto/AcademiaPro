@@ -10,20 +10,20 @@ function hashString(str: string): number {
 
 const colors: string[] = [
   '#FFAC81',
-  '#8BCAE5',
   '#7EC8BD',
-  '#E0FE9A',
-  '#FF928B',
   '#9CA3DB',
-  '#8789AB',
   '#EFE9AE',
   '#64f58d',
   '#EA8592',
-
+  '#E0FE9A',
+  '#FF928B',
+  '#8789AB',
+  '#8BCAE5',
 ];
 
 export function getColor(registrationNumber: string): string {
   const hash = hashString(registrationNumber);
   const colorIndex = hash % colors.length;
+  console.log(colorIndex);
   return colors[colorIndex];
 }

@@ -125,6 +125,14 @@ section {
   grid-template-rows: min-content;
   margin-bottom: 32;
 }
+.courseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  grid-template-rows: repeat(6, 1fr);
+  margin-bottom: 32;
+  height: 80vh;
+}
+
 .grade {
   width: -webkit-fill-available;
   display: none;

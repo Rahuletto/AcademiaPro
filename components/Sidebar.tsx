@@ -20,7 +20,7 @@ import { useUser } from '@/providers/UserProvider';
 interface SidebarProps {
   todayTable?: (string | undefined)[] | undefined;
   day?: DayOrderResponse | null;
-  page?: 'Home' | 'Calendar' | 'Link';
+  page?: 'Home' | 'Calendar' | 'Link' | 'Course';
 }
 
 export function Sidebar({ todayTable, day, page }: SidebarProps) {
@@ -141,12 +141,23 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
             </Link>
 
             {/* <Link
-              className={'h-button' + (page == 'Link' ? ' active' : '')}
+              className={'h-button' + (page == 'Course' ? ' active' : '')}
               href="/courses"
             >
               Course list
               <FaGraduationCap style={{ fontSize: 22 }} />
             </Link> */}
+
+            <Link
+              title="🏗️ Coming soon. 🚧"
+              className={
+                'h-button disabled' + (page == 'Course' ? ' active' : '')
+              }
+              href="#"
+            >
+              Course list
+              <FaGraduationCap style={{ fontSize: 22 }} />
+            </Link>
 
             <Link
               className={'h-button' + (page == 'Link' ? ' active' : '')}

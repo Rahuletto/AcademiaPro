@@ -2,7 +2,6 @@ import styles from '@/styles/CourseCard.module.css';
 import { Course } from '@/types/Course';
 import { useEffect, useState } from 'react';
 
-
 const grade_points: {
   [key: string]: number;
 } = {
@@ -14,26 +13,42 @@ const grade_points: {
   C: 50,
 };
 
-const CourseCard = ({course}: {course: Course}) => {  
+const CourseCard = ({ course }: { course: Course }) => {
   return (
     <>
-        <div className={styles.card}>
-            <div className={styles.courseTitle}>
-                <div className={styles.courseName}>
-                    <h3>{course.courseTitle}</h3>
-                    <h4>Credit: {course.credit}</h4>
-                </div>
-            
-                <div className={styles.courseCode}>
-                    <h3>{course.courseCode}</h3>
-                    
-                    <h4>{course.roomNo}</h4>
-                </div>
-            </div>
-            <div className={styles.facultyName}>
-                <h4>{course.facultyName}</h4>
-            </div>
+      <div className={styles.card}>
+        <div className={styles.courseTitle}>
+          <div className={styles.courseName}>
+            <h3>{course.courseTitle}</h3>
+            <p>
+              Credit:{' '}
+              <span
+                className={
+                  course.category == 'Theory'
+                    ? styles.theoryColor
+                    : styles.labColor
+                }
+              >
+                {course.credit}
+              </span>
+            </p>
+          </div>
+
+          <div className={styles.courseCode}>
+            <h3>{course.courseCode}</h3>
+            <h4
+              className={
+                course.category == 'Theory' ? styles.theory : styles.lab
+              }
+            >
+              {course.roomNo}
+            </h4>
+          </div>
         </div>
+        <div className={styles.facultyName}>
+          <h4>{course.facultyName}</h4>
+        </div>
+      </div>
     </>
   );
 };

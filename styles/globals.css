@@ -301,9 +301,21 @@ hr {
   color: var(--background-darker);
 }
 
+.disabled {
+  cursor: help;
+  background: #50505053 !important;
+  opacity: 0.6;
+  border: 2px solid transparent;
+}
+
+.disabled:hover {
+  border: 2px solid var(--yellow);
+  color: var(--yellow) !important;
+}
+
 .nav-buttons a:hover,
 .h-button.active {
-  color: var(--accent) !important;
+  color: var(--accent);
   background: var(--side-active);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -376,6 +388,7 @@ hr {
 }
 
 .nav-title a {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.4) !important;
   font-size: 22px;
   cursor: pointer;
@@ -475,8 +488,11 @@ hr {
 
 @-webkit-keyframes slide {
   from {
-    -webkit-transform: translateX(-200px);
-    transform: translateX(-200px);
+    transform: translateX(-120vw);
+    -webkit-transform: translateX(-120vw);
+    -moz-transform: translateX(-120vw);
+    -ms-transform: translateX(-120vw);
+    -o-transform: translateX(-120vw);
   }
   to {
     -webkit-transform: translateX(0px);
@@ -513,20 +529,17 @@ hr {
     -o-transform: translateX(0px);
   }
   100% {
-    display: none;
-    -webkit-transform: translateX(-250px);
-    -ms-transform: translateX(-250px);
-    transform: translateX(-250px);
-    -moz-transform: translateX(-250px);
-    -o-transform: translateX(-250px);
+    transform: translateX(-120vw);
+    -webkit-transform: translateX(-120vw);
+    -moz-transform: translateX(-120vw);
+    -ms-transform: translateX(-120vw);
+    -o-transform: translateX(-120vw);
   }
 }
 
 @media only screen and (max-width: 1100px) {
   .nav {
-    -webkit-transform: translateX(-200px);
-    -ms-transform: translateX(-200px);
-    transform: translateX(-200px);
+    transform: translateX(-120vw);
     animation: 0.2s slideout forwards;
     background: var(--background);
     top: 0;
@@ -538,6 +551,10 @@ hr {
     left: 0;
     height: 100vh;
     width: 98vw;
+    -webkit-transform: translateX(-120vw);
+    -moz-transform: translateX(-120vw);
+    -ms-transform: translateX(-120vw);
+    -o-transform: translateX(-120vw);
   }
 
   .nav-hider.viewable {
