@@ -119,6 +119,7 @@ export default function Results() {
                   <input
                     min="1990-01-01"
                     max="2010-12-31"
+                    defaultValue={'2005-01-31'}
                     type="date"
                     placeholder="Date of Birth"
                     value={dob}
