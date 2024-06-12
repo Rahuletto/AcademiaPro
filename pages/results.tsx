@@ -104,8 +104,8 @@ export default function Results() {
               className={styles.results}
               style={error ? { borderColor: 'var(--red)' } : {}}
             >
-              <div className={styles.inputs}>
-                <div className="pc">
+              <div className={[styles.inputs, 'pc'].join(' ')}>
+                <div>
                   <p>Registration Number</p>
                   <p>Date of Birth</p>
                 </div>
@@ -117,6 +117,7 @@ export default function Results() {
                     onChange={(e) => setReg(e.target.value)}
                   />
                   <input
+                    title="Date of Birth"
                     min="1990-01-01"
                     max="2010-12-31"
                     defaultValue={'2005-01-31'}
@@ -127,6 +128,36 @@ export default function Results() {
                   />
                 </div>
               </div>
+              <div
+                style={{ gap: 18, flexDirection: 'column' }}
+                className={[styles.inputs, 'mobile'].join(' ')}
+              >
+                <div style={{ flexDirection: 'column' }}>
+                  <p style={{ padding: 4 }}>Registration Number</p>
+                  <input
+                    style={{ borderRadius: 12 }}
+                    type="text"
+                    placeholder="Registration Number"
+                    value={reg}
+                    onChange={(e) => setReg(e.target.value)}
+                  />
+                </div>
+                <div style={{ flexDirection: 'column' }}>
+                  <p style={{ padding: 4 }}>Date of Birth</p>
+                  <input
+                    style={{ borderRadius: 12 }}
+                    title="Date of Birth"
+                    min="1990-01-01"
+                    max="2010-12-31"
+                    defaultValue={'2005-01-31'}
+                    type="date"
+                    placeholder="Date of Birth"
+                    value={dob}
+                    onChange={(e) => setDob(e.target.value)}
+                  />
+                </div>
+              </div>
+
               <button onClick={submit} type="submit">
                 Check out
               </button>

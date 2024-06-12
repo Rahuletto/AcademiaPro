@@ -619,9 +619,16 @@ hr {
   opacity: 1;
 }
 
+.mobile {
+  display: none !important;
+}
+
 @media only screen and (max-width: 630px) {
   .pc {
     display: none !important;
+  }
+  .mobile {
+    display: flex !important;
   }
   #profileDialog {
     margin: auto 12px;

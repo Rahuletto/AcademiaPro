@@ -43,7 +43,6 @@
 .inputs {
   display: flex;
   align-items: center;
-  display: flex;
   flex-direction: row;
   gap: 16px;
 }
@@ -55,8 +54,9 @@
 }
 
 .inputs div p {
-  padding: 10px 16px !important;
-  font-size: 18px;
+  opacity: 0.6;
+  padding: 10px 16px;
+  font-size: 16px;
   text-align: left;
 }
 
