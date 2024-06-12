@@ -1,8 +1,13 @@
 import Link from 'next/link';
 import { TbMenu2 } from 'react-icons/tb';
 
-import { BiHelpCircle } from 'react-icons/bi';
-import { FaGraduationCap, FaLink } from 'react-icons/fa6';
+import { BiBook, BiHelpCircle } from 'react-icons/bi';
+import {
+  FaBookOpen,
+  FaGraduationCap,
+  FaLink,
+  FaSignature,
+} from 'react-icons/fa6';
 import Skeleton from 'react-loading-skeleton';
 import DayOrder from './badges/DayOrder';
 import Hour from './badges/Hour';
@@ -20,7 +25,7 @@ import { useUser } from '@/providers/UserProvider';
 interface SidebarProps {
   todayTable?: (string | undefined)[] | undefined;
   day?: DayOrderResponse | null;
-  page?: 'Home' | 'Calendar' | 'Link' | 'Course';
+  page?: 'Home' | 'Calendar' | 'Link' | 'Course' | 'Results';
 }
 
 export function Sidebar({ todayTable, day, page }: SidebarProps) {
@@ -118,18 +123,16 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
               }
               href="/academia#timetable"
             >
-              Time Table
-              <MdViewTimeline style={{ fontSize: 24 }} />
+              Home
+              <FaBookOpen style={{ fontSize: 24 }} />
             </Link>
 
-            <Link className="h-button" href="/academia#attendance">
-              Attendance
-              <MdOutlineAutoGraph style={{ fontSize: 24 }} />
-            </Link>
-
-            <Link className="h-button" href="/academia#marks">
-              Marks
-              <PiExamFill style={{ fontSize: 24 }} />
+            <Link
+              className={'h-button' + (page == 'Results' ? ' active' : '')}
+              href="/results"
+            >
+              Exam Results
+              <FaSignature style={{ fontSize: 24 }} />
             </Link>
 
             <Link

@@ -52,40 +52,6 @@ export default function Academia() {
     if (a) setAttendance(JSON.parse(a));
 
     if (!getCookie('token')) router.push('/login');
-
-    const sections = document.querySelectorAll('section');
-    const menu_links = document.querySelectorAll('.h-button');
-
-    const container = document.querySelector('.content');
-
-    const makeActive = (link: number) =>
-      menu_links[link].classList.add('active');
-    const removeActive = (link: number) =>
-      menu_links[link].classList.remove('active');
-    const removeAllActive = () =>
-      [...Array(sections.length).keys()].forEach((link) => removeActive(link));
-
-    const sectionMargin = 100;
-
-    let currentActive = 0;
-
-    container?.addEventListener('scroll', (e) => {
-      const current =
-        sections.length -
-        [...sections]
-          .reverse()
-          .findIndex(
-            (section) =>
-              container.scrollTop >= section.offsetTop - sectionMargin,
-          ) -
-        1;
-
-      if (current !== currentActive) {
-        removeAllActive();
-        currentActive = current;
-        makeActive(current);
-      }
-    });
   }, []);
 
   useEffect(() => {

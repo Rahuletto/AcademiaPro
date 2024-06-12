@@ -24,6 +24,5 @@ const colors: string[] = [
 export function getColor(registrationNumber: string): string {
   const hash = hashString(registrationNumber);
   const colorIndex = hash % colors.length;
-  console.log(colorIndex);
   return colors[colorIndex];
 }
