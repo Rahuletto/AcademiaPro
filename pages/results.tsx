@@ -111,10 +111,11 @@ export default function Results() {
                 </div>
                 <div>
                   <input
+                    disabled
                     type="text"
                     placeholder="Registration Number"
                     value={reg}
-                    onChange={(e) => setReg(e.target.value)}
+                  
                   />
                   <input
                     title="Date of Birth"
@@ -139,7 +140,7 @@ export default function Results() {
                     type="text"
                     placeholder="Registration Number"
                     value={reg}
-                    onChange={(e) => setReg(e.target.value)}
+                    disabled
                   />
                 </div>
                 <div style={{ flexDirection: 'column' }}>
