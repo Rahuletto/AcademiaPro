@@ -3,8 +3,18 @@ import { LuServerCrash } from 'react-icons/lu';
 
 import Header from '@/components/Header';
 import styles from '@/styles/Error.module.css';
+import { useEffect } from 'react';
+import { clearCookies } from '@/utils/cookies';
+import { useRouter } from 'next/router';
 
 export default function ErrorStack({ error }: { error: Error }) {
+  const router = useRouter();
+  useEffect(() => {
+    setTimeout(() => {
+      clearCookies();
+      router.push('/');
+    }, 5000);
+  }, []);
   return (
     <>
       <Header title={'Error | Ac4D3m1APr0'} />
@@ -22,7 +32,7 @@ export default function ErrorStack({ error }: { error: Error }) {
           </h1>
           {error ? <h3>*intense crash sound*</h3> : <h3>Nothing{"'"}s here</h3>}
           {error ? (
-            <p>You successfully crashed it. congo</p>
+            <p>We did a rewrite, so expect this if you persist old data</p>
           ) : (
             <p>There is no error but you forced yourself to see this page</p>
           )}
