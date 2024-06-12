@@ -63,8 +63,7 @@ const ResultsCard = ({ data }: Props) => {
             style={{ fontSize: 28 }}
             className={data.result === 'PASS' ? styles.green : styles.red}
           >
-            {data.grade}{' '}
-            <span style={{ fontSize: 14, opacity: '0.4' }}>grade</span>
+            {data.grade} <span className={styles.gradeMark}>grade</span>
           </h3>
         </td>
       </tr>
