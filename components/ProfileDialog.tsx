@@ -1,9 +1,11 @@
 import { useUser } from '@/providers/UserProvider';
 import { clearCookies } from '@/utils/cookies';
 import { useRouter } from 'next/router';
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import styles from '@/styles/Profile.module.css';
 import { IoMdLogOut } from 'react-icons/io';
+import { CgClose } from 'react-icons/cg';
+import { GrClose } from 'react-icons/gr';
 
 const ProfileDialog = () => {
   const router = useRouter();
@@ -34,10 +36,6 @@ const ProfileDialog = () => {
   useEffect(() => {
     const dialog = document.querySelector<HTMLDialogElement>('#profileDialog');
 
-    const isVisible = (elem: any) =>
-      !!elem &&
-      !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
-
     function handleClickOutside(event: any) {
       const rect = dialog?.getBoundingClientRect();
 
@@ -65,6 +63,12 @@ const ProfileDialog = () => {
 
   return (
     <dialog id="profileDialog" className="dialog" ref={dialogRef}>
+      <button
+        className={styles.close}
+        onClick={() => dialogRef.current?.close()}
+      >
+        <GrClose />
+      </button>
       <h2>
         {user.name
           .toLowerCase()

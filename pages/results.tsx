@@ -96,7 +96,7 @@ export default function Results() {
 
         <div
           className="content"
-          style={{ height: 'auto', padding: '2.2rem', minHeight: '92vh' }}
+          style={{ height: '95.5vh', padding: '2.2rem', overflow: 'auto' }}
         >
           <h2 style={{ marginBottom: '48px' }}>SRM 2024 Results</h2>
           {!result ? (

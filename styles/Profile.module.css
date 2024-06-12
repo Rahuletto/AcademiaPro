@@ -142,6 +142,28 @@
   opacity: 0.7;
 }
 
+.close {
+  color: var(--red);
+  border: 2px solid var(--red);
+  background-color: transparent;
+  border-radius: 50px;
+  height: 42px;
+  width: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
 .userData div span {
   font-size: 20px;
   font-weight: 600;
