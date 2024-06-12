@@ -114,7 +114,6 @@ export default function Results() {
                     onChange={(e) => setReg(e.target.value)}
                   />
                   <input
-                    max="2010-12-31"
                     type="date"
                     placeholder="Date of Birth"
                     value={dob}
