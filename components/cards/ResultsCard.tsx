@@ -49,7 +49,7 @@ const ResultsCard = ({ data }: Props) => {
             <span
               className={styles.total}
               style={
-                !data.credit
+                !data.credit || data.credit === '' || Number(data.credit) == 0
                   ? { backgroundColor: 'var(--red)', opacity: 0.5 }
                   : {}
               }
