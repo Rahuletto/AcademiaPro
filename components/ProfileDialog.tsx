@@ -34,15 +34,23 @@ const ProfileDialog = () => {
   useEffect(() => {
     const dialog = document.querySelector<HTMLDialogElement>('#profileDialog');
 
+    const isVisible = (elem: any) =>
+      !!elem &&
+      !!(elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length);
+
     function handleClickOutside(event: any) {
-      let rect = event.target?.getBoundingClientRect();
-      if (
-        rect.left > event.clientX ||
-        rect.right < event.clientX ||
-        rect.top > event.clientY ||
-        rect.bottom < event.clientY
-      ) {
-        dialog?.close();
+      const rect = dialog?.getBoundingClientRect();
+
+      if (rect && dialog) {
+        const cond =
+          rect.left < event.clientX &&
+          event.clientX < rect.right &&
+          rect.top < event.clientY &&
+          event.clientY < rect.bottom;
+
+        if (!cond) {
+          dialog.close();
+        }
       }
     }
 
