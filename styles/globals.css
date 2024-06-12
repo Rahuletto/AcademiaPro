@@ -620,6 +620,9 @@ hr {
 }
 
 @media only screen and (max-width: 630px) {
+  .pc {
+    display: none !important;
+  }
   #profileDialog {
     margin: auto 12px;
   }

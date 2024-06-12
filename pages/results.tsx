@@ -94,7 +94,10 @@ export default function Results() {
       <main className="root">
         <Sidebar day={day} page="Results" />
 
-        <div className="content" style={{ height: 'auto', padding: '2.2rem' }}>
+        <div
+          className="content"
+          style={{ height: 'auto', padding: '2.2rem', minHeight: '92vh' }}
+        >
           <h2 style={{ marginBottom: '48px' }}>SRM 2024 Results</h2>
           {!result ? (
             <div
@@ -102,7 +105,7 @@ export default function Results() {
               style={error ? { borderColor: 'var(--red)' } : {}}
             >
               <div className={styles.inputs}>
-                <div>
+                <div className="pc">
                   <p>Registration Number</p>
                   <p>Date of Birth</p>
                 </div>
@@ -161,8 +164,16 @@ export default function Results() {
                   <h3
                     style={
                       cgpa > 5
-                        ? { color: 'var(--green)', fontSize: '32px' }
-                        : { color: 'var(--red)', fontSize: '32px' }
+                        ? {
+                            color: 'var(--green)',
+                            fontSize: '32px',
+                            marginBottom: 48,
+                          }
+                        : {
+                            color: 'var(--red)',
+                            fontSize: '32px',
+                            marginBottom: 48,
+                          }
                     }
                   >
                     <span
