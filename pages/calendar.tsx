@@ -23,7 +23,7 @@ export default function Academia() {
   useEffect(() => {
     if (!getCookie('token')) router.push('/login');
 
-    const c = localStorage.getItem('calendar');
+    const c = localStorage.getItem('univPlanner');
     if (c && JSON.parse(c).expireAt > Date.now()) setCalendar(JSON.parse(c));
     else
       fetch(`${URL}/api/calendar`, {
@@ -44,7 +44,7 @@ export default function Academia() {
             clearCookies();
             window.location.reload();
           } else {
-            localStorage.setItem('calendar', JSON.stringify(res));
+            localStorage.setItem('univPlanner', JSON.stringify(res));
             setCalendar(res);
           }
         })

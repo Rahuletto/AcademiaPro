@@ -1,5 +1,5 @@
 import { InfoResponse } from '@/types/UserInfo';
-import { getCookie } from '@/utils/cookies';
+import { clearCookies, getCookie } from '@/utils/cookies';
 import { URL } from '@/utils/url';
 import {
   createContext,
@@ -21,7 +21,10 @@ export function UserProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const cookie = getCookie('token');
 
-    const u = localStorage.getItem('userInfo');
+    const oldU = localStorage.getItem('userInfo');
+    if (oldU) clearCookies();
+
+    const u = localStorage.getItem('user');
     if (u && JSON.parse(u).expireAt > Date.now()) setUserInfo(JSON.parse(u));
     else if (cookie)
       fetch(`${URL}/api/user`, {
@@ -42,7 +45,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
             userInfo: res.user,
             expireAt: res.expireAt,
           };
-          localStorage.setItem('userInfo', JSON.stringify(data));
+          localStorage.setItem('user', JSON.stringify(data));
           setUserInfo(data);
         });
   }, []);

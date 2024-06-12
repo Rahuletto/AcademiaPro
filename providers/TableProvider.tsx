@@ -23,7 +23,7 @@ export function TableProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const cookie = getCookie('token');
 
-    const u = localStorage.getItem('timetable');
+    const u = localStorage.getItem('dailyTable');
     if (u && JSON.parse(u).expireAt > Date.now()) setTable(JSON.parse(u));
     else if (cookie && userInfo)
       fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
@@ -41,7 +41,7 @@ export function TableProvider({ children }: { children: ReactNode }) {
         .then((r) => r.json())
         .then((res) => {
           if (!res.token_refresh) {
-            localStorage.setItem('timetable', JSON.stringify(res));
+            localStorage.setItem('dailyTable', JSON.stringify(res));
             setTable(res);
           }
         });
