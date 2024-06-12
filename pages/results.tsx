@@ -172,7 +172,7 @@ export default function Results() {
                         fontSize: '16px',
                       }}
                     >
-                      CGPA:
+                      SGPA:
                     </span>{' '}
                     {cgpa}
                   </h3>
