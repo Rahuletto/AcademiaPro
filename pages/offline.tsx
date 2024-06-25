@@ -1,16 +1,17 @@
-import Head from 'next/head';
+import Head from "next/head";
+
 export default function Offline() {
   return (
-    <main className="main">
+    <main className="flex h-[94vh] items-center justify-center">
       <Head>
         <title>Offline | AcademiaPro?</title>
       </Head>
-      <div className="container">
-        <h1 style={{ fontSize: '98px', color: '#f75b5b' }}>
+      <div className="flex h-[80vh] w-[80vw] flex-col items-center justify-center gap-2 rounded-[32px] bg-gray-900 text-gray-400">
+        <h1 className="text-[98px] text-[#f75b5b]">
           <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 256 256"
             height="1em"
             width="1em"
@@ -22,89 +23,52 @@ export default function Offline() {
         <h3>uhm.</h3>
         <p>You went offline. Turn on your internet</p>
       </div>
-      <style>
-        {`
-          .h1,
-          .h2,
-          .h3,
-          .h4,
-          .h5,
-          .h6,
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6 {
-            margin-top: 0;
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-            line-height: 1.2;
-            color: #d4d4d4;
-            font-family: var(--main-font), system-ui;
-          }
-          
-          body {
-            background-color: #0c1015 !important;
-            padding: 18px !important;
-            margin: 0px !important;
-            padding-left: 0px !important;
-            padding-right: 0px !important;
-          }
-          
-          .main {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            height: 94vh;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-          }
-          
+      <style jsx>{`
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin-top: 0;
+          margin-bottom: 0.5rem;
+          font-weight: 500;
+          line-height: 1.2;
+          color: #d4d4d4;
+          font-family: var(--main-font), system-ui;
+        }
+
+        body {
+          background-color: #0c1015 !important;
+          padding: 18px !important;
+          margin: 0px !important;
+          padding-left: 0px !important;
+          padding-right: 0px !important;
+        }
+
+        @media only screen and (max-width: 540px) {
           .container {
-            width: 80vw;
-            height: 80vh;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            background: #0f1217;
-            border-radius: 32px;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            gap: 8px;
+            width: 95vw;
+            height: 95vh;
           }
-          
-          @media only screen and (max-width: 540px) {
-            .container {
-              width: 95vw;
-              height: 95vh;
-            }
+        }
+
+        @media only screen and (max-width: 460px) {
+          .main {
+            margin: 12px;
           }
-          
-          @media only screen and (max-width: 460px) {
-            .main {
-              margin: 12px;
-            }
-          
-            .container {
-              padding: 24px;
-            }
+
+          .container {
+            padding: 24px;
           }
-          
-        `}
-      </style>
+        }
+      `}</style>
     </main>
   );
 }
