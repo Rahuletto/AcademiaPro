@@ -34,10 +34,7 @@ export default function Timetable() {
       <Header title={"Timetable | AcademiaPro"} />
 
       <main className="flex min-h-[89vh] flex-col items-center">
-        <button
-          className="mb-4 text-gray-700 hover:text-gray-900"
-          onClick={() => router.back()}
-        >
+        <button className="back-tt" onClick={() => router.back()}>
           <FaCaretLeft />
         </button>
         <div className="w-full max-w-full">
@@ -50,10 +47,10 @@ export default function Timetable() {
               height={920}
             />
           ) : (
-            <Skeleton width={2400} height={920} className="h-auto w-full" />
+            <Skeleton width={2400} height={920} className="tt-page" />
           )}
         </div>
-        <div className="mt-4">
+        <div className="credHold">
           <Footer />
         </div>
       </main>
