@@ -40,16 +40,8 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         className={[styles.card, "attCard"].join(" ")}
         title={`${code} (${category})`}
       >
-        <td style={{ height: "80px" }}>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-              justifyContent: "space-between",
-              width: "-webkit-fill-available",
-            }}
-          >
+        <td className="h-20">
+          <div className="flex w-full items-center justify-between gap-2">
             <h4>{truncateString(title)}</h4>
 
             <div
@@ -98,14 +90,13 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         </td>
         <td>
           <h3
-            style={{ fontSize: 28 }}
-            className={
+            className={`text-2xl ${
               Number(percent.split(".")[0]) === 100
-                ? styles.green
+                ? "text-green-500"
                 : Number(percent.split(".")[0]) < 75
-                  ? styles.red
-                  : styles.percent
-            }
+                  ? "text-red-500"
+                  : "text-gray-500"
+            }`}
           >
             {Number(percent.split(".")[0]) === 100 ? 100 : percent}%
           </h3>
