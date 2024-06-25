@@ -92,10 +92,10 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
           <h3
             className={`text-2xl ${
               Number(percent.split(".")[0]) === 100
-                ? "text-green-500"
+                ? "text-green"
                 : Number(percent.split(".")[0]) < 75
-                  ? "text-red-500"
-                  : "text-gray-500"
+                  ? "text-red"
+                  : "text-accent"
             }`}
           >
             {Number(percent.split(".")[0]) === 100 ? 100 : percent}%

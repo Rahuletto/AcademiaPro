@@ -162,9 +162,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
               </div>
               <div>
                 <span
-                  className={`${
-                    parseFloat(req) > 75 ? "text-red-500" : "mark"
-                  }`}
+                  className={`${parseFloat(req) > 75 ? "text-red" : "mark"}`}
                 >
                   {req}
                 </span>
