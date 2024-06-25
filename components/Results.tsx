@@ -17,24 +17,8 @@ const ResultsTable = ({ data }: { data: ExamData | null }) => {
               <ResultsCard key={index} data={element} />
             ))
           ) : data?.name ? (
-            <div
-              style={{
-                background: 'var(--background-light)',
-                borderRadius: '22px',
-                height: '280px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                margin: '12px 24px',
-              }}
-            >
-              <h4
-                style={{
-                  textAlign: 'center',
-                  opacity: '0.8',
-                  fontSize: '16px',
-                }}
-              >
+            <div className="bg-backgroundLight rounded-[22px] h-[280px] flex items-center justify-center m-[12px_24px]">
+              <h4 className="text-center opacity-80 text-[16px]">
                 There is no results here, Interesting...
               </h4>
             </div>
