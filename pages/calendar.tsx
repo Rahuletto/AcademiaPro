@@ -57,7 +57,10 @@ export default function Academia() {
   }, []);
 
   useEffect(() => {
-    setPage(new Date().getMonth());
+    const month = new Date().getMonth() % 6;
+    setPage(
+      calendar?.calendar && calendar?.calendar?.length < month ? 0 : month,
+    );
   }, [calendar]);
 
   return (
@@ -68,7 +71,8 @@ export default function Academia() {
         <Sidebar day={day} page="Calendar" />
 
         <div className="content" style={{ height: 'auto' }}>
-          {calendar?.calendar && (
+          {calendar?.calendar &&
+          !calendar.calendar[0].month.includes('released') ? (
             <>
               <CalendarGenerator page={page} data={calendar.calendar[page]}>
                 <div className="paginate">
@@ -89,6 +93,28 @@ export default function Academia() {
                 </div>
               </CalendarGenerator>
             </>
+          ) : (
+            <div
+              style={{
+                background: 'var(--background-light)',
+                borderRadius: '22px',
+                height: '280px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                margin: '12px 24px',
+              }}
+            >
+              <h4
+                style={{
+                  textAlign: 'center',
+                  opacity: '0.8',
+                  fontSize: '16px',
+                }}
+              >
+                It{"'"}s not released yet. Please check back later.
+              </h4>
+            </div>
           )}
           <Footer />
         </div>

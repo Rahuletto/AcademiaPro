@@ -16,8 +16,6 @@ import { DayOrderResponse } from '@/types/DayOrder';
 import { useEffect, useRef } from 'react';
 
 import { Hyperping } from '@/utils/hyperping';
-import { MdOutlineAutoGraph, MdViewTimeline } from 'react-icons/md';
-import { PiExamFill } from 'react-icons/pi';
 import { BsCalendar2WeekFill } from 'react-icons/bs';
 import ProfileDialog from './ProfileDialog';
 import { useUser } from '@/providers/UserProvider';
@@ -127,13 +125,13 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
               <FaBookOpen style={{ fontSize: 24 }} />
             </Link>
 
-            <Link
+            {/* <Link
               className={'h-button' + (page == 'Results' ? ' active' : '')}
               href="/results"
             >
               Exam Results
               <FaSignature style={{ fontSize: 24 }} />
-            </Link>
+            </Link> */}
 
             <Link
               className={'h-button' + (page == 'Calendar' ? ' active' : '')}

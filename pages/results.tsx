@@ -98,7 +98,20 @@ export default function Results() {
           className="content"
           style={{ height: '95.5vh', padding: '2.2rem', overflow: 'auto' }}
         >
-          <h2 style={{ marginBottom: '48px' }}>SRM 2024 Results</h2>
+          <div
+            style={{
+              marginBottom: '48px',
+              display: 'flex',
+              gap: '4px',
+              flexDirection: 'column',
+            }}
+          >
+            <h2>SRM 2024 Results</h2>
+            <p>
+              I thought i disabled this. uhm? If you still accessed it, thats
+              cool!
+            </p>
+          </div>
           {!result ? (
             <div
               className={styles.results}
@@ -115,7 +128,6 @@ export default function Results() {
                     type="text"
                     placeholder="Registration Number"
                     value={reg}
-                  
                   />
                   <input
                     title="Date of Birth"
