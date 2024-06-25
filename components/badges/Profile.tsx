@@ -5,7 +5,7 @@ import styles from '@/styles/Profile.module.css';
 import { useEffect, useState } from 'react';
 
 import { InfoResponse } from '@/types/UserInfo';
-import { FaUser } from "react-icons/fa";
+import { FaUser } from 'react-icons/fa';
 import { getColor } from '@/utils/color';
 
 export default function Profile({ data }: { data: InfoResponse | null }) {
@@ -53,14 +53,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
           </button>
         </div>
       ) : (
-        <Skeleton
-          style={{
-            width: '100%',
-            height: '64px',
-            borderRadius: '12px',
-            opacity: 0.6,
-          }}
-        />
+        <Skeleton className="w-full h-[64px] rounded-lg opacity-60" />
       )}
     </>
   );

@@ -60,41 +60,14 @@ const AttendanceTable = ({
             </div>
           ) : (
             <>
-              <Skeleton
-                style={{ width: '60vw', height: '64px', borderRadius: '12px' }}
-              />
-              <Skeleton
-                style={{
-                  width: '60vw',
-                  height: '64px',
-                  borderRadius: '12px',
-                  opacity: 0.1,
-                }}
-              />
-              <Skeleton
-                style={{ width: '60vw', height: '64px', borderRadius: '12px' }}
-              />
+              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-60" />
+              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-10" />
+              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-60" />
 
-              <Skeleton
-                style={{
-                  width: '60vw',
-                  height: '64px',
-                  borderRadius: '12px',
-                  opacity: 0.1,
-                }}
-              />
+              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-10" />
 
-              <Skeleton
-                style={{ width: '60vw', height: '64px', borderRadius: '12px' }}
-              />
-              <Skeleton
-                style={{
-                  width: '60vw',
-                  height: '64px',
-                  borderRadius: '12px',
-                  opacity: 0.1,
-                }}
-              />
+              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-60" />
+              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-10" />
             </>
           )}
         </tbody>

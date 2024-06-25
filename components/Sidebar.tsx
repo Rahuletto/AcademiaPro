@@ -100,14 +100,7 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
               {day ? (
                 <DayOrder data={day} />
               ) : (
-                <Skeleton
-                  style={{
-                    width: '100px',
-                    height: '30px',
-                    borderRadius: '12px',
-                    opacity: 0.6,
-                  }}
-                />
+                <Skeleton className="w-[100px] h-[30px] rounded-md opacity-60" />
               )}
               {todayTable && userInfo && (
                 <Hour data={todayTable.filter((e) => e)?.length} />
@@ -175,14 +168,7 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
           {userInfo ? (
             <Profile data={userInfo} />
           ) : (
-            <Skeleton
-              style={{
-                width: '100%',
-                height: '64px',
-                borderRadius: '12px',
-                opacity: 0.6,
-              }}
-            />
+            <Skeleton className="w-full h-[64px] rounded-md opacity-60" />
           )}
         </div>
       </div>

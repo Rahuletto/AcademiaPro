@@ -33,7 +33,9 @@ const CalendarGenerator = ({
       ) : (
         <>
           <Skeleton
-            style={{ width: '60vw', height: '70vh', borderRadius: '12px' }}
+            className="rounded-xl opacity-70"
+            width={'60vw'}
+            height={'70vh'}
           />
         </>
       )}
