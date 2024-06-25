@@ -72,32 +72,32 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                 className={`circle ${category === "Theory" ? "" : "greenCircle"}`}
               ></div>
             </div>
-
-            <div className="marks">
+            <div className={styles.marks}>
               {marks.map((element, index) => (
-                <div key={index} className="row">
-                  <span className="muted_title col-6">{element.test}</span>
+                <div key={index} className={styles.row}>
+                  <span className={[styles.muted_title, "col-6"].join(" ")}>
+                    {element.test}
+                  </span>
 
-                  <div className="markPill">
+                  <div className={styles.markPill}>
                     <span
-                      className={`${
-                        element.marks.scored === "Abs" ||
+                      className={
+                        element.marks.scored == "Abs" ||
                         parseFloat(element.marks.total) / 2 >
                           parseFloat(element.marks.scored)
-                          ? "text-red"
-                          : "text-mark"
-                      }`}
+                          ? styles.red
+                          : styles.mark
+                      }
                     >
                       {element.marks.scored}
                     </span>
-                    <span className="total">
+                    <span className={styles.total}>
                       {element.marks.total.split(".")[0]}
                     </span>
                   </div>
                 </div>
               ))}
             </div>
-
             <div id="total-row" className="row border-t border-sideActive pt-3">
               <span id="total" className="muted_title col-6">
                 Total
