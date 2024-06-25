@@ -38,7 +38,7 @@ const AttendanceTable = ({
             ))
           ) : data?.expireAt ? (
             <div className="m-[12px_24px] flex h-[280px] items-center justify-center rounded-[22px] bg-backgroundLight">
-              <h4 className="text-center text-[16px] opacity-80">
+              <h4 className="text-center text-base opacity-80">
                 There is no attendance here, Interesting...
               </h4>
             </div>
