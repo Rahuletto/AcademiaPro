@@ -1,21 +1,20 @@
-import Header from "@/components/Header";
-import styles from "@/styles/Home.module.css";
-import { getCookie } from "@/utils/cookies";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
+import Header from '@/components/Header';
+import styles from '@/styles/Home.module.css';
+import { getCookie } from '@/utils/cookies';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
 export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    if (getCookie("token")) router.push("/academia");
+    if (getCookie('token')) router.push('/academia');
   }, []);
 
   return (
     <>
       <Header />
-
       <main className={styles.main}>
         <div className={styles.hero}>
           <svg
@@ -44,7 +43,7 @@ export default function Home() {
 
         <div className={styles.features}>
           <div>
-            <h3 style={{ opacity: 0.9, marginBottom: "8px" }}>
+            <h3 style={{ opacity: 0.9, marginBottom: '8px' }}>
               Why Academia ?
             </h3>
             <ul>
@@ -57,7 +56,7 @@ export default function Home() {
             </ul>
           </div>
           <div>
-            <h3 style={{ opacity: 0.9, marginBottom: "8px" }}>Idea behind</h3>
+            <h3 style={{ opacity: 0.9, marginBottom: '8px' }}>Idea behind</h3>
             <p>
               Academia is a mess. we scraped it so, we know it. lol. And we got
               SRM Check but its bloated with useless crap and ads. So here we

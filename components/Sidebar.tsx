@@ -19,6 +19,7 @@ import { Hyperping } from '@/utils/hyperping';
 import { BsCalendar2WeekFill } from 'react-icons/bs';
 import ProfileDialog from './ProfileDialog';
 import { useUser } from '@/providers/UserProvider';
+import Warn from './badges/Warn';
 
 interface SidebarProps {
   todayTable?: (string | undefined)[] | undefined;
@@ -81,6 +82,7 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
     <>
       <div className="nav-hider"></div>
       <ProfileDialog />
+      <Warn />
       <div className="nav">
         <div className="navbox">
           <div className="nav-title">

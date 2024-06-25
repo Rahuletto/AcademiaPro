@@ -98,7 +98,7 @@ export default function Academia() {
               style={{
                 background: 'var(--background-light)',
                 borderRadius: '22px',
-                height: '280px',
+                height: '82vh',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',

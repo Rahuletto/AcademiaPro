@@ -127,6 +127,7 @@ export default function Academia() {
 
       <main className="root">
         <Sidebar day={day} todayTable={todayTable} />
+
         <div className="content">
           <section id="timetable">
             <h2 className="subtitle">
