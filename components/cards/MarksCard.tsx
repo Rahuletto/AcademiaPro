@@ -67,15 +67,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
             onDoubleClick={expand}
             className={[styles.card, "markCard"].join(" ")}
           >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 8,
-                justifyContent: "space-between",
-                width: "-webkit-fill-available",
-              }}
-            >
+            <div className="flex w-full items-center justify-between gap-2">
               <h4 className={styles.title}>{name}</h4>
               <div
                 className={
