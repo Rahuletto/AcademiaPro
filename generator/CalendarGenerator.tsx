@@ -1,9 +1,9 @@
-import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
-import styles from '@/styles/Calendar.module.css';
-import { Calendar, Day } from '@/types/Calendar';
-import CalendarCard from '../components/cards/CalendarCard';
-import { ReactNode } from 'react';
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
+import styles from "@/styles/Calendar.module.css";
+import { Calendar, Day } from "@/types/Calendar";
+import CalendarCard from "../components/cards/CalendarCard";
+import { ReactNode } from "react";
 
 const CalendarGenerator = ({
   data,
@@ -34,8 +34,8 @@ const CalendarGenerator = ({
         <>
           <Skeleton
             className="rounded-xl opacity-70"
-            width={'60vw'}
-            height={'70vh'}
+            width={"60vw"}
+            height={"70vh"}
           />
         </>
       )}

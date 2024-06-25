@@ -1,6 +1,6 @@
-import styles from '@/styles/Card.module.css';
-import { truncateString } from '../../utils/truncate';
-import { ExamMarks } from '@/types/Results';
+import styles from "@/styles/Card.module.css";
+import { truncateString } from "../../utils/truncate";
+import { ExamMarks } from "@/types/Results";
 
 interface Props {
   data: ExamMarks;
@@ -10,19 +10,19 @@ const ResultsCard = ({ data }: Props) => {
   return (
     <>
       <tr
-        className={[styles.card, 'attCard'].join(' ')}
+        className={[styles.card, "attCard"].join(" ")}
         title={`Semester ${data.semester} - ${data.courseTitle}`}
       >
-        <td style={{ height: '80px' }}>
+        <td style={{ height: "80px" }}>
           <div
             style={{
-              padding: '8px 4px',
-              display: 'flex',
-              alignItems: 'flex-start',
+              padding: "8px 4px",
+              display: "flex",
+              alignItems: "flex-start",
               gap: 8,
-              height: '100%',
-              justifyContent: 'flex-start',
-              width: '-webkit-fill-available',
+              height: "100%",
+              justifyContent: "flex-start",
+              width: "-webkit-fill-available",
             }}
           >
             <h4 title={`Semester ${data.semester}`}>
@@ -39,18 +39,18 @@ const ResultsCard = ({ data }: Props) => {
         <td>
           <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
+              display: "flex",
+              alignItems: "center",
               gap: 12,
               paddingLeft: 6,
             }}
           >
-            <span style={{ fontSize: 14, opacity: '0.4' }}>Credit:</span>{' '}
+            <span style={{ fontSize: 14, opacity: "0.4" }}>Credit:</span>{" "}
             <span
               className={styles.total}
               style={
-                !data.credit || data.credit === '' || Number(data.credit) == 0
-                  ? { backgroundColor: 'var(--red)', opacity: 0.5 }
+                !data.credit || data.credit === "" || Number(data.credit) == 0
+                  ? { backgroundColor: "var(--red)", opacity: 0.5 }
                   : {}
               }
             >
@@ -61,7 +61,7 @@ const ResultsCard = ({ data }: Props) => {
         <td>
           <h3
             style={{ fontSize: 28 }}
-            className={data.result === 'PASS' ? styles.green : styles.red}
+            className={data.result === "PASS" ? styles.green : styles.red}
           >
             {data.grade} <span className={styles.gradeMark}>grade</span>
           </h3>

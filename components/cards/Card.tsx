@@ -7,14 +7,14 @@ interface Props {
     absent: number;
     total: number;
   };
-  category: 'Theory' | 'Practical' | string;
+  category: "Theory" | "Practical" | string;
   todayTable?: (string | undefined)[];
 }
 
-import styles from '@/styles/Card.module.css';
-import { calculateMargin } from '@/utils/margin';
-import { useEffect, useState } from 'react';
-import { truncateString } from '../../utils/truncate';
+import styles from "@/styles/Card.module.css";
+import { calculateMargin } from "@/utils/margin";
+import { useEffect, useState } from "react";
+import { truncateString } from "../../utils/truncate";
 
 const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
   const [margin, setMargin] = useState(0);
@@ -37,26 +37,26 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
   return (
     <>
       <tr
-        className={[styles.card, 'attCard'].join(' ')}
+        className={[styles.card, "attCard"].join(" ")}
         title={`${code} (${category})`}
       >
-        <td style={{ height: '80px' }}>
+        <td style={{ height: "80px" }}>
           <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
+              display: "flex",
+              alignItems: "center",
               gap: 8,
-              justifyContent: 'space-between',
-              width: '-webkit-fill-available',
+              justifyContent: "space-between",
+              width: "-webkit-fill-available",
             }}
           >
             <h4>{truncateString(title)}</h4>
 
             <div
               className={
-                category == 'Theory'
+                category == "Theory"
                   ? styles.circle
-                  : [styles.circle, styles.greenCircle].join(' ')
+                  : [styles.circle, styles.greenCircle].join(" ")
               }
             ></div>
           </div>
@@ -66,11 +66,11 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
             className={styles.margin}
             title={
               margin <= countHoursPerDay(title)
-                ? 'You are at the verge of going below 75%'
-                : 'The hours you can skip'
+                ? "You are at the verge of going below 75%"
+                : "The hours you can skip"
             }
           >
-            {margin < 0 ? 'Required' : 'Margin'}:{' '}
+            {margin < 0 ? "Required" : "Margin"}:{" "}
             <span
               className={
                 margin <= countHoursPerDay(title) && margin > 0
@@ -87,10 +87,10 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
 
         <td>
           <div className={styles.attendance}>
-            <span className={[styles.present, styles.green].join(' ')}>
+            <span className={[styles.present, styles.green].join(" ")}>
               {data.present}
             </span>
-            <span className={[styles.absent, styles.red].join(' ')}>
+            <span className={[styles.absent, styles.red].join(" ")}>
               {data.absent}
             </span>
             <span className={styles.total}>{data.total}</span>
@@ -100,14 +100,14 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
           <h3
             style={{ fontSize: 28 }}
             className={
-              Number(percent.split('.')[0]) === 100
+              Number(percent.split(".")[0]) === 100
                 ? styles.green
-                : Number(percent.split('.')[0]) < 75
+                : Number(percent.split(".")[0]) < 75
                   ? styles.red
                   : styles.percent
             }
           >
-            {Number(percent.split('.')[0]) === 100 ? 100 : percent}%
+            {Number(percent.split(".")[0]) === 100 ? 100 : percent}%
           </h3>
         </td>
       </tr>

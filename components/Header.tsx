@@ -1,36 +1,36 @@
-import { LogoJsonLd, NextSeo } from 'next-seo';
-import Head from 'next/head';
-import Script from 'next/script';
+import { LogoJsonLd, NextSeo } from "next-seo";
+import Head from "next/head";
+import Script from "next/script";
 
-const Header = ({ title }: { title?: string } = { title: 'AcademiaPro' }) => (
+const Header = ({ title }: { title?: string } = { title: "AcademiaPro" }) => (
   <>
     <Head>
       <NextSeo
-        title={title || 'AcademiaPro'}
+        title={title || "AcademiaPro"}
         description="University data, beautifully presented at your fingertips | Built for SRM University"
         canonical="https://academia-pro.vercel.app/"
         openGraph={{
-          url: 'https://academia-pro.vercel.app',
-          title: 'AcademiaPro',
+          url: "https://academia-pro.vercel.app",
+          title: "AcademiaPro",
           description:
-            'University data, beautifully presented at your fingertips | Built for SRM University',
+            "University data, beautifully presented at your fingertips | Built for SRM University",
           images: [
             {
-              url: '/og.png',
+              url: "/og.png",
 
-              alt: 'Academia Pro',
-              type: 'image/png',
+              alt: "Academia Pro",
+              type: "image/png",
             },
           ],
-          siteName: 'AcademiaPro',
+          siteName: "AcademiaPro",
         }}
         twitter={{
-          handle: '@rahul_marban',
-          cardType: 'summary_large_image',
+          handle: "@rahul_marban",
+          cardType: "summary_large_image",
         }}
       />
 
-      <title>{title || 'AcademiaPro'}</title>
+      <title>{title || "AcademiaPro"}</title>
 
       <LogoJsonLd
         logo="/public/favicon.svg"
@@ -42,7 +42,7 @@ const Header = ({ title }: { title?: string } = { title: 'AcademiaPro' }) => (
         type="image/x-icon"
         href="/favicons/256.png"
       ></link>
-      <link key="icon" rel="icon" href={'/favicons/256.png'} />
+      <link key="icon" rel="icon" href={"/favicons/256.png"} />
       <link rel="manifest" href="/manifest.json" />
       {/* PWA */}
       <meta name="application-name" content="AcademiaPro" />
@@ -74,10 +74,10 @@ const Header = ({ title }: { title?: string } = { title: 'AcademiaPro' }) => (
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({
-          '@context': 'https://schema.org/',
-          '@type': 'WebSite',
-          name: 'AcademiaPro',
-          url: 'https://academia-pro.vercel.app',
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          name: "AcademiaPro",
+          url: "https://academia-pro.vercel.app",
         }),
       }}
     />

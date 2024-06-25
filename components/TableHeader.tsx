@@ -1,7 +1,7 @@
-import { endingTimesSlot, startingTimesSlot } from '@/types/Times';
-import { timeRange } from '@/utils/range';
-import { useInterval } from '@/utils/useInterval';
-import { useState, useEffect, ReactNode } from 'react';
+import { endingTimesSlot, startingTimesSlot } from "@/types/Times";
+import { timeRange } from "@/utils/range";
+import { useInterval } from "@/utils/useInterval";
+import { useState, useEffect, ReactNode } from "react";
 
 export function TableHeader() {
   const [time, setTime] = useState(new Date());
@@ -38,11 +38,11 @@ export function TableHeader() {
       const newValue = (
         <th
           key={i}
-          title={startingTimesSlot[i] + '-' + endingTimesSlot[i]}
+          title={startingTimesSlot[i] + "-" + endingTimesSlot[i]}
           className="head-time"
         >
-          {timeRange(time, startingTimesSlot[i] + '-' + endingTimesSlot[i]) ? (
-            <span className={'current-time'}>{i + 1}</span>
+          {timeRange(time, startingTimesSlot[i] + "-" + endingTimesSlot[i]) ? (
+            <span className={"current-time"}>{i + 1}</span>
           ) : (
             <span>{i + 1}</span>
           )}
