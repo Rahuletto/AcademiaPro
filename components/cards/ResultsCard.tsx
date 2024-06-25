@@ -10,49 +10,31 @@ const ResultsCard = ({ data }: Props) => {
   return (
     <>
       <tr
-        className={[styles.card, "attCard"].join(" ")}
+        className={`card attCard`}
         title={`Semester ${data.semester} - ${data.courseTitle}`}
       >
-        <td style={{ height: "80px" }}>
-          <div
-            style={{
-              padding: "8px 4px",
-              display: "flex",
-              alignItems: "flex-start",
-              gap: 8,
-              height: "100%",
-              justifyContent: "flex-start",
-              width: "-webkit-fill-available",
-            }}
-          >
+        <td className="h-20">
+          <div className="flex h-full w-full items-start justify-start gap-2 p-2">
             <h4 title={`Semester ${data.semester}`}>
               {truncateString(data.courseTitle)}
             </h4>
           </div>
         </td>
         <td>
-          <p className={styles.margin}>
+          <p className="margin">
             <span>{data.courseCode}</span>
           </p>
         </td>
 
         <td>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 12,
-              paddingLeft: 6,
-            }}
-          >
-            <span style={{ fontSize: 14, opacity: "0.4" }}>Credit:</span>{" "}
+          <div className="flex items-center gap-3 pl-1.5">
+            <span className="text-sm opacity-40">Credit:</span>{" "}
             <span
-              className={styles.total}
-              style={
-                !data.credit || data.credit === "" || Number(data.credit) == 0
-                  ? { backgroundColor: "var(--red)", opacity: 0.5 }
-                  : {}
-              }
+              className={`total ${
+                !data.credit || data.credit === "" || Number(data.credit) === 0
+                  ? "bg-red-500 opacity-50"
+                  : ""
+              }`}
             >
               {data.credit || 0}
             </span>
@@ -60,10 +42,9 @@ const ResultsCard = ({ data }: Props) => {
         </td>
         <td>
           <h3
-            style={{ fontSize: 28 }}
-            className={data.result === "PASS" ? styles.green : styles.red}
+            className={`text-2xl ${data.result === "PASS" ? "text-green-500" : "text-red-500"}`}
           >
-            {data.grade} <span className={styles.gradeMark}>grade</span>
+            {data.grade} <span className="gradeMark">grade</span>
           </h3>
         </td>
       </tr>

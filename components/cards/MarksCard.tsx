@@ -56,56 +56,41 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
     <>
       {arr[0] ? (
         <div
-          className={[
-            styles.markContainer,
-            expanded && category == "Theory" ? "markExpand" : "",
-          ].join(" ")}
+          className={`${
+            expanded && category === "Theory" ? "markExpand" : ""
+          } markContainer`}
         >
           <div
             title={`${code} (${category})`}
             id={category.toLowerCase()}
             onDoubleClick={expand}
-            className={[styles.card, "markCard"].join(" ")}
+            className="card markCard"
           >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: 8,
-                justifyContent: "space-between",
-                width: "-webkit-fill-available",
-              }}
-            >
-              <h4 className={styles.title}>{name}</h4>
+            <div className="flex w-full items-center justify-between gap-2">
+              <h4 className="title">{name}</h4>
               <div
-                className={
-                  category == "Theory"
-                    ? styles.circle
-                    : [styles.circle, styles.greenCircle].join(" ")
-                }
+                className={`circle ${category === "Theory" ? "" : "greenCircle"}`}
               ></div>
             </div>
 
-            <div className={styles.marks}>
+            <div className="marks">
               {marks.map((element, index) => (
-                <div key={index} className={styles.row}>
-                  <span className={[styles.muted_title, "col-6"].join(" ")}>
-                    {element.test}
-                  </span>
+                <div key={index} className="row">
+                  <span className="muted_title col-6">{element.test}</span>
 
-                  <div className={styles.markPill}>
+                  <div className="markPill">
                     <span
-                      className={
-                        element.marks.scored == "Abs" ||
+                      className={`${
+                        element.marks.scored === "Abs" ||
                         parseFloat(element.marks.total) / 2 >
                           parseFloat(element.marks.scored)
-                          ? styles.red
-                          : styles.mark
-                      }
+                          ? "text-red-500"
+                          : "mark"
+                      }`}
                     >
                       {element.marks.scored}
                     </span>
-                    <span className={styles.total}>
+                    <span className="total">
                       {element.marks.total.split(".")[0]}
                     </span>
                   </div>
@@ -113,40 +98,26 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
               ))}
             </div>
 
-            <div
-              id="total-row"
-              className={styles.row}
-              style={{
-                borderTop: "1px solid var(--side-active)",
-                paddingTop: 12,
-              }}
-            >
-              <span
-                id="total"
-                className={[styles.muted_title, "col-6"].join(" ")}
-              >
+            <div id="total-row" className="row border-t border-sideActive pt-3">
+              <span id="total" className="muted_title col-6">
                 Total
               </span>
 
               <button
-                disabled={parseFloat(overall.total) == 100}
+                disabled={parseFloat(overall.total) === 100}
                 onClick={expand}
                 id="calc-btn"
                 className="download"
               ></button>
 
               <div
-                className={styles.markPill}
+                className="markPill"
                 title={`Lost ${(
                   parseFloat(overall.total) - parseFloat(overall.marks)
                 ).toPrecision(3)} marks`}
               >
-                <span className={styles.mark} style={{ color: "var(--color)" }}>
-                  {overall.marks}
-                </span>
-                <span className={styles.total}>
-                  {overall.total.split(".")[0]}
-                </span>
+                <span className="mark text-color">{overall.marks}</span>
+                <span className="total">{overall.total.split(".")[0]}</span>
               </div>
             </div>
           </div>
@@ -174,8 +145,8 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
             )}
 
             <div id="gradex">
-              <div>
-                <p>Required for</p>{" "}
+              <div className="flex items-center space-x-2">
+                <p>Required for</p>
                 <select
                   value={grade}
                   onChange={(e) => setGrade(e.target.value)}
@@ -186,22 +157,24 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                   <option value="B+">B+</option>
                   <option value="B">B</option>
                   <option value="C">C</option>
-                </select>{" "}
+                </select>
                 <p>grade</p>
               </div>
               <div>
                 <span
-                  className={parseFloat(req) > 75 ? styles.red : styles.mark}
+                  className={`${
+                    parseFloat(req) > 75 ? "text-red-500" : "mark"
+                  }`}
                 >
                   {req}
                 </span>
-                <span className={styles.total}>75</span>
+                <span className="total">75</span>
               </div>
             </div>
 
             <span id="warn">
               This shows how many marks you want to get in the final semester
-              exam! So make sure ur total internal is at 60
+              exam! So make sure your total internal is at 60
             </span>
           </div>
         </div>

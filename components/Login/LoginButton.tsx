@@ -11,17 +11,18 @@ export default function LoginButton({
     <button
       name="login"
       type="submit"
-      style={{
-        border: "1px solid var(--yellow)",
-        backgroundColor: "#ffca630e !important",
-        color: "var(--yellow) !important",
-      }}
+      className="bg-yellow-light cursor-not-allowed border border-yellow text-yellow opacity-70"
       disabled
     >
       Logging in
     </button>
   ) : (
-    <button title="Login" name="login" onClick={onClick}>
+    <button
+      title="Login"
+      name="login"
+      onClick={onClick}
+      className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
+    >
       Login
     </button>
   );

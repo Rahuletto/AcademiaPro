@@ -8,7 +8,7 @@ import ResultsCard from "./cards/ResultsCard";
 const ResultsTable = ({ data }: { data: ExamData | null }) => {
   return (
     <>
-      <table style={{ width: "-webkit-fill-available" }}>
+      <table className="w-full">
         <thead />
         <thead />
         <tbody className={[styles.attr, "attTable"].join(" ")}>

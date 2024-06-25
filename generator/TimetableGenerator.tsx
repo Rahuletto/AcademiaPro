@@ -18,79 +18,25 @@ const styled = {
 
 export default function TimetableGen({ body }: { body: TimeTableResponse }) {
   return (
-    <div
-      style={{
-        fontFamily: "Inter",
-        background: "#0a0d12",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
-        width: "100vw",
-        transform: "scale(3.8)",
-      }}
-    >
-      <div
-        style={{
-          margin: 0,
-          fontFamily: "Inter",
-          width: "610px",
-          display: "flex",
-          flexDirection: "column",
-          background: "#12171e",
-          borderRadius: 8,
-          borderTopLeftRadius: 14,
-          borderTopRightRadius: 14,
-          padding: 2,
-        }}
-      >
-        <div
-          style={{
-            height: 20,
-            color: "white",
-            fontWeight: 600,
-            display: "flex",
-          }}
-        >
+    <div className="font-inter flex h-screen w-screen scale-[3.8] transform items-center justify-center bg-gray-900">
+      <div className="font-inter m-0 flex w-[610px] flex-col rounded-lg rounded-t-xl bg-gray-800 p-2">
+        <div className="flex h-5 font-semibold text-white">
           {body?.table[0].subjects.map((_e, i) => (
             <div
               key={`timeslot-${i}`}
-              style={{
-                padding: "0.1rem 0.5rem",
-                fontFamily: '"Inter-Bold"',
-                width: "10%",
-                fontSize: 6,
-                textAlign: "center",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
+              className="font-inter-bold flex w-[10%] items-center justify-center p-[0.1rem] px-[0.5rem] text-center text-[6px]"
             >
               {timeConvert(startingTimesSlot[i])} -{" "}
               {timeConvert(endingTimesSlot[i])}
             </div>
           ))}
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            background: "#04070b",
-            borderRadius: "6px",
-          }}
-        >
+        <div className="flex flex-col rounded-md bg-gray-900">
           {body?.table.map((row, i) => (
-            <div style={{ display: "flex" }} key={i}>
+            <div className="flex" key={i}>
               {row.subjects.map((elem, j) =>
                 elem ? (
-                  <div
-                    style={{
-                      border: "0px",
-                      display: "flex",
-                      width: "10%",
-                    }}
-                    key={`table-${i}-${j}`}
-                  >
+                  <div className="flex w-[10%]" key={`table-${i}-${j}`}>
                     <td style={constructStyles(i, j, elem)}>
                       {truncateString(convertUnicode(elem).split("(")[0])}
                     </td>
@@ -98,11 +44,7 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
                 ) : (
                   <div
                     key={i}
-                    style={{
-                      width: "10%",
-                      border: "0.3px solid #12171e",
-                      opacity: 0.5,
-                    }}
+                    className="w-[10%] border-[0.3px] border-gray-800 opacity-50"
                   />
                 ),
               )}
