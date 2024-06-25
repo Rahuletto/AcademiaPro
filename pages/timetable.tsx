@@ -1,24 +1,23 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import { useTimeTable } from '@/providers/TableProvider';
-import { useUser } from '@/providers/UserProvider';
-
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { FaCaretLeft } from 'react-icons/fa6';
-import Skeleton from 'react-loading-skeleton';
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { useTimeTable } from "@/providers/TableProvider";
+import { useUser } from "@/providers/UserProvider";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { FaCaretLeft } from "react-icons/fa6";
+import Skeleton from "react-loading-skeleton";
 
 export default function Timetable() {
   const router = useRouter();
   const userInfo = useUser();
   const table = useTimeTable();
 
-  const [data, setData] = useState('');
+  const [data, setData] = useState("");
 
   useEffect(() => {
     fetch(`/api/timetable/${userInfo?.userInfo?.reg}`, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({
         table: table,
       }),
@@ -32,29 +31,29 @@ export default function Timetable() {
 
   return (
     <>
-      <Header title={'Timetable | AcademiaPro'} />
+      <Header title={"Timetable | AcademiaPro"} />
 
-      <main
-        className="root"
-        style={{ minHeight: '89vh', alignItems: 'center' }}
-      >
-        <button className="back-tt" onClick={() => router.back()}>
+      <main className="flex min-h-[89vh] flex-col items-center">
+        <button
+          className="mb-4 text-gray-700 hover:text-gray-900"
+          onClick={() => router.back()}
+        >
           <FaCaretLeft />
         </button>
-        <div style={{ width: '100vw', maxWidth: '100vw' }}>
+        <div className="w-full max-w-full">
           {data ? (
             <Image
-              className="tt-page"
+              className="h-auto w-full"
               alt="timetable"
               src={data}
               width={2400}
               height={920}
             />
           ) : (
-            <Skeleton width={2400} height={920} className="tt-page" />
+            <Skeleton width={2400} height={920} className="h-auto w-full" />
           )}
         </div>
-        <div className="credHold">
+        <div className="mt-4">
           <Footer />
         </div>
       </main>
