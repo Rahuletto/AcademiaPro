@@ -1,9 +1,9 @@
-import Card from '@/components/cards/Card';
-import styles from '@/styles/Attendance.module.css';
-import type { AttendanceResponse, Course } from '@/types/Attendance';
+import Card from "@/components/cards/Card";
+import styles from "@/styles/Attendance.module.css";
+import type { AttendanceResponse, Course } from "@/types/Attendance";
 
-import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const AttendanceTable = ({
   data,
@@ -17,7 +17,7 @@ const AttendanceTable = ({
       <table className="w-full">
         <thead />
         <thead />
-        <tbody className={[styles.attr, 'attTable'].join(' ')}>
+        <tbody className={[styles.attr, "attTable"].join(" ")}>
           {data && data.attendance[0] ? (
             data.attendance.map((element: Course, index: number) => (
               <Card
@@ -37,21 +37,21 @@ const AttendanceTable = ({
               />
             ))
           ) : data?.expireAt ? (
-            <div className="bg-backgroundLight rounded-[22px] h-[280px] flex items-center justify-center m-[12px_24px]">
-              <h4 className="text-center opacity-80 text-[16px]">
+            <div className="m-[12px_24px] flex h-[280px] items-center justify-center rounded-[22px] bg-backgroundLight">
+              <h4 className="text-center text-[16px] opacity-80">
                 There is no attendance here, Interesting...
               </h4>
             </div>
           ) : (
             <>
-              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-60" />
-              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-10" />
-              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-60" />
+              <Skeleton className="h-[64px] w-[60vw] rounded-xl opacity-60" />
+              <Skeleton className="h-[64px] w-[60vw] rounded-xl opacity-10" />
+              <Skeleton className="h-[64px] w-[60vw] rounded-xl opacity-60" />
 
-              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-10" />
+              <Skeleton className="h-[64px] w-[60vw] rounded-xl opacity-10" />
 
-              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-60" />
-              <Skeleton className="w-[60vw] h-[64px] rounded-xl opacity-10" />
+              <Skeleton className="h-[64px] w-[60vw] rounded-xl opacity-60" />
+              <Skeleton className="h-[64px] w-[60vw] rounded-xl opacity-10" />
             </>
           )}
         </tbody>

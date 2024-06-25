@@ -1,11 +1,11 @@
-import { useUser } from '@/providers/UserProvider';
-import { clearCookies } from '@/utils/cookies';
-import { useRouter } from 'next/router';
-import React, { useRef, useEffect } from 'react';
-import styles from '@/styles/Profile.module.css';
-import { IoMdLogOut } from 'react-icons/io';
-import { CgClose } from 'react-icons/cg';
-import { GrClose } from 'react-icons/gr';
+import { useUser } from "@/providers/UserProvider";
+import { clearCookies } from "@/utils/cookies";
+import { useRouter } from "next/router";
+import React, { useRef, useEffect } from "react";
+import styles from "@/styles/Profile.module.css";
+import { IoMdLogOut } from "react-icons/io";
+import { CgClose } from "react-icons/cg";
+import { GrClose } from "react-icons/gr";
 
 const ProfileDialog = () => {
   const router = useRouter();
@@ -26,15 +26,15 @@ const ProfileDialog = () => {
   };
 
   function logoutSequence() {
-    const out = confirm('Are you sure want to log out?');
+    const out = confirm("Are you sure want to log out?");
     if (out) {
       clearCookies();
-      router.push('/');
+      router.push("/");
     } else return;
   }
 
   useEffect(() => {
-    const dialog = document.querySelector<HTMLDialogElement>('#profileDialog');
+    const dialog = document.querySelector<HTMLDialogElement>("#profileDialog");
 
     function handleClickOutside(event: any) {
       const rect = dialog?.getBoundingClientRect();
@@ -52,10 +52,10 @@ const ProfileDialog = () => {
       }
     }
 
-    dialog?.addEventListener('click', handleClickOutside);
+    dialog?.addEventListener("click", handleClickOutside);
 
     return () => {
-      dialog?.removeEventListener('click', handleClickOutside);
+      dialog?.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
@@ -72,9 +72,9 @@ const ProfileDialog = () => {
       <h2>
         {user.name
           .toLowerCase()
-          .split(' ')
+          .split(" ")
           .filter((a: string) => a.length != 1)
-          .join(' ')}
+          .join(" ")}
       </h2>
       <h4>{user.reg}</h4>
       <div className={styles.userData}>

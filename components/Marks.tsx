@@ -1,5 +1,5 @@
-import MarksCard from '@/components/cards/MarksCard';
-import type { MarksResponse } from '@/types/Marks';
+import MarksCard from "@/components/cards/MarksCard";
+import type { MarksResponse } from "@/types/Marks";
 
 const MarksTable = ({ data }: { data: MarksResponse | null }) => {
   return (
@@ -18,8 +18,8 @@ const MarksTable = ({ data }: { data: MarksResponse | null }) => {
           ))}
         </div>
       ) : (
-        <div className="bg-backgroundLight rounded-[22px] h-[280px] flex items-center justify-center m-[12px_24px]">
-          <h4 className="text-center opacity-80 text-[16px]">
+        <div className="m-[12px_24px] flex h-[280px] items-center justify-center rounded-[22px] bg-backgroundLight">
+          <h4 className="text-center text-[16px] opacity-80">
             No Marks have been updated. You can catch this.
           </h4>
         </div>

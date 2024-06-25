@@ -9,7 +9,7 @@ export default function LoginButton({
 }) {
   return error === -1 ? (
     <button
-    name="login"
+      name="login"
       type="submit"
       style={{
         border: "1px solid var(--yellow)",
@@ -21,6 +21,8 @@ export default function LoginButton({
       Logging in
     </button>
   ) : (
-    <button title="Login" name="login" onClick={onClick}>Login</button>
+    <button title="Login" name="login" onClick={onClick}>
+      Login
+    </button>
   );
 }

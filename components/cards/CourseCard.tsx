@@ -1,14 +1,14 @@
-import styles from '@/styles/CourseCard.module.css';
-import { Course } from '@/types/Course';
-import { useEffect, useState } from 'react';
+import styles from "@/styles/CourseCard.module.css";
+import { Course } from "@/types/Course";
+import { useEffect, useState } from "react";
 
 const grade_points: {
   [key: string]: number;
 } = {
   O: 91,
-  'A+': 81,
+  "A+": 81,
   A: 71,
-  'B+': 61,
+  "B+": 61,
   B: 56,
   C: 50,
 };
@@ -21,10 +21,10 @@ const CourseCard = ({ course }: { course: Course }) => {
           <div className={styles.courseName}>
             <h3>{course.courseTitle}</h3>
             <p>
-              Credit:{' '}
+              Credit:{" "}
               <span
                 className={
-                  course.category == 'Theory'
+                  course.category == "Theory"
                     ? styles.theoryColor
                     : styles.labColor
                 }
@@ -38,7 +38,7 @@ const CourseCard = ({ course }: { course: Course }) => {
             <h3>{course.courseCode}</h3>
             <h4
               className={
-                course.category == 'Theory' ? styles.theory : styles.lab
+                course.category == "Theory" ? styles.theory : styles.lab
               }
             >
               {course.roomNo}

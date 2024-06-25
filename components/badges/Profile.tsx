@@ -1,18 +1,18 @@
-import Skeleton from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
-import styles from '@/styles/Profile.module.css';
-import { useEffect, useState } from 'react';
+import styles from "@/styles/Profile.module.css";
+import { useEffect, useState } from "react";
 
-import { InfoResponse } from '@/types/UserInfo';
-import { FaUser } from 'react-icons/fa';
-import { getColor } from '@/utils/color';
+import { InfoResponse } from "@/types/UserInfo";
+import { FaUser } from "react-icons/fa";
+import { getColor } from "@/utils/color";
 
 export default function Profile({ data }: { data: InfoResponse | null }) {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   function profilePage() {
-    const dialog = document.querySelector<HTMLDialogElement>('#profileDialog');
+    const dialog = document.querySelector<HTMLDialogElement>("#profileDialog");
     if (dialog) dialog.showModal();
   }
 
@@ -21,9 +21,9 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
       setName(
         data?.userInfo?.name
           .toLowerCase()
-          .split(' ')
+          .split(" ")
           .filter((a: string) => a.length != 1)
-          .join(' '),
+          .join(" "),
       );
   }, [data]);
 
@@ -39,7 +39,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
           </div>
           <h3 className={styles.name}>
             {name.slice(0, 20) +
-              (name.length == name.slice(0, 20).length ? '' : '...')}
+              (name.length == name.slice(0, 20).length ? "" : "...")}
           </h3>
           <button
             name="user"
@@ -53,7 +53,7 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
           </button>
         </div>
       ) : (
-        <Skeleton className="w-full h-[64px] rounded-lg opacity-60" />
+        <Skeleton className="h-[64px] w-full rounded-lg opacity-60" />
       )}
     </>
   );
