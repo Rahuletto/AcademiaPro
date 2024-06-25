@@ -85,7 +85,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                         parseFloat(element.marks.total) / 2 >
                           parseFloat(element.marks.scored)
                           ? "text-red"
-                          : "mark"
+                          : "text-mark"
                       }`}
                     >
                       {element.marks.scored}
