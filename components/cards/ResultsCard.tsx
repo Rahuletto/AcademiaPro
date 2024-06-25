@@ -42,7 +42,7 @@ const ResultsCard = ({ data }: Props) => {
         </td>
         <td>
           <h3
-            className={`text-2xl ${data.result === "PASS" ? "text-green-500" : "text-red-500"}`}
+            className={`text-2xl ${data.result === "PASS" ? "text-green" : "text-red"}`}
           >
             {data.grade} <span className="gradeMark">grade</span>
           </h3>
