@@ -17,12 +17,7 @@ export default function LoginButton({
       Logging in
     </button>
   ) : (
-    <button
-      title="Login"
-      name="login"
-      onClick={onClick}
-      className="rounded bg-blue-500 px-4 py-2 font-bold text-white hover:bg-blue-700"
-    >
+    <button title="Login" name="login" onClick={onClick}>
       Login
     </button>
   );
