@@ -1,36 +1,36 @@
-import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
+import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 const AttendanceTable = dynamic(
-  () => import('@/components/Attendance').then((mod) => mod.default),
+  () => import("@/components/Attendance").then((mod) => mod.default),
   { ssr: false },
 );
 
 const MarksTable = dynamic(
-  () => import('@/components/Marks').then((mod) => mod.default),
+  () => import("@/components/Marks").then((mod) => mod.default),
   { ssr: false },
 );
 
 const TimeTableComponent = dynamic(
-  () => import('@/components/Timetable').then((mod) => mod.default),
+  () => import("@/components/Timetable").then((mod) => mod.default),
   { ssr: false },
 );
 
-import type { AttendanceResponse } from '@/types/Attendance';
-import type { MarksResponse } from '@/types/Marks';
+import type { AttendanceResponse } from "@/types/Attendance";
+import type { MarksResponse } from "@/types/Marks";
 
-import { clearCookies, getCookie } from '@/utils/cookies';
+import { clearCookies, getCookie } from "@/utils/cookies";
 
-import Header from '@/components/Header';
-import Loader from '@/components/Loader';
-import { Sidebar } from '@/components/Sidebar';
-import { TableHeader } from '@/components/TableHeader';
-import { useDay } from '@/providers/DayProvider';
-import { useUser } from '@/providers/UserProvider';
-import { URL } from '@/utils/url';
-import { useTimeTable } from '@/providers/TableProvider';
-import Footer from '@/components/Footer';
+import Header from "@/components/Header";
+import Loader from "@/components/Loader";
+import { Sidebar } from "@/components/Sidebar";
+import { TableHeader } from "@/components/TableHeader";
+import { useDay } from "@/providers/DayProvider";
+import { useUser } from "@/providers/UserProvider";
+import { URL } from "@/utils/url";
+import { useTimeTable } from "@/providers/TableProvider";
+import Footer from "@/components/Footer";
 
 export default function Academia() {
   const router = useRouter();
@@ -45,13 +45,13 @@ export default function Academia() {
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
   useEffect(() => {
-    const m = localStorage.getItem('internalMarks');
-    const a = localStorage.getItem('classAttend');
+    const m = localStorage.getItem("internalMarks");
+    const a = localStorage.getItem("classAttend");
 
     if (m) setMarks(JSON.parse(m));
     if (a) setAttendance(JSON.parse(a));
 
-    if (!getCookie('token')) router.push('/login');
+    if (!getCookie("token")) router.push("/login");
   }, []);
 
   useEffect(() => {
@@ -59,16 +59,16 @@ export default function Academia() {
       if (!attendance || attendance.expireAt < Date.now())
         fetch(`${URL}/api/attendance`, {
           next: { revalidate: 2 * 3600 },
-          cache: 'default',
-          method: 'GET',
+          cache: "default",
+          method: "GET",
           headers: {
-            'X-CSRF-Token': getCookie('token') as string,
-            'Set-Cookie': getCookie('token') as string,
-            Cookie: getCookie('token') as string,
-            Connection: 'keep-alive',
-            'Accept-Encoding': 'gzip, deflate, br, zstd',
-            'Cache-Control':
-              'private, maxage=86400, stale-while-revalidate=7200',
+            "X-CSRF-Token": getCookie("token") as string,
+            "Set-Cookie": getCookie("token") as string,
+            Cookie: getCookie("token") as string,
+            Connection: "keep-alive",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "Cache-Control":
+              "private, maxage=86400, stale-while-revalidate=7200",
           },
         })
           .then((r) => r.json())
@@ -77,7 +77,7 @@ export default function Academia() {
               clearCookies();
               window.location.reload();
             } else {
-              localStorage.setItem('classAttend', JSON.stringify(res));
+              localStorage.setItem("classAttend", JSON.stringify(res));
               setAttendance(res);
             }
           })
@@ -85,17 +85,17 @@ export default function Academia() {
 
       if (!marks || marks.expireAt < Date.now())
         fetch(`${URL}/api/marks`, {
-          cache: 'default',
+          cache: "default",
           next: { revalidate: 2 * 3600 },
-          method: 'GET',
+          method: "GET",
           headers: {
-            'X-CSRF-Token': getCookie('token') as string,
-            'Set-Cookie': getCookie('token') as string,
-            Cookie: getCookie('token') as string,
-            Connection: 'keep-alive',
-            'Accept-Encoding': 'gzip, deflate, br, zstd',
-            'Cache-Control':
-              'private, maxage=86400, stale-while-revalidate=7200',
+            "X-CSRF-Token": getCookie("token") as string,
+            "Set-Cookie": getCookie("token") as string,
+            Cookie: getCookie("token") as string,
+            Connection: "keep-alive",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "Cache-Control":
+              "private, maxage=86400, stale-while-revalidate=7200",
           },
         })
           .then((r) => r.json())
@@ -104,7 +104,7 @@ export default function Academia() {
               clearCookies();
               window.location.reload();
             } else {
-              localStorage.setItem('internalMarks', JSON.stringify(res));
+              localStorage.setItem("internalMarks", JSON.stringify(res));
               setMarks(res);
             }
           })
@@ -113,9 +113,9 @@ export default function Academia() {
   }, [userInfo]);
 
   useEffect(() => {
-    if (day && !day.dayOrder.includes('No'))
+    if (day && !day.dayOrder.includes("No"))
       setToday(table?.table[Number(day.dayOrder) - 1].subjects);
-    else if (day && day.dayOrder.includes('No')) {
+    else if (day && day.dayOrder.includes("No")) {
       setToday([]);
     }
   }, [table, day]);
@@ -123,7 +123,7 @@ export default function Academia() {
   return (
     <>
       <Loader />
-      <Header title={'Academia | AcademiaPro'} />
+      <Header title={"Academia | AcademiaPro"} />
 
       <main className="root">
         <Sidebar day={day} todayTable={todayTable} />
@@ -131,7 +131,7 @@ export default function Academia() {
         <div className="content">
           <section id="timetable">
             <h2 className="subtitle">
-              Timetable{' '}
+              Timetable{" "}
               {userInfo?.userInfo &&
               todayTable &&
               todayTable?.filter((a) => a != null).length > 0 ? (
@@ -141,7 +141,10 @@ export default function Academia() {
               ) : null}
             </h2>
             <div className="table-responsive">
-              <table className="table-bordered table text-center">
+              <table
+                className="table-bordered table text-center"
+                style={{ display: "flex" }}
+              >
                 <thead>
                   <TableHeader />
                 </thead>
@@ -159,7 +162,7 @@ export default function Academia() {
 
           <section className="marks" id="marks">
             <h2 className="subtitle">
-              Marks{' '}
+              Marks{" "}
               {userInfo?.userInfo ? (
                 <a href={`https://gradex.vercel.app`} className="download">
                   Calculate
