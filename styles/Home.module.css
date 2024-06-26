@@ -93,7 +93,12 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  padding: 16px 32px;
+  padding: 16px 64px;
+}
+
+.features ul {
+  list-style:disc;
+  padding-left: 12px;
 }
 
 .features h3 {
