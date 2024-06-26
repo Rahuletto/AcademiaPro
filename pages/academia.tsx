@@ -141,9 +141,7 @@ export default function Academia() {
               ) : null}
             </h2>
             <div className="table-responsive">
-              <table
-                className="table-bordered table text-center"
-              >
+              <table className="table-bordered md:table gap-1 text-center flex w-full">
                 <thead className="table-header-group">
                   <TableHeader />
                 </thead>
