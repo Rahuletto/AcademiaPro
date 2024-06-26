@@ -40,7 +40,7 @@ export default function Timetable() {
         <div className="w-full max-w-full">
           {data ? (
             <Image
-              className="h-auto w-full"
+              className="tt-page"
               alt="timetable"
               src={data}
               width={2400}
