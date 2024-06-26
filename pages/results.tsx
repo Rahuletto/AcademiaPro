@@ -182,7 +182,7 @@ export default function Results() {
                 <div className="mt-8 pr-8 text-right">
                   <h3
                     className={`mb-12 text-2xl ${
-                      cgpa > 5 ? "text-green-500" : "text-red-500"
+                      cgpa > 5 ? "text-green" : "text-red"
                     }`}
                   >
                     <span className="text-base text-accent opacity-40">
