@@ -278,14 +278,6 @@ hr {
   border-top: 3px solid var(--side-active) !important;
 }
 
-.eyeIcon {
-  text-align: right;
-  padding-right: 20px;
-  position: absolute;
-  bottom: 10px;
-  right: 0px;
-  color: var(--accent);
-}
 .tt-page {
   width: 100vw;
   height: auto;
