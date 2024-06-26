@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import styles from "@/styles/Login.module.css";
 import { clearCookies, getCookie, setCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import Footer from "@/components/Footer";
 
@@ -92,7 +91,7 @@ export default function Login() {
             </div>
 
             <form className={styles.inputs}>
-              <div className="relative flex flex-col gap-2">
+              <div className="relative flex flex-col gap-[2px]">
                 <LoginInput
                   onChange={(e) => {
                     setError(0);
