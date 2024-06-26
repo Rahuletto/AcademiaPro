@@ -21,7 +21,8 @@ const ResultsCard = ({ data }: Props) => {
           </div>
         </td>
         <td>
-          <p className="margin">
+          <p className={styles.margin}>
+            {" "}
             <span>{data.courseCode}</span>
           </p>
         </td>
@@ -30,11 +31,12 @@ const ResultsCard = ({ data }: Props) => {
           <div className="flex items-center gap-3 pl-1.5">
             <span className="text-sm opacity-40">Credit:</span>{" "}
             <span
-              className={`total ${
-                !data.credit || data.credit === "" || Number(data.credit) === 0
-                  ? "bg-red-500 opacity-50"
-                  : ""
-              }`}
+              className={styles.total}
+              style={
+                !data.credit || data.credit === "" || Number(data.credit) == 0
+                  ? { backgroundColor: "var(--red)", opacity: 0.5 }
+                  : {}
+              }
             >
               {data.credit || 0}
             </span>
@@ -42,9 +44,10 @@ const ResultsCard = ({ data }: Props) => {
         </td>
         <td>
           <h3
-            className={`text-2xl ${data.result === "PASS" ? "text-green" : "text-red"}`}
+            style={{ fontSize: 28 }}
+            className={data.result === "PASS" ? styles.green : styles.red}
           >
-            {data.grade} <span className="gradeMark">grade</span>
+            {data.grade} <span className={styles.gradeMark}>grade</span>
           </h3>
         </td>
       </tr>
