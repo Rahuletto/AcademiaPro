@@ -106,11 +106,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
 
             <div
               id="total-row"
-              className={styles.row}
-              style={{
-                borderTop: "1px solid var(--side-active)",
-                paddingTop: 12,
-              }}
+              className={`${styles.row} border-t-2 border-t-sideActive border-solid pt-2`}
             >
               <span
                 id="total"
@@ -148,8 +144,10 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                 <p>Expected Internal of {60 - parseFloat(overall.total)}:</p>
                 <input
                   type="number"
+                  className="px-2"
                   value={expectedInternal}
                   min={0}
+                  maxLength={3}
                   max={60 - parseFloat(overall.total)}
                   onChange={(e) => {
                     if (

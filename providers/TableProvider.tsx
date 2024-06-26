@@ -1,4 +1,4 @@
-import { TimeTableResponse } from '@/types/TimeTable';
+import { Table, TimeTableResponse } from '@/types/TimeTable';
 import { getCookie } from '@/utils/cookies';
 import { URL } from '@/utils/url';
 import {
@@ -42,7 +42,37 @@ export function TableProvider({ children }: { children: ReactNode }) {
         .then((res) => {
           if (!res.token_refresh) {
             localStorage.setItem('dailyTable', JSON.stringify(res));
-            setTable(res);
+            const table: TimeTableResponse = {
+              table: [
+                {
+                  day: 1,
+                  dayOrder: 'Day 1',
+                  subjects: ['OODP (Theory)', undefined, 'Maths (Theory)', undefined, undefined, 'Physics (Lab)', 'Chemistry (Lab)', 'Maths (Theory)', 'Maths (Theory)', undefined],
+                },
+                {
+                  day: 2,
+                  dayOrder: 'Day 2',
+                  subjects: ['OODP (Theory)', undefined, 'Maths (Theory)', undefined, undefined, 'Physics (Lab)', 'Chemistry (Lab)', 'Maths (Theory)', 'Maths (Theory)', undefined],
+                },
+                {
+                  day: 3,
+                  dayOrder: 'Day 3',
+                  subjects: ['OODP (Theory)', undefined, 'Maths (Theory)', undefined, undefined, 'Physics (Lab)', 'Chemistry (Lab)', 'Maths (Theory)', 'Maths (Theory)', undefined],
+                },
+                {
+                  day: 4,
+                  dayOrder: 'Day 4',
+                  subjects: ['OODP (Theory)', undefined, 'Maths (Theory)', undefined, undefined, 'Physics (Lab)', 'Chemistry (Lab)', 'Maths (Theory)', 'Maths (Theory)', undefined],
+                },
+                {
+                  day: 5,
+                  dayOrder: 'Day 5',
+                  subjects: ['OODP (Theory)', undefined, 'Maths (Theory)', undefined, undefined, 'Physics (Lab)', 'Chemistry (Lab)', 'Maths (Theory)', 'Maths (Theory)', undefined],
+                },
+              ],
+              expireAt: Date.now() + 12 * 3600 * 1000,
+            }
+            setTable(table);
           }
         });
   }, [userInfo]);

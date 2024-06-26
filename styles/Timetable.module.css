@@ -49,7 +49,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 768px) {
   .timeSlot {
     display: initial;
     font-size: 12px;
