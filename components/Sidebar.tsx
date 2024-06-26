@@ -1,12 +1,11 @@
 import Link from "next/link";
 import { TbMenu2 } from "react-icons/tb";
 
-import { BiBook, BiHelpCircle } from "react-icons/bi";
+import { BiHelpCircle } from "react-icons/bi";
 import {
   FaBookOpen,
   FaGraduationCap,
   FaLink,
-  FaSignature,
 } from "react-icons/fa6";
 import Skeleton from "react-loading-skeleton";
 import DayOrder from "./badges/DayOrder";
@@ -90,7 +89,7 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
               <h1>Academia</h1>
             </a>
 
-            <Link href="/docs">
+            <Link href="/docs.pdf">
               <BiHelpCircle title="How to use it like a pro?" />
             </Link>
           </div>
