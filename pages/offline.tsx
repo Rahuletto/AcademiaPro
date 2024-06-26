@@ -6,7 +6,7 @@ export default function Offline() {
       <Head>
         <title>Offline | AcademiaPro?</title>
       </Head>
-      <div className="flex h-[80vh] w-[80vw] flex-col items-center justify-center gap-2 rounded-[32px] bg-gray-900 text-gray-400">
+      <div className="container">
         <h1 className="text-[98px] text-[#f75b5b]">
           <svg
             stroke="currentColor"
