@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import { Sidebar } from "@/components/Sidebar";
 import { useDay } from "@/providers/DayProvider";
-import { useUser } from "@/providers/UserProvider";
 import { CalendarResponse } from "@/types/Calendar";
 import { clearCookies, getCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
@@ -15,7 +14,6 @@ import Footer from "@/components/Footer";
 export default function Academia() {
   const router = useRouter();
 
-  const userInfo = useUser();
   const day = useDay();
   const [page, setPage] = useState(0);
   const [calendar, setCalendar] = useState<CalendarResponse | null>(null);
@@ -69,8 +67,7 @@ export default function Academia() {
       <Header title={"Calendar | AcademiaPro"} />
       <main className="root">
         <Sidebar day={day} page="Calendar" />
-
-        <div className="flex-grow p-4">
+        <div className="content flex-grow p-4">
           {calendar?.calendar &&
           !calendar.calendar[0].month.includes("released") ? (
             <>
@@ -97,7 +94,7 @@ export default function Academia() {
               </CalendarGenerator>
             </>
           ) : (
-            <div className="m-3 flex h-[82vh] items-center justify-center rounded-[22px] bg-backgroundLight">
+            <div className="m-3 flex h-[89vh] items-center justify-center rounded-[22px] bg-backgroundLight">
               <h4 className="text-center text-lg opacity-80">
                 It{"'"}s not released yet. Please check back later.
               </h4>
