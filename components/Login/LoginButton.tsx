@@ -11,7 +11,11 @@ export default function LoginButton({
     <button
       name="login"
       type="submit"
-      className="bg-yellow-light cursor-not-allowed border border-yellow text-yellow opacity-70"
+      style={{
+        border: "1px solid var(--yellow)",
+        backgroundColor: "#ffca630e !important",
+        color: "var(--yellow) !important",
+      }}
       disabled
     >
       Logging in
