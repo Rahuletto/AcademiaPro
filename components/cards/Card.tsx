@@ -40,8 +40,8 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         className={`${styles.card} attCard`}
         title={`${code} (${category})`}
       >
-        <td className="max-h-18 max-w-52">
-          <div className="flex items-center gap-2 justify-between">
+        <td className="max-h-18 md:max-w-52">
+          <div className="flex items-center gap-2 justify-between max-w-52">
             <h4>{truncateString(title)}</h4>
 
             <div
@@ -78,7 +78,7 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         </td>
 
         <td>
-          <div className={`mx-auto py-0 ${styles.attendance}`}>
+          <div className={`md:mx-auto py-0 ${styles.attendance}`}>
             <span className={`${styles.present} ${styles.green}`}>
               {data.present}
             </span>
@@ -90,9 +90,9 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         </td>
         <td>
           <h3
-            className={`text-3xl text-right pr-6 font-semibold ${
+            className={`md:text-3xl text-2xl text-right md:pr-6 font-semibold ${
               Number(percent.split(".")[0]) === 100
-                ? "text-green text-4xl"
+                ? "text-green text-2xl md:text-4xl"
                 : Number(percent.split(".")[0]) < 75
                   ? "text-red"
                   : "text-accent"

@@ -39,7 +39,7 @@ export function TableHeader() {
         <th
           key={i}
           title={startingTimesSlot[i] + "-" + endingTimesSlot[i]}
-          className="head-time"
+          className="head-time md:h-auto md:table-cell h-full flex items-center justify-center"
         >
           {timeRange(time, startingTimesSlot[i] + "-" + endingTimesSlot[i]) ? (
             <span className={"current-time"}>{i + 1}</span>
@@ -53,7 +53,7 @@ export function TableHeader() {
   }, [time]);
 
   return (
-    <tr className="bg-light-gray">
+    <tr className="bg-light-gray md:table-row flex flex-col h-full md:h-auto">
       {...arr.length > 10 ? arr.splice(0, 10) : arr}
     </tr>
   );
