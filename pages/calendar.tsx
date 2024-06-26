@@ -67,7 +67,7 @@ export default function Academia() {
     <>
       <Loader />
       <Header title={"Calendar | AcademiaPro"} />
-      <main className="flex">
+      <main className="root">
         <Sidebar day={day} page="Calendar" />
 
         <div className="flex-grow p-4">
@@ -75,7 +75,7 @@ export default function Academia() {
           !calendar.calendar[0].month.includes("released") ? (
             <>
               <CalendarGenerator page={page} data={calendar.calendar[page]}>
-                <div className="mt-4 flex items-center justify-between">
+                <div className="paginate">
                   <button
                     onClick={() => setPage((e) => e - 1)}
                     disabled={page <= 0}

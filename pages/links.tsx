@@ -4,6 +4,7 @@ import Loader from "@/components/Loader";
 import { Sidebar } from "@/components/Sidebar";
 import { useDay } from "@/providers/DayProvider";
 import { useUser } from "@/providers/UserProvider";
+import styles from "@/styles/Links.module.css";
 import { LinkUrl } from "@/types/Links";
 import { getCookie } from "@/utils/cookies";
 import { priorityUrl, urls } from "@/utils/links";
@@ -58,107 +59,94 @@ export default function Urls() {
       <Loader />
       <Header title={"Directory | AcademiaPro"} />
 
-      <main className="flex">
+      <main className="root">
         <Sidebar day={day} page="Link" />
 
-        <div className="flex-grow p-4">
+        <div className="content">
           <input
             id="searchbox"
-            className="mb-4 w-full rounded border border-gray-300 p-2"
+            className={styles.search}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search"
           />
-          <div className="grid gap-4">
-            <div className="mb-4 flex justify-between">
+          <div className={styles.linkGrid}>
+            <div className={styles.urlBox} style={{ marginBottom: 18 }}>
               <h2>Websites</h2>
               <h2>URLs</h2>
             </div>
-            <div>
+            <div className={styles.priority}>
               {priorityUrl.map((k, i) => (
-                <div
-                  className="mb-4 flex items-center justify-between rounded border border-gray-300 p-4"
-                  title="Sites we made"
-                  key={i}
-                >
+                <div className={styles.urlBox} title="Sites we made" key={i}>
                   <span className="inline-flex items-center gap-4">
-                    {k.site}
+                    {k.site}{" "}
                   </span>
                   <Link
+                    style={{
+                      backgroundColor: "#3E80D7",
+                      color: "var(--background-dark)",
+                    }}
                     href={k.url}
-                    className="text-background-dark rounded bg-blue-500 p-2"
+                    className={styles.url}
                   >
                     {k.url}
                   </Link>
                   <Link
+                    style={{
+                      backgroundColor: "#3E80D7",
+                      color: "var(--background-dark)",
+                    }}
                     href={k.url}
-                    className="text-background-dark rounded bg-blue-500 p-2"
+                    className={styles.mobile}
                   >
                     Open
                   </Link>
                 </div>
               ))}
             </div>
-            {array.filter((url) => url.type == "official").length > 0 && (
-              <div className="mt-8">
-                <h3 className="mb-2 opacity-90">Official Sites</h3>
+            <span> </span>
+            {array.filter((url) => url.type == "official").length > 0 ? (
+              <div className={styles.usefulLinks}>
+                <h3>Official Sites</h3>
                 {array
                   .filter((link) => link.type == "official")
                   .map((k: LinkUrl, i) => (
-                    <div
-                      className="mb-2 flex items-center justify-between rounded border border-gray-300 p-2"
-                      key={i}
-                    >
+                    <div className={styles.urlBox} key={i}>
                       <span>{k.site}</span>
-                      <Link
-                        href={k.url}
-                        className="text-background-dark rounded bg-blue-500 p-2"
-                      >
+                      <Link href={k.url} className={styles.url}>
                         {k.url}
                       </Link>
-                      <Link
-                        href={k.url}
-                        className="text-background-dark rounded bg-blue-500 p-2"
-                      >
+                      <Link href={k.url} className={styles.mobile}>
                         Open
                       </Link>
                     </div>
                   ))}
               </div>
-            )}
-            {array.filter((url) => url.type == "unofficial").length > 0 && (
-              <div className="mt-8">
-                <h3 className="mb-2 opacity-90">Unofficial Sites</h3>
+            ) : null}
+            {array.filter((url) => url.type == "unofficial").length > 0 ? (
+              <div className={styles.usefulLinks}>
+                <h3>Unofficial Sites</h3>
                 {array
                   .filter((link) => link.type == "unofficial")
                   .map((k: LinkUrl, i) => (
-                    <div
-                      className="mb-2 flex items-center justify-between rounded border border-gray-300 p-2"
-                      key={i}
-                    >
+                    <div className={styles.urlBox} key={i}>
                       <span>{k.site}</span>
-                      <Link
-                        href={k.url}
-                        className="text-background-dark rounded bg-blue-500 p-2"
-                      >
+                      <Link href={k.url} className={styles.url}>
                         {k.url}
                       </Link>
-                      <Link
-                        href={k.url}
-                        className="text-background-dark rounded bg-blue-500 p-2"
-                      >
+                      <Link href={k.url} className={styles.mobile}>
                         Open
                       </Link>
                     </div>
                   ))}
               </div>
-            )}
+            ) : null}
 
             <div className="mt-16">
               <Footer />
             </div>
 
-            <div className="mb-16" />
+            <div className="mt-16" />
           </div>
         </div>
       </main>

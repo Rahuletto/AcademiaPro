@@ -10,7 +10,7 @@ const ResultsCard = ({ data }: Props) => {
   return (
     <>
       <tr
-        className={`card attCard`}
+        className={[styles.card, "attCard"].join(" ")}
         title={`Semester ${data.semester} - ${data.courseTitle}`}
       >
         <td className="h-20">
