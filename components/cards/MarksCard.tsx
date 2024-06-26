@@ -56,16 +56,15 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
     <>
       {arr[0] ? (
         <div
-          className={[
-            styles.markContainer,
-            expanded && category == "Theory" ? "markExpand" : "",
-          ].join(" ")}
+          className={`${styles.markContainer} ${
+            expanded && category == "Theory" ? "markExpand" : ""
+          }`}
         >
           <div
             title={`${code} (${category})`}
             id={category.toLowerCase()}
             onDoubleClick={expand}
-            className={[styles.card, "markCard"].join(" ")}
+            className={`${styles.card} markCard`}
           >
             <div className="flex w-full items-center justify-between gap-2">
               <h4 className={styles.title}>{name}</h4>
