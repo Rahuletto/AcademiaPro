@@ -20,7 +20,7 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
   return (
     <div className="font-inter flex h-screen w-screen scale-[3.8] transform items-center justify-center bg-gray-900">
       <div className="font-inter m-0 flex w-[610px] flex-col rounded-lg rounded-t-xl bg-gray-800 p-2">
-        <div className="flex h-5 font-semibold text-white">
+        <div className="flex h-5 font-semibold text-color">
           {body?.table[0].subjects.map((_e, i) => (
             <div
               key={`timeslot-${i}`}
