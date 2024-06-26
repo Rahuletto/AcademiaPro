@@ -37,25 +37,25 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
   return (
     <>
       <tr
-        className={[styles.card, "attCard"].join(" ")}
+        className={`${styles.card} attCard`}
         title={`${code} (${category})`}
       >
-        <td className="h-20">
-          <div className="flex w-full items-center justify-between gap-2">
+        <td className="max-h-18 max-w-52">
+          <div className="flex items-center gap-2 justify-between">
             <h4>{truncateString(title)}</h4>
 
             <div
               className={
                 category == "Theory"
                   ? styles.circle
-                  : [styles.circle, styles.greenCircle].join(" ")
+                  : `${styles.circle} ${styles.greenCircle}`
               }
             ></div>
           </div>
         </td>
         <td>
           <p
-            className={styles.margin}
+            className={`text-center ${styles.margin}`}
             title={
               margin <= countHoursPerDay(title)
                 ? "You are at the verge of going below 75%"
@@ -78,11 +78,11 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         </td>
 
         <td>
-          <div className={styles.attendance}>
-            <span className={[styles.present, styles.green].join(" ")}>
+          <div className={`mx-auto py-0 ${styles.attendance}`}>
+            <span className={`${styles.present} ${styles.green}`}>
               {data.present}
             </span>
-            <span className={[styles.absent, styles.red].join(" ")}>
+            <span className={`${styles.absent} ${styles.red}`}>
               {data.absent}
             </span>
             <span className={styles.total}>{data.total}</span>
@@ -90,9 +90,9 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         </td>
         <td>
           <h3
-            className={`text-2xl ${
+            className={`text-3xl text-right pr-6 font-semibold ${
               Number(percent.split(".")[0]) === 100
-                ? "text-green"
+                ? "text-green text-4xl"
                 : Number(percent.split(".")[0]) < 75
                   ? "text-red"
                   : "text-accent"
