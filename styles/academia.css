@@ -94,7 +94,7 @@ section {
   justify-content: space-between;
   width: -webkit-fill-available;
   border-radius: 12px;
-  padding: 10px 14px;
+  padding: 8px 14px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -273,6 +273,7 @@ input {
   margin-left: auto;
   margin-right: auto;
 }
+
 .credits {
   color: #adadafd9;
   font-size: 14px;
@@ -284,14 +285,14 @@ input {
 .credits a {
   background-color: var(--accent);
   color: var(--background-dark);
-  padding: 2px 6px;
+  padding: 2px 8px;
   border: 2px solid transparent;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  -ms-border-radius: 6px;
-  -o-border-radius: 6px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
   display: inline-block;
   transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);
   -webkit-transition: 0.2s cubic-bezier(0.65, 0.35, 0.17, 1);

@@ -1,8 +1,8 @@
 export default function Warn() {
   return (
     <div
-      style={{ backgroundColor: "rgb(23, 21, 15)" }}
-      className="absolute bottom-4 right-4 z-10 flex flex-col gap-2 rounded-3xl border-2 border-yellow px-5 py-3"
+      style={{ backgroundColor: "rgb(23, 21, 15)", zIndex: 2 }}
+      className="absolute bottom-4 right-4 flex flex-col gap-2 rounded-3xl border-2 border-yellow px-5 py-3"
     >
       <h3 className="text-xl text-yellow">Warning</h3>
       <p className="max-w-[350px] text-sm opacity-60">
