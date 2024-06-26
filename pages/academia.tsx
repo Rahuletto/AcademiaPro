@@ -78,7 +78,51 @@ export default function Academia() {
               window.location.reload();
             } else {
               localStorage.setItem("classAttend", JSON.stringify(res));
-              setAttendance(res);
+              const att: AttendanceResponse = {
+                expireAt: 200 * 100000,
+                attendance: [
+                  {
+                    courseCode: '21MAB101T',
+                    courseTitle: 'Introduction to Computer Science',
+                    category: 'Theory',
+                    facultyName: "Parvathi",
+                    slot: "C",
+                    hoursConducted: '50',
+                    hoursAbsent: '10',
+                    attendancePercentage: '100'
+                  },
+                  {
+                    courseCode: '21MAB101T',
+                    courseTitle: 'Introduction to Computer Science',
+                    category: 'Theory',
+                    facultyName: "Parvathi",
+                    slot: "C",
+                    hoursConducted: '50',
+                    hoursAbsent: '10',
+                    attendancePercentage: '27.62'
+                  },
+                  {
+                    courseCode: '21MAB101T',
+                    courseTitle: 'Introduction to Computer Science',
+                    category: 'Theory',
+                    facultyName: "Parvathi",
+                    slot: "C",
+                    hoursConducted: '50',
+                    hoursAbsent: '10',
+                    attendancePercentage: '95.52'
+                  },{
+                    courseCode: '21MAB101T',
+                    courseTitle: 'Introduction to Computer Science',
+                    category: 'Practical',
+                    facultyName: "Parvathi",
+                    slot: "C",
+                    hoursConducted: '50',
+                    hoursAbsent: '10',
+                    attendancePercentage: '100'
+                  }
+                ]
+              }
+              setAttendance(att);
             }
           })
           .catch(() => {});

@@ -28,7 +28,7 @@
 }
 
 .attendance {
-  max-width: 108px;
+  max-width: 118px;
   background-color: var(--background-darker);
   border-radius: 50px;
   display: -webkit-box;
@@ -38,8 +38,8 @@
   user-select: none;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
-  padding: 4px 4px 4px 12px;
+  gap: 14px;
+  padding: 2px 2px 2px 12px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
