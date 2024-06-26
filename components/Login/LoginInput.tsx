@@ -19,27 +19,7 @@ export default function LoginInput({
       <input
         value={uid}
         maxLength={20}
-        style={
-          error === 1
-            ? {
-                border: "1px solid var(--red)",
-                background: "#D133330e !important",
-                borderBottomLeftRadius: 4,
-                borderBottomRightRadius: 4,
-              }
-            : error === 2
-              ? {
-                  border: "1px solid var(--practical)",
-                  background: "#45d1330e !important",
-                  borderBottomLeftRadius: 4,
-                  borderBottomRightRadius: 4,
-                }
-              : {
-                  border: "1px solid transparent",
-                  borderBottomLeftRadius: 4,
-                  borderBottomRightRadius: 4,
-                }
-        }
+        className={`rounded-2xl rounded-bl-[4px] rounded-br-[4px] border-2 ${error === 1 ? "border-red" : error === 2 ? "border-practical" : "border-transparent"}`}
         onChange={onChange}
         placeholder="User ID"
       />
@@ -50,33 +30,16 @@ export default function LoginInput({
         <input
           type={visible ? "text" : "password"}
           value={uid}
-          style={
-            error === 1
-              ? {
-                  border: "1px solid var(--red)",
-                  background: "#D133330e !important",
-                  borderTopLeftRadius: 4,
-                  borderTopRightRadius: 4,
-                }
-              : error === 2
-                ? {
-                    border: "1px solid var(--practical)",
-                    background: "#45d1330e !important",
-                    borderTopLeftRadius: 4,
-                    borderTopRightRadius: 4,
-                  }
-                : {
-                    border: "1px solid transparent",
-                    borderTopLeftRadius: 4,
-                    borderTopRightRadius: 4,
-                  }
-          }
+          className={`rounded-2xl rounded-tl-[4px] rounded-tr-[4px] border-2 ${error === 1 ? "border-red" : error === 2 ? "border-practical" : "border-transparent"}`}
           onChange={onChange}
           placeholder="Passw*rd"
         />
-        <span className="eyeIcon" onClick={() => setVisible((e) => !e)}>
+        {uid && <span
+          className="absolute bottom-[14px] right-0 pr-4 text-right text-accent"
+          onClick={() => setVisible((e) => !e)}
+        >
           {visible ? <BsEyeSlashFill /> : <BsEyeFill />}
-        </span>
+        </span>}
       </>
     );
 }
