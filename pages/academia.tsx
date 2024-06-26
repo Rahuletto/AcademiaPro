@@ -143,9 +143,8 @@ export default function Academia() {
             <div className="table-responsive">
               <table
                 className="table-bordered table text-center"
-                style={{ display: "flex" }}
               >
-                <thead>
+                <thead className="table-header-group">
                   <TableHeader />
                 </thead>
                 {todayTable && userInfo && (
