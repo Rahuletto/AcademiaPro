@@ -151,7 +151,6 @@
 }
 .login input {
   background-color: rgba(48, 54, 61, 0.3);
-  border: none;
   color: var(--color);
   padding: 10px 16px !important;
   font-size: 16px;
