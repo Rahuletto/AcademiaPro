@@ -64,7 +64,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
             title={`${code} (${category})`}
             id={category.toLowerCase()}
             onDoubleClick={expand}
-            className={`${styles.card} markCard`}
+            className={`${styles.card} markCard min-h-[290px]`}
           >
             <div className="flex w-full items-center justify-between gap-2">
               <h4 className={styles.title}>{name}</h4>
