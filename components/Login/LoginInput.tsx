@@ -19,7 +19,7 @@ export default function LoginInput({
       <input
         value={uid}
         maxLength={20}
-        className={`rounded-2xl rounded-bl-[4px] rounded-br-[4px] border-2 ${error === 1 ? "border-red" : error === 2 ? "border-practical" : "border-transparent"}`}
+        className={`rounded-2xl rounded-bl-[4px] rounded-br-[4px] border-2 border-solid ${error == 1 ? "border-red" : error == 2 ? "border-practical" : "border-transparent"}`}
         onChange={onChange}
         placeholder="User ID"
       />
@@ -30,7 +30,7 @@ export default function LoginInput({
         <input
           type={visible ? "text" : "password"}
           value={uid}
-          className={`rounded-2xl rounded-tl-[4px] rounded-tr-[4px] border-2 ${error === 1 ? "border-red" : error === 2 ? "border-practical" : "border-transparent"}`}
+          className={`rounded-2xl rounded-tl-[4px] rounded-tr-[4px] border-2 border-solid ${error === 1 ? "border-red" : error === 2 ? "border-practical" : "border-transparent"}`}
           onChange={onChange}
           placeholder="Passw*rd"
         />
