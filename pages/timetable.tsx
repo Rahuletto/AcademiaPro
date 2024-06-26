@@ -33,7 +33,7 @@ export default function Timetable() {
     <>
       <Header title={"Timetable | AcademiaPro"} />
 
-      <main className="flex min-h-[89vh] flex-col items-center">
+      <main className="root flex min-h-[89vh] flex-col items-center">
         <button className="back-tt" onClick={() => router.back()}>
           <FaCaretLeft />
         </button>
