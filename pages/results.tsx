@@ -87,37 +87,38 @@ export default function Results() {
         setError(true);
       });
   }
-
   return (
     <>
       <Loader />
       <Header title={"Exam Results | AcademiaPro"} />
-      <main className="flex">
+      <main className="root">
         <Sidebar day={day} page="Results" />
 
-        <div className="h-[95.5vh] flex-grow overflow-auto p-8">
+        <div className="content h-[95.5vh] overflow-auto p-[2.2rem]">
           <div className="mb-12 flex flex-col gap-1">
             <h2>SRM 2024 Results</h2>
             <p>
-              I thought I disabled this. uhm? If you still accessed it,
-              that&apos;s cool!
+              I thought i disabled this. uhm? If you still accessed it, thats
+              cool!
             </p>
           </div>
           {!result ? (
-            <div className={`border ${error ? "border-red-500" : ""}`}>
-              <div className="pc flex flex-col">
-                <div className="flex flex-col">
+            <div
+              className={styles.results}
+              style={error ? { borderColor: "var(--red)" } : {}}
+            >
+              <div className={[styles.inputs, "pc"].join(" ")}>
+                <div>
                   <p>Registration Number</p>
+                  <p>Date of Birth</p>
+                </div>
+                <div>
                   <input
                     disabled
                     type="text"
                     placeholder="Registration Number"
                     value={reg}
-                    className="mb-2 rounded border p-2"
                   />
-                </div>
-                <div className="flex flex-col">
-                  <p>Date of Birth</p>
                   <input
                     title="Date of Birth"
                     min="1990-01-01"
@@ -127,24 +128,26 @@ export default function Results() {
                     placeholder="Date of Birth"
                     value={dob}
                     onChange={(e) => setDob(e.target.value)}
-                    className="rounded border p-2"
                   />
                 </div>
               </div>
-              <div className="mobile flex flex-col gap-4">
+              <div
+                className={`flex flex-col gap-[18px] ${styles.inputs} mobile`}
+              >
                 <div className="flex flex-col">
-                  <p className="p-1">Registration Number</p>
+                  <p style={{ padding: 4 }}>Registration Number</p>
                   <input
+                    style={{ borderRadius: 12 }}
                     type="text"
                     placeholder="Registration Number"
                     value={reg}
                     disabled
-                    className="mb-2 rounded border p-2"
                   />
                 </div>
                 <div className="flex flex-col">
                   <p className="p-1">Date of Birth</p>
                   <input
+                    className="rounded-[12px]"
                     title="Date of Birth"
                     min="1990-01-01"
                     max="2010-12-31"
@@ -153,39 +156,61 @@ export default function Results() {
                     placeholder="Date of Birth"
                     value={dob}
                     onChange={(e) => setDob(e.target.value)}
-                    className="rounded border p-2"
                   />
                 </div>
               </div>
-              <button
-                onClick={submit}
-                type="submit"
-                className="mt-4 rounded bg-blue-500 p-2 text-white"
-              >
+
+              <button onClick={submit} type="submit">
                 Check out
               </button>
             </div>
           ) : (
             <>
-              <div className="mb-8 grid grid-cols-2 gap-4">
-                <div>
+              <div className={styles.gridResult}>
+                <div className={styles.details}>
                   <h3>{result.name}</h3>
-                  <h4 className="text-lg text-accent">{reg}</h4>
+                  <h4 style={{ color: "var(--accent)", fontSize: 16 }}>
+                    {reg}
+                  </h4>
                 </div>
-                <div className="text-right">
-                  <h3 className="select-none opacity-0">lol</h3>
-                  <h4 className="text-lg text-accent">{result.examDate}</h4>
+                <div className={styles.dept}>
+                  <h3 style={{ opacity: 0, userSelect: "none" }}>lol</h3>
+                  <h4
+                    className="text-right text-[16px]"
+                    style={{
+                      color: "var(--accent)",
+                    }}
+                  >
+                    {result.examDate}
+                  </h4>
                 </div>
               </div>
               <ResultsTable data={result} />
               {cgpa && (
                 <div className="mt-8 pr-8 text-right">
                   <h3
-                    className={`mb-12 text-2xl ${
-                      cgpa > 5 ? "text-green" : "text-red"
-                    }`}
+                    style={
+                      cgpa > 5
+                        ? {
+                            color: "var(--green)",
+                            fontSize: "32px",
+                            marginBottom: "48px",
+                          }
+                        : {
+                            color: "var(--red)",
+                            fontSize: "32px",
+                            marginBottom: "48px",
+                          }
+                    }
                   >
-                    <span className="text-base text-accent opacity-40">
+                    <span
+                      className="text-[16px]"
+                      style={{
+                        color: "var(--accent)",
+                        opacity: "0.4",
+                      }}
+                    >
+                      
                       SGPA:
                     </span>{" "}
                     {cgpa}
@@ -194,6 +219,7 @@ export default function Results() {
               )}
             </>
           )}
+
           <Footer />
         </div>
       </main>
