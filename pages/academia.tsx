@@ -57,7 +57,7 @@ export default function Academia() {
 
   useEffect(() => {
     if (userInfo) {
-      if (!attendance || attendance.expireAt < Date.now())
+      if (!attendance)
         fetch(`${URL}/api/attendance`, {
           next: { revalidate: 2 * 3600 },
           cache: "default",
@@ -83,7 +83,7 @@ export default function Academia() {
           })
           .catch(() => {});
 
-      if (!marks || marks.expireAt < Date.now())
+      if (!marks)
         fetch(`${URL}/api/marks`, {
           cache: "default",
           next: { revalidate: 2 * 3600 },

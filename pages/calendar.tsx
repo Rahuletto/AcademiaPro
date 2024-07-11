@@ -23,30 +23,29 @@ export default function Academia() {
     if (!getCookie("token")) router.push("/login");
 
     const c = localStorage.getItem("univPlanner");
-    if (c && JSON.parse(c).expireAt > Date.now()) setCalendar(JSON.parse(c));
-    else
-      fetch(`${URL}/api/calendar`, {
-        next: { revalidate: 2 * 3600 },
-        method: "GET",
-        cache: "force-cache",
-        headers: {
-          "X-CSRF-Token": getCookie("token") as string,
-          "Set-Cookie": getCookie("token") as string,
-          Cookie: getCookie("token") as string,
-          Connection: "keep-alive",
-          "Accept-Encoding": "gzip, deflate, br, zstd",
-        },
+
+    fetch(`${URL}/api/calendar`, {
+      next: { revalidate: 2 * 3600 },
+      method: "GET",
+      cache: "force-cache",
+      headers: {
+        "X-CSRF-Token": getCookie("token") as string,
+        "Set-Cookie": getCookie("token") as string,
+        Cookie: getCookie("token") as string,
+        Connection: "keep-alive",
+        "Accept-Encoding": "gzip, deflate, br, zstd",
+      },
+    })
+      .then((r) => r.json())
+      .then((res) => {
+        if (res.error) {
+          return <ErrorStack error={res.error} />;
+        } else {
+          localStorage.setItem("univPlanner", JSON.stringify(res));
+          setCalendar(res);
+        }
       })
-        .then((r) => r.json())
-        .then((res) => {
-          if (res.error) {
-            return <ErrorStack error={res.error} />;
-          } else {
-            localStorage.setItem("univPlanner", JSON.stringify(res));
-            setCalendar(res);
-          }
-        })
-        .catch(() => {});
+      .catch(() => {});
 
     setTimeout(() => {
       const todayScroll = document.getElementById("today");
