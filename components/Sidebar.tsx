@@ -2,11 +2,7 @@ import Link from "next/link";
 import { TbMenu2 } from "react-icons/tb";
 
 import { BiHelpCircle } from "react-icons/bi";
-import {
-  FaBookOpen,
-  FaGraduationCap,
-  FaLink,
-} from "react-icons/fa6";
+import { FaBookOpen, FaGraduationCap, FaLink } from "react-icons/fa6";
 import Skeleton from "react-loading-skeleton";
 import DayOrder from "./badges/DayOrder";
 import Hour from "./badges/Hour";
@@ -81,7 +77,7 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
     <>
       <div className="nav-hider"></div>
       <ProfileDialog />
-      <Warn />
+      {/* <Warn /> */}
       <div className="nav">
         <div className="navbox">
           <div className="nav-title">

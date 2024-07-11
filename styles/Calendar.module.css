@@ -8,8 +8,8 @@
 .calendarGrid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.2fr 0px 0.3fr 0px 1fr 0px 0.2fr;
-  grid-template-columns: 0.2fr 0.3fr 1fr 0.2fr;
+  -ms-grid-columns: 0.1fr 0px 0.2fr 0px 1fr 0px 0.1fr;
+  grid-template-columns: 0.1fr 0.2fr 1fr 0.1fr;
   grid-column-gap: 0px;
   padding: 2px;
   background-color: var(--background);
@@ -23,32 +23,28 @@
 }
 
 .calendarHead {
-    height: 100px;
+  height: 130px;
   margin-top: 32px;
   display: grid;
-  -ms-grid-columns: 0.2fr 0px 0.3fr 0px 1fr 0px 0.2fr;
-  grid-template-columns: 0.2fr 0.3fr 1fr 0.2fr;
+  -ms-grid-columns: 0.1fr 0px 0.2fr 0px 1fr 0px 0.1fr;
+  grid-template-columns: 0.1fr 0.2fr 1fr 0.1fr;
   grid-column-gap: 0px;
   padding: 2px;
-  background-color: var(--background);
-  border-radius: 26px;
-  -webkit-border-radius: 26px;
-  -moz-border-radius: 26px;
-  -ms-border-radius: 26px;
-  -o-border-radius: 26px;
   overflow: auto;
 }
 
 .calendarHead .calendarElem {
-    border-bottom: none !important;
+  border-bottom: none !important;
 }
 
-.calendarGrid::-webkit-scrollbar, .calendarHead::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
+.calendarGrid::-webkit-scrollbar,
+.calendarHead::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
 .calendarElem {
-    min-width: 150px;
+  min-width: -webkit-fill-available;
+  min-width: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
