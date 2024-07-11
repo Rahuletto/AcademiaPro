@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
 import Footer from "@/components/Footer";
+import ErrorStack from "./error";
 
 export default function Academia() {
   const router = useRouter();
@@ -38,9 +39,8 @@ export default function Academia() {
       })
         .then((r) => r.json())
         .then((res) => {
-          if (res.token_refresh) {
-            clearCookies();
-            window.location.reload();
+          if (res.error) {
+            return <ErrorStack error={res.error} />;
           } else {
             localStorage.setItem("univPlanner", JSON.stringify(res));
             setCalendar(res);

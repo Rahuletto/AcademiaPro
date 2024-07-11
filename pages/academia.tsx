@@ -31,6 +31,7 @@ import { useUser } from "@/providers/UserProvider";
 import { URL } from "@/utils/url";
 import { useTimeTable } from "@/providers/TableProvider";
 import Footer from "@/components/Footer";
+import ErrorStack from "./error";
 
 export default function Academia() {
   const router = useRouter();
@@ -73,9 +74,8 @@ export default function Academia() {
         })
           .then((r) => r.json())
           .then((res) => {
-            if (res.token_refresh) {
-              clearCookies();
-              window.location.reload();
+            if (res.error) {
+              return <ErrorStack error={res.error} />;
             } else {
               localStorage.setItem("classAttend", JSON.stringify(res));
               setAttendance(res);
@@ -141,7 +141,7 @@ export default function Academia() {
               ) : null}
             </h2>
             <div className="table-responsive">
-              <table className="table-bordered md:table gap-1 text-center flex w-full">
+              <table className="table-bordered flex w-full gap-1 text-center md:table">
                 <thead className="table-header-group">
                   <TableHeader />
                 </thead>
