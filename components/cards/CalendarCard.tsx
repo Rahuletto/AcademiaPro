@@ -8,10 +8,12 @@ export default function CalendarCard({
   element: Day;
   month: number;
 }) {
+  console.log("CARD", month, element.date);
+  console.log(new Date().getMonth() % 5, new Date().getDate());
   const classes = [
     styles.calendarElem,
     element.dayOrder == "-" ? styles.holiday : "",
-    new Date().getMonth() == month &&
+    new Date().getMonth() % 5 == month &&
     new Date().getDate() == Number(element.date)
       ? `${styles.today} today`
       : "",
@@ -20,7 +22,7 @@ export default function CalendarCard({
     <>
       <span
         id={
-          new Date().getMonth() == month &&
+          new Date().getMonth() % 5 == month &&
           new Date().getDate() == Number(element.date)
             ? "today"
             : ""
