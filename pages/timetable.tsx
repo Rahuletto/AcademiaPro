@@ -16,28 +16,30 @@ export default function Timetable() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    fetch(`/api/timetable/${userInfo?.userInfo?.reg}`, {
-      method: "POST",
-      body: JSON.stringify({
-        table: table,
-      }),
-    })
-      .then((d) => d.blob())
-      .then((res: Blob | MediaSource) => {
-        const imageUrl = URL.createObjectURL(res);
-        setData(imageUrl);
-      });
-  }, []);
+    if (userInfo?.userInfo) {
+      fetch(`/api/timetable/${userInfo?.userInfo?.reg}`, {
+        method: "POST",
+        body: JSON.stringify({
+          table: table,
+        }),
+      })
+        .then((d) => d.blob())
+        .then((res: Blob | MediaSource) => {
+          const imageUrl = URL.createObjectURL(res);
+          setData(imageUrl);
+        });
+    }
+  }, [userInfo, table]);
 
   return (
     <>
       <Header title={"Timetable | AcademiaPro"} />
 
-      <main className="root flex min-h-[89vh] flex-col items-center">
-        <button className="back-tt" onClick={() => router.back()}>
+      <main className="flex h-screen flex-col items-center justify-center">
+        <button type="button" className="back-tt" onClick={() => router.back()}>
           <FaCaretLeft />
         </button>
-        <div className="w-full max-w-full">
+        <div className="flex h-full w-full items-center justify-center">
           {data ? (
             <Image
               className="tt-page"
