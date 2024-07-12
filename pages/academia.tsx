@@ -1,3 +1,4 @@
+/** eslint-disable react-hooks/exhaustive-deps */
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -22,15 +23,15 @@ import type { MarksResponse } from "@/types/Marks";
 
 import { clearCookies, getCookie } from "@/utils/cookies";
 
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import { Sidebar } from "@/components/Sidebar";
 import { TableHeader } from "@/components/TableHeader";
 import { useDay } from "@/providers/DayProvider";
+import { useTimeTable } from "@/providers/TableProvider";
 import { useUser } from "@/providers/UserProvider";
 import { URL } from "@/utils/url";
-import { useTimeTable } from "@/providers/TableProvider";
-import Footer from "@/components/Footer";
 import ErrorStack from "./error";
 
 export default function Academia() {
@@ -46,14 +47,8 @@ export default function Academia() {
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
   useEffect(() => {
-    const m = localStorage.getItem("internalMarks");
-    const a = localStorage.getItem("classAttend");
-
-    if (m) setMarks(JSON.parse(m));
-    if (a) setAttendance(JSON.parse(a));
-
     if (!getCookie("token")) router.push("/login");
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     if (userInfo) {
@@ -76,10 +71,8 @@ export default function Academia() {
           .then((res) => {
             if (res.error) {
               return <ErrorStack error={res.error} />;
-            } else {
-              localStorage.setItem("classAttend", JSON.stringify(res));
-              setAttendance(res);
             }
+            setAttendance(res);
           })
           .catch(() => {});
 
@@ -100,17 +93,16 @@ export default function Academia() {
         })
           .then((r) => r.json())
           .then((res) => {
-            if (res.token_refresh) {
-              clearCookies();
-              window.location.reload();
-            } else {
-              localStorage.setItem("internalMarks", JSON.stringify(res));
-              setMarks(res);
+            if (res.error) {
+              return <ErrorStack error={res.error} />;
             }
+
+            setMarks(res);
           })
           .catch(() => {});
     }
-  }, [userInfo]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [attendance, marks, userInfo]);
 
   useEffect(() => {
     if (day && !day.dayOrder.includes("No"))

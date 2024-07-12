@@ -1,15 +1,16 @@
-import CalendarGenerator from "@/generator/CalendarGenerator";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import { Sidebar } from "@/components/Sidebar";
+/** eslint-disable react-hooks/exhaustive-deps */
+import CalendarGenerator from "@/generator/CalendarGenerator";
 import { useDay } from "@/providers/DayProvider";
-import { CalendarResponse } from "@/types/Calendar";
+import type { CalendarResponse } from "@/types/Calendar";
 import { clearCookies, getCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
-import Footer from "@/components/Footer";
 import ErrorStack from "./error";
 
 export default function Academia() {
@@ -22,28 +23,23 @@ export default function Academia() {
   useEffect(() => {
     if (!getCookie("token")) router.push("/login");
 
-    const c = localStorage.getItem("univPlanner");
-
     fetch(`${URL}/api/calendar`, {
-      next: { revalidate: 2 * 3600 },
       method: "GET",
-      cache: "force-cache",
       headers: {
         "X-CSRF-Token": getCookie("token") as string,
         "Set-Cookie": getCookie("token") as string,
         Cookie: getCookie("token") as string,
         Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br, zstd",
+        "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
       },
     })
       .then((r) => r.json())
       .then((res) => {
         if (res.error) {
           return <ErrorStack error={res.error} />;
-        } else {
-          localStorage.setItem("univPlanner", JSON.stringify(res));
-          setCalendar(res);
         }
+        setCalendar(res);
       })
       .catch(() => {});
 
@@ -51,7 +47,8 @@ export default function Academia() {
       const todayScroll = document.getElementById("today");
       todayScroll?.scrollIntoView();
     }, 2000);
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [router]);
 
   useEffect(() => {
     const month = new Date().getMonth() % 6;

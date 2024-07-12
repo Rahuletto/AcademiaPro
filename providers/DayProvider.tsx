@@ -1,11 +1,11 @@
 import ErrorStack from "@/pages/error";
-import { DayOrderResponse } from "@/types/DayOrder";
+import type { DayOrderResponse } from "@/types/DayOrder";
 import { clearCookies, getCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
 
 import {
+  type ReactNode,
   createContext,
-  ReactNode,
   useContext,
   useEffect,
   useState,
@@ -22,9 +22,7 @@ export function DayProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const cookie = getCookie("token");
-    const u = sessionStorage.getItem("dayOrder");
-    if (u && JSON.parse(u).expireAt > Date.now()) setDay(JSON.parse(u));
-    else if (cookie)
+    if (cookie)
       fetch(`${URL}/api/dayorder`, {
         cache: "default",
         method: "GET",
