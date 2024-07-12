@@ -46,11 +46,11 @@ export default function Academia() {
   const [marks, setMarks] = useState<MarksResponse | null>(null);
 
   useEffect(() => {
-    const m = localStorage.getItem("internalMarks");
-    const a = localStorage.getItem("classAttend");
+    // const m = localStorage.getItem("internalMarks");
+    // const a = localStorage.getItem("classAttend");
 
-    if (m) setMarks(JSON.parse(m));
-    if (a) setAttendance(JSON.parse(a));
+    // if (m) setMarks(JSON.parse(m));
+    // if (a) setAttendance(JSON.parse(a));
 
     if (!getCookie("token")) router.push("/login");
   }, []);
@@ -58,7 +58,7 @@ export default function Academia() {
   useEffect(() => {
     if (userInfo) {
       if (!attendance)
-        fetch(`${URL}/api/attendance`, {
+        fetch(`https://proscrape.vercel.app/api/mock/attendance`, {
           next: { revalidate: 2 * 3600 },
           cache: "default",
           method: "GET",

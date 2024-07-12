@@ -1,10 +1,8 @@
-import styles from "@/styles/CourseCard.module.css";
+import styles from "@/styles/Card.module.css";
 import { Course } from "@/types/Course";
 import { useEffect, useState } from "react";
 
-const grade_points: {
-  [key: string]: number;
-} = {
+const grade_points: { [key: string]: number } = {
   O: 91,
   "A+": 81,
   A: 71,
@@ -15,41 +13,44 @@ const grade_points: {
 
 const CourseCard = ({ course }: { course: Course }) => {
   return (
-    <>
-      <div className={styles.card}>
-        <div className={styles.courseTitle}>
-          <div className={styles.courseName}>
-            <h3>{course.courseTitle}</h3>
-            <p>
-              Credit:{" "}
-              <span
-                className={
-                  course.category == "Theory"
-                    ? styles.theoryColor
-                    : styles.labColor
-                }
-              >
-                {course.credit}
-              </span>
-            </p>
-          </div>
-
-          <div className={styles.courseCode}>
-            <h3>{course.courseCode}</h3>
-            <h4
-              className={
-                course.category == "Theory" ? styles.theory : styles.lab
-              }
-            >
-              {course.roomNo}
-            </h4>
-          </div>
+    <tr className={`${styles.card} attCard`}>
+      <td className="max-h-18">
+        <div className="flex items-center justify-between gap-2">
+          <h4>{course.courseTitle}</h4>
+          <div
+            className={
+              course.category === "Theory"
+                ? styles.circle
+                : `${styles.circle} ${styles.greenCircle}`
+            }
+          ></div>
         </div>
-        <div className={styles.facultyName}>
-          <h4>{course.facultyName}</h4>
+      </td>
+      <td>
+        <p className={`text-center ${styles.margin}`}>
+          Credit:{" "}
+          <span
+            className={
+              course.category === "Theory"
+                ? styles.theoryColor
+                : styles.labColor
+            }
+          >
+            {course.credit}
+          </span>
+        </p>
+      </td>
+      <td>
+        <div className={`py-0 md:mx-auto ${styles.attendance}`}>
+          <span className={styles.total}>{course.courseCode}</span>
         </div>
-      </div>
-    </>
+      </td>
+      <td>
+        <h4 className="font-regular text-right text-2xl md:pr-6 md:text-3xl">
+          {course.facultyName}
+        </h4>
+      </td>
+    </tr>
   );
 };
 

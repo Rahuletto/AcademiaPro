@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import Footer from "@/components/Footer";
 import { useCourses } from "@/providers/CourseProvider";
 import CourseCard from "@/components/cards/CourseCard";
+import styles from "@/styles/CourseList.module.css";
 
 export default function Academia() {
   const router = useRouter();
@@ -18,20 +19,17 @@ export default function Academia() {
       <Header title={"Courses | AcademiaPro"} />
       <main className="root">
         <Sidebar day={day} page="Course" />
-
-        <div className="flex-grow p-4">
+        <div className="content flex-grow p-4">
           <h2>Course List</h2>
-          <div className="courseGrid gap-2 bg-transparent">
-            {" "}
-            {courses &&
-              courses[0] &&
-              courses.map((course) => (
-                <>
-                  <CourseCard course={course} />
-                </>
-              ))}
-          </div>
-
+          <table className=" w-full">
+            <tbody className={styles.courseTable}>
+              {courses &&
+                courses[0] &&
+                courses.map((course, index) => (
+                  <CourseCard key={index} course={course} />
+                ))}
+            </tbody>
+          </table>
           <Footer />
         </div>
       </main>

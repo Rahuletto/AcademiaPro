@@ -1,0 +1,36 @@
+.courseTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+.attCard {
+  background: #1f1f1f;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: yellow;
+}
+
+.greenCircle {
+  background: green;
+}
+
+.margin {
+  font-size: 14px;
+}
+
+.attendance {
+  display: flex;
+  justify-content: space-around;
+}
+
+.total {
+  color: white;
+}

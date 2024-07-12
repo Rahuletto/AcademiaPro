@@ -71,7 +71,7 @@
 .subjectCode {
   background: #d4d4d4;
   padding: 0px 10px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 700;
   color: #0a0d12;
   border-radius: 50px;
@@ -246,5 +246,71 @@
     -moz-border-radius: 0 0 0 24px !important;
     -ms-border-radius: 0 0 0 24px !important;
     -o-border-radius: 0 0 0 24px !important;
+  }
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background: #2b2b2b;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: yellow;
+  }
+
+  .greenCircle {
+    background: green;
+  }
+
+  .margin {
+    font-size: 14px;
+  }
+
+  .attendance {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .present {
+    color: green;
+  }
+
+  .absent {
+    color: red;
+  }
+
+  .total {
+    color: white;
+  }
+
+  .courseTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .courseName {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .theoryColor {
+    color: yellow;
+  }
+
+  .labColor {
+    color: green;
+  }
+
+  .courseCode {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
