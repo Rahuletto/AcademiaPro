@@ -51,7 +51,7 @@ export default function Academia() {
   }, [router]);
 
   useEffect(() => {
-    const month = new Date().getMonth() % 6;
+    const month = new Date().getMonth() % 5;
     setPage(
       calendar?.calendar && calendar?.calendar?.length < month ? 0 : month,
     );
