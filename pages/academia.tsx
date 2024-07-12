@@ -53,7 +53,7 @@ export default function Academia() {
   useEffect(() => {
     if (userInfo) {
       if (!attendance)
-        fetch(`https://proscrape.vercel.app/api/mock/attendance`, {
+        fetch(`${URL}/api/attendance`, {
           next: { revalidate: 2 * 3600 },
           cache: "default",
           method: "GET",
