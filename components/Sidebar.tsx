@@ -143,7 +143,7 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
             <Link
               title="🏗️ Coming soon. 🚧"
               className={`h-button disabled${page == "Course" ? "active" : ""}`}
-              href="#"
+              href="/courses"
             >
               Course list
               <FaGraduationCap className="text-lg" />
