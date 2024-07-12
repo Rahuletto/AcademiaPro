@@ -32,10 +32,18 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
                 elem ? (
                   <div tw="flex w-[10%] border-0" key={`table-${i}-${j}`}>
                     <td
-                      tw="text-[#0a0d12] h-[40px] text-left p-[4px] w-full"
+                      tw="text-[#0a0d12] h-[40px] text-left p-[4px] w-full flex flex-col relative"
                       style={constructStyles(i, j, elem)}
                     >
                       {truncateString(convertUnicode(elem).split("(")[0])}
+                      {convertUnicode(elem).includes("[Online]") && (
+                        <span
+                          tw="absolute bottom-0.5 right-0.5 opacity-90 pt-[1px] px-0.5 flex items-center justify-center rounded-full bg-[rgba(0,0,0,0.1)]"
+                          style={{ fontSize: 5 }}
+                        >
+                          Online
+                        </span>
+                      )}{" "}
                     </td>
                   </div>
                 ) : (
