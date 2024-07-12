@@ -13,7 +13,8 @@
   color: var(--background-darker);
 }
 
-.card {
+.card,
+.courseCard {
   width: -webkit-fill-available;
   background: transparent;
   border: 0px solid transparent;
@@ -49,9 +50,11 @@
   font-size: initial;
 }
 
-.card td {
+.card td,
+.courseCard td {
   padding: 12px 16px;
 }
+
 .circle {
   border-radius: 50px;
   background-color: var(--theory);
@@ -64,10 +67,12 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
+
 .greenCircle {
   background: transparent;
   border: 2px solid var(--practical);
 }
+
 .subjectCode {
   background: #d4d4d4;
   padding: 0px 10px;
@@ -89,9 +94,9 @@
 
 .red {
   color: var(--red);
-
   font-weight: 700;
 }
+
 .yellow {
   color: var(--yellow);
   font-weight: 700;
@@ -104,6 +109,7 @@
   text-align: right;
   font-weight: 700;
 }
+
 .blue {
   -webkit-user-select: initial;
   -moz-user-select: initial;
@@ -113,11 +119,13 @@
   font-weight: 700;
   color: #66a3ff;
 }
+
 .green {
   color: var(--green);
 }
 
-.card td:first-child {
+.card td:first-child,
+.courseCard td:first-child {
   border-radius: 16px 0 0 16px;
   -webkit-border-radius: 16px 0 0 16px;
   -moz-border-radius: 16px 0 0 16px;
@@ -131,7 +139,8 @@
   display: inline-block;
 }
 
-.card td:last-child {
+.card td:last-child,
+.courseCard td:last-child {
   border-radius: 0 16px 16px 0;
   -webkit-border-radius: 0 16px 16px 0;
   -moz-border-radius: 0 16px 16px 0;
@@ -143,13 +152,31 @@
   background: var(--practical) !important;
 }
 
-.card h4 {
+.card h4,
+.courseCard h4 {
   font-size: 16px;
   width: 300px;
 }
 
-.card:nth-child(2n + 1) td {
+.courseCard h3 {
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.card:nth-child(2n + 1) td,
+.courseCard:nth-child(2n + 1) td {
   background: var(--background);
+}
+
+.totalCreds {
+  margin-top: 32px;
+  border-top: 3px solid #66a3ff;
+  border-radius: 0px !important;
+}
+
+.totalCreds,
+.totalCreds td {
+  background-color: transparent !important;
 }
 
 @media only screen and (max-width: 766px) {
@@ -157,10 +184,13 @@
     display: none !important;
   }
 
-  .card h4 {
+  .card h4,
+  .courseCard h4 {
     width: auto;
   }
-  .card {
+
+  .card,
+  .courseCard {
     display: -ms-grid;
     display: grid;
     -webkit-box-orient: vertical;
@@ -174,21 +204,17 @@
     max-height: 135px;
     height: inherit;
   }
-  .card > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
+
+  .courseCard {
+    -ms-grid-columns: 2.5fr 0.5fr;
+    grid-template-columns: 2.5fr 0.5fr;
+    -ms-grid-rows: 1fr 0.5fr !important;
+    grid-template-rows: 1fr 0.5fr !important;
+    max-height: fit-content !important;
   }
-  .card > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .card > *:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .card > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
+
+  .courseCard td {
+    height: fit-content;
   }
 
   .card td {
@@ -204,7 +230,8 @@
     align-items: center;
   }
 
-  .card td:nth-of-type(2n) {
+  .card td:nth-of-type(2n),
+  .courseCard td:nth-of-type(2n) {
     -webkit-box-pack: end !important;
     -ms-flex-pack: end !important;
     justify-content: flex-end !important;
@@ -247,6 +274,34 @@
     -ms-border-radius: 0 0 0 24px !important;
     -o-border-radius: 0 0 0 24px !important;
   }
+
+  .courseCard td {
+    background-color: transparent !important;
+  }
+
+  .courseCard:nth-of-type(2n + 1) {
+    background: var(--background);
+    padding: 3px;
+    border-radius: 24px;
+  }
+
+  .courseCard td:nth-of-type(4) {
+    grid-area: 2/1;
+    display: flex;
+    align-items: end;
+    justify-content: start !important;
+  }
+
+  .courseCard td:nth-of-type(3) {
+    display: flex;
+    align-items: end;
+    justify-content: end !important;
+  }
+
+  .courseCard td:nth-of-type(4) h3 {
+    text-align: left !important;
+  }
+
   .card {
     display: flex;
     align-items: center;

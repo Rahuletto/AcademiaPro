@@ -1,13 +1,17 @@
 import styles from "@/styles/Card.module.css";
-import { Course } from "@/types/Course";
+import type { Course } from "@/types/Course";
 
 const CourseCard = ({ course }: { course: Course }) => {
   return (
-    <tr className={`${styles.card} attCard`}>
+    <tr
+      className={`${styles.courseCard} attCard relative my-8 md:my-0 ${course.courseTitle === "Total" ? styles.totalCreds : ""}`}
+    >
       <td className="max-h-18 md:max-w-64">
-        <div className="flex items-center justify-between gap-2">
+        <div
+          className={`flex ${course.roomNo ? "flex-col items-start justify-start gap-3 md:flex-row md:items-center md:justify-between md:gap-2" : "flex-row items-center justify-between gap-2"}`}
+        >
           <h4>{course.courseTitle}</h4>
-          {course.courseTitle !== "Total" && (
+          {course.courseTitle !== "Total" && !course.roomNo && (
             <div
               className={
                 course.courseType === "Theory"
@@ -16,37 +20,43 @@ const CourseCard = ({ course }: { course: Course }) => {
               }
             ></div>
           )}
+          {course.courseTitle !== "Total" && course.roomNo && (
+            <span
+              className={`rounded-full px-3 py-1 pt-[6px] text-xs font-semibold capitalize ${course.courseType === "Theory" ? "bg-theoryLight text-theory" : "bg-practicalLight text-practical"} ${styles.roomBadge}`}
+            >
+              {course.roomNo}
+            </span>
+          )}
         </div>
       </td>
       <td>
-        <p className={`text-center ${styles.margin}`}>
+        <p className={`text-right md:text-center ${styles.margin}`}>
           Credit:{" "}
-          <span
-            className={
-              course.courseType === "Theory"
-                ? styles.theoryColor
-                : styles.labColor
-            }
-          >
+          <span className={`${Number(course.credit) === 0 ? "" : styles.blue}`}>
             {course.credit}
           </span>
         </p>
       </td>
       <td>
-      {course.courseTitle !== "Total" && (
-        <div className={`py-0 md:mx-auto ${styles.attendance}`}>
-          <span className={styles.total}>{course.courseCode}</span>
-        </div>
-      )}
-        
+        {course.courseTitle !== "Total" && (
+          <div className="m-0 px-0 py-1">
+            <span
+              style={{ color: "black" }}
+              className="rounded-full bg-[#d4d4d4] px-2 py-0.5 text-sm text-black"
+            >
+              {course.courseCode}
+            </span>
+          </div>
+        )}
       </td>
-      <td>
-        <h4 className="font-regular text-right text-2xl md:pr-6 md:text-3xl">
-          {course.facultyName}
-        </h4>
-      </td>
-      <td className="capitalize">
-        <span className={styles.roomBadge}>{course.roomNo}</span>
+      <td className="md:max-w-64">
+        <h3
+          className={`font-regular text-right text-2xl md:text-3xl ${course.facultyName.includes("(null)") ? "text-red" : ""}`}
+        >
+          {course.facultyName.includes("(null)")
+            ? "Not available"
+            : course.facultyName.split(" (")[0]}
+        </h3>
       </td>
     </tr>
   );

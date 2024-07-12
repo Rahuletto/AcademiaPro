@@ -1,19 +1,19 @@
 import Link from "next/link";
 import { TbMenu2 } from "react-icons/tb";
 
+import type { DayOrderResponse } from "@/types/DayOrder";
+import { useEffect, useRef } from "react";
 import { BiHelpCircle } from "react-icons/bi";
 import { FaBookOpen, FaGraduationCap, FaLink } from "react-icons/fa6";
 import Skeleton from "react-loading-skeleton";
 import DayOrder from "./badges/DayOrder";
 import Hour from "./badges/Hour";
 import Profile from "./badges/Profile";
-import { DayOrderResponse } from "@/types/DayOrder";
-import { useEffect, useRef } from "react";
 
+import { useUser } from "@/providers/UserProvider";
 import { Hyperping } from "@/utils/hyperping";
 import { BsCalendar2WeekFill } from "react-icons/bs";
 import ProfileDialog from "./ProfileDialog";
-import { useUser } from "@/providers/UserProvider";
 import Warn from "./badges/Warn";
 
 interface SidebarProps {
@@ -132,17 +132,8 @@ export function Sidebar({ todayTable, day, page }: SidebarProps) {
               <BsCalendar2WeekFill className="text-xl" />
             </Link>
 
-            {/* <Link
-              className={'h-button' + (page == 'Course' ? ' active' : '')}
-              href="/courses"
-            >
-              Course list
-            <FaGraduationCap className="text-lg" />
-            </Link> */}
-
             <Link
-              title="🏗️ Coming soon. 🚧"
-              className={`h-button disabled${page == "Course" ? "active" : ""}`}
+              className={"h-button" + (page == "Course" ? " active" : "")}
               href="/courses"
             >
               Course list

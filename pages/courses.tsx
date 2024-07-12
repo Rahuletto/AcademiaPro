@@ -1,15 +1,14 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import { Sidebar } from "@/components/Sidebar";
-import { useDay } from "@/providers/DayProvider";
-import { useRouter } from "next/router";
-import Footer from "@/components/Footer";
-import { useCourses } from "@/providers/CourseProvider";
 import CourseCard from "@/components/cards/CourseCard";
+import { useCourses } from "@/providers/CourseProvider";
+import { useDay } from "@/providers/DayProvider";
 import styles from "@/styles/CourseList.module.css";
+import { useRouter } from "next/router";
 
-export default function Academia() {
-  const router = useRouter();
+export default function Courses() {
   const day = useDay();
   const courses = useCourses();
 
@@ -19,12 +18,11 @@ export default function Academia() {
       <Header title={"Courses | AcademiaPro"} />
       <main className="root">
         <Sidebar day={day} page="Course" />
-        <div className="content flex-grow p-4">
+        <div className="content flex-grow">
           <h2>Course List</h2>
-          <table className=" w-full">
+          <table className="w-full">
             <tbody className={styles.courseTable}>
-              {courses &&
-                courses[0] &&
+              {courses?.[0] &&
                 courses.map((course, index) => (
                   <CourseCard key={index} course={course} />
                 ))}

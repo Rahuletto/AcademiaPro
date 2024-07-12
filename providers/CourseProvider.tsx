@@ -37,22 +37,24 @@ export function CourseProvider({ children }: { children: ReactNode }) {
         .then((e) => e.json())
         .then((res) => {
           const data: Course[] = [];
-          res.courses.forEach((course: Course) => {
-            data.push({
-              courseCode: course.courseCode,
-              courseType: course.courseType,
-              courseTitle: course.courseTitle,
-              credit: course.credit,
-              regnType: course.regnType,
-              category: course.category,
-              facultyName: course.facultyName,
-              slot: course.slot,
-              gcrCode: course.gcrCode,
-              roomNo: course.roomNo,
-              academicYear: course.academicYear,
+          if (res?.courses) {
+            res.courses.forEach((course: Course) => {
+              data.push({
+                courseCode: course.courseCode,
+                courseType: course.courseType,
+                courseTitle: course.courseTitle,
+                credit: course.credit,
+                regnType: course.regnType,
+                category: course.category,
+                facultyName: course.facultyName,
+                slot: course.slot,
+                gcrCode: course.gcrCode,
+                roomNo: course.roomNo,
+                academicYear: course.academicYear,
+              });
             });
-          });
-          setCourses(data);
+            setCourses(data);
+          }
         });
   }, []);
 
