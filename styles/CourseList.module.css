@@ -34,3 +34,13 @@
 .total {
   color: white;
 }
+
+.roomBadge {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
