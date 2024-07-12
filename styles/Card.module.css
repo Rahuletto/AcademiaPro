@@ -237,6 +237,10 @@
     justify-content: flex-end !important;
   }
 
+  .courseCard:nth-of-type(1) {
+    margin-top: 0px;
+  }
+
   .card td:nth-of-type(1) {
     padding-left: 18px;
     padding-top: 12px;

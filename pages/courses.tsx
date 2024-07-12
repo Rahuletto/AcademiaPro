@@ -19,7 +19,7 @@ export default function Courses() {
       <main className="root">
         <Sidebar day={day} page="Course" />
         <div className="content flex-grow">
-          <h2>Course List</h2>
+          <h2 className="m-2 md:m-0">Course List</h2>
           <table className="w-full">
             <tbody className={styles.courseTable}>
               {courses?.[0] &&
