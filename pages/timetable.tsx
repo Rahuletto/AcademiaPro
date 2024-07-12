@@ -16,7 +16,6 @@ export default function Timetable() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    console.log(userInfo?.userInfo);
     if (userInfo?.userInfo) {
       fetch(`/api/timetable/${userInfo?.userInfo?.reg}`, {
         method: "POST",

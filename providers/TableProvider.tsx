@@ -31,7 +31,8 @@ export function TableProvider({ children }: { children: ReactNode }) {
           Cookie: cookie,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Cache-Control": "private, maxage=86400",
+          "Cache-Control":
+            "private, maxage=86400, stale-while-revalidate=43200",
         },
       })
         .then((r) => r.json())
