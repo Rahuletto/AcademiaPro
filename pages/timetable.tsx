@@ -49,7 +49,7 @@ export default function Timetable() {
           </h2>
           {data ? (
             <Image
-              className="tt-page scale-95"
+              className="tt-page scale-95 rounded-3xl"
               alt="timetable"
               src={data}
               width={2000}

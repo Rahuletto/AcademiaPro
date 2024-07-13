@@ -49,10 +49,10 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
                 ) : (
                   <div
                     key={i}
+                    tw="opacity-15 w-[10%]"
                     style={{
-                      width: "10%",
+                      ...constructNullStyles(i, j, row.subjects),
                       border: "0.3px solid #12171e",
-                      opacity: 0.5,
                     }}
                   />
                 ),
@@ -63,6 +63,50 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
       </div>
     </div>
   );
+}
+
+function constructNullStyles(
+  i: number,
+  j: number,
+  totalSubjects: (string | undefined)[],
+) {
+  let obj: object = { border: "0.3px solid #12171e", fontSize: 6 };
+
+  const [firstSlice, secondSlice] = [
+    totalSubjects.slice(0, 5),
+    totalSubjects.slice(5, 10),
+  ];
+  const isTheoryInFirst = firstSlice.some((subj) => subj?.includes("Theory"));
+  const isPracticalInFirst = firstSlice.some((subj) =>
+    subj?.includes("Practical"),
+  );
+  const isTheoryInSecond = secondSlice.some((subj) => subj?.includes("Theory"));
+  const isPracticalInSecond = secondSlice.some((subj) =>
+    subj?.includes("Practical"),
+  );
+
+  if (
+    (isTheoryInFirst && j <= 4) ||
+    (isPracticalInSecond && j < 4) ||
+    (isPracticalInFirst && j > 4) ||
+    (isTheoryInSecond && j >= 5)
+  ) {
+    obj = { background: "#f3d86a", ...obj };
+  } else if (
+    (isPracticalInFirst && j <= 4) ||
+    (isTheoryInSecond && j <= 4) ||
+    (isPracticalInSecond && j >= 5) ||
+    (isTheoryInFirst && j <= 4)
+  ) {
+    obj = { background: "#70fa70", ...obj };
+  }
+
+  if (i === 0 && j === 0) obj = { borderTopLeftRadius: "6px", ...obj };
+  else if (i === 0 && j === 9) obj = { borderTopRightRadius: "6px", ...obj };
+  else if (i === 4 && j === 0) obj = { borderBottomLeftRadius: "6px", ...obj };
+  else if (i === 4 && j === 9) obj = { borderBottomRightRadius: "6px", ...obj };
+
+  return obj;
 }
 
 function constructStyles(i: number, j: number, name: string) {
