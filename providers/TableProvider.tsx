@@ -21,6 +21,7 @@ export function TableProvider({ children }: { children: ReactNode }) {
   const userInfo = useUser();
 
   useEffect(() => {
+    if (!userInfo) return;
     const cookie = getCookie("token");
     if (cookie)
       fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
@@ -38,6 +39,7 @@ export function TableProvider({ children }: { children: ReactNode }) {
         .then((r) => r.json())
         .then((res) => {
           if (!res.error) {
+            console.log(res);
             setTable(res);
           }
         });

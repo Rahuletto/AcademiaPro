@@ -128,7 +128,7 @@ export default function Academia() {
               todayTable &&
               todayTable?.filter((a) => a != null).length > 0 ? (
                 <a href={`/timetable`} className="download">
-                  View all
+                  Generate
                 </a>
               ) : null}
             </h2>

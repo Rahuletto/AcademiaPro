@@ -18,7 +18,7 @@ const CourseCard = ({ course }: { course: Course }) => {
                   ? styles.circle
                   : `${styles.circle} ${styles.greenCircle}`
               }
-            ></div>
+            />
           )}
           {course.courseTitle !== "Total" && course.roomNo && (
             <span
@@ -51,7 +51,7 @@ const CourseCard = ({ course }: { course: Course }) => {
       </td>
       <td className="md:max-w-64">
         <h3
-          className={`font-regular text-right text-2xl md:text-3xl ${course.facultyName.includes("(null)") ? "text-red" : ""}`}
+          className={`font-regular cursor-pointer text-right text-2xl underline md:text-3xl ${course.facultyName.includes("(null)") ? "text-red" : ""}`}
         >
           {course.facultyName.includes("(null)")
             ? "Not available"

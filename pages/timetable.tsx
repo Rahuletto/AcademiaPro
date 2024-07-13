@@ -35,26 +35,42 @@ export default function Timetable() {
     <>
       <Header title={"Timetable | AcademiaPro"} />
 
-      <main className="flex h-screen flex-col items-center justify-center">
-        <button type="button" className="back-tt" onClick={() => router.back()}>
+      <main className="flex h-full min-h-[97vh] flex-col items-center justify-center">
+        <button
+          type="button"
+          className="fixed left-6 top-6 rounded-full bg-red px-4 py-2 text-xl text-background"
+          onClick={() => router.back()}
+        >
           <FaCaretLeft />
         </button>
-        <div className="flex h-full w-full items-center justify-center">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-3">
+          <h2>
+            {userInfo?.userInfo.section} - {userInfo?.userInfo.classroom}
+          </h2>
           {data ? (
             <Image
-              className="tt-page"
+              className="tt-page scale-95"
               alt="timetable"
               src={data}
-              width={2400}
-              height={920}
+              width={2000}
+              height={766}
             />
           ) : (
-            <Skeleton width={2400} height={920} className="tt-page" />
+            <Skeleton
+              width={2000}
+              height={766}
+              className="tt-page scale-95 rounded-3xl"
+            />
           )}
         </div>
-        <div className="credHold">
-          <Footer />
-        </div>
+        <a
+          href={data}
+          download={`${userInfo?.userInfo.section}-${userInfo?.userInfo.classroom}-timetable.png`}
+          className="download fixed bottom-5"
+          style={{ paddingLeft: "24px", paddingRight: "24px", fontSize: 18 }}
+        >
+          Download
+        </a>
       </main>
     </>
   );
