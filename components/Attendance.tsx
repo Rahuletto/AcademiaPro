@@ -1,6 +1,8 @@
 import Card from "@/components/cards/Card";
 import styles from "@/styles/Attendance.module.css";
-import type { AttendanceResponse, Course } from "@/types/Attendance";
+import type { AttendanceResponse, AttendanceCourse } from "@/types/Attendance";
+import type { Course } from "@/types/Course";
+import { useCourses } from "@/providers/CourseProvider";
 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -12,6 +14,7 @@ const AttendanceTable = ({
   data: AttendanceResponse | null;
   todayTable?: (string | undefined)[];
 }) => {
+  const courses = useCourses();
   return (
     <>
       <table className="w-full">
@@ -19,7 +22,7 @@ const AttendanceTable = ({
         <thead />
         <tbody className={[styles.attr, "attTable"].join(" ")}>
           {data && data.attendance[0] ? (
-            data.attendance.map((element: Course, index: number) => (
+            data.attendance.map((element: AttendanceCourse, index: number) => (
               <Card
                 key={index}
                 title={element.courseTitle}
@@ -37,11 +40,29 @@ const AttendanceTable = ({
               />
             ))
           ) : data?.expireAt ? (
-            <div className="m-[12px_24px] flex h-[280px] items-center justify-center rounded-[22px] bg-backgroundLight">
-              <h4 className="text-center text-base opacity-80">
-                There is no attendance here, Interesting...
-              </h4>
-            </div>
+            courses
+              ?.filter((course) => course.courseTitle !== "Total")
+              .map((course: Course, index) => (
+                <Card
+                  key={index}
+                  title={course.courseTitle}
+                  code={course.courseCode}
+                  category={course.courseType}
+                  data={{
+                    present: 0,
+                    absent: 0,
+                    total: 0,
+                  }}
+                  percent="0"
+                  todayTable={todayTable}
+                />
+              )) || (
+              <div className="m-[12px_24px] flex h-[280px] items-center justify-center rounded-[22px] bg-backgroundLight">
+                <h4 className="text-center text-base opacity-80">
+                  There is no attendance here, Interesting...
+                </h4>
+              </div>
+            )
           ) : (
             <>
               <Skeleton className="h-[64px] w-[60vw] rounded-xl opacity-60" />
