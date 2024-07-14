@@ -39,7 +39,6 @@ export function TableProvider({ children }: { children: ReactNode }) {
         .then((r) => r.json())
         .then((res) => {
           if (!res.error) {
-            console.log(res);
             setTable(res);
           }
         });

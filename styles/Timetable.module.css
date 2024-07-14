@@ -23,6 +23,7 @@
   border: 1px solid;
   position: relative;
 }
+
 .body {
   background: #0a0d12;
   border-radius: 12px;
@@ -39,10 +40,11 @@
 .body td:last-child {
   border-radius: 0 12px 12px 0;
 }
+
 .body td {
   width: 10%;
   vertical-align: baseline;
-  height: 80px;
+  height: 90px;
 }
 
 .timeSlot {
@@ -61,11 +63,11 @@
     width: -moz-max-content;
     width: max-content;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
-  
+
   .body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -104,6 +106,7 @@
     padding-bottom: 0px;
     text-align: right;
   }
+
   .body td {
     padding: 4px 6px;
   }

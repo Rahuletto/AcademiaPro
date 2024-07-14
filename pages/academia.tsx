@@ -1,3 +1,4 @@
+/** eslint-disable @next/next/no-html-link-for-pages */
 /** eslint-disable react-hooks/exhaustive-deps */
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
@@ -21,17 +22,19 @@ const TimeTableComponent = dynamic(
 import type { AttendanceResponse } from "@/types/Attendance";
 import type { MarksResponse } from "@/types/Marks";
 
-import { clearCookies, getCookie } from "@/utils/cookies";
+import { getCookie } from "@/utils/cookies";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import { Sidebar } from "@/components/Sidebar";
 import { TableHeader } from "@/components/TableHeader";
+import { useCourses } from "@/providers/CourseProvider";
 import { useDay } from "@/providers/DayProvider";
 import { useTimeTable } from "@/providers/TableProvider";
 import { useUser } from "@/providers/UserProvider";
 import { URL } from "@/utils/url";
+import Link from "next/link";
 import ErrorStack from "./error";
 
 export default function Academia() {
@@ -39,12 +42,14 @@ export default function Academia() {
   const userInfo = useUser();
   const day = useDay();
   const table = useTimeTable();
+  const courses = useCourses();
 
   const [attendance, setAttendance] = useState<AttendanceResponse | null>(null);
   const [todayTable, setToday] = useState<(string | undefined)[] | undefined>(
     [],
   );
   const [marks, setMarks] = useState<MarksResponse | null>(null);
+  const [view, setView] = useState(false);
 
   useEffect(() => {
     if (!getCookie("token")) router.push("/login");
@@ -107,7 +112,7 @@ export default function Academia() {
   useEffect(() => {
     if (day && !day.dayOrder.includes("No"))
       setToday(table?.table[Number(day.dayOrder) - 1].subjects);
-    else if (day && day.dayOrder.includes("No")) {
+    else if (day?.dayOrder.includes("No")) {
       setToday([]);
     }
   }, [table, day]);
@@ -127,9 +132,9 @@ export default function Academia() {
               {userInfo?.userInfo &&
               todayTable &&
               todayTable?.filter((a) => a != null).length > 0 ? (
-                <a href={`/timetable`} className="download">
+                <Link href="/timetable" className="download">
                   Generate
-                </a>
+                </Link>
               ) : null}
             </h2>
             <div className="table-responsive">
@@ -138,10 +143,27 @@ export default function Academia() {
                   <TableHeader />
                 </thead>
                 {todayTable && userInfo && (
-                  <TimeTableComponent table={todayTable} userInfo={userInfo} />
+                  <TimeTableComponent
+                    view={view}
+                    courses={courses}
+                    table={todayTable}
+                  />
                 )}
               </table>
             </div>
+            {courses?.[0] && (
+              <div
+                onKeyDown={() => {}}
+                onClick={() => setView((prev) => !prev)}
+                className="mt-3 flex items-center justify-center gap-3 opacity-70"
+              >
+                <button
+                  className={`${view ? "border-transparent bg-green" : "border-accent"} h-3 w-3 rounded-full border-2`}
+                  type="button"
+                />{" "}
+                {view ? "Hide" : "View"} classroom no.
+              </div>
+            )}
           </section>
 
           <section id="attendance" className="attendance">
@@ -153,7 +175,7 @@ export default function Academia() {
             <h2 className="subtitle">
               Marks{" "}
               {userInfo?.userInfo ? (
-                <a href={`https://gradex.vercel.app`} className="download">
+                <a href="https://gradex.vercel.app" className="download">
                   Calculate
                 </a>
               ) : null}
