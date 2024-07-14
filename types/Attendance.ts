@@ -1,9 +1,9 @@
 export interface AttendanceResponse {
   expireAt: number;
-  attendance: Course[];
+  attendance: AttendanceCourse[];
 }
 
-export interface Course {
+export interface AttendanceCourse {
   courseCode: string;
   courseTitle: string;
   category: string;
