@@ -1,3 +1,4 @@
+/** eslint-disable react-hooks/exhaustive-deps */
 interface Props {
   title: string;
   code: string;
@@ -20,7 +21,8 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
   const [margin, setMargin] = useState(0);
   useEffect(() => {
     setMargin(calculateMargin(data.present, data.total));
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data.present, data.total]);
 
   const countHoursPerDay = (title: string) => {
     var count = 0;
@@ -36,21 +38,18 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
 
   return (
     <>
-      <tr
-        className={`${styles.card} attCard`}
-        title={`${code} (${category})`}
-      >
+      <tr className={`${styles.card} attCard relative my-8 md:my-0`}>
         <td className="max-h-18 md:max-w-64">
-          <div className="flex items-center gap-2 justify-between">
+          <div className="flex flex-row items-center gap-3 md:items-center md:justify-between md:gap-2">
             <h4>{truncateString(title)}</h4>
 
             <div
               className={
-                category == "Theory"
+                category === "Theory"
                   ? styles.circle
                   : `${styles.circle} ${styles.greenCircle}`
               }
-            ></div>
+            />
           </div>
         </td>
         <td>
@@ -78,7 +77,7 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         </td>
 
         <td>
-          <div className={`md:mx-auto py-0 ${styles.attendance}`}>
+          <div className={`${styles.attendance}`}>
             <span className={`${styles.present} ${styles.green}`}>
               {data.present}
             </span>
@@ -90,9 +89,9 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         </td>
         <td>
           <h3
-            className={`md:text-3xl text-2xl text-right md:pr-6 font-regular ${
+            className={`font-regular text-right text-2xl md:pr-6 md:text-3xl ${
               Number(percent.split(".")[0]) === 100
-                ? "text-green text-2xl md:text-4xl font-semibold"
+                ? "text-2xl font-semibold text-green md:text-4xl"
                 : Number(percent.split(".")[0]) < 75
                   ? "text-red"
                   : "text-accent"

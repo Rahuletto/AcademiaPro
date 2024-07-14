@@ -1,8 +1,8 @@
 import Card from "@/components/cards/Card";
-import styles from "@/styles/Attendance.module.css";
-import type { AttendanceResponse, AttendanceCourse } from "@/types/Attendance";
-import type { Course } from "@/types/Course";
 import { useCourses } from "@/providers/CourseProvider";
+import styles from "@/styles/Attendance.module.css";
+import type { AttendanceCourse, AttendanceResponse } from "@/types/Attendance";
+import type { Course } from "@/types/Course";
 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -20,8 +20,8 @@ const AttendanceTable = ({
       <table className="w-full">
         <thead />
         <thead />
-        <tbody className={[styles.attr, "attTable"].join(" ")}>
-          {data && data.attendance[0] ? (
+        <tbody className={`${styles.attr} attTable`}>
+          {data?.attendance[0] ? (
             data.attendance.map((element: AttendanceCourse, index: number) => (
               <Card
                 key={index}
