@@ -2,15 +2,15 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import { Sidebar } from "@/components/Sidebar";
-/** eslint-disable react-hooks/exhaustive-deps */
 import CalendarGenerator from "@/generator/CalendarGenerator";
 import { useDay } from "@/providers/DayProvider";
 import type { CalendarResponse } from "@/types/Calendar";
-import { clearCookies, getCookie } from "@/utils/cookies";
+import { getCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
+import Skeleton from "react-loading-skeleton";
 import ErrorStack from "./error";
 
 export default function Academia() {
@@ -64,12 +64,18 @@ export default function Academia() {
       <main className="root">
         <Sidebar day={day} page="Calendar" />
         <div className="content flex-grow p-4">
-          {calendar?.calendar &&
-          !calendar.calendar[0].month.includes("released") ? (
+          {calendar?.calendar?.[0]?.month?.includes("released") ? (
+            <div className="m-3 flex h-[89vh] items-center justify-center rounded-[22px] bg-backgroundLight">
+              <h4 className="text-center text-lg opacity-80">
+                It{"'"}s not released yet. Please check back later.
+              </h4>
+            </div>
+          ) : calendar?.calendar[0] ? (
             <>
               <CalendarGenerator page={page} data={calendar.calendar[page]}>
                 <div className="paginate">
                   <button
+                    type="button"
                     onClick={() => setPage((e) => e - 1)}
                     disabled={page <= 0}
                     className="p-2"
@@ -80,6 +86,7 @@ export default function Academia() {
                     {calendar?.calendar[page]?.month}
                   </h3>
                   <button
+                    type="button"
                     onClick={() => setPage((e) => e + 1)}
                     disabled={page >= calendar?.calendar.length - 1}
                     className="p-2"
@@ -90,11 +97,11 @@ export default function Academia() {
               </CalendarGenerator>
             </>
           ) : (
-            <div className="m-3 flex h-[89vh] items-center justify-center rounded-[22px] bg-backgroundLight">
-              <h4 className="text-center text-lg opacity-80">
-                It{"'"}s not released yet. Please check back later.
-              </h4>
-            </div>
+            <Skeleton
+              height={600}
+              containerClassName="w-[80vw] mt-3"
+              style={{ borderRadius: 32 }}
+            />
           )}
           <Footer />
         </div>
