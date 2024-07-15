@@ -13,7 +13,7 @@ import { FaCaretLeft, FaCaretRight } from "react-icons/fa6";
 import Skeleton from "react-loading-skeleton";
 import ErrorStack from "./error";
 
-export default function Academia() {
+export default function Calendar() {
   const router = useRouter();
 
   const day = useDay();
@@ -25,6 +25,7 @@ export default function Academia() {
 
     fetch(`${URL}/api/calendar`, {
       method: "GET",
+      next: { revalidate: 7200 },
       headers: {
         "X-CSRF-Token": getCookie("token") as string,
         "Set-Cookie": getCookie("token") as string,
