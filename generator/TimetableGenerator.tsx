@@ -3,6 +3,7 @@ import { endingTimesSlot, startingTimesSlot } from "@/types/Times";
 import { timeConvert } from "@/utils/convert";
 import { truncateString } from "@/utils/truncate";
 import { convertUnicode } from "@/utils/unicode";
+import type { CSSProperties } from "react";
 
 export default function TimetableGen({ body }: { body: TimeTableResponse }) {
   return (
@@ -70,7 +71,11 @@ function constructNullStyles(
   j: number,
   totalSubjects: (string | undefined)[],
 ) {
-  let obj: object = { border: "0.3px solid #12171e", fontSize: 6 };
+  let obj: CSSProperties = {
+    border: "0.3px solid #12171e",
+    fontSize: 6,
+    background: "#70fa70",
+  };
 
   const [firstSlice, secondSlice] = [
     totalSubjects.slice(0, 5),
@@ -91,14 +96,14 @@ function constructNullStyles(
     (isPracticalInFirst && j > 4) ||
     (isTheoryInSecond && j >= 5)
   ) {
-    obj = { background: "#f3d86a", ...obj };
+    obj.background = "#f3d86a";
   } else if (
     (isPracticalInFirst && j <= 4) ||
     (isTheoryInSecond && j <= 4) ||
     (isPracticalInSecond && j >= 5) ||
-    (isTheoryInFirst && j <= 4)
+    (isTheoryInFirst && j >= 5)
   ) {
-    obj = { background: "#70fa70", ...obj };
+    obj.background = "#70fa70";
   }
 
   if (i === 0 && j === 0) obj = { borderTopLeftRadius: "6px", ...obj };
@@ -110,7 +115,7 @@ function constructNullStyles(
 }
 
 function constructStyles(i: number, j: number, name: string) {
-  let obj: object = { border: "0.3px solid #12171e", fontSize: 6 };
+  let obj: CSSProperties = { border: "0.3px solid #12171e", fontSize: 6 };
 
   if (name.includes("Theory")) obj = { background: "#f3d86a", ...obj };
   else if (name.includes("Practical")) obj = { background: "#70fa70", ...obj };

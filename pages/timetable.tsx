@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { useTimeTable } from "@/providers/TableProvider";
 import { useUser } from "@/providers/UserProvider";
@@ -16,7 +15,7 @@ export default function Timetable() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    if (userInfo?.userInfo) {
+    if (userInfo?.userInfo && table) {
       fetch(`/api/timetable/${userInfo?.userInfo?.reg}`, {
         method: "POST",
         body: JSON.stringify({
@@ -47,7 +46,7 @@ export default function Timetable() {
           <h2>
             {userInfo?.userInfo.section} - {userInfo?.userInfo.classroom}
           </h2>
-          {data ? (
+          {data && table ? (
             <Image
               className="tt-page scale-95 rounded-3xl"
               alt="timetable"
@@ -57,9 +56,9 @@ export default function Timetable() {
             />
           ) : (
             <Skeleton
-              width={2000}
-              height={766}
-              className="tt-page scale-95 rounded-3xl"
+              height={400}
+              containerClassName="w-[80vw] h-96 mt-3"
+              style={{ borderRadius: 32 }}
             />
           )}
         </div>
