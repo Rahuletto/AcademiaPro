@@ -44,7 +44,9 @@
 .body td {
   width: 10%;
   vertical-align: baseline;
-  height: 90px;
+  min-height: 90px;
+  max-height: 110px;
+  padding-bottom: 30px;
 }
 
 .timeSlot {
@@ -81,7 +83,9 @@
 
   .body td {
     width: initial;
-    height: 50px;
+    min-height: 60px;
+    max-height: 110px;
+    padding-bottom: 30px !important;
   }
 
   .body td:first-child {

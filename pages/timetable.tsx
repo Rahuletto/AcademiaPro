@@ -44,7 +44,7 @@ export default function Timetable() {
         </button>
         <div className="flex h-full w-full flex-col items-center justify-center gap-3">
           <h2>
-            {userInfo?.userInfo.section} - {userInfo?.userInfo.classroom}
+            {userInfo?.userInfo?.section} - {userInfo?.userInfo.classroom}
           </h2>
           {data && table ? (
             <Image
@@ -64,7 +64,7 @@ export default function Timetable() {
         </div>
         <a
           href={data}
-          download={`${userInfo?.userInfo.section}-${userInfo?.userInfo.classroom}-timetable.png`}
+          download={`${userInfo?.userInfo?.section}-${userInfo?.userInfo.classroom}-timetable.png`}
           className="download fixed bottom-5"
           style={{ paddingLeft: "24px", paddingRight: "24px", fontSize: 18 }}
         >

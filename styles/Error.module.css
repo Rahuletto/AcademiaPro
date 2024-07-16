@@ -67,9 +67,11 @@
 }
 
 .errorPre {
-  margin: 10px 32px;
+  overflow: auto;
+  max-height: 30vh;
   background: var(--background);
   border: 1px solid var(--border);
+  margin-top: 24px;
   padding: 4px 10px;
   border-radius: 12px;
   width: -webkit-fill-available;
@@ -78,8 +80,9 @@
   display: block;
   white-space: pre-line;
   color: var(--color) !important;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
+
 @media only screen and (max-width: 540px) {
   .container {
     width: 95vw;
@@ -91,6 +94,7 @@
   .main {
     margin: 12px;
   }
+
   .errorPre {
     margin: 0px !important;
     width: 100%;
@@ -99,6 +103,7 @@
   .container {
     padding: 24px;
   }
+
   .container p {
     font-size: 16px;
   }

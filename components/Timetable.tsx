@@ -1,9 +1,13 @@
+import { colorNull } from "@/generator/TimetableGenerator";
 import styles from "@/styles/Timetable.module.css";
 import type { Course } from "@/types/Course";
 import { endingTimesSlot, startingTimesSlot } from "@/types/Times";
+import { timeRange } from "@/utils/range";
 import { truncateString } from "@/utils/truncate";
 import { convertUnicode } from "@/utils/unicode";
+import { useInterval } from "@/utils/useInterval";
 import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 
 const TimeTableComponent = ({
   table,
@@ -15,24 +19,48 @@ const TimeTableComponent = ({
   view: boolean;
 }) => {
   const router = useRouter();
+  const [time, setTime] = useState(new Date());
 
   function openGen() {
     router.push("/timetable");
   }
+
+  useEffect(() => {
+    const currentTime = new Date();
+
+    const currentOffset = currentTime.getTimezoneOffset();
+
+    const ISTOffset = 330;
+
+    setTime(
+      new Date(currentTime.getTime() + (ISTOffset + currentOffset) * 60000),
+    );
+  }, []);
+
+  useInterval(() => {
+    const currentTime = new Date();
+
+    const currentOffset = currentTime.getTimezoneOffset();
+
+    const ISTOffset = 330;
+
+    setTime(
+      new Date(currentTime.getTime() + (ISTOffset + currentOffset) * 60000),
+    );
+  }, 30 * 1000);
+
   return (
     <>
       <tbody
         onKeyDown={() => {}}
         onClick={() => table && openGen()}
-        className={styles.body}
+        className={`${table && timeRange(time, `${startingTimesSlot[0]}-${endingTimesSlot[table.length - 1]}`) ? "class-on" : ""} ${styles.body}`}
       >
         {table?.map((element: string | undefined, index: number) =>
           element ? (
             <td
               key={index}
-              className={
-                String(element).includes("Theory") ? styles.theory : styles.lab
-              }
+              className={`${timeRange(time, `${startingTimesSlot[index]}-${endingTimesSlot[index]}`) ? "active-tt-table" : "tt-items"} ${String(element).includes("Theory") ? styles.theory : styles.lab}`}
             >
               {truncateString(convertUnicode(element).split("(")[0])}
               {view && (
@@ -48,7 +76,11 @@ const TimeTableComponent = ({
               </span>
             </td>
           ) : (
-            <td key={index} style={{ width: "10%", height: "90px" }} />
+            <td
+              key={index}
+              className={`${timeRange(time, `${startingTimesSlot[index]}-${endingTimesSlot[index]}`) ? "active-tt-empty" : "tt-empty"} min-h-[50px] w-full opacity-5 md:min-h-[90px] md:w-[10%] md:opacity-15`}
+              style={{ ...colorNull(index, table) }}
+            />
           ),
         )}
       </tbody>

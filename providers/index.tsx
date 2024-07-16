@@ -1,16 +1,16 @@
-import { ReactNode } from 'react';
-import { DayProvider } from './DayProvider';
-import { UserProvider } from './UserProvider';
-import { TableProvider } from './TableProvider';
-import {CourseProvider } from './CourseProvider';
+import type { ReactNode } from "react";
+import { CourseProvider } from "./CourseProvider";
+import { DayProvider } from "./DayProvider";
+import { TableProvider } from "./TableProvider";
+import { UserProvider } from "./UserProvider";
 export function AppProvider({ children }: { children: ReactNode }) {
   return (
     <UserProvider>
       <CourseProvider>
-      <TableProvider>
-        <DayProvider>{children}</DayProvider>
-      </TableProvider>
+        <TableProvider>
+          <DayProvider>{children}</DayProvider>
+        </TableProvider>
       </CourseProvider>
-     </UserProvider>
+    </UserProvider>
   );
 }

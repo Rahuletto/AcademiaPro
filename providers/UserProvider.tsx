@@ -20,6 +20,9 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const cookie = getCookie("token");
+    const oldData = localStorage.getItem("userInfo");
+    if (oldData) clearCookies();
+
     if (cookie)
       fetch(`${URL}/api/user`, {
         method: "GET",

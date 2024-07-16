@@ -66,14 +66,27 @@ export default function TimetableGen({ body }: { body: TimeTableResponse }) {
   );
 }
 
-function constructNullStyles(
+export function constructNullStyles(
   i: number,
   j: number,
   totalSubjects: (string | undefined)[],
 ) {
   let obj: CSSProperties = {
-    border: "0.3px solid #12171e",
     fontSize: 6,
+    ...colorNull(j, totalSubjects),
+  };
+
+  if (i === 0 && j === 0) obj = { borderTopLeftRadius: "6px", ...obj };
+  else if (i === 0 && j === 9) obj = { borderTopRightRadius: "6px", ...obj };
+  else if (i === 4 && j === 0) obj = { borderBottomLeftRadius: "6px", ...obj };
+  else if (i === 4 && j === 9) obj = { borderBottomRightRadius: "6px", ...obj };
+
+  return obj;
+}
+
+export function colorNull(j: number, totalSubjects: (string | undefined)[]) {
+  const obj: CSSProperties = {
+    border: "0.3px solid #12171e",
     background: "#70fa70",
   };
 
@@ -105,11 +118,6 @@ function constructNullStyles(
   ) {
     obj.background = "#70fa70";
   }
-
-  if (i === 0 && j === 0) obj = { borderTopLeftRadius: "6px", ...obj };
-  else if (i === 0 && j === 9) obj = { borderTopRightRadius: "6px", ...obj };
-  else if (i === 4 && j === 0) obj = { borderBottomLeftRadius: "6px", ...obj };
-  else if (i === 4 && j === 9) obj = { borderBottomRightRadius: "6px", ...obj };
 
   return obj;
 }

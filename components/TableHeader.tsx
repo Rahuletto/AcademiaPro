@@ -1,7 +1,7 @@
 import { endingTimesSlot, startingTimesSlot } from "@/types/Times";
 import { timeRange } from "@/utils/range";
 import { useInterval } from "@/utils/useInterval";
-import { useState, useEffect, ReactNode } from "react";
+import { type ReactNode, useEffect, useState } from "react";
 
 export function TableHeader() {
   const [time, setTime] = useState(new Date());
@@ -39,7 +39,7 @@ export function TableHeader() {
         <th
           key={i}
           title={startingTimesSlot[i] + "-" + endingTimesSlot[i]}
-          className="head-time md:h-auto md:table-cell h-full flex items-center justify-center"
+          className="head-time hidden p-2 md:table-cell"
         >
           {timeRange(time, startingTimesSlot[i] + "-" + endingTimesSlot[i]) ? (
             <span className={"current-time"}>{i + 1}</span>
@@ -53,7 +53,7 @@ export function TableHeader() {
   }, [time]);
 
   return (
-    <tr className="bg-light-gray md:table-row flex flex-col h-full md:h-auto">
+    <tr className="bg-light-gray flex h-full flex-col md:table-row md:h-auto">
       {...arr.length > 10 ? arr.splice(0, 10) : arr}
     </tr>
   );

@@ -151,6 +151,7 @@ th {
   box-sizing: border-box;
   font-family: var(--main-font), system-ui, sans-serif;
 }
+
 button,
 a {
   -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
@@ -158,16 +159,19 @@ a {
   transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   cursor: pointer;
 }
+
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+
 button:active {
   opacity: 0.8;
   -webkit-transform: scale(0.95) rotate(-2deg);
   -ms-transform: scale(0.95) rotate(-2deg);
   transform: scale(0.95) rotate(-2deg);
 }
+
 button:hover,
 a:hover {
   opacity: 0.9;
@@ -265,6 +269,7 @@ html {
   background: var(--background) !important;
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--background) !important;
   padding: 18px !important;
@@ -291,6 +296,7 @@ hr {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
+
 .current-time {
   background: var(--green);
   color: var(--background-darker);
@@ -475,6 +481,7 @@ hr {
     -webkit-transform: translateX(-200px);
     transform: translateX(-200px);
   }
+
   to {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
@@ -489,6 +496,7 @@ hr {
     -ms-transform: translateX(-120vw);
     -o-transform: translateX(-120vw);
   }
+
   to {
     -webkit-transform: translateX(0px);
     transform: translateX(0px);
@@ -504,6 +512,7 @@ hr {
     -ms-transform: translate(-200px, 200px);
     -o-transform: translate(-200px, 200px);
   }
+
   to {
     -webkit-transform: translate(0px 0px);
     transform: translate(0px 0px);
@@ -523,6 +532,7 @@ hr {
     -moz-transform: translateX(0px);
     -o-transform: translateX(0px);
   }
+
   100% {
     transform: translateX(-120vw);
     -webkit-transform: translateX(-120vw);
@@ -574,6 +584,7 @@ hr {
     -webkit-animation: 0.2s slide forwards;
     animation: 0.2s slide forwards;
   }
+
   .open {
     z-index: 20;
     display: flex;
@@ -619,12 +630,42 @@ hr {
 }
 
 @media only screen and (max-width: 630px) {
+  .class-on .tt-items {
+    opacity: 0.4;
+  }
+
+  .active-tt-table {
+    opacity: 1 !important;
+  }
+
+  .active-tt-empty {
+    position: relative;
+    opacity: 0.3 !important;
+  }
+
+  .active-tt-empty:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "Current";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--background);
+    border: 12px solid var(--background) !important;
+    opacity: 1 !important;
+  }
+
   .pc {
     display: none !important;
   }
+
   .mobile {
     display: flex !important;
   }
+
   #profileDialog {
     margin: auto 12px;
   }
@@ -635,6 +676,7 @@ hr {
     padding: 2.5rem 3rem;
   }
 }
+
 @media only screen and (max-width: 766px) {
   .attTable:active .attCard {
     opacity: 1;
@@ -644,6 +686,7 @@ hr {
     opacity: 1;
   }
 }
+
 @media only screen and (max-width: 440px) {
   body {
     padding: 8px !important;
