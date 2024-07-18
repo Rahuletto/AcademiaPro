@@ -3,6 +3,8 @@ import { useCourses } from "@/providers/CourseProvider";
 import styles from "@/styles/Attendance.module.css";
 import type { AttendanceCourse, AttendanceResponse } from "@/types/Attendance";
 import type { Course } from "@/types/Course";
+import { clearCookies } from "@/utils/cookies";
+import { useEffect } from "react";
 
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -15,6 +17,9 @@ const AttendanceTable = ({
   todayTable?: (string | undefined)[];
 }) => {
   const courses = useCourses();
+  useEffect(() => {
+    if (!data?.attendance) clearCookies();
+  }, [data]);
   return (
     <>
       <table className="w-full">

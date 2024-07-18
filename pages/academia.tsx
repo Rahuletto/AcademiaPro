@@ -106,7 +106,6 @@ export default function Academia() {
           })
           .catch(() => {});
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [attendance, marks, userInfo]);
 
   useEffect(() => {
@@ -129,13 +128,11 @@ export default function Academia() {
           <section id="timetable">
             <h2 className="subtitle">
               Timetable{" "}
-              {userInfo?.userInfo &&
-              todayTable &&
-              todayTable?.filter((a) => a != null).length > 0 ? (
+              {userInfo?.userInfo && (
                 <Link href="/timetable" className="download">
                   Generate
                 </Link>
-              ) : null}
+              )}
             </h2>
             <div className="table-responsive">
               <table className="table-bordered flex w-full text-center md:table md:gap-1">
