@@ -205,10 +205,17 @@
     height: inherit;
   }
 
-  .courseCard,
-  .card {
+  .courseCard {
     -ms-grid-columns: 2.5fr 0.5fr;
     grid-template-columns: 2.5fr 0.5fr;
+    -ms-grid-rows: 1fr 0.5fr !important;
+    grid-template-rows: 1fr 0.5fr !important;
+    max-height: fit-content !important;
+  }
+
+  .card {
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     -ms-grid-rows: 1fr 0.5fr !important;
     grid-template-rows: 1fr 0.5fr !important;
     max-height: fit-content !important;
