@@ -20,9 +20,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const cookie = getCookie("token");
-    const datas = localStorage.length;
-
-    if (datas > 1) clearCookies();
 
     const sessionUser = sessionStorage.getItem("user");
 

@@ -5,12 +5,13 @@ import "react-loading-skeleton/dist/skeleton.css";
 
 import type { AppProps } from "next/app";
 
+import { AppProvider } from "@/providers";
+import { clearCookies } from "@/utils/cookies";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
-
-import { AppProvider } from "@/providers";
 import { Inter } from "next/font/google";
-import { Component } from "react";
+import { useRouter } from "next/router";
+import { Component, useEffect } from "react";
 import ErrorStack from "./error";
 
 const inter = Inter({
@@ -23,6 +24,14 @@ const inter = Inter({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  useEffect(() => {
+    const datas = localStorage.length;
+    if (datas > 1) {
+      clearCookies();
+      router.push("/login");
+    }
+  }, [router]);
   return (
     <>
       <style jsx global>

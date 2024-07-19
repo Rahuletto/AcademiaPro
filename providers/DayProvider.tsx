@@ -1,6 +1,6 @@
 import ErrorStack from "@/pages/error";
 import type { DayOrderResponse } from "@/types/DayOrder";
-import { clearCookies, getCookie } from "@/utils/cookies";
+import { getCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
 
 import {
