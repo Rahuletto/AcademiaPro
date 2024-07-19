@@ -1,7 +1,7 @@
 export function setCookie(
   c_name: string,
   value: string,
-  exdays?: number | null
+  exdays?: number | null,
 ) {
   var exdate = new Date();
   exdate.setDate(exdate.getDate() + (exdays || 20 * 60 * 60 * 1000));
@@ -32,12 +32,12 @@ export function getCookie(c_name: string) {
 
 export function clearCookies() {
   const cookies = document.cookie.split(";");
+  localStorage.clear();
 
   for (let i = 0; i < cookies.length; i++) {
     const cookie = cookies[i];
     const eqPos = cookie.indexOf("=");
     const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
     document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    localStorage.clear();
   }
 }

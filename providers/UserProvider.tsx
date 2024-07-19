@@ -21,8 +21,9 @@ export function UserProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const cookie = getCookie("token");
     const datas = localStorage.length;
+    const sessions = sessionStorage.length;
 
-    if (datas > 1) clearCookies();
+    if (datas > 1 || sessions > 0) clearCookies();
 
     if (cookie)
       fetch(`${URL}/api/user`, {
