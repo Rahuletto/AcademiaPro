@@ -17,9 +17,6 @@ const AttendanceTable = ({
   todayTable?: (string | undefined)[];
 }) => {
   const courses = useCourses();
-  useEffect(() => {
-    if (!data?.attendance) clearCookies();
-  }, [data]);
   return (
     <>
       <table className="w-full">
