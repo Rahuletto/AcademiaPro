@@ -49,9 +49,8 @@ export default function Calendar() {
     })
       .then((r) => r.json())
       .then((res) => {
-        if (res.error) {
-          return <ErrorStack error={res.error} />;
-        }
+        if (res.error) return <ErrorStack error={res.error} />;
+        sessionStorage.setItem("cal", JSON.stringify(res));
         setCalendar(res);
       })
       .catch(() => {});
@@ -111,9 +110,10 @@ export default function Calendar() {
             </>
           ) : (
             <Skeleton
-              height={600}
+              count={30}
+              height={42}
               containerClassName="w-[80vw] mt-3"
-              style={{ borderRadius: 32 }}
+              style={{ borderRadius: 12 }}
             />
           )}
           <Footer />
