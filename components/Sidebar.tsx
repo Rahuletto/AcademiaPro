@@ -12,7 +12,6 @@ import Hour from "./badges/Hour";
 import Profile from "./badges/Profile";
 
 import { useUser } from "@/providers/UserProvider";
-import { Hyperping } from "@/utils/hyperping";
 import { BsCalendar2WeekFill } from "react-icons/bs";
 import ProfileDialog from "./ProfileDialog";
 // import Warn from "./badges/Warn";
