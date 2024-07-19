@@ -5,7 +5,7 @@ import { Sidebar } from "@/components/Sidebar";
 import { useDay } from "@/providers/DayProvider";
 import { useUser } from "@/providers/UserProvider";
 import styles from "@/styles/Links.module.css";
-import { LinkUrl } from "@/types/Links";
+import type { LinkUrl } from "@/types/Links";
 import { getCookie } from "@/utils/cookies";
 import { priorityUrl, urls } from "@/utils/links";
 import Fuse from "fuse.js";
@@ -43,14 +43,14 @@ export default function Urls() {
     const searchbox = document.getElementById("searchbox");
 
     window.addEventListener("keydown", (e) => {
-      if (e.metaKey && e.key == "k") {
+      if (e.metaKey && e.key === "k") {
         e.preventDefault();
         searchbox?.focus();
-      } else if (e.key == "/") {
+      } else if (e.key === "/") {
         e.preventDefault();
         searchbox?.focus();
       }
-      if (e.key == "Escape") searchbox?.blur();
+      if (e.key === "Escape") searchbox?.blur();
     });
   }, []);
 
@@ -105,11 +105,11 @@ export default function Urls() {
               ))}
             </div>
             <span> </span>
-            {array.filter((url) => url.type == "official").length > 0 ? (
+            {array.filter((url) => url.type === "official").length > 0 ? (
               <div className={styles.usefulLinks}>
                 <h3>Official Sites</h3>
                 {array
-                  .filter((link) => link.type == "official")
+                  .filter((link) => link.type === "official")
                   .map((k: LinkUrl, i) => (
                     <div className={styles.urlBox} key={i}>
                       <span>{k.site}</span>
@@ -123,11 +123,11 @@ export default function Urls() {
                   ))}
               </div>
             ) : null}
-            {array.filter((url) => url.type == "unofficial").length > 0 ? (
+            {array.filter((url) => url.type === "unofficial").length > 0 ? (
               <div className={styles.usefulLinks}>
                 <h3>Unofficial Sites</h3>
                 {array
-                  .filter((link) => link.type == "unofficial")
+                  .filter((link) => link.type === "unofficial")
                   .map((k: LinkUrl, i) => (
                     <div className={styles.urlBox} key={i}>
                       <span>{k.site}</span>

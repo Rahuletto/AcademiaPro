@@ -1,4 +1,4 @@
-import { useState, type ChangeEventHandler } from "react";
+import { type ChangeEventHandler, useState } from "react";
 import { BsEye, BsEyeFill, BsEyeSlash, BsEyeSlashFill } from "react-icons/bs";
 
 export default function LoginInput({
@@ -19,7 +19,7 @@ export default function LoginInput({
       <input
         value={uid}
         maxLength={20}
-        className={`rounded-2xl rounded-bl-[4px] rounded-br-[4px] border-2 border-solid ${error == 1 ? "border-red" : error == 2 ? "border-practical" : "border-transparent"}`}
+        className={`rounded-2xl rounded-bl-[4px] rounded-br-[4px] border-2 border-solid ${error === 1 ? "border-red" : error === 2 ? "border-practical" : "border-transparent"}`}
         onChange={onChange}
         placeholder="User ID"
       />
@@ -34,12 +34,14 @@ export default function LoginInput({
           onChange={onChange}
           placeholder="Passw*rd"
         />
-        {uid && <span
-          className="absolute bottom-[14px] right-0 pr-4 text-right text-accent"
-          onClick={() => setVisible((e) => !e)}
-        >
-          {visible ? <BsEyeSlashFill /> : <BsEyeFill />}
-        </span>}
+        {uid && (
+          <span
+            className="absolute bottom-[14px] right-0 pr-4 text-right text-accent"
+            onClick={() => setVisible((e) => !e)}
+          >
+            {visible ? <BsEyeSlashFill /> : <BsEyeFill />}
+          </span>
+        )}
       </>
     );
 }

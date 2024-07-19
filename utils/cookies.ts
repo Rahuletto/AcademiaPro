@@ -6,7 +6,8 @@ export function setCookie(
   var exdate = new Date();
   exdate.setDate(exdate.getDate() + (exdays || 20 * 60 * 60 * 1000));
   var c_value =
-    escape(value) + (exdays == null ? "" : "; expires=" + exdate.toUTCString());
+    escape(value) +
+    (exdays === null ? "" : "; expires=" + exdate.toUTCString());
   document.cookie = c_name + "=" + c_value + ";secure";
 
   localStorage.setItem(c_name, value);
@@ -23,7 +24,7 @@ export function getCookie(c_name: string) {
       x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
       y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
       x = x.replace(/^\s+|\s+$/g, "");
-      if (x == c_name) {
+      if (x === c_name) {
         return unescape(y);
       }
     }

@@ -4,6 +4,7 @@ import Loader from "@/components/Loader";
 import { Sidebar } from "@/components/Sidebar";
 import CalendarGenerator from "@/generator/CalendarGenerator";
 import { useDay } from "@/providers/DayProvider";
+import { useTimeTable } from "@/providers/TableProvider";
 import type { CalendarResponse } from "@/types/Calendar";
 import { getCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
@@ -19,6 +20,17 @@ export default function Calendar() {
   const day = useDay();
   const [page, setPage] = useState(0);
   const [calendar, setCalendar] = useState<CalendarResponse | null>(null);
+
+  const [today, setToday] = useState<(string | undefined)[] | undefined>([]);
+  const table = useTimeTable();
+
+  useEffect(() => {
+    if (day && !day.dayOrder.includes("No") && table?.table)
+      setToday(table?.table[Number(day.dayOrder) - 1].subjects);
+    else if (day?.dayOrder.includes("No")) {
+      setToday([]);
+    }
+  }, [table, day]);
 
   useEffect(() => {
     if (!getCookie("token")) router.push("/login");
@@ -63,7 +75,7 @@ export default function Calendar() {
       <Loader />
       <Header title={"Calendar | AcademiaPro"} />
       <main className="root">
-        <Sidebar day={day} page="Calendar" />
+        <Sidebar todayTable={today} day={day} page="Calendar" />
         <div className="content flex-grow p-4">
           {calendar?.calendar?.[0]?.month?.includes("released") ? (
             <div className="m-3 flex h-[89vh] items-center justify-center rounded-[22px] bg-backgroundLight">

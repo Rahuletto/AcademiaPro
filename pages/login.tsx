@@ -2,12 +2,12 @@ import LoginButton from "@/components/Login/LoginButton";
 import LoginInput from "@/components/Login/LoginInput";
 import { useEffect, useState } from "react";
 
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import styles from "@/styles/Login.module.css";
 import { clearCookies, getCookie, setCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
 import { useRouter } from "next/router";
-import Footer from "@/components/Footer";
 
 export default function Login() {
   const [uid, setUid] = useState("");

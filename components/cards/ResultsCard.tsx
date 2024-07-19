@@ -1,6 +1,6 @@
 import styles from "@/styles/Card.module.css";
 import { truncateString } from "../../utils/truncate";
-import { ExamMarks } from "@/types/Results";
+import type { ExamMarks } from "@/types/Results";
 
 interface Props {
   data: ExamMarks;
@@ -33,7 +33,7 @@ const ResultsCard = ({ data }: Props) => {
             <span
               className={styles.total}
               style={
-                !data.credit || data.credit === "" || Number(data.credit) == 0
+                !data.credit || data.credit === "" || Number(data.credit) === 0
                   ? { backgroundColor: "var(--red)", opacity: 0.5 }
                   : {}
               }

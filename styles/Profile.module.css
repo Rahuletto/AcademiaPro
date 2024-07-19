@@ -59,7 +59,7 @@
 }
 
 .logout {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -82,6 +82,7 @@
   border-top: 3px solid transparent;
   padding: 12px 24px;
 }
+
 .logout:hover {
   scale: 1 !important;
   transform: scale(1) !important;
@@ -124,7 +125,7 @@
   gap: 22px;
   margin-top: 48px;
   max-width: 500px;
-  margin-bottom: 38px;
+  margin-bottom: 64px;
 }
 
 .userData div {
@@ -136,6 +137,7 @@
 .userData div:nth-of-type(2n + 1) {
   border-right: 2px solid var(--side-active);
 }
+
 .userData div p {
   font-size: 14px;
   font-weight: 500;
@@ -183,6 +185,7 @@
     padding-bottom: 12px;
     border-bottom: 2px solid var(--side-active) !important;
   }
+
   .userData div:last-of-type {
     padding-bottom: 0px !important;
     border-bottom: none !important;

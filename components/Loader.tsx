@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import type React from "react";
+import { useEffect } from "react";
 
 import styles from "@/styles/Loader.module.css";
-import Link from "next/link";
 import Footer from "./Footer";
 
 const Loader: React.FC = () => {
@@ -13,11 +13,12 @@ const Loader: React.FC = () => {
         setTimeout(() => {
           loader.style.display = "none";
         }, 100);
-      }, 1500);
+      }, 800);
   }, []);
   return (
     <div className={[styles.loader, "loadScreen"].join(" ")}>
       <svg
+        title="loading"
         className={styles.loadingRing}
         viewBox="0 0 128 128"
         width="128px"

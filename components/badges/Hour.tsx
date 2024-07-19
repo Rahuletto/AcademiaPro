@@ -8,7 +8,7 @@ export default function Hour({ data }: { data: number | null }) {
     <>
       {data && data !== 0 ? (
         <span className={styles.badge}>{data} hours</span>
-      ) : !data && data == undefined ? (
+      ) : !data && data === undefined ? (
         <Skeleton className="h-[30px] w-[100px] rounded-md opacity-60" />
       ) : null}
     </>

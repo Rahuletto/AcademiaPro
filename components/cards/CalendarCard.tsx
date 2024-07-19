@@ -1,4 +1,4 @@
-import { Day } from "@/types/Calendar";
+import type { Day } from "@/types/Calendar";
 import styles from "@/styles/Calendar.module.css";
 
 export default function CalendarCard({
@@ -12,9 +12,9 @@ export default function CalendarCard({
   console.log(new Date().getMonth() % 5, new Date().getDate());
   const classes = [
     styles.calendarElem,
-    element.dayOrder == "-" ? styles.holiday : "",
-    new Date().getMonth() % 5 == month &&
-    new Date().getDate() == Number(element.date)
+    element.dayOrder === "-" ? styles.holiday : "",
+    new Date().getMonth() % 5 === month &&
+    new Date().getDate() === Number(element.date)
       ? `${styles.today} today`
       : "",
   ].join(" ");
@@ -22,8 +22,8 @@ export default function CalendarCard({
     <>
       <span
         id={
-          new Date().getMonth() % 5 == month &&
-          new Date().getDate() == Number(element.date)
+          new Date().getMonth() % 5 === month &&
+          new Date().getDate() === Number(element.date)
             ? "today"
             : ""
         }

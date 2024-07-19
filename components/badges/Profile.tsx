@@ -4,9 +4,9 @@ import "react-loading-skeleton/dist/skeleton.css";
 import styles from "@/styles/Profile.module.css";
 import { useEffect, useState } from "react";
 
-import { InfoResponse } from "@/types/UserInfo";
-import { FaUser } from "react-icons/fa";
+import type { InfoResponse } from "@/types/UserInfo";
 import { getColor } from "@/utils/color";
+import { FaUser } from "react-icons/fa";
 
 export default function Profile({ data }: { data: InfoResponse | null }) {
   const [name, setName] = useState("");
@@ -30,7 +30,13 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
   return (
     <>
       {data?.userInfo && name ? (
-        <div className={styles.pill}>
+        <div
+          className={styles.pill}
+          onKeyDown={() => {}}
+          onClick={() => {
+            profilePage();
+          }}
+        >
           <div
             className={styles.pic}
             style={{ background: getColor(data.userInfo?.reg) }}
@@ -39,10 +45,11 @@ export default function Profile({ data }: { data: InfoResponse | null }) {
           </div>
           <h3 className={styles.name}>
             {name.slice(0, 20) +
-              (name.length == name.slice(0, 20).length ? "" : "...")}
+              (name.length === name.slice(0, 20).length ? "" : "...")}
           </h3>
           <button
             name="user"
+            type="button"
             className={styles.profileButton}
             title="User Info"
             onClick={() => {

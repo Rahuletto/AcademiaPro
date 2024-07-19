@@ -1,11 +1,11 @@
 import { useUser } from "@/providers/UserProvider";
+import styles from "@/styles/Profile.module.css";
 import { clearCookies } from "@/utils/cookies";
 import { useRouter } from "next/router";
 import React, { useRef, useEffect } from "react";
-import styles from "@/styles/Profile.module.css";
-import { IoMdLogOut } from "react-icons/io";
 import { CgClose } from "react-icons/cg";
 import { GrClose } from "react-icons/gr";
+import { IoMdLogOut } from "react-icons/io";
 
 const ProfileDialog = () => {
   const router = useRouter();
@@ -64,6 +64,7 @@ const ProfileDialog = () => {
   return (
     <dialog id="profileDialog" className="dialog" ref={dialogRef}>
       <button
+        type="button"
         className={styles.close}
         onClick={() => dialogRef.current?.close()}
       >
@@ -85,7 +86,11 @@ const ProfileDialog = () => {
           </div>
         ))}
       </div>
-      <button className={styles.logout} onClick={() => logoutSequence()}>
+      <button
+        type="button"
+        className={styles.logout}
+        onClick={() => logoutSequence()}
+      >
         <IoMdLogOut style={{ fontSize: 24 }} /> Logout
       </button>
     </dialog>

@@ -1,5 +1,5 @@
 import styles from "@/styles/MarksCard.module.css";
-import { Overall, TestPerformance } from "@/types/Marks";
+import type { Overall, TestPerformance } from "@/types/Marks";
 import { useEffect, useState } from "react";
 
 interface Props {
@@ -47,7 +47,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
     Array.from(e).forEach((w) => {
       w.classList.toggle("markExpand");
     });
-    if (parseFloat(overall.total) !== 100) {
+    if (Number.parseFloat(overall.total) !== 100) {
       setExpanded((e) => !e);
     }
   }
@@ -57,7 +57,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
       {arr[0] ? (
         <div
           className={`${styles.markContainer} ${
-            expanded && category == "Theory" ? "markExpand" : ""
+            expanded && category === "Theory" ? "markExpand" : ""
           }`}
         >
           <div
@@ -70,7 +70,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
               <h4 className={styles.title}>{name}</h4>
               <div
                 className={
-                  category == "Theory"
+                  category === "Theory"
                     ? styles.circle
                     : [styles.circle, styles.greenCircle].join(" ")
                 }
@@ -87,9 +87,9 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                   <div className={styles.markPill}>
                     <span
                       className={
-                        element.marks.scored == "Abs" ||
-                        parseFloat(element.marks.total) / 2 >
-                          parseFloat(element.marks.scored)
+                        element.marks.scored === "Abs" ||
+                        Number.parseFloat(element.marks.total) / 2 >
+                          Number.parseFloat(element.marks.scored)
                           ? styles.red
                           : styles.mark
                       }
@@ -106,7 +106,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
 
             <div
               id="total-row"
-              className={`${styles.row} border-t-2 border-t-sideActive border-solid pt-2`}
+              className={`${styles.row} border-t-2 border-solid border-t-sideActive pt-2`}
             >
               <span
                 id="total"
@@ -116,7 +116,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
               </span>
 
               <button
-                disabled={parseFloat(overall.total) == 100}
+                disabled={Number.parseFloat(overall.total) === 100}
                 onClick={expand}
                 id="calc-btn"
                 className="download"
@@ -124,9 +124,7 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
 
               <div
                 className={styles.markPill}
-                title={`Lost ${(
-                  parseFloat(overall.total) - parseFloat(overall.marks)
-                ).toPrecision(3)} marks`}
+                title={`Lost ${(Number.parseFloat(overall.total) - Number.parseFloat(overall.marks)).toPrecision(3)} marks`}
               >
                 <span className={styles.mark} style={{ color: "var(--color)" }}>
                   {overall.marks}
@@ -139,21 +137,23 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
           </div>
 
           <div className="grade">
-            {60 - parseFloat(overall.total) > 0 && (
+            {60 - Number.parseFloat(overall.total) > 0 && (
               <div id="gradex">
-                <p>Expected Internal of {60 - parseFloat(overall.total)}:</p>
+                <p>
+                  Expected Internal of {60 - Number.parseFloat(overall.total)}:
+                </p>
                 <input
                   type="number"
                   className="px-2"
                   value={expectedInternal}
                   min={0}
                   maxLength={3}
-                  max={60 - parseFloat(overall.total)}
+                  max={60 - Number.parseFloat(overall.total)}
                   onChange={(e) => {
                     if (
                       Number(e.target.value) >= 0 &&
                       Number(e.target.value) <=
-                        Number(60 - parseFloat(overall.total))
+                        Number(60 - Number.parseFloat(overall.total))
                     ) {
                       setExpectedInternal(Number(e.target.value));
                     }
@@ -180,7 +180,9 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
               </div>
               <div>
                 <span
-                  className={parseFloat(req) > 75 ? styles.red : styles.mark}
+                  className={
+                    Number.parseFloat(req) > 75 ? styles.red : styles.mark
+                  }
                 >
                   {req}
                 </span>
