@@ -35,6 +35,11 @@ export default function Calendar() {
   useEffect(() => {
     if (!getCookie("token")) router.push("/login");
 
+    const sessionCal = sessionStorage.getItem("cal");
+    if (sessionCal) {
+      setCalendar(JSON.parse(sessionCal));
+    }
+
     fetch(`${URL}/api/calendar`, {
       method: "GET",
       next: { revalidate: 7200 },

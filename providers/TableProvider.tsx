@@ -44,6 +44,7 @@ export function TableProvider({ children }: { children: ReactNode }) {
         .then((res) => {
           if (!res.error) {
             setTable(res);
+            sessionStorage.setItem("table", JSON.stringify(res));
           }
         });
   }, [userInfo]);
