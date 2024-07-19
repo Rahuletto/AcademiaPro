@@ -21,10 +21,14 @@ export function TableProvider({ children }: { children: ReactNode }) {
   const userInfo = useUser();
 
   useEffect(() => {
-    if (!userInfo) return;
     const cookie = getCookie("token");
-    if (cookie)
-      fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo?.batch}`, {
+    const sessionTable = sessionStorage.getItem("table");
+
+    if (sessionTable) {
+      const timetable = JSON.parse(sessionTable);
+      setTable(timetable);
+    } else if (cookie && userInfo?.userInfo?.batch)
+      fetch(`${URL}/api/timetable?batch=${userInfo?.userInfo.batch}`, {
         method: "GET",
         headers: {
           "X-CSRF-Token": cookie,

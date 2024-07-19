@@ -21,11 +21,15 @@ export function UserProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const cookie = getCookie("token");
     const datas = localStorage.length;
-    const sessions = sessionStorage.length;
 
-    if (datas > 1 || sessions > 0) clearCookies();
+    if (datas > 1) clearCookies();
 
-    if (cookie)
+    const sessionUser = sessionStorage.getItem("user");
+
+    if (sessionUser) {
+      const user = JSON.parse(sessionUser);
+      setUserInfo(user);
+    } else if (cookie)
       fetch(`${URL}/api/user`, {
         method: "GET",
         headers: {
@@ -43,6 +47,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
             userInfo: res.user,
             expireAt: res.expireAt,
           };
+          sessionStorage.setItem("user", JSON.stringify(data));
           setUserInfo(data);
         });
   }, []);

@@ -38,12 +38,9 @@ export function DayProvider({ children }: { children: ReactNode }) {
       })
         .then((r) => r.json())
         .then((res) => {
-          if (res.error) {
-            return <ErrorStack error={res.error} />;
-          } else {
-            sessionStorage.setItem("dayOrder", JSON.stringify(res));
-            setDay(res);
-          }
+          if (res.error) return <ErrorStack error={res.error} />;
+
+          setDay(res);
         });
   }, []);
 
