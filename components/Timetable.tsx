@@ -77,10 +77,23 @@ const TimeTableComponent = ({
             </td>
           ) : (
             <td
+              id="empty"
               key={index}
-              className={`${timeRange(time, `${startingTimesSlot[index]}-${endingTimesSlot[index]}`) ? "active-tt-empty" : "tt-empty"} min-h-[50px] w-full opacity-5 md:min-h-[90px] md:w-[10%] md:opacity-15`}
-              style={{ ...colorNull(index, table) }}
-            />
+              style={{ ...colorNull(index, table, true) }}
+              className={`${timeRange(time, `${startingTimesSlot[index]}-${endingTimesSlot[index]}`) ? "active-tt-empty flex items-center justify-center" : "tt-empty"} min-h-[50px] w-full md:min-h-[90px] md:w-[10%] md:opacity-15`}
+            >
+              {timeRange(
+                time,
+                `${startingTimesSlot[index]}-${endingTimesSlot[index]}`,
+              ) && (
+                <p
+                  style={{ ...colorNull(index, table) }}
+                  className="rounded-full px-4 py-2 text-xs font-semibold text-background"
+                >
+                  Free hour
+                </p>
+              )}
+            </td>
           ),
         )}
       </tbody>

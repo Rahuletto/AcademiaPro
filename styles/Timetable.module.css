@@ -85,7 +85,7 @@
     width: initial;
     min-height: 60px;
     max-height: 110px;
-    padding-bottom: 30px !important;
+    padding-bottom: 30px;
   }
 
   .body td:first-child {
@@ -112,6 +112,6 @@
   }
 
   .body td {
-    padding: 4px 6px;
+    padding-bottom: 24px;
   }
 }

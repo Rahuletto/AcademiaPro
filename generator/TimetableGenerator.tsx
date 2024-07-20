@@ -84,10 +84,15 @@ export function constructNullStyles(
   return obj;
 }
 
-export function colorNull(j: number, totalSubjects: (string | undefined)[]) {
+export function colorNull(
+  j: number,
+  totalSubjects: (string | undefined)[],
+  hide?: boolean,
+) {
+  const opacity = hide ? "1a" : "";
   const obj: CSSProperties = {
     border: "0.3px solid #12171e",
-    background: "#70fa70",
+    background: "#70fa70" + opacity,
   };
 
   const [firstSlice, secondSlice] = [
@@ -109,14 +114,14 @@ export function colorNull(j: number, totalSubjects: (string | undefined)[]) {
     (isPracticalInFirst && j > 4) ||
     (isTheoryInSecond && j >= 5)
   ) {
-    obj.background = "#f3d86a";
+    obj.background = "#f3d86a" + opacity;
   } else if (
     (isPracticalInFirst && j <= 4) ||
     (isTheoryInSecond && j <= 4) ||
     (isPracticalInSecond && j >= 5) ||
     (isTheoryInFirst && j >= 5)
   ) {
-    obj.background = "#70fa70";
+    obj.background = "#70fa70" + opacity;
   }
 
   return obj;
