@@ -54,29 +54,28 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
 
   return (
     <>
-      {arr[0] ? (
+      <div
+        className={`${styles.markContainer} ${
+          expanded && category === "Theory" && arr[0] ? "markExpand" : ""
+        }`}
+      >
         <div
-          className={`${styles.markContainer} ${
-            expanded && category === "Theory" ? "markExpand" : ""
-          }`}
+          title={`${code} (${category})`}
+          id={arr[0] ? category.toLowerCase() : ""}
+          onDoubleClick={expand}
+          className={`${styles.card} markCard min-h-[250px]`}
         >
-          <div
-            title={`${code} (${category})`}
-            id={category.toLowerCase()}
-            onDoubleClick={expand}
-            className={`${styles.card} markCard min-h-[290px]`}
-          >
-            <div className="flex w-full items-center justify-between gap-2">
-              <h4 className={styles.title}>{name}</h4>
-              <div
-                className={
-                  category === "Theory"
-                    ? styles.circle
-                    : [styles.circle, styles.greenCircle].join(" ")
-                }
-              ></div>
-            </div>
-
+          <div className="flex w-full items-center justify-between gap-2">
+            <h4 className={styles.title}>{name}</h4>
+            <div
+              className={
+                category === "Theory"
+                  ? styles.circle
+                  : [styles.circle, styles.greenCircle].join(" ")
+              }
+            ></div>
+          </div>
+          {arr[0] ? (
             <div className={styles.marks}>
               {marks.map((element, index) => (
                 <div key={index} className={styles.row}>
@@ -103,100 +102,102 @@ const MarksCard = ({ name, marks, code, category, overall }: Props) => {
                 </div>
               ))}
             </div>
+          ) : (
+            <div
+              className={`rounded-xl bg-[rgba(255,255,255,0.05)] p-4 text-center text-xs opacity-50 ${styles.marks}`}
+            >
+              No tests conducted yet
+            </div>
+          )}
+          <div
+            id="total-row"
+            className={`${styles.row} border-t-2 border-solid border-t-sideActive pt-2`}
+          >
+            <span
+              id="total"
+              className={[styles.muted_title, "col-6"].join(" ")}
+            >
+              Total
+            </span>
+
+            <button
+              disabled={Number.parseFloat(overall.total) === 100}
+              onClick={expand}
+              id="calc-btn"
+              className="download"
+            ></button>
 
             <div
-              id="total-row"
-              className={`${styles.row} border-t-2 border-solid border-t-sideActive pt-2`}
+              className={styles.markPill}
+              title={`Lost ${(Number.parseFloat(overall.total) - Number.parseFloat(overall.marks)).toPrecision(3)} marks`}
             >
-              <span
-                id="total"
-                className={[styles.muted_title, "col-6"].join(" ")}
-              >
-                Total
+              <span className={styles.mark} style={{ color: "var(--color)" }}>
+                {overall.marks}
               </span>
-
-              <button
-                disabled={Number.parseFloat(overall.total) === 100}
-                onClick={expand}
-                id="calc-btn"
-                className="download"
-              ></button>
-
-              <div
-                className={styles.markPill}
-                title={`Lost ${(Number.parseFloat(overall.total) - Number.parseFloat(overall.marks)).toPrecision(3)} marks`}
-              >
-                <span className={styles.mark} style={{ color: "var(--color)" }}>
-                  {overall.marks}
-                </span>
-                <span className={styles.total}>
-                  {overall.total.split(".")[0]}
-                </span>
-              </div>
+              <span className={styles.total}>
+                {overall.total.split(".")[0]}
+              </span>
             </div>
-          </div>
-
-          <div className="grade">
-            {60 - Number.parseFloat(overall.total) > 0 && (
-              <div id="gradex">
-                <p>
-                  Expected Internal of {60 - Number.parseFloat(overall.total)}:
-                </p>
-                <input
-                  type="number"
-                  className="px-2"
-                  value={expectedInternal}
-                  min={0}
-                  maxLength={3}
-                  max={60 - Number.parseFloat(overall.total)}
-                  onChange={(e) => {
-                    if (
-                      Number(e.target.value) >= 0 &&
-                      Number(e.target.value) <=
-                        Number(60 - Number.parseFloat(overall.total))
-                    ) {
-                      setExpectedInternal(Number(e.target.value));
-                    }
-                  }}
-                />
-              </div>
-            )}
-
-            <div id="gradex">
-              <div>
-                <p>Required for</p>{" "}
-                <select
-                  value={grade}
-                  onChange={(e) => setGrade(e.target.value)}
-                >
-                  <option value="O">O</option>
-                  <option value="A+">A+</option>
-                  <option value="A">A</option>
-                  <option value="B+">B+</option>
-                  <option value="B">B</option>
-                  <option value="C">C</option>
-                </select>{" "}
-                <p>grade</p>
-              </div>
-              <div>
-                <span
-                  className={
-                    Number.parseFloat(req) > 75 ? styles.red : styles.mark
-                  }
-                >
-                  {req}
-                </span>
-                <span className={styles.total}>75</span>
-              </div>
-            </div>
-
-            <span id="warn">
-              This shows how many marks you want to get in the final semester
-              exam! So make sure ur total internal is at 60
-            </span>
           </div>
         </div>
-      ) : null}
+
+        <div className="grade">
+          {60 - Number.parseFloat(overall.total) > 0 && (
+            <div id="gradex">
+              <p>
+                Expected Internal of {60 - Number.parseFloat(overall.total)}:
+              </p>
+              <input
+                type="number"
+                className="px-2"
+                value={expectedInternal}
+                min={0}
+                maxLength={3}
+                max={60 - Number.parseFloat(overall.total)}
+                onChange={(e) => {
+                  if (
+                    Number(e.target.value) >= 0 &&
+                    Number(e.target.value) <=
+                      Number(60 - Number.parseFloat(overall.total))
+                  ) {
+                    setExpectedInternal(Number(e.target.value));
+                  }
+                }}
+              />
+            </div>
+          )}
+
+          <div id="gradex">
+            <div>
+              <p>Required for</p>{" "}
+              <select value={grade} onChange={(e) => setGrade(e.target.value)}>
+                <option value="O">O</option>
+                <option value="A+">A+</option>
+                <option value="A">A</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+              </select>{" "}
+              <p>grade</p>
+            </div>
+            <div>
+              <span
+                className={
+                  Number.parseFloat(req) > 75 ? styles.red : styles.mark
+                }
+              >
+                {req}
+              </span>
+              <span className={styles.total}>75</span>
+            </div>
+          </div>
+
+          <span id="warn">
+            This shows how many marks you want to get in the final semester
+            exam! So make sure ur total internal is at 60
+          </span>
+        </div>
+      </div>
     </>
   );
 };

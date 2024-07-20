@@ -6,16 +6,18 @@ const MarksTable = ({ data }: { data: MarksResponse | null }) => {
     <>
       {data && data.marks[0] ? (
         <div className="markGrid">
-          {data.marks.map((element, index: number) => (
-            <MarksCard
-              key={index}
-              overall={element.overall}
-              code={element.courseCode}
-              category={element.courseType}
-              name={element.courseName}
-              marks={element.testPerformance}
-            />
-          ))}
+          {data.marks
+            .sort((a) => (a.courseType === "Theory" ? -1 : 0))
+            .map((element, index: number) => (
+              <MarksCard
+                key={index}
+                overall={element.overall}
+                code={element.courseCode}
+                category={element.courseType}
+                name={element.courseName}
+                marks={element.testPerformance}
+              />
+            ))}
         </div>
       ) : (
         <div className="m-[12px_24px] flex h-[280px] items-center justify-center rounded-[22px] bg-backgroundLight">
