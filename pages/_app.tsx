@@ -13,6 +13,7 @@ import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 import { Component, useEffect } from "react";
 import ErrorStack from "./error";
+import { URL } from "@/utils/url";
 
 const inter = Inter({
   fallback: ["sans-serif"],
@@ -31,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
       clearCookies();
       router.push("/login");
     }
-  }, [router]);
+  }, []);
   return (
     <>
       <style jsx global>

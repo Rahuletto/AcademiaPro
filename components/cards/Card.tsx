@@ -54,7 +54,7 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
         </td>
         <td>
           <p
-            className={`text-center ${styles.margin}`}
+            className={`text-right md:text-center ${styles.margin}`}
             title={
               margin <= countHoursPerDay(title)
                 ? "You are at the verge of going below 75%"

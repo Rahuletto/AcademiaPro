@@ -15,7 +15,6 @@ import { useEffect, useState } from "react";
 
 export default function Urls() {
   const router = useRouter();
-  const userInfo = useUser();
   const day = useDay();
 
   const [array, setArray] = useState<LinkUrl[]>(urls);

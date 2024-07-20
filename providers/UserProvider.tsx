@@ -1,6 +1,7 @@
 import type { InfoResponse } from "@/types/UserInfo";
 import { clearCookies, getCookie } from "@/utils/cookies";
 import { URL } from "@/utils/url";
+import { useRouter } from "next/router";
 import {
   type ReactNode,
   createContext,
@@ -16,6 +17,7 @@ export function useUser() {
 }
 
 export function UserProvider({ children }: { children: ReactNode }) {
+  const router = useRouter();
   const [userInfo, setUserInfo] = useState<InfoResponse | null>(null);
 
   useEffect(() => {
@@ -26,7 +28,22 @@ export function UserProvider({ children }: { children: ReactNode }) {
     if (sessionUser) {
       const user = JSON.parse(sessionUser);
       setUserInfo(user);
-    } else if (cookie)
+    } else if (cookie) {
+      fetch(`${URL}/api/ping`, {
+        method: "GET",
+        headers: {
+          "X-CSRF-Token": cookie,
+          "Set-Cookie": cookie,
+          Cookie: cookie,
+          Connection: "keep-alive",
+          "content-type": "application/json",
+        },
+      })
+        .then((e) => e.json())
+        .then((res) => {
+          if (!res.healthy) router.push("/sleepy");
+        });
+
       fetch(`${URL}/api/user`, {
         method: "GET",
         headers: {
@@ -47,6 +64,7 @@ export function UserProvider({ children }: { children: ReactNode }) {
           sessionStorage.setItem("user", JSON.stringify(data));
           setUserInfo(data);
         });
+    }
   }, []);
 
   return (
