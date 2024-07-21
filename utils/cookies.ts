@@ -4,18 +4,14 @@ export function setCookie(
   exdays?: number | null,
 ) {
   const exdate = new Date();
-  exdate.setDate(exdate.getDate() + (exdays || 20 * 60 * 60 * 1000));
+  exdate.setDate(exdate.getDate() + (exdays || 31 * 24 * 60 * 60 * 1000));
   const c_value =
     escape(value) +
     (exdays === null ? "" : "; expires=" + exdate.toUTCString());
   document.cookie = c_name + "=" + c_value + ";secure";
-
-  localStorage.setItem(c_name, value);
 }
 
 export function getCookie(c_name: string) {
-  if (localStorage.getItem(c_name)) return localStorage.getItem(c_name);
-
   let i;
   let x;
   let y;
@@ -31,14 +27,12 @@ export function getCookie(c_name: string) {
 }
 
 export function clearCookies() {
-  const cookies = document.cookie.split(";");
   localStorage.clear();
   sessionStorage.clear();
 
-  for (let i = 0; i < cookies.length; i++) {
-    const cookie = cookies[i];
-    const eqPos = cookie.indexOf("=");
-    const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-  }
+  document.cookie.split(";").forEach(function (c) {
+    document.cookie = c
+      .replace(/^ +/, "")
+      .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+  });
 }
