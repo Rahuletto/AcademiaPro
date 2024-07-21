@@ -59,12 +59,6 @@ export default function Calendar() {
         setCalendar(res);
       })
       .catch(() => {});
-
-    setTimeout(() => {
-      const todayScroll = document.getElementById("today");
-      todayScroll?.scrollIntoView();
-    }, 2000);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router]);
 
   useEffect(() => {
@@ -72,6 +66,10 @@ export default function Calendar() {
     setPage(
       calendar?.calendar && calendar?.calendar?.length < month ? 0 : month,
     );
+    setTimeout(() => {
+      const todayScroll = document.getElementById("today");
+      todayScroll?.scrollIntoView();
+    }, 10);
   }, [calendar]);
 
   return (

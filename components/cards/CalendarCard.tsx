@@ -8,8 +8,6 @@ export default function CalendarCard({
   element: Day;
   month: number;
 }) {
-  console.log("CARD", month, element.date);
-  console.log(new Date().getMonth() % 5, new Date().getDate());
   const classes = [
     styles.calendarElem,
     element.dayOrder === "-" ? styles.holiday : "",
