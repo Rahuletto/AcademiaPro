@@ -1,8 +1,8 @@
 export function setCookie(c_name: string, value: string): void {
   const exdate = new Date();
   exdate.setMonth(exdate.getMonth() + 1);
-const c_value = escape(value) + "; expires=" + exdate.toUTCString());
- document.cookie = c_name + "=" + c_value + ";secure";
+  const c_value = escape(value) + "; expires=" + exdate.toUTCString();
+  document.cookie = c_name + "=" + c_value + ";secure";
 }
 
 export function getCookie(c_name: string) {
