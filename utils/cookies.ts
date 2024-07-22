@@ -1,14 +1,11 @@
-export function setCookie(
-  c_name: string,
-  value: string,
-  exdays?: number | null,
-) {
+export function setCookie(c_name: string, value: string): void {
   const exdate = new Date();
-  exdate.setDate(exdate.getDate() + (exdays || 31 * 24 * 60 * 60 * 1000));
-  const c_value =
-    escape(value) +
-    (exdays === null ? "" : "; expires=" + exdate.toUTCString());
-  document.cookie = c_name + "=" + c_value + ";secure";
+  exdate.setMonth(exdate.getMonth() + 1);
+  const c_value = 
+    encodeURIComponent(value) + 
+    "; expires=" + exdate.toUTCString() + 
+    "; secure";
+  document.cookie = `${c_name}=${c_value}`;
 }
 
 export function getCookie(c_name: string) {
