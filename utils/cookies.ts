@@ -1,3 +1,5 @@
+import { URL } from "./url";
+
 export function setCookie(
   c_name: string,
   value: string,
@@ -10,7 +12,7 @@ export function setCookie(
     (exdays === null ? "" : "; expires=" + exdate.toUTCString());
   document.cookie = c_name + "=" + c_value + ";secure";
 
-  localStorage.setItem(c_name, value);
+  localStorage.setItem(c_name, escape(value));
 }
 
 export function getCookie(c_name: string) {
@@ -31,6 +33,13 @@ export function getCookie(c_name: string) {
 }
 
 export function clearCookies() {
+  const token = localStorage.getItem("token");
+  fetch(`${URL}/api/cleanup`, {
+    headers: {
+      "X-CSRF-Token": token || "",
+    },
+  });
+
   const cookies = document.cookie.split(";");
   localStorage.clear();
   sessionStorage.clear();
