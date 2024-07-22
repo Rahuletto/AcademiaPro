@@ -1,5 +1,8 @@
 export function setCookie(c_name: string, value: string, exdays?: number | null): void {
-  const exdate = new Date(); exdate.setDate(exdate.getDate() + (exdays || 31 * 24 * 60 * 60 * 1000)); const c_value = escape(value) + (exdays === null ? "" : "; expires=" + exdate.toUTCString()); document.cookie = c_name + "=" + c_value + ";secure";
+  const exdate = new Date();
+ exdate.setDate(exdate.getDate() + (exdays || 31 * 24 * 60 * 60 * 1000));
+const c_value = escape(value) + (exdays === null ? "" : "; expires=" + exdate.toUTCString());
+ document.cookie = c_name + "=" + c_value + ";secure";
 }
 
 export function getCookie(c_name: string) {
