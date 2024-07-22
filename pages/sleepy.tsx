@@ -6,10 +6,12 @@ import styles from "@/styles/Error.module.css";
 import { useEffect, useState } from "react";
 import { IoCloudOffline } from "react-icons/io5";
 import Header from "@/components/Header";
+import { useUser } from "@/providers/UserProvider";
 
 export default function Sleepy() {
   const [status, setStatus] = useState<any>({});
   const router = useRouter();
+  const user = useUser();
   useEffect(() => {
     const cookie = getCookie("token");
     if (cookie)
@@ -26,7 +28,7 @@ export default function Sleepy() {
         .then((e) => e.json())
         .then((res) => {
           setStatus(res);
-          if (res.healthy) router.push("/academia");
+          if (res.healthy || user) router.push("/academia");
         });
   }, [router]);
   return (

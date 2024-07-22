@@ -29,21 +29,6 @@ export function UserProvider({ children }: { children: ReactNode }) {
       const user = JSON.parse(sessionUser);
       setUserInfo(user);
     } else if (cookie) {
-      fetch(`${URL}/api/ping`, {
-        method: "GET",
-        headers: {
-          "X-CSRF-Token": cookie,
-          "Set-Cookie": cookie,
-          Cookie: cookie,
-          Connection: "keep-alive",
-          "content-type": "application/json",
-        },
-      })
-        .then((e) => e.json())
-        .then((res) => {
-          if (!res.healthy) router.push("/sleepy");
-        });
-
       fetch(`${URL}/api/user`, {
         method: "GET",
         headers: {
