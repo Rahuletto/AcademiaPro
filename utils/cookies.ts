@@ -9,6 +9,8 @@ export function setCookie(
     escape(value) +
     (exdays === null ? "" : "; expires=" + exdate.toUTCString());
   document.cookie = c_name + "=" + c_value + ";secure";
+
+  localStorage.setItem(c_name, value);
 }
 
 export function getCookie(c_name: string) {
