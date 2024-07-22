@@ -79,7 +79,7 @@ const TimeTableComponent = ({
             <td
               key={index}
               style={{ ...colorNull(index, table, true) }}
-              className={`${timeRange(time, `${startingTimesSlot[index]}-${endingTimesSlot[index]}`) ? "active-tt-empty p-3" : "tt-empty"} min-h-[50px] w-full md:min-h-[90px] md:w-[10%] md:opacity-15`}
+              className={`${timeRange(time, `${startingTimesSlot[index]}-${endingTimesSlot[index]}`) ? "active-tt-empty p-3" : "tt-empty"} min-h-[50px] w-full md:min-h-[90px] md:w-[10%]`}
             >
               {timeRange(
                 time,

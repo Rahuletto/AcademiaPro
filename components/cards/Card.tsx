@@ -71,7 +71,7 @@ const Card = ({ percent, title, code, data, category, todayTable }: Props) => {
                     : styles.red
               }
             >
-              {margin}
+              {margin.toString().replace("-", "")}
             </span>
           </p>
         </td>
