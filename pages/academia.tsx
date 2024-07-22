@@ -135,41 +135,32 @@ export default function Academia() {
               )}
             </h2>
             <div className="table-responsive">
-              {userInfo && day && day.dayOrder.includes("No") ? (
-                <div className="flex h-[90px] w-full items-center justify-center rounded-lg bg-[#261717] text-2xl font-bold text-red">
-                  Holiday
-                </div>
-              ) : (
-                <table className="table-bordered flex w-full text-center md:table md:gap-1">
-                  <thead className="table-header-group">
-                    <TableHeader />
-                  </thead>
-                  {userInfo && todayTable && (
-                    <TimeTableComponent
-                      view={view}
-                      courses={courses}
-                      table={todayTable}
-                    />
-                  )}
-                </table>
-              )}
+              <table className="table-bordered flex w-full text-center md:table md:gap-1">
+                <thead className="table-header-group">
+                  <TableHeader />
+                </thead>
+                {todayTable && userInfo && (
+                  <TimeTableComponent
+                    view={view}
+                    courses={courses}
+                    table={todayTable}
+                  />
+                )}
+              </table>
             </div>
-            {day &&
-              !day.dayOrder.includes("No") &&
-              todayTable &&
-              courses?.[0] && (
-                <div
-                  onKeyDown={() => {}}
-                  onClick={() => setView((prev) => !prev)}
-                  className="mt-3 flex items-center justify-center gap-3 opacity-70"
-                >
-                  <button
-                    className={`${view ? "border-transparent bg-green" : "border-accent"} h-3 w-3 rounded-full border-2`}
-                    type="button"
-                  />{" "}
-                  {view ? "Hide" : "View"} classroom no.
-                </div>
-              )}
+            {courses?.[0] && (
+              <div
+                onKeyDown={() => {}}
+                onClick={() => setView((prev) => !prev)}
+                className="mt-3 flex items-center justify-center gap-3 opacity-70"
+              >
+                <button
+                  className={`${view ? "border-transparent bg-green" : "border-accent"} h-3 w-3 rounded-full border-2`}
+                  type="button"
+                />{" "}
+                {view ? "Hide" : "View"} classroom no.
+              </div>
+            )}
           </section>
 
           <section id="attendance" className="attendance">
