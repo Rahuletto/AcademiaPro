@@ -1,11 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-import runtimeCaching from "next-pwa/cache.js";
 import pwa from "next-pwa";
 
 const withPWA = pwa({
   dest: "public/serviceWorker",
-  runtimeCaching,
   register: true,
   disable: process.env.NODE_ENV === "development",
   skipWaiting: true,

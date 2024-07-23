@@ -13,6 +13,14 @@ const config: Config = {
       sans: ["var(--font-geist-sans)"],
       mono: ["var(--font-geist-mono)"],
     },
+    fontWeight: {
+      normal: '500',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      'extra-bold': '800',
+      black: '900',
+    },
     extend: {
       keyframes: {
         fadeIn: {

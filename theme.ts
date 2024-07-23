@@ -3,11 +3,13 @@ export const Themes = {
     background: {
       normal: "#11151B",
       light: "#1E232B",
-      dark: "#080E14",
+      dark: "#06090d",
       darker: "#04070B",
     },
 
-    button: "#12161C",
+    input: "rgba(255, 255, 255, 0.03)",
+
+    button: "#12161B",
     side: "#171D26",
     accent: "#B3B3D1",
     color: "#fefefe",
@@ -36,6 +38,8 @@ export const Themes = {
       dark: "#AEB7C1",
       darker: "#9BA9BA",
     },
+
+    input: "rgba(0, 0, 0, 0.05)",
 
     button: "#C2CCDD",
     side: "#AFBACA",
