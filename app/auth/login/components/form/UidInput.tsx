@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Dispatch, SetStateAction, RefObject, useState } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 
 export default function UidInput({
   uid,
