@@ -34,6 +34,7 @@ export default function Form() {
       const res = await response.json();
       if (res.cookies) {
         setError(2);
+        console.log(res.cookies);
         cookies.set("token", res.cookies);
         router.push("/academia");
       } else if (res.message) {
@@ -72,15 +73,15 @@ export default function Form() {
           error === -1
             ? "dark:bg-dark-warn-background border bg-light-warn-background dark:text-dark-warn-color text-light-warn-color dark:border-dark-warn-color border-light-warn-color"
             : error === 2
-            ? "dark:bg-dark-success-background border bg-light-success-background dark:text-dark-success-color text-light-success-color dark:border-dark-success-color border-light-success-color"
-            : error === 1
-            ? "dark:bg-dark-error-background border bg-light-error-background dark:text-dark-error-color text-light-error-color dark:border-dark-error-color border-light-error-color"
-            : ""
+              ? "dark:bg-dark-success-background border bg-light-success-background dark:text-dark-success-color text-light-success-color dark:border-dark-success-color border-light-success-color"
+              : error === 1
+                ? "dark:bg-dark-error-background border bg-light-error-background dark:text-dark-error-color text-light-error-color dark:border-dark-error-color border-light-error-color"
+                : ""
         }
         type="submit"
         onClick={handleLogin}
       >
-        {error === -1 ? "Authenticating" : "Login"}
+        {error === -1 ? "Authenticating" : error === 2 ? "Success" : "Login"}
       </Button>
     </form>
   );

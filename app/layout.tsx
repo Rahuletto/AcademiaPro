@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono";
 import { UserProvider } from "@/provider/UserProvider";
 
 import "./globals.css";
+import { DayProvider } from "@/provider/DayProvider";
 
 export const metadata: Metadata = {
   title: "AcademiaPro",
@@ -22,7 +23,9 @@ export default async function RootLayout({
       className={`h-screen ${GeistSans.variable} ${GeistMono.variable}`}
     >
       <UserProvider>
-        <body className="h-screen">{children}</body>
+        <DayProvider>
+          <body className="h-screen">{children}</body>
+        </DayProvider>
       </UserProvider>
     </html>
   );

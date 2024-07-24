@@ -16,8 +16,8 @@ export const Cookie = {
   set(name: string, value: string) {
     const exdate = new Date();
     exdate.setMonth(exdate.getMonth() + 3);
-    const c_value = escape(value);
-    document.cookie = name + "=" + c_value + ";secure";
+    const val = encodeURIComponent(value) + "; expires=" + exdate.toUTCString();
+    document.cookie = name + "=" + val + ";secure";
   },
 
   get(name: string): string | null {

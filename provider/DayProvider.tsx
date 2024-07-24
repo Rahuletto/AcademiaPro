@@ -1,26 +1,19 @@
 "use client";
-import { UserInfo } from "@/types/User";
 import { Cookie as cookies } from "@/utils/Cookies";
-import {
-  type ReactNode,
-  createContext,
-  useContext,
-  useState,
-  useCallback,
-} from "react";
+import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
-import Storage from "@/utils/Storage";
 import { ProscrapeURL } from "@/utils/URL";
+import { DayOrderResponse } from "@/utils/DayOrder";
 
-interface UserContextType {
-  user: UserInfo | null;
+interface DayContextType {
+  day: string | null;
   error: Error | null;
   isLoading: boolean;
-  mutate: () => Promise<void | UserInfo | null | undefined>;
+  mutate: () => Promise<void | DayOrderResponse | null | undefined>;
 }
 
-const UserContext = createContext<UserContextType>({
-  user: null,
+const DayContext = createContext<DayContextType>({
+  day: null,
   error: null,
   isLoading: false,
   mutate: async () => {},
@@ -39,7 +32,7 @@ const fetcher = async (url: string) => {
         Cookie: cookie,
         Connection: "keep-alive",
         "content-type": "application/json",
-        "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+        "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
       },
     });
 
@@ -51,11 +44,11 @@ const fetcher = async (url: string) => {
     }
 
     const data = await response.json();
-    if (!data || !data.user) {
+    if (!data || !data.date) {
       throw new Error("Invalid response format");
     }
 
-    return data.user;
+    return data;
   } catch (error) {
     if (error instanceof Error) {
       throw error;
@@ -64,41 +57,34 @@ const fetcher = async (url: string) => {
   }
 };
 
-export function useUser() {
-  return useContext(UserContext);
+export function useDay() {
+  return useContext(DayContext);
 }
 
-export function UserProvider({
+export function DayProvider({
   children,
-  initialUser,
+  initialDay,
 }: {
   children: ReactNode;
-  initialUser?: UserInfo | null;
+  initialDay?: DayOrderResponse | null;
 }) {
   const [retryCount, setRetryCount] = useState(0);
 
-  const getCachedUser = useCallback(
-    () => Storage.get<UserInfo | null>("user", null),
-    [],
-  );
-
   const {
-    data: user,
+    data: day,
     error,
     isValidating,
     mutate,
-  } = useSWR<UserInfo | null>(`${ProscrapeURL}/api/user`, fetcher, {
-    fallbackData: initialUser || getCachedUser(),
+  } = useSWR<DayOrderResponse | null>(`${ProscrapeURL}/api/dayorder`, fetcher, {
+    fallbackData: initialDay,
     revalidateOnFocus: false,
+    refreshInterval: 1000 * 60 * 60,
     revalidateOnReconnect: true,
     onSuccess: (data) => {
-      if (data) {
-        Storage.set("user", data);
-      }
       setRetryCount(0);
     },
     onError: (err) => {
-      console.error("Error fetching user data:", err);
+      console.error("Error fetching dayorder data:", err);
       if (retryCount < 3) {
         setTimeout(
           () => {
@@ -106,22 +92,20 @@ export function UserProvider({
           },
           5000 * (retryCount + 1),
         );
-      } else {
-        Storage.remove("user");
       }
     },
   });
 
   return (
-    <UserContext.Provider
+    <DayContext.Provider
       value={{
-        user: user || null,
+        day: day?.dayOrder || null,
         error: error || null,
         isLoading: isValidating,
         mutate,
       }}
     >
       {children}
-    </UserContext.Provider>
+    </DayContext.Provider>
   );
 }

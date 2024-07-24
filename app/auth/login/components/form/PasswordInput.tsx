@@ -1,16 +1,14 @@
 "use client";
 
-import React, { useState, RefObject, Dispatch,SetStateAction } from "react";
+import React, { useState, RefObject, Dispatch, SetStateAction } from "react";
 import { BsEyeSlashFill, BsEyeFill } from "react-icons/bs";
 
 export default function PasswordInput({
-
-    password,
-    setPassword
+  password,
+  setPassword,
 }: {
-
-    password: string;
-    setPassword: Dispatch<SetStateAction<string>>;
+  password: string;
+  setPassword: Dispatch<SetStateAction<string>>;
 }) {
   const [visible, setVisible] = useState(false);
   return (
