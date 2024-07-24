@@ -12,3 +12,19 @@ body {
     text-wrap: balance;
   }
 }
+
+:root {
+  --background: #0c1015;
+  --background-dark: #030609;
+  --background-darker: #04070b;
+  --background-light: #1b2129;
+  --buttons: #11151c;
+  --side-active: #171d26;
+  --accent: #b3b3d1;
+  --theory: #f3d86a;
+  --yellow: #ffca63;
+  --practical: #70fa70;
+  --green: #64f58d;
+  --red: #f75b5b;
+  --color: #d4d4d4;
+}

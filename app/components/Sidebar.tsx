@@ -9,58 +9,59 @@ export function Sidebar() {
   return (
     <>
       <div className="nav-hider" />
-      <div className="nav">
-        <div className="navbox">
-          <div className="nav-title">
+      <div className="w-full max-w-[300px] min-w-[200px] min-h-[95vh] flex flex-col sticky top-[12px] p-[22px] justify-between transition-[0.2s_cubic-bezier(0.65,_0.35,_0.17,_1)] pl-[32px] bg-background">
+        <div className="flex flex-col gap-[18px]">
+          <div className="flex items-center justify-between text-color">
             <h1>Academia</h1>
             <Link href="/docs.pdf">
-              <BiHelpCircle title="How to use it like a pro?" />
+              <BiHelpCircle className="text-xl" title="How to use it like a pro?" />
             </Link>
           </div>
 
-          <hr />
+          <hr className="border-backgroundDark" />
 
-          <div className="nav-buttons">
-            <Link className="h-button active" href="/academia#timetable">
-              Home
-              <FaBookOpen className="text-xl" />
-            </Link>
-
-            <Link className="h-button" href="/courses">
-              Course list
-              <FaGraduationCap className="text-lg" />
-            </Link>
-
-            <Link className="h-button" href="/calendar#today">
-              Calendar
-              <BsCalendar2WeekFill className="text-xl" />
-            </Link>
-
-            <Link className="h-button" href="/links">
-              Useful Links
-              <FaLink className="text-lg" />
-            </Link>
-
-            <hr />
-
+          <div className="flex flex-col gap-4 text-lg font-semibold">
             <Link
-              title="BetterLab"
-              style={{ color: "#FFCA63" }}
-              className="h-button"
-              id="blab"
-              target="_blank"
-              href="https://better-lab.vercel.app"
+              className="flex items-center gap-2 text-color hover:text-accent transition"
+              href="/academia#timetable"
             >
-              eLab
-              <HiLightningBolt className="text-lg" />
+              <FaBookOpen className="text-xl" />
+              Home
+            </Link>
+
+            <Link className="flex items-center gap-2 text-color hover:text-accent transition" href="/courses">
+              <FaGraduationCap className="text-xl" />
+              Course list
+            </Link>
+
+            <Link className="flex items-center gap-2 text-color hover:text-accent transition" href="/calendar#today">
+              <BsCalendar2WeekFill className="text-xl" />
+              Calendar
+            </Link>
+
+            <Link className="flex items-center gap-2 text-color hover:text-accent transition" href="/links">
+              <FaLink className="text-xl" />
+              Useful Links
             </Link>
           </div>
+
+          <hr className="border-backgroundDark" />
+
+          <Link
+            className="flex items-center gap-2 text-yellow hover:text-yellow transition"
+            title="BetterLab"
+            href="https://better-lab.vercel.app"
+            target="_blank"
+          >
+            <HiLightningBolt className="text-xl" />
+            eLab
+          </Link>
         </div>
         <div className="nav-foot"></div>
       </div>
 
-      <button type="button" name="Open navbar" className="open">
-        <TbMenu2 />
+      <button type="button" name="Open navbar" className="open text-color">
+        <TbMenu2 className="text-2xl" />
       </button>
     </>
   );
