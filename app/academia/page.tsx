@@ -1,5 +1,6 @@
 "use client";
 import DayOrder from "@/components/badges/Day";
+import Hours from "@/components/badges/Hours";
 import { useDay } from "@/provider/DayProvider";
 import { useUser } from "@/provider/UserProvider";
 import { useEffect, useState } from "react";
@@ -21,6 +22,7 @@ export default function Academia() {
         <h1>AcademiaPro</h1>
         {user ? <p>Logged in as: {user.name}</p> : <p>Not logged in</p>}
         <DayOrder />
+        <Hours />
       </div>
     );
 }

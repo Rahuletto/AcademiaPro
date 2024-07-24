@@ -2,8 +2,13 @@ import React from "react";
 import Form from "./components/Form";
 import { FaBookOpen } from "react-icons/fa";
 import Link from "@/components/Link";
+import { redirect } from "next/navigation";
+import { cookies } from "next/headers";
 
 export default function Login() {
+  const cookie = cookies().get("token");
+  if (cookie) redirect("/academia");
+
   return (
     <main className="w-screen h-screen flex items-center justify-center dark:bg-dark-background-normal bg-light-background-normal">
       <div className="dark:bg-dark-background-dark bg-light-background-dark md:h-[60vh] h-fit w-[80vw] justify-between items-start py-12 rounded-[48px] flex lg:flex-row flex-col gap-12 px-12">

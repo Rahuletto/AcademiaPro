@@ -6,6 +6,7 @@ import { UserProvider } from "@/provider/UserProvider";
 
 import "./globals.css";
 import { DayProvider } from "@/provider/DayProvider";
+import { TableProvider } from "@/provider/TimetableProvider";
 
 export const metadata: Metadata = {
   title: "AcademiaPro",
@@ -24,7 +25,9 @@ export default async function RootLayout({
     >
       <UserProvider>
         <DayProvider>
-          <body className="h-screen">{children}</body>
+          <TableProvider>
+            <body className="h-screen">{children}</body>
+          </TableProvider>
         </DayProvider>
       </UserProvider>
     </html>

@@ -3,7 +3,7 @@ import { Cookie as cookies } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import { ProscrapeURL } from "@/utils/URL";
-import { DayOrderResponse } from "@/utils/DayOrder";
+import { DayOrderResponse } from "@/types/DayOrder";
 
 interface DayContextType {
   day: string | null;
