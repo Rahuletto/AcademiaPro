@@ -86,46 +86,53 @@ export const constructNullStyles = (
   return base;
 };
 
-const TimeSlot: React.FC = React.memo(({ start, end }) => (
-  <div
-    style={{ fontSize: 6 }}
-    tw="flex items-center justify-center w-[10%] text-center font-semibold p-[0.1rem_0.5rem]"
-  >
-    {start} - {end}
-  </div>
-));
+const TimeSlot: React.FC<{ start: string; end: string }> = React.memo(
+  ({ start, end }) => (
+    <div
+      style={{ fontSize: 6 }}
+      tw="flex items-center justify-center w-[10%] text-center font-semibold p-[0.1rem_0.5rem]"
+    >
+      {start} - {end}
+    </div>
+  ),
+);
 TimeSlot.displayName = "TimeSlot";
 
-const SubjectCell: React.FC = React.memo(({ elem, i, j }) => {
-  const convertedElem = convertUnicode(elem);
-  const isOnline = convertedElem.includes("[Online]");
-  const truncatedName = truncateString(convertedElem.split("(")[0]);
+const SubjectCell: React.FC<{ elem: string; i: number; j: number }> =
+  React.memo(({ elem, i, j }) => {
+    const convertedElem = convertUnicode(elem);
+    const isOnline = convertedElem.includes("[Online]");
+    const truncatedName = truncateString(convertedElem.split("(")[0]);
 
-  return (
-    <td
-      tw="text-[#0a0d12] h-[40px] text-left p-[4px] w-full flex flex-col relative"
-      style={constructStyles(i, j, elem)}
-    >
-      {truncatedName}
-      {isOnline && (
-        <span
-          tw="absolute bottom-0.5 right-0.5 opacity-90 pt-[1px] px-0.5 flex items-center justify-center rounded-full bg-[rgba(0,0,0,0.1)]"
-          style={{ fontSize: 5 }}
-        >
-          Online
-        </span>
-      )}
-    </td>
-  );
-});
+    return (
+      <td
+        tw="text-[#0a0d12] h-[40px] text-left p-[4px] w-full flex flex-col relative"
+        style={constructStyles(i, j, elem)}
+      >
+        {truncatedName}
+        {isOnline && (
+          <span
+            tw="absolute bottom-0.5 right-0.5 opacity-90 pt-[1px] px-0.5 flex items-center justify-center rounded-full bg-[rgba(0,0,0,0.1)]"
+            style={{ fontSize: 5 }}
+          >
+            Online
+          </span>
+        )}
+      </td>
+    );
+  });
 SubjectCell.displayName = "SubjectCell";
 
-const EmptyCell: React.FC = React.memo(({ i, j, subjects }) => (
+const EmptyCell: React.FC<{
+  i: number;
+  j: number;
+  subjects: (string | undefined)[];
+}> = React.memo(({ i, j, subjects }) => (
   <div tw="opacity-15 w-[10%]" style={constructNullStyles(i, j, subjects)} />
 ));
 EmptyCell.displayName = "EmptyCell";
 
-const TimetableGen: React.FC = ({ body }) => {
+const TimetableGen: React.FC<{ body: TimeTableResponse }> = ({ body }) => {
   const timeSlots = useMemo(
     () =>
       body?.table[0].subjects.map((_e, i) => (

@@ -2,7 +2,10 @@ import React, { ComponentProps } from "react";
 import { Link as ALink } from "next-view-transitions";
 import type NextLink from "next/link";
 
-export default function Link({ children, ...props }: ComponentProps) {
+export default function Link({
+  children,
+  ...props
+}: ComponentProps<typeof NextLink>) {
   return (
     <ALink
       {...props}

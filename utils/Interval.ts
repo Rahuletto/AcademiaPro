@@ -1,7 +1,7 @@
 import { useRef, useEffect, MutableRefObject } from "react";
 
 export function useInterval(callback: Function, delay: number | null) {
-  const intRef: MutableRefObject = useRef();
+  const intRef: MutableRefObject<number | NodeJS.Timer | undefined> = useRef();
   const cb = useRef(callback);
 
   useEffect(() => {
