@@ -15,14 +15,14 @@ interface SubjectCellProps {
   index: number;
 }
 
-const SubjectCell: React.FC = ({
+function SubjectCell({
   subject,
   type,
   isActive,
   inRange,
   nullStyler,
   index,
-}) => {
+}: SubjectCellProps) {
   const baseClasses = `
     group relative h-auto min-h-24 w-[10%] max-w-[10%] border-r 
     border-light-background-dark p-2 text-xs font-semibold 
@@ -69,7 +69,7 @@ const SubjectCell: React.FC = ({
       </span>
     </div>
   );
-};
+}
 
 export default function Tabler() {
   const { timetable } = useTimetable();
