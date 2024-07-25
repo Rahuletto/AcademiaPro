@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "./SidebarLink";
 import { TbMenu2 } from "react-icons/tb";
 import { BiHelpCircle } from "react-icons/bi";
 import { FaBookOpen, FaGraduationCap, FaLink } from "react-icons/fa6";
@@ -12,7 +12,7 @@ export function Sidebar() {
       <div className="w-full max-w-[300px] min-w-[200px] min-h-[95vh] flex flex-col sticky top-[12px] p-[22px] justify-between transition-[0.2s_cubic-bezier(0.65,_0.35,_0.17,_1)] pl-[32px] bg-background">
         <div className="flex flex-col gap-[18px]">
           <div className="flex items-center justify-between text-color">
-            <h1>Academia</h1>
+            <h1 className="text-3xl font-semibold">AcademiaPro</h1>
             <Link href="/docs.pdf">
               <BiHelpCircle className="text-xl" title="How to use it like a pro?" />
             </Link>
@@ -20,26 +20,23 @@ export function Sidebar() {
 
           <hr className="border-backgroundDark" />
 
-          <div className="flex flex-col gap-4 text-lg font-semibold">
-            <Link
-              className="flex items-center gap-2 text-color hover:text-accent transition"
-              href="/academia#timetable"
-            >
+          <div className="flex flex-col gap-2 text-md font-semibold">
+            <Link href="/academia">
               <FaBookOpen className="text-xl" />
               Home
             </Link>
 
-            <Link className="flex items-center gap-2 text-color hover:text-accent transition" href="/courses">
+            <Link href="/courses">
               <FaGraduationCap className="text-xl" />
               Course list
             </Link>
 
-            <Link className="flex items-center gap-2 text-color hover:text-accent transition" href="/calendar#today">
+            <Link href="/calendar#today">
               <BsCalendar2WeekFill className="text-xl" />
               Calendar
             </Link>
 
-            <Link className="flex items-center gap-2 text-color hover:text-accent transition" href="/links">
+            <Link href="/links">
               <FaLink className="text-xl" />
               Useful Links
             </Link>
@@ -48,7 +45,7 @@ export function Sidebar() {
           <hr className="border-backgroundDark" />
 
           <Link
-            className="flex items-center gap-2 text-yellow hover:text-yellow transition"
+            className="text-light-warn-color dark:text-dark-warn-color font-semibold hover:bg-light-warn-background dark:hover:bg-dark-warn-background hover:text-light-warn-color dark:hover:text-dark-warn-color "
             title="BetterLab"
             href="https://better-lab.vercel.app"
             target="_blank"
@@ -59,10 +56,6 @@ export function Sidebar() {
         </div>
         <div className="nav-foot"></div>
       </div>
-
-      <button type="button" name="Open navbar" className="open text-color">
-        <TbMenu2 className="text-2xl" />
-      </button>
     </>
   );
 }
