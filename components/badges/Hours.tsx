@@ -1,7 +1,7 @@
 import { useDay } from "@/provider/DayProvider";
 import { useTimetable } from "@/provider/TimetableProvider";
 import React from "react";
-import { MdErrorOutline } from "react-icons/md";
+import { BiError } from "react-icons/bi";
 import { RiLoader3Fill } from "react-icons/ri";
 
 export default function Hours({ ...props }) {
@@ -11,7 +11,7 @@ export default function Hours({ ...props }) {
   return (
     <div
       role="contentinfo"
-      className={`w-fit cursor-default rounded-full px-3 py-1 ${
+      className={`flex w-fit animate-fadeIn cursor-default items-center justify-center rounded-full px-3 py-1 ${
         error || !day
           ? "bg-light-error-background dark:bg-dark-error-background"
           : "bg-light-side dark:bg-dark-side"
@@ -23,7 +23,7 @@ export default function Hours({ ...props }) {
           className="animate-spin font-medium text-light-accent dark:text-dark-accent"
         />
       ) : error || tableError || !day ? (
-        <MdErrorOutline
+        <BiError
           title="*crashes*"
           className="font-medium text-light-error-color dark:text-dark-error-color"
         />

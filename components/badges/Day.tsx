@@ -1,6 +1,6 @@
 import { useDay } from "@/provider/DayProvider";
 import React from "react";
-import { MdErrorOutline } from "react-icons/md";
+import { BiError } from "react-icons/bi";
 import { RiLoader3Fill } from "react-icons/ri";
 
 export default function DayOrder({ ...props }) {
@@ -8,7 +8,7 @@ export default function DayOrder({ ...props }) {
   return (
     <div
       role="contentinfo"
-      className={`w-fit cursor-default rounded-full px-3 py-1 ${
+      className={`w-fit animate-fadeIn cursor-default rounded-full px-3 py-1 ${
         error || !day || day.includes("No")
           ? "bg-light-error-background dark:bg-dark-error-background"
           : "bg-light-side dark:bg-dark-side"
@@ -20,7 +20,7 @@ export default function DayOrder({ ...props }) {
           className="animate-spin font-medium text-light-accent dark:text-dark-accent"
         />
       ) : error || !day ? (
-        <MdErrorOutline
+        <BiError
           title="*crashes*"
           className="font-medium text-light-error-color dark:text-dark-error-color"
         />
