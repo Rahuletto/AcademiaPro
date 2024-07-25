@@ -1,4 +1,6 @@
 export const Themes = {
+  theory: "#F2D869",
+  practical: "#69E069",
   dark: {
     background: {
       normal: "#11151B",

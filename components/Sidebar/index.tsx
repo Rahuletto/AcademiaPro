@@ -1,18 +1,16 @@
 import Link from "./SidebarLink";
-import { TbMenu2 } from "react-icons/tb";
-import { BiHelpCircle } from "react-icons/bi";
 import { FaBookOpen, FaGraduationCap, FaLink } from "react-icons/fa6";
 import { HiLightningBolt } from "react-icons/hi";
 import { BsCalendar2WeekFill } from "react-icons/bs";
 import DayOrder from "../badges/Day";
 import Hours from "../badges/Hours";
+import { ReactNode } from "react";
 
-export function Sidebar() {
+export function Sidebar({ children }: { children: ReactNode }) {
   return (
     <>
-      <div className="nav-hider" />
-      <div className="bg-background sticky top-[12px] flex min-h-[95vh] w-full min-w-[200px] max-w-[300px] flex-col justify-between p-[22px] pl-[32px] transition-[0.2s_cubic-bezier(0.65,_0.35,_0.17,_1)]">
-        <div className="flex flex-col gap-[18px]">
+      <div className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-3 transition duration-300">
+        <div className="ml-5 flex w-[300px] flex-col gap-4 py-4">
           <div className="text-color flex items-center justify-between">
             <h1 className="text-3xl font-semibold">AcademiaPro</h1>
           </div>
@@ -55,6 +53,9 @@ export function Sidebar() {
             <HiLightningBolt className="text-xl" />
             eLab
           </Link>
+        </div>
+        <div className="m-0.5 h-full w-full animate-fadeIn overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-dark p-4 md:p-7 dark:bg-dark-background-dark">
+          {children}
         </div>
       </div>
     </>

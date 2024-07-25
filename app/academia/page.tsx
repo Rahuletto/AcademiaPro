@@ -1,10 +1,8 @@
 "use client";
-import DayOrder from "@/components/badges/Day";
-import Hours from "@/components/badges/Hours";
-import { useDay } from "@/provider/DayProvider";
 import { useUser } from "@/provider/UserProvider";
 import { useEffect, useState } from "react";
 import { Sidebar } from "../../components/Sidebar";
+import Timetable from "./components/Timetable";
 
 export default function Academia() {
   const { user, isLoading, error: userError } = useUser();
@@ -20,9 +18,10 @@ export default function Academia() {
     return null;
   } else
     return (
-      <div className="dark:bg-dark-background-normal bg-light-background-normal h-screen w-full dark:text-dark-color text-light-color">
-        <Sidebar />
-  
+      <div className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
+        <Sidebar>
+          <Timetable />
+        </Sidebar>
       </div>
     );
 }
