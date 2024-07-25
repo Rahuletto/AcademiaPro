@@ -4,33 +4,33 @@ import React from "react";
 import { MdErrorOutline } from "react-icons/md";
 import { RiLoader3Fill } from "react-icons/ri";
 
-export default function Hours() {
+export default function Hours({ ...props }) {
   const { day, isLoading, error } = useDay();
   const { timetable, isLoading: tableLoad, error: tableError } = useTimetable();
 
   return (
     <div
       role="contentinfo"
-      className={`px-4 py-2 rounded-full w-fit cursor-default ${
+      className={`w-fit cursor-default rounded-full px-4 py-2 ${
         error || !day
-          ? "dark:bg-dark-error-background bg-light-error-background"
-          : "dark:bg-dark-side bg-light-side"
+          ? "bg-light-error-background dark:bg-dark-error-background"
+          : "bg-light-side dark:bg-dark-side"
       }`}
     >
       {isLoading || tableLoad ? (
         <RiLoader3Fill
           title="loading"
-          className="animate-spin dark:text-dark-accent text-light-accent font-medium"
+          className="animate-spin font-medium text-light-accent dark:text-dark-accent"
         />
       ) : error || tableError || !day ? (
         <MdErrorOutline
           title="*crashes*"
-          className="dark:text-dark-error-color text-light-error-color font-medium"
+          className="font-medium text-light-error-color dark:text-dark-error-color"
         />
       ) : (
         <span
           title={`Day Order: ${day}`}
-          className="dark:text-dark-accent text-light-accent font-medium text-base"
+          className="text-base font-medium text-light-accent dark:text-dark-accent"
         >
           {!day.includes("No") &&
             timetable

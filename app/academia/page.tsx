@@ -22,8 +22,7 @@ export default function Academia() {
     return (
       <div className="dark:bg-dark-background-normal bg-light-background-normal h-screen w-full dark:text-dark-color text-light-color">
         <Sidebar />
-        <DayOrder />
-        <Hours />
+  
       </div>
     );
 }
