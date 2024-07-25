@@ -15,20 +15,14 @@ export function Sidebar() {
         <div className="flex flex-col gap-[18px]">
           <div className="text-color flex items-center justify-between">
             <h1 className="text-3xl font-semibold">AcademiaPro</h1>
-            <Link href="/docs.pdf">
-              <BiHelpCircle
-                className="*: text-lg"
-                title="How to use it like a pro?"
-              />
-            </Link>
           </div>
-          <div className="flex justify-between">
+          <div className="flex gap-2">
             <DayOrder />
             <Hours />
           </div>
-          <hr className="border-backgroundDark" />
+          <hr className="border-t-light-side dark:border-t-dark-side" />
 
-          <div className="text-md flex flex-col gap-2 font-semibold">
+          <div className="text-md flex flex-col gap-1 font-semibold">
             <Link href="/academia">
               <FaBookOpen className="text-xl" />
               Home
@@ -50,7 +44,7 @@ export function Sidebar() {
             </Link>
           </div>
 
-          <hr className="border-backgroundDark" />
+          <hr className="border-t-light-side dark:border-t-dark-side" />
 
           <Link
             className="font-semibold text-light-warn-color hover:bg-light-warn-background hover:text-light-warn-color dark:text-dark-warn-color dark:hover:bg-dark-warn-background dark:hover:text-dark-warn-color"
@@ -62,7 +56,6 @@ export function Sidebar() {
             eLab
           </Link>
         </div>
-        <div className="nav-foot"></div>
       </div>
     </>
   );

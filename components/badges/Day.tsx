@@ -8,7 +8,7 @@ export default function DayOrder({ ...props }) {
   return (
     <div
       role="contentinfo"
-      className={`w-fit cursor-default rounded-full px-4 py-2 ${
+      className={`w-fit cursor-default rounded-full px-3 py-1 ${
         error || !day || day.includes("No")
           ? "bg-light-error-background dark:bg-dark-error-background"
           : "bg-light-side dark:bg-dark-side"
@@ -27,7 +27,7 @@ export default function DayOrder({ ...props }) {
       ) : day.includes("No") ? (
         <span
           title={`Holiday`}
-          className="text-base font-medium text-light-error-color dark:text-dark-error-color"
+          className="text-md font-medium text-light-error-color dark:text-dark-error-color"
         >
           Holiday
         </span>

@@ -11,7 +11,7 @@ export default function Hours({ ...props }) {
   return (
     <div
       role="contentinfo"
-      className={`w-fit cursor-default rounded-full px-4 py-2 ${
+      className={`w-fit cursor-default rounded-full px-3 py-1 ${
         error || !day
           ? "bg-light-error-background dark:bg-dark-error-background"
           : "bg-light-side dark:bg-dark-side"
@@ -30,7 +30,7 @@ export default function Hours({ ...props }) {
       ) : (
         <span
           title={`Day Order: ${day}`}
-          className="text-base font-medium text-light-accent dark:text-dark-accent"
+          className="text-md font-medium text-light-accent dark:text-dark-accent"
         >
           {!day.includes("No") &&
             timetable
