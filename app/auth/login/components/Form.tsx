@@ -58,7 +58,7 @@ export default function Form() {
       }}
     >
       {error === 1 && (
-        <p className="px-4 py-2 dark:bg-dark-error-background bg-light-error-background rounded-2xl dark:text-dark-error-color text-light-error-color">
+        <p className="rounded-2xl bg-light-error-background px-4 py-2 text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
           {message}
         </p>
       )}
@@ -71,11 +71,11 @@ export default function Form() {
         disabled={!uid || !pass}
         className={
           error === -1
-            ? "dark:bg-dark-warn-background border bg-light-warn-background dark:text-dark-warn-color text-light-warn-color dark:border-dark-warn-color border-light-warn-color"
+            ? "border border-light-warn-color bg-light-warn-background text-light-warn-color dark:border-dark-warn-color dark:bg-dark-warn-background dark:text-dark-warn-color"
             : error === 2
-              ? "dark:bg-dark-success-background border bg-light-success-background dark:text-dark-success-color text-light-success-color dark:border-dark-success-color border-light-success-color"
+              ? "border border-light-success-color bg-light-success-background text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
               : error === 1
-                ? "dark:bg-dark-error-background border bg-light-error-background dark:text-dark-error-color text-light-error-color dark:border-dark-error-color border-light-error-color"
+                ? "border border-light-error-color bg-light-error-background text-light-error-color dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color"
                 : ""
         }
         type="submit"

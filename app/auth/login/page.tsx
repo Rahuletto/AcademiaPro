@@ -10,22 +10,24 @@ export default function Login() {
   if (cookie) redirect("/academia");
 
   return (
-    <main className="w-screen h-screen flex items-center justify-center dark:bg-dark-background-normal bg-light-background-normal">
-      <div className="dark:bg-dark-background-dark bg-light-background-dark md:h-[60vh] h-fit w-[80vw] justify-between items-start py-12 rounded-[48px] flex lg:flex-row flex-col gap-12 px-12">
-        <div className="md:h-full h-fit flex max-w-[400px] flex-col justify-between">
-          <div className="flex flex-col gap-3">
-            <div className="flex flex-row gap-5 items-center dark:text-dark-accent text-light-accent">
-              <h1 className="text-4xl font-semibold">AcademiaPro</h1>
-              <FaBookOpen className="text-4xl" />
+    <main className="flex h-screen w-screen items-center justify-center bg-light-background-normal dark:bg-dark-background-normal">
+      <div className="flex h-fit w-[90vw] flex-col items-center justify-between gap-6 rounded-[24px] bg-light-background-dark px-8 py-8 sm:px-6 md:h-[60vh] lg:flex-row dark:bg-dark-background-dark">
+        <div className="flex h-fit max-w-[400px] flex-col justify-between md:h-full">
+          <div className="flex flex-col items-center gap-2 lg:items-start">
+            <div className="flex flex-row items-center gap-3 text-light-accent dark:text-dark-accent">
+              <h1 className="text-2xl font-semibold md:text-4xl">
+                AcademiaPro
+              </h1>
+              <FaBookOpen className="text-2xl md:text-4xl" />
             </div>
-            <p className="text-md dark:text-dark-color text-light-color font-medium opacity-60 text-left">
+            <p className="md:text-md text-center text-sm font-medium text-light-color opacity-60 lg:text-left dark:text-dark-color">
               University data, beautifully presented at your fingertips
             </p>
           </div>
-          <div className="flex md:items-start md:justify-start md:w-full w-screen left-0 md:static items-center justify-center absolute bottom-12">
+          <div className="absolute bottom-8 left-0 flex w-screen items-center justify-center md:static md:w-full md:items-start md:justify-start">
             <Link
               secondary
-              className="md:border-0 md:dark:bg-dark-background-normal md:bg-light-background-normal dark:bg-dark-button bg-light-background-normal border-2 dark:border-dark-accent border-light-accent py-2 text-lg"
+              className="text-md border-2 border-light-accent bg-light-background-normal py-2 md:border-0 md:bg-light-background-normal md:text-lg dark:border-dark-accent dark:bg-dark-button md:dark:bg-dark-background-normal"
               href="https://better-lab.vercel.app"
               title="Redirect to Better-Lab"
               target="_blank"
@@ -34,7 +36,9 @@ export default function Login() {
             </Link>
           </div>
         </div>
-        <Form />
+        <div className="flex w-full justify-center">
+          <Form />
+        </div>
       </div>
     </main>
   );
