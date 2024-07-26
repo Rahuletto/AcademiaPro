@@ -1,5 +1,5 @@
-import React, { useMemo } from "react";
-import type { TimeTableResponse } from "@/types/Timetable";
+import React from "react";
+import type { Table } from "@/types/Timetable";
 import { truncateString, convertUnicode } from "@/utils/Convert";
 import { Time, timeConvert } from "@/utils/Times";
 import type { CSSProperties } from "react";
@@ -86,86 +86,55 @@ export const constructNullStyles = (
   return base;
 };
 
-const TimeSlot: React.FC<{ start: string; end: string }> = React.memo(
-  ({ start, end }) => (
-    <div
-      style={{ fontSize: 6 }}
-      tw="flex items-center justify-center w-[10%] text-center font-semibold p-[0.1rem_0.5rem]"
-    >
-      {start} - {end}
-    </div>
-  ),
-);
-TimeSlot.displayName = "TimeSlot";
-
-const SubjectCell: React.FC<{ elem: string; i: number; j: number }> =
-  React.memo(({ elem, i, j }) => {
-    const convertedElem = convertUnicode(elem);
-    const isOnline = convertedElem.includes("[Online]");
-    const truncatedName = truncateString(convertedElem.split("(")[0]);
-
-    return (
-      <td
-        tw="text-[#0a0d12] h-[40px] text-left p-[4px] w-full flex flex-col relative"
-        style={constructStyles(i, j, elem)}
-      >
-        {truncatedName}
-        {isOnline && (
-          <span
-            tw="absolute bottom-0.5 right-0.5 opacity-90 pt-[1px] px-0.5 flex items-center justify-center rounded-full bg-[rgba(0,0,0,0.1)]"
-            style={{ fontSize: 5 }}
-          >
-            Online
-          </span>
-        )}
-      </td>
-    );
-  });
-SubjectCell.displayName = "SubjectCell";
-
-const EmptyCell: React.FC<{
-  i: number;
-  j: number;
-  subjects: (string | undefined)[];
-}> = React.memo(({ i, j, subjects }) => (
-  <div tw="opacity-15 w-[10%]" style={constructNullStyles(i, j, subjects)} />
-));
-EmptyCell.displayName = "EmptyCell";
-
-const TimetableGen: React.FC<{ body: TimeTableResponse }> = ({ body }) => {
-  const timeSlots = useMemo(
-    () =>
-      body?.table[0].subjects.map((_e, i) => (
-        <TimeSlot
-          key={`timeslot-${i}`}
-          start={timeConvert(Time.start[i])}
-          end={timeConvert(Time.end[i])}
-        />
-      )),
-    [body?.table[0].subjects],
-  );
-
+export default function TimetableGen({ body }: { body: Table[] }) {
   return (
     <div
       tw="bg-[#0a0d12] flex items-center justify-center h-screen w-screen"
-      style={{ transform: "scale(3.8)" }}
+      style={{
+        transform: "scale(3.8)",
+      }}
     >
       <div tw="m-0 w-[610px] flex flex-col bg-[#12171e] rounded-[8px] rounded-t-[14px] p-[2px]">
-        <div tw="flex text-white font-bold h-[20px]">{timeSlots}</div>
+        <div tw="flex text-white font-bold h-[20px]">
+          {body?.[0].subjects.map((_e, i) => (
+            <div
+              key={`timeslot-${i}`}
+              style={{ fontSize: 6 }}
+              tw="flex items-center justify-center w-[10%] text-center font-semibold p-[0.1rem_0.5rem]"
+            >
+              {timeConvert(Time.start[i])} - {timeConvert(Time.end[i])}
+            </div>
+          ))}
+        </div>
         <div tw="flex flex-col bg-[#04070b] rounded-[6px]">
-          {body?.table.map((row, i) => (
+          {body?.map((row, i) => (
             <div tw="flex" key={i}>
               {row.subjects.map((elem, j) =>
                 elem ? (
                   <div tw="flex w-[10%] border-0" key={`table-${i}-${j}`}>
-                    <SubjectCell elem={elem} i={i} j={j} />
+                    <td
+                      tw="text-[#0a0d12] h-[40px] text-left p-[4px] w-full flex flex-col relative"
+                      style={constructStyles(i, j, elem)}
+                    >
+                      {truncateString(convertUnicode(elem).split("(")[0])}
+                      {convertUnicode(elem).includes("[Online]") && (
+                        <span
+                          tw="absolute bottom-0.5 right-0.5 opacity-90 px-0.5 flex items-center justify-center rounded-full bg-[rgba(0,0,0,0.1)]"
+                          style={{ fontSize: 5 }}
+                        >
+                          Online
+                        </span>
+                      )}{" "}
+                    </td>
                   </div>
                 ) : (
-                  <EmptyCell
-                    key={`empty-${i}-${j}`}
-                    i={i}
-                    j={j}
-                    subjects={row.subjects}
+                  <div
+                    key={i}
+                    tw="opacity-15 w-[10%]"
+                    style={{
+                      ...constructNullStyles(i, j, row.subjects),
+                      border: "0.3px solid #12171e",
+                    }}
                   />
                 ),
               )}
@@ -175,6 +144,4 @@ const TimetableGen: React.FC<{ body: TimeTableResponse }> = ({ body }) => {
       </div>
     </div>
   );
-};
-
-export default TimetableGen;
+}

@@ -13,7 +13,7 @@ export default function Timetable() {
       <div className="flex items-center gap-4">
         <h1 className="text-2xl font-semibold">Timetable</h1>
         <Link
-          href="/generate"
+          href="/timetable"
           secondary
           className="flex items-center justify-center text-sm text-light-accent dark:text-dark-accent"
         >
