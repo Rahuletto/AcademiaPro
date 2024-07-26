@@ -116,6 +116,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
 
         <OpenButton mobile isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
+      <div id="dialog-root" />
     </>
   );
 }
