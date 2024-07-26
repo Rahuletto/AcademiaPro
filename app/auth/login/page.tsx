@@ -6,8 +6,8 @@ import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 
 export default function Login() {
-  const cookie = cookies().get("token");
-  if (cookie) redirect("/academia");
+  // const cookie = cookies().get("token");
+  // if (cookie) redirect("/academia");
 
   return (
     <main className="flex h-screen w-screen items-center justify-center bg-light-background-normal dark:bg-dark-background-normal">

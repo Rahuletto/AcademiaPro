@@ -5,7 +5,6 @@ import { Sidebar } from "../../components/Sidebar";
 import Timetable from "./components/Timetable";
 
 export default function Academia() {
-  const { user, isLoading, error: userError } = useUser();
 
   const [isMounted, setIsMounted] = useState(false);
 

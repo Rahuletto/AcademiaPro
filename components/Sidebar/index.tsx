@@ -7,6 +7,7 @@ import DayOrder from "../badges/Day";
 import Hours from "../badges/Hours";
 import ThemeToggle from "./ThemeToggle";
 import OpenButton from "./OpenButton";
+import ProfileBadge from "./ProfileBadge";
 
 export function Sidebar({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(true);
@@ -30,6 +31,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
       ref.current.addEventListener("mouseenter", handleMouseEnter);
 
       return () => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         ref.current?.removeEventListener("mouseenter", handleMouseEnter);
       };
     }
@@ -97,6 +99,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
             <HiLightningBolt className="text-xl" />
             eLab
           </Link>
+          <ProfileBadge />
           <OpenButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
 
@@ -110,6 +113,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
             {children}
           </div>
         </div>
+
         <OpenButton mobile isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </>
