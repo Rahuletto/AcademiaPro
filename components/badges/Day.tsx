@@ -3,7 +3,13 @@ import React from "react";
 import { BiError } from "react-icons/bi";
 import { RiLoader3Fill } from "react-icons/ri";
 
-export default function DayOrder({ ...props }) {
+export default function DayOrder({
+  mini,
+  ...props
+}: {
+  [x: string]: any;
+  mini?: boolean;
+}) {
   const { day, isLoading, error } = useDay();
   return (
     <div
@@ -34,9 +40,10 @@ export default function DayOrder({ ...props }) {
       ) : (
         <span
           title={`Day Order: ${day}`}
-          className="text-base font-medium text-light-accent dark:text-dark-accent"
+          className={`${mini ? "flex h-6 w-2 items-center justify-center text-sm" : "text-base"} font-medium text-light-accent dark:text-dark-accent`}
         >
-          Day Order: {day}
+          {mini ? "" : "Day Order: "}
+          {day}
         </span>
       )}
     </div>

@@ -1,21 +1,18 @@
 import { useState, ReactNode, useEffect, useRef } from "react";
 import Link from "./SidebarLink";
-import {
-  FaAnglesLeft,
-  FaAnglesRight,
-  FaBookOpen,
-  FaGraduationCap,
-  FaLink,
-} from "react-icons/fa6";
+import { FaBookOpen, FaGraduationCap, FaLink } from "react-icons/fa6";
 import { HiLightningBolt } from "react-icons/hi";
 import { BsCalendar2WeekFill } from "react-icons/bs";
 import DayOrder from "../badges/Day";
 import Hours from "../badges/Hours";
+import ThemeToggle from "./ThemeToggle";
+import OpenButton from "./OpenButton";
 
 export function Sidebar({ children }: { children: ReactNode }) {
+  const [isOpen, setIsOpen] = useState(true);
+
   const ref = useRef<HTMLDivElement>(null);
   const content = useRef<HTMLDivElement>(null);
-  const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
     if (ref.current && !isOpen) {
@@ -43,26 +40,31 @@ export function Sidebar({ children }: { children: ReactNode }) {
       <div className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
         <div
           ref={ref}
-          className={`fixed left-0 top-0 flex h-full transform flex-col gap-2 bg-light-background-light p-4 text-white transition-transform duration-300 dark:bg-dark-background-normal ${
+          className={`fixed left-0 top-0 flex h-full transform flex-col gap-2 bg-light-background-normal p-4 text-white transition-transform duration-300 dark:bg-dark-background-normal ${
             isOpen ? "translate-x-0" : "-translate-x-96 lg:-translate-x-56"
           } w-[310px] p-8`}
         >
-          {isOpen && (
-            <>
-              <div>
-                <div className="text-color flex items-center justify-between">
-                  <h1 className="text-3xl font-semibold">AcademiaPro</h1>
-                </div>
-                <div className="my-4 flex gap-2">
-                  <DayOrder />
-                  <Hours />
-                </div>
-              </div>
-              <hr className="border-t-light-side dark:border-t-dark-side" />
-            </>
+          <div
+            className={`transition duration-200 ${isOpen ? "opacity-100" : "opacity-0"}`}
+          >
+            <div className="text-color flex items-center justify-between text-light-color dark:text-dark-color">
+              <h1 className="text-3xl font-semibold">AcademiaPro</h1>
+              <ThemeToggle />
+            </div>
+            <div className="my-4 flex gap-2">
+              <DayOrder />
+              <Hours />
+            </div>
+          </div>
+          {!isOpen && (
+            <DayOrder
+              mini
+              className="fixed right-9 flex items-center justify-center"
+            />
           )}
+          <hr className="border-t-light-side dark:border-t-dark-side" />
 
-          <div className="text-md flex flex-col gap-2 font-semibold">
+          <div className="text-md flex flex-col gap-2 font-semibold text-light-color dark:text-dark-color">
             <Link href="/academia">
               <FaBookOpen className="text-xl" />
               Home
@@ -95,23 +97,11 @@ export function Sidebar({ children }: { children: ReactNode }) {
             <HiLightningBolt className="text-xl" />
             eLab
           </Link>
-
-          <button
-            type="button"
-            name="Open navbar"
-            className={`fixed bottom-5 hidden rounded-full p-3 lg:block ${isOpen ? "right-5 bg-light-error-background dark:bg-dark-error-background" : "right-7 bg-transparent"}`}
-            onClick={() => setIsOpen((prev) => !prev)}
-          >
-            {isOpen ? (
-              <FaAnglesLeft className="text-xl dark:text-dark-error-color" />
-            ) : (
-              <FaAnglesRight className="text-xl" />
-            )}
-          </button>
+          <OpenButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
 
         <div
-          className={`fixed h-full max-h-[98vh] max-w-[96vw] w-full flex-1 transform duration-300 md:relative md:w-full ${isOpen ? "ml-[300px]" : "-ml-1 lg:ml-[55px]"}`}
+          className={`fixed h-full max-h-[98vh] w-full max-w-[96vw] flex-1 transform duration-300 md:relative md:w-full ${isOpen ? "ml-[300px]" : "-ml-1 lg:ml-[55px]"}`}
         >
           <div
             ref={content}
@@ -120,18 +110,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
             {children}
           </div>
         </div>
-        <button
-          type="button"
-          name="Open navbar"
-          className={`fixed bottom-5 rounded-full p-3 lg:hidden ${isOpen ? "right-5 bg-light-error-background dark:bg-dark-error-background" : "right-5 bg-transparent"}`}
-          onClick={() => setIsOpen((prev) => !prev)}
-        >
-          {isOpen ? (
-            <FaAnglesLeft className="text-xl dark:text-dark-error-color" />
-          ) : (
-            <FaAnglesRight className="text-xl" />
-          )}
-        </button>
+        <OpenButton mobile isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
     </>
   );

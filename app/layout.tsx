@@ -7,6 +7,7 @@ import { UserProvider } from "@/provider/UserProvider";
 import "./globals.css";
 import { DayProvider } from "@/provider/DayProvider";
 import { TableProvider } from "@/provider/TimetableProvider";
+import { ThemeProvider } from "@/provider/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "AcademiaPro",
@@ -23,13 +24,15 @@ export default async function RootLayout({
       lang="en"
       className={`h-screen ${GeistSans.variable} ${GeistMono.variable}`}
     >
-      <UserProvider>
-        <DayProvider>
-          <TableProvider>
-            <body className="h-screen">{children}</body>
-          </TableProvider>
-        </DayProvider>
-      </UserProvider>
+      <ThemeProvider>
+        <UserProvider>
+          <DayProvider>
+            <TableProvider>
+              <body className="h-screen">{children}</body>
+            </TableProvider>
+          </DayProvider>
+        </UserProvider>
+      </ThemeProvider>
     </html>
   );
 }
