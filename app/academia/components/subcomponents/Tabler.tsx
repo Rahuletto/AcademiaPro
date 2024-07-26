@@ -24,11 +24,11 @@ function SubjectCell({
   index,
 }: SubjectCellProps) {
   const baseClasses = `
-    group relative h-auto min-h-24 w-[10%] max-w-[10%] border-r 
-    border-light-background-dark p-2 text-xs font-semibold 
+    group relative h-auto lg:min-h-24 min-h-16 lg:w-[10%] lg:max-w-[10%] w-full lg:border-r border-b
+    border-light-background-dark p-2 lg:pb-2 pb-8 text-xs font-semibold 
     text-light-background-darker dark:border-dark-background-dark 
     dark:text-dark-background-darker
-    ${index === 0 ? "rounded-l-xl" : index === 9 ? "rounded-r-xl" : ""}
+    ${index === 0 ? "lg:rounded-none lg:rounded-l-xl rounded-t-xl" : index === 9 ? "lg:rounded-none lg:rounded-r-xl rounded-b-xl" : ""}
     ${type === "Theory" ? "bg-theory" : type === "Practical" ? "bg-practical" : ""}
   `;
 
@@ -100,7 +100,7 @@ export default function Tabler() {
   );
 
   return (
-    <div className="flex w-full justify-between rounded-xl bg-light-background-dark dark:bg-dark-background-dark">
+    <div className="flex lg:flex-row flex-col w-full justify-between rounded-xl bg-light-background-dark dark:bg-dark-background-dark">
       {timetable[Number(day) - 1].subjects.map((sub, i) => {
         const [subject, typeWithParens] = sub?.split("(") ?? [];
         const type = typeWithParens?.split(")")?.[0];

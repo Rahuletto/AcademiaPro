@@ -2,7 +2,7 @@ import { Time } from "@/utils/Times";
 
 export default function TableHeader() {
   return (
-    <div className="flex w-full justify-around gap-1 p-1">
+    <div className="lg:flex hidden w-full justify-around gap-1 p-1">
       {[...Array.from(Array(10).keys())].map((i) => (
         <span
           key={i}
