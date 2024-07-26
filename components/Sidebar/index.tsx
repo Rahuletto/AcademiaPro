@@ -40,7 +40,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <div className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-3 transition duration-300">
+      <div className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
         <div
           ref={ref}
           className={`fixed left-0 top-0 flex h-full transform flex-col gap-2 bg-light-background-light p-4 text-white transition-transform duration-300 dark:bg-dark-background-normal ${
@@ -111,11 +111,11 @@ export function Sidebar({ children }: { children: ReactNode }) {
         </div>
 
         <div
-          className={`h-full flex-1 transform duration-300 ${isOpen ? "ml-[300px]" : "ml-0 lg:ml-[55px]"}`}
+          className={`fixed h-full max-h-[98vh] max-w-[96vw] w-full flex-1 transform duration-300 md:relative md:w-full ${isOpen ? "ml-[300px]" : "-ml-1 lg:ml-[55px]"}`}
         >
           <div
             ref={content}
-            className="m-0.5 h-full w-full animate-fadeIn overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-dark p-4 md:p-7 dark:bg-dark-background-dark"
+            className="m-0.5 h-full w-full animate-fadeIn overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-dark p-6 md:p-7 dark:bg-dark-background-dark"
           >
             {children}
           </div>
