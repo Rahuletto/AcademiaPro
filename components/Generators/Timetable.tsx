@@ -89,7 +89,7 @@ export const constructNullStyles = (
 export default function TimetableGen({ body }: { body: Table[] }) {
   return (
     <div
-      tw="bg-[#0a0d12] flex items-center justify-center h-screen w-screen"
+      tw="bg-[#0a0d12] flex flex-col items-center justify-center h-screen w-screen"
       style={{
         transform: "scale(3.8)",
       }}
@@ -141,6 +141,15 @@ export default function TimetableGen({ body }: { body: Table[] }) {
             </div>
           ))}
         </div>
+      </div>
+      <div
+        style={{ fontSize: 3, gap: 2 }}
+        tw="flex mt-2 items-center justify-center"
+      >
+        <h2 tw="text-[#ffffff] opacity-60">Made by</h2>
+        <h2 tw="py-0 text-[#B3B3D1] rounded-full">
+          https://academia-pro.vercel.app
+        </h2>
       </div>
     </div>
   );

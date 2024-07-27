@@ -1,15 +1,16 @@
-/** @type {import('next').NextConfig} */
-
+import runtimeCaching from "next-pwa/cache.js";
 import pwa from "next-pwa";
 
 const withPWA = pwa({
   dest: "public/serviceWorker",
+  runtimeCaching,
   register: true,
+  reloadOnOnline: true,
+  cacheOnFrontEndNav: true,
   disable: process.env.NODE_ENV === "development",
   skipWaiting: true,
   fallbacks: {
-    image: "/fallback.png",
-    document: "/_offline",
+    document: "/offline",
   },
 });
 
@@ -18,12 +19,18 @@ const conf = {
   swcMinify: true,
   reactStrictMode: true,
   compress: true,
-  webpack: (config) => {
-    config.experiments = {
-      topLevelAwait: true,
-      layers: true,
-    };
-    return config;
+  experimental: {
+    turbo: {
+      resolveExtensions: [
+        ".mdx",
+        ".tsx",
+        ".ts",
+        ".jsx",
+        ".js",
+        ".mjs",
+        ".json",
+      ],
+    },
   },
 };
 
