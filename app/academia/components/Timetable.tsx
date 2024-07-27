@@ -7,7 +7,7 @@ import Tabler from "./subcomponents/Tabler";
 import Link from "@/components/Link";
 
 export default function Timetable() {
-  const { timetable, isLoading } = useTimetable();
+  const { timetable, isLoading, error } = useTimetable();
   return (
     <section id="timetable" className="flex flex-col gap-6">
       <div className="flex items-center gap-4">
@@ -28,7 +28,7 @@ export default function Timetable() {
       ) : isLoading ? (
         <Loading />
       ) : (
-        <Error component="timetable" />
+        error && <Error component="timetable" />
       )}
     </section>
   );
