@@ -1,16 +1,18 @@
 "use client";
-import { useUser } from "@/provider/UserProvider";
 import { useEffect, useState } from "react";
 import { Sidebar } from "../../components/Sidebar";
 import Timetable from "./components/Timetable";
+import { useRouter } from "next/navigation";
+import { Cookie } from "@/utils/Cookies";
 
 export default function Academia() {
-
   const [isMounted, setIsMounted] = useState(false);
+  const router = useRouter()
 
   useEffect(() => {
-    console.log(window.location);
     setIsMounted(true);
+    const cookies = Cookie.get('key')
+    if(!cookies) router.push('/auth/login')
   }, []);
 
   if (!isMounted) {
