@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
     return new ImageResponse(<Timetabler body={table} />, {
       width: 2400,
-      height: 920,
+      height: 1000,
       fonts: [
         {
           name: "Geist",
