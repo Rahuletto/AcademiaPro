@@ -86,8 +86,8 @@ export default function Tabler() {
 
   if (!day || !timetable || (typeof day === "string" && day.includes("No"))) {
     return day && typeof day === "string" && day.includes("No") ? (
-      <div className="flex h-48 items-center justify-center rounded-2xl bg-light-error-background dark:bg-dark-error-background">
-        <h1 className="text-3xl text-light-error-color dark:text-dark-error-color">
+      <div className="flex h-28 items-center justify-center rounded-xl bg-light-error-background dark:bg-dark-error-background">
+        <h1 className="text-3xl font-semibold text-light-error-color dark:text-dark-error-color">
           Holiday
         </h1>
       </div>
