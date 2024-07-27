@@ -35,7 +35,7 @@ export default function DayOrder({
           title={`Holiday`}
           className="text-md font-medium text-light-error-color dark:text-dark-error-color"
         >
-          Holiday
+          {mini ? "H" : "Holiday"}
         </span>
       ) : (
         <span

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, {
   createContext,
   ReactNode,
@@ -29,7 +29,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     ) {
       document.documentElement.classList.add("dark");
       setIsDark(true);
-    } else {
+    } else if (
+      localStorage.getItem("theme") === "light" ||
+      window.matchMedia("(prefers-color-scheme: light)").matches
+    ) {
       document.documentElement.classList.remove("dark");
       setIsDark(false);
     }

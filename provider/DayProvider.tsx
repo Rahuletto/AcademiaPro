@@ -20,7 +20,7 @@ const DayContext = createContext<DayContextType>({
 });
 
 const fetcher = async (url: string) => {
-  const cookie = cookies.get("token");
+  const cookie = cookies.get("key");
   if (!cookie) return null;
 
   try {

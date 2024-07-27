@@ -42,64 +42,68 @@ export function Sidebar({ children }: { children: ReactNode }) {
       <div className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
         <div
           ref={ref}
-          className={`fixed left-0 top-0 flex h-full transform flex-col gap-2 bg-light-background-normal p-4 text-white transition-transform duration-300 dark:bg-dark-background-normal ${
+          className={`fixed left-0 top-0 flex h-full transform flex-col justify-between bg-light-background-normal p-4 text-white transition-transform md:duration-300 dark:bg-dark-background-normal ${
             isOpen ? "translate-x-0" : "-translate-x-96 lg:-translate-x-56"
           } w-[310px] p-8`}
         >
-          <div
-            className={`transition duration-200 ${isOpen ? "opacity-100" : "opacity-0"}`}
-          >
-            <div className="text-color flex items-center justify-between text-light-color dark:text-dark-color">
-              <h1 className="text-3xl font-semibold">AcademiaPro</h1>
-              <ThemeToggle />
+          <div className="flex flex-col gap-2">
+            <div
+              className={`transition duration-200 ${isOpen ? "opacity-100" : "opacity-0"}`}
+            >
+              <div className="text-color flex items-center justify-between text-light-color dark:text-dark-color">
+                <h1 className="text-3xl font-semibold">AcademiaPro</h1>
+                <ThemeToggle />
+              </div>
+              <div className="my-4 flex gap-2">
+                <DayOrder />
+                <Hours />
+              </div>
             </div>
-            <div className="my-4 flex gap-2">
-              <DayOrder />
-              <Hours />
+            {!isOpen && (
+              <DayOrder
+                mini
+                className="fixed right-9 flex items-center justify-center"
+              />
+            )}
+            <hr className="border-t-light-side dark:border-t-dark-side" />
+
+            <div className="text-md flex flex-col gap-2 font-semibold text-light-color dark:text-dark-color">
+              <Link href="/academia">
+                <FaBookOpen className="text-xl" />
+                Home
+              </Link>
+
+              <Link href="/courses">
+                <FaGraduationCap className="text-xl" />
+                Course list
+              </Link>
+
+              <Link href="/calendar#today">
+                <BsCalendar2WeekFill className="text-xl" />
+                Calendar
+              </Link>
+
+              <Link href="/links">
+                <FaLink className="text-xl" />
+                Useful Links
+              </Link>
             </div>
-          </div>
-          {!isOpen && (
-            <DayOrder
-              mini
-              className="fixed right-9 flex items-center justify-center"
-            />
-          )}
-          <hr className="border-t-light-side dark:border-t-dark-side" />
 
-          <div className="text-md flex flex-col gap-2 font-semibold text-light-color dark:text-dark-color">
-            <Link href="/academia">
-              <FaBookOpen className="text-xl" />
-              Home
-            </Link>
+            <hr className="border-t-light-side dark:border-t-dark-side" />
 
-            <Link href="/courses">
-              <FaGraduationCap className="text-xl" />
-              Course list
-            </Link>
-
-            <Link href="/calendar#today">
-              <BsCalendar2WeekFill className="text-xl" />
-              Calendar
-            </Link>
-
-            <Link href="/links">
-              <FaLink className="text-xl" />
-              Useful Links
+            <Link
+              className="font-semibold text-light-warn-color hover:bg-light-warn-background hover:text-light-warn-color dark:text-dark-warn-color dark:hover:bg-dark-warn-background dark:hover:text-dark-warn-color"
+              title="BetterLab"
+              href="https://better-lab.vercel.app"
+              target="_blank"
+            >
+              <HiLightningBolt className="text-xl" />
+              eLab
             </Link>
           </div>
 
-          <hr className="border-t-light-side dark:border-t-dark-side" />
+          {isOpen && <ProfileBadge />}
 
-          <Link
-            className="font-semibold text-light-warn-color hover:bg-light-warn-background hover:text-light-warn-color dark:text-dark-warn-color dark:hover:bg-dark-warn-background dark:hover:text-dark-warn-color"
-            title="BetterLab"
-            href="https://better-lab.vercel.app"
-            target="_blank"
-          >
-            <HiLightningBolt className="text-xl" />
-            eLab
-          </Link>
-          <ProfileBadge />
           <OpenButton isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
 

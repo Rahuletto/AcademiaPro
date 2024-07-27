@@ -8,8 +8,9 @@ export default function Hours({ ...props }) {
   const { day, isLoading, error } = useDay();
   const { timetable, isLoading: tableLoad, error: tableError } = useTimetable();
 
-  return (
+  return !day || day.includes("No") ? null : (
     <div
+      {...props}
       role="contentinfo"
       className={`flex w-fit animate-fadeIn cursor-default items-center justify-center rounded-full px-3 py-1 ${
         error || !day
@@ -22,22 +23,24 @@ export default function Hours({ ...props }) {
           title="loading"
           className="animate-spin font-medium text-light-accent dark:text-dark-accent"
         />
-      ) : error || tableError || !day ? (
+      ) : error || tableError ? (
         <BiError
           title="*crashes*"
           className="font-medium text-light-error-color dark:text-dark-error-color"
         />
       ) : (
-        <span
-          title={`Day Order: ${day}`}
-          className="text-md font-medium text-light-accent dark:text-dark-accent"
-        >
-          {!day.includes("No") &&
-            timetable
-              ?.find((e) => e.day === Number(day))
-              ?.subjects.filter((a) => a !== null).length}{" "}
-          hours
-        </span>
+        day && (
+          <span
+            title={`Day Order: ${day}`}
+            className="text-md font-medium text-light-accent dark:text-dark-accent"
+          >
+            {!day.includes("No") &&
+              timetable
+                ?.find((e) => e.day === Number(day))
+                ?.subjects.filter((a) => a !== null).length}{" "}
+            hours
+          </span>
+        )
       )}
     </div>
   );

@@ -28,7 +28,7 @@ const TimetableContext = createContext<TimetableContextType>({
 });
 
 const fetcher = async (url: string) => {
-  const cookie = cookies.get("token");
+  const cookie = cookies.get("key");
   if (!cookie) return null;
 
   try {

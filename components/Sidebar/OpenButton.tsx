@@ -27,7 +27,7 @@ export default function OpenButton({
       <button
         type="button"
         name="Open navbar"
-        className={`fixed bottom-5 hidden rounded-full p-3 lg:block ${isOpen ? "right-5 bg-light-error-background dark:bg-dark-error-background" : "right-7 bg-transparent"}`}
+        className={`fixed bottom-8 hidden rounded-full p-3 lg:block ${isOpen ? "right-5 bg-light-error-background dark:bg-dark-error-background" : "right-7 bg-transparent"}`}
         onClick={() => setIsOpen((prev) => !prev)}
       >
         {isOpen ? (
