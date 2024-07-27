@@ -14,7 +14,8 @@ export function middleware(request: NextRequest) {
 
   if (isAuthenticated(request) && home.includes(pathname)) {
     return NextResponse.redirect(new URL("/academia", request.url));
-  }
+  } else if (!isAuthenticated(request) && home.includes(pathname))
+    return NextResponse.redirect(new URL("/home", request.url));
   if (protectedRoutes.includes(pathname) && !isAuthenticated(request)) {
     return NextResponse.redirect(new URL("/auth/login", request.url));
   }
