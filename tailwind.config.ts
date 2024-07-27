@@ -34,6 +34,7 @@ const config: Config = {
       },
       animation: {
         fadeIn: "fadeIn 0.4s ease-in-out forwards",
+        fastfade: "fadeIn 0.1s ease-in forwards",
         fadeOut: "fadeOut 0.4s ease-in-out forwards",
       },
       colors: {

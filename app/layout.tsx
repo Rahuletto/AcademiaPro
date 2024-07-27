@@ -22,7 +22,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={`h-screen ${GeistSans.variable} ${GeistMono.variable}`}
+      className={`h-screen dark dark:bg-dark-background-normal bg-light-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
     >
       <ThemeProvider>
         <UserProvider>
