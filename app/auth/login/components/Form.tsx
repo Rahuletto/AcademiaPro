@@ -34,7 +34,6 @@ export default function Form() {
       const res = await response.json();
       if (res.cookies) {
         setError(2);
-        console.log(res.cookies);
         cookies.set("key", res.cookies);
         router.push("/academia");
       } else if (res.message) {

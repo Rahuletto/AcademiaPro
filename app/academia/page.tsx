@@ -7,12 +7,12 @@ import { Cookie } from "@/utils/Cookies";
 
 export default function Academia() {
   const [isMounted, setIsMounted] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     setIsMounted(true);
-    const cookies = Cookie.get('key')
-    if(!cookies) router.push('/auth/login')
+    const cookies = Cookie.get("key");
+    if (!cookies) router.push("/auth/login");
   }, []);
 
   if (!isMounted) {

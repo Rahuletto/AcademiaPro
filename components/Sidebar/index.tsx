@@ -78,7 +78,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
                 Course list
               </Link>
 
-              <Link href="/calendar#today">
+              <Link href="/calendar">
                 <BsCalendar2WeekFill className="text-xl" />
                 Calendar
               </Link>

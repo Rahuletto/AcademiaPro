@@ -24,7 +24,6 @@ export const Cookie = {
     }SameSite=Lax`;
   
     document.cookie = cookieString;
-    console.log(cookieString)
 
     Storage.set(name, value);
   },

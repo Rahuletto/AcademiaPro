@@ -21,7 +21,7 @@ export default function Timetable() {
         </Link>
       </div>
       {timetable ? (
-        <div className="text-md min-w-full animate-fadeIn rounded-2xl bg-light-background-darker p-1 text-left dark:bg-dark-background-normal">
+        <div className="transition duration-200 text-md min-w-full animate-fadeIn rounded-2xl bg-light-background-darker p-1 text-left dark:bg-dark-background-normal">
           <TableHeader />
           <Tabler />
         </div>

@@ -1,13 +1,13 @@
 import { useUser } from "@/provider/UserProvider";
 import { useState, useEffect } from "react";
-import { FaUser } from "react-icons/fa";
+import { FaUser,FaBug } from "react-icons/fa";
 import UserDialog from "./UserDialog";
 import { createPortal } from "react-dom";
 import { RiLoader3Fill } from "react-icons/ri";
-import { ProscrapeURL } from "@/utils/URL";
-import { Cookie } from "@/utils/Cookies";
 import { useRouter } from "next/navigation";
 import { BiError } from "react-icons/bi";
+import { profileColor } from "@/utils/ProfileColor";
+import { elevatedUsers } from "@/users";
 
 export default function ProfileBadge() {
   const router = useRouter();
@@ -24,17 +24,7 @@ export default function ProfileBadge() {
   const logout = () => {
     const log = confirm("Are you sure to logout?");
     if (log) {
-      fetch(`${ProscrapeURL}/api/cleanup`, {
-        method: "DELETE",
-        headers: {
-          "X-CSRF-Token": Cookie.get("key") as string,
-        },
-      }).then((a) => {
-        if (a.ok) {
-          Cookie.clear();
-          router.push("/");
-        } else alert("An error occured! Try to clear cookies manually.");
-      });
+      router.push("/auth/logout");
     } else return;
   };
 
@@ -63,9 +53,16 @@ export default function ProfileBadge() {
         onClick={openDialog}
         className="flex w-full animate-fadeIn items-center space-x-3 rounded-full bg-light-background-dark p-1 lg:w-[82%] dark:bg-dark-background-darker"
       >
-        <div className="flex h-10 w-10 items-center justify-center rounded-full bg-light-background-light text-light-accent dark:bg-dark-background-light dark:text-dark-accent">
+        <div
+          className={`flex h-10 w-10 items-center justify-center rounded-full text-dark-background-darker`}
+          style={{ backgroundColor: profileColor(user?.reg as string) }}
+        >
           <span className="text-lg font-semibold">
-            <FaUser />
+            {elevatedUsers.includes(user?.reg as string) ? (
+              <FaBug className="text-xl" />
+            ) : (
+              <FaUser />
+            )}
           </span>
         </div>
         <span className="text-md line-clamp-1 flex-grow text-ellipsis font-medium capitalize text-light-accent dark:text-dark-color">
@@ -84,3 +81,4 @@ export default function ProfileBadge() {
     </>
   );
 }
+

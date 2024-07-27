@@ -86,7 +86,7 @@ export default function Tabler() {
 
   if (!day || !timetable || (typeof day === "string" && day.includes("No"))) {
     return day && typeof day === "string" && day.includes("No") ? (
-      <div className="flex h-28 items-center justify-center rounded-xl bg-light-error-background dark:bg-dark-error-background">
+      <div className="transition duration-200 animate-fadeIn flex h-28 items-center justify-center rounded-xl bg-light-error-background dark:bg-dark-error-background">
         <h1 className="text-3xl font-semibold text-light-error-color dark:text-dark-error-color">
           Holiday
         </h1>
@@ -100,7 +100,7 @@ export default function Tabler() {
   );
 
   return (
-    <div className="flex w-full flex-col justify-between rounded-xl bg-light-background-light lg:flex-row dark:bg-dark-background-dark">
+    <div className="transition duration-200 animate-fadeIn flex w-full flex-col justify-between rounded-xl bg-light-background-light lg:flex-row dark:bg-dark-background-dark">
       {timetable[Number(day) - 1].subjects.map((sub, i) => {
         const [subject, typeWithParens] = sub?.split("(") ?? [];
         const type = typeWithParens?.split(")")?.[0];
