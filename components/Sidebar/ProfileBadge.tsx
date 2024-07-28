@@ -5,9 +5,10 @@ import UserDialog from "./UserDialog";
 import { createPortal } from "react-dom";
 import { RiLoader3Fill } from "react-icons/ri";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
-import { BiError } from "react-icons/bi";
+import { BiError, BiLogOut } from "react-icons/bi";
 import { profileColor } from "@/utils/ProfileColor";
 import { elevatedUsers } from "@/users";
+import { LuLogOut } from "react-icons/lu";
 
 export default function ProfileBadge({ className }: {className?: string}) {
   const router = useRouter();
@@ -33,12 +34,12 @@ export default function ProfileBadge({ className }: {className?: string}) {
   };
 
   return error ? (
-    <div className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-error-background text-light-error-color lg:w-[82%] dark:bg-dark-error-background dark:text-dark-error-color">
-      <BiError className="text-xl" />
+    <button onClick={() => router.push('/auth/logout')} className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-error-background text-light-error-color lg:w-[82%] dark:bg-dark-error-background dark:text-dark-error-color">
+      <LuLogOut className="text-xl" />
       <h1 className="text-md font-medium text-light-error-color dark:text-dark-error-color">
-        Error.
+        Logout.
       </h1>
-    </div>
+    </button>
   ) : isLoading ? (
     <div className="flex h-12 w-full animate-fadeIn flex-col items-center justify-center rounded-full bg-light-background-dark p-4 text-light-accent lg:w-[82%] dark:bg-dark-background-dark dark:text-dark-accent">
       <RiLoader3Fill

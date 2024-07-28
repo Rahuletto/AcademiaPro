@@ -23,7 +23,7 @@ const config: Config = {
     },
     extend: {
       gridTemplateColumns: {
-        'marks': 'repeat(auto-fill, minmax(18rem, 1fr))',
+        marks: "repeat(auto-fill, minmax(18rem, 1fr))",
       },
       keyframes: {
         fadeIn: {
@@ -41,6 +41,9 @@ const config: Config = {
         fadeOut: "fadeOut 0.4s ease-in-out forwards",
       },
       colors: {
+        ...(Themes as any),
+      },
+      backgroundColor: {
         ...(Themes as any),
       },
       transitionTimingFunction: {
