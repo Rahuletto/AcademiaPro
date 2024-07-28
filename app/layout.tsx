@@ -8,6 +8,8 @@ import "./globals.css";
 import { DayProvider } from "@/provider/DayProvider";
 import { TableProvider } from "@/provider/TimetableProvider";
 import { ThemeProvider } from "@/provider/ThemeProvider";
+import { MarksProvider } from "@/provider/MarksProvider";
+import { cookies } from "next/headers";
 
 export const metadata: Metadata = {
   title: "AcademiaPro",
@@ -19,19 +21,26 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const key = cookies().get("key");
   return (
     <html
       lang="en"
-      className={`h-screen dark dark:bg-dark-background-normal bg-light-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
+      className={`dark h-screen bg-light-background-normal dark:bg-dark-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
     >
       <ThemeProvider>
-        <UserProvider>
-          <DayProvider>
-            <TableProvider>
-              <body className="h-screen">{children}</body>
-            </TableProvider>
-          </DayProvider>
-        </UserProvider>
+        {key && key.value ? (
+          <UserProvider>
+            <MarksProvider>
+              <DayProvider>
+                <TableProvider>
+                  <body className="h-screen">{children}</body>
+                </TableProvider>
+              </DayProvider>
+            </MarksProvider>
+          </UserProvider>
+        ) : (
+          <body className="h-screen">{children}</body>
+        )}
       </ThemeProvider>
     </html>
   );
