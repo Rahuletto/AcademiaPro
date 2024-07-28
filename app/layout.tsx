@@ -12,6 +12,7 @@ import { MarksProvider } from "@/provider/MarksProvider";
 import { cookies } from "next/headers";
 import { Themes } from "@/theme";
 import { ViewTransitions } from "next-view-transitions";
+import { AttendanceProvider } from "@/provider/AttendanceProvider";
 
 export const metadata: Metadata = {
   title: "AcademiaPro",
@@ -26,39 +27,41 @@ export default async function RootLayout({
   const key = cookies().get("key");
   return (
     <ViewTransitions>
-    <html
-      lang="en"
-      className={`dark h-screen bg-light-background-normal dark:bg-dark-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
-    >
-      <ThemeProvider>
-        <meta
-          name="theme-color"
-          media="(prefers-color-scheme: dark)"
-          content={Themes.dark.background.normal}
-        />
-        <meta
-          name="theme-color"
-          media="(prefers-color-scheme: light)"
-          content={Themes.light.background.normal}
-        />
+      <html
+        lang="en"
+        className={`dark h-screen bg-light-background-normal dark:bg-dark-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
+      >
+        <ThemeProvider>
+          <meta
+            name="theme-color"
+            media="(prefers-color-scheme: dark)"
+            content={Themes.dark.background.normal}
+          />
+          <meta
+            name="theme-color"
+            media="(prefers-color-scheme: light)"
+            content={Themes.light.background.normal}
+          />
 
-        <meta name="theme-color" content={Themes.dark.background.normal} />
+          <meta name="theme-color" content={Themes.dark.background.normal} />
 
-        {key && key.value ? (
-          <UserProvider>
-            <MarksProvider>
-              <DayProvider>
-                <TableProvider>
-                  <body className="h-screen">{children}</body>
-                </TableProvider>
-              </DayProvider>
-            </MarksProvider>
-          </UserProvider>
-        ) : (
-          <body className="h-screen">{children}</body>
-        )}
-      </ThemeProvider>
-    </html>
+          {key && key.value ? (
+            <UserProvider>
+              <MarksProvider>
+                <DayProvider>
+                  <TableProvider>
+                    <AttendanceProvider>
+                      <body className="h-screen">{children}</body>
+                    </AttendanceProvider>
+                  </TableProvider>
+                </DayProvider>
+              </MarksProvider>
+            </UserProvider>
+          ) : (
+            <body className="h-screen">{children}</body>
+          )}
+        </ThemeProvider>
+      </html>
     </ViewTransitions>
   );
 }
