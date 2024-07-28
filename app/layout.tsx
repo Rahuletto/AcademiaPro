@@ -10,6 +10,7 @@ import { TableProvider } from "@/provider/TimetableProvider";
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import { MarksProvider } from "@/provider/MarksProvider";
 import { cookies } from "next/headers";
+import { Themes } from "@/theme";
 
 export const metadata: Metadata = {
   title: "AcademiaPro",
@@ -28,6 +29,19 @@ export default async function RootLayout({
       className={`dark h-screen bg-light-background-normal dark:bg-dark-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
     >
       <ThemeProvider>
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content={Themes.dark.background.normal}
+        />
+        <meta
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content={Themes.light.background.normal}
+        />
+
+        <meta name="theme-color" content={Themes.dark.background.normal} />
+
         {key && key.value ? (
           <UserProvider>
             <MarksProvider>

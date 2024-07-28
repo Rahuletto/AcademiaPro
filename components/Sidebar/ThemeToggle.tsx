@@ -17,6 +17,7 @@ export default function ThemeToggle() {
       onTouchEnd={onEnd}
       onMouseDown={onStart}
       onMouseUp={onEnd}
+      title="Toggle Theme (Ctrl+Shift+P)"
       className="text-md rounded-full p-2 opacity-60 transition duration-200 hover:bg-light-background-dark active:-rotate-45 dark:hover:bg-dark-background-dark"
     >
       {isDark ? <LuMoon /> : <LuSun />}

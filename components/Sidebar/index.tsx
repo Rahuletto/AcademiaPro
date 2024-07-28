@@ -43,8 +43,8 @@ export function Sidebar({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <div className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
-        <div
+      <nav className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
+        <header
           ref={ref}
           className={`fixed left-0 top-0 flex h-full transform flex-col justify-between bg-light-background-normal p-4 text-white transition-transform md:duration-300 dark:bg-dark-background-normal ${
             isOpen ? "translate-x-0" : "-translate-x-96 lg:-translate-x-56"
@@ -118,21 +118,21 @@ export function Sidebar({ children }: { children: ReactNode }) {
             </div>
           <OpenButton isOpen={isOpen} setIsOpen={setIsOpen} />
           {!isOpen && <MiniButtons className="lg:block hidden fixed bottom-8 right-9" icon={<MdHelpOutline />} href="https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9" />}
-        </div>
+        </header>
 
         <div
           className={`fixed h-full max-h-[98vh] w-full max-w-[96vw] flex-1 transform duration-300 md:relative md:w-full ${isOpen ? "ml-[300px]" : "-ml-1 lg:ml-[55px]"}`}
         >
-          <div
+          <main
             ref={content}
             className="m-0.5 h-full w-full animate-fadeIn overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light p-6 md:p-7 dark:bg-dark-background-dark"
           >
             {children}
-          </div>
+          </main>
         </div>
 
         <OpenButton mobile isOpen={isOpen} setIsOpen={setIsOpen} />
-      </div>
+      </nav>
       <div id="dialog-root" />
     </>
   );

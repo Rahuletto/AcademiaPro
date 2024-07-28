@@ -10,6 +10,7 @@ export default function Link({
   return (
     <ALink
       {...props}
+      tabIndex={0}
       className={`${
         secondary
           ? "bg-light-button text-light-color dark:bg-dark-button dark:text-dark-accent"
