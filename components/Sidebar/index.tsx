@@ -91,7 +91,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
 
               <Link href="/links">
                 <FaLink className="text-xl" />
-                Useful Links
+                Resources
               </Link>
             </div>
 
@@ -125,7 +125,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
         >
           <div
             ref={content}
-            className="m-0.5 h-full w-full animate-fadeIn overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-dark p-6 md:p-7 dark:bg-dark-background-dark"
+            className="m-0.5 h-full w-full animate-fadeIn overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light p-6 md:p-7 dark:bg-dark-background-dark"
           >
             {children}
           </div>
