@@ -9,8 +9,9 @@ import { BiError, BiLogOut } from "react-icons/bi";
 import { profileColor } from "@/utils/ProfileColor";
 import { elevatedUsers } from "@/users";
 import { LuLogOut } from "react-icons/lu";
+import Image from "next/image";
 
-export default function ProfileBadge({ className }: {className?: string}) {
+export default function ProfileBadge({ className }: { className?: string }) {
   const router = useRouter();
   const { user, isLoading, error } = useUser();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -34,7 +35,10 @@ export default function ProfileBadge({ className }: {className?: string}) {
   };
 
   return error ? (
-    <button onClick={() => router.push('/auth/logout')} className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-error-background text-light-error-color lg:w-[82%] dark:bg-dark-error-background dark:text-dark-error-color">
+    <button
+      onClick={() => router.push("/auth/logout")}
+      className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-error-background text-light-error-color lg:w-[82%] dark:bg-dark-error-background dark:text-dark-error-color"
+    >
       <LuLogOut className="text-xl" />
       <h1 className="text-md font-medium text-light-error-color dark:text-dark-error-color">
         Logout.
@@ -57,7 +61,10 @@ export default function ProfileBadge({ className }: {className?: string}) {
           if (key.key === "p") openDialog();
         }}
         onClick={openDialog}
-        className={className + " duration-100 transition flex w-full items-center space-x-3 rounded-full bg-light-background-dark p-1 lg:w-[82%] dark:bg-dark-background-darker"}
+        className={
+          className +
+          " flex w-full items-center space-x-3 rounded-full bg-light-background-dark p-1 transition duration-100 lg:w-[82%] dark:bg-dark-background-darker"
+        }
       >
         <div
           className={`flex h-10 w-10 items-center justify-center rounded-full text-dark-background-darker`}
@@ -65,7 +72,12 @@ export default function ProfileBadge({ className }: {className?: string}) {
         >
           <span className="text-lg font-semibold">
             {elevatedUsers.includes(user?.reg as string) ? (
-              <FaBug className="text-xl" />
+              <Image
+                src="/images/batman.svg"
+                alt="Custom Bug"
+                width={40}
+                height={40}
+              />
             ) : (
               <FaUser />
             )}
