@@ -13,7 +13,8 @@ export default function Marks() {
       <div className="flex items-center gap-4">
         <h1 className="text-2xl font-semibold">Marks</h1>
         <Link
-          href="#"
+          href="https://gradex.vercel.app"
+          target="_blank"
           secondary
           className="flex items-center justify-center text-sm text-light-accent dark:text-dark-accent"
         >
@@ -26,14 +27,14 @@ export default function Marks() {
         <Error component="Marks" />
       ) : (
         <>
-          <div className="animate-fadeIn transition-all duration-200 grid-cols-marks grid gap-2">
+          <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
             {marks
               ?.filter((a) => a.courseType === "Theory")
               .map((mark, i) => <MarkCard key={i} mark={mark} />)}
           </div>
           <Indicator type="Practical" extended />
 
-          <div className="animate-fadeIn transition-all duration-200 grid-cols-marks grid gap-2">
+          <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
             {marks
               ?.filter(
                 (a) => a.courseType === "Practical" || a.courseType === "Lab",

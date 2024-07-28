@@ -2,7 +2,7 @@
 
 import { Cookie } from "@/utils/Cookies";
 import { ProscrapeURL } from "@/utils/URL";
-import { useTransitionRouter as useRouter } from 'next-view-transitions'
+import { useTransitionRouter as useRouter } from "next-view-transitions";
 import React, { useEffect } from "react";
 import { RiLoader3Fill } from "react-icons/ri";
 
@@ -18,7 +18,11 @@ export default function Logout() {
       if (a.ok) {
         Cookie.clear();
         router.push("/");
-      } else alert("An error occured! Try to clear cookies manually.");
+      } else {
+        alert("An error occured! Try to clear cookies manually.");
+        Cookie.clear();
+        router.push("/");
+      }
     });
   }, [router]);
 

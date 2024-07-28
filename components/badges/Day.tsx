@@ -14,7 +14,7 @@ export default function DayOrder({
   return (
     <div
       role="contentinfo"
-      className={`w-fit animate-fadeIn cursor-default rounded-full px-3 py-1 ${
+      className={`w-fit cursor-default rounded-full px-3 py-1 ${
         error || !day || day.includes("No")
           ? "bg-light-error-background dark:bg-dark-error-background"
           : "bg-light-side dark:bg-dark-side"

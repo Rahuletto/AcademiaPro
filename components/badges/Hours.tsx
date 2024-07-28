@@ -12,7 +12,7 @@ export default function Hours({ ...props }) {
     <div
       {...props}
       role="contentinfo"
-      className={`flex w-fit animate-fadeIn cursor-default items-center justify-center rounded-full px-3 py-1 ${
+      className={`flex w-fit cursor-default items-center justify-center rounded-full px-3 py-1 ${
         error || !day
           ? "bg-light-error-background dark:bg-dark-error-background"
           : "bg-light-side dark:bg-dark-side"

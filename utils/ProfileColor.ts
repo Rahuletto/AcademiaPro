@@ -22,6 +22,7 @@ const colors: string[] = [
 ];
 
 export function profileColor(registrationNumber: string): string {
+  if(registrationNumber === undefined) return colors[0];
   const hash = hashString(registrationNumber);
   const colorIndex = hash % colors.length;
   return colors[colorIndex];

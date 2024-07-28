@@ -1,4 +1,4 @@
-import useLongPress from "@/hook/useLongPress";
+import useLongPress from "@/hooks/useLongPress";
 import { useTheme } from "@/provider/ThemeProvider";
 import React from "react";
 import { LuMoon, LuSun } from "react-icons/lu";
