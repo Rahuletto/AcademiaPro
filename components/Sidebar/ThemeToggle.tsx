@@ -1,13 +1,23 @@
+import useLongPress from "@/hook/useLongPress";
 import { useTheme } from "@/provider/ThemeProvider";
 import React from "react";
 import { LuMoon, LuSun } from "react-icons/lu";
 
 export default function ThemeToggle() {
-    const {isDark, toggleTheme} = useTheme()
+  const { isDark, toggleTheme, setBw } = useTheme();
+  const [onStart, onEnd] = useLongPress(() => {
+    console.log("HOLDIN");
+    setBw();
+  }, 1000);
+
   return (
     <button
       onClick={toggleTheme}
-      className="active:-rotate-45 text-md rounded-full p-2 opacity-60 transition duration-200 hover:bg-light-background-dark dark:hover:bg-dark-background-dark"
+      onTouchStart={onStart}
+      onTouchEnd={onEnd}
+      onMouseDown={onStart}
+      onMouseUp={onEnd}
+      className="text-md rounded-full p-2 opacity-60 transition duration-200 hover:bg-light-background-dark active:-rotate-45 dark:hover:bg-dark-background-dark"
     >
       {isDark ? <LuMoon /> : <LuSun />}
     </button>

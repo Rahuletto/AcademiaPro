@@ -22,6 +22,9 @@ const config: Config = {
       black: "900",
     },
     extend: {
+      gridTemplateColumns: {
+        'marks': 'repeat(auto-fill, minmax(18rem, 1fr))',
+      },
       keyframes: {
         fadeIn: {
           "0%": { opacity: "0" },
