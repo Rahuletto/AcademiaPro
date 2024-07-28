@@ -11,6 +11,7 @@ import { ThemeProvider } from "@/provider/ThemeProvider";
 import { MarksProvider } from "@/provider/MarksProvider";
 import { cookies } from "next/headers";
 import { Themes } from "@/theme";
+import { ViewTransitions } from "next-view-transitions";
 
 export const metadata: Metadata = {
   title: "AcademiaPro",
@@ -24,6 +25,7 @@ export default async function RootLayout({
 }>) {
   const key = cookies().get("key");
   return (
+    <ViewTransitions>
     <html
       lang="en"
       className={`dark h-screen bg-light-background-normal dark:bg-dark-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
@@ -57,5 +59,6 @@ export default async function RootLayout({
         )}
       </ThemeProvider>
     </html>
+    </ViewTransitions>
   );
 }

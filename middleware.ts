@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-const protectedRoutes = ["/academia", "/calendar", "/links"];
+const protectedRoutes = ["/academia", "/calendar", "/links", "/courses"];
 const home = ["/"];
 
 const isAuthenticated = (request: NextRequest): boolean => {

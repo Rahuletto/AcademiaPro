@@ -9,7 +9,7 @@ import { BiError } from "react-icons/bi";
 import { profileColor } from "@/utils/ProfileColor";
 import { elevatedUsers } from "@/users";
 
-export default function ProfileBadge() {
+export default function ProfileBadge({ className }: {className?: string}) {
   const router = useRouter();
   const { user, isLoading, error } = useUser();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -56,7 +56,7 @@ export default function ProfileBadge() {
           if (key.key === "p") openDialog();
         }}
         onClick={openDialog}
-        className="flex w-full animate-fadeIn items-center space-x-3 rounded-full bg-light-background-dark p-1 lg:w-[82%] dark:bg-dark-background-darker"
+        className={className + " duration-100 transition flex w-full items-center space-x-3 rounded-full bg-light-background-dark p-1 lg:w-[82%] dark:bg-dark-background-darker"}
       >
         <div
           className={`flex h-10 w-10 items-center justify-center rounded-full text-dark-background-darker`}
