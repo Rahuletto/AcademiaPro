@@ -37,6 +37,8 @@ export default function UserDialog({ isOpen, onClose,logout }: UserDialogProps) 
               {user?.name.toLowerCase()}
             </h2>
             <button
+            title="Close"
+            aria-label="Close"
               onClick={onClose}
               className="rounded-full border-2 border-light-error-color bg-light-error-background p-2 text-lg text-light-error-color dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color"
             >

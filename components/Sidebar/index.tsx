@@ -1,6 +1,7 @@
 import { useState, ReactNode, useEffect, useRef } from "react";
 import Link from "./SidebarLink";
-import { FaBookOpen, FaGraduationCap, FaLink } from "react-icons/fa6";
+import { Link as TransitionLink } from "next-view-transitions";
+import { FaBookOpen, FaGraduationCap, FaLink, FaWhatsapp } from "react-icons/fa6";
 import { HiLightningBolt } from "react-icons/hi";
 import { BsCalendar2WeekFill } from "react-icons/bs";
 import DayOrder from "../badges/Day";
@@ -8,6 +9,9 @@ import Hours from "../badges/Hours";
 import ThemeToggle from "./ThemeToggle";
 import OpenButton from "./OpenButton";
 import ProfileBadge from "./ProfileBadge";
+import MiniButtons from "./MiniButtons";
+import { FiGithub } from "react-icons/fi";
+import { MdHelpOutline } from "react-icons/md";
 
 export function Sidebar({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(true);
@@ -39,8 +43,8 @@ export function Sidebar({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <div className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
-        <div
+      <nav className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
+        <header
           ref={ref}
           className={`fixed left-0 top-0 flex h-full transform flex-col justify-between bg-light-background-normal p-4 text-white transition-transform md:duration-300 dark:bg-dark-background-normal ${
             isOpen ? "translate-x-0" : "-translate-x-96 lg:-translate-x-56"
@@ -51,7 +55,9 @@ export function Sidebar({ children }: { children: ReactNode }) {
               className={`transition duration-200 ${isOpen ? "opacity-100" : "opacity-0"}`}
             >
               <div className="text-color flex items-center justify-between text-light-color dark:text-dark-color">
-                <h1 className="text-3xl font-semibold">AcademiaPro</h1>
+                <TransitionLink href="/home" className="text-3xl font-semibold">
+                  AcademiaPro
+                </TransitionLink>
                 <ThemeToggle />
               </div>
               <div className="my-4 flex gap-2">
@@ -85,7 +91,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
 
               <Link href="/links">
                 <FaLink className="text-xl" />
-                Useful Links
+                Resources
               </Link>
             </div>
 
@@ -102,24 +108,31 @@ export function Sidebar({ children }: { children: ReactNode }) {
             </Link>
           </div>
 
-          {isOpen && <ProfileBadge />}
-
+          <div className="flex flex-col-reverse gap-4">
+            <div className="flex gap-2 items-center">
+              <h4 className="text-xs opacity-60 transition duration-200 font-mono">Support: </h4>
+              <MiniButtons icon={<FiGithub />} href="https://github.com/rahuletto/academiapro" />
+              <MiniButtons icon={<FaWhatsapp />} href="https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9" />
+            </div>
+            {isOpen && <ProfileBadge />}
+            </div>
           <OpenButton isOpen={isOpen} setIsOpen={setIsOpen} />
-        </div>
+          {!isOpen && <MiniButtons className="lg:block hidden fixed bottom-8 right-9" icon={<MdHelpOutline />} href="https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9" />}
+        </header>
 
         <div
           className={`fixed h-full max-h-[98vh] w-full max-w-[96vw] flex-1 transform duration-300 md:relative md:w-full ${isOpen ? "ml-[300px]" : "-ml-1 lg:ml-[55px]"}`}
         >
-          <div
+          <main
             ref={content}
-            className="m-0.5 h-full w-full animate-fadeIn overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-dark p-6 md:p-7 dark:bg-dark-background-dark"
+            className="m-0.5 h-full w-full animate-fadeIn overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light p-6 md:p-7 dark:bg-dark-background-dark"
           >
             {children}
-          </div>
+          </main>
         </div>
 
         <OpenButton mobile isOpen={isOpen} setIsOpen={setIsOpen} />
-      </div>
+      </nav>
       <div id="dialog-root" />
     </>
   );

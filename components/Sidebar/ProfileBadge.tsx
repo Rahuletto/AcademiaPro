@@ -1,10 +1,10 @@
 import { useUser } from "@/provider/UserProvider";
 import { useState, useEffect } from "react";
-import { FaUser,FaBug } from "react-icons/fa";
+import { FaUser, FaBug } from "react-icons/fa";
 import UserDialog from "./UserDialog";
 import { createPortal } from "react-dom";
 import { RiLoader3Fill } from "react-icons/ri";
-import { useRouter } from "next/navigation";
+import { useTransitionRouter as useRouter } from "next-view-transitions";
 import { BiError } from "react-icons/bi";
 import { profileColor } from "@/utils/ProfileColor";
 import { elevatedUsers } from "@/users";
@@ -17,6 +17,10 @@ export default function ProfileBadge() {
 
   useEffect(() => {
     setDialogRoot(document.getElementById("dialog-root"));
+
+    return () => {
+      setDialogRoot(null);
+    };
   }, []);
 
   const openDialog = () => setIsDialogOpen(true);
@@ -45,6 +49,7 @@ export default function ProfileBadge() {
   ) : (
     <>
       <div
+        aria-haspopup="dialog"
         role="button"
         tabIndex={0}
         onKeyDown={(key) => {
@@ -81,4 +86,3 @@ export default function ProfileBadge() {
     </>
   );
 }
-

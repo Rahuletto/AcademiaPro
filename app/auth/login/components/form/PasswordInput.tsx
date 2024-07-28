@@ -18,7 +18,7 @@ export default function PasswordInput({
   const [visible, setVisible] = useState(false);
 
   const handleKeyDown = (e: KeyboardEvent) => {
-    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === "p") {
+    if (e.altKey) {
       e.preventDefault();
       setVisible((prev) => !prev);
     }

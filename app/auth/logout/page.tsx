@@ -2,7 +2,7 @@
 
 import { Cookie } from "@/utils/Cookies";
 import { ProscrapeURL } from "@/utils/URL";
-import { useRouter } from "next/navigation";
+import { useTransitionRouter as useRouter } from 'next-view-transitions'
 import React, { useEffect } from "react";
 import { RiLoader3Fill } from "react-icons/ri";
 

@@ -5,7 +5,7 @@ import PasswordInput from "./form/PasswordInput";
 import { Cookie as cookies } from "@/utils/Cookies";
 import { ProscrapeURL } from "@/utils/URL";
 import Button from "@/components/Button";
-import { useRouter } from "next/navigation";
+import { useTransitionRouter as useRouter } from 'next-view-transitions'
 
 export default function Form() {
   const router = useRouter();

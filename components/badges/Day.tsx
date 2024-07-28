@@ -23,7 +23,7 @@ export default function DayOrder({
       {isLoading ? (
         <RiLoader3Fill
           title="loading"
-          className="animate-spin font-medium text-light-accent dark:text-dark-accent"
+          className={`animate-spin font-medium ${error || !day || day.includes("No") ? "text-light-error-color dark:text-dark-error-color" : "text-light-accent dark:text-dark-accent"}`}
         />
       ) : error || !day ? (
         <BiError
@@ -32,8 +32,10 @@ export default function DayOrder({
         />
       ) : day.includes("No") ? (
         <span
+          aria-hidden="true"
+          style={{ WebkitUserSelect: "none" }}
           title={`Holiday`}
-          className="text-md font-medium text-light-error-color dark:text-dark-error-color"
+          className="select-none text-md font-medium text-light-error-color dark:text-dark-error-color"
         >
           {mini ? "H" : "Holiday"}
         </span>
