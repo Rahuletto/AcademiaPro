@@ -33,13 +33,15 @@ export default function AttendanceCard({
           {courseTitle}
         </span>
       </div>
-      <div className="flex items-center space-x-6 px-4">
-        <span className="text-light-accent dark:text-dark-accent">
-          Margin:{" "}
-          <span className="text-dark-warn-color dark:text-dark-warn-color">
-            {margin}
+      <div className="flex items-center space-x-6">
+        <div className="w-24 text-right">
+          <span className="text-md text-light-accent dark:text-dark-accent">
+            Margin:{" "}
+            <span className="text-dark-warn-color dark:text-dark-warn-color">
+              {margin}
+            </span>
           </span>
-        </span>
+        </div>
         <div className="flex w-24 items-center justify-end space-x-2">
           <span className="text-light-success-color dark:text-dark-success-color">
             {present}
@@ -47,12 +49,12 @@ export default function AttendanceCard({
           <span className="text-light-error-color dark:text-dark-error-color">
             {absent}
           </span>
-          <span className="rounded bg-gray-700 px-2 text-light-color dark:text-dark-color">
+          <span className="rounded px-2 text-light-color dark:text-dark-color">
             {total}
           </span>
         </div>
         <span
-          className={`w-20 text-right text-2xl font-semibold ${
+          className={`w-24 text-right text-2xl font-semibold ${
             parseFloat(attendancePercentage) === 100
               ? "text-light-success-color dark:text-dark-success-color"
               : parseFloat(attendancePercentage) < 75
