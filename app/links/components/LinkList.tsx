@@ -6,16 +6,26 @@ export default function LinkList({ url }: { url: DirLink }) {
   return (
     <Link href={url.url} target="_blank" className="relative w-fit">
       <Svg />
-      <div className="ml-4 flex flex-col">
+      <div
+        role="link"
+        title={url.site}
+        aria-label={url.site}
+        className="ml-4 flex flex-col"
+      >
         <div className="flex items-center justify-start gap-3 pl-4">
           <Link
+            tabIndex={0}
             href={url.url}
             target="_blank"
             className="text-lg font-medium text-light-color dark:text-dark-color"
           >
             {url.site}
           </Link>
-          <span className="hidden rounded-md bg-light-button p-0.5 px-1 text-xs font-medium opacity-70 md:block dark:bg-dark-button">
+          <span
+            aria-label={url.url}
+            title={url.url}
+            className="hidden rounded-md bg-light-button p-0.5 px-1 text-xs font-medium opacity-70 md:block dark:bg-dark-button"
+          >
             {url.url}
           </span>
         </div>
@@ -28,6 +38,7 @@ export default function LinkList({ url }: { url: DirLink }) {
 function Svg() {
   return (
     <svg
+    aria-hidden
       className="absolute -left-3 -top-4 opacity-80"
       width="40"
       height="30"

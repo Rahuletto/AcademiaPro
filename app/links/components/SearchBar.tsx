@@ -31,6 +31,7 @@ export function SearchBar({ searchQuery, setSearchQuery }: SearchBarProps) {
   return (
     <div className="absolute bottom-8 left-0 z-20 flex w-full items-center justify-center duration-200 focus-within:mb-8 focus-within:scale-105 active:mb-8 active:scale-105">
       <input
+        tabIndex={0}
         ref={searchbox}
         type="text"
         placeholder="Search"
