@@ -3,6 +3,7 @@ import { useAttendance } from "@/provider/AttendanceProvider";
 import Error from "@/components/States/Error";
 import { useEffect } from "react";
 import AttendanceCard from "./subcomponents/AttendanceCard";
+import Indicator from "@/components/Indicator";
 
 export default function Attendance() {
   const { attendance, isLoading, error } = useAttendance();
@@ -20,14 +21,33 @@ export default function Attendance() {
             <Error component="Attendance" />
           ) : (
             <>
-              {attendance?.map((course, index) => (
-                <div
-                  key={index}
-                  className="my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-darker odd:dark:bg-dark-background-normal even:dark:bg-dark-background-darker"
-                >
-                  <AttendanceCard course={course} />
-                </div>
-              ))}
+              <div className="my-4">
+                {attendance
+                  ?.filter((a) => a.category === "Theory")
+                  .map((course, index) => (
+                    <div
+                      key={index}
+                      className="my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-darker odd:dark:bg-dark-background-normal even:dark:bg-dark-background-darker"
+                    >
+                      <AttendanceCard course={course} />
+                    </div>
+                  ))}
+              </div>
+
+              <Indicator type="Practical" extended />
+
+              <div className="my-4">
+                {attendance
+                  ?.filter((a) => a.category === "Practical")
+                  .map((course, index) => (
+                    <div
+                      key={index}
+                      className="my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-darker odd:dark:bg-dark-background-normal even:dark:bg-dark-background-darker"
+                    >
+                      <AttendanceCard course={course} />
+                    </div>
+                  ))}
+              </div>
             </>
           )}
         </div>

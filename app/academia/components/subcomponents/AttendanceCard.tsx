@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AttendanceCourse } from "@/types/Attendance";
 import { calculateMargin } from "@/utils/Margin";
+import Indicator from "@/components/Indicator";
 
 export default function AttendanceCard({
   course,
@@ -25,39 +26,33 @@ export default function AttendanceCard({
   }, [present, total]);
 
   return (
-    <div className="flex items-center justify-between p-4 shadow-lg">
+    <div className="flex items-center justify-between p-4">
       <div className="flex flex-grow items-center space-x-3">
-        <div
-          className={`h-2 w-2 rounded-full ${
-            category === "Theory"
-              ? "bg-dark-warn-color dark:bg-dark-warn-color"
-              : "bg-light-success-color dark:bg-dark-success-color"
-          }`}
-        ></div>
+        <Indicator type={category as "Practical" | "Theory"} />
         <span className="text-lg text-light-color dark:text-dark-color">
           {courseTitle}
         </span>
       </div>
-      <div className="flex items-center space-x-6">
+      <div className="flex items-center space-x-6 px-4">
         <span className="text-light-accent dark:text-dark-accent">
           Margin:{" "}
           <span className="text-dark-warn-color dark:text-dark-warn-color">
-            {calculateMargin(present, total)}
+            {margin}
           </span>
         </span>
-        <div className="flex items-center space-x-2">
+        <div className="flex w-24 items-center justify-end space-x-2">
           <span className="text-light-success-color dark:text-dark-success-color">
             {present}
           </span>
           <span className="text-light-error-color dark:text-dark-error-color">
             {absent}
           </span>
-          <span className="text-light-color text-light-info-color dark:text-dark-color">
+          <span className="rounded bg-gray-700 px-2 text-light-color dark:text-dark-color">
             {total}
           </span>
         </div>
         <span
-          className={`text-2xl font-semibold ${
+          className={`w-20 text-right text-2xl font-semibold ${
             parseFloat(attendancePercentage) === 100
               ? "text-light-success-color dark:text-dark-success-color"
               : parseFloat(attendancePercentage) < 75
@@ -65,7 +60,7 @@ export default function AttendanceCard({
                 : "text-light-color dark:text-dark-color"
           }`}
         >
-          {attendancePercentage}
+          {attendancePercentage}%
         </span>
       </div>
     </div>
