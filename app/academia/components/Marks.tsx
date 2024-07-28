@@ -3,6 +3,8 @@ import { useMarks } from "@/provider/MarksProvider";
 import React from "react";
 import MarkCard from "./subcomponents/MarkCard";
 import Indicator from "@/components/Indicator";
+import Loading from "@/components/States/Loading";
+import Error from "@/components/States/Error";
 
 export default function Marks() {
   const { marks, isLoading, error } = useMarks();
@@ -18,18 +20,28 @@ export default function Marks() {
           Predict
         </Link>
       </div>
-      <div className="grid-cols-marks grid gap-2">
-        {marks
-          ?.filter((a) => a.courseType === "Theory")
-          .map((mark, i) => <MarkCard key={i} mark={mark} />)}
-      </div>
-      <Indicator type="Practical" extended />
+      {isLoading ? (
+        <Loading />
+      ) : error ? (
+        <Error component="Marks" />
+      ) : (
+        <>
+          <div className="animate-fadeIn transition-all duration-200 grid-cols-marks grid gap-2">
+            {marks
+              ?.filter((a) => a.courseType === "Theory")
+              .map((mark, i) => <MarkCard key={i} mark={mark} />)}
+          </div>
+          <Indicator type="Practical" extended />
 
-      <div className="grid-cols-marks grid gap-2">
-        {marks
-          ?.filter((a) => a.courseType === "Practical" || a.courseType === "Lab")
-          .map((mark, i) => <MarkCard key={i} mark={mark} />)}
-      </div>
+          <div className="animate-fadeIn transition-all duration-200 grid-cols-marks grid gap-2">
+            {marks
+              ?.filter(
+                (a) => a.courseType === "Practical" || a.courseType === "Lab",
+              )
+              .map((mark, i) => <MarkCard key={i} mark={mark} />)}
+          </div>
+        </>
+      )}
     </section>
   );
 }

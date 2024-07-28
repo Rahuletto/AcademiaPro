@@ -1,4 +1,5 @@
 "use client";
+import { Themes } from "@/theme";
 import React, {
   createContext,
   ReactNode,
@@ -47,6 +48,28 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       .addEventListener("change", (event) => {
         setIsDark(event.matches);
       });
+
+    function keyHandler(key: KeyboardEvent) {
+      if ((key.metaKey || key.ctrlKey) && key.key === "b")
+        setBlackAndWhite((prev) => !prev);
+      else if (
+        (key.metaKey || key.ctrlKey) &&
+        key.shiftKey &&
+        key.key.toLowerCase() === "p"
+      )
+        setIsDark((prev) => !prev);
+    }
+
+    window.addEventListener("keydown", keyHandler);
+
+    return () => {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .removeEventListener("change", (event) => {
+          setIsDark(event.matches);
+        });
+      window.removeEventListener("keydown", keyHandler);
+    };
   }, []);
 
   useEffect(() => {
@@ -57,16 +80,23 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, [bw]);
 
   useEffect(() => {
+    const metaTag = document.querySelector<HTMLMetaElement>(
+      'meta[name="theme-color"]',
+    );
     if (isDark) {
       document.documentElement.classList.remove("bw");
       document.documentElement.classList.remove("light");
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
+      if (metaTag)
+        metaTag.setAttribute("content", Themes.dark.background.normal);
     } else if (isDark === false) {
       document.documentElement.classList.remove("bw");
       document.documentElement.classList.remove("dark");
       document.documentElement.classList.add("light");
       localStorage.setItem("theme", "light");
+      if (metaTag)
+        metaTag.setAttribute("content", Themes.light.background.normal);
     }
   }, [isDark]);
 
