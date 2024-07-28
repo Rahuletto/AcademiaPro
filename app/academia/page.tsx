@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { Sidebar } from "../../components/Sidebar";
 import Timetable from "./components/Timetable";
-import { useRouter } from "next/navigation";
+import { useTransitionRouter as useRouter } from "next-view-transitions";
 import { Cookie } from "@/utils/Cookies";
 import Marks from "./components/Marks";
 
@@ -14,7 +14,7 @@ export default function Academia() {
     setIsMounted(true);
     const cookies = Cookie.get("key");
     if (!cookies) router.push("/auth/login");
-  }, []);
+  }, [router]);
 
   if (!isMounted) {
     return null;
