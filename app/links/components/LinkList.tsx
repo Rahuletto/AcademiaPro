@@ -1,6 +1,6 @@
-import { Link, useTransitionRouter } from "next-view-transitions";
+import { Link } from "next-view-transitions";
 import React from "react";
-import { DirLink } from "./links";
+import { DirLink } from "../links";
 
 export default function LinkList({ url }: { url: DirLink }) {
   return (
@@ -8,7 +8,11 @@ export default function LinkList({ url }: { url: DirLink }) {
       <Svg />
       <div className="ml-4 flex flex-col">
         <div className="flex items-center justify-start gap-3 pl-4">
-          <Link href={url.url} target="_blank" className="text-lg font-medium">
+          <Link
+            href={url.url}
+            target="_blank"
+            className="text-lg font-medium text-light-color dark:text-dark-color"
+          >
             {url.site}
           </Link>
           <span className="hidden rounded-md bg-light-button p-0.5 px-1 text-xs font-medium opacity-70 md:block dark:bg-dark-button">

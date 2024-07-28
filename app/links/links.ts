@@ -28,6 +28,12 @@ export const urls: DirLink[] = [
     description: "Check today’s mess menu.",
   },
   {
+    site: "KaizenKlass",
+    url: "https://kaizenklass.me/",
+    type: "unofficial",
+    description: "Get your notes, assignments and every resource you need.",
+  },
+  {
     site: "EveHubSrm",
     url: "https://evehubsrm.vercel.app/",
     type: "unofficial",
