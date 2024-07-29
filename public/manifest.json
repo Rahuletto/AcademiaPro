@@ -28,7 +28,7 @@
     },
     "display_override": ["fullscreen", "window-controls-overlay"],
     "display": "standalone",
-    "icons": [
+    "icons": [ 
       {
         "src": "/icons/maskable_icon.png",
         "sizes": "512x512",
