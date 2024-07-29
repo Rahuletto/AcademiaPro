@@ -5,7 +5,6 @@ import UserDialog from "./UserDialog";
 import { createPortal } from "react-dom";
 import { RiLoader3Fill } from "react-icons/ri";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
-import { BiError, BiLogOut } from "react-icons/bi";
 import { profileColor } from "@/utils/ProfileColor";
 import { elevatedUsers } from "@/users";
 import { LuLogOut } from "react-icons/lu";
@@ -14,6 +13,7 @@ import Image from "next/image";
 export default function ProfileBadge({ className }: { className?: string }) {
   const router = useRouter();
   const { user, isLoading, error } = useUser();
+
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [dialogRoot, setDialogRoot] = useState<HTMLElement | null>(null);
 
@@ -73,6 +73,7 @@ export default function ProfileBadge({ className }: { className?: string }) {
           <span className="text-lg font-semibold">
             {elevatedUsers.includes(user?.reg as string) ? (
               <Image
+                className="mt-1"
                 src="/images/batman.svg"
                 alt="Custom Bug"
                 width={40}

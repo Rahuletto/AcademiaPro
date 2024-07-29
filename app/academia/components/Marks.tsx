@@ -22,7 +22,7 @@ export default function Marks() {
         </Link>
       </div>
       {isLoading ? (
-        <Loading />
+        <Loading size="3xl" />
       ) : error ? (
         <Error component="Marks" />
       ) : (
@@ -32,7 +32,7 @@ export default function Marks() {
               ?.filter((a) => a.courseType === "Theory")
               .map((mark, i) => <MarkCard key={i} mark={mark} />)}
           </div>
-          <Indicator type="Practical" extended />
+          <Indicator type="Practical" separator />
 
           <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
             {marks

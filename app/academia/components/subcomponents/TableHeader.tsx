@@ -2,7 +2,11 @@ import { Time } from "@/utils/Times";
 
 export default function TableHeader() {
   return (
-    <div aria-hidden className="hidden w-full select-none justify-around gap-1 p-1 lg:flex" style={{ WebkitUserSelect: "none" }}>
+    <div
+      aria-hidden
+      className="hidden w-full select-none justify-around gap-1 p-1 xl:flex"
+      style={{ WebkitUserSelect: "none" }}
+    >
       {[...Array.from(Array(10).keys())].map((i) => (
         <span
           aria-hidden

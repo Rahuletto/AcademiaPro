@@ -42,7 +42,6 @@ const fetcher = async (url: string) => {
         "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
       },
     });
-    console.log("responce", response);
     if (!response.ok) {
       const errorBody = await response.text();
       throw new Error(
@@ -92,7 +91,7 @@ export function AttendanceProvider({
       fallbackData: initialAttendance || getCachedAttendance(),
       revalidateOnFocus: false,
       revalidateOnReconnect: true,
-      refreshInterval: 3600000,
+      refreshInterval: 1000 * 60 * 60,
       onSuccess: (data) => {
         if (data) {
           Storage.set("attendance", data);

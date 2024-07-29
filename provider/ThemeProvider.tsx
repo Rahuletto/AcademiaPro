@@ -73,11 +73,18 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
+    const metaTag = document.querySelector<HTMLMetaElement>(
+      'meta[name="theme-color"]',
+    );
     if (bw) {
       document.documentElement.classList.add("bw");
       localStorage.setItem("theme", "bw");
+      if (metaTag) {
+        if (isDark) metaTag.setAttribute("content", "#151515");
+        else if (isDark === false) metaTag.setAttribute("content", "#F5F5F5");
+      }
     }
-  }, [bw]);
+  }, [bw, isDark]);
 
   useEffect(() => {
     const metaTag = document.querySelector<HTMLMetaElement>(

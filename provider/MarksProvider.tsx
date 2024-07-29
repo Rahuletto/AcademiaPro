@@ -98,7 +98,7 @@ export function MarksProvider({
       setRetryCount(0);
     },
     onError: (err) => {
-      console.error("Error fetching table data:", err);
+      console.error("Error fetching marks data:", err);
       if (retryCount < 3) {
         setTimeout(
           () => {

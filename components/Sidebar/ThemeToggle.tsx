@@ -6,7 +6,6 @@ import { LuMoon, LuSun } from "react-icons/lu";
 export default function ThemeToggle() {
   const { isDark, toggleTheme, setBw } = useTheme();
   const [onStart, onEnd] = useLongPress(() => {
-    console.log("HOLDIN");
     setBw();
   }, 1000);
 

@@ -3,7 +3,7 @@ import Error from "@/components/States/Error";
 import { useTimetable } from "@/provider/TimetableProvider";
 import TableHeader from "./subcomponents/TableHeader";
 import Loading from "@/components/States/Loading";
-import Tabler from "./subcomponents/Tabler";
+import TableCard from "./subcomponents/TableCard";
 import Link from "@/components/Link";
 
 export default function Timetable() {
@@ -23,7 +23,7 @@ export default function Timetable() {
       {timetable ? (
         <div style={{ WebkitUserSelect: "none" }}  className="select-none transition duration-200 text-md min-w-full animate-fadeIn rounded-2xl bg-light-background-dark p-1 text-left dark:bg-dark-background-normal">
           <TableHeader />
-          <Tabler />
+          <TableCard />
         </div>
       ) : isLoading ? (
         <Loading />

@@ -24,19 +24,19 @@ function SubjectCell({
   index,
 }: SubjectCellProps) {
   const baseClasses = `
-    group relative h-auto lg:min-h-24 min-h-16 lg:w-[10%] lg:max-w-[10%] w-full border-[0.3px]
-    border-dark-background-dark p-2 lg:pb-2 pb-8 text-xs font-semibold 
+    group relative h-auto xl:min-h-24 min-h-16 xl:w-[10%] xl:max-w-[10%] w-full border-[0.3px]
+    border-dark-background-dark p-2 xl:pb-2 ${isActive ? "pb-2" : "pb-8"}  text-xs font-semibold 
     text-dark-background-dark dark:border-dark-background-dark 
     dark:text-dark-background-darker
-    ${index === 0 ? "lg:rounded-none lg:rounded-l-xl rounded-t-xl" : index === 9 ? "lg:rounded-none lg:rounded-r-xl rounded-b-xl" : ""}
+    ${index === 0 ? "xl:rounded-none xl:rounded-l-xl rounded-t-xl" : index === 9 ? "xl:rounded-none xl:rounded-r-xl rounded-b-xl" : ""}
     ${type === "Theory" ? "bg-theory" : type === "Practical" ? "bg-practical" : ""}
   `;
 
   const style: React.CSSProperties = subject
     ? inRange && !isActive
-      ? { opacity: 0.5, paddingBottom: "28px" }
+      ? { opacity: 0.5 }
       : isActive
-        ? { opacity: 1, paddingBottom: "28px" }
+        ? { opacity: 1 }
         : {}
     : inRange && !isActive
       ? { ...nullStyler }
@@ -63,7 +63,7 @@ function SubjectCell({
         ></span>
       ) : null}
       <span
-        className={`${!subject ? "hidden lg:block lg:text-light-color lg:dark:text-dark-color" : "text-dark-background-dark"} absolute bottom-1 right-2 text-xs font-normal opacity-40 transition duration-200 lg:left-2 lg:opacity-0 lg:group-hover:opacity-40`}
+        className={`${!subject ? "hidden xl:block xl:text-light-color xl:dark:text-dark-color" : "text-dark-background-dark"} absolute bottom-1 right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
       >
         {Time.start[index] + " - " + Time.end[index]}
       </span>
@@ -71,7 +71,7 @@ function SubjectCell({
   );
 }
 
-export default function Tabler() {
+export default function TableCard() {
   const { timetable } = useTimetable();
   const { day } = useDay();
   const [time, setTime] = useState<Date>(getISTTime());
@@ -100,7 +100,7 @@ export default function Tabler() {
   );
 
   return (
-    <div className="transition duration-200 animate-fadeIn flex w-full flex-col justify-between rounded-xl bg-light-background-light lg:flex-row dark:bg-dark-background-dark">
+    <div className="transition duration-200 animate-fadeIn flex w-full flex-col justify-between rounded-xl bg-light-background-light xl:flex-row dark:bg-dark-background-dark">
       {timetable[Number(day) - 1].subjects.map((sub, i) => {
         const [subject, typeWithParens] = sub?.split("(") ?? [];
         const type = typeWithParens?.split(")")?.[0];
