@@ -5,7 +5,7 @@ import PasswordInput from "./form/PasswordInput";
 import { Cookie as cookies } from "@/utils/Cookies";
 import { ProscrapeURL } from "@/utils/URL";
 import Button from "@/components/Button";
-import { useTransitionRouter as useRouter } from 'next-view-transitions'
+import { useRouter } from "next/navigation";
 
 export default function Form() {
   const router = useRouter();
@@ -58,7 +58,7 @@ export default function Form() {
     >
       {error === 1 && (
         <p className="rounded-2xl bg-light-error-background px-4 py-2 text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
-          {message}
+          SRM: {message}
         </p>
       )}
       <div className="relative flex flex-col gap-1">

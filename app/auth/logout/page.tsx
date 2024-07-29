@@ -9,7 +9,7 @@ import { RiLoader3Fill } from "react-icons/ri";
 export default function Logout() {
   const router = useRouter();
   useEffect(() => {
-    fetch(`${ProscrapeURL}/api/cleanup`, {
+    fetch(`${ProscrapeURL}/api/logout`, {
       method: "DELETE",
       headers: {
         "X-CSRF-Token": Cookie.get("key") as string,

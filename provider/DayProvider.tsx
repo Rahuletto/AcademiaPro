@@ -80,6 +80,7 @@ export function DayProvider({
     revalidateOnFocus: false,
     refreshInterval: 1000 * 60 * 60,
     revalidateOnReconnect: true,
+    errorRetryCount: 4,
     onSuccess: (data) => {
       setRetryCount(0);
     },

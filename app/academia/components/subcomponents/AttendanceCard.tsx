@@ -30,8 +30,8 @@ export default function AttendanceCard({
   if (legend)
     return (
       <div className="hidden items-center justify-between p-4 opacity-40 xl:flex">
-        <div className="flex w-[350px] items-center space-x-3">
-          <span className="ml-5 text-xs font-medium text-light-color dark:text-dark-color">
+        <div className="flex w-[300px] items-center space-x-3">
+          <span className="text-xs font-medium text-light-color dark:text-dark-color">
             Title
           </span>
         </div>

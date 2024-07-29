@@ -91,6 +91,7 @@ export function UserProvider({
     fallbackData: initialUser || getCachedUser(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,
+    errorRetryCount: 4,
     onSuccess: (data) => {
       if (data) {
         Storage.set("user", data);

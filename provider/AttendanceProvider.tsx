@@ -92,6 +92,7 @@ export function AttendanceProvider({
       revalidateOnFocus: false,
       revalidateOnReconnect: true,
       refreshInterval: 1000 * 60 * 60,
+      errorRetryCount: 4,
       onSuccess: (data) => {
         if (data) {
           Storage.set("attendance", data);

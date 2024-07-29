@@ -19,7 +19,6 @@ export default function PasswordInput({
 
   const handleKeyDown = (e: KeyboardEvent) => {
     if (e.altKey) {
-      e.preventDefault();
       setVisible((prev) => !prev);
     }
   };
@@ -30,15 +29,14 @@ export default function PasswordInput({
         type={visible ? "text" : "password"}
         value={password}
         onKeyDown={handleKeyDown}
-        className={`rounded-2xl rounded-tl-[6px] rounded-tr-[6px] bg-dark-input dark:text-dark-color text-light-color px-6 py-3 font-medium font-sans`}
+        className={`rounded-2xl rounded-tl-[6px] rounded-tr-[6px] bg-dark-input px-6 py-3 font-sans font-medium text-light-color dark:text-dark-color`}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Passw*rd"
       />
       {password && (
         <button
-          tabIndex={0}
           onKeyDown={handleKeyDown}
-          className="absolute bottom-[16px] right-0 pr-4 text-right dark:text-dark-accent text-light-accent"
+          className="absolute bottom-[16px] right-0 pr-4 text-right text-light-accent dark:text-dark-accent"
           onClick={() => setVisible((e) => !e)}
         >
           {visible ? <BsEyeSlashFill /> : <BsEyeFill />}

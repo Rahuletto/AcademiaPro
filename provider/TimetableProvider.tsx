@@ -96,6 +96,7 @@ export function TableProvider({
       fallbackData: initialTable || getCachedTable(),
       revalidateOnFocus: false,
       revalidateOnReconnect: true,
+      errorRetryCount: 4,
       onSuccess: (data) => {
         if (data) {
           Storage.set("timetable", data);
