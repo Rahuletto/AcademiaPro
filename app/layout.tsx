@@ -13,6 +13,7 @@ import { cookies } from "next/headers";
 import { Themes } from "@/theme";
 import { ViewTransitions } from "next-view-transitions";
 import { AttendanceProvider } from "@/provider/AttendanceProvider";
+import { CalendarProvider } from "@/provider/CalendarProvider";
 
 const APP_NAME = "AcademiaPro";
 const APP_DEFAULT_TITLE = "AcademiaPro";
@@ -88,7 +89,9 @@ export default async function RootLayout({
                 <DayProvider>
                   <TableProvider>
                     <AttendanceProvider>
-                      <body className="h-screen">{children}</body>
+                      <CalendarProvider>
+                        <body className="h-screen">{children}</body>
+                      </CalendarProvider>
                     </AttendanceProvider>
                   </TableProvider>
                 </DayProvider>

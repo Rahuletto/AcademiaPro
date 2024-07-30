@@ -38,7 +38,7 @@ export function SearchBar({ searchQuery, setSearchQuery }: SearchBarProps) {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         style={{ WebkitBackdropFilter: "blur(12px)" }}
-        className="relative z-10 w-[350px] animate-fastfade rounded-xl bg-light-input bg-opacity-80 px-4 py-2 text-lg font-medium shadow-lg outline-none backdrop-blur-md transition-all duration-200 dark:bg-dark-input"
+        className="relative z-10 w-[350px] animate-fastfade rounded-xl bg-light-button bg-opacity-80 px-4 py-2 text-lg font-medium shadow-lg outline-none backdrop-blur-md transition-all duration-200 dark:bg-dark-button"
       />
       <div className="relative right-8 z-10 text-xl opacity-50">
         <LuSquareSlash />

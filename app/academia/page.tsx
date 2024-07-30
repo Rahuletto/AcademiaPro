@@ -5,10 +5,24 @@ import Marks from "./components/Marks";
 import Attendance from "./components/Attendance";
 import { useUser } from "@/provider/UserProvider";
 import Loading from "@/components/States/Loading";
+import { useEffect, useState } from "react";
 
 export default function Academia() {
-  
-  const { user, isLoading } = useUser();
+  const { user, isLoading, mutate } = useUser();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    if (!user && !isLoading) {
+      mutate()
+    }
+  }, [isLoading, user, mutate]);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return user ? (
     <div className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>
@@ -23,5 +37,5 @@ export default function Academia() {
     <div className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center">
       <Loading />
     </div>
-  ) : null
+  ) : null;
 }

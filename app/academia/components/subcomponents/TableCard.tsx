@@ -59,7 +59,7 @@ function SubjectCell({
       ) : isActive ? (
         <span
           style={constructNullStyles(0, index, [], false, true)}
-          className="rounded-full p-2"
+          className="rounded-full p-2 "
         ></span>
       ) : null}
       <span
