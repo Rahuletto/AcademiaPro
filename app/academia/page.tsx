@@ -6,16 +6,18 @@ import Attendance from "./components/Attendance";
 import { useUser } from "@/provider/UserProvider";
 import Loading from "@/components/States/Loading";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Academia() {
+  const router = useRouter()
   const { user, isLoading, mutate } = useUser();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    if (!user && !isLoading) {
-      mutate()
+    if (!user && isLoading === false) {
+      mutate().then(() => router.refresh())
     }
-  }, [isLoading, user, mutate]);
+  }, [isLoading, user, mutate, router]);
 
   useEffect(() => {
     setMounted(true);
