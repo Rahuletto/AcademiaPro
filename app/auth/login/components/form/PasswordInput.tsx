@@ -18,9 +18,11 @@ export default function PasswordInput({
   const [visible, setVisible] = useState(false);
 
   const handleKeyDown = (e: KeyboardEvent) => {
-    if (e.altKey) {
+    if(e.key === "Enter") return setVisible(false);
+    else if (e.altKey) {
       setVisible((prev) => !prev);
     }
+    
   };
 
   return (
@@ -35,6 +37,8 @@ export default function PasswordInput({
       />
       {password && (
         <button
+        type="button"
+          tabIndex={-1}
           onKeyDown={handleKeyDown}
           className="absolute bottom-[16px] right-0 pr-4 text-right text-light-accent dark:text-dark-accent"
           onClick={() => setVisible((e) => !e)}
