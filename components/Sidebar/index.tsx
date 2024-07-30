@@ -12,10 +12,10 @@ import { HiLightningBolt } from "react-icons/hi";
 import { BsCalendar2WeekFill } from "react-icons/bs";
 import DayOrder from "../badges/Day";
 import Hours from "../badges/Hours";
-import ThemeToggle from "./ThemeToggle";
-import OpenButton from "./OpenButton";
+import ThemeToggle from "./Buttons/ThemeToggle";
+import OpenButton from "./Buttons/OpenButton";
 import ProfileBadge from "./ProfileBadge";
-import MiniButtons from "./MiniButtons";
+import MiniButtons from "./Buttons/MiniButtons";
 import { FiGithub } from "react-icons/fi";
 import { MdHelpOutline } from "react-icons/md";
 

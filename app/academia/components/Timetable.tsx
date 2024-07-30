@@ -1,9 +1,9 @@
 import React from "react";
 import Error from "@/components/States/Error";
 import { useTimetable } from "@/provider/TimetableProvider";
-import TableHeader from "./subcomponents/TableHeader";
+import TableHeader from "./subcomponents/Timetable/TableHeader";
 import Loading from "@/components/States/Loading";
-import TableCard from "./subcomponents/TableCard";
+import TableCard from "./subcomponents/Timetable/TableCard";
 import Link from "@/components/Link";
 
 export default function Timetable() {

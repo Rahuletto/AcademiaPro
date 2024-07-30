@@ -1,5 +1,5 @@
 import React from "react";
-import { Mark } from "../../../../types/Marks";
+import { Mark } from "../../../../../types/Marks";
 import Indicator from "@/components/Indicator";
 import MarkElement, { MarkDisplay } from "./MarkElement";
 

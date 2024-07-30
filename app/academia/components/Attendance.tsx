@@ -1,7 +1,7 @@
 import Loading from "@/components/States/Loading";
 import { useAttendance } from "@/provider/AttendanceProvider";
 import Error from "@/components/States/Error";
-import AttendanceCard from "./subcomponents/AttendanceCard";
+import AttendanceCard from "./subcomponents/Attendance/AttendanceCard";
 import Indicator from "@/components/Indicator";
 
 export default function Attendance() {

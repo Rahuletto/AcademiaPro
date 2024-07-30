@@ -1,7 +1,7 @@
 import Link from "@/components/Link";
 import { useMarks } from "@/provider/MarksProvider";
 import React from "react";
-import MarkCard from "./subcomponents/MarkCard";
+import MarkCard from "./subcomponents/Marks/MarkCard";
 import Indicator from "@/components/Indicator";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
