@@ -14,7 +14,7 @@ export default function AttendanceDetails({
   return (
     <div
       style={{ WebkitUserSelect: "none" }}
-      className="flex select-none items-center gap-3 self-end justify-self-start rounded-full bg-light-background-darker p-0.5 font-medium md:self-center md:justify-self-center dark:bg-dark-background-darker"
+      className="flex select-none items-center gap-3 self-end justify-self-start rounded-full bg-light-background-darker p-0.5 font-medium md:self-center md:justify-self-center dark:bg-dark-input"
     >
       <div className="flex items-center font-medium">
         <span className="rounded-l-full bg-light-success-background px-3 text-light-success-color dark:bg-dark-success-background dark:text-dark-success-color">
