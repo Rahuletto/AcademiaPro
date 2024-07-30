@@ -6,15 +6,15 @@
   "lang": "en",
   "screenshots": [
     {
-      "src": "https://academia-pro.vercel.app/screenshot/narrow.png",
-      "type": "image/png",
-      "sizes": "540x720",
+      "src": "/screenshots/narrow.webp",
+      "type": "image/webp",
+      "sizes": "1290x2796",
       "form_factor": "narrow"
     },
     {
-      "src": "https://academia-pro.vercel.app/screenshot/wide.png",
+      "src": "/screenshots/wide.webp",
       "type": "image/png",
-      "sizes": "1440x593",
+      "sizes": "1440x720",
       "form_factor": "wide"
     }
   ],
@@ -42,7 +42,7 @@
     },
     {
       "src": "/icons/mono.png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "type": "image/png",
       "purpose": "monochrome"
     },
