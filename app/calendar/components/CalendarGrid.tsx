@@ -22,7 +22,7 @@ export default function CalendarGrid({ days, month }: CalendarGridProps) {
   const getFirstDayIndex = () => weekdays.indexOf(days[0].day);
 
   return (
-    <div className="w-full pt-1">
+    <div className="mb-16 w-full pt-1">
       <div className="hidden text-center font-bold xl:grid xl:grid-cols-7 xl:gap-4">
         {weekdays.map((weekday) => (
           <div key={weekday} className="rounded p-2 font-medium">

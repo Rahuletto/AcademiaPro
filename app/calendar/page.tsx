@@ -27,6 +27,7 @@ export default function Calendar() {
             </>
           ) : (
             <section id="calendar" className="flex flex-col gap-6">
+              <CalendarHeader mobile month={"Calendar"} />
               <CalendarHeader
                 month={month}
                 length={calendar?.length}

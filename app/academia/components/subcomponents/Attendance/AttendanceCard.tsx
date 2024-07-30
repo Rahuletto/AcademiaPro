@@ -48,7 +48,7 @@ export default function AttendanceCard({
     <div
       tabIndex={0}
       role="gridcell"
-      className="grid w-full grid-cols-[3fr_1fr] grid-rows-[repeat(2,1fr)] items-center gap-3 gap-y-4 rounded-3xl p-4 transition duration-200 md:flex md:items-center md:justify-between md:rounded-xl"
+      className="grid w-full grid-cols-[3fr_1fr] grid-rows-[repeat(2,1fr)] md:my-0 my-6 items-center gap-3 gap-y-2 rounded-3xl p-4 transition duration-200 md:flex md:items-center md:justify-between md:rounded-xl"
     >
       <Title courseTitle={courseTitle} category={category} />
       <Margin
