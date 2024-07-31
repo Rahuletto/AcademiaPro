@@ -1,4 +1,8 @@
-export interface AttendanceResponse {
+import { ProscrapeError } from "./Error";
+
+export type AttendanceResponse = SuccessAttendanceResponse & ProscrapeError;
+
+export interface SuccessAttendanceResponse {
   expireAt: number;
   attendance: AttendanceCourse[];
 }

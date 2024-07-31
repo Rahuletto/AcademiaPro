@@ -1,4 +1,7 @@
-export interface MarksResponse {
+import { ProscrapeError } from "./Error";
+
+export type MarksResponse = SuccessMarksResponse & ProscrapeError;
+export interface SuccessMarksResponse {
     marks: Mark[];
     expireAt: number;
   }

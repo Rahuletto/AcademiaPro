@@ -1,5 +1,5 @@
 "use client";
-import { UserInfo } from "@/types/User";
+import { User } from "@/types/User";
 import { Cookie as cookies } from "@/utils/Cookies";
 import {
   type ReactNode,
@@ -11,12 +11,13 @@ import {
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { ProscrapeURL } from "@/utils/URL";
+import { useTransitionRouter } from "next-view-transitions";
 
 interface UserContextType {
-  user: UserInfo | null;
+  user: User | null;
   error: Error | null;
   isLoading: boolean;
-  mutate: () => Promise<void | UserInfo | null | undefined>;
+  mutate: () => Promise<void | User | null | undefined>;
 }
 
 const UserContext = createContext<UserContextType>({
@@ -73,12 +74,13 @@ export function UserProvider({
   initialUser,
 }: {
   children: ReactNode;
-  initialUser?: UserInfo | null;
+  initialUser?: User | null;
 }) {
+  const router = useTransitionRouter();
   const [retryCount, setRetryCount] = useState(0);
 
   const getCachedUser = useCallback(
-    () => Storage.get<UserInfo | null>("user", null),
+    () => Storage.get<User | null>("user", null),
     [],
   );
 
@@ -87,13 +89,14 @@ export function UserProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<UserInfo | null>(`${ProscrapeURL}/api/user`, fetcher, {
+  } = useSWR<User | null>(`${ProscrapeURL}/api/user`, fetcher, {
     fallbackData: initialUser || getCachedUser(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,
     errorRetryCount: 4,
     onSuccess: (data) => {
       if (data) {
+        if (data.logout) router.push("/auth/logout");
         Storage.set("user", data);
       }
       setRetryCount(0);

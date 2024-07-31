@@ -1,4 +1,7 @@
-export interface TimeTableResponse {
+import { ProscrapeError } from "./Error";
+
+export type TimeTableResponse = SuccessTimeTableResponse & ProscrapeError;
+export interface SuccessTimeTableResponse {
   table: Table[];
   expireAt: number;
 }
