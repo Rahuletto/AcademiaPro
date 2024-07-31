@@ -28,7 +28,7 @@ export default function AttendanceMargin({
       >
         Margin:
         <span
-          className={`text-md font-semibold ${margin === 0 ? "text-light-error-color dark:text-dark-error-color" : margin <= countHoursPerDay(courseTitle) && margin > 0 ? "text-dark-warn-color dark:text-dark-warn-color" : "text-light-info-color dark:text-dark-info-color"}`}
+          className={`text-md font-semibold ${margin <= 0 ? "text-light-error-color dark:text-dark-error-color" : margin <= countHoursPerDay(courseTitle) && margin > 0 ? "text-dark-warn-color dark:text-dark-warn-color" : "text-light-info-color dark:text-dark-info-color"}`}
         >
           {margin}
         </span>
