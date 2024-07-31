@@ -5,6 +5,7 @@ import TableHeader from "./subcomponents/Timetable/TableHeader";
 import Loading from "@/components/States/Loading";
 import TableCard from "./subcomponents/Timetable/TableCard";
 import Link from "@/components/Link";
+import Container from "./subcomponents/Timetable/Container";
 
 export default function Timetable() {
   const { timetable, isLoading, error } = useTimetable();
@@ -21,10 +22,7 @@ export default function Timetable() {
         </Link>
       </div>
       {timetable ? (
-        <div style={{ WebkitUserSelect: "none" }}  className="select-none transition duration-200 text-md min-w-full animate-fadeIn rounded-2xl bg-light-background-dark p-1 text-left dark:bg-dark-background-normal">
-          <TableHeader />
-          <TableCard />
-        </div>
+        <Container />
       ) : isLoading ? (
         <Loading />
       ) : (

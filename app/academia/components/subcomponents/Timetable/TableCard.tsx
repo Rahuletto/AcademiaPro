@@ -5,12 +5,15 @@ import { useTimetable } from "@/provider/TimetableProvider";
 import { useInterval } from "@/utils/Interval";
 import { timeRange } from "@/utils/Range";
 import { getISTTime, Time } from "@/utils/Times";
+import { useCourses } from "@/provider/CourseProvider";
+import { Course } from "@/types/Course";
 
 interface SubjectCellProps {
   subject: string | null;
   type: string | undefined;
   isActive: boolean;
   inRange: boolean;
+  classRoom: string | null;
   nullStyler: React.CSSProperties;
   index: number;
 }
@@ -19,6 +22,7 @@ function SubjectCell({
   subject,
   type,
   isActive,
+  classRoom,
   inRange,
   nullStyler,
   index,
@@ -59,7 +63,7 @@ function SubjectCell({
       ) : isActive ? (
         <span
           style={constructNullStyles(0, index, [], false, true)}
-          className="rounded-full p-2 "
+          className="rounded-full p-2"
         ></span>
       ) : null}
       <span
@@ -67,12 +71,21 @@ function SubjectCell({
       >
         {Time.start[index] + " - " + Time.end[index]}
       </span>
+      {classRoom && (
+        <span
+          className="animate-fastfade absolute bottom-2 left-2 text-xs opacity-70"
+          style={{ width: "min-content" }}
+        >
+          {classRoom}
+        </span>
+      )}
     </div>
   );
 }
 
-export default function TableCard() {
+export default function TableCard({ view }: { view: boolean }) {
   const { timetable } = useTimetable();
+  const { courses } = useCourses();
   const { day } = useDay();
   const [time, setTime] = useState<Date>(getISTTime());
 
@@ -86,8 +99,11 @@ export default function TableCard() {
 
   if (!day || !timetable || (typeof day === "string" && day.includes("No"))) {
     return day && typeof day === "string" && day.includes("No") ? (
-      <div className="transition duration-200 animate-fadeIn flex h-28 items-center justify-center rounded-xl bg-light-error-background dark:bg-dark-error-background">
-        <h1 aria-label="Holiday" className="text-3xl font-semibold text-light-error-color dark:text-dark-error-color">
+      <div className="flex h-28 animate-fadeIn items-center justify-center rounded-xl bg-light-error-background transition duration-200 dark:bg-dark-error-background">
+        <h1
+          aria-label="Holiday"
+          className="text-3xl font-semibold text-light-error-color dark:text-dark-error-color"
+        >
           Holiday
         </h1>
       </div>
@@ -100,31 +116,46 @@ export default function TableCard() {
   );
 
   return (
-    <div className="transition duration-200 animate-fadeIn flex w-full flex-col justify-between rounded-xl bg-light-background-light xl:flex-row dark:bg-dark-background-dark">
-      {timetable[Number(day) - 1].subjects.map((sub, i) => {
-        const [subject, typeWithParens] = sub?.split("(") ?? [];
-        const type = typeWithParens?.split(")")?.[0];
-        const nullStyler = constructNullStyles(
-          0,
-          i,
-          timetable[Number(day) - 1].subjects,
-          true,
-          true,
-        );
-        const isActive = timeRange(time, `${Time.start[i]}-${Time.end[i]}`);
+    <>
+      <div className="flex w-full animate-fadeIn flex-col justify-between rounded-xl bg-light-background-light transition duration-200 xl:flex-row dark:bg-dark-background-dark">
+        {timetable[Number(day) - 1].subjects.map((sub, i) => {
+          const [subject, typeWithParens] = sub?.split("(") ?? [];
+          const type = typeWithParens?.split(")")?.[0];
+          const nullStyler = constructNullStyles(
+            0,
+            i,
+            timetable[Number(day) - 1].subjects,
+            true,
+            true,
+          );
+          const isActive = timeRange(time, `${Time.start[i]}-${Time.end[i]}`);
 
-        return (
-          <SubjectCell
-            key={i}
-            subject={subject}
-            type={type}
-            isActive={isActive}
-            inRange={inRange}
-            nullStyler={nullStyler}
-            index={i}
-          />
-        );
-      })}
-    </div>
+          return (
+            <SubjectCell
+              key={i}
+              classRoom={view && courses ? getClass(String(sub), courses) : ""}
+              subject={subject}
+              type={type}
+              isActive={isActive}
+              inRange={inRange}
+              nullStyler={nullStyler}
+              index={i}
+            />
+          );
+        })}
+      </div>
+    </>
   );
+}
+
+function getClass(subject: string, courses: Course[]) {
+  const [courseTitle, courseType] = subject.split(" (");
+  const formattedCourseType = courseType?.replace(")", "").trim();
+
+  const course = courses.find(
+    (course) =>
+      course.courseTitle === courseTitle.trim() &&
+      (formattedCourseType ? course.courseType === formattedCourseType : true),
+  );
+  return course ? course.roomNo : null;
 }

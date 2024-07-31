@@ -14,6 +14,8 @@ import { Themes } from "@/theme";
 import { ViewTransitions } from "next-view-transitions";
 import { AttendanceProvider } from "@/provider/AttendanceProvider";
 import { CalendarProvider } from "@/provider/CalendarProvider";
+import { CourseProvider } from "@/provider/CourseProvider";
+import { ReactNode } from "react";
 
 const APP_NAME = "AcademiaPro";
 const APP_DEFAULT_TITLE = "AcademiaPro";
@@ -114,24 +116,32 @@ export default async function RootLayout({
           <meta name="theme-color" content={Themes.dark.background.normal} />
 
           {key && key.value ? (
-            <UserProvider>
-              <MarksProvider>
-                <DayProvider>
-                  <TableProvider>
-                    <AttendanceProvider>
-                      <CalendarProvider>
-                        <body className="h-screen">{children}</body>
-                      </CalendarProvider>
-                    </AttendanceProvider>
-                  </TableProvider>
-                </DayProvider>
-              </MarksProvider>
-            </UserProvider>
+            <GroupProviders>
+              <body className="h-screen">{children}</body>
+            </GroupProviders>
           ) : (
             <body className="h-screen">{children}</body>
           )}
         </ThemeProvider>
       </html>
     </ViewTransitions>
+  );
+}
+
+function GroupProviders({ children }: { children: ReactNode }) {
+  return (
+    <UserProvider>
+      <DayProvider>
+        <AttendanceProvider>
+          <MarksProvider>
+            <CourseProvider>
+              <TableProvider>
+                <CalendarProvider>{children}</CalendarProvider>
+              </TableProvider>
+            </CourseProvider>
+          </MarksProvider>
+        </AttendanceProvider>
+      </DayProvider>
+    </UserProvider>
   );
 }

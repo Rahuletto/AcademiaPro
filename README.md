@@ -13,7 +13,7 @@ University data, beautifully presented at your fingertips.
 > - Using new Web APIs: We’ve integrated the latest View-Transition APIs to provide smooth and engaging page-to-page animations.
 > - Improved Error Handling: Better error management ensures a seamless experience, minimizing disruptions.
 > - Rich Animations and Key Bindings: Experience fluid animations and intuitive key bindings designed to enhance usability.
-> - Full Accessibility Support: We are committed to inclusivity, fully supporting a11y guidelines to ensure accessibility for all users.
+> - Full Accessibility Support: We are committed to inclusivity, fully supporting a11y guidelines to ensure accessibility for all users. Even color-blind friendly!
 
 ## Why Choose AcademiaPro?
 

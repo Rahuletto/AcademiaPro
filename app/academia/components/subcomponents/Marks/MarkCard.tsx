@@ -16,7 +16,7 @@ export default function MarkCard({ mark }: { mark: Mark }) {
             aria-label={`${mark.courseName} (${mark.courseCode})`}
             className="text-md font-medium capitalize"
           >
-            {mark.courseName.toLowerCase()}
+            {mark.courseName?.toLowerCase()}
           </h1>
           <Indicator type={mark.courseType as "Practical" | "Theory"} />
         </div>

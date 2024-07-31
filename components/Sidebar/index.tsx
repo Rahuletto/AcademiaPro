@@ -126,7 +126,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
             </div>
 
             <div className="flex flex-col-reverse gap-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 dark:text-dark-color text-light-color">
                 <h4 className="font-mono text-xs opacity-60 transition duration-200">
                   Support:{" "}
                 </h4>
