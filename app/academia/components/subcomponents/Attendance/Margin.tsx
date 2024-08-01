@@ -13,7 +13,7 @@ export default function AttendanceMargin({
   courseTitle,
   countHoursPerDay,
 }: AttendanceMarginProps) {
-  const count = countHoursPerDay(courseTitle, category)
+  const count = countHoursPerDay(courseTitle, category);
   return (
     <div
       aria-hidden
@@ -27,13 +27,13 @@ export default function AttendanceMargin({
             ? "You are at the verge of going below 75%"
             : "The hours you can skip"
         }
-        className="text-sm font-medium text-light-accent dark:text-dark-accent"
+        className={`text-sm font-medium ${margin < 0 ? `text-light-error-color dark:text-dark-error-color` : `text-light-accent dark:text-dark-accent`}`}
       >
-        Margin: 
+        {margin >= 0 ? `Margin:` : `Required:`}
         <span
           className={`text-md ml-1 font-semibold ${margin <= 0 ? "text-light-error-color dark:text-dark-error-color" : margin <= count && margin > 0 ? "text-dark-warn-color dark:text-dark-warn-color" : "text-light-info-color dark:text-dark-info-color"}`}
         >
-          {margin}
+          {Math.abs(margin)}
         </span>
       </span>
     </div>
