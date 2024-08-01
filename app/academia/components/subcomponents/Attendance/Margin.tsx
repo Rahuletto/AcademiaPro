@@ -29,9 +29,9 @@ export default function AttendanceMargin({
         }
         className="text-sm font-medium text-light-accent dark:text-dark-accent"
       >
-        Margin:
+        Margin: 
         <span
-          className={`text-md font-semibold ${margin <= 0 ? "text-light-error-color dark:text-dark-error-color" : margin <= count && margin > 0 ? "text-dark-warn-color dark:text-dark-warn-color" : "text-light-info-color dark:text-dark-info-color"}`}
+          className={`text-md ml-1 font-semibold ${margin <= 0 ? "text-light-error-color dark:text-dark-error-color" : margin <= count && margin > 0 ? "text-dark-warn-color dark:text-dark-warn-color" : "text-light-info-color dark:text-dark-info-color"}`}
         >
           {margin}
         </span>
