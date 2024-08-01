@@ -12,7 +12,7 @@ export default function CourseCard({ course }: { course: Course }) {
       role="gridcell"
       className="grid w-full grid-cols-[3fr_1fr] grid-rows-[2fr_1fr] gap-3 rounded-3xl p-4 md:flex md:min-w-[900px] md:items-center md:justify-between md:rounded-xl"
     >
-      <div className="flex flex-col items-start gap-1 md:gap-3 lg:w-[40%] lg:flex-row lg:items-center lg:gap-8">
+      <div className="flex flex-col items-start gap-1 md:gap-3 xl:w-[50%] lg:w-[40%] w-[35%] lg:flex-row lg:items-center lg:gap-8">
         <CourseTitle
           courseTitle={course.courseTitle}
           category={course.courseType}
