@@ -37,7 +37,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
       const screenWidth = window.innerWidth;
       const swipeThreshold = screenWidth / 4;
 
-      if (touchendX - swipeThreshold < touchstartX) {
+      if (touchendX < touchstartX - swipeThreshold) {
         setIsOpen(false);
       }
 
