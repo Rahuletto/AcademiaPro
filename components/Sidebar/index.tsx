@@ -22,14 +22,46 @@ import { MdHelpOutline } from "react-icons/md";
 export function Sidebar({ children }: { children: ReactNode }) {
   const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
   const [isOpen, setIsOpen] = useState(true);
 
   const ref = useRef<HTMLDivElement>(null);
   const content = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setIsMounted(true);
+
+    let touchstartX = 0,
+      touchendX = 0;
+    window.addEventListener(
+      "touchstart",
+      function (event) {
+        touchstartX = event.changedTouches[0].screenX;
+      },
+      false,
+    );
+
+    window.addEventListener(
+      "touchend",
+      function (event) {
+        touchendX = event.changedTouches[0].screenX;
+        handleGesture();
+      },
+      false,
+    );
+
+    function handleGesture() {
+      const screenWidth = window.innerWidth;
+      const swipeThreshold = screenWidth / 4;
+
+      if (touchendX - swipeThreshold < touchstartX) {
+        setIsOpen(false);
+      }
+
+      if (touchendX > touchstartX + swipeThreshold) {
+        setIsOpen(true);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     if (ref.current && !isOpen) {
@@ -126,7 +158,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
             </div>
 
             <div className="flex flex-col-reverse gap-4">
-              <div className="flex items-center gap-2 dark:text-dark-color text-light-color">
+              <div className="flex items-center gap-2 text-light-color dark:text-dark-color">
                 <h4 className="font-mono text-xs opacity-60 transition duration-200">
                   Support:{" "}
                 </h4>
