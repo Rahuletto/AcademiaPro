@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Error from "@/components/States/Error";
 import { useTimetable } from "@/provider/TimetableProvider";
-import TableHeader from "./subcomponents/Timetable/TableHeader";
 import Loading from "@/components/States/Loading";
-import TableCard from "./subcomponents/Timetable/TableCard";
 import Link from "@/components/Link";
 import Container from "./subcomponents/Timetable/Container";
 
 export default function Timetable() {
-  const { timetable, isLoading, error } = useTimetable();
+  const { timetable, isLoading, error, mutate } = useTimetable();
+
+  useEffect(() => {
+    if (!isLoading && !timetable) mutate();
+  }, [isLoading, mutate, timetable]);
+
   return (
     <section id="timetable" className="flex flex-col gap-6">
       <div className="flex items-center gap-4">

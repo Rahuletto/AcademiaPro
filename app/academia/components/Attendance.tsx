@@ -3,9 +3,14 @@ import { useAttendance } from "@/provider/AttendanceProvider";
 import Error from "@/components/States/Error";
 import AttendanceCard from "./subcomponents/Attendance/AttendanceCard";
 import Indicator from "@/components/Indicator";
+import { useEffect } from "react";
 
 export default function Attendance() {
-  const { attendance, isLoading, error } = useAttendance();
+  const { attendance, isLoading, error, mutate } = useAttendance();
+
+  useEffect(() => {
+    if (!isLoading && !attendance) mutate();
+  }, [isLoading, mutate, attendance]);
 
   return (
     <section id="attendance">
@@ -22,7 +27,7 @@ export default function Attendance() {
                 <AttendanceCard legend course={attendance?.[0]} />
               </div>
             )}
-            <div className="transition animate-fadeIn duration-200 xl:-translate-y-16 xl:group-hover:translate-y-0">
+            <div className="animate-fadeIn transition duration-200 xl:-translate-y-16 xl:group-hover:translate-y-0">
               <div className="my-4">
                 {attendance
                   ?.filter((a) => a.category === "Theory")
@@ -36,7 +41,9 @@ export default function Attendance() {
                   ))}
               </div>
 
-              <Indicator type="Practical" separator />
+              {attendance && attendance[0] && (
+                <Indicator type="Practical" separator />
+              )}
 
               <div className="my-4">
                 {attendance

@@ -1,13 +1,18 @@
 import Link from "@/components/Link";
 import { useMarks } from "@/provider/MarksProvider";
-import React from "react";
+import React, { useEffect } from "react";
 import MarkCard from "./subcomponents/Marks/MarkCard";
 import Indicator from "@/components/Indicator";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
 
 export default function Marks() {
-  const { marks, isLoading, error } = useMarks();
+  const { marks, isLoading, error, mutate } = useMarks();
+
+  useEffect(() => {
+    if (!isLoading && !marks) mutate();
+  }, [isLoading, mutate, marks]);
+
   return (
     <section id="marks" className="flex flex-col gap-6">
       <div className="flex items-center gap-4">
@@ -32,7 +37,7 @@ export default function Marks() {
               ?.filter((a) => a.courseType === "Theory")
               .map((mark, i) => <MarkCard key={i} mark={mark} />)}
           </div>
-          <Indicator type="Practical" separator />
+          {marks && marks[0] && <Indicator type="Practical" separator />}
 
           <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
             {marks
