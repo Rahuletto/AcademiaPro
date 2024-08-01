@@ -2,15 +2,18 @@ import React from "react";
 
 type AttendanceMarginProps = {
   margin: number;
+  category: "Practical" | "Theory";
   courseTitle: string;
-  countHoursPerDay: (title: string) => number;
+  countHoursPerDay: (title: string, category: string) => number;
 };
 
 export default function AttendanceMargin({
   margin,
+  category,
   courseTitle,
   countHoursPerDay,
 }: AttendanceMarginProps) {
+  const count = countHoursPerDay(courseTitle, category)
   return (
     <div
       aria-hidden
@@ -20,7 +23,7 @@ export default function AttendanceMargin({
     >
       <span
         title={
-          margin <= countHoursPerDay(courseTitle)
+          margin <= count
             ? "You are at the verge of going below 75%"
             : "The hours you can skip"
         }
@@ -28,7 +31,7 @@ export default function AttendanceMargin({
       >
         Margin:
         <span
-          className={`text-md font-semibold ${margin <= 0 ? "text-light-error-color dark:text-dark-error-color" : margin <= countHoursPerDay(courseTitle) && margin > 0 ? "text-dark-warn-color dark:text-dark-warn-color" : "text-light-info-color dark:text-dark-info-color"}`}
+          className={`text-md font-semibold ${margin <= 0 ? "text-light-error-color dark:text-dark-error-color" : margin <= count && margin > 0 ? "text-dark-warn-color dark:text-dark-warn-color" : "text-light-info-color dark:text-dark-info-color"}`}
         >
           {margin}
         </span>

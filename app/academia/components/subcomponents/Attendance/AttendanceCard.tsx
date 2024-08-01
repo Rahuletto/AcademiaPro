@@ -35,11 +35,11 @@ export default function AttendanceCard({
     setMargin(calculateMargin(present, total));
   }, [present, total]);
 
-  const countHoursPerDay = (title: string) => {
+  const countHoursPerDay = (title: string, category: string) => {
     if (!timetable || !day || day.includes("No")) return 0;
 
     const todayTable = timetable[Number(day) - 1]?.subjects ?? [];
-    return todayTable.filter((item) => item && item.includes(title)).length;
+    return todayTable.filter((item) => item && item.includes(title) && item.includes(category)).length;
   };
 
   if (legend) return <Legend />;
@@ -48,11 +48,12 @@ export default function AttendanceCard({
     <div
       tabIndex={0}
       role="gridcell"
-      className="grid w-full grid-cols-[3fr_1fr] grid-rows-[repeat(2,1fr)] md:my-0 my-6 items-center gap-3 gap-y-2 rounded-3xl p-4 transition duration-200 md:flex md:items-center md:justify-between md:rounded-xl"
+      className="my-6 grid w-full grid-cols-[3fr_1fr] grid-rows-[repeat(2,1fr)] items-center gap-3 gap-y-2 rounded-3xl p-4 transition duration-200 md:my-0 md:flex md:items-center md:justify-between md:rounded-xl"
     >
       <Title courseTitle={courseTitle} category={category} />
       <Margin
         margin={margin}
+        category={category}
         courseTitle={courseTitle}
         countHoursPerDay={countHoursPerDay}
       />

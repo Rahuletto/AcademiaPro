@@ -10,7 +10,7 @@ export interface SuccessAttendanceResponse {
 export interface AttendanceCourse {
   courseCode: string;
   courseTitle: string;
-  category: string;
+  category: "Theory" | "Practical";
   facultyName: string;
   slot: string;
   hoursConducted: string;
