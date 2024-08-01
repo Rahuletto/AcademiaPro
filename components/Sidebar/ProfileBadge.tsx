@@ -85,7 +85,7 @@ export default function ProfileBadge({ className }: { className?: string }) {
           </span>
         </div>
         <span className="text-md line-clamp-1 flex-grow text-ellipsis font-medium capitalize text-light-accent dark:text-dark-color">
-          {user?.name.toLowerCase()}
+          {user?.name?.toLowerCase()}
         </span>
       </div>
       {dialogRoot &&

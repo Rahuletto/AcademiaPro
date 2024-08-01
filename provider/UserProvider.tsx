@@ -45,7 +45,9 @@ const fetcher = async (url: string) => {
     });
 
     if (!response.ok) {
-      const errorBody = await response.text();
+      const errorBody = await response.json();
+      if (errorBody.logout) return errorBody;
+
       throw new Error(
         `HTTP error! status: ${response.status}, body: ${errorBody}`,
       );
@@ -96,6 +98,7 @@ export function UserProvider({
     errorRetryCount: 4,
     onSuccess: (data) => {
       if (data) {
+        console.log(data);
         if (data.logout) router.push("/auth/logout");
         Storage.set("user", data);
       }
