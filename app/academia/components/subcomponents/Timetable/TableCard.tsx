@@ -66,19 +66,21 @@ function SubjectCell({
           className="rounded-full p-2"
         ></span>
       ) : null}
-      <span
-        className={`${!subject ? "hidden xl:block xl:text-light-color xl:dark:text-dark-color" : "text-dark-background-dark"} absolute bottom-1 right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
-      >
-        {Time.start[index] + " - " + Time.end[index]}
-      </span>
       {classRoom && (
         <span
-          className="animate-fastfade absolute bottom-2 left-2 text-xs opacity-70"
+          className="absolute bottom-2 left-2 flex animate-fastfade text-xs opacity-70"
           style={{ width: "min-content" }}
         >
           {classRoom}
         </span>
       )}
+      
+      <span
+        className={`${!subject ? "hidden xl:block xl:text-light-color xl:dark:text-dark-color" : "text-dark-background-dark"} absolute ${classRoom ? "md:bottom-6 bottom-1" : "bottom-1"} right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
+      >
+        {Time.start[index] + " - " + Time.end[index]}
+      </span>
+      
     </div>
   );
 }
@@ -157,5 +159,9 @@ function getClass(subject: string, courses: Course[]) {
       course.courseTitle === courseTitle.trim() &&
       (formattedCourseType ? course.courseType === formattedCourseType : true),
   );
-  return course ? course.roomNo : null;
+  return course
+    ? course.roomNo
+      ? course.roomNo
+      : subject.split("[")[1].replace("]", "")
+    : null;
 }
