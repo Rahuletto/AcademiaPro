@@ -7,7 +7,11 @@ interface UserDialogProps {
   logout: () => void;
 }
 
-export default function UserDialog({ isOpen, onClose,logout }: UserDialogProps) {
+export default function UserDialog({
+  isOpen,
+  onClose,
+  logout,
+}: UserDialogProps) {
   const { user } = useUser();
 
   if (!isOpen) return null;
@@ -16,7 +20,7 @@ export default function UserDialog({ isOpen, onClose,logout }: UserDialogProps) 
     <div
       role="button"
       tabIndex={0}
-      className="animate-fastfade fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm transition duration-75"
+      className="fixed inset-0 z-50 flex animate-fastfade items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm transition duration-75"
       onKeyDown={(e) => {
         if (e.key === "Escape") onClose();
       }}
@@ -34,11 +38,11 @@ export default function UserDialog({ isOpen, onClose,logout }: UserDialogProps) 
         <div className="p-2">
           <div className="flex items-center justify-between">
             <h2 className="text-2xl font-semibold capitalize text-light-color dark:text-dark-color">
-              {user?.name.toLowerCase()}
+              {user?.name?.toLowerCase()}
             </h2>
             <button
-            title="Close"
-            aria-label="Close"
+              title="Close"
+              aria-label="Close"
               onClick={onClose}
               className="rounded-full border-2 border-light-error-color bg-light-error-background p-2 text-lg text-light-error-color dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color"
             >
