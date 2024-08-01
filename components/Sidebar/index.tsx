@@ -32,22 +32,6 @@ export function Sidebar({ children }: { children: ReactNode }) {
 
     let touchstartX = 0,
       touchendX = 0;
-    window.addEventListener(
-      "touchstart",
-      function (event) {
-        touchstartX = event.changedTouches[0].screenX;
-      },
-      false,
-    );
-
-    window.addEventListener(
-      "touchend",
-      function (event) {
-        touchendX = event.changedTouches[0].screenX;
-        handleGesture();
-      },
-      false,
-    );
 
     function handleGesture() {
       const screenWidth = window.innerWidth;
@@ -61,28 +45,51 @@ export function Sidebar({ children }: { children: ReactNode }) {
         setIsOpen(true);
       }
     }
+
+    function startTouch(event: TouchEvent) {
+      touchstartX = event.changedTouches[0].screenX;
+    }
+
+    function stopTouch(event: TouchEvent) {
+      touchendX = event.changedTouches[0].screenX;
+      handleGesture();
+    }
+
+    window.addEventListener("touchstart", startTouch, false);
+    window.addEventListener("touchend", stopTouch, false);
+
+    return () => {
+      window.removeEventListener("touchstart", startTouch);
+      window.removeEventListener("touchend", stopTouch);
+    };
   }, []);
 
   useEffect(() => {
-    if (ref.current && !isOpen) {
-      const handleMouseEnter = () => {
-        setIsOpen(true);
-      };
-      const handleMouseLeave = () => {
-        setIsOpen(false);
-      };
+    const handleMouseEnter = () => {
+      setIsOpen(true);
+    };
+    const handleMouseLeave = () => {
+      setIsOpen(false);
+    };
 
+    if (content.current) {
+      content.current.addEventListener("touchstart", handleMouseLeave);
+    }
+
+    if (ref.current && !isOpen) {
       if (content.current) {
         content.current.addEventListener("mouseenter", handleMouseLeave);
       }
 
       ref.current.addEventListener("mouseenter", handleMouseEnter);
-
-      return () => {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        ref.current?.removeEventListener("mouseenter", handleMouseEnter);
-      };
     }
+
+    return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      ref.current?.removeEventListener("mouseenter", handleMouseEnter);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      ref.current?.removeEventListener("touchstart", handleMouseEnter);
+    };
   }, [isOpen]);
 
   if (!isMounted) {
