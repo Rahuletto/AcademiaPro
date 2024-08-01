@@ -5,13 +5,14 @@ import { useCalendar } from "@/provider/CalendarProvider";
 import React, { useState } from "react";
 import CalendarGrid from "./components/CalendarGrid";
 import CalendarHeader from "./components/CalendarHeader";
+import Error from "@/components/States/Error";
 
 export default function Calendar() {
-  const { calendar, isLoading } = useCalendar();
+  const { calendar, isLoading, error } = useCalendar();
   const [current, setCurrent] = useState(new Date().getMonth() % 5);
-  const actual = new Date().getMonth()
+  const actual = new Date().getMonth();
 
-  console.log(actual <= 4 ? current : current + 5)
+  console.log(actual <= 4 ? current : current + 5);
 
   const month = calendar?.[current].month || "";
   const days = calendar?.[current].days || [];
@@ -25,6 +26,8 @@ export default function Calendar() {
               <CalendarHeader month={"Calendar"} />
               <Loading size="max" />
             </>
+          ) : error ? (
+            <Error component="Calendar" />
           ) : (
             <section id="calendar" className="flex flex-col gap-6">
               <CalendarHeader mobile month={"Calendar"} />
@@ -34,7 +37,10 @@ export default function Calendar() {
                 setCurrent={setCurrent}
                 current={current}
               />
-              <CalendarGrid days={days} month={actual <= 4 ? current : current + 5} />
+              <CalendarGrid
+                days={days}
+                month={actual <= 4 ? current : current + 5}
+              />
             </section>
           )}
         </div>

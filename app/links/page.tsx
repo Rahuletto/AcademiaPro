@@ -31,7 +31,7 @@ export default function Urls() {
               </p>
             </div>
 
-            <div className="ml-10 flex flex-col gap-20">
+            <div className="md:ml-10 ml-2 flex flex-col gap-20">
               <SearchBar
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
