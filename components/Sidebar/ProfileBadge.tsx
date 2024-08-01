@@ -75,9 +75,10 @@ export default function ProfileBadge({ className }: { className?: string }) {
               <Image
                 className="mt-1"
                 src="/images/batman.svg"
-                alt="Custom Bug"
+                alt="Batman"
                 width={40}
                 height={40}
+                style={{ width: 'auto', height: '40px' }}
               />
             ) : (
               <FaUser />

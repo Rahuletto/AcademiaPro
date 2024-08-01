@@ -62,7 +62,7 @@ const DateDisplay: React.FC<DateDisplayProps> = ({
   >
     <h4 className="text-md font-medium xl:hidden">{day}</h4>
     <h3
-      className={`${isToday ? `flex aspect-square w-9 items-center justify-center p-1 ${isErrorDay ? "bg-light-error-color text-light-error-background dark:bg-dark-error-color dark:text-dark-error-background" : "bg-light-success-color text-light-success-background dark:bg-dark-success-color dark:text-dark-success-background"}` : ""} w-fit rounded-full text-right text-xl font-bold`}
+      className={`${isToday ? `flex aspect-square min-w-9 max-w-9 items-center justify-center p-1 ${isErrorDay ? "bg-light-error-color text-light-error-background dark:bg-dark-error-color dark:text-dark-error-background" : "bg-light-success-color text-light-success-background dark:bg-dark-success-color dark:text-dark-success-background"}` : ""} w-fit rounded-full text-right text-xl font-bold`}
     >
       {date}
     </h3>

@@ -98,7 +98,6 @@ export function UserProvider({
     errorRetryCount: 4,
     onSuccess: (data) => {
       if (data) {
-        console.log(data);
         if (data.logout) router.push("/auth/logout");
         Storage.set("user", data);
       }
