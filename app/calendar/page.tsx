@@ -12,8 +12,6 @@ export default function Calendar() {
   const [current, setCurrent] = useState(new Date().getMonth() % 5);
   const actual = new Date().getMonth();
 
-  console.log(actual <= 4 ? current : current + 5);
-
   const month = calendar?.[current].month || "";
   const days = calendar?.[current].days || [];
 
