@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Mark } from "../../../../../types/Marks";
 import Indicator from "@/components/Indicator";
 import MarkElement, { MarkDisplay } from "./MarkElement";
-import { FaCalculator } from "react-icons/fa6";
+import { FaCalculator, FaXmark } from "react-icons/fa6";
 
 const grade_points: { [key: string]: number } = {
   O: 91,
@@ -33,9 +33,11 @@ export default function MarkCard({ mark }: { mark: Mark }) {
   return (
     <div
       title={`${mark.courseName} (${mark.courseCode})`}
-      className="flex flex-col justify-between gap-3 rounded-3xl bg-light-background-normal p-4 px-5 pb-5 dark:bg-dark-background-normal"
+      className="relative flex min-h-[195px] flex-col justify-between gap-3 rounded-3xl bg-light-background-normal p-4 px-5 pb-5 dark:bg-dark-background-normal"
     >
-      <div className="flex h-full flex-col gap-4">
+      <div
+        className={`${calculate ? "opacity-50" : "opacity-100"} flex h-full flex-col gap-4`}
+      >
         <div className="flex w-full items-start justify-between gap-2">
           <h1
             title={mark.courseCode}
@@ -70,34 +72,37 @@ export default function MarkCard({ mark }: { mark: Mark }) {
         title="Total"
         aria-label="Total"
         role="alert"
-        className="ml-2 mt-3 flex items-center justify-between gap-2 border-t-2 border-dashed border-dark-background-light pt-4"
+        className={`${calculate ? "opacity-80" : "opacity-100"} ml-2 mt-3 flex items-center justify-between gap-2 border-t-2 border-dashed border-dark-background-light pt-4`}
       >
-        <div className="flex flex-row items-center gap-2">
+        <div className="flex flex-row items-center gap-4">
           <h2>Total</h2>
           <button
-            className="rounded-full p-2 text-sm opacity-80 transition duration-200 hover:bg-light-background-dark dark:hover:bg-dark-background-dark"
+            className={`rounded-full p-2 text-xs opacity-70 transition duration-200 ${calculate ? "bg-light-error-background dark:bg-dark-error-background" : "hover:bg-light-background-dark dark:hover:bg-dark-background-dark"}`}
             onClick={() => setCalculate(!calculate)}
           >
-            <FaCalculator />
+            {calculate ? (
+              <FaXmark className="text-light-error-color dark:text-dark-error-color" />
+            ) : (
+              <FaCalculator />
+            )}
           </button>
         </div>
         <MarkDisplay marks={mark.overall} />
       </div>
+
       {calculate && (
         <>
           <div
-            title="Total"
-            aria-label="Total"
             role="alert"
-            className="ml-2 mt-3 items-center justify-between gap-2 border-t-2 border-dashed border-dark-background-light pt-4 text-sm text-light-accent dark:text-dark-accent"
+            className="absolute bottom-14 left-0 z-10 ml-2 mt-1 w-[97%] animate-fastfade items-center justify-between gap-2 rounded-2xl bg-light-background-light p-4 px-5 pb-5 pt-2 text-sm text-light-accent transition duration-300 md:bottom-[70px] md:w-[95%] dark:bg-dark-side dark:text-dark-accent"
           >
-            <div className="flex items-center justify-between py-2">
+            <div className="flex items-center justify-between pt-2">
               <div>Enter the required Grade</div>
               <div>
                 <select
                   value={grade}
                   onChange={(e) => setGrade(e.target.value)}
-                  className="appearance-none rounded-md border-none bg-light-background-light px-2 py-1 text-center text-white outline-none dark:bg-dark-background-light"
+                  className="appearance-none rounded-full border-none bg-light-background-dark px-3 py-1 text-light-color outline-none dark:bg-dark-background-normal dark:text-dark-color"
                 >
                   <option value="O">O</option>
                   <option value="A+">A+</option>
@@ -115,10 +120,9 @@ export default function MarkCard({ mark }: { mark: Mark }) {
                   {60 - Number.parseFloat(mark.overall.total)}:
                 </p>
                 <input
-                  type="number"
-                  className="appearance-none rounded-md border-none bg-light-background-light px-2 py-1 text-center text-white outline-none dark:bg-dark-background-light"
+                  type="text"
+                  className="w-16 appearance-none rounded-md border-none bg-light-background-dark px-2 py-1 text-center outline-none dark:bg-dark-background-normal"
                   value={expectedInternal}
-                  min={0}
                   maxLength={3}
                   max={60 - Number.parseFloat(mark.overall.total)}
                   onChange={(e) => {
@@ -135,7 +139,7 @@ export default function MarkCard({ mark }: { mark: Mark }) {
             )}
             <div className="flex flex-row items-center justify-between gap-2">
               <h2>Required Marks</h2>
-              <div className="flex items-center gap-1 rounded-full border bg-gray-100 dark:bg-gray-800">
+              <div className="flex items-center gap-1 rounded-full bg-light-background-dark dark:bg-dark-background-dark">
                 <span
                   className={`pl-2 text-sm font-medium ${
                     Number(req) <= 0
@@ -147,8 +151,8 @@ export default function MarkCard({ mark }: { mark: Mark }) {
                 >
                   {req}
                 </span>
-                <span className="rounded-full py-0.5 pr-2 text-sm font-bold">
-                  /75
+                <span className="ml-1 rounded-full bg-light-success-color px-2 py-0.5 pr-2 text-sm font-bold text-light-success-background dark:bg-dark-success-color dark:text-dark-success-background">
+                  75
                 </span>
               </div>
             </div>
