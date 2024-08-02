@@ -151,6 +151,19 @@ export default function Attendance() {
           dateRange={dateRange}
         />
       </div>
+      {isPredicted && <button
+        onClick={resetAttendance}
+        className="w-fit rounded-full mb-3  bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color"
+      >
+        Absent{" "}
+        {(dateRange.from || new Date()).getDate() ===
+        (dateRange.to || new Date()).getDate()
+          ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
+          : `from ${format(dateRange.from || new Date(), "LLL dd")} to ${format(
+              dateRange.to || new Date(),
+              "LLL dd",
+            )}`}
+      </button>}
 
       <div className="group px-2 pt-3">
         {isLoading ? (

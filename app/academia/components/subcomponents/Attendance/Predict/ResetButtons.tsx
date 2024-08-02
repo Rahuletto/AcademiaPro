@@ -35,15 +35,7 @@ export default function PredictResetButtons({
           >
             Reset
           </button>
-          <button onClick={resetAttendance} className="w-fit rounded-full bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color">
-            Absent{" "}
-            {(dateRange.from || new Date()).getDate() === (dateRange.to || new Date()).getDate()
-              ? `in ${format((dateRange.from || new Date()), "LLL dd")}`
-              : `from ${format((dateRange.from || new Date()), "LLL dd")} to ${format(
-                  (dateRange.to || new Date()),
-                  "LLL dd",
-                )}`}
-          </button>
+
         </>
       )}
     </>
