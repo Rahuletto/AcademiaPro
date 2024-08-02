@@ -19,10 +19,30 @@ export default function DatePickerComponent({
   return (
     <div className="flex items-center gap-4">
       <DatePicker
-        value={[new DateObject(dateRange.from || new Date()), new DateObject(dateRange.to || new Date())]}
+        value={[
+          new DateObject(dateRange.from || new Date()),
+          new DateObject(dateRange.to || new Date()),
+        ]}
         onChange={handleDateChange}
         range
-        minDate={new DateObject(new Date(2024, new Date().getMonth(), new Date().getDate()))}
+        minDate={
+          new DateObject(
+            new Date(
+              new Date().getFullYear(),
+              new Date().getMonth(),
+              new Date().getDate(),
+            ),
+          )
+        }
+        maxDate={
+          new DateObject(
+            new Date(
+              new Date().getFullYear(),
+              new Date().getMonth() + 4,
+              new Date().getDate(),
+            ),
+          )
+        }
         numberOfMonths={1}
         className="absolute"
       />
