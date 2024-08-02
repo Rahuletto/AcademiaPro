@@ -73,9 +73,10 @@ html.bw {
 }
 
 .rmdp-input {
-  opacity: 0.8;
+  opacity: 0;
   background: transparent;
   border: 0px solid transparent;
+
 }
 
 .ep-arrow {

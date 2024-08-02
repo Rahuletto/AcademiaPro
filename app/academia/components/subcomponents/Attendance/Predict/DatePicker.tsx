@@ -1,4 +1,5 @@
-import { BsCalendar2WeekFill } from "react-icons/bs";
+
+import { FaCheck } from "react-icons/fa6";
 import DatePicker from "react-multi-date-picker";
 import { DateObject } from "react-multi-date-picker";
 
@@ -14,10 +15,10 @@ export default function DatePickerComponent({
   performPrediction,
 }: DatePickerComponentProps) {
   function selector() {
-    document.querySelector<HTMLInputElement>(".rmdp-container ")?.focus();
+    document.querySelector<HTMLInputElement>(".rmdp-input")?.focus();
   }
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center gap-4 relative">
       <DatePicker
         value={[
           new DateObject(dateRange.from || new Date()),
@@ -44,15 +45,22 @@ export default function DatePickerComponent({
           )
         }
         numberOfMonths={1}
-        className="absolute"
       />
+      <div className="flex items-center gap-4 absolute left-0 rounded-full dark:bg-dark-button bg-light-button text-light-accent dark:text-dark-accent">
+        <button
+          onClick={selector}
+          className="pl-3 py-1 text-sm font-semibold"
+        >
+          Filter
+        </button>
 
-      <button
-        onClick={performPrediction}
-        className="flex w-fit items-center justify-center rounded-xl bg-light-button px-5 py-1 text-sm font-medium text-light-accent transition-all duration-300 hover:scale-105 hover:opacity-80 dark:bg-dark-button dark:text-dark-accent"
-      >
-        Apply
-      </button>
+        <button
+          onClick={performPrediction}
+        className="px-2 py-1 rounded-full border border-light-success-color dark:border-dark-success-color text-light-success-color dark:text-dark-success-color dark:bg-dark-success-background bg-light-success-background"
+        >
+          <FaCheck />
+        </button>
+      </div>
     </div>
   );
 }
