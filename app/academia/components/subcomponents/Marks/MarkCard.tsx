@@ -4,9 +4,7 @@ import Indicator from "@/components/Indicator";
 import MarkElement, { MarkDisplay } from "./MarkElement";
 import { FaCalculator } from "react-icons/fa6";
 
-const grade_points: {
-  [key: string]: number;
-} = {
+const grade_points: { [key: string]: number } = {
   O: 91,
   "A+": 81,
   A: 71,
@@ -16,7 +14,7 @@ const grade_points: {
 };
 
 export default function MarkCard({ mark }: { mark: Mark }) {
-  const [calculate, setCalcuate] = useState(false);
+  const [calculate, setCalculate] = useState(false);
   const [grade, setGrade] = useState("O");
   const [req, setReq] = useState("0");
   const [expectedInternal, setExpectedInternal] = useState(0);
@@ -30,7 +28,8 @@ export default function MarkCard({ mark }: { mark: Mark }) {
         75
       ).toPrecision(3),
     );
-  }, [grade, calculate, expectedInternal]);
+  }, [grade, calculate, expectedInternal, mark.overall.marks]);
+
   return (
     <div
       title={`${mark.courseName} (${mark.courseCode})`}
@@ -77,7 +76,7 @@ export default function MarkCard({ mark }: { mark: Mark }) {
           <h2>Total</h2>
           <button
             className="rounded-full p-2 text-sm opacity-80 transition duration-200 hover:bg-light-background-dark dark:hover:bg-dark-background-dark"
-            onClick={() => setCalcuate(!calculate)}
+            onClick={() => setCalculate(!calculate)}
           >
             <FaCalculator />
           </button>
@@ -93,9 +92,13 @@ export default function MarkCard({ mark }: { mark: Mark }) {
             className="ml-2 mt-3 items-center justify-between gap-2 border-t-2 border-dashed border-dark-background-light pt-4 text-sm text-light-accent dark:text-dark-accent"
           >
             <div className="flex items-center justify-between py-2">
-              <div className="">Enter the required Grade</div>
+              <div>Enter the required Grade</div>
               <div>
-                <select className="appearance-none rounded-md border-none bg-light-background-light px-2 py-1 text-white outline-none dark:bg-dark-background-light">
+                <select
+                  value={grade}
+                  onChange={(e) => setGrade(e.target.value)}
+                  className="appearance-none rounded-md border-none bg-light-background-light px-2 py-1 text-center text-white outline-none dark:bg-dark-background-light"
+                >
                   <option value="O">O</option>
                   <option value="A+">A+</option>
                   <option value="A">A</option>
@@ -113,7 +116,7 @@ export default function MarkCard({ mark }: { mark: Mark }) {
                 </p>
                 <input
                   type="number"
-                  className="appearance-none rounded-md border-none bg-light-background-light px-2 py-1 text-white outline-none hover:appearance-none dark:bg-dark-background-light"
+                  className="appearance-none rounded-md border-none bg-light-background-light px-2 py-1 text-center text-white outline-none dark:bg-dark-background-light"
                   value={expectedInternal}
                   min={0}
                   maxLength={3}
@@ -131,9 +134,19 @@ export default function MarkCard({ mark }: { mark: Mark }) {
               </div>
             )}
             <div className="flex flex-row items-center justify-between gap-2">
-              <h2>Rquired Marks</h2>
+              <h2>Required Marks</h2>
               <div className="flex items-center gap-1 rounded-full border bg-gray-100 dark:bg-gray-800">
-                <span className="pl-2 text-sm font-medium">{req}</span>
+                <span
+                  className={`pl-2 text-sm font-medium ${
+                    Number(req) <= 0
+                      ? "text-light-accent dark:text-dark-accent"
+                      : Number(req) > 75
+                        ? "text-light-error-color dark:text-dark-error-color"
+                        : "text-light-success-color dark:text-dark-success-color"
+                  }`}
+                >
+                  {req}
+                </span>
                 <span className="rounded-full py-0.5 pr-2 text-sm font-bold">
                   /75
                 </span>
