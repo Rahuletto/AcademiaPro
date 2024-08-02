@@ -14,7 +14,14 @@ export default function Attendance() {
 
   return (
     <section id="attendance">
-      <h1 className="text-2xl font-semibold">Attendance</h1>
+      <div className="flex items-center gap-4">
+        <h1 className="text-2xl font-semibold">Attendance</h1>
+        <button
+          className="flex items-center justify-center text-sm text-light-accent dark:text-dark-accentbg-light-button dark:bg-dark-button dark:text-dark-accent w-fit transform rounded-xl px-5 py-1 font-medium transition-all duration-300 hover:scale-105 hover:opacity-80"
+        >
+          Predict
+        </button>
+      </div>
       <div className="group px-2 pt-3">
         {isLoading ? (
           <Loading size="max" />
