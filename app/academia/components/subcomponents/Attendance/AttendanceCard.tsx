@@ -34,12 +34,18 @@ export default function AttendanceCard({
   useEffect(() => {
     setMargin(calculateMargin(present, total));
   }, [present, total]);
-
+  useEffect(() => {
+    if (parseFloat(attendancePercentage) === 75) {
+      console.log("warn");
+    }
+  }, [attendancePercentage]);
   const countHoursPerDay = (title: string, category: string) => {
     if (!timetable || !day || day.includes("No")) return 0;
 
     const todayTable = timetable[Number(day) - 1]?.subjects ?? [];
-    return todayTable.filter((item) => item && item.includes(title) && item.includes(category)).length;
+    return todayTable.filter(
+      (item) => item && item.includes(title) && item.includes(category),
+    ).length;
   };
 
   if (legend) return <Legend />;
@@ -62,9 +68,11 @@ export default function AttendanceCard({
         className={`w-24 self-end justify-self-end text-right font-semibold md:self-center md:justify-self-center ${
           parseFloat(attendancePercentage) === 100
             ? "text-3xl text-light-success-color dark:text-dark-success-color"
-            : parseFloat(attendancePercentage) < 75
-              ? "text-2xl text-light-error-color dark:text-dark-error-color"
-              : "text-2xl text-light-color dark:text-dark-color"
+            : parseFloat(attendancePercentage) === 75
+              ? "text-2xl text-light-warn-color dark:text-dark-warn-color"
+              : parseFloat(attendancePercentage) < 75
+                ? "text-2xl text-light-error-color dark:text-dark-error-color"
+                : "text-2xl text-light-color dark:text-dark-color"
         }`}
       >
         {attendancePercentage.replace(".00", "")}%
