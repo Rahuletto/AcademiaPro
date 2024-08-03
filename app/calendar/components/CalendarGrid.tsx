@@ -40,9 +40,11 @@ export default function CalendarGrid({ days, month }: CalendarGridProps) {
             <DayCell
               key={index}
               day={day}
-              date={date}
-              isToday={
+              isTomorrow={
                 date === Number(day.date) && new Date().getMonth() === month
+              }
+              isToday={
+                date - 1 === Number(day.date) && new Date().getMonth() === month
               }
               ref={date === Number(day.date) ? todayRef : null}
             />

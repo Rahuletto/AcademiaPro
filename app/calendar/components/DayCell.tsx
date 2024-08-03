@@ -4,11 +4,11 @@ import React, { forwardRef } from "react";
 interface DayCellProps {
   day: Day;
   isToday: boolean;
-  date: number;
+  isTomorrow: boolean;
 }
 
 export default forwardRef<HTMLDivElement, DayCellProps>(function DayCell(
-  { day, isToday, date },
+  { day, isToday, isTomorrow },
   ref,
 ) {
   const isErrorDay = day.dayOrder === "-";
@@ -22,7 +22,7 @@ export default forwardRef<HTMLDivElement, DayCellProps>(function DayCell(
           ? "bg-light-error-background dark:bg-dark-error-background"
           : isToday
             ? "opacity-100 border-light-success-color bg-light-success-background text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
-            : date + 1 === Number(day.date) ? "bg-light-warn-background text-light-warn-color dark:bg-dark-warn-background opacity-50 dark:text-dark-warn-color" : "dark:opacity-60 bg-light-background-light dark:bg-dark-background-normal"
+            : isTomorrow ? "bg-light-warn-background text-light-warn-color dark:bg-dark-warn-background opacity-50 dark:text-dark-warn-color" : "dark:opacity-60 bg-light-background-light dark:bg-dark-background-normal"
     }
   `;
 

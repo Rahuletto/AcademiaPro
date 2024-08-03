@@ -4,18 +4,14 @@ interface PredictResetButtonsProps {
   isPredicted: boolean;
   showDatePicker: boolean;
   setShowDatePicker: (value: boolean) => void;
-  performPrediction: () => void;
   resetAttendance: () => void;
-  dateRange: { from: Date | null; to: Date | null };
 }
 
 export default function PredictResetButtons({
   isPredicted,
   showDatePicker,
   setShowDatePicker,
-  performPrediction,
   resetAttendance,
-  dateRange,
 }: PredictResetButtonsProps) {
   return (
     <>

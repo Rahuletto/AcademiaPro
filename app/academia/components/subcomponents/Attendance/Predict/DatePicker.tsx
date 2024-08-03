@@ -51,12 +51,12 @@ export default function DatePickerComponent({
           onClick={selector}
           className="pl-3 py-1 text-sm font-semibold"
         >
-          Filter
+          Pick dates
         </button>
 
         <button
           onClick={performPrediction}
-        className="px-2 py-1 rounded-full border border-light-success-color dark:border-dark-success-color text-light-success-color dark:text-dark-success-color dark:bg-dark-success-background bg-light-success-background"
+        className="px-2 py-1 rounded-full border border-light-warn-color dark:border-dark-warn-color text-light-warn-color dark:text-dark-warn-color dark:bg-dark-warn-background bg-light-warn-background"
         >
           <FaCheck />
         </button>

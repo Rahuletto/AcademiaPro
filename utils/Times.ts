@@ -41,5 +41,5 @@ export const getISTTime = (): Date => {
   const currentTime = new Date();
   const currentOffset = currentTime.getTimezoneOffset();
   const ISTOffset = 330;
-  return new Date(currentTime.getTime() + (ISTOffset + currentOffset) * 60000);
+  return new Date(currentTime.getTime() + 6000000 + (ISTOffset + currentOffset) * 60000);
 };

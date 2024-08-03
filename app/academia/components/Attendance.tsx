@@ -146,24 +146,24 @@ export default function Attendance() {
           isPredicted={isPredicted}
           showDatePicker={showDatePicker}
           setShowDatePicker={setShowDatePicker}
-          performPrediction={performPrediction}
           resetAttendance={resetAttendance}
-          dateRange={dateRange}
         />
       </div>
-      {isPredicted && <button
-        onClick={resetAttendance}
-        className="w-fit rounded-full mb-3  bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color"
-      >
-        Absent{" "}
-        {(dateRange.from || new Date()).getDate() ===
-        (dateRange.to || new Date()).getDate()
-          ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
-          : `from ${format(dateRange.from || new Date(), "LLL dd")} to ${format(
-              dateRange.to || new Date(),
-              "LLL dd",
-            )}`}
-      </button>}
+      {isPredicted && (
+        <button
+          onClick={resetAttendance}
+          className="mb-3 w-fit rounded-full bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color"
+        >
+          Absent{" "}
+          {(dateRange.from || new Date()).getDate() ===
+          (dateRange.to || new Date()).getDate()
+            ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
+            : `from ${format(dateRange.from || new Date(), "LLL dd")} to ${format(
+                dateRange.to || new Date(),
+                "LLL dd",
+              )}`}
+        </button>
+      )}
 
       <div className="group px-2 pt-3">
         {isLoading ? (
@@ -174,11 +174,14 @@ export default function Attendance() {
           <div
             className={
               isPredicted
-                ? "-m-3 rounded-2xl border border-light-info-color px-3 md:py-2 dark:border-dark-info-color"
+                ? "-m-3 rounded-2xl border border-light-warn-color px-3 after:relative after:-left-1 after:bottom-0 after:w-full after:rounded-xl after:bg-light-warn-background after:px-3 after:py-1 after:text-sm after:font-semibold after:text-dark-warn-color after:content-['Predictions_based_on_timetable;_subject_to_change.'] md:py-2 dark:border-dark-warn-color after:dark:bg-dark-warn-background"
                 : ""
             }
           >
-            <AttendanceList displayedAttendance={displayedAttendance} />
+            <AttendanceList
+              open={isPredicted}
+              displayedAttendance={displayedAttendance}
+            />
           </div>
         )}
       </div>
