@@ -34,11 +34,7 @@ export default function AttendanceCard({
   useEffect(() => {
     setMargin(calculateMargin(present, total));
   }, [present, total]);
-  useEffect(() => {
-    if (parseFloat(attendancePercentage) === 75) {
-      console.log("warn");
-    }
-  }, [attendancePercentage]);
+
   const countHoursPerDay = (title: string, category: string) => {
     if (!timetable || !day || day.includes("No")) return 0;
 

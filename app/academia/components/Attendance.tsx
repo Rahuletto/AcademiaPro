@@ -56,18 +56,17 @@ export default function Attendance() {
       previousDateRange &&
       dateRange.from.getTime() === previousDateRange.from.getTime() &&
       dateRange.to.getTime() === previousDateRange.to.getTime()
-    ) {
-      console.log("Prediction already applied for this date range");
+    )
       return;
-    }
 
     const updatedAttendance: AttendanceCourse[] = JSON.parse(
       JSON.stringify(attendance),
     ); // Deep copy
-    let currentDate = new Date(dateRange.from);
+    let currentDate = new Date();
+    const startDate = new Date(dateRange.from);
     const endDate = new Date(dateRange.to);
 
-    while (currentDate <= endDate) {
+    while (currentDate < startDate) {
       const formattedDate = format(currentDate, "d");
 
       const currentMonth = calendar.find((m) => {
@@ -77,7 +76,8 @@ export default function Attendance() {
 
       if (currentMonth?.month) {
         const dayInfo = currentMonth.days.find((d) => d.date === formattedDate);
-        if (dayInfo && dayInfo.dayOrder && !dayInfo.holiday) {
+
+        if (dayInfo && dayInfo.dayOrder && dayInfo.day !== "Sat") {
           const daySchedule = timetable.find(
             (t) => t.dayOrder.replaceAll("Day ", "") === dayInfo.dayOrder,
           );
@@ -85,12 +85,65 @@ export default function Attendance() {
           if (daySchedule) {
             daySchedule.subjects.forEach((subject) => {
               if (subject) {
+                const subjectTitle = subject.split(" (")[0];
+                const subjectCategory = subject.split(" (")[1]?.split(")")[0];
+
                 const courseAttendance = updatedAttendance.find((a) => {
                   return (
-                    a.courseTitle === subject.split(" (")[0] &&
-                    a.category === subject.split(" (")[1].split(")")[0]
+                    a.courseTitle === subjectTitle &&
+                    a.category === subjectCategory
                   );
                 });
+
+                if (courseAttendance) {
+                  const conducted =
+                    parseInt(courseAttendance.hoursConducted) + 1;
+                  courseAttendance.hoursConducted = conducted.toString();
+                  const percentage = (
+                    ((conducted - parseInt(courseAttendance.hoursAbsent)) /
+                      conducted) *
+                    100
+                  ).toFixed(2);
+                  courseAttendance.attendancePercentage = percentage;
+                }
+              }
+            });
+          }
+        }
+      }
+
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+
+    while (format(currentDate, "d") <= format(endDate, "d")) {
+      const formattedDate = format(currentDate, "d");
+
+      const currentMonth = calendar.find((m) => {
+        const monthName = format(currentDate, "MMM");
+        return monthName == m.month.split("'")[0].trim();
+      });
+
+      if (currentMonth?.month) {
+        const dayInfo = currentMonth.days.find((d) => d.date === formattedDate);
+
+        if (dayInfo && dayInfo.dayOrder && dayInfo.day !== "Sat") {
+          const daySchedule = timetable.find(
+            (t) => t.dayOrder.replaceAll("Day ", "") === dayInfo.dayOrder,
+          );
+
+          if (daySchedule) {
+            daySchedule.subjects.forEach((subject) => {
+              if (subject) {
+                const subjectTitle = subject.split(" (")[0];
+                const subjectCategory = subject.split(" (")[1]?.split(")")[0];
+
+                const courseAttendance = updatedAttendance.find((a) => {
+                  return (
+                    a.courseTitle === subjectTitle &&
+                    a.category === subjectCategory
+                  );
+                });
+
                 if (courseAttendance) {
                   const conducted =
                     parseInt(courseAttendance.hoursConducted) + 1;
