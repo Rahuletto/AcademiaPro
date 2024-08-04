@@ -1,8 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Sidebar } from "@/components/Sidebar";
 import { Link } from "next-view-transitions";
-import { priorityUrl, urls } from "../../misc/links";
 import { UrlSection } from "./components/URLSection";
 import { SearchBar } from "./components/SearchBar";
 import useSearch from "@/hooks/useSearch";
