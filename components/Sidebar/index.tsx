@@ -59,14 +59,14 @@ export function Sidebar({ children }: { children: ReactNode }) {
     function resize() {
       if (window.innerWidth > 768) {
         setIsOpen(true);
-    } else {
+      } else {
         setIsOpen(false);
       }
-  }
+    }
 
     window.addEventListener("touchstart", startTouch, false);
     window.addEventListener("touchend", stopTouch, false);
-    window.addEventListener("resize", resize, false)
+    window.addEventListener("resize", resize, false);
 
     resize();
 
@@ -110,7 +110,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
   } else
     return (
       <>
-      <Poster />
+        <Poster />
         <nav className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
           <header
             ref={ref}
@@ -181,7 +181,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
             <div className="flex flex-col-reverse gap-4">
               <div className="flex items-center gap-2 text-light-color dark:text-dark-color">
                 <h4 className="font-mono text-xs opacity-60 transition duration-200">
-                  Support:{" "}
+                  Community:{" "}
                 </h4>
                 <MiniButtons
                   icon={<FiGithub />}

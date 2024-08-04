@@ -2,7 +2,7 @@ import Loading from "@/components/States/Loading";
 import { useAttendance } from "@/provider/AttendanceProvider";
 import Error from "@/components/States/Error";
 import AttendanceList from "./subcomponents/Attendance/Predict/AttendanceList";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTimetable } from "@/provider/TimetableProvider";
 import { useCalendar } from "@/provider/CalendarProvider";
 import { format } from "date-fns";
@@ -11,6 +11,8 @@ import DatePickerComponent from "./subcomponents/Attendance/Predict/DatePicker";
 import PredictResetButtons from "./subcomponents/Attendance/Predict/ResetButtons";
 import { DateObject } from "react-multi-date-picker";
 import { FaCheck } from "react-icons/fa";
+import { FiInfo } from "react-icons/fi";
+import InfoPopup from "./subcomponents/Attendance/InfoPopup";
 
 export default function Attendance() {
   const { attendance, isLoading, error, mutate } = useAttendance();
@@ -30,7 +32,24 @@ export default function Attendance() {
   const [isPredicted, setIsPredicted] = useState(false);
   const [previousDateRange, setPreviousDateRange] = useState<any>(null);
   const [showDatePicker, setShowDatePicker] = useState(false);
+  const [showInfoPopup, setShowInfoPopup] = useState(false);
+  const infoIconRef = useRef<HTMLDivElement>(null);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        infoIconRef.current &&
+        !infoIconRef.current.contains(event.target as Node)
+      ) {
+        setShowInfoPopup(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   const handleDateChange = (dates: DateObject[]) => {
     if (dates.length === 2) {
       setDateRange({
@@ -39,6 +58,8 @@ export default function Attendance() {
       });
     }
   };
+
+  const toggleInfoPopup = () => setShowInfoPopup(!showInfoPopup);
 
   const performPrediction = () => {
     if (
@@ -83,7 +104,7 @@ export default function Attendance() {
       const daySchedule = timetable.find(
         (t) => t.dayOrder.replace("Day ", "") === dayInfo.dayOrder,
       );
-      console.log(format(currentDate, "d"), daySchedule)
+      console.log(format(currentDate, "d"), daySchedule);
       if (!daySchedule) return;
 
       daySchedule.subjects.forEach((subject) => {
@@ -148,16 +169,18 @@ export default function Attendance() {
     <section id="attendance">
       <div className="mb-4 flex items-center gap-4">
         <h1 className="text-2xl font-semibold">Attendance</h1>
+
         {!isPredicted && (
           <DatePickerComponent
             dateRange={dateRange}
             handleDateChange={handleDateChange}
           />
         )}
+
         {!isPredicted && dateRange.from && dateRange.to && (
           <button
             onClick={performPrediction}
-            className="animate-fadeIn rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
+            className="flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
           >
             <FaCheck />
           </button>
@@ -168,7 +191,14 @@ export default function Attendance() {
           setShowDatePicker={setShowDatePicker}
           resetAttendance={resetAttendance}
         />
+        <div className="relative" ref={infoIconRef}>
+          <FiInfo className="cursor-pointer" onClick={toggleInfoPopup} />
+          {showInfoPopup && (
+            <InfoPopup onClose={() => setShowInfoPopup(false)} />
+          )}
+        </div>
       </div>
+
       {isPredicted && (
         <button
           onClick={resetAttendance}
@@ -184,7 +214,6 @@ export default function Attendance() {
               )}`}
         </button>
       )}
-
       <div className="group px-2 pt-3">
         {isLoading ? (
           <Loading size="max" />

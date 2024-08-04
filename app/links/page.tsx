@@ -5,6 +5,7 @@ import { Link } from "next-view-transitions";
 import { UrlSection } from "./components/URLSection";
 import { SearchBar } from "./components/SearchBar";
 import useSearch from "@/hooks/useSearch";
+import Footer from "@/components/Footer";
 
 export default function Urls() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -12,7 +13,7 @@ export default function Urls() {
   const { priority, officials, others } = useSearch({ searchQuery });
 
   return (
-    <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
+    <main className="h-screen w-full bg-light-background-normal pb-0 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>
         <div className="flex flex-col gap-12">
           <section id="links" className="flex flex-col gap-6">
@@ -30,7 +31,7 @@ export default function Urls() {
               </p>
             </div>
 
-            <div className="md:ml-10 ml-2 flex flex-col gap-20">
+            <div className="ml-2 flex flex-col gap-20 md:ml-10">
               <SearchBar
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
@@ -41,6 +42,7 @@ export default function Urls() {
             </div>
           </section>
         </div>
+        <Footer />
       </Sidebar>
     </main>
   );
