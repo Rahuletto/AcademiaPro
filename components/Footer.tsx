@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 
-export default function Footer() {
+export default function Footer({ className = "" }) {
   return (
-    <div className="flex items-center justify-center text-sm opacity-60">
+    <div
+      className={`flex items-center justify-center text-sm opacity-60 ${className}`}
+    >
       Made by{" "}
       <div className="px-2 underline hover:cursor-pointer">
         <a href="https://marban.is-a.dev/">Marban</a>

@@ -7,7 +7,7 @@ import { useUser } from "@/provider/UserProvider";
 import Loading from "@/components/States/Loading";
 import { useEffect, useState } from "react";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
-import Footer from "./components/Footer";
+import Footer from "../../components/Footer";
 
 export default function Academia() {
   const router = useRouter();

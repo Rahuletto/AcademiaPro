@@ -6,6 +6,7 @@ import CourseCard from "./components/CourseCard";
 import Indicator from "@/components/Indicator";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
+import Footer from "@/components/Footer";
 
 export default function Courses() {
   const { courses, isLoading, error } = useCourses();
@@ -15,7 +16,9 @@ export default function Courses() {
         <h1 className="mb-4 text-2xl font-semibold">Courses</h1>
         {isLoading ? (
           <Loading size="max" />
-        ) : error ? <Error component="Courses" /> : (
+        ) : error ? (
+          <Error component="Courses" />
+        ) : (
           <div>
             <div className="animate-fadeIn transition duration-200">
               {courses
@@ -44,6 +47,7 @@ export default function Courses() {
             </div>
           </div>
         )}
+        <Footer className="py-4" />
       </Sidebar>
     </main>
   );
