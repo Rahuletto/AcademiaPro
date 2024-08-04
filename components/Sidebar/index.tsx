@@ -55,12 +55,24 @@ export function Sidebar({ children }: { children: ReactNode }) {
       handleGesture();
     }
 
+    function resize() {
+      if (window.innerWidth > 768) {
+        setIsOpen(true);
+    } else {
+        setIsOpen(false);
+      }
+  }
+
     window.addEventListener("touchstart", startTouch, false);
     window.addEventListener("touchend", stopTouch, false);
+    window.addEventListener("resize", resize, false)
+
+    resize();
 
     return () => {
       window.removeEventListener("touchstart", startTouch);
       window.removeEventListener("touchend", stopTouch);
+      window.removeEventListener("resize", resize);
     };
   }, []);
 
