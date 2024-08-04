@@ -14,11 +14,15 @@ export default function AttendanceList({
   return (
     <>
       {displayedAttendance && (
-        <div className={`transition duration-200 ${open ? "opacity-100" :"opacity-0 xl:translate-y-6 xl:hover:opacity-100 xl:group-hover:translate-y-0 xl:group-hover:opacity-100"}`} >
+        <div
+          className={`transition duration-200 ${open ? "opacity-100" : "opacity-0 xl:translate-y-6 xl:hover:opacity-100 xl:group-hover:translate-y-0 xl:group-hover:opacity-100"}`}
+        >
           <AttendanceCard legend course={displayedAttendance[0]} />
         </div>
       )}
-      <div className={`animate-fadeIn transition duration-200 ${open ? "" : "xl:-translate-y-16 xl:group-hover:translate-y-0"}`}>
+      <div
+        className={`animate-fadeIn transition duration-200 ${open ? "" : "xl:-translate-y-16 xl:group-hover:translate-y-0"}`}
+      >
         <div className="my-4">
           {displayedAttendance
             ?.filter((a) => a.category === "Theory")

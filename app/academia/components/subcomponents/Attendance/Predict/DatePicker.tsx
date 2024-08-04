@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 import DatePicker from "react-multi-date-picker";
 import { DateObject } from "react-multi-date-picker";
@@ -6,19 +6,19 @@ import { DateObject } from "react-multi-date-picker";
 interface DatePickerComponentProps {
   dateRange: { from: Date | null; to: Date | null };
   handleDateChange: (dates: DateObject[]) => void;
-  performPrediction: () => void;
 }
 
 export default function DatePickerComponent({
   dateRange,
   handleDateChange,
-  performPrediction,
 }: DatePickerComponentProps) {
+  const [opened, setOpened] = useState(false);
   function selector() {
+    setOpened(!opened);
     document.querySelector<HTMLInputElement>(".rmdp-input")?.focus();
   }
   return (
-    <div className="flex items-center gap-4 relative">
+    <div className="relative flex items-center gap-4">
       <DatePicker
         value={[
           new DateObject(dateRange.from || new Date()),
@@ -46,19 +46,12 @@ export default function DatePickerComponent({
         }
         numberOfMonths={1}
       />
-      <div className="flex items-center gap-4 absolute left-0 rounded-full dark:bg-dark-button bg-light-button text-light-accent dark:text-dark-accent">
+      <div className="absolute left-0 flex animate-fastfade items-center gap-4 rounded-full text-light-accent dark:text-dark-accent">
         <button
           onClick={selector}
-          className="pl-3 py-1 text-sm font-semibold"
+          className="flex w-fit items-center justify-center rounded-xl bg-light-button px-5 py-1 text-sm font-medium text-light-accent transition-all duration-300 hover:scale-105 hover:opacity-80 dark:bg-dark-button dark:text-dark-accent"
         >
-          Pick dates
-        </button>
-
-        <button
-          onClick={performPrediction}
-        className="px-2 py-1 rounded-full border border-light-warn-color dark:border-dark-warn-color text-light-warn-color dark:text-dark-warn-color dark:bg-dark-warn-background bg-light-warn-background"
-        >
-          <FaCheck />
+          Predict
         </button>
       </div>
     </div>
