@@ -1,6 +1,6 @@
 import React from 'react';
 import LinkList from './LinkList';
-import { DirLink } from '../links';
+import { DirLink } from '../../../misc/links';
 
 interface UrlSectionProps {
   title: string;

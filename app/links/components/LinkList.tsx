@@ -1,6 +1,6 @@
 import { Link } from "next-view-transitions";
 import React from "react";
-import { DirLink } from "../links";
+import { DirLink } from "../../../misc/links";
 
 export default function LinkList({ url }: { url: DirLink }) {
   return (
