@@ -16,8 +16,8 @@ export default function CalendarGrid({ days, month }: CalendarGridProps) {
   const date = new Date().getDate();
 
   useEffect(() => {
-    if (todayRef.current) todayRef.current.scrollIntoView();
-  }, [date]);
+    if (todayRef.current) todayRef.current.scrollIntoView({ behavior: "smooth", block: "center"});
+  }, [month]);
 
   const getFirstDayIndex = () => weekdays.indexOf(days[0].day);
 
