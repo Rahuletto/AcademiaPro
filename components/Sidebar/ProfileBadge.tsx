@@ -6,7 +6,7 @@ import { createPortal } from "react-dom";
 import { RiLoader3Fill } from "react-icons/ri";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
 import { profileColor } from "@/utils/ProfileColor";
-import { elevatedUsers } from "@/users";
+import { elevatedUsers } from "@/misc/users";
 import { LuLogOut } from "react-icons/lu";
 import Image from "next/image";
 

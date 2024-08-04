@@ -10,7 +10,7 @@ import { TableProvider } from "@/provider/TimetableProvider";
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import { MarksProvider } from "@/provider/MarksProvider";
 import { cookies } from "next/headers";
-import { Themes } from "@/theme";
+import { Themes } from "@/misc/theme";
 import { ViewTransitions } from "next-view-transitions";
 import { AttendanceProvider } from "@/provider/AttendanceProvider";
 import { CalendarProvider } from "@/provider/CalendarProvider";

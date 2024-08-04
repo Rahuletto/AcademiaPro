@@ -59,5 +59,4 @@ export const Themes = {
       color: "#1976D2",
     },
   },
-  
 };

@@ -5,7 +5,7 @@ import Class from "./Class";
 import Credit from "./Credit";
 import CourseCode from "./CourseCode";
 import { Link } from "next-view-transitions";
-import { searchUrl } from "@/urls";
+import { searchUrl } from "@/misc/urls";
 
 export default function CourseCard({ course }: { course: Course }) {
   const url = searchUrl(course.facultyName.split("(")[0])[0]?.url

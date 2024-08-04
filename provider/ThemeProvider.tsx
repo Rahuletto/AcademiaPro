@@ -1,5 +1,5 @@
 "use client";
-import { Themes } from "@/theme";
+import { Themes } from "@/misc/theme";
 import React, {
   createContext,
   ReactNode,
