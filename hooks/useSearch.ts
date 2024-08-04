@@ -1,4 +1,4 @@
-import { priorityUrl, urls } from "@/app/links/links";
+import { priorityUrl, urls } from "@/misc/links";
 
 export default function useSearch({ searchQuery }: { searchQuery: string }) {
   const priority = priorityUrl.filter((url) => {
