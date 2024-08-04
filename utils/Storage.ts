@@ -41,6 +41,16 @@ const Storage = {
       console.error("Error removing localStorage item:", error);
     }
   },
+  clear: () => { 
+    if (typeof window === "undefined") {
+      return;
+    }
+    try {
+      localStorage.clear();
+    } catch (error) {
+      console.error("Error clearing localStorage:", error);
+    }
+  }
 };
 
 export default Storage;

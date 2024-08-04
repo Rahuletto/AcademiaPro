@@ -118,6 +118,8 @@ export function UserProvider({
     },
   });
 
+  if ((initialUser || getCachedUser())?.reg !== user?.reg) mutate();
+
   return (
     <UserContext.Provider
       value={{

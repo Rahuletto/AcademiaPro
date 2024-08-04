@@ -35,7 +35,7 @@ export default function Form() {
       if (res.cookies) {
         setError(2);
         cookies.set("key", res.cookies);
-        router.push("/academia");
+        router.refresh();
       } else if (res.message) {
         setError(1);
         setMessage(res.message);

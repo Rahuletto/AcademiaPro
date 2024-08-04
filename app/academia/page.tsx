@@ -7,9 +7,7 @@ import { useUser } from "@/provider/UserProvider";
 import Loading from "@/components/States/Loading";
 import { useEffect, useState } from "react";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
-import { useTimetable } from "@/provider/TimetableProvider";
-import { useAttendance } from "@/provider/AttendanceProvider";
-import { useMarks } from "@/provider/MarksProvider";
+
 
 export default function Academia() {
   const router = useRouter();
