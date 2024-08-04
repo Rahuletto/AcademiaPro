@@ -8,12 +8,12 @@ University data, beautifully presented at your fingertips.
 > This branch is for v2 of AcademiaPro.
 > 
 > In this latest iteration of AcademiaPro, we’ve focused on significant under-the-hood improvements to deliver a superior experience. Here’s what you can expect:
-> - Enhanced Performance: Our new caching mechanisms and optimized data polling ensure that you receive the most up-to-date information promptly.
-> - Lightning-Fast Load Speeds: Enjoy faster access to your data with our comprehensive optimizations.
-> - Using new Web APIs: We’ve integrated the latest View-Transition APIs to provide smooth and engaging page-to-page animations.
-> - Improved Error Handling: Better error management ensures a seamless experience, minimizing disruptions.
-> - Rich Animations and Key Bindings: Experience fluid animations and intuitive key bindings designed to enhance usability.
-> - Full Accessibility Support: We are committed to inclusivity, fully supporting a11y guidelines to ensure accessibility for all users. Even color-blind friendly!
+> - `Enhanced Performance`: Our new caching mechanisms and optimized data polling ensure that you receive the most up-to-date information promptly.
+> - `Lightning-Fast Load Speeds`: Enjoy faster access to your data with our comprehensive optimizations.
+> - `Using new Web APIs`: We’ve integrated the latest View-Transition APIs to provide smooth and engaging page-to-page animations.
+> - `Improved Error Handling`: Better error management ensures a seamless experience, minimizing disruptions.
+> - `Rich Animations and Key Bindings`: Experience fluid animations and intuitive key bindings designed to enhance usability.
+> - `Full Accessibility Support`: We are committed to inclusivity, fully supporting a11y guidelines to ensure accessibility for all users. Even color-blind friendly!
 
 ## Why Choose AcademiaPro?
 

@@ -10,7 +10,7 @@ export default function CourseTitle({ courseTitle, category }: CourseTitleProps)
   return (
     <div
       title={courseTitle}
-      aria-label={courseTitle}
+      aria-label={`${courseTitle} (${category})`}
       className="flex w-fit max-w-[300px] items-center gap-4 self-start justify-self-start md:w-[350px] md:self-center md:justify-self-center"
     >
       <Indicator type={category as 'Practical' | 'Theory'} />
