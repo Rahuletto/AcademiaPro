@@ -100,7 +100,7 @@ export function DayProvider({
   return (
     <DayContext.Provider
       value={{
-        day: "3" || null,
+        day: day?.dayOrder || null,
         error: error || null,
         isLoading: isValidating,
         mutate,

@@ -12,7 +12,7 @@ export default function CourseCard({ course }: { course: Course }) {
       role="gridcell"
       className="grid w-full grid-cols-[3fr_1fr] grid-rows-[2fr_1fr] gap-3 rounded-3xl p-4 md:flex md:min-w-[900px] md:items-center md:justify-between md:rounded-xl"
     >
-      <div className="flex flex-col items-start gap-1 md:gap-3 xl:w-[50%] lg:w-[40%] w-[35%] lg:flex-row lg:items-center lg:gap-8">
+      <div className="flex md:w-[35%] w-auto flex-col items-start gap-1 md:gap-3 lg:w-[40%] lg:flex-row lg:items-center lg:gap-8 xl:w-[50%]">
         <CourseTitle
           courseTitle={course.courseTitle}
           category={course.courseType}
@@ -34,7 +34,7 @@ export default function CourseCard({ course }: { course: Course }) {
         className="hidden w-[20%] lg:flex"
       />
       <CourseCode code={course.courseCode} className="hidden md:flex" />
-      <span className="mb-1 ml-1 mt-4 text-left text-base underline font-medium opacity-90 md:mb-0 md:ml-0 md:mt-0 md:w-[20%] md:text-right lg:my-3 lg:mr-3 text-light-color dark:text-dark-color">
+      <span className="mb-1 ml-1 mt-4 text-left self-end md:self-center text-base font-medium text-light-color opacity-90 md:mb-0 md:ml-0 md:mt-0 md:w-[20%] md:text-right lg:my-3 lg:mr-3 dark:text-dark-color">
         {course.facultyName.split("(")[0]}
       </span>
       <CourseCode
