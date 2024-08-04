@@ -68,7 +68,7 @@ function SubjectCell({
       ) : null}
       {classRoom && (
         <span
-          className="absolute bottom-2 left-2 flex animate-fastfade text-xs opacity-70"
+          className="absolute bottom-2 left-2 flex animate-fastfade text-xs opacity-70 capitalize"
           style={{ width: "min-content" }}
         >
           {classRoom}
@@ -152,16 +152,18 @@ export default function TableCard({ view }: { view: boolean }) {
 
 function getClass(subject: string, courses: Course[]) {
   const [courseTitle, courseType] = subject.split(" (");
-  const formattedCourseType = courseType?.replace(")", "").trim();
+  const formattedCourseType = courseType?.replace(")", "")?.split(" [")[0].trim();
 
   const course = courses.find(
     (course) =>
       course.courseTitle === courseTitle.trim() &&
       (formattedCourseType ? course.courseType === formattedCourseType : true),
   );
+
+
   return course
     ? course.roomNo
       ? course.roomNo
-      : subject.split("[")[1].replace("]", "")
+      : subject.split("[")[1]?.replace("]", "")
     : null;
 }
