@@ -74,6 +74,7 @@ html.bw {
 
 .rmdp-input {
   opacity: 0;
+  width: 90px;
   background: transparent;
   border: 0px solid transparent;
 

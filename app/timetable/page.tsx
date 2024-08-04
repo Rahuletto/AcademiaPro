@@ -36,7 +36,7 @@ export default function Timetable() {
           <Link
             href="/academia"
             style={{ padding: 12, borderRadius: 32 }}
-            className="absolute left-6 top-6 bg-light-error-background text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color"
+            className="z-10 absolute left-6 top-6 bg-light-error-background text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color"
           >
             <FaArrowLeft />
           </Link>
