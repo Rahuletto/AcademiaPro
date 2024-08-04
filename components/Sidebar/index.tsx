@@ -18,6 +18,7 @@ import ProfileBadge from "./ProfileBadge";
 import MiniButtons from "./Buttons/MiniButtons";
 import { FiGithub } from "react-icons/fi";
 import { MdHelpOutline } from "react-icons/md";
+import Poster from "../Poster";
 
 export function Sidebar({ children }: { children: ReactNode }) {
   const [isMounted, setIsMounted] = useState(false);
@@ -109,6 +110,7 @@ export function Sidebar({ children }: { children: ReactNode }) {
   } else
     return (
       <>
+      <Poster />
         <nav className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
           <header
             ref={ref}

@@ -7,7 +7,7 @@ export default function Button({
   return (
     <button
       {...props}
-      className={`w-min px-4 py-2 rounded-xl font-medium transition-all duration-200 transform text-light-background-dark dark:bg-dark-accent bg-light-accent ${
+      className={`w-fit px-4 py-2 rounded-xl font-medium transition-all duration-200 transform text-light-background-dark dark:bg-dark-accent bg-light-accent ${
         props.className
       } dark:text-dark-background-dark ${
         props.disabled
