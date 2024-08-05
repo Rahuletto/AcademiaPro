@@ -59,7 +59,7 @@ export default function Attendance() {
     }
   };
 
-  const toggleInfoPopup = () => setShowInfoPopup(!showInfoPopup);
+  const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
 
   const performPrediction = () => {
     if (
@@ -192,9 +192,18 @@ export default function Attendance() {
           resetAttendance={resetAttendance}
         />
         <div className="relative" ref={infoIconRef}>
-          <FiInfo className="cursor-pointer" onClick={toggleInfoPopup} />
+          <FiInfo
+            className="cursor-help opacity-40"
+            onClick={toggleInfoPopup}
+            onMouseEnter={toggleInfoPopup}
+            onMouseLeave={() => setShowInfoPopup(false)}
+          />
           {showInfoPopup && (
-            <InfoPopup onClose={() => setShowInfoPopup(false)} />
+            <InfoPopup
+              warn
+              text="Enter dates you'll be absent to see a predicted attendance percentage and margin."
+              onClose={() => setShowInfoPopup(false)}
+            />
           )}
         </div>
       </div>

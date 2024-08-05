@@ -1,13 +1,19 @@
 import Link from "@/components/Link";
 import { useMarks } from "@/provider/MarksProvider";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import MarkCard from "./subcomponents/Marks/MarkCard";
 import Indicator from "@/components/Indicator";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
+import { FiInfo } from "react-icons/fi";
+import InfoPopup from "./subcomponents/Attendance/InfoPopup";
 
 export default function Marks() {
   const { marks, isLoading, error, mutate } = useMarks();
+  const [showInfoPopup, setShowInfoPopup] = useState(false);
+  const infoIconRef = useRef<HTMLDivElement>(null);
+
+  const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
 
   useEffect(() => {
     if (!isLoading && !marks) mutate();
@@ -25,6 +31,21 @@ export default function Marks() {
         >
           Predict
         </Link>
+        <div className="relative" ref={infoIconRef}>
+          <FiInfo
+            className="cursor-help opacity-40"
+            onClick={toggleInfoPopup}
+            onMouseEnter={toggleInfoPopup}
+            onMouseLeave={() => setShowInfoPopup(false)}
+          />
+          {showInfoPopup && (
+            <InfoPopup
+              warn
+              text="Calculate how many marks you wanted to get to grab a certain grade."
+              onClose={() => setShowInfoPopup(false)}
+            />
+          )}
+        </div>
       </div>
       {isLoading ? (
         <Loading size="3xl" />
