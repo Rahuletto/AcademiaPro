@@ -12,7 +12,7 @@ export default function Footer({ className = "" }) {
       &{" "}
       <div className="px-2 font-semibold underline hover:cursor-pointer">
         <a href="https://www.linkedin.com/in/srivishal-sivasubramanian-1a09b9240/">
-          Srivishal
+          root-daemon
         </a>
       </div>
     </div>
