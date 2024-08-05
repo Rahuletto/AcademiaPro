@@ -68,24 +68,27 @@ function SubjectCell({
       ) : null}
       {classRoom && (
         <span
-          className="absolute bottom-2 left-2 flex animate-fastfade text-xs opacity-70 capitalize"
+          className="absolute bottom-2 left-2 flex animate-fastfade text-xs capitalize opacity-70"
           style={{ width: "min-content" }}
         >
           {classRoom}
         </span>
       )}
-      
+
       <span
-        className={`${!subject ? "hidden xl:block xl:text-light-color xl:dark:text-dark-color" : "text-dark-background-dark"} absolute ${classRoom ? "md:bottom-6 bottom-1" : "bottom-1"} right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
+        className={`${!subject ? "hidden xl:block xl:text-light-color xl:dark:text-dark-color" : "text-dark-background-dark"} absolute ${classRoom ? "bottom-1 md:bottom-6" : "bottom-1"} right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
       >
         {Time.start[index] + " - " + Time.end[index]}
       </span>
-      
     </div>
   );
 }
+interface TableCardProps {
+  view: boolean;
+  currentDayOrder: number;
+}
 
-export default function TableCard({ view }: { view: boolean }) {
+export default function TableCard({ view, currentDayOrder }: TableCardProps) {
   const { timetable } = useTimetable();
   const { courses } = useCourses();
   const { day } = useDay();
@@ -120,13 +123,13 @@ export default function TableCard({ view }: { view: boolean }) {
   return (
     <>
       <div className="flex w-full animate-fadeIn flex-col justify-between rounded-xl bg-light-background-light transition duration-200 xl:flex-row dark:bg-dark-background-dark">
-        {timetable[Number(day) - 1].subjects.map((sub, i) => {
+        {timetable[currentDayOrder - 1].subjects.map((sub, i) => {
           const [subject, typeWithParens] = sub?.split("(") ?? [];
           const type = typeWithParens?.split(")")?.[0];
           const nullStyler = constructNullStyles(
             0,
             i,
-            timetable[Number(day) - 1].subjects,
+            timetable[currentDayOrder - 1].subjects,
             true,
             true,
           );
@@ -152,14 +155,16 @@ export default function TableCard({ view }: { view: boolean }) {
 
 function getClass(subject: string, courses: Course[]) {
   const [courseTitle, courseType] = subject.split(" (");
-  const formattedCourseType = courseType?.replace(")", "")?.split(" [")[0].trim();
+  const formattedCourseType = courseType
+    ?.replace(")", "")
+    ?.split(" [")[0]
+    .trim();
 
   const course = courses.find(
     (course) =>
       course.courseTitle === courseTitle.trim() &&
       (formattedCourseType ? course.courseType === formattedCourseType : true),
   );
-
 
   return course
     ? course.roomNo
