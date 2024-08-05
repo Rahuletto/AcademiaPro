@@ -61,6 +61,8 @@ export default function Timetable() {
     }
   };
 
+  const isTodaySelected = day && currentDayOrder.toString() === day.toString();
+
   return (
     <section id="timetable" className="flex flex-col gap-6">
       <div className="flex items-center gap-4">
@@ -68,7 +70,7 @@ export default function Timetable() {
         <Link
           href="/timetable"
           secondary
-          className="hidden items-center justify-center text-sm text-light-accent sm:flex dark:text-dark-accent"
+          className="sm-flex hidden items-center justify-center text-sm text-light-accent dark:text-dark-accent"
         >
           Download
         </Link>
@@ -79,7 +81,7 @@ export default function Timetable() {
           >
             <FiChevronLeft />
           </button>
-          <span className="text-xs text-light-accent dark:text-dark-accent">
+          <span className="text-sm text-light-accent dark:text-dark-accent">
             Day {currentDayOrder}
           </span>
           <button
@@ -90,7 +92,11 @@ export default function Timetable() {
           </button>
           <button
             onClick={handleTodayClick}
-            className="ml-2 rounded px-2 py-1 text-sm text-light-accent hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal"
+            className={`ml-2 rounded px-2 py-1 text-sm text-light-accent transition-all duration-300 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
+              isTodaySelected
+                ? "border border-light-success-color dark:border-dark-success-color"
+                : ""
+            }`}
           >
             Today
           </button>
@@ -118,6 +124,13 @@ export default function Timetable() {
       ) : (
         (timetableError || dayError) && <Error component="timetable" />
       )}
+      <Link
+        href="/timetable"
+        secondary
+        className="sm-hidden flex items-center justify-center text-sm text-light-accent dark:text-dark-accent"
+      >
+        Download
+      </Link>
     </section>
   );
 }
