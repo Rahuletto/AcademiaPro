@@ -7,7 +7,7 @@ import {
   useState,
   useCallback,
 } from "react";
-import useSWR from "swr";
+import useSWRImmutable from 'swr/immutable'
 import Storage from "@/utils/Storage";
 import { ProscrapeURL } from "@/utils/URL";
 import { Course } from "@/types/Course";
@@ -87,7 +87,7 @@ export function CourseProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<Course[] | null>(`${ProscrapeURL}/api/courses`, fetcher, {
+  } = useSWRImmutable<Course[] | null>(`${ProscrapeURL}/api/courses`, fetcher, {
     fallbackData: initialCourses || getCachedCourses(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

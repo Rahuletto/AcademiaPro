@@ -7,10 +7,10 @@ import {
   useState,
   useCallback,
 } from "react";
-import useSWR from "swr";
+import useSWRImmutable from 'swr/immutable'
 import Storage from "@/utils/Storage";
 import { ProscrapeURL } from "@/utils/URL";
-import { Table, TimeTableResponse } from "@/types/Timetable";
+import { Table } from "@/types/Timetable";
 import { useUser } from "./UserProvider";
 
 interface TimetableContextType {
@@ -89,7 +89,7 @@ export function TableProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<Table[] | null>(
+  } = useSWRImmutable<Table[] | null>(
     `${ProscrapeURL}/api/timetable?batch=${user?.batch || "1"}`,
     fetcher,
     {

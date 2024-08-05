@@ -8,7 +8,7 @@ import {
   useState,
   useCallback,
 } from "react";
-import useSWR from "swr";
+import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
 import { ProscrapeURL } from "@/utils/URL";
 import { useTransitionRouter } from "next-view-transitions";
@@ -91,7 +91,7 @@ export function UserProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<User | null>(`${ProscrapeURL}/api/user`, fetcher, {
+  } = useSWRImmutable<User | null>(`${ProscrapeURL}/api/user`, fetcher, {
     fallbackData: initialUser || getCachedUser(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,
