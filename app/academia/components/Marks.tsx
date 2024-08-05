@@ -41,7 +41,7 @@ export default function Marks() {
           {showInfoPopup && (
             <InfoPopup
               warn
-              text="Calculate how many marks you wanted to get to grab a certain grade."
+              text="Calculate how many marks you want to get to grab a certain grade."
               onClose={() => setShowInfoPopup(false)}
             />
           )}

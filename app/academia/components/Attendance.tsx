@@ -185,6 +185,7 @@ export default function Attendance() {
             <FaCheck />
           </button>
         )}
+
         <PredictResetButtons
           isPredicted={isPredicted}
           showDatePicker={showDatePicker}
@@ -201,28 +202,42 @@ export default function Attendance() {
           {showInfoPopup && (
             <InfoPopup
               warn
-              text="Enter dates you'll be absent to see a predicted attendance percentage and margin."
+              text="Enter the dates you'll be absent to see a predicted attendance percentage and margin."
               onClose={() => setShowInfoPopup(false)}
             />
           )}
         </div>
       </div>
 
-      {isPredicted && (
-        <button
-          onClick={resetAttendance}
-          className="mb-3 w-fit animate-fastfade rounded-full bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color"
-        >
-          Absent{" "}
-          {(dateRange.from || new Date()).getDate() ===
-          (dateRange.to || new Date()).getDate()
-            ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
-            : `from ${format(dateRange.from || new Date(), "LLL dd")} to ${format(
-                dateRange.to || new Date(),
-                "LLL dd",
-              )}`}
-        </button>
-      )}
+      <div className="flex flex-wrap gap-4 gap-y-1">
+        {isPredicted && (
+          <>
+            <div className="mb-3 w-fit animate-fastfade rounded-full bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color">
+              Expecting Present{" "}
+              {(dateRange.from || new Date()).getDate() ===
+              new Date().getDate() + 1
+                ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
+                : `from ${format(new Date(), "LLL dd")} to ${format(
+                    dateRange.from || new Date(),
+                    "LLL dd",
+                  )}`}
+            </div>
+            <button
+              onClick={resetAttendance}
+              className="mb-3 w-fit animate-fastfade rounded-full bg-light-error-background px-3 py-1 text-sm text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color"
+            >
+              Absent{" "}
+              {(dateRange.from || new Date()).getDate() ===
+              (dateRange.to || new Date()).getDate()
+                ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
+                : `from ${format(dateRange.from || new Date(), "LLL dd")} to ${format(
+                    dateRange.to || new Date(),
+                    "LLL dd",
+                  )}`}
+            </button>
+          </>
+        )}
+      </div>
       <div className="group px-2 pt-3">
         {isLoading ? (
           <Loading size="max" />

@@ -6,7 +6,6 @@ import CourseCard from "./components/CourseCard";
 import Indicator from "@/components/Indicator";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
-import Footer from "@/components/Footer";
 
 export default function Courses() {
   const { courses, isLoading, error } = useCourses();
@@ -47,7 +46,6 @@ export default function Courses() {
             </div>
           </div>
         )}
-        <Footer className="py-4" />
       </Sidebar>
     </main>
   );

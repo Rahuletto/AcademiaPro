@@ -19,6 +19,7 @@ import MiniButtons from "./Buttons/MiniButtons";
 import { FiGithub } from "react-icons/fi";
 import { MdHelpOutline } from "react-icons/md";
 import Poster from "../Poster";
+import Footer from "../Footer";
 
 export function Sidebar({ children }: { children: ReactNode }) {
   const [isMounted, setIsMounted] = useState(false);
@@ -213,7 +214,8 @@ export function Sidebar({ children }: { children: ReactNode }) {
               ref={content}
               className="m-0.5 h-full w-full overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light p-6 md:p-7 dark:bg-dark-background-dark"
             >
-              <div className="animate-fadeIn">{children}</div>
+              <div className="animate-fadeIn min-h-[89vh]">{children}</div>
+              <Footer className="mt-12" />
             </main>
           </div>
 

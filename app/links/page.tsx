@@ -5,7 +5,6 @@ import { Link } from "next-view-transitions";
 import { UrlSection } from "./components/URLSection";
 import { SearchBar } from "./components/SearchBar";
 import useSearch from "@/hooks/useSearch";
-import Footer from "@/components/Footer";
 
 export default function Urls() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -42,7 +41,6 @@ export default function Urls() {
             </div>
           </section>
         </div>
-        <Footer />
       </Sidebar>
     </main>
   );
