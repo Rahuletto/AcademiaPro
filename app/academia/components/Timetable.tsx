@@ -70,37 +70,11 @@ export default function Timetable() {
         <Link
           href="/timetable"
           secondary
-          className="sm-flex hidden items-center justify-center text-sm text-light-accent dark:text-dark-accent"
+          className="flex items-center justify-center text-sm text-light-accent dark:text-dark-accent"
         >
           Download
         </Link>
-        <div className="flex items-center gap-2">
-          <button
-            onClick={handlePreviousDayOrder}
-            className="rounded p-1 text-light-accent hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal"
-          >
-            <FiChevronLeft />
-          </button>
-          <span className="text-sm text-light-accent dark:text-dark-accent">
-            Day {currentDayOrder}
-          </span>
-          <button
-            onClick={handleNextDayOrder}
-            className="rounded p-1 text-light-accent hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal"
-          >
-            <FiChevronRight />
-          </button>
-          <button
-            onClick={handleTodayClick}
-            className={`ml-2 rounded px-2 py-1 text-sm text-light-accent transition-all duration-300 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
-              isTodaySelected
-                ? "border border-light-success-color dark:border-dark-success-color"
-                : ""
-            }`}
-          >
-            Today
-          </button>
-        </div>
+
         <div className="relative" ref={infoIconRef}>
           <FiInfo
             className="cursor-help opacity-40"
@@ -124,13 +98,34 @@ export default function Timetable() {
       ) : (
         (timetableError || dayError) && <Error component="timetable" />
       )}
-      <Link
-        href="/timetable"
-        secondary
-        className="sm-hidden flex items-center justify-center text-sm text-light-accent dark:text-dark-accent"
-      >
-        Download
-      </Link>
+
+      <div className="flex items-center justify-center gap-2">
+        <button
+          onClick={handlePreviousDayOrder}
+          className="rounded p-1 text-light-accent hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal"
+        >
+          <FiChevronLeft />
+        </button>
+        <span className="text-sm text-light-accent dark:text-dark-accent">
+          Day {currentDayOrder}
+        </span>
+        <button
+          onClick={handleNextDayOrder}
+          className="rounded p-1 text-light-accent hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal"
+        >
+          <FiChevronRight />
+        </button>
+        <button
+          onClick={handleTodayClick}
+          className={`ml-2 rounded-full px-2 py-0.5 text-sm text-light-accent transition-all duration-300 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
+            isTodaySelected
+              ? "border border-light-success-color dark:border-dark-success-color"
+              : ""
+          }`}
+        >
+          Today
+        </button>
+      </div>
     </section>
   );
 }
