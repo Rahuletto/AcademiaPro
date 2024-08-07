@@ -104,7 +104,6 @@ export default function Attendance() {
       const daySchedule = timetable.find(
         (t) => t.dayOrder.replace("Day ", "") === dayInfo.dayOrder,
       );
-      console.log(format(currentDate, "d"), daySchedule);
       if (!daySchedule) return;
 
       daySchedule.subjects.forEach((subject) => {
@@ -136,12 +135,14 @@ export default function Attendance() {
       });
     };
 
-    while (currentDate < startDate) {
+    while (currentDate.getDate() < startDate.getDate()) {
+      console.log("PRESENT", currentDate.getDate());
       processDay(currentDate);
       currentDate.setDate(currentDate.getDate() + 1);
     }
 
-    while (currentDate <= endDate) {
+    while (currentDate.getDate() <= endDate.getDate()) {
+      console.log("ABSENT", currentDate.getDate());
       processDay(currentDate, true);
       currentDate.setDate(currentDate.getDate() + 1);
     }
@@ -218,7 +219,9 @@ export default function Attendance() {
               new Date().getDate() + 1
                 ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
                 : `from ${format(new Date(), "LLL dd")} to ${format(
-                    dateRange.from || new Date(),
+                    new Date(dateRange.from || new Date()).setDate(
+                      (dateRange.from || new Date()).getDate() - 1,
+                    ),
                     "LLL dd",
                   )}`}
             </div>

@@ -1,5 +1,5 @@
+import { useCalendar } from "@/provider/CalendarProvider";
 import { useState } from "react";
-import { FaCheck } from "react-icons/fa6";
 import DatePicker from "react-multi-date-picker";
 import { DateObject } from "react-multi-date-picker";
 
@@ -13,10 +13,30 @@ export default function DatePickerComponent({
   handleDateChange,
 }: DatePickerComponentProps) {
   const [opened, setOpened] = useState(false);
+  const { calendar } = useCalendar();
   function selector() {
     setOpened(!opened);
     document.querySelector<HTMLInputElement>(".rmdp-input")?.focus();
   }
+  function isHoliday(dateobj: DateObject) {
+    if (!calendar) return false;
+    const date = dateobj.format("DD");
+    const monthIndex = dateobj.monthIndex % 5
+
+
+    const day = calendar?.[monthIndex]?.days?.find(
+      (day) => day.date.padStart(2, "0") === date,
+    );
+
+    console.log(day)
+
+    if (day) {
+      return day.dayOrder === "-";
+    }
+
+    return false;
+  }
+
   return (
     <div className="relative flex items-center gap-4">
       <DatePicker
@@ -44,6 +64,14 @@ export default function DatePickerComponent({
             ),
           )
         }
+        mapDays={({ date }) => {
+          if (isHoliday(date)) {
+            return {
+              className: "text-light-error-color dark:text-dark-error-color opacity-60 cursor-not-allowed",
+              disabled: true,
+            };
+          }
+        }}
         numberOfMonths={1}
       />
       <div className="absolute left-0 flex animate-fastfade items-center gap-4 rounded-full text-light-accent dark:text-dark-accent">
