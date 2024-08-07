@@ -3,10 +3,10 @@ import { PiConfettiBold } from "react-icons/pi";
 import Button from "./Button";
 
 export default function Poster() {
-  const [hide, setHide] = useState(false);
+  const [hide, setHide] = useState(true);
   useEffect(() => {
     const isPoster = localStorage.getItem("poster");
-    if (isPoster) return setHide(true);
+    if (!isPoster) return setHide(false);
   }, []);
   return (
     !hide && (
@@ -165,7 +165,7 @@ export default function Poster() {
           </div>
           <Button
             onClick={() => {
-              localStorage.setItem("poster", "true")
+              localStorage.setItem("poster", "true");
               setHide(true);
             }}
             className="mt-5 w-full"
