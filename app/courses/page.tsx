@@ -1,14 +1,18 @@
 "use client";
 import { Sidebar } from "@/components/Sidebar";
 import { useCourses } from "@/provider/CourseProvider";
-import React from "react";
+import React, { useEffect } from "react";
 import CourseCard from "./components/CourseCard";
 import Indicator from "@/components/Indicator";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
 
 export default function Courses() {
-  const { courses, isLoading, error } = useCourses();
+  const { courses, isLoading, error, mutate } = useCourses();
+
+  useEffect(() => {
+    mutate();
+  }, [mutate]);
   return (
     <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>
