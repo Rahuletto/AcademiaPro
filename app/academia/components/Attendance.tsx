@@ -50,6 +50,7 @@ export default function Attendance() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
   const handleDateChange = (dates: DateObject[]) => {
     if (dates.length === 2) {
       setDateRange({
@@ -87,7 +88,17 @@ export default function Attendance() {
     }));
     const startDate = new Date(dateRange.from);
     const endDate = new Date(dateRange.to);
+
+    // Set time to 0:00:00 for comparison purposes
+    startDate.setHours(0, 0, 0, 0);
+    endDate.setHours(0, 0, 0, 0);
+
     let currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0);
+
+    console.log("Start Date:", startDate);
+    console.log("End Date:", endDate);
+    console.log("Current Date:", currentDate);
 
     const processDay = (date: Date, incrementAbsent = false) => {
       const formattedDate = format(date, "d");
@@ -135,15 +146,16 @@ export default function Attendance() {
       });
     };
 
-    while (currentDate.getDate() < startDate.getDate()) {
-      console.log("PRESENT", currentDate.getDate());
-      processDay(currentDate);
-      currentDate.setDate(currentDate.getDate() + 1);
-    }
-
-    while (currentDate.getDate() <= endDate.getDate()) {
-      console.log("ABSENT", currentDate.getDate());
-      processDay(currentDate, true);
+    while (currentDate <= endDate) {
+      const isAbsent = currentDate.getTime() >= startDate.getTime();
+      console.log(
+        isAbsent ? "ABSENT" : "PRESENT",
+        format(currentDate, "EEE MMM dd yyyy"),
+        isAbsent,
+        currentDate,
+        startDate,
+      );
+      processDay(currentDate, isAbsent);
       currentDate.setDate(currentDate.getDate() + 1);
     }
 
@@ -165,6 +177,15 @@ export default function Attendance() {
   }, [isLoading, mutate, attendance]);
 
   const displayedAttendance = isPredicted ? predictedAttendance : attendance;
+
+  const startDate = dateRange.from ? new Date(dateRange.from) : null;
+  const endDate = dateRange.to ? new Date(dateRange.to) : null;
+  const currentDate = new Date();
+  currentDate.setHours(0, 0, 0, 0);
+  const dayBeforeStartDate = startDate ? new Date(startDate) : null;
+  if (dayBeforeStartDate) {
+    dayBeforeStartDate.setDate(dayBeforeStartDate.getDate() - 1);
+  }
 
   return (
     <section id="attendance">
@@ -214,29 +235,17 @@ export default function Attendance() {
         {isPredicted && (
           <>
             <div className="mb-3 w-fit animate-fastfade rounded-full bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color">
-              Expecting Present{" "}
-              {(dateRange.from || new Date()).getDate() ===
-              new Date().getDate() + 1
-                ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
-                : `from ${format(new Date(), "LLL dd")} to ${format(
-                    new Date(dateRange.from || new Date()).setDate(
-                      (dateRange.from || new Date()).getDate() - 1,
-                    ),
-                    "LLL dd",
-                  )}`}
+              {dayBeforeStartDate && currentDate < startDate
+                ? `Expecting Present in ${format(dayBeforeStartDate, "LLL dd")}`
+                : ""}
             </div>
             <button
               onClick={resetAttendance}
               className="mb-3 w-fit animate-fastfade rounded-full bg-light-error-background px-3 py-1 text-sm text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color"
             >
-              Absent{" "}
-              {(dateRange.from || new Date()).getDate() ===
-              (dateRange.to || new Date()).getDate()
-                ? `in ${format(dateRange.from || new Date(), "LLL dd")}`
-                : `from ${format(dateRange.from || new Date(), "LLL dd")} to ${format(
-                    dateRange.to || new Date(),
-                    "LLL dd",
-                  )}`}
+              {currentDate >= startDate && currentDate <= endDate
+                ? `Absent from ${format(startDate, "LLL dd")} to ${format(endDate, "LLL dd")}`
+                : ""}
             </button>
           </>
         )}

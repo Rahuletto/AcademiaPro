@@ -21,14 +21,11 @@ export default function DatePickerComponent({
   function isHoliday(dateobj: DateObject) {
     if (!calendar) return false;
     const date = dateobj.format("DD");
-    const monthIndex = dateobj.monthIndex % 5
-
+    const monthIndex = dateobj.monthIndex % 5;
 
     const day = calendar?.[monthIndex]?.days?.find(
       (day) => day.date.padStart(2, "0") === date,
     );
-
-    console.log(day)
 
     if (day) {
       return day.dayOrder === "-";
@@ -67,7 +64,8 @@ export default function DatePickerComponent({
         mapDays={({ date }) => {
           if (isHoliday(date)) {
             return {
-              className: "text-light-error-color dark:text-dark-error-color opacity-60 cursor-not-allowed",
+              className:
+                "text-light-error-color dark:text-dark-error-color opacity-60 cursor-not-allowed",
               disabled: true,
             };
           }
