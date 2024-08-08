@@ -30,16 +30,6 @@ export function Sidebar({ children, error }: { children: ReactNode, error?: bool
   const content = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    throw new Error(`Ecmascript file had an error
-  1 |
-  2 |
-> 3 | import { useEffect } from "react";
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  4 | import { BiError } from "react-icons/bi";
-  5 |
-  6 | export default function Error({
-
-app/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.`);
     setIsMounted(true);
 
     let touchstartX = 0,
