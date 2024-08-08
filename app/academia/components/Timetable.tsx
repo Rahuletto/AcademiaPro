@@ -15,6 +15,7 @@ export default function Timetable() {
     error: timetableError,
     mutate: mutateTimetable,
   } = useTimetable();
+  
   const {
     day,
     isLoading: dayLoading,

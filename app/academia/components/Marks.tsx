@@ -16,8 +16,8 @@ export default function Marks() {
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
 
   useEffect(() => {
-    if (!isLoading && !marks) mutate();
-  }, [isLoading, mutate, marks]);
+    if (!isLoading && !marks && !error) mutate();
+  }, [isLoading, mutate, marks, error]);
 
   return (
     <section id="marks" className="flex flex-col gap-6">

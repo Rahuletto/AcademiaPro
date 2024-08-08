@@ -21,7 +21,13 @@ import { MdHelpOutline } from "react-icons/md";
 import Poster from "../Poster";
 import Footer from "../Footer";
 
-export function Sidebar({ children, error }: { children: ReactNode, error?: boolean }) {
+export function Sidebar({
+  children,
+  error,
+}: {
+  children: ReactNode;
+  error?: boolean;
+}) {
   const [isMounted, setIsMounted] = useState(false);
 
   const [isOpen, setIsOpen] = useState(true);
@@ -212,9 +218,14 @@ export function Sidebar({ children, error }: { children: ReactNode, error?: bool
           >
             <main
               ref={content}
-              className={`m-0.5 h-full w-full overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light ${error? "p-1" :"p-6 md:p-7"} dark:bg-dark-background-dark`}
+              className={`m-0.5 h-full w-full overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
-              <div style={error ? { height: "-webkit-fill-available" } : {}} className="animate-fadeIn min-h-[89vh]">{children}</div>
+              <div
+                style={error ? { height: "-webkit-fill-available" } : {}}
+                className="min-h-[89vh] animate-fadeIn"
+              >
+                {children}
+              </div>
               <Footer className="mt-12" />
             </main>
           </div>

@@ -11,8 +11,9 @@ export default function Courses() {
   const { courses, isLoading, error, mutate } = useCourses();
 
   useEffect(() => {
-    mutate();
-  }, [mutate]);
+    if (!courses && !isLoading && !error) mutate();
+  }, [mutate, courses, isLoading, error]);
+
   return (
     <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>

@@ -96,10 +96,6 @@ export default function Attendance() {
     let currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
 
-    console.log("Start Date:", startDate);
-    console.log("End Date:", endDate);
-    console.log("Current Date:", currentDate);
-
     const processDay = (date: Date, incrementAbsent = false) => {
       const formattedDate = format(date, "d");
       const monthName = format(date, "MMM");
@@ -148,13 +144,6 @@ export default function Attendance() {
 
     while (currentDate <= endDate) {
       const isAbsent = currentDate.getTime() >= startDate.getTime();
-      console.log(
-        isAbsent ? "ABSENT" : "PRESENT",
-        format(currentDate, "EEE MMM dd yyyy"),
-        isAbsent,
-        currentDate,
-        startDate,
-      );
       processDay(currentDate, isAbsent);
       currentDate.setDate(currentDate.getDate() + 1);
     }
@@ -173,8 +162,8 @@ export default function Attendance() {
   };
 
   useEffect(() => {
-    if (!isLoading && !attendance) mutate();
-  }, [isLoading, mutate, attendance]);
+    if (!isLoading && !attendance && !error) mutate();
+  }, [isLoading, mutate, attendance, error]);
 
   const displayedAttendance = isPredicted ? predictedAttendance : attendance;
 
