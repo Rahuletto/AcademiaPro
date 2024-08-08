@@ -74,7 +74,7 @@ export const urls: DirLink[] = [
     site: "Question papers",
     url: "http://dspace.srmist.edu.in/dspace",
     type: "official",
-    description: "Find past exam papers.",
+    description: "Find past exam papers. dspace.",
   },
   {
     site: "Weather",
