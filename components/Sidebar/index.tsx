@@ -21,7 +21,7 @@ import { MdHelpOutline } from "react-icons/md";
 import Poster from "../Poster";
 import Footer from "../Footer";
 
-export function Sidebar({ children }: { children: ReactNode }) {
+export function Sidebar({ children, error }: { children: ReactNode, error?: boolean }) {
   const [isMounted, setIsMounted] = useState(false);
 
   const [isOpen, setIsOpen] = useState(true);
@@ -30,6 +30,16 @@ export function Sidebar({ children }: { children: ReactNode }) {
   const content = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    throw new Error(`Ecmascript file had an error
+  1 |
+  2 |
+> 3 | import { useEffect } from "react";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import { BiError } from "react-icons/bi";
+  5 |
+  6 | export default function Error({
+
+app/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.`);
     setIsMounted(true);
 
     let touchstartX = 0,
@@ -212,9 +222,9 @@ export function Sidebar({ children }: { children: ReactNode }) {
           >
             <main
               ref={content}
-              className="m-0.5 h-full w-full overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light p-6 md:p-7 dark:bg-dark-background-dark"
+              className={`m-0.5 h-full w-full overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light ${error? "p-1" :"p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
-              <div className="animate-fadeIn min-h-[89vh]">{children}</div>
+              <div style={{ height: "-webkit-fill-available" }} className="animate-fadeIn min-h-[89vh]">{children}</div>
               <Footer className="mt-12" />
             </main>
           </div>
