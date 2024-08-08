@@ -1,38 +1,48 @@
-![image](https://github.com/Rahuletto/academiapro/blob/main/public/og.png?raw=true)
+![image](/public/images/og.png)
 
-# Academia
+# AcademiaPro
+
 University data, beautifully presented at your fingertips.
 
-> [!IMPORTANT]
-> We completely rewritten AcademiaPro, reducing more bloat, useless algorithms and infact whole new engine under the hood!
-> AcademiaPro now uses its very own web scraper instead of some third-party APIs. We call it `proscrape`
+> [!WARNING]
+> This branch is for v2 of AcademiaPro.
 > 
-> Our proscrape uses `Edge Networks` which helped us to make all of our data requests under 2 seconds. I mean **ALL** of the data needed. Instead of taking 6-10 seconds on just logging in like [srmcheck](https://a.srmcheck.me)
+> In this latest iteration of AcademiaPro, we’ve focused on significant under-the-hood improvements to deliver a superior experience. Here’s what you can expect:
+> - `Enhanced Performance`: Our new caching mechanisms and optimized data polling ensure that you receive the most up-to-date information promptly.
+> - `Lightning-Fast Load Speeds`: Enjoy faster access to your data with our comprehensive optimizations.
+> - `Using new Web APIs`: We’ve integrated the latest View-Transition APIs to provide smooth and engaging page-to-page animations.
+> - `Improved Error Handling`: Better error management ensures a seamless experience, minimizing disruptions.
+> - `Rich Animations and Key Bindings`: Experience fluid animations and intuitive key bindings designed to enhance usability.
+> - `Full Accessibility Support`: We are committed to inclusivity, fully supporting a11y guidelines to ensure accessibility for all users. Even color-blind friendly!
 
-## Why Academia ?
+## Why Choose AcademiaPro?
 
-- Mobile-First approach
-- Fast, Zippy and RAM Friendly
-- Open source
-- Generates Timetable
-- Safe, Secure yet transparent
-- No bloat
+- **Mobile-First Approach:** Optimized for mobile devices.
+- **Fast and RAM Friendly:** Quick and efficient, won't slow down your device.
+- **Open Source:** Transparent and community-driven.
+- **Timetable Generation:** Creates a full timetable based on your class schedule.
+- **Safe and Secure:** Built with privacy and security in mind.
+- **No Bloat:** Streamlined and efficient, with no unnecessary features.
 
-### Idea behind
+### The Idea Behind AcademiaPro
 
-> Academia is a mess. we scraped it so, we know it. lol. And we got SRM Check but its bloated with useless crap and ads. So here we are with our take. We aren't responsible for the slow loading times, blame the SRM servers, we tried our best.
+This project was intended to show the timetable and attendance. but it grew and scaled to a full-on replacement to SRM Academia. We made sure to use the web-standards and the best-in-class approaches to make sure our service is `fast`, `easy-to-use` and `easy on eyes`.
 
+
+### Contribution
+
+We are open for contribution and issues!
+
+---
 
 ## [License](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ### You are free to:
 
-- **Share:** Copy and redistribute the material in any medium or format
+- **Share:** Copy and redistribute the material in any medium or format.
 
 ### Under the following terms:
 
 - **Attribution:** You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-
 - **NonCommercial:** You may not use the material for commercial purposes.
-
-- **NoDerivatives:** If you remix, transform, or build upon the material, you may not distribute the _modified_ material.
+- **NoDerivatives:** If you remix, transform, or build upon the material, you may not distribute the modified material.

@@ -4,12 +4,10 @@ export interface Course {
   credit: string;
   regnType: string;
   category: string;
-  courseType: string;
+  courseType: "Theory" | "Practical";
   facultyName: string;
   slot: string;
   gcrCode: string;
   roomNo: string;
   academicYear: string;
 }
-
-// Courses is Course[]
