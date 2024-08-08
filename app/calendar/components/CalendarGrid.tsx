@@ -16,7 +16,8 @@ export default function CalendarGrid({ days, month }: CalendarGridProps) {
   const date = new Date().getDate();
 
   useEffect(() => {
-    if (todayRef.current) todayRef.current.scrollIntoView({ behavior: "smooth", block: "center"});
+    if (todayRef.current)
+      todayRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
   }, [month]);
 
   const getFirstDayIndex = () => weekdays.indexOf(days[0].day);
@@ -41,7 +42,9 @@ export default function CalendarGrid({ days, month }: CalendarGridProps) {
               key={index}
               day={day}
               isTomorrow={
-                date + 1 === Number(day.date) && new Date().getMonth() === month
+                date + 1 === Number(day.date) &&
+                new Date().getMonth() === month &&
+                new Date().getHours() > 16
               }
               isToday={
                 date === Number(day.date) && new Date().getMonth() === month
