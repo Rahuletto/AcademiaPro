@@ -1,6 +1,6 @@
 import { useUser } from "@/provider/UserProvider";
 import { useState, useEffect } from "react";
-import { FaUser, FaBug } from "react-icons/fa";
+import { FaUser, FaBug, FaUserLock } from "react-icons/fa";
 import UserDialog from "./UserDialog";
 import { createPortal } from "react-dom";
 import { RiLoader3Fill } from "react-icons/ri";
@@ -51,7 +51,7 @@ export default function ProfileBadge({ className }: { className?: string }) {
         className="animate-spin text-5xl font-medium text-light-accent dark:text-dark-accent"
       />
     </div>
-  ) : (
+  ) : user ? (
     <>
       <div
         aria-haspopup="dialog"
@@ -98,6 +98,18 @@ export default function ProfileBadge({ className }: { className?: string }) {
           />,
           dialogRoot,
         )}
+    </>
+  ) : (
+    <>
+      <button
+      onClick={() => router.push("/auth/login")}
+      className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-success-background text-light-success-color lg:w-[82%] dark:bg-dark-success-background dark:text-dark-success-color"
+    >
+      <FaUserLock className="text-xl" />
+      <h1 className="text-md font-medium text-light-success-color dark:text-dark-success-color">
+        Login.
+      </h1>
+    </button>
     </>
   );
 }
