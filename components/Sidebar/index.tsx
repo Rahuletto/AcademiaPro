@@ -214,7 +214,7 @@ export function Sidebar({ children, error }: { children: ReactNode, error?: bool
               ref={content}
               className={`m-0.5 h-full w-full overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light ${error? "p-1" :"p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
-              <div style={{ height: "-webkit-fill-available" }} className="animate-fadeIn min-h-[89vh]">{children}</div>
+              <div style={error ? { height: "-webkit-fill-available" } : {}} className="animate-fadeIn min-h-[89vh]">{children}</div>
               <Footer className="mt-12" />
             </main>
           </div>
