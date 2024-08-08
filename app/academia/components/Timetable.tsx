@@ -117,10 +117,10 @@ export default function Timetable() {
         </button>
         <button
           onClick={handleTodayClick}
-          className={`ml-2 rounded-full px-2 py-0.5 text-sm text-light-accent transition-all duration-300 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
+          className={`ml-2 rounded-full px-3 py-0.5 border-2 border-dashed text-sm text-light-accent transition-all duration-200 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
             isTodaySelected
-              ? "border border-light-success-color dark:border-dark-success-color"
-              : ""
+              ? "bg-light-success-background border-transparent dark:bg-dark-success-background text-light-success-color dark:text-dark-success-color"
+              : "border-light-background-dark dark:border-dark-background-light"
           }`}
         >
           Today
