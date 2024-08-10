@@ -15,7 +15,7 @@ export default function Timetable() {
     error: timetableError,
     mutate: mutateTimetable,
   } = useTimetable();
-  
+
   const {
     day,
     isLoading: dayLoading,
@@ -27,6 +27,7 @@ export default function Timetable() {
   const [currentDayOrder, setCurrentDayOrder] = useState<string | number>("1");
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
+  const isHoliday = day && typeof day === "string" && day.includes("No");
 
   useEffect(() => {
     if (!timetableLoading && !timetable) mutateTimetable();
@@ -108,7 +109,7 @@ export default function Timetable() {
           <FiChevronLeft />
         </button>
         <span className="text-sm text-light-accent dark:text-dark-accent">
-          Day {currentDayOrder}
+          {isHoliday ? "Holiday" : `Day ${currentDayOrder}`}
         </span>
         <button
           onClick={handleNextDayOrder}
@@ -116,16 +117,23 @@ export default function Timetable() {
         >
           <FiChevronRight />
         </button>
-        <button
-          onClick={handleTodayClick}
-          className={`ml-2 rounded-full px-3 py-0.5 border-2 border-dashed text-sm text-light-accent transition-all duration-200 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
-            isTodaySelected
-              ? "bg-light-success-background border-transparent dark:bg-dark-success-background text-light-success-color dark:text-dark-success-color"
-              : "border-light-background-dark dark:border-dark-background-light"
-          }`}
-        >
-          Today
-        </button>
+        {isHoliday ? (
+          <></>
+        ) : (
+          <>
+            {" "}
+            <button
+              onClick={handleTodayClick}
+              className={`ml-2 rounded-full border-2 border-dashed px-3 py-0.5 text-sm text-light-accent transition-all duration-200 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
+                isTodaySelected
+                  ? "border-transparent bg-light-success-background text-light-success-color dark:bg-dark-success-background dark:text-dark-success-color"
+                  : "border-light-background-dark dark:border-dark-background-light"
+              }`}
+            >
+              Today
+            </button>
+          </>
+        )}
       </div>
     </section>
   );
