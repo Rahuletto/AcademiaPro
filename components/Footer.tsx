@@ -1,17 +1,20 @@
-import Link from "next/link";
 import React from "react";
 
-const Footer: React.FC = () => {
+export default function Footer({ className = "" }) {
   return (
-    <footer>
-      <p className="credits">
-        Made by <Link href="https://marban.is-a.dev">Marban</Link> and{" "}
-        <Link href="https://www.linkedin.com/in/srivishal-sivasubramanian-1a09b9240/">
+    <div
+      className={`font-mono flex items-center justify-center text-center text-sm opacity-60 ${className}`}
+    >
+      Made by{" "}
+      <div className="px-2 font-medium underline hover:cursor-pointer">
+        <a href="https://marban.is-a.dev/">Marban</a>
+      </div>{" "}
+      &{" "}
+      <div className="px-2 font-semibold underline hover:cursor-pointer">
+        <a href="https://www.linkedin.com/in/srivishal-sivasubramanian-1a09b9240/">
           root-daemon
-        </Link>
-      </p>
-    </footer>
+        </a>
+      </div>
+    </div>
   );
-};
-
-export default Footer;
+}

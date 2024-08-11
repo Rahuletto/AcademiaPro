@@ -2,17 +2,6 @@
   "regions": ["bom1"],
   "cleanUrls": true,
   "framework": "nextjs",
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "private, s-maxage=3600, stale-while-revalidate=3600"
-        }
-      ]
-    }
-  ],
   "redirects": [
     {
       "source": "/elab",
