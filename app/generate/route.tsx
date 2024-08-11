@@ -1,5 +1,10 @@
-import Timetabler from "@/components/Generators/Timetable";
+import dynamic from "next/dynamic";
 import { ImageResponse } from "next/og";
+
+const Timetabler = dynamic(
+  () => import("@/components/Generators/Timetable").then((a) => a.default),
+  { ssr: false },
+);
 
 export async function POST(request: Request) {
   const geist = await fetch(

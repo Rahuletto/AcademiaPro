@@ -1,12 +1,23 @@
 import Link from "@/components/Link";
-import { useMarks } from "@/provider/MarksProvider";
-import React, { useEffect, useRef, useState } from "react";
-import MarkCard from "./subcomponents/Marks/MarkCard";
-import Indicator from "@/components/Indicator";
-import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
+import Loading from "@/components/States/Loading";
+import { useMarks } from "@/provider/MarksProvider";
+import dynamic from "next/dynamic";
+import { useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
-import InfoPopup from "./subcomponents/Attendance/InfoPopup";
+
+const InfoPopup = dynamic(
+  () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
+  { ssr: false },
+);
+const Indicator = dynamic(
+  () => import("@/components/Indicator").then((a) => a.default),
+  { ssr: false },
+);
+const MarkCard = dynamic(
+  () => import("./subcomponents/Marks/MarkCard").then((a) => a.default),
+  { ssr: false },
+);
 
 export default function Marks() {
   const { marks, isLoading, error } = useMarks();

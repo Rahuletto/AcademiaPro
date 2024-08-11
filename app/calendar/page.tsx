@@ -1,11 +1,15 @@
 "use client";
-import { Sidebar } from "@/components/Sidebar";
 import Loading from "@/components/States/Loading";
 import { useCalendar } from "@/provider/CalendarProvider";
+
 import React, { useState } from "react";
-import CalendarGrid from "./components/CalendarGrid";
-import CalendarHeader from "./components/CalendarHeader";
 import Error from "@/components/States/Error";
+import dynamic from "next/dynamic";
+
+const Sidebar = dynamic(() => import("@/components/Sidebar").then(a => a.Sidebar), { ssr: true });
+
+const CalendarGrid = dynamic(() => import("./components/CalendarGrid").then(a => a.default), { ssr: false });
+const CalendarHeader = dynamic(() => import("./components/CalendarHeader").then(a => a.default), { ssr: false });
 
 export default function Calendar() {
   const { calendar, isLoading, error } = useCalendar();

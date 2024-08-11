@@ -1,7 +1,16 @@
 "use client";
 import React, { useState } from "react";
-import TableCard from "./TableCard";
-import TableHeader from "./TableHeader";
+import dynamic from "next/dynamic";
+
+const TableHeader = dynamic(
+  () => import("./TableHeader").then((a) => a.default),
+  { ssr: false },
+);
+
+const TableCard = dynamic(
+  () => import("./TableCard").then((a) => a.default),
+  { ssr: false },
+);
 
 interface ContainerProps {
   currentDayOrder: number;

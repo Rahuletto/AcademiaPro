@@ -1,12 +1,15 @@
-import React, { use, useEffect, useRef, useState } from "react";
-import Error from "@/components/States/Error";
-import { useTimetable } from "@/provider/TimetableProvider";
-import { useDay } from "@/provider/DayProvider";
-import Loading from "@/components/States/Loading";
 import Link from "@/components/Link";
-import Container from "./subcomponents/Timetable/Container";
-import { FiInfo, FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import InfoPopup from "./subcomponents/Attendance/InfoPopup";
+import Error from "@/components/States/Error";
+import Loading from "@/components/States/Loading";
+import { useDay } from "@/provider/DayProvider";
+import { useTimetable } from "@/provider/TimetableProvider";
+import { useEffect, useRef, useState } from "react";
+import { FiChevronLeft, FiChevronRight, FiInfo } from "react-icons/fi";
+
+import dynamic from "next/dynamic";
+
+const InfoPopup = dynamic(() => import("./subcomponents/Attendance/InfoPopup").then(a => a.default), { ssr: false });
+const Container = dynamic(() => import("./subcomponents/Timetable/Container").then(a => a.default), { ssr: false });
 
 export default function Timetable() {
   const {

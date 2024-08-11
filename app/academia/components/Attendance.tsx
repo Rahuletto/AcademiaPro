@@ -1,18 +1,42 @@
+import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
 import { useAttendance } from "@/provider/AttendanceProvider";
-import Error from "@/components/States/Error";
-import AttendanceList from "./subcomponents/Attendance/Predict/AttendanceList";
-import { useEffect, useRef, useState } from "react";
-import { useTimetable } from "@/provider/TimetableProvider";
 import { useCalendar } from "@/provider/CalendarProvider";
-import { format } from "date-fns";
+import { useTimetable } from "@/provider/TimetableProvider";
 import { AttendanceCourse } from "@/types/Attendance";
-import DatePickerComponent from "./subcomponents/Attendance/Predict/DatePicker";
-import PredictResetButtons from "./subcomponents/Attendance/Predict/ResetButtons";
-import { DateObject } from "react-multi-date-picker";
+import { format } from "date-fns";
+import { useEffect, useRef, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FiInfo } from "react-icons/fi";
-import InfoPopup from "./subcomponents/Attendance/InfoPopup";
+import { DateObject } from "react-multi-date-picker";
+
+import dynamic from "next/dynamic";
+
+const InfoPopup = dynamic(
+  () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
+  { ssr: false },
+);
+const PredictResetButtons = dynamic(
+  () =>
+    import("./subcomponents/Attendance/Predict/ResetButtons").then(
+      (a) => a.default,
+    ),
+  { ssr: false },
+);
+const DatePickerComponent = dynamic(
+  () =>
+    import("./subcomponents/Attendance/Predict/DatePicker").then(
+      (a) => a.default,
+    ),
+  { ssr: false },
+);
+const AttendanceList = dynamic(
+  () =>
+    import("./subcomponents/Attendance/Predict/AttendanceList").then(
+      (a) => a.default,
+    ),
+  { ssr: false },
+);
 
 export default function Attendance() {
   const { attendance, isLoading, error } = useAttendance();
@@ -219,11 +243,13 @@ export default function Attendance() {
       <div className="flex flex-wrap gap-4 gap-y-1">
         {isPredicted && (
           <>
-            {startDate && startDate.getDate() !== new Date().getDate() && <div className="mb-3 w-fit animate-fastfade rounded-full bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color">
-              {dayBeforeStartDate && startDate && currentDate < startDate
-                ? `Expecting Present till ${format(dayBeforeStartDate, "LLL dd")}`
-                : ""}
-            </div>}
+            {startDate && startDate.getDate() !== new Date().getDate() && (
+              <div className="mb-3 w-fit animate-fastfade rounded-full bg-light-info-background px-3 py-1 text-sm text-light-info-color dark:bg-dark-info-background dark:text-dark-info-color">
+                {dayBeforeStartDate && startDate && currentDate < startDate
+                  ? `Expecting Present till ${format(dayBeforeStartDate, "LLL dd")}`
+                  : ""}
+              </div>
+            )}
             <button
               onClick={resetAttendance}
               className="mb-3 w-fit animate-fastfade rounded-full bg-light-error-background px-3 py-1 text-sm text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color"
@@ -244,7 +270,7 @@ export default function Attendance() {
           <div
             className={
               isPredicted
-                ? "-m-3 rounded-2xl border-2 border-light-warn-color border-dashed px-3 after:relative after:-left-1 after:bottom-2 after:w-full after:rounded-xl after:bg-light-warn-background after:px-3 after:py-1 after:text-xs after:font-semibold after:text-dark-warn-color after:content-['Predictions_based_on_timetable;_subject_to_change.'] md:py-2 md:after:bottom-0 md:after:text-sm dark:border-dark-warn-color after:dark:bg-dark-warn-background"
+                ? "-m-3 rounded-2xl border-2 border-dashed border-light-warn-color px-3 after:relative after:-left-1 after:bottom-2 after:w-full after:rounded-xl after:bg-light-warn-background after:px-3 after:py-1 after:text-xs after:font-semibold after:text-dark-warn-color after:content-['Predictions_based_on_timetable;_subject_to_change.'] md:py-2 md:after:bottom-0 md:after:text-sm dark:border-dark-warn-color after:dark:bg-dark-warn-background"
                 : ""
             }
           >

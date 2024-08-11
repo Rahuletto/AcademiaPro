@@ -3,10 +3,27 @@ import { AttendanceCourse } from "@/types/Attendance";
 import { calculateMargin } from "@/utils/Margin";
 import { useTimetable } from "@/provider/TimetableProvider";
 import { useDay } from "@/provider/DayProvider";
-import Legend from "./Legend";
-import Title from "./Title";
-import Margin from "./Margin";
-import AttendancePill from "./AttendancePill";
+import dynamic from "next/dynamic";
+
+const AttendancePill = dynamic(
+  () => import("./AttendancePill").then((a) => a.default),
+  { ssr: false },
+);
+
+const Margin = dynamic(
+  () => import("./Margin").then((a) => a.default),
+  { ssr: false },
+);
+
+const Legend = dynamic(
+  () => import("./Legend").then((a) => a.default),
+  { ssr: false },
+);
+
+const Title = dynamic(
+  () => import("./Title").then((a) => a.default),
+  { ssr: false },
+);
 
 export default function AttendanceCard({
   course,

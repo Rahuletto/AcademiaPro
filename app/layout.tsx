@@ -2,19 +2,20 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 
-import { UserProvider } from "@/provider/UserProvider";
-
 import "./globals.css";
+
+import { UserProvider } from "@/provider/UserProvider";
 import { DayProvider } from "@/provider/DayProvider";
 import { TableProvider } from "@/provider/TimetableProvider";
 import { ThemeProvider } from "@/provider/ThemeProvider";
 import { MarksProvider } from "@/provider/MarksProvider";
-import { cookies } from "next/headers";
-import { Themes } from "@/misc/theme";
-import { ViewTransitions } from "next-view-transitions";
 import { AttendanceProvider } from "@/provider/AttendanceProvider";
 import { CalendarProvider } from "@/provider/CalendarProvider";
 import { CourseProvider } from "@/provider/CourseProvider";
+
+import { cookies } from "next/headers";
+import { Themes } from "@/misc/theme";
+import { ViewTransitions } from "next-view-transitions";
 import { ReactNode } from "react";
 
 const APP_NAME = "AcademiaPro";

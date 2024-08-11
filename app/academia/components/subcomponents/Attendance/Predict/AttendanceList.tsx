@@ -1,6 +1,12 @@
 import AttendanceCard from "../AttendanceCard";
-import Indicator from "@/components/Indicator";
 import { AttendanceCourse } from "@/types/Attendance";
+
+import dynamic from "next/dynamic";
+
+const Indicator = dynamic(
+  () => import("@/components/Indicator").then((a) => a.default),
+  { ssr: false },
+);
 
 interface AttendanceListProps {
   displayedAttendance: AttendanceCourse[] | null;

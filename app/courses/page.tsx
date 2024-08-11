@@ -1,11 +1,25 @@
 "use client";
-import { Sidebar } from "@/components/Sidebar";
 import { useCourses } from "@/provider/CourseProvider";
-import React, { useEffect } from "react";
-import CourseCard from "./components/CourseCard";
-import Indicator from "@/components/Indicator";
+import React from "react";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
+
+import dynamic from "next/dynamic";
+
+const Indicator = dynamic(
+  () => import("@/components/Indicator").then((a) => a.default),
+  { ssr: false },
+);
+
+const CourseCard = dynamic(
+  () => import("./components/CourseCard").then((a) => a.default),
+  { ssr: false },
+);
+
+const Sidebar = dynamic(
+  () => import("@/components/Sidebar").then((a) => a.Sidebar),
+  { ssr: true },
+);
 
 export default function Courses() {
   const { courses, isLoading, error } = useCourses();

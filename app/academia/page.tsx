@@ -1,12 +1,15 @@
 "use client";
-import { Sidebar } from "../../components/Sidebar";
-import Timetable from "./components/Timetable";
-import Marks from "./components/Marks";
-import Attendance from "./components/Attendance";
 import Loading from "@/components/States/Loading";
+
 import { useEffect, useState } from "react";
 import { useUser } from "@/provider/UserProvider";
+import dynamic from "next/dynamic";
 
+const Sidebar = dynamic(() => import("@/components/Sidebar").then(a => a.Sidebar), { ssr: true });
+
+const Attendance = dynamic(() => import("./components/Attendance").then(a => a.default), { ssr: false });
+const Marks = dynamic(() => import("./components/Marks").then(a => a.default), { ssr: false });
+const Timetable = dynamic(() => import("./components/Timetable").then(a => a.default), { ssr: false });
 
 export default function Academia() {
   const { user, isLoading } = useUser();

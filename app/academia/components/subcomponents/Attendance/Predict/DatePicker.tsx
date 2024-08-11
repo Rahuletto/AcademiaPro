@@ -1,7 +1,14 @@
 import { useCalendar } from "@/provider/CalendarProvider";
 import { useState } from "react";
-import DatePicker from "react-multi-date-picker";
 import { DateObject } from "react-multi-date-picker";
+
+import dynamic from "next/dynamic";
+
+const DatePicker = dynamic(
+  () => import("react-multi-date-picker").then((a) => a.default),
+  { ssr: false },
+);
+
 
 interface DatePickerComponentProps {
   dateRange: { from: Date | null; to: Date | null };

@@ -6,7 +6,6 @@ interface InfoPopupProps {
 }
 
 const InfoPopup: React.FC<InfoPopupProps> = ({
-  onClose,
   text,
   warn,
   bottom,

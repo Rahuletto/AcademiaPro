@@ -1,7 +1,12 @@
 import React from "react";
 import { FaCalculator, FaXmark } from "react-icons/fa6";
-import { MarkDisplay } from "./MarkElement";
 import { Overall } from "@/types/Marks";
+import dynamic from "next/dynamic";
+
+const MarkDisplay = dynamic(
+  () => import("./MarkElement").then((a) => a.MarkDisplay),
+  { ssr: false },
+);
 
 interface TotalProps {
   overall: Overall;

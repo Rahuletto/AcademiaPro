@@ -1,10 +1,14 @@
 "use client";
 import React, { useState } from "react";
-import { Sidebar } from "@/components/Sidebar";
 import { Link } from "next-view-transitions";
-import { UrlSection } from "./components/URLSection";
-import { SearchBar } from "./components/SearchBar";
 import useSearch from "@/hooks/useSearch";
+
+import dynamic from "next/dynamic";
+
+const SearchBar = dynamic(() => import("./components/SearchBar").then(a => a.SearchBar), { ssr: false });
+const UrlSection = dynamic(() => import("./components/URLSection").then(a => a.UrlSection), { ssr: false });
+
+const Sidebar = dynamic(() => import("@/components/Sidebar").then(a => a.Sidebar), { ssr: true });
 
 export default function Urls() {
   const [searchQuery, setSearchQuery] = useState("");

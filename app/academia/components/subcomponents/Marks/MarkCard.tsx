@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { Mark } from "../../../../../types/Marks";
-import Indicator from "@/components/Indicator";
-import MarkList from "./MarkList";
-import TotalSection from "./Total";
-import CalculatorSection from "./Calculate";
+import { Mark } from "@/types/Marks";
+
+import dynamic from "next/dynamic";
+
+const CalculatorSection = dynamic(() => import("./Calculate").then(a => a.default), { ssr: false });
+const TotalSection = dynamic(() => import("./Total").then(a => a.default), { ssr: false });
+const MarkList = dynamic(() => import("./MarkList").then(a => a.default), { ssr: false });
+const Indicator = dynamic(() => import("@/components/Indicator").then(a => a.default), { ssr: false });
 
 export default function MarkCard({ mark }: { mark: Mark }) {
   const [calculate, setCalculate] = useState(false);

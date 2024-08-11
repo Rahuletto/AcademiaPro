@@ -1,6 +1,8 @@
 import Link from "@/components/Link";
-import Bento from "../components/Bento";
+import dynamic from "next/dynamic";
 import { FaBookOpen } from "react-icons/fa";
+
+const Bento = dynamic(() => import("../components/Bento").then(a => a.default), { ssr: false });
 
 export default function Academia() {
   return (

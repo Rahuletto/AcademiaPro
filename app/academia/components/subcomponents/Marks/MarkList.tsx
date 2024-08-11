@@ -1,6 +1,8 @@
 import React from "react";
-import MarkElement from "./MarkElement";
 import { TestPerformance } from "@/types/Marks";
+import dynamic from "next/dynamic";
+
+const MarkElement = dynamic(() => import("./MarkElement").then(a => a.default), { ssr: false });
 
 export default function MarkList({
   testPerformance,
