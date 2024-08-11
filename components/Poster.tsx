@@ -91,15 +91,6 @@ export default function Poster() {
               </li>
               <li className="rounded-md px-1 pb-2 shadow">
                 <code className="text-md rounded-md bg-light-background-light px-2 py-1 font-mono font-semibold dark:bg-dark-background-light">
-                  Light Mode
-                </code>
-                <p className="pl-2 opacity-60">
-                  Finally, we can flashbang people with our light mode in the
-                  nights.
-                </p>
-              </li>
-              <li className="rounded-md px-1 pb-2 shadow">
-                <code className="text-md rounded-md bg-light-background-light px-2 py-1 font-mono font-semibold dark:bg-dark-background-light">
                   Swipeable Sidebar
                 </code>
                 <p className="pl-2 opacity-60">

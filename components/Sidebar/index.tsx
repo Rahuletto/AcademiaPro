@@ -102,6 +102,9 @@ export function Sidebar({
     if (savedIsAnchored) {
       setIsAnchored(savedIsAnchored === "true");
       setIsOpen(savedIsAnchored === "true");
+    }  else {
+      setIsAnchored(true)
+      setIsOpen(true)
     }
 
     resize();
