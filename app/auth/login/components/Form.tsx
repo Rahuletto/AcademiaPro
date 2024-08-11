@@ -39,7 +39,8 @@ export default function Form() {
         setError(2);
         cookies.set("key", res.cookies);
         console.log("Logged in");
-        mutateAll().then(() => router.refresh());
+        mutateAll()
+        router.refresh()
       } else if (res.message) {
         setError(1);
         setMessage(res.message);
