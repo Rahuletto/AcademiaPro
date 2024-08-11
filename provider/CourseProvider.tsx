@@ -90,7 +90,7 @@ export function CourseProvider({
   } = useSWRImmutable<Course[] | null>(`${ProscrapeURL}/api/courses`, fetcher, {
     fallbackData: initialCourses || getCachedCourses(),
     revalidateOnFocus: false,
-    revalidateOnReconnect: false,
+    revalidateOnReconnect: true,
     keepPreviousData: true,
     errorRetryCount: 4,
     revalidateIfStale: false,
