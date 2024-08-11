@@ -14,7 +14,7 @@ export default function Container({ currentDayOrder, day }: ContainerProps) {
     <div className="flex flex-col gap-3">
       <div
         style={{ WebkitUserSelect: "none" }}
-        className={`${!(isNaN(Number(currentDayOrder)) || currentDayOrder === Number(day)) ? "border-light-warn-color dark:border-dark-warn-color" : "border-transparent"} border-2 text-md min-w-full animate-fadeIn select-none rounded-2xl bg-light-background-dark p-0.5 text-left transition duration-200 dark:bg-dark-background-normal`}
+        className={`${!(isNaN(Number(currentDayOrder)) || currentDayOrder === Number(day)) ? "border-light-warn-color border-dashed dark:border-dark-warn-color" : "border-transparent"} border-2 text-md min-w-full animate-fadeIn select-none rounded-2xl bg-light-background-dark p-0.5 text-left transition duration-200 dark:bg-dark-background-normal`}
       >
         <TableHeader />
         <TableCard view={view} currentDayOrder={currentDayOrder} />

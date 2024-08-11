@@ -244,7 +244,7 @@ export default function Attendance() {
           <div
             className={
               isPredicted
-                ? "-m-3 rounded-2xl border border-light-warn-color px-3 after:relative after:-left-1 after:bottom-2 after:w-full after:rounded-xl after:bg-light-warn-background after:px-3 after:py-1 after:text-xs after:font-semibold after:text-dark-warn-color after:content-['Predictions_based_on_timetable;_subject_to_change.'] md:py-2 md:after:bottom-0 md:after:text-sm dark:border-dark-warn-color after:dark:bg-dark-warn-background"
+                ? "-m-3 rounded-2xl border-2 border-light-warn-color border-dashed px-3 after:relative after:-left-1 after:bottom-2 after:w-full after:rounded-xl after:bg-light-warn-background after:px-3 after:py-1 after:text-xs after:font-semibold after:text-dark-warn-color after:content-['Predictions_based_on_timetable;_subject_to_change.'] md:py-2 md:after:bottom-0 md:after:text-sm dark:border-dark-warn-color after:dark:bg-dark-warn-background"
                 : ""
             }
           >
