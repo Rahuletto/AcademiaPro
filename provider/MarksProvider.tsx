@@ -116,7 +116,7 @@ export function MarksProvider({
   return (
     <MarksContext.Provider
       value={{
-        marks: marks || null,
+        marks: marks?.sort((a,b) => a.courseName < b.courseName ? -1 : 1) || null,
         error: error || null,
         isLoading: isValidating,
         mutate,
