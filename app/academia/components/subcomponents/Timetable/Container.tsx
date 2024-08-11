@@ -5,15 +5,16 @@ import TableHeader from "./TableHeader";
 
 interface ContainerProps {
   currentDayOrder: number;
+  day?: string | null;
 }
 
-export default function Container({ currentDayOrder }: ContainerProps) {
+export default function Container({ currentDayOrder, day }: ContainerProps) {
   const [view, setView] = useState(false);
   return (
     <div className="flex flex-col gap-3">
       <div
         style={{ WebkitUserSelect: "none" }}
-        className="text-md min-w-full animate-fadeIn select-none rounded-2xl bg-light-background-dark p-1 text-left transition duration-200 dark:bg-dark-background-normal"
+        className={`${!(isNaN(Number(currentDayOrder)) || currentDayOrder === Number(day)) ? "border-light-warn-color dark:border-dark-warn-color" : "border-transparent"} border-2 text-md min-w-full animate-fadeIn select-none rounded-2xl bg-light-background-dark p-0.5 text-left transition duration-200 dark:bg-dark-background-normal`}
       >
         <TableHeader />
         <TableCard view={view} currentDayOrder={currentDayOrder} />

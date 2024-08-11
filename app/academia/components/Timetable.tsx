@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { use, useEffect, useRef, useState } from "react";
 import Error from "@/components/States/Error";
 import { useTimetable } from "@/provider/TimetableProvider";
 import { useDay } from "@/provider/DayProvider";
@@ -15,15 +15,14 @@ export default function Timetable() {
     error: timetableError,
   } = useTimetable();
 
-  const {
-    day,
-    isLoading: dayLoading,
-    error: dayError,
-    mutate: mutateDay,
-  } = useDay();
+  const { day, isLoading: dayLoading, error: dayError } = useDay();
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
   const [currentDayOrder, setCurrentDayOrder] = useState<string | number>("1");
+
+  useEffect(() => {
+    if (day) setCurrentDayOrder(day);
+  }, [day]);
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
   const isHoliday = day && typeof day === "string" && day.includes("No");
@@ -34,7 +33,7 @@ export default function Timetable() {
         typeof prevDayOrder === "string"
           ? parseInt(prevDayOrder, 10)
           : prevDayOrder;
-      return numOrder > 1 ? numOrder - 1 : 5;
+      return isNaN(numOrder) ? 1 : numOrder > 1 ? numOrder - 1 : 5;
     });
   };
 
@@ -44,12 +43,11 @@ export default function Timetable() {
         typeof prevDayOrder === "string"
           ? parseInt(prevDayOrder, 10)
           : prevDayOrder;
-      return (numOrder % 5) + 1;
+      return isNaN(numOrder) ? 1 : (numOrder % 5) + 1;
     });
   };
 
   const handleTodayClick = async () => {
-    await mutateDay();
     if (day) {
       setCurrentDayOrder(day);
     }
@@ -86,7 +84,7 @@ export default function Timetable() {
         </div>
       </div>
       {timetable ? (
-        <Container currentDayOrder={Number(currentDayOrder)} />
+        <Container day={day} currentDayOrder={Number(currentDayOrder)} />
       ) : timetableLoading || dayLoading ? (
         <Loading />
       ) : (
@@ -101,7 +99,9 @@ export default function Timetable() {
           <FiChevronLeft />
         </button>
         <span className="text-sm text-light-accent dark:text-dark-accent">
-          {isHoliday ? "Holiday" : `Day ${currentDayOrder}`}
+          {isHoliday && isNaN(Number(currentDayOrder))
+            ? "Holiday"
+            : `Day ${currentDayOrder}`}
         </span>
         <button
           onClick={handleNextDayOrder}
@@ -109,12 +109,7 @@ export default function Timetable() {
         >
           <FiChevronRight />
         </button>
-        {isHoliday ? (
-          <></>
-        ) : (
-          <>
-            {" "}
-            <button
+        <button
               onClick={handleTodayClick}
               className={`ml-2 rounded-full border-2 border-dashed px-3 py-0.5 text-sm text-light-accent transition-all duration-200 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
                 isTodaySelected
@@ -124,8 +119,6 @@ export default function Timetable() {
             >
               Today
             </button>
-          </>
-        )}
       </div>
     </section>
   );
