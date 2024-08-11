@@ -7,8 +7,33 @@ import { ProscrapeURL } from "@/utils/URL";
 import Button from "@/components/Button";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
 
+import { useAttendance } from "@/provider/AttendanceProvider";
+import { useDay } from "@/provider/DayProvider";
+import { useMarks } from "@/provider/MarksProvider";
+import { useTimetable } from "@/provider/TimetableProvider";
+import { useUser } from "@/provider/UserProvider";
+
+function useMutateAll() {
+  const { mutate: mutateAttendance } = useAttendance();
+  const { mutate: mutateDay } = useDay();
+  const { mutate: mutateMarks } = useMarks();
+  const { mutate: mutateTimetable } = useTimetable();
+  const { mutate: mutateUser } = useUser();
+
+  return async function () {
+    mutateUser();
+    mutateAttendance();
+    mutateDay();
+    mutateMarks();
+    mutateTimetable();
+    return true;
+  };
+}
+
 export default function Form() {
   const router = useRouter();
+  const mutateAll = useMutateAll();
+
   const [uid, setUid] = useState("");
   const [pass, setPass] = useState("");
 
@@ -35,7 +60,8 @@ export default function Form() {
       if (res.cookies) {
         setError(2);
         cookies.set("key", res.cookies);
-        router.refresh();
+        console.log("Logged in");
+        mutateAll().then(() => router.refresh());
       } else if (res.message) {
         setError(1);
         setMessage(res.message);
