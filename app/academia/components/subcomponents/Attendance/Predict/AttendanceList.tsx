@@ -35,7 +35,7 @@ export default function AttendanceList({
             .map((course, index) => (
               <div
                 key={index}
-                className="my-1 -mx-3 rounded-xl odd:bg-light-background-normal even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-dark-background-darker"
+                className="my-1 -mx-3 rounded-xl odd:bg-light-background-normal even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-transparent"
               >
                 <AttendanceCard course={course} />
               </div>
