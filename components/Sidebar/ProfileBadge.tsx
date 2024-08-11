@@ -1,7 +1,6 @@
 import { useUser } from "@/provider/UserProvider";
 import { useState, useEffect } from "react";
-import { FaUser, FaBug, FaUserLock } from "react-icons/fa";
-import UserDialog from "./UserDialog";
+import { FaUser, FaUserLock } from "react-icons/fa";
 import { createPortal } from "react-dom";
 import { RiLoader3Fill } from "react-icons/ri";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
@@ -9,6 +8,9 @@ import { profileColor } from "@/utils/ProfileColor";
 import { elevatedUsers } from "@/misc/users";
 import { LuLogOut } from "react-icons/lu";
 import Image from "next/image";
+import dynamic from "next/dynamic";
+
+const UserDialog = dynamic(() => import("./UserDialog").then(a => a.default), { ssr: false });
 
 export default function ProfileBadge({ className }: { className?: string }) {
   const router = useRouter();

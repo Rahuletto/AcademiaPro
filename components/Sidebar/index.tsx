@@ -1,6 +1,5 @@
 "use client";
 import { useState, ReactNode, useEffect, useRef } from "react";
-import Link from "./SidebarLink";
 import { Link as TransitionLink } from "next-view-transitions";
 import {
   FaBookOpen,
@@ -10,16 +9,42 @@ import {
 } from "react-icons/fa6";
 import { HiLightningBolt } from "react-icons/hi";
 import { BsCalendar2WeekFill } from "react-icons/bs";
-import DayOrder from "../badges/Day";
-import Hours from "../badges/Hours";
-import ThemeToggle from "./Buttons/ThemeToggle";
-import OpenButton from "./Buttons/OpenButton";
-import ProfileBadge from "./ProfileBadge";
-import MiniButtons from "./Buttons/MiniButtons";
 import { FiGithub } from "react-icons/fi";
 import { MdHelpOutline } from "react-icons/md";
-import Poster from "../Poster";
-import Footer from "../Footer";
+import dynamic from "next/dynamic";
+
+const Footer = dynamic(() => import("../Footer").then((a) => a.default), {
+  ssr: false,
+});
+const Poster = dynamic(() => import("../Poster").then((a) => a.default), {
+  ssr: false,
+});
+
+const MiniButtons = dynamic(
+  () => import("./Buttons/MiniButtons").then((a) => a.default),
+  { ssr: false },
+);
+const ProfileBadge = dynamic(
+  () => import("./ProfileBadge").then((a) => a.default),
+  { ssr: false },
+);
+const OpenButton = dynamic(
+  () => import("./Buttons/OpenButton").then((a) => a.default),
+  { ssr: false },
+);
+const ThemeToggle = dynamic(
+  () => import("./Buttons/ThemeToggle").then((a) => a.default),
+  { ssr: false },
+);
+const Hours = dynamic(() => import("../badges/Hours").then((a) => a.default), {
+  ssr: false,
+});
+const DayOrder = dynamic(() => import("../badges/Day").then((a) => a.default), {
+  ssr: false,
+});
+const Link = dynamic(() => import("./SidebarLink").then((a) => a.default), {
+  ssr: false,
+});
 
 export function Sidebar({
   children,
