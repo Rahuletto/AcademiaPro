@@ -17,7 +17,6 @@ const CourseCard = dynamic(
   { ssr: false },
 );
 
-
 export default function Courses() {
   const { courses, isLoading, error, mutate } = useCourses();
 
@@ -47,7 +46,7 @@ export default function Courses() {
                   </div>
                 ))}
             </div>
-            <Indicator type="Practical" separator />
+            {courses?.[0] && <Indicator type="Practical" separator />}
             <div className="mt-4 animate-fadeIn transition duration-200">
               {courses
                 ?.filter((a) => a.courseType === "Practical")

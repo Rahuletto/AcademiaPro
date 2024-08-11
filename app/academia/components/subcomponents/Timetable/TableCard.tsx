@@ -108,7 +108,7 @@ export default function TableCard({ view, currentDayOrder }: TableCardProps) {
     (typeof day === "string" && day.includes("No") && isNaN(currentDayOrder))
   ) {
     return day && typeof day === "string" && day.includes("No") ? (
-      <div className="flex md:h-24 h-32 animate-fadeIn items-center justify-center rounded-xl bg-light-error-background transition-all duration-200 dark:bg-dark-error-background">
+      <div className="flex md:h-24 h-28 animate-fadeIn items-center justify-center rounded-xl bg-light-error-background transition-all duration-200 dark:bg-dark-error-background">
         <h1
           aria-label="Holiday"
           className="text-3xl font-semibold text-light-error-color dark:text-dark-error-color"

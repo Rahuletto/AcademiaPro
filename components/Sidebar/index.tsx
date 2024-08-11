@@ -20,6 +20,7 @@ import Hours from "../badges/Hours";
 import Footer from "../Footer";
 
 import Poster from "../Poster";
+import { set } from "date-fns";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -46,13 +47,25 @@ export function Sidebar({
   error?: boolean;
 }) {
   const [isMounted, setIsMounted] = useState(false);
-
   const [isOpen, setIsOpen] = useState(true);
+  const [isAnchored, setIsAnchored] = useState(true);
+  const [isHoverEnabled, setIsHoverEnabled] = useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
   const content = useRef<HTMLDivElement>(null);
 
+  function resize() {
+    if (window.innerWidth > 768) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
+  }
+
   useEffect(() => {
+    const storedIsAnchored = sessionStorage.getItem("isAnchored") === "true";
+    setIsAnchored(storedIsAnchored);
+
     setIsMounted(true);
 
     let touchstartX = 0,
@@ -80,20 +93,19 @@ export function Sidebar({
       handleGesture();
     }
 
-    function resize() {
-      if (window.innerWidth > 768) {
-        setIsOpen(true);
-      } else {
-        setIsOpen(false);
-      }
-    }
 
     window.addEventListener("touchstart", startTouch, false);
     window.addEventListener("touchend", stopTouch, false);
     window.addEventListener("resize", resize, false);
 
-    resize();
+    const savedIsAnchored = sessionStorage.getItem("isAnchored");
+    if (savedIsAnchored) {
+      setIsAnchored(savedIsAnchored === "true");
+      setIsOpen(savedIsAnchored === "true");
+    }
 
+    resize();
+    
     return () => {
       window.removeEventListener("touchstart", startTouch);
       window.removeEventListener("touchend", stopTouch);
@@ -101,33 +113,56 @@ export function Sidebar({
     };
   }, []);
 
-  useEffect(() => {
-    const handleMouseEnter = () => {
+  const handleMouseEnter = () => {
+    if (!isAnchored && isHoverEnabled) {
       setIsOpen(true);
-    };
-    const handleMouseLeave = () => {
-      setIsOpen(false);
-    };
-
-    if (content.current) {
-      content.current.addEventListener("touchstart", handleMouseLeave);
     }
+  };
 
-    if (ref.current && !isOpen) {
-      if (content.current) {
-        content.current.addEventListener("mouseenter", handleMouseLeave);
-      }
+  const handleMouseLeave = () => {
+    if (!isAnchored && isHoverEnabled) {
+      setIsOpen(false);
+    }
+  };
 
-      ref.current.addEventListener("mouseenter", handleMouseEnter);
+  useEffect(() => {
+    const checkHoverCapability = () => {
+      setIsHoverEnabled(
+        window.matchMedia("(hover: hover) and (pointer: fine)").matches,
+      );
+    };
+
+    checkHoverCapability();
+    window.addEventListener("resize", checkHoverCapability);
+
+    const contentElement = content.current;
+    const refElement = ref.current;
+
+    if (!isAnchored && isHoverEnabled) {
+      contentElement?.addEventListener("mouseenter", handleMouseLeave);
+      refElement?.addEventListener("mouseenter", handleMouseEnter);
     }
 
     return () => {
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      ref.current?.removeEventListener("mouseenter", handleMouseEnter);
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      ref.current?.removeEventListener("touchstart", handleMouseEnter);
+      contentElement?.removeEventListener("mouseenter", handleMouseLeave);
+      refElement?.removeEventListener("mouseenter", handleMouseEnter);
+      window.removeEventListener("resize", checkHoverCapability);
     };
-  }, [isOpen]);
+  }, [isAnchored, isHoverEnabled]);
+
+  function onOpenClick() {
+    const newIsAnchored = !isAnchored;
+    setIsAnchored(newIsAnchored);
+    sessionStorage.setItem("isAnchored", newIsAnchored.toString());
+
+    if (!newIsAnchored && isHoverEnabled) {
+      setIsOpen(
+        content.current?.matches(":hover") ||
+          ref.current?.matches(":hover") ||
+          false,
+      );
+    }
+  }
 
   if (!isMounted) {
     return null;
@@ -220,7 +255,11 @@ export function Sidebar({
                 className={isOpen ? "animate-fadeIn" : "opacity-0"}
               />
             </div>
-            <OpenButton isOpen={isOpen} setIsOpen={setIsOpen} />
+            <OpenButton
+              anchor={isAnchored}
+              isOpen={isOpen}
+              onClick={onOpenClick}
+            />
             {!isOpen && (
               <MiniButtons
                 className="fixed bottom-8 right-9 hidden lg:block"
@@ -247,7 +286,11 @@ export function Sidebar({
             </main>
           </div>
 
-          <OpenButton mobile isOpen={isOpen} setIsOpen={setIsOpen} />
+          <OpenButton
+            mobile
+            isOpen={isOpen}
+            onClick={() => setIsOpen((prev) => !prev)}
+          />
         </nav>
         <div id="dialog-root" />
       </>
