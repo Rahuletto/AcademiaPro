@@ -20,7 +20,7 @@ import Hours from "../badges/Hours";
 import Footer from "../Footer";
 
 import Poster from "../Poster";
-import { set } from "date-fns";
+import { IoLibrarySharp } from "react-icons/io5";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -234,6 +234,15 @@ export function Sidebar({
               >
                 <HiLightningBolt className="text-xl" />
                 eLab
+              </Link>
+
+              <Link
+                className="font-semibold text-[#786CFF] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
+                title="Question papers"
+                href="/papers"
+              >
+                <IoLibrarySharp className="text-xl" />
+                DocuPro
               </Link>
             </div>
 

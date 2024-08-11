@@ -8,7 +8,7 @@ function hashString(str: string): number {
   return Math.abs(hash);
 }
 
-const colors: string[] = [
+export const colors: string[] = [
   "#FFAC81",
   "#7EC8BD",
   "#9CA3DB",
