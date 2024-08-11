@@ -5,24 +5,13 @@ import { useTimetable } from "@/provider/TimetableProvider";
 import { useDay } from "@/provider/DayProvider";
 import dynamic from "next/dynamic";
 
-const AttendancePill = dynamic(
-  () => import("./AttendancePill").then((a) => a.default),
-  { ssr: false },
-);
-
-const Margin = dynamic(
-  () => import("./Margin").then((a) => a.default),
-  { ssr: false },
-);
+import AttendancePill from "./AttendancePill";
+import Margin from "./Margin";
+import Title from "./Title";
 
 const Legend = dynamic(
   () => import("./Legend").then((a) => a.default),
-  { ssr: false },
-);
-
-const Title = dynamic(
-  () => import("./Title").then((a) => a.default),
-  { ssr: false },
+  { ssr: true },
 );
 
 export default function AttendanceCard({

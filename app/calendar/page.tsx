@@ -8,10 +8,8 @@ import dynamic from "next/dynamic";
 
 import { Sidebar } from "@/components/Sidebar";
 
-const CalendarGrid = dynamic(
-  () => import("./components/CalendarGrid").then((a) => a.default),
-  { ssr: false },
-);
+import CalendarGrid from "./components/CalendarGrid";
+
 const CalendarHeader = dynamic(
   () => import("./components/CalendarHeader").then((a) => a.default),
   { ssr: false },

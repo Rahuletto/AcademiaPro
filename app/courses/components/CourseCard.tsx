@@ -2,27 +2,11 @@ import { Course } from "@/types/Course";
 import React from "react";
 import { searchUrl } from "@/misc/faculties";
 import Link from "next/link";
-import dynamic from "next/dynamic";
 
-const CourseCode = dynamic(
-  () => import("./CourseCode").then((a) => a.default),
-  { ssr: false },
-);
-
-const Credit = dynamic(
-  () => import("./Credit").then((a) => a.default),
-  { ssr: false },
-);
-
-const Class = dynamic(
-  () => import("./Class").then((a) => a.default),
-  { ssr: false },
-);
-
-const CourseTitle = dynamic(
-  () => import("@/app/academia/components/subcomponents/Attendance/Title").then((a) => a.default),
-  { ssr: false },
-);
+import CourseCode from "./CourseCode";
+import Credit from "./Credit";
+import Class from "./Class";
+import CourseTitle from "@/app/academia/components/subcomponents/Attendance/Title";
 
 export default function CourseCard({ course }: { course: Course }) {
   const url = searchUrl(course.facultyName.split("(")[0])[0]?.url

@@ -6,9 +6,11 @@ import { Sidebar } from "@/components/Sidebar";
 
 import dynamic from "next/dynamic";
 
-const SearchBar = dynamic(() => import("./components/SearchBar").then(a => a.SearchBar), { ssr: false });
-const UrlSection = dynamic(() => import("./components/URLSection").then(a => a.UrlSection), { ssr: false });
-
+const SearchBar = dynamic(
+  () => import("./components/SearchBar").then((a) => a.SearchBar),
+  { ssr: false },
+);
+import { UrlSection } from "./components/URLSection";
 
 export default function Urls() {
   const [searchQuery, setSearchQuery] = useState("");

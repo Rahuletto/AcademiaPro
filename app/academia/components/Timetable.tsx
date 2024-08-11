@@ -8,8 +8,14 @@ import { FiChevronLeft, FiChevronRight, FiInfo } from "react-icons/fi";
 
 import dynamic from "next/dynamic";
 
-const InfoPopup = dynamic(() => import("./subcomponents/Attendance/InfoPopup").then(a => a.default), { ssr: false });
-const Container = dynamic(() => import("./subcomponents/Timetable/Container").then(a => a.default), { ssr: false });
+const InfoPopup = dynamic(
+  () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
+  { ssr: false },
+);
+const Container = dynamic(
+  () => import("./subcomponents/Timetable/Container").then((a) => a.default),
+  { ssr: false },
+);
 
 export default function Timetable() {
   const {
@@ -113,15 +119,15 @@ export default function Timetable() {
           <FiChevronRight />
         </button>
         <button
-              onClick={handleTodayClick}
-              className={`ml-2 rounded-full border-2 border-dashed px-3 py-0.5 text-sm text-light-accent transition-all duration-200 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
-                isTodaySelected
-                  ? "border-transparent bg-light-success-background text-light-success-color dark:bg-dark-success-background dark:text-dark-success-color"
-                  : "border-light-background-dark dark:border-dark-background-light"
-              }`}
-            >
-              Today
-            </button>
+          onClick={handleTodayClick}
+          className={`ml-2 rounded-full border-2 border-dashed px-3 py-0.5 text-sm text-light-accent transition-all duration-200 hover:bg-light-background-dark dark:text-dark-accent dark:hover:bg-dark-background-normal ${
+            isTodaySelected
+              ? "border-transparent bg-light-success-background text-light-success-color dark:bg-dark-success-background dark:text-dark-success-color"
+              : "border-light-background-dark dark:border-dark-background-light"
+          }`}
+        >
+          Today
+        </button>
       </div>
     </section>
   );

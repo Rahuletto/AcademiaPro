@@ -2,10 +2,7 @@
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 
-const TableHeader = dynamic(
-  () => import("./TableHeader").then((a) => a.default),
-  { ssr: false },
-);
+import TableHeader from "./TableHeader";
 
 const TableCard = dynamic(
   () => import("./TableCard").then((a) => a.default),

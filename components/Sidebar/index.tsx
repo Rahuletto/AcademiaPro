@@ -13,16 +13,13 @@ import { FiGithub } from "react-icons/fi";
 import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
 
-import Link from './SidebarLink'
-import DayOrder from '../badges/Day'
-import Hours from '../badges/Hours'
+import Link from "./SidebarLink";
+import DayOrder from "../badges/Day";
+import Hours from "../badges/Hours";
 
-import Footer from '../Footer'
+import Footer from "../Footer";
 
-
-const Poster = dynamic(() => import("../Poster").then((a) => a.default), {
-  ssr: false,
-});
+import Poster from "../Poster";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -40,7 +37,6 @@ const ThemeToggle = dynamic(
   () => import("./Buttons/ThemeToggle").then((a) => a.default),
   { ssr: true },
 );
-
 
 export function Sidebar({
   children,
