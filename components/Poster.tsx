@@ -38,6 +38,14 @@ export default function Poster() {
             <ul className="mb-12 space-y-1">
               <li className="rounded-md px-1 pb-2 shadow">
                 <code className="text-md rounded-md bg-light-background-light px-2 py-1 font-mono font-semibold dark:bg-dark-background-light">
+                  Light Mode
+                </code>
+                <p className="pl-2 opacity-60">
+                  Our most requested feature, We promise not to judge you.
+                </p>
+              </li>
+              <li className="rounded-md px-1 pb-2 shadow">
+                <code className="text-md rounded-md bg-light-background-light px-2 py-1 font-mono font-semibold dark:bg-dark-background-light">
                   Rich Animations and Key Bindings
                 </code>
                 <p className="pl-2 opacity-60">
