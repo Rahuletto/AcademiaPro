@@ -3,6 +3,7 @@ import { useCourses } from "@/provider/CourseProvider";
 import React, { useEffect } from "react";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
+import { Sidebar } from "@/components/Sidebar";
 
 import dynamic from "next/dynamic";
 
@@ -16,10 +17,6 @@ const CourseCard = dynamic(
   { ssr: false },
 );
 
-const Sidebar = dynamic(
-  () => import("@/components/Sidebar").then((a) => a.Sidebar),
-  { ssr: true },
-);
 
 export default function Courses() {
   const { courses, isLoading, error, mutate } = useCourses();
@@ -27,7 +24,7 @@ export default function Courses() {
   useEffect(() => {
     if (!isLoading && !courses) mutate();
   }, [mutate, isLoading, courses]);
-  
+
   return (
     <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>

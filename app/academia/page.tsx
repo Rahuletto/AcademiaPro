@@ -4,21 +4,36 @@ import Loading from "@/components/States/Loading";
 import { useEffect, useState } from "react";
 import { useUser } from "@/provider/UserProvider";
 import dynamic from "next/dynamic";
+import { useMutateAll } from "@/hooks/useMutate";
 
-const Sidebar = dynamic(() => import("@/components/Sidebar").then(a => a.Sidebar), { ssr: true });
+import { Sidebar } from "@/components/Sidebar";
 
-const Attendance = dynamic(() => import("./components/Attendance").then(a => a.default), { ssr: false });
-const Marks = dynamic(() => import("./components/Marks").then(a => a.default), { ssr: false });
-const Timetable = dynamic(() => import("./components/Timetable").then(a => a.default), { ssr: false });
+const Attendance = dynamic(
+  () => import("./components/Attendance").then((a) => a.default),
+  { ssr: false },
+);
+const Marks = dynamic(
+  () => import("./components/Marks").then((a) => a.default),
+  { ssr: false },
+);
+const Timetable = dynamic(
+  () => import("./components/Timetable").then((a) => a.default),
+  { ssr: false },
+);
 
 export default function Academia() {
   const { user, isLoading } = useUser();
+  const mutateAll = useMutateAll();
 
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (!user && !isLoading) mutateAll();
+  }, [user, isLoading, mutateAll]);
 
   if (!mounted) return null;
 

@@ -20,19 +20,24 @@ export function useMutateAll() {
 
   return async function (options: MutateOptions = {}) {
     const {
-      mutateUser: shouldMutateUser = true,
-      mutateAttendance: shouldMutateAttendance = true,
-      mutateDay: shouldMutateDay = true,
-      mutateMarks: shouldMutateMarks = true,
-      mutateTimetable: shouldMutateTimetable = true,
+      mutateUser: shouldMutateUser,
+      mutateAttendance: shouldMutateAttendance,
+      mutateDay: shouldMutateDay,
+      mutateMarks: shouldMutateMarks,
+      mutateTimetable: shouldMutateTimetable,
     } = options;
 
     if (shouldMutateUser) mutateUser();
-    if (shouldMutateAttendance) mutateAttendance();
-    if (shouldMutateDay) mutateDay();
-    if (shouldMutateMarks) mutateMarks();
-    if (shouldMutateTimetable) mutateTimetable();
-
-    return true;
+    else if (shouldMutateAttendance) mutateAttendance();
+    else if (shouldMutateDay) mutateDay();
+    else if (shouldMutateMarks) mutateMarks();
+    else if (shouldMutateTimetable) mutateTimetable();
+    else {
+      mutateUser();
+      mutateAttendance();
+      mutateDay();
+      mutateMarks();
+      mutateTimetable();
+    }
   };
 }
