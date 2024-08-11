@@ -41,6 +41,12 @@ export const urls: DirLink[] = [
     description: "Explore SRM events and activities.",
   },
   {
+    site: "II Year Course Resource",
+    url: "https://bit.ly/4dAZpxZ/",
+    type: "unofficial",
+    description: "Sem 3 + Sem 4 - Google Drive Link (Includes all the resources).",
+  },
+  {
     site: "Uniclubs",
     url: "https://uni-clubs.vercel.app/",
     type: "unofficial",
