@@ -36,7 +36,7 @@ export default function Timetable() {
           <Link
             href="/academia"
             style={{ padding: 12, borderRadius: 32 }}
-            className="z-10 absolute left-6 top-6 bg-light-error-background text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color"
+            className="absolute left-6 top-6 z-10 bg-light-error-background text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color"
           >
             <FaArrowLeft />
           </Link>
@@ -50,6 +50,7 @@ export default function Timetable() {
           <Link
             href={data}
             download={`timetable-${user?.section}-${user?.classroom}.png`}
+            className="dark:bg-dark-background-lig bg-light-background-dark text-light-color dark:text-dark-background-light"
           >
             Download
           </Link>
