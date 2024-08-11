@@ -6,29 +6,7 @@ import { Cookie as cookies } from "@/utils/Cookies";
 import { ProscrapeURL } from "@/utils/URL";
 import Button from "@/components/Button";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
-
-import { useAttendance } from "@/provider/AttendanceProvider";
-import { useDay } from "@/provider/DayProvider";
-import { useMarks } from "@/provider/MarksProvider";
-import { useTimetable } from "@/provider/TimetableProvider";
-import { useUser } from "@/provider/UserProvider";
-
-function useMutateAll() {
-  const { mutate: mutateAttendance } = useAttendance();
-  const { mutate: mutateDay } = useDay();
-  const { mutate: mutateMarks } = useMarks();
-  const { mutate: mutateTimetable } = useTimetable();
-  const { mutate: mutateUser } = useUser();
-
-  return async function () {
-    mutateUser();
-    mutateAttendance();
-    mutateDay();
-    mutateMarks();
-    mutateTimetable();
-    return true;
-  };
-}
+import { useMutateAll } from "@/hooks/useMutate";
 
 export default function Form() {
   const router = useRouter();

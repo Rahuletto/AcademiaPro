@@ -7,7 +7,7 @@ import {
   useState,
   useCallback,
 } from "react";
-import useSWRImmutable from 'swr/immutable'
+import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
 import { ProscrapeURL } from "@/utils/URL";
 import { Course } from "@/types/Course";
@@ -93,6 +93,7 @@ export function CourseProvider({
     revalidateOnReconnect: false,
     keepPreviousData: true,
     errorRetryCount: 4,
+    revalidateIfStale: false,
     onSuccess: (data) => {
       if (data) {
         Storage.set("courses", data);

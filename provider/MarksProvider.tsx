@@ -90,9 +90,10 @@ export function MarksProvider({
   } = useSWR<Mark[] | null>(`${ProscrapeURL}/api/marks`, fetcher, {
     fallbackData: initialMarks || getCachedMarks(),
     revalidateOnFocus: false,
-    revalidateOnReconnect: true,
     keepPreviousData: true,
     errorRetryCount: 4,
+    refreshInterval: 1000 * 60 * 60,
+    revalidateIfStale: false,
     onSuccess: (data) => {
       if (data) {
         Storage.set("marks", data);
@@ -117,7 +118,8 @@ export function MarksProvider({
   return (
     <MarksContext.Provider
       value={{
-        marks: marks?.sort((a,b) => a.courseName < b.courseName ? -1 : 1) || null,
+        marks:
+          marks?.sort((a, b) => (a.courseName < b.courseName ? -1 : 1)) || null,
         error: error || null,
         isLoading: isValidating,
         mutate,

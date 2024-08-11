@@ -1,11 +1,6 @@
 "use client";
 import { Cookie as cookies } from "@/utils/Cookies";
-import {
-  type ReactNode,
-  createContext,
-  useContext,
-  useState,
-} from "react";
+import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceResponse, AttendanceCourse } from "@/types/Attendance";
@@ -92,8 +87,10 @@ export function AttendanceProvider({
       revalidateOnFocus: false,
       revalidateOnReconnect: true,
       keepPreviousData: true,
-      refreshInterval: 1000 * 60 * 60,
+      refreshInterval: 1000 * 60 * 30,
       errorRetryCount: 4,
+      revalidateIfStale: false,
+
       onSuccess: (data) => {
         if (data) {
           Storage.set("attendance", data);
