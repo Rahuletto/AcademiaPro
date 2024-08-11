@@ -91,6 +91,7 @@ export function AttendanceProvider({
       fallbackData: initialAttendance || getCachedAttendance(),
       revalidateOnFocus: false,
       revalidateOnReconnect: true,
+      keepPreviousData: true,
       refreshInterval: 1000 * 60 * 60,
       errorRetryCount: 4,
       onSuccess: (data) => {

@@ -96,6 +96,7 @@ export function TableProvider({
       fallbackData: initialTable || getCachedTable(),
       revalidateOnFocus: false,
       revalidateOnReconnect: true,
+      keepPreviousData: true,
       errorRetryCount: 4,
       onSuccess: (data) => {
         if (data) {
