@@ -3,25 +3,40 @@ import { Sidebar } from "../../components/Sidebar";
 import Timetable from "./components/Timetable";
 import Marks from "./components/Marks";
 import Attendance from "./components/Attendance";
-import { useUser } from "@/provider/UserProvider";
 import Loading from "@/components/States/Loading";
 import { useEffect, useState } from "react";
-import { useTransitionRouter as useRouter } from "next-view-transitions";
+// ---
+import { useUser } from "@/provider/UserProvider";
+import { useAttendance } from "@/provider/AttendanceProvider";
+import { useDay } from "@/provider/DayProvider";
+import { useMarks } from "@/provider/MarksProvider";
+import { useTimetable } from "@/provider/TimetableProvider";
+
+function useMutateAll() {
+  const { mutate: mutateAttendance } = useAttendance();
+  const { mutate: mutateDay } = useDay();
+  const { mutate: mutateMarks } = useMarks();
+  const { mutate: mutateTimetable } = useTimetable();
+  const { mutate: mutateUser } = useUser();
+
+  return () => {
+    mutateUser();
+    mutateAttendance();
+    mutateDay();
+    mutateMarks();
+    mutateTimetable();
+  };
+}
 
 export default function Academia() {
-  const router = useRouter();
-  const { user, isLoading, mutate } = useUser();
+  const { user, isLoading } = useUser();
 
   const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    if (!user && isLoading === false) {
-      mutate().then(() => router.refresh());
-    }
-  }, [isLoading, user, mutate, router]);
+  const mutateAll = useMutateAll();
 
   useEffect(() => {
     setMounted(true);
+    mutateAll();
   }, []);
 
   if (!mounted) return null;

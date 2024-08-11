@@ -13,7 +13,6 @@ export default function Timetable() {
     timetable,
     isLoading: timetableLoading,
     error: timetableError,
-    mutate: mutateTimetable,
   } = useTimetable();
 
   const {
@@ -28,13 +27,6 @@ export default function Timetable() {
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
   const isHoliday = day && typeof day === "string" && day.includes("No");
-
-  useEffect(() => {
-    if (!timetableLoading && !timetable) mutateTimetable();
-    if (!dayLoading && day) {
-      setCurrentDayOrder(day);
-    }
-  }, [timetableLoading, mutateTimetable, timetable, dayLoading, day]);
 
   const handlePreviousDayOrder = () => {
     setCurrentDayOrder((prevDayOrder) => {

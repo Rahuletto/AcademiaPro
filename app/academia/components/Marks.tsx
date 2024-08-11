@@ -9,15 +9,11 @@ import { FiInfo } from "react-icons/fi";
 import InfoPopup from "./subcomponents/Attendance/InfoPopup";
 
 export default function Marks() {
-  const { marks, isLoading, error, mutate } = useMarks();
+  const { marks, isLoading, error } = useMarks();
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
-
-  useEffect(() => {
-    if (!isLoading && !marks && !error) mutate();
-  }, [isLoading, mutate, marks, error]);
 
   return (
     <section id="marks" className="flex flex-col gap-6">

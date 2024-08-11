@@ -15,7 +15,7 @@ import { FiInfo } from "react-icons/fi";
 import InfoPopup from "./subcomponents/Attendance/InfoPopup";
 
 export default function Attendance() {
-  const { attendance, isLoading, error, mutate } = useAttendance();
+  const { attendance, isLoading, error } = useAttendance();
   const { timetable } = useTimetable();
   const { calendar } = useCalendar();
   const defaultDateRange = {
@@ -160,10 +160,6 @@ export default function Attendance() {
     setDateRange(defaultDateRange);
     setPreviousDateRange(null);
   };
-
-  useEffect(() => {
-    if (!isLoading && !attendance && !error) mutate();
-  }, [isLoading, mutate, attendance, error]);
 
   const displayedAttendance = isPredicted ? predictedAttendance : attendance;
 

@@ -4,7 +4,6 @@ export const Cookie = {
   clear() {
     const cookies = document.cookie.split(";");
     localStorage.clear();
-    sessionStorage.clear();
     for (let i = 0; i < cookies.length; i++) {
       const cookie = cookies[i];
       const eqPos = cookie.indexOf("=");

@@ -8,11 +8,7 @@ import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
 
 export default function Courses() {
-  const { courses, isLoading, error, mutate } = useCourses();
-
-  useEffect(() => {
-    if (!courses && !isLoading && !error) mutate();
-  }, [mutate, courses, isLoading, error]);
+  const { courses, isLoading, error } = useCourses();
 
   return (
     <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">

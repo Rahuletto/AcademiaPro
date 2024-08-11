@@ -114,11 +114,10 @@ export function UserProvider({
         );
       } else {
         Storage.remove("user");
+        sessionStorage.removeItem("user");
       }
     },
   });
-
-  if ((initialUser || getCachedUser())?.reg !== user?.reg) mutate();
 
   return (
     <UserContext.Provider
