@@ -13,9 +13,13 @@ import { FiGithub } from "react-icons/fi";
 import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
 
-const Footer = dynamic(() => import("../Footer").then((a) => a.default), {
-  ssr: false,
-});
+import Link from './SidebarLink'
+import DayOrder from '../badges/Day'
+import Hours from '../badges/Hours'
+
+import Footer from '../Footer'
+
+
 const Poster = dynamic(() => import("../Poster").then((a) => a.default), {
   ssr: false,
 });
@@ -34,17 +38,9 @@ const OpenButton = dynamic(
 );
 const ThemeToggle = dynamic(
   () => import("./Buttons/ThemeToggle").then((a) => a.default),
-  { ssr: false },
+  { ssr: true },
 );
-const Hours = dynamic(() => import("../badges/Hours").then((a) => a.default), {
-  ssr: false,
-});
-const DayOrder = dynamic(() => import("../badges/Day").then((a) => a.default), {
-  ssr: false,
-});
-const Link = dynamic(() => import("./SidebarLink").then((a) => a.default), {
-  ssr: false,
-});
+
 
 export function Sidebar({
   children,

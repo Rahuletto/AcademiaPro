@@ -1,6 +1,6 @@
 "use client";
 import { useCourses } from "@/provider/CourseProvider";
-import React from "react";
+import React, { useEffect } from "react";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
 
@@ -22,8 +22,12 @@ const Sidebar = dynamic(
 );
 
 export default function Courses() {
-  const { courses, isLoading, error } = useCourses();
+  const { courses, isLoading, error, mutate } = useCourses();
 
+  useEffect(() => {
+    if (!isLoading && !courses) mutate();
+  }, [mutate, isLoading, courses]);
+  
   return (
     <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>
