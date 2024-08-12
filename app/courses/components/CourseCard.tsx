@@ -39,7 +39,7 @@ export default function CourseCard({ course }: { course: Course }) {
         className="hidden w-[20%] lg:flex"
       />
       <CourseCode code={course.courseCode} className="hidden md:flex" />
-      <Link href={url || ""} title={course.facultyName.split("(")[0]} aria-label={course.facultyName.split("(")[0]} className={`${url ? "decoration-2 underline decoration-light-info-color dark:decoration-dark-info-color " : ""} mb-1 ml-1 mt-4 text-left self-end md:self-center text-base font-medium text-light-color opacity-90 md:mb-0 md:ml-0 md:mt-0 md:w-[20%] md:text-right lg:my-3 lg:mr-3 dark:text-dark-color`} >
+      <Link href={url || ""} target="_blank" title={course.facultyName.split("(")[0]} aria-label={course.facultyName.split("(")[0]} className={`${url ? "decoration-2 underline decoration-light-info-color dark:decoration-dark-info-color " : ""} mb-1 ml-1 mt-4 text-left self-end md:self-center text-base font-medium text-light-color opacity-90 md:mb-0 md:ml-0 md:mt-0 md:w-[20%] md:text-right lg:my-3 lg:mr-3 dark:text-dark-color`} >
         {course.facultyName.split("(")[0]}
       </Link>
       <CourseCode
