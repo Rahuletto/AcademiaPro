@@ -73,7 +73,7 @@ function SubjectCell({
           className="absolute bottom-2 left-2 flex animate-fastfade text-xs capitalize opacity-70"
           style={{ width: "min-content" }}
         >
-          {classRoom}
+          {classRoom.split(" ")[0]}
         </span>
       )}
 
