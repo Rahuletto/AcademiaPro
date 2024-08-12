@@ -27,8 +27,7 @@ const TimetableContext = createContext<TimetableContextType>({
   mutate: async () => {},
 });
 
-const fetcher = async (url: string) => {
-  const cookie = cookies.get("key");
+const fetcher = async ([url, cookie]: [string, string | null]) => {
   if (!cookie) return null;
 
   try {
@@ -89,8 +88,8 @@ export function TableProvider({
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<Table[] | null>(
-    `${ProscrapeURL}/api/timetable?batch=${user?.batch || "1"}`,
+  } = useSWRImmutable(
+    user?.batch ? [`${ProscrapeURL}/api/timetable?batch=${user.batch}`, cookies.get("key")] : null,
     fetcher,
     {
       fallbackData: initialTable || getCachedTable(),
