@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { constructNullStyles } from "@/components/Generators/Timetable";
 import { useDay } from "@/provider/DayProvider";
 import { useTimetable } from "@/provider/TimetableProvider";
@@ -56,6 +56,8 @@ function SubjectCell({
             ...nullStyler,
           };
 
+  console.log(classRoom);
+
   return (
     <div className={baseClasses} style={style}>
       {subject ? (
@@ -90,13 +92,17 @@ interface TableCardProps {
 
 export default function TableCard({ view, currentDayOrder }: TableCardProps) {
   const { timetable } = useTimetable();
-  const { courses } = useCourses();
+  const { courses, mutate } = useCourses();
   const { day } = useDay();
   const [time, setTime] = useState<Date>(getISTTime());
 
   useMemo(() => {
     setTime(getISTTime());
   }, []);
+
+  useEffect(() => {
+    if (!courses) mutate();
+  }, [courses, mutate]);
 
   useInterval(() => {
     setTime(getISTTime());
@@ -108,7 +114,7 @@ export default function TableCard({ view, currentDayOrder }: TableCardProps) {
     (typeof day === "string" && day.includes("No") && isNaN(currentDayOrder))
   ) {
     return day && typeof day === "string" && day.includes("No") ? (
-      <div className="flex md:h-24 h-28 animate-fadeIn items-center justify-center rounded-xl bg-light-error-background transition-all duration-200 dark:bg-dark-error-background">
+      <div className="flex h-28 animate-fadeIn items-center justify-center rounded-xl bg-light-error-background transition-all duration-200 md:h-24 dark:bg-dark-error-background">
         <h1
           aria-label="Holiday"
           className="text-3xl font-semibold text-light-error-color dark:text-dark-error-color"
