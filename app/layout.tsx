@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-
+import { Analytics } from "@vercel/analytics/react";
 import { UserProvider } from "@/provider/UserProvider";
 
 import "./globals.css";
@@ -115,13 +115,14 @@ export default async function RootLayout({
 
           <meta name="theme-color" content={Themes.dark.background.normal} />
 
-          {key && key.value ? (
-            <GroupProviders>
-              <body className="h-screen">{children}</body>
-            </GroupProviders>
-          ) : (
-            <body className="h-screen">{children}</body>
-          )}
+          <body className="h-screen">
+            <Analytics />
+            {key && key.value ? (
+              <GroupProviders>{children}</GroupProviders>
+            ) : (
+              children
+            )}
+          </body>
         </ThemeProvider>
       </html>
     </ViewTransitions>
