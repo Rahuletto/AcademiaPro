@@ -31,7 +31,7 @@ export default function Papers() {
           <span style={{ color: colors[1] }}>Harshan</span>,{" "}
           <span style={{ color: colors[2] }}>Pranav</span>,{" "}
           <span style={{ color: colors[5] }}>Jeff stuart</span>,{" "}
-          <span style={{ color: colors[8] }}>Arulkumaran</span>,{" "}
+          <span style={{ color: colors[8] }}>Arul kumaran 🗿</span>,{" "}
           <span style={{ color: colors[12] }}>Ravindra</span>,{" "}
           <span style={{ color: colors[10] }}>Nitheesh</span> for huntin{" "}
           <span className="text-light-error-color dark:text-dark-error-color">
