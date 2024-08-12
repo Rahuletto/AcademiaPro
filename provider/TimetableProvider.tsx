@@ -6,8 +6,9 @@ import {
   useContext,
   useState,
   useCallback,
+  useEffect,
 } from "react";
-import useSWRImmutable from 'swr/immutable'
+import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
 import { ProscrapeURL } from "@/utils/URL";
 import { Table } from "@/types/Timetable";
@@ -27,7 +28,8 @@ const TimetableContext = createContext<TimetableContextType>({
   mutate: async () => {},
 });
 
-const fetcher = async ([url, cookie]: [string, string | null]) => {
+const fetcher = async (url: string) => {
+  const cookie = cookies.get("key");
   if (!cookie) return null;
 
   try {
@@ -83,13 +85,15 @@ export function TableProvider({
     [],
   );
 
+  const shouldFetch = user !== null;
+
   const {
     data: timetable,
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable(
-    user?.batch ? [`${ProscrapeURL}/api/timetable?batch=${user.batch}`, cookies.get("key")] : null,
+  } = useSWRImmutable<Table[] | null>(
+    shouldFetch ? `${ProscrapeURL}/api/timetable?batch=${user.batch}` : null,
     fetcher,
     {
       fallbackData: initialTable || getCachedTable(),
@@ -118,6 +122,10 @@ export function TableProvider({
       },
     },
   );
+
+  useEffect(() => {
+    mutate();
+  }, [user?.batch, mutate]);
 
   return (
     <TimetableContext.Provider
