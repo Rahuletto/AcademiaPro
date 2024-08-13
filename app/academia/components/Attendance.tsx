@@ -1,3 +1,4 @@
+import React from "react";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
 import { useAttendance } from "@/provider/AttendanceProvider";
@@ -9,8 +10,10 @@ import { useEffect, useRef, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FiInfo } from "react-icons/fi";
 import { DateObject } from "react-multi-date-picker";
+import { IoRefreshOutline } from "react-icons/io5";
 
 import dynamic from "next/dynamic";
+import { useMutateAll } from "@/hooks/useMutate";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -42,6 +45,8 @@ export default function Attendance() {
   const { attendance, isLoading, error } = useAttendance();
   const { timetable } = useTimetable();
   const { calendar } = useCalendar();
+  const mutateAll = useMutateAll(); // Call the hook at the top level
+
   const defaultDateRange = {
     from: null,
     to: null,
@@ -288,6 +293,15 @@ export default function Attendance() {
             )}
           </div>
         )}
+      </div>
+      <div>
+        <button
+          tabIndex={0}
+          className={`text-md rounded-full p-2 opacity-60 transition duration-200 hover:bg-light-background-dark active:-rotate-45 dark:hover:bg-dark-background-dark`}
+          onClick={() => mutateAll({ mutateAttendance: true })}
+        >
+          <IoRefreshOutline />
+        </button>
       </div>
     </section>
   );
