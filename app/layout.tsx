@@ -16,6 +16,7 @@ import { AttendanceProvider } from "@/provider/AttendanceProvider";
 import { CalendarProvider } from "@/provider/CalendarProvider";
 import { CourseProvider } from "@/provider/CourseProvider";
 import { ReactNode } from "react";
+import ErrorBoundary from "./Boundary";
 
 const APP_NAME = "AcademiaPro";
 const APP_DEFAULT_TITLE = "AcademiaPro";
@@ -101,29 +102,31 @@ export default async function RootLayout({
         lang="en"
         className={`dark h-screen bg-light-background-normal dark:bg-dark-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
       >
-        <ThemeProvider>
-          <meta
-            name="theme-color"
-            media="(prefers-color-scheme: dark)"
-            content={Themes.dark.background.normal}
-          />
-          <meta
-            name="theme-color"
-            media="(prefers-color-scheme: light)"
-            content={Themes.light.background.normal}
-          />
+        <ErrorBoundary>
+          <ThemeProvider>
+            <meta
+              name="theme-color"
+              media="(prefers-color-scheme: dark)"
+              content={Themes.dark.background.normal}
+            />
+            <meta
+              name="theme-color"
+              media="(prefers-color-scheme: light)"
+              content={Themes.light.background.normal}
+            />
 
-          <meta name="theme-color" content={Themes.dark.background.normal} />
+            <meta name="theme-color" content={Themes.dark.background.normal} />
 
-          <body className="h-screen">
-            <Analytics />
-            {key && key.value ? (
-              <GroupProviders>{children}</GroupProviders>
-            ) : (
-              children
-            )}
-          </body>
-        </ThemeProvider>
+            <body className="h-screen">
+              <Analytics />
+              {key && key.value ? (
+                <GroupProviders>{children}</GroupProviders>
+              ) : (
+                children
+              )}
+            </body>
+          </ThemeProvider>
+        </ErrorBoundary>
       </html>
     </ViewTransitions>
   );
