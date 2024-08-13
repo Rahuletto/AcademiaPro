@@ -10,6 +10,8 @@ import {
 import { HiLightningBolt } from "react-icons/hi";
 import { BsCalendar2WeekFill } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
+import { FaInstagram } from "react-icons/fa";
+
 import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
 
@@ -93,7 +95,6 @@ export function Sidebar({
       handleGesture();
     }
 
-
     window.addEventListener("touchstart", startTouch, false);
     window.addEventListener("touchend", stopTouch, false);
     window.addEventListener("resize", resize, false);
@@ -102,13 +103,13 @@ export function Sidebar({
     if (savedIsAnchored) {
       setIsAnchored(savedIsAnchored === "true");
       setIsOpen(savedIsAnchored === "true");
-    }  else {
-      setIsAnchored(true)
-      setIsOpen(true)
+    } else {
+      setIsAnchored(true);
+      setIsOpen(true);
     }
 
     resize();
-    
+
     return () => {
       window.removeEventListener("touchstart", startTouch);
       window.removeEventListener("touchend", stopTouch);
@@ -261,6 +262,10 @@ export function Sidebar({
                 <MiniButtons
                   icon={<FaWhatsapp />}
                   href="https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9"
+                />
+                <MiniButtons
+                  icon={<FaInstagram />}
+                  href="https://www.instagram.com/srm_academiapro/"
                 />
               </div>
               <ProfileBadge
