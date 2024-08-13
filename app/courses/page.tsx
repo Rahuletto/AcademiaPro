@@ -39,29 +39,33 @@ export default function Courses() {
         ) : (
           <div>
             <div className="animate-fadeIn transition duration-200">
-              {courses
-                ?.filter((a) => a.courseType === "Theory")
-                .map((course, i) => (
-                  <div
-                    key={i}
-                    className="my-1 flex items-center justify-center rounded-3xl odd:bg-light-background-normal even:bg-light-background-light lg:rounded-xl odd:dark:bg-dark-background-normal even:dark:bg-dark-background-darker"
-                  >
-                    <CourseCard course={course} />
-                  </div>
-                ))}
+              {courses &&
+                courses
+                  ?.filter((a) => a.courseTitle !== "null")
+                  ?.filter((a) => a.courseType === "Theory")
+                  .map((course, i) => (
+                    <div
+                      key={i}
+                      className="my-1 flex items-center justify-center rounded-3xl odd:bg-light-background-normal even:bg-light-background-light lg:rounded-xl odd:dark:bg-dark-background-normal even:dark:bg-dark-background-darker"
+                    >
+                      <CourseCard course={course} />
+                    </div>
+                  ))}
             </div>
             {courses?.[0] && <Indicator type="Practical" separator />}
             <div className="mt-4 animate-fadeIn transition duration-200">
-              {courses
-                ?.filter((a) => a.courseType === "Practical")
-                .map((course, i) => (
-                  <div
-                    key={i}
-                    className="my-1 flex items-center justify-center rounded-3xl odd:bg-light-background-normal even:bg-light-background-light lg:rounded-xl odd:dark:bg-dark-background-normal even:dark:bg-dark-background-darker"
-                  >
-                    <CourseCard course={course} />
-                  </div>
-                ))}
+              {courses &&
+                courses
+                  ?.filter((a) => a.courseTitle !== "null")
+                  ?.filter((a) => a.courseType === "Practical")
+                  .map((course, i) => (
+                    <div
+                      key={i}
+                      className="my-1 flex items-center justify-center rounded-3xl odd:bg-light-background-normal even:bg-light-background-light lg:rounded-xl odd:dark:bg-dark-background-normal even:dark:bg-dark-background-darker"
+                    >
+                      <CourseCard course={course} />
+                    </div>
+                  ))}
             </div>
           </div>
         )}

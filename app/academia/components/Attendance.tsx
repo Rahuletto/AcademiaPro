@@ -111,9 +111,10 @@ export default function Attendance() {
       return;
     }
 
-    const updatedAttendance: AttendanceCourse[] = attendance.map((a) => ({
+    const updatedAttendance: AttendanceCourse[] = attendance.filter((a) => a.courseTitle !== "null").map((a) => ({
       ...a,
     }));
+    
     const startDate = new Date(dateRange.from);
     const endDate = new Date(dateRange.to);
 
