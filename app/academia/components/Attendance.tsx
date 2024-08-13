@@ -202,8 +202,8 @@ export default function Attendance() {
 
   return (
     <section id="attendance">
-      <div className="flex justify-between items-center">
-        <div className="mb-4 flex items-center gap-4">
+      <div className="flex mb-4 justify-between items-center">
+        <div className="flex items-center gap-4">
           <h1 className="text-2xl font-semibold">Attendance</h1>
 
           {!isPredicted && (
