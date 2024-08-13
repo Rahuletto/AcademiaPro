@@ -13,7 +13,7 @@ import { DateObject } from "react-multi-date-picker";
 import { IoRefreshOutline } from "react-icons/io5";
 
 import dynamic from "next/dynamic";
-import { useMutateAll } from "@/hooks/useMutate";
+import Refresh from "@/components/Refresh";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -45,7 +45,6 @@ export default function Attendance() {
   const { attendance, isLoading, error } = useAttendance();
   const { timetable } = useTimetable();
   const { calendar } = useCalendar();
-  const mutateAll = useMutateAll(); // Call the hook at the top level
 
   const defaultDateRange = {
     from: null,
@@ -203,48 +202,50 @@ export default function Attendance() {
 
   return (
     <section id="attendance">
-      <div className="mb-4 flex items-center gap-4">
-        <h1 className="text-2xl font-semibold">Attendance</h1>
+      <div className="flex justify-between items-center">
+        <div className="mb-4 flex items-center gap-4">
+          <h1 className="text-2xl font-semibold">Attendance</h1>
 
-        {!isPredicted && (
-          <DatePickerComponent
-            dateRange={dateRange}
-            handleDateChange={handleDateChange}
-          />
-        )}
-
-        {!isPredicted && dateRange.from && dateRange.to && (
-          <button
-            onClick={performPrediction}
-            className="flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
-          >
-            <FaCheck />
-          </button>
-        )}
-
-        <PredictResetButtons
-          isPredicted={isPredicted}
-          showDatePicker={showDatePicker}
-          setShowDatePicker={setShowDatePicker}
-          resetAttendance={resetAttendance}
-        />
-        <div className="relative" ref={infoIconRef}>
-          <FiInfo
-            className="cursor-help opacity-40"
-            onClick={toggleInfoPopup}
-            onMouseEnter={toggleInfoPopup}
-            onMouseLeave={() => setShowInfoPopup(false)}
-          />
-          {showInfoPopup && (
-            <InfoPopup
-              warn
-              text="Enter the dates you'll be absent to see a predicted attendance percentage and margin."
-              onClose={() => setShowInfoPopup(false)}
+          {!isPredicted && (
+            <DatePickerComponent
+              dateRange={dateRange}
+              handleDateChange={handleDateChange}
             />
           )}
-        </div>
-      </div>
 
+          {!isPredicted && dateRange.from && dateRange.to && (
+            <button
+              onClick={performPrediction}
+              className="flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
+            >
+              <FaCheck />
+            </button>
+          )}
+
+          <PredictResetButtons
+            isPredicted={isPredicted}
+            showDatePicker={showDatePicker}
+            setShowDatePicker={setShowDatePicker}
+            resetAttendance={resetAttendance}
+          />
+          <div className="relative" ref={infoIconRef}>
+            <FiInfo
+              className="cursor-help opacity-40"
+              onClick={toggleInfoPopup}
+              onMouseEnter={toggleInfoPopup}
+              onMouseLeave={() => setShowInfoPopup(false)}
+            />
+            {showInfoPopup && (
+              <InfoPopup
+                warn
+                text="Enter the dates you'll be absent to see a predicted attendance percentage and margin."
+                onClose={() => setShowInfoPopup(false)}
+              />
+            )}
+          </div>
+        </div>
+        <Refresh type={{ mutateAttendance: true }} />
+      </div>
       <div className="flex flex-wrap gap-4 gap-y-1">
         {isPredicted && (
           <>
@@ -293,15 +294,6 @@ export default function Attendance() {
             )}
           </div>
         )}
-      </div>
-      <div>
-        <button
-          tabIndex={0}
-          className={`text-md rounded-full p-2 opacity-60 transition duration-200 hover:bg-light-background-dark active:-rotate-45 dark:hover:bg-dark-background-dark`}
-          onClick={() => mutateAll({ mutateAttendance: true })}
-        >
-          <IoRefreshOutline />
-        </button>
       </div>
     </section>
   );

@@ -23,6 +23,7 @@ import Footer from "../Footer";
 
 import Poster from "../Poster";
 import { IoLibrarySharp } from "react-icons/io5";
+import Refresh from "../Refresh";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -251,6 +252,7 @@ export function Sidebar({
             </div>
 
             <div className="flex flex-col-reverse gap-4">
+              <div className="flex justify-between items-center w-full">
               <div className="flex items-center gap-2 text-light-color dark:text-dark-color">
                 <h4 className="font-mono text-xs opacity-60 transition duration-200">
                   Community:{" "}
@@ -267,6 +269,8 @@ export function Sidebar({
                   icon={<FaInstagram />}
                   href="https://www.instagram.com/srm_academiapro/"
                 />
+              </div>
+                {isOpen && <Refresh />}
               </div>
               <ProfileBadge
                 className={isOpen ? "animate-fadeIn" : "opacity-0"}

@@ -6,6 +6,7 @@ import Error from "@/components/States/Error";
 import { Sidebar } from "@/components/Sidebar";
 
 import dynamic from "next/dynamic";
+import Refresh from "@/components/Refresh";
 
 const Indicator = dynamic(
   () => import("@/components/Indicator").then((a) => a.default),
@@ -27,7 +28,10 @@ export default function Courses() {
   return (
     <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>
-        <h1 className="mb-4 text-2xl font-semibold">Courses</h1>
+        <div className="flex items-center justify-between">
+          <h1 className="mb-4 text-2xl font-semibold">Courses</h1>
+          <Refresh type={{ mutateCourse: true }} />
+        </div>
         {isLoading ? (
           <Loading size="max" />
         ) : error ? (
