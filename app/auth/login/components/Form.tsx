@@ -29,8 +29,8 @@ export default function Form() {
           "content-type": "application/json",
         },
         body: JSON.stringify({
-          account: uid,
-          password: pass.replaceAll(" ", "").replace("@srmist.edu.in", ""),
+          account: uid.replaceAll(" ", "").replace("@srmist.edu.in", ""),
+          password: pass,
         }),
       });
 
