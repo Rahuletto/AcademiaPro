@@ -19,8 +19,8 @@
     }
   ],
   "background_color": "#11151B",
-  "start_url": "https://apro-beta.vercel.app/",
-  "scope": "https://apro-beta.vercel.app/",
+  "start_url": "https://academia-pro.vercel.app/",
+  "scope": "https://academia-pro.vercel.app/",
   "handle_links": "preferred",
   "launch_handler": {
     "client_mode": "focus-existing"
