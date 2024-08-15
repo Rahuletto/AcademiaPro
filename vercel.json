@@ -17,6 +17,21 @@
       "source": "/ssr",
       "destination": "https://academia.srmist.edu.in/#Form:Student_Service_Requests_SSR",
       "permanent": true
+    },
+    {
+      "source": "/github",
+      "destination": "https://github.com/rahuletto/academiapro",
+      "permanent": true
+    },
+    {
+      "source": "/instagram",
+      "destination": "https://www.instagram.com/srm_academiapro/",
+      "permanent": true
+    },
+    {
+      "source": "/whatsapp",
+      "destination": "https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9",
+      "permanent": true
     }
   ]
 }

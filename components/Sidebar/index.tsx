@@ -256,14 +256,9 @@ export function Sidebar({
                 <h4 className="font-mono text-xs opacity-60 transition duration-200">
                   Community:{" "}
                 </h4>
-                <MiniButtons
-                  icon={<FiGithub />}
-                  href="https://github.com/rahuletto/academiapro"
-                />
-                <MiniButtons
-                  icon={<FaWhatsapp />}
-                  href="https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9"
-                />
+                <MiniButtons icon={<FiGithub />} href="/github" />
+                <MiniButtons icon={<FaWhatsapp />} href="/whatsapp" />
+                <MiniButtons icon={<FaInstagram />} href="/instagram" />
               </div>
               <ProfileBadge
                 className={isOpen ? "animate-fadeIn" : "opacity-0"}
