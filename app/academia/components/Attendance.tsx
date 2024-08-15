@@ -299,15 +299,6 @@ export default function Attendance() {
           </div>
         )}
       </div>
-      <div>
-        <button
-          tabIndex={0}
-          className={`text-md rounded-full p-2 opacity-60 transition duration-200 hover:bg-light-background-dark active:-rotate-45 dark:hover:bg-dark-background-dark`}
-          onClick={() => mutateAll({ mutateAttendance: true })}
-        >
-          <IoRefreshOutline />
-        </button>
-      </div>
     </section>
   );
 }
