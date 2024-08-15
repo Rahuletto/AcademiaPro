@@ -154,4 +154,10 @@ export const urls: DirLink[] = [
     type: "official",
     description: "Get help from the IT desk.",
   },
+  {
+    site: "Undergraduate Research Opportunities Program (UROP)",
+    url: "https://uropmfp.srmist.edu.in/fund/index.php",
+    type: "official",
+    description: "Apply for Research Funding",
+  },
 ].sort((a, b) => a.site.localeCompare(b.site));

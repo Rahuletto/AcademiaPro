@@ -252,25 +252,24 @@ export function Sidebar({
             </div>
 
             <div className="flex flex-col-reverse gap-4">
-              <div className="flex justify-between items-center w-full">
-              <div className="flex items-center gap-2 text-light-color dark:text-dark-color">
-                <h4 className="font-mono text-xs opacity-60 transition duration-200">
-                  Community:{" "}
-                </h4>
-                <MiniButtons
-                  icon={<FiGithub />}
-                  href="https://github.com/rahuletto/academiapro"
-                />
-                <MiniButtons
-                  icon={<FaWhatsapp />}
-                  href="https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9"
-                />
-                <MiniButtons
-                  icon={<FaInstagram />}
-                  href="https://www.instagram.com/srm_academiapro/"
-                />
-              </div>
-                {isOpen && <Refresh />}
+              <div className="flex w-full items-center justify-between">
+                <div className="flex items-center gap-2 text-light-color dark:text-dark-color">
+                  <h4 className="font-mono text-xs opacity-60 transition duration-200">
+                    Community:{" "}
+                  </h4>
+                  <MiniButtons
+                    icon={<FiGithub />}
+                    href="https://github.com/rahuletto/academiapro"
+                  />
+                  <MiniButtons
+                    icon={<FaWhatsapp />}
+                    href="https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9"
+                  />
+                  <MiniButtons
+                    icon={<FaInstagram />}
+                    href="https://www.instagram.com/srm_academiapro/"
+                  />
+                </div>
               </div>
               <ProfileBadge
                 className={isOpen ? "animate-fadeIn" : "opacity-0"}

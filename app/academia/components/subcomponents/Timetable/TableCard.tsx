@@ -56,12 +56,10 @@ function SubjectCell({
             ...nullStyler,
           };
 
-  console.log(classRoom);
-
   return (
     <div className={baseClasses} style={style}>
       {subject ? (
-        subject
+        subject.split(" – ")[0]
       ) : isActive ? (
         <span
           style={constructNullStyles(0, index, [], false, true)}
@@ -176,9 +174,22 @@ function getClass(subject: string, courses: Course[]) {
       (formattedCourseType ? course.courseType === formattedCourseType : true),
   );
 
-  return course
-    ? course.roomNo
-      ? course.roomNo
-      : subject.split("[")[1]?.replace("]", "")
-    : null;
+  if (course) {
+    if (course.roomNo) {
+      const roomParts = course.roomNo.split("-");
+      if (roomParts.length > 1) {
+        return roomParts[0].trim();
+      } else {
+        return course.roomNo.replace(/\s+/g, "").trim();
+      }
+    } else {
+      const roomFromSubject = subject.split("[")[1]?.replace("]", "");
+      if (roomFromSubject) {
+        const roomParts = roomFromSubject.split("-");
+        return roomParts[0].replace(/\s+/g, "").trim();
+      }
+    }
+  }
+
+  return null;
 }
