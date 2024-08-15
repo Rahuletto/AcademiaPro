@@ -155,7 +155,7 @@ export const urls: DirLink[] = [
     description: "Get help from the IT desk.",
   },
   {
-    site: "Undergraduate Research Opportunities Program (UROP)",
+    site: "Research Opportunities Program",
     url: "https://uropmfp.srmist.edu.in/fund/index.php",
     type: "official",
     description: "Apply for Research Funding",
