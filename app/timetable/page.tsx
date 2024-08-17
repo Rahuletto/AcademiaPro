@@ -49,7 +49,7 @@ export default function Timetable() {
           />
           <Link
             href={data}
-            download={`timetable-${user?.section}-${user?.classroom}.png`}
+            download={`timetable-${user?.section}.png`}
             className="dark:bg-dark-background-lig bg-light-background-dark text-light-color dark:text-dark-background-light"
           >
             Download

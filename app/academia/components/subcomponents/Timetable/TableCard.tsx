@@ -58,7 +58,7 @@ function SubjectCell({
 
   return (
     <div className={baseClasses} style={style}>
-      {subject ? (
+      {subject !== null ? (
         subject.split(" – ")[0]
       ) : isActive ? (
         <span

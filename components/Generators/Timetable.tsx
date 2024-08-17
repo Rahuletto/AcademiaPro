@@ -110,7 +110,7 @@ export default function TimetableGen({ body }: { body: Table[] }) {
           {body?.map((row, i) => (
             <div tw="flex" key={i}>
               {row.subjects.map((elem, j) =>
-                elem ? (
+                elem && elem !== "null" && elem !== null ? (
                   <div tw="flex w-[10%] border-0" key={`table-${i}-${j}`}>
                     <td
                       tw="text-[#0a0d12] h-[40px] text-left p-[4px] w-full flex flex-col relative"
