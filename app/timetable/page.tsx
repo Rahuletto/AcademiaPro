@@ -47,13 +47,13 @@ export default function Timetable() {
             width={2000}
             height={766}
           />
-          <Link
+          <a
             href={data}
             download={`timetable-${user?.section}.png`}
-            className="dark:bg-dark-background-lig bg-light-background-dark text-light-color dark:text-dark-background-light"
+            className="w-fit transform rounded-xl bg-light-background-dark px-5 py-1 font-medium text-light-color transition-all duration-300 hover:scale-105 hover:opacity-80 dark:bg-dark-background-light dark:text-dark-color"
           >
             Download
-          </Link>
+          </a>
         </>
       ) : (
         <Loading />
