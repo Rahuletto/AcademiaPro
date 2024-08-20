@@ -56,9 +56,10 @@ function SubjectCell({
             ...nullStyler,
           };
 
+          console.log(subject)
   return (
     <div className={baseClasses} style={style}>
-      {subject !== null ? (
+      {subject && subject !== "null" ? (
         subject.split(" – ")[0]
       ) : isActive ? (
         <span
@@ -76,7 +77,7 @@ function SubjectCell({
       )}
 
       <span
-        className={`${!subject ? "hidden xl:block xl:text-light-color xl:dark:text-dark-color" : "text-dark-background-dark"} absolute ${classRoom ? "bottom-1 md:bottom-6" : "bottom-1"} right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
+        className={`${subject == "null" ? "hidden xl:block xl:text-light-color xl:dark:text-dark-color" : "text-dark-background-dark"} absolute ${classRoom ? "bottom-1 md:bottom-6" : "bottom-1"} right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
       >
         {Time.start[index] + " - " + Time.end[index]}
       </span>
