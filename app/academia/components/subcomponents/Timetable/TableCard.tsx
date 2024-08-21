@@ -28,7 +28,7 @@ function SubjectCell({
   index,
 }: SubjectCellProps) {
   const baseClasses = `
-    group relative h-auto xl:min-h-24 min-h-16 xl:w-[10%] xl:max-w-[10%] w-full border-[0.3px]
+    group relative h-auto ${!subject || subject === "null" && isActive ? "flex items-center justify-center" : ""} xl:min-h-24 min-h-16 xl:w-[10%] xl:max-w-[10%] w-full border-[0.3px]
     border-dark-background-dark p-2 xl:pb-2 ${isActive ? "pb-2" : "pb-8"}  text-xs font-semibold 
     text-dark-background-dark dark:border-dark-background-dark 
     dark:text-dark-background-darker
@@ -36,7 +36,7 @@ function SubjectCell({
     ${type === "Theory" ? "bg-theory" : type === "Practical" ? "bg-practical" : ""}
   `;
 
-  const style: React.CSSProperties = subject
+  const style: React.CSSProperties = subject && subject !== "null"
     ? inRange && !isActive
       ? { opacity: 0.5 }
       : isActive
@@ -56,7 +56,8 @@ function SubjectCell({
             ...nullStyler,
           };
 
-          console.log(subject)
+          console.log(style)
+
   return (
     <div className={baseClasses} style={style}>
       {subject && subject !== "null" ? (

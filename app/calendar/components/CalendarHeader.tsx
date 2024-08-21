@@ -1,3 +1,4 @@
+import Refresh from "@/components/Refresh";
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -17,8 +18,11 @@ export default function CalendarHeader({
   setCurrent,
 }: CalendarHeaderProps) {
   return (
-    <div className={`${mobile ? "md:hidden flex justify-start" : "flex md:sticky md:top-1 fixed bottom-3 justify-center md:justify-start"} md:w-fit w-full left-0 z-10 items-center`}>
-      <div className="ml-3 flex items-center justify-center gap-3 w-fit rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark">
+    <>
+    <div
+      className={`${mobile ? "flex justify-start md:hidden" : "fixed bottom-3 flex justify-center md:sticky md:top-1 md:justify-start"} left-0 z-10 w-full items-center md:w-fit`}
+    >
+      <div className="ml-3 flex w-fit items-center justify-center gap-3 rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark">
         {setCurrent ? (
           <button
             onClick={() => setCurrent((prev) => prev - 1)}
@@ -39,6 +43,11 @@ export default function CalendarHeader({
           </button>
         ) : null}
       </div>
+
+      <div className="px-3 py-3">
+        <Refresh type={{ mutateCalendar: true }} />
+      </div>
     </div>
+    </>
   );
 }
