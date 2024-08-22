@@ -20,7 +20,7 @@ export default function CalendarHeader({
   return (
     <>
     <div
-      className={`${mobile ? "flex justify-start md:hidden" : "fixed bottom-3 flex justify-center md:sticky md:top-1 md:justify-start"} left-0 z-10 w-full items-center md:w-fit`}
+      className={`${mobile ? "flex justify-start md:hidden" : "fixed bottom-3 flex justify-center md:sticky md:top-1 md:justify-start"} z-50 gap-3 left-0 w-full items-center md:w-fit`}
     >
       <div className="ml-3 flex w-fit items-center justify-center gap-3 rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark">
         {setCurrent ? (
@@ -44,8 +44,9 @@ export default function CalendarHeader({
         ) : null}
       </div>
 
-      <div className="px-3 py-3">
+      <div className="px-3 py-3 dark:bg-dark-background-dark bg-light-background-dark rounded-full">
         <Refresh type={{ mutateCalendar: true }} />
+
       </div>
     </div>
     </>
