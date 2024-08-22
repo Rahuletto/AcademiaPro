@@ -1,5 +1,6 @@
 import { useUser } from "@/provider/UserProvider";
 import { FaXmark } from "react-icons/fa6";
+import Refresh from "../Refresh";
 
 interface UserDialogProps {
   isOpen: boolean;
@@ -40,6 +41,7 @@ export default function UserDialog({
             <h2 className="text-2xl font-semibold capitalize text-light-color dark:text-dark-color">
               {user?.name?.toLowerCase()}
             </h2>
+            <div className="flex flex-row-reverse gap-3 items-center justify-center">
             <button
               title="Close"
               aria-label="Close"
@@ -48,6 +50,8 @@ export default function UserDialog({
             >
               <FaXmark />
             </button>
+            <Refresh type={{ mutateUser: true }} />
+            </div>
           </div>
           <p className="mb-6 text-lg font-medium text-light-accent opacity-80 dark:text-dark-accent">
             {user?.reg}
