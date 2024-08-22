@@ -44,7 +44,7 @@ export default function CalendarHeader({
         ) : null}
       </div>
 
-      <div className="px-3 py-3 dark:bg-dark-background-dark bg-light-background-dark rounded-full">
+      <div className="px-3 py-3 dark:bg-dark-background-dark bg-light-background-light rounded-full">
         <Refresh type={{ mutateCalendar: true }} />
 
       </div>
