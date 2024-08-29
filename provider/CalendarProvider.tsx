@@ -78,9 +78,14 @@ export function CalendarProvider({
     mutate,
   } = useSWR<Calendar[] | null>(`${ProscrapeURL}/api/calendar`, fetcher, {
     fallbackData: initialCalendar,
+    revalidateOnMount: true,
     revalidateOnFocus: false,
-    keepPreviousData: true,
     revalidateOnReconnect: false,
+    keepPreviousData: true,
+    errorRetryCount: 4,
+    revalidateIfStale: false,
+    dedupingInterval: 1000 * 60 * 2,
+    refreshInterval: 1000 * 60 * 30,
     onSuccess: (data) => {
       setRetryCount(0);
     },

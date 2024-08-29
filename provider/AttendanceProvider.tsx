@@ -84,13 +84,14 @@ export function AttendanceProvider({
     fetcher,
     {
       fallbackData: initialAttendance || getCachedAttendance(),
+      revalidateOnMount: true,
       revalidateOnFocus: false,
-      revalidateOnReconnect: true,
+      revalidateOnReconnect: false,
       keepPreviousData: true,
-      refreshInterval: 1000 * 60 * 30,
       errorRetryCount: 4,
       revalidateIfStale: false,
-
+      dedupingInterval: 1000 * 60 * 2,
+      refreshInterval: 1000 * 60 * 30,
       onSuccess: (data) => {
         if (data) {
           Storage.set("attendance", data);

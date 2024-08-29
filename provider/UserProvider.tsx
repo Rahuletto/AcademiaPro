@@ -93,9 +93,13 @@ export function UserProvider({
     mutate,
   } = useSWRImmutable<User | null>(`${ProscrapeURL}/api/user`, fetcher, {
     fallbackData: initialUser || getCachedUser(),
+    revalidateOnMount: true,
     revalidateOnFocus: false,
-    revalidateOnReconnect: true,
+    revalidateOnReconnect: false,
+    keepPreviousData: true,
     errorRetryCount: 4,
+    revalidateIfStale: false,
+    dedupingInterval: 1000 * 60 * 2,
     onSuccess: (data) => {
       if (data) {
         if (data.logout) router.push("/auth/logout");

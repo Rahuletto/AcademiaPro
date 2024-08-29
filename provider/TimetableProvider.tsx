@@ -97,10 +97,13 @@ export function TableProvider({
     fetcher,
     {
       fallbackData: initialTable || getCachedTable(),
+      revalidateOnMount: true,
       revalidateOnFocus: false,
-      revalidateOnReconnect: true,
+      revalidateOnReconnect: false,
       keepPreviousData: true,
       errorRetryCount: 4,
+      revalidateIfStale: true,
+      dedupingInterval: 1000 * 60 * 2,
       onSuccess: (data) => {
         if (data) {
           Storage.set("timetable", data);
