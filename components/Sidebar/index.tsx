@@ -21,9 +21,8 @@ import Hours from "../badges/Hours";
 
 import Footer from "../Footer";
 
-import Poster from "../Poster";
+// import Poster from "../Poster";
 import { IoLibrarySharp } from "react-icons/io5";
-import Refresh from "../Refresh";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -174,7 +173,7 @@ export function Sidebar({
   } else
     return (
       <>
-        <Poster />
+        {/* <Poster /> */}
         <nav className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
           <header
             ref={ref}

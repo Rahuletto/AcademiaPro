@@ -7,6 +7,7 @@ import { Sidebar } from "@/components/Sidebar";
 
 import dynamic from "next/dynamic";
 import Refresh from "@/components/Refresh";
+import NoData from "../academia/components/subcomponents/NoData";
 
 const Indicator = dynamic(
   () => import("@/components/Indicator").then((a) => a.default),
@@ -36,7 +37,7 @@ export default function Courses() {
           <Loading size="max" />
         ) : error ? (
           <Error component="Courses" />
-        ) : (
+        ) : courses ? (
           <div>
             <div className="animate-fadeIn transition duration-200">
               {courses &&
@@ -68,6 +69,8 @@ export default function Courses() {
                   ))}
             </div>
           </div>
+        ) : (
+          <NoData component="Courses" />
         )}
       </Sidebar>
     </main>

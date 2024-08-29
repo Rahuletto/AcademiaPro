@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import { useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
 import { IoRefreshOutline } from "react-icons/io5";
+import NoData from "./subcomponents/NoData";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -63,7 +64,7 @@ export default function Marks() {
         <Loading size="3xl" />
       ) : error ? (
         <Error component="Marks" />
-      ) : (
+      ) : marks ? (
         <>
           <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
             {marks
@@ -80,6 +81,8 @@ export default function Marks() {
               .map((mark, i) => <MarkCard key={i} mark={mark} />)}
           </div>
         </>
+      ) : (
+        <NoData component="Marks" />
       )}
     </section>
   );

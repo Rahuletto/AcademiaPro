@@ -8,6 +8,7 @@ import { FiChevronLeft, FiChevronRight, FiInfo } from "react-icons/fi";
 
 import dynamic from "next/dynamic";
 import Refresh from "@/components/Refresh";
+import NoData from "./subcomponents/NoData";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -101,8 +102,10 @@ export default function Timetable() {
         <Container day={day} currentDayOrder={Number(currentDayOrder)} />
       ) : timetableLoading || dayLoading ? (
         <Loading />
-      ) : (
+      ) : timetableError || dayError ? (
         (timetableError || dayError) && <Error component="timetable" />
+      ) : ( 
+        <NoData component="Timetable" />
       )}
 
       <div className="flex items-center justify-center gap-2">

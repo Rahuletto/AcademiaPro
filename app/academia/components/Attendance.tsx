@@ -10,11 +10,11 @@ import { useEffect, useRef, useState } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FiInfo } from "react-icons/fi";
 import { DateObject } from "react-multi-date-picker";
-import { IoRefreshOutline } from "react-icons/io5";
 import { useMutateAll } from "@/hooks/useMutate";
 
 import dynamic from "next/dynamic";
 import Refresh from "@/components/Refresh";
+import NoData from "./subcomponents/NoData";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -46,7 +46,6 @@ export default function Attendance() {
   const { attendance, isLoading, error } = useAttendance();
   const { timetable } = useTimetable();
   const { calendar } = useCalendar();
-  const mutateAll = useMutateAll();
   const defaultDateRange = {
     from: null,
     to: null,
@@ -276,7 +275,7 @@ export default function Attendance() {
           <Loading size="max" />
         ) : error ? (
           <Error component="Attendance" />
-        ) : (
+        ) : attendance ? (
           <div
             className={
               isPredicted
@@ -297,7 +296,7 @@ export default function Attendance() {
               />
             )}
           </div>
-        )}
+        ) : <NoData component="Attendance" /> }
       </div>
     </section>
   );

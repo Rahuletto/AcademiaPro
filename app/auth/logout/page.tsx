@@ -15,14 +15,11 @@ export default function Logout() {
         "X-CSRF-Token": Cookie.get("key") as string,
       },
     }).then((a) => {
-      if (a.ok) {
-        Cookie.clear();
-        router.push("/");
-      } else {
+      Cookie.clear();
+      if (!a.ok) {
         alert("An error occured! Try to clear cookies manually.");
-        Cookie.clear();
-        router.push("/");
       }
+      router.push("/");
     });
   }, [router]);
 
