@@ -24,14 +24,14 @@ export default function CalendarGrid({ days, month }: CalendarGridProps) {
 
   return (
     <div className="mb-16 w-full pt-1">
-      <div className="hidden text-center font-bold xl:grid xl:grid-cols-7 xl:gap-4">
+      <div className="hidden text-center dark:shadow-[0px_-60px_40px_50px_#06090de7] shadow-[0px_-60px_40px_50px_#ffffffe7] font-bold sticky top-16 z-10 dark:bg-dark-background-dark bg-light-background-light 2xl:grid 2xl:grid-cols-7 2xl:gap-4">
         {weekdays.map((weekday) => (
-          <div key={weekday} className="rounded p-2 font-medium">
+          <div key={weekday} className="p-2 font-medium">
             {weekday}
           </div>
         ))}
       </div>
-      <div className="text-center xl:grid xl:grid-cols-7">
+      <div className="text-center 2xl:grid 2xl:grid-cols-7">
         {Array.from({ length: getFirstDayIndex() }, (_, index) => (
           <div style={{ opacity: 0.6 }} key={`empty-${index}`} />
         ))}

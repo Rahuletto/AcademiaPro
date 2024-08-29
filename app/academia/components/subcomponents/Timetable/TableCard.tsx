@@ -56,8 +56,6 @@ function SubjectCell({
             ...nullStyler,
           };
 
-          console.log(style)
-
   return (
     <div className={baseClasses} style={style}>
       {subject && subject !== "null" ? (
