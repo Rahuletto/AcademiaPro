@@ -112,19 +112,7 @@ export function TableProvider({
         }
         setRetryCount(0);
       },
-      onError: (err) => {
-        console.error("Error fetching table data:", err);
-        if (retryCount < 3) {
-          setTimeout(
-            () => {
-              setRetryCount((prev) => prev + 1);
-            },
-            5000 * (retryCount + 1),
-          );
-        } else {
-          Storage.remove("timetable");
-        }
-      },
+     
     },
   );
 

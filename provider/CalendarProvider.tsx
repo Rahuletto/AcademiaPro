@@ -91,17 +91,6 @@ export function CalendarProvider({
     onSuccess: (data) => {
       setRetryCount(0);
     },
-    onError: (err) => {
-      console.error("Error fetching calendar data:", err);
-      if (retryCount < 3) {
-        setTimeout(
-          () => {
-            setRetryCount((prev) => prev + 1);
-          },
-          5000 * (retryCount + 1),
-        );
-      }
-    },
   });
 
   return (
