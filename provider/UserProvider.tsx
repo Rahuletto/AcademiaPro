@@ -12,6 +12,7 @@ import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
 import { ProscrapeURL } from "@/utils/URL";
 import { useTransitionRouter } from "next-view-transitions";
+import { token } from "@/utils/Encrypt";
 
 interface UserContextType {
   user: User | null;
@@ -35,6 +36,7 @@ const fetcher = async (url: string) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
+        "Authorization": `Bearer ${token}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,

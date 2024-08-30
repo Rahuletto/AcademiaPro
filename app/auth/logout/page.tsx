@@ -1,6 +1,7 @@
 "use client";
 
 import { Cookie } from "@/utils/Cookies";
+import { token } from "@/utils/Encrypt";
 import { ProscrapeURL } from "@/utils/URL";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
 import React, { useEffect } from "react";
@@ -12,6 +13,7 @@ export default function Logout() {
     fetch(`${ProscrapeURL}/api/logout`, {
       method: "DELETE",
       headers: {
+        "Authorization": `Bearer ${token}`,
         "X-CSRF-Token": Cookie.get("key") as string,
       },
     }).then((a) => {

@@ -5,6 +5,7 @@ import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceResponse, AttendanceCourse } from "@/types/Attendance";
 import { ProscrapeURL } from "@/utils/URL";
+import { token } from "@/utils/Encrypt";
 
 interface AttendanceContextType {
   attendance: AttendanceCourse[] | null;
@@ -28,6 +29,7 @@ const fetcher = async (url: string) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
+        "Authorization": `Bearer ${token}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,

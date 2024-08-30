@@ -7,6 +7,7 @@ import { ProscrapeURL } from "@/utils/URL";
 import Button from "@/components/Button";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
 import { useMutateAll } from "@/hooks/useMutate";
+import { token } from "@/utils/Encrypt";
 
 export default function Form() {
   const router = useRouter();
@@ -25,6 +26,7 @@ export default function Form() {
       const response = await fetch(`${ProscrapeURL}/api/login`, {
         method: "POST",
         headers: {
+          "Authorization": `Bearer ${token}`,
           Connection: "keep-alive",
           "content-type": "application/json",
         },

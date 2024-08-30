@@ -75,7 +75,7 @@ export function Sidebar({
 
     function handleGesture() {
       const screenWidth = window.innerWidth;
-      const swipeThreshold = screenWidth / 4;
+      const swipeThreshold = screenWidth / 3;
 
       if (touchendX < touchstartX - swipeThreshold) {
         setIsOpen(false);

@@ -4,6 +4,7 @@ import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import { ProscrapeURL } from "@/utils/URL";
 import { DayOrderResponse } from "@/types/DayOrder";
+import { token } from "@/utils/Encrypt";
 
 interface DayContextType {
   day: string | null;
@@ -27,6 +28,7 @@ const fetcher = async (url: string) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
+        "Authorization": `Bearer ${token}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,
