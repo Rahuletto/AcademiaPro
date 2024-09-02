@@ -40,6 +40,7 @@ const fetcher = async (url: string) => {
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,
+        "Origin": "https://academia-pro.vercel.app",
         Connection: "keep-alive",
         "content-type": "application/json",
         "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
@@ -93,7 +94,7 @@ export function UserProvider({
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<User | null>(`${ProscrapeURL}/api/user`, fetcher, {
+  } = useSWRImmutable<User | null>(`${ProscrapeURL}/user`, fetcher, {
     fallbackData: initialUser || getCachedUser(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

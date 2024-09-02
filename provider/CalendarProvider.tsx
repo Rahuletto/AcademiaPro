@@ -34,6 +34,7 @@ const fetcher = async (url: string) => {
         "Set-Cookie": cookie,
         Cookie: cookie,
         Connection: "keep-alive",
+        "Origin": "https://academia-pro.vercel.app",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "content-type": "application/json",
         "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
@@ -78,7 +79,7 @@ export function CalendarProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<Calendar[] | null>(`${ProscrapeURL}/api/calendar`, fetcher, {
+  } = useSWR<Calendar[] | null>(`${ProscrapeURL}/calendar`, fetcher, {
     fallbackData: initialCalendar,
     revalidateOnFocus: false,
     keepPreviousData: true,

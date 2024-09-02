@@ -41,6 +41,7 @@ const fetcher = async (url: string) => {
         Cookie: cookie,
         Connection: "keep-alive",
         "content-type": "application/json",
+        "Origin": "https://academia-pro.vercel.app",
         "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
       },
     });
@@ -89,7 +90,7 @@ export function CourseProvider({
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<Course[] | null>(`${ProscrapeURL}/api/courses`, fetcher, {
+  } = useSWRImmutable<Course[] | null>(`${ProscrapeURL}/courses`, fetcher, {
     fallbackData: initialCourses || getCachedCourses(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

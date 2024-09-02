@@ -77,7 +77,7 @@ export function DayProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<DayOrderResponse | null>(`${ProscrapeURL}/api/dayorder`, fetcher, {
+  } = useSWR<DayOrderResponse | null>(`${ProscrapeURL}/dayorder`, fetcher, {
     fallbackData: initialDay,
     revalidateOnFocus: false,
     refreshInterval: 1000 * 60 * 60,

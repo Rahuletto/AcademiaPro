@@ -37,7 +37,7 @@ const fetcher = async (url: string) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        "Authorization": `Bearer ${token}`,
+        Authorization: `Bearer ${token}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,
@@ -95,13 +95,16 @@ export function TableProvider({
     isValidating,
     mutate,
   } = useSWRImmutable<Table[] | null>(
-    shouldFetch ? `${ProscrapeURL}/api/timetable?batch=${user.batch}` : null,
+    shouldFetch && !getCachedTable() ? `${ProscrapeURL}/timetable?batch=${user.batch}` : null,
     fetcher,
     {
       fallbackData: initialTable || getCachedTable(),
+      revalidateOnMount: true,
       revalidateOnFocus: false,
-      revalidateOnReconnect: true,
+      revalidateOnReconnect: false,
       keepPreviousData: true,
+      errorRetryCount: 2,
+      revalidateIfStale: true,
       dedupingInterval: 1000 * 60 * 2,
       onSuccess: (data) => {
         if (data) {
@@ -109,7 +112,6 @@ export function TableProvider({
         }
         setRetryCount(0);
       },
-     
     },
   );
 

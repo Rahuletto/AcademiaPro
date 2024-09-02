@@ -82,7 +82,7 @@ export function AttendanceProvider({
     isValidating,
     mutate,
   } = useSWR<AttendanceCourse[] | null>(
-    `${ProscrapeURL}/api/attendance`,
+    `${ProscrapeURL}/attendance`,
     fetcher,
     {
       fallbackData: initialAttendance || getCachedAttendance(),

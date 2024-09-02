@@ -10,11 +10,12 @@ import { RiLoader3Fill } from "react-icons/ri";
 export default function Logout() {
   const router = useRouter();
   useEffect(() => {
-    fetch(`${ProscrapeURL}/api/logout`, {
+    fetch(`${ProscrapeURL}/logout`, {
       method: "DELETE",
       headers: {
         "Authorization": `Bearer ${token}`,
         "X-CSRF-Token": Cookie.get("key") as string,
+        "Origin": "https://academia-pro.vercel.app",
       },
     }).then((a) => {
       Cookie.clear();

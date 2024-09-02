@@ -37,6 +37,7 @@ const fetcher = async (url: string) => {
       headers: {
         "Authorization": `Bearer ${token}`,
         "X-CSRF-Token": cookie,
+        "Origin": "https://academia-pro.vercel.app",
         "Set-Cookie": cookie,
         Cookie: cookie,
         Connection: "keep-alive",
@@ -89,7 +90,7 @@ export function MarksProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<Mark[] | null>(`${ProscrapeURL}/api/marks`, fetcher, {
+  } = useSWR<Mark[] | null>(`${ProscrapeURL}/marks`, fetcher, {
     fallbackData: initialMarks || getCachedMarks(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

@@ -23,12 +23,13 @@ export default function Form() {
     setError(-1);
 
     try {
-      const response = await fetch(`${ProscrapeURL}/api/login`, {
+      const response = await fetch(`${ProscrapeURL}/login`, {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${token}`,
           Connection: "keep-alive",
           "content-type": "application/json",
+          "Origin": "https://academia-pro.vercel.app",
         },
         body: JSON.stringify({
           account: uid.replaceAll(" ", "").replace("@srmist.edu.in", ""),
