@@ -91,11 +91,10 @@ export function CourseProvider({
     mutate,
   } = useSWRImmutable<Course[] | null>(`${ProscrapeURL}/api/courses`, fetcher, {
     fallbackData: initialCourses || getCachedCourses(),
-    revalidateOnMount: true,
     revalidateOnFocus: false,
-    revalidateOnReconnect: false,
+    revalidateOnReconnect: true,
     keepPreviousData: true,
-    errorRetryCount: 4,
+    errorRetryCount: 2,
     revalidateIfStale: false,
     dedupingInterval: 1000 * 60 * 2,
     onSuccess: (data) => {

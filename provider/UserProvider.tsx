@@ -25,7 +25,7 @@ const UserContext = createContext<UserContextType>({
   user: null,
   error: null,
   isLoading: false,
-  mutate: async () => {},
+  mutate: async () => { },
 });
 
 const fetcher = async (url: string) => {
@@ -95,12 +95,8 @@ export function UserProvider({
     mutate,
   } = useSWRImmutable<User | null>(`${ProscrapeURL}/api/user`, fetcher, {
     fallbackData: initialUser || getCachedUser(),
-    revalidateOnMount: true,
     revalidateOnFocus: false,
-    revalidateOnReconnect: false,
-    keepPreviousData: true,
-    errorRetryCount: 4,
-    revalidateIfStale: false,
+    revalidateOnReconnect: true,
     dedupingInterval: 1000 * 60 * 2,
     onSuccess: (data) => {
       if (data) {
@@ -109,7 +105,7 @@ export function UserProvider({
       }
       setRetryCount(0);
     },
-   
+
   });
 
   return (
