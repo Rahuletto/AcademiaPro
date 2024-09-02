@@ -7,7 +7,7 @@ export default function Maintenance() {
           are working on it to get it back running again.
         </h3>
       </div>
-      <h2 className="rounded-3xl bg-light-background-light px-6 py-4 text-light-color dark:bg-dark-background-light dark:text-dark-color">
+      <h2 className="rounded-3xl bg-light-background-light px-6 py-4 text-center text-light-color dark:bg-dark-background-light dark:text-dark-color">
         In the meantime use the official{" "}
         <a className="underline" href="https://academia.srmist.edu.in/">
           Academia
