@@ -91,12 +91,11 @@ export function MarksProvider({
     mutate,
   } = useSWR<Mark[] | null>(`${ProscrapeURL}/api/marks`, fetcher, {
     fallbackData: initialMarks || getCachedMarks(),
-    refreshInterval: 1000 * 60 * 30,
-    revalidateOnMount: true,
     revalidateOnFocus: false,
-    revalidateOnReconnect: false,
+    revalidateOnReconnect: true,
     keepPreviousData: true,
-    errorRetryCount: 4,
+    refreshInterval: 1000 * 60 * 30,
+    errorRetryCount: 2,
     revalidateIfStale: false,
     dedupingInterval: 1000 * 60 * 2,
     onSuccess: (data) => {

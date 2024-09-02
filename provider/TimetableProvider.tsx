@@ -99,12 +99,9 @@ export function TableProvider({
     fetcher,
     {
       fallbackData: initialTable || getCachedTable(),
-      revalidateOnMount: true,
       revalidateOnFocus: false,
-      revalidateOnReconnect: false,
+      revalidateOnReconnect: true,
       keepPreviousData: true,
-      errorRetryCount: 4,
-      revalidateIfStale: true,
       dedupingInterval: 1000 * 60 * 2,
       onSuccess: (data) => {
         if (data) {

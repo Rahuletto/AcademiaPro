@@ -17,7 +17,7 @@ const DayContext = createContext<DayContextType>({
   day: null,
   error: null,
   isLoading: false,
-  mutate: async () => {},
+  mutate: async () => { },
 });
 
 const fetcher = async (url: string) => {
@@ -81,8 +81,8 @@ export function DayProvider({
     fallbackData: initialDay,
     revalidateOnFocus: false,
     refreshInterval: 1000 * 60 * 60,
+    errorRetryCount: 2,
     revalidateOnReconnect: true,
-    errorRetryCount: 4,
     onSuccess: (data) => {
       setRetryCount(0);
     },
