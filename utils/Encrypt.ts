@@ -6,4 +6,4 @@ function createToken(secretKey: string): string {
   return encodedData;
 }
 
-export const token = createToken(process.env.NEXT_PUBLIC_VALIDATION_KEY || "");
+export const token = () => createToken(process.env.NEXT_PUBLIC_VALIDATION_KEY || "");

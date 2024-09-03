@@ -1,5 +1,7 @@
+import { token } from "@/utils/Encrypt";
 import { ProscrapeURL } from "@/utils/URL";
-import { mutate } from "swr";
+import { useSWRConfig } from "swr";
+import { Cookie as cookies } from "@/utils/Cookies";
 
 export interface MutateOptions {
   mutateUser?: boolean;
@@ -10,7 +12,38 @@ export interface MutateOptions {
   mutateCourse?: boolean;
   mutateCalendar?: boolean;
 }
+
 export function useMutateAll() {
+  const { mutate } = useSWRConfig();
+
+  const fetcher = async (url: string) => {
+    const cookie = cookies.get("key");
+    if (!cookie) return null;
+
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token()}`,
+          "X-CSRF-Token": cookie,
+          "Set-Cookie": cookie,
+          Cookie: cookie,
+          Connection: "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+          "content-type": "application/json",
+        },
+      });
+
+      if (!response.ok) {
+        throw new Error(`Failed to fetch ${url}`);
+      }
+      return response.json();
+    } catch (error) {
+      console.error("Fetch error:", error);
+      return null;
+    }
+  };
+
   return async function (options: MutateOptions = {}) {
     const {
       mutateUser: shouldMutateUser,
@@ -22,21 +55,43 @@ export function useMutateAll() {
       mutateCalendar: shouldMutateCalendar,
     } = options;
 
-    if (shouldMutateUser) mutate(`${ProscrapeURL}/user`);
-    else if (shouldMutateCalendar) mutate(`${ProscrapeURL}/calendar`);
-    else if (shouldMutateCourse) mutate(`${ProscrapeURL}/courses`);
-    else if (shouldMutateAttendance) mutate(`${ProscrapeURL}/attendance`);
-    else if (shouldMutateDay) mutate(`${ProscrapeURL}/dayorder`);
-    else if (shouldMutateMarks) mutate(`${ProscrapeURL}/marks`);
-    else if (shouldMutateTimetable) mutate(`${ProscrapeURL}/timetable`);
+    const urls = {
+      user: `${ProscrapeURL}/user`,
+      attendance: `${ProscrapeURL}/attendance`,
+      dayorder: `${ProscrapeURL}/dayorder`,
+      marks: `${ProscrapeURL}/marks`,
+      timetable: `${ProscrapeURL}/timetable`,
+      courses: `${ProscrapeURL}/courses`,
+      calendar: `${ProscrapeURL}/calendar`,
+    };
+
+    const addCacheBustParam = (url: string) => {
+      const [baseUrl, queryParams] = url.split("?");
+      const cacheBustParam = `cache_bust=${Date.now()}`;
+      if (queryParams) {
+        return `${baseUrl}?${queryParams}&${cacheBustParam}`;
+      }
+      return `${baseUrl}?${cacheBustParam}`;
+    };
+
+    const clearAndRevalidate = async (url: string) => {
+      mutate(url, undefined, { revalidate: true });
+
+      const uniqueUrl = addCacheBustParam(url);
+      await fetcher(uniqueUrl);
+    };
+
+    if (shouldMutateUser) await clearAndRevalidate(urls.user);
+    else if (shouldMutateCalendar) await clearAndRevalidate(urls.calendar);
+    else if (shouldMutateCourse) await clearAndRevalidate(urls.courses);
+    else if (shouldMutateAttendance) await clearAndRevalidate(urls.attendance);
+    else if (shouldMutateDay) await clearAndRevalidate(urls.dayorder);
+    else if (shouldMutateMarks) await clearAndRevalidate(urls.marks);
+    else if (shouldMutateTimetable) await clearAndRevalidate(urls.timetable);
     else {
-      mutate(`${ProscrapeURL}/user`)
-      mutate(`${ProscrapeURL}/attendance`)
-      mutate(`${ProscrapeURL}/dayorder`)
-      mutate(`${ProscrapeURL}/marks`)
-      mutate(`${ProscrapeURL}/timetable`)
-      mutate(`${ProscrapeURL}/courses`)
-      mutate(`${ProscrapeURL}/calendar`)
+      await Promise.all(
+        Object.values(urls).map((url) => clearAndRevalidate(url)),
+      );
     }
   };
 }

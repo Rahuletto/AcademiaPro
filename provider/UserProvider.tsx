@@ -36,7 +36,7 @@ const fetcher = async (url: string) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        "Authorization": `Bearer ${token}`,
+        "Authorization": `Bearer ${token()}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,
@@ -97,6 +97,9 @@ export function UserProvider({
     fallbackData: initialUser || getCachedUser(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,
+    keepPreviousData: true,
+    errorRetryCount: 2,
+    revalidateIfStale: false,
     dedupingInterval: 1000 * 60 * 2,
     onSuccess: (data) => {
       if (data) {

@@ -35,7 +35,7 @@ const fetcher = async (url: string) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer ${token()}`,
         "X-CSRF-Token": cookie,
         Origin: "https://academia-pro.vercel.app",
         "Set-Cookie": cookie,

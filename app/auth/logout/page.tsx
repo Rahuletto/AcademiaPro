@@ -13,12 +13,22 @@ export default function Logout() {
     fetch(`${ProscrapeURL}/logout`, {
       method: "DELETE",
       headers: {
-        "Authorization": `Bearer ${token}`,
+        Authorization: `Bearer ${token()}`,
         "X-CSRF-Token": Cookie.get("key") as string,
-        "Origin": "https://academia-pro.vercel.app",
+        Origin: "https://academia-pro.vercel.app",
       },
     }).then((a) => {
       Cookie.clear();
+      sessionStorage.clear();
+
+      if ("caches" in window) {
+        caches.keys().then(function (names) {
+          for (let name of names) {
+            caches.delete(name);
+          }
+        });
+      }
+
       if (!a.ok) {
         alert("An error occured! Try to clear cookies manually.");
       }

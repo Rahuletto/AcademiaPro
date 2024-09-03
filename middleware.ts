@@ -13,9 +13,9 @@ const isAuthenticated = (request: NextRequest): boolean => {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (MAINTENANCE && pathname !== "/maintenance") {
-    return NextResponse.redirect(new URL("/maintenance", request.url));
-  }
+  // if (MAINTENANCE && pathname !== "/maintenance") {
+  //   return NextResponse.redirect(new URL("/maintenance", request.url));
+  // }
 
   if (isAuthenticated(request) && home.includes(pathname)) {
     return NextResponse.redirect(new URL("/academia", request.url));

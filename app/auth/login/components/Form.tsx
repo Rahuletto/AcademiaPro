@@ -26,7 +26,7 @@ export default function Form() {
       const response = await fetch(`${ProscrapeURL}/login`, {
         method: "POST",
         headers: {
-          "Authorization": `Bearer ${token}`,
+          Authorization: `Bearer ${token()}`,
           Connection: "keep-alive",
           "content-type": "application/json",
           "Origin": "https://academia-pro.vercel.app",
