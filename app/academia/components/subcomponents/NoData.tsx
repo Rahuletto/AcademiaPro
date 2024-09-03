@@ -8,7 +8,7 @@ export default function NoData({ component }: { component: string }) {
         title="loading"
         className={`text-2xl font-medium text-light-accent dark:text-dark-accent`}
       />
-      <h4 className="text-lg font-medium text-light-accent dark:text-dark-accent text-center">We could&apos;nt find {component} from SRM Academia</h4>
+      <h4 className="text-lg font-medium text-light-accent dark:text-dark-accent text-center">We couldn&apos;t find {component} from SRM Academia</h4>
       <p className="text-center text-sm text-light-accent dark:text-dark-accent opacity-50">{`(maybe you are a fresher, try again later)`}</p>
     </div>
   );

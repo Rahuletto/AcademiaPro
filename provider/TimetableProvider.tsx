@@ -80,7 +80,6 @@ export function TableProvider({
   initialTable?: Table[] | null;
 }) {
   const { user } = useUser();
-  const [retryCount, setRetryCount] = useState(0);
 
   const getCachedTable = useCallback(
     () => Storage.get<Table[] | null>("timetable", null),
@@ -103,14 +102,12 @@ export function TableProvider({
       revalidateOnFocus: false,
       revalidateOnReconnect: false,
       keepPreviousData: true,
-      errorRetryCount: 2,
       revalidateIfStale: true,
       dedupingInterval: 1000 * 60 * 2,
       onSuccess: (data) => {
         if (data) {
           Storage.set("timetable", data);
         }
-        setRetryCount(0);
       },
     },
   );

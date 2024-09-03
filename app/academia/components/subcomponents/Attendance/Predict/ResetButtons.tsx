@@ -1,5 +1,3 @@
-import { format } from "date-fns";
-
 interface PredictResetButtonsProps {
   isPredicted: boolean;
   showDatePicker: boolean;

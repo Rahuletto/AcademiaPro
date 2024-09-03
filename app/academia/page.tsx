@@ -32,7 +32,7 @@ export default function Academia() {
   }, []);
 
   useEffect(() => {
-    if (!user && !isLoading) mutateAll();
+    if (!user && !isLoading) mutateAll({ mutateUser: true });
   }, [user, isLoading, mutateAll]);
 
   if (!mounted) return null;
@@ -51,5 +51,7 @@ export default function Academia() {
     <div className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center">
       <Loading />
     </div>
-  ) : null;
+  ) : (
+    <Loading size="max" />
+  );
 }

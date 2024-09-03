@@ -29,12 +29,12 @@ const fetcher = async (url: string) => {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        "Authorization": `Bearer ${token}`,
+        Authorization: `Bearer ${token}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,
         Connection: "keep-alive",
-        "Origin": "https://academia-pro.vercel.app",
+        Origin: "https://academia-pro.vercel.app",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "content-type": "application/json",
         "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
@@ -82,13 +82,16 @@ export function CalendarProvider({
   } = useSWR<Calendar[] | null>(`${ProscrapeURL}/calendar`, fetcher, {
     fallbackData: initialCalendar,
     revalidateOnFocus: false,
+    revalidateOnReconnect: true,
     keepPreviousData: true,
-    revalidateOnReconnect: false,
+    refreshInterval: 1000 * 60 * 30,
     errorRetryCount: 2,
-    dedupingInterval: 1000 * 60 * 2,
+    revalidateIfStale: false,
     onSuccess: (data) => {
       setRetryCount(0);
+      return data;
     },
+    
   });
 
   return (

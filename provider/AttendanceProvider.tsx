@@ -98,7 +98,9 @@ export function AttendanceProvider({
           Storage.set("attendance", data);
         }
         setRetryCount(0);
+        return data;
       },
+      
     },
   );
 

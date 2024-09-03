@@ -4,7 +4,7 @@ import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
 import { useMarks } from "@/provider/MarksProvider";
 import dynamic from "next/dynamic";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
 import { IoRefreshOutline } from "react-icons/io5";
 import NoData from "./subcomponents/NoData";
@@ -23,9 +23,13 @@ const MarkCard = dynamic(
 );
 
 export default function Marks() {
-  const { marks, isLoading, error } = useMarks();
+  const { marks, isLoading, error, mutate } = useMarks();
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if(!marks) mutate()
+  }, [marks, mutate])
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
 

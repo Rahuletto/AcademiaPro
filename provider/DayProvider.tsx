@@ -5,6 +5,7 @@ import useSWR from "swr";
 import { ProscrapeURL } from "@/utils/URL";
 import { DayOrderResponse } from "@/types/DayOrder";
 import { token } from "@/utils/Encrypt";
+import Storage from "@/utils/Storage";
 
 interface DayContextType {
   day: string | null;
@@ -72,20 +73,27 @@ export function DayProvider({
 }) {
   const [retryCount, setRetryCount] = useState(0);
 
+  const getCachedDayOrder = () =>
+    Storage.get<DayOrderResponse | null>("dayorder", null);
+
+
   const {
     data: day,
     error,
     isValidating,
     mutate,
   } = useSWR<DayOrderResponse | null>(`${ProscrapeURL}/dayorder`, fetcher, {
-    fallbackData: initialDay,
+    fallbackData: initialDay || getCachedDayOrder(),
     revalidateOnFocus: false,
     refreshInterval: 1000 * 60 * 60,
     errorRetryCount: 2,
     revalidateOnReconnect: true,
     onSuccess: (data) => {
+      Storage.set("dayorder", data);
       setRetryCount(0);
+      return data;
     },
+    
   });
 
   return (

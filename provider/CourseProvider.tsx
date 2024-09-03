@@ -103,7 +103,9 @@ export function CourseProvider({
         Storage.set("courses", data);
       }
       setRetryCount(0);
+      return data;
     },
+    
   });
 
   return (

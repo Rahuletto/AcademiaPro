@@ -1,10 +1,5 @@
-import { useAttendance } from "@/provider/AttendanceProvider";
-import { useCalendar } from "@/provider/CalendarProvider";
-import { useCourses } from "@/provider/CourseProvider";
-import { useDay } from "@/provider/DayProvider";
-import { useMarks } from "@/provider/MarksProvider";
-import { useTimetable } from "@/provider/TimetableProvider";
-import { useUser } from "@/provider/UserProvider";
+import { ProscrapeURL } from "@/utils/URL";
+import { mutate } from "swr";
 
 export interface MutateOptions {
   mutateUser?: boolean;
@@ -16,14 +11,6 @@ export interface MutateOptions {
   mutateCalendar?: boolean;
 }
 export function useMutateAll() {
-  const { mutate: mutateAttendance } = useAttendance();
-  const { mutate: mutateDay } = useDay();
-  const { mutate: mutateMarks } = useMarks();
-  const { mutate: mutateTimetable } = useTimetable();
-  const { mutate: mutateUser } = useUser();
-  const { mutate: mutateCourse } = useCourses();
-  const { mutate: mutateCalendar } = useCalendar();
-
   return async function (options: MutateOptions = {}) {
     const {
       mutateUser: shouldMutateUser,
@@ -35,21 +22,21 @@ export function useMutateAll() {
       mutateCalendar: shouldMutateCalendar,
     } = options;
 
-    if (shouldMutateUser) mutateUser();
-    else if (shouldMutateCalendar) mutateCalendar();
-    else if (shouldMutateCourse) mutateCourse();
-    else if (shouldMutateAttendance) mutateAttendance();
-    else if (shouldMutateDay) mutateDay();
-    else if (shouldMutateMarks) mutateMarks();
-    else if (shouldMutateTimetable) mutateTimetable();
+    if (shouldMutateUser) mutate(`${ProscrapeURL}/user`);
+    else if (shouldMutateCalendar) mutate(`${ProscrapeURL}/calendar`);
+    else if (shouldMutateCourse) mutate(`${ProscrapeURL}/courses`);
+    else if (shouldMutateAttendance) mutate(`${ProscrapeURL}/attendance`);
+    else if (shouldMutateDay) mutate(`${ProscrapeURL}/dayorder`);
+    else if (shouldMutateMarks) mutate(`${ProscrapeURL}/marks`);
+    else if (shouldMutateTimetable) mutate(`${ProscrapeURL}/timetable`);
     else {
-      mutateUser();
-      mutateAttendance();
-      mutateDay();
-      mutateMarks();
-      mutateCalendar();
-      mutateCourse();
-      mutateTimetable();
+      mutate(`${ProscrapeURL}/user`)
+      mutate(`${ProscrapeURL}/attendance`)
+      mutate(`${ProscrapeURL}/dayorder`)
+      mutate(`${ProscrapeURL}/marks`)
+      mutate(`${ProscrapeURL}/timetable`)
+      mutate(`${ProscrapeURL}/courses`)
+      mutate(`${ProscrapeURL}/calendar`)
     }
   };
 }
