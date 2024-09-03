@@ -1,5 +1,5 @@
 "use client";
-import { Cookie as cookies } from "@/utils/Cookies";
+import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import { ProscrapeURL } from "@/utils/URL";
@@ -25,6 +25,9 @@ const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
+  const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
+  if (!cook || cook === "" || cook === "undefined") return null;
+  
   try {
     const response = await fetch(url, {
       method: "GET",
@@ -88,6 +91,11 @@ export function DayProvider({
     refreshInterval: 1000 * 60 * 60,
     errorRetryCount: 2,
     revalidateOnReconnect: true,
+    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+      if (retryCount >= 2) return;
+
+      setTimeout(() => revalidate({ retryCount }), 3000);
+    },
     onSuccess: (data) => {
       Storage.set("dayorder", data);
       setRetryCount(0);

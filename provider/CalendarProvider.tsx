@@ -1,5 +1,5 @@
 "use client";
-import { Cookie as cookies } from "@/utils/Cookies";
+import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 
@@ -24,6 +24,9 @@ const CalendarContext = createContext<CalendarContextType>({
 const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
+
+  const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
+  if (!cook || cook === "" || cook === "undefined") return null;
 
   try {
     const response = await fetch(url, {
@@ -87,11 +90,15 @@ export function CalendarProvider({
     refreshInterval: 1000 * 60 * 30,
     errorRetryCount: 2,
     revalidateIfStale: false,
+    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+      if (retryCount >= 2) return;
+
+      setTimeout(() => revalidate({ retryCount }), 3000);
+    },
     onSuccess: (data) => {
       setRetryCount(0);
       return data;
     },
-    
   });
 
   return (

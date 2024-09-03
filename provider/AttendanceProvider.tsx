@@ -1,5 +1,5 @@
 "use client";
-import { Cookie as cookies } from "@/utils/Cookies";
+import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
@@ -25,11 +25,14 @@ const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
+  const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
+  if (!cook || cook === "" || cook === "undefined") return null;
+
   try {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        "Authorization": `Bearer ${token()}`,
+        Authorization: `Bearer ${token()}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,
@@ -81,28 +84,28 @@ export function AttendanceProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<AttendanceCourse[] | null>(
-    `${ProscrapeURL}/attendance`,
-    fetcher,
-    {
-      fallbackData: initialAttendance || getCachedAttendance(),
-      revalidateOnFocus: false,
-      revalidateOnReconnect: true,
-      keepPreviousData: true,
-      refreshInterval: 1000 * 60 * 30,
-      errorRetryCount: 2,
-      revalidateIfStale: false,
-      dedupingInterval: 1000 * 60 * 2,
-      onSuccess: (data) => {
-        if (data) {
-          Storage.set("attendance", data);
-        }
-        setRetryCount(0);
-        return data;
-      },
-      
+  } = useSWR<AttendanceCourse[] | null>(`${ProscrapeURL}/attendance`, fetcher, {
+    fallbackData: initialAttendance || getCachedAttendance(),
+    revalidateOnFocus: false,
+    revalidateOnReconnect: true,
+    keepPreviousData: true,
+    refreshInterval: 1000 * 60 * 30,
+    errorRetryCount: 2,
+    revalidateIfStale: false,
+    dedupingInterval: 1000 * 60 * 2,
+    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+      if (retryCount >= 2) return;
+
+      setTimeout(() => revalidate({ retryCount }), 3000);
     },
-  );
+    onSuccess: (data) => {
+      if (data) {
+        Storage.set("attendance", data);
+      }
+      setRetryCount(0);
+      return data;
+    },
+  });
 
   return (
     <AttendanceContext.Provider

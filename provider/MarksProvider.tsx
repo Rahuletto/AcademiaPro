@@ -1,5 +1,5 @@
 "use client";
-import { Cookie as cookies } from "@/utils/Cookies";
+import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import {
   type ReactNode,
   createContext,
@@ -30,6 +30,9 @@ const MarksContext = createContext<MarksContextType>({
 const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
+
+  const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
+  if (!cook || cook === "" || cook === "undefined") return null;
 
   try {
     const response = await fetch(url, {
@@ -99,6 +102,11 @@ export function MarksProvider({
     errorRetryCount: 2,
     revalidateIfStale: false,
     dedupingInterval: 1000 * 60 * 2,
+    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+      if (retryCount >= 2) return;
+
+      setTimeout(() => revalidate({ retryCount }), 3000);
+    },
     onSuccess: (data) => {
       if (data) {
         Storage.set("marks", data);

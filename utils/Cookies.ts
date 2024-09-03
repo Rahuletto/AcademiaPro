@@ -41,3 +41,11 @@ export const Cookie = {
     return Storage.get(name, null);
   },
 };
+
+export function getCookie(cookie: string, name: string) {
+  const regex = new RegExp(`(^| )${name}=([^;]+)`);
+  const match = cookie.match(regex);
+  if (match) {
+    return match[2];
+  }
+}

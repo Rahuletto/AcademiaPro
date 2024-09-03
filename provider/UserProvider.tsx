@@ -1,6 +1,6 @@
 "use client";
 import { User } from "@/types/User";
-import { Cookie as cookies } from "@/utils/Cookies";
+import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import {
   type ReactNode,
   createContext,
@@ -25,18 +25,21 @@ const UserContext = createContext<UserContextType>({
   user: null,
   error: null,
   isLoading: false,
-  mutate: async () => { },
+  mutate: async () => {},
 });
 
 const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
+  const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
+  if (!cook || cook === "" || cook === "undefined") return null;
+
   try {
     const response = await fetch(url, {
       method: "GET",
       headers: {
-        "Authorization": `Bearer ${token()}`,
+        Authorization: `Bearer ${token()}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,
@@ -100,7 +103,13 @@ export function UserProvider({
     keepPreviousData: true,
     errorRetryCount: 2,
     revalidateIfStale: false,
+    shouldRetryOnError: false,
     dedupingInterval: 1000 * 60 * 2,
+    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+      if (retryCount >= 2) return;
+
+      setTimeout(() => revalidate({ retryCount }), 3000);
+    },
     onSuccess: (data) => {
       if (data) {
         if (data.logout) router.push("/auth/logout");
@@ -108,7 +117,6 @@ export function UserProvider({
       }
       setRetryCount(0);
     },
-
   });
 
   return (
