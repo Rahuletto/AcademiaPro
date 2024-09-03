@@ -26,41 +26,47 @@ const fetcher = async (url: string) => {
   if (!cookie) return null;
 
   const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
-  if (!cook || cook === "" || cook === "undefined") return null;
+  if (
+    !cook ||
+    cook === "" ||
+    cook === "undefined" ||
+    cookie.includes("undefined")
+  )
+    return null;
+  else
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token()}`,
+          "X-CSRF-Token": cookie,
+          "Set-Cookie": cookie,
+          Cookie: cookie,
+          Connection: "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+          "content-type": "application/json",
+          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+        },
+      });
+      if (!response.ok) {
+        const errorBody = await response.text();
+        throw new Error(
+          `HTTP error! status: ${response.status}, body: ${errorBody}`,
+        );
+      }
 
-  try {
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token()}`,
-        "X-CSRF-Token": cookie,
-        "Set-Cookie": cookie,
-        Cookie: cookie,
-        Connection: "keep-alive",
-        "Accept-Encoding": "gzip, deflate, br, zstd",
-        "content-type": "application/json",
-        "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
-      },
-    });
-    if (!response.ok) {
-      const errorBody = await response.text();
-      throw new Error(
-        `HTTP error! status: ${response.status}, body: ${errorBody}`,
-      );
-    }
+      const data: AttendanceResponse = await response.json();
+      if (!data || !data.attendance) {
+        throw new Error("Invalid response format");
+      }
 
-    const data: AttendanceResponse = await response.json();
-    if (!data || !data.attendance) {
-      throw new Error("Invalid response format");
+      return data.attendance;
+    } catch (error) {
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error("An unexpected error occurred");
     }
-
-    return data.attendance;
-  } catch (error) {
-    if (error instanceof Error) {
-      throw error;
-    }
-    throw new Error("An unexpected error occurred");
-  }
 };
 
 export function useAttendance() {

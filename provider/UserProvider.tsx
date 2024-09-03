@@ -33,7 +33,8 @@ const fetcher = async (url: string) => {
   if (!cookie) return null;
 
   const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
-  if (!cook || cook === "" || cook === "undefined") return null;
+  if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
+  else
 
   try {
     const response = await fetch(url, {
