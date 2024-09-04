@@ -15,7 +15,7 @@ export function middleware(request: NextRequest) {
 
   if (MAINTENANCE && pathname !== "/maintenance") {
     return NextResponse.redirect(new URL("/maintenance", request.url));
-  } else if (!MAINTENANCE && pathname === "/maintainance") {
+  } else if (!MAINTENANCE && pathname === "/maintenance") {
     return NextResponse.redirect(new URL("/", request.url));
   }
 
