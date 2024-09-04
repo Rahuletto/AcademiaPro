@@ -90,7 +90,7 @@ interface TableCardProps {
 
 export default function TableCard({ view, currentDayOrder }: TableCardProps) {
   const { timetable } = useTimetable();
-  const { courses, mutate } = useCourses();
+  const { courses, mutate , isLoading, error} = useCourses();
   const { day } = useDay();
   const [time, setTime] = useState<Date>(getISTTime());
 
@@ -99,8 +99,8 @@ export default function TableCard({ view, currentDayOrder }: TableCardProps) {
   }, []);
 
   useEffect(() => {
-    if (!courses) mutate();
-  }, [courses, mutate]);
+    if (!courses && !isLoading && !error) mutate();
+  }, [courses, error, isLoading, mutate]);
 
   useInterval(() => {
     setTime(getISTTime());

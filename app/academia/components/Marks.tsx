@@ -28,8 +28,8 @@ export default function Marks() {
   const infoIconRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if(!marks) mutate()
-  }, [marks, mutate])
+    if(!marks && !isLoading && !error) mutate()
+  }, [error, isLoading, marks, mutate])
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
 

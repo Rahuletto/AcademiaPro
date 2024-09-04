@@ -23,8 +23,8 @@ export default function Courses() {
   const { courses, isLoading, error, mutate } = useCourses();
 
   useEffect(() => {
-    if (!isLoading && !courses) mutate();
-  }, [mutate, isLoading, courses]);
+    if (!isLoading && !courses && !error) mutate();
+  }, [mutate, isLoading, courses, error]);
 
   return (
     <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">

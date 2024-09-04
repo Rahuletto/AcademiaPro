@@ -37,8 +37,8 @@ export default function Timetable() {
   }, [day]);
 
   useEffect(() => {
-    if(!timetable) mutate()
-  }, [timetable, mutate])
+    if(!timetable && !timetableLoading && !timetableError) mutate()
+  }, [timetable, mutate, timetableLoading, timetableError])
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
   const isHoliday = day && typeof day === "string" && day.includes("No");

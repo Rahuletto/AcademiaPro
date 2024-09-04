@@ -10,10 +10,10 @@ export default function AttendanceContent(): JSX.Element {
   const { attendance, isLoading, error, mutate } = useAttendance();
 
   useEffect(() => {
-    if (!attendance) {
+    if (!attendance && !isLoading && !error) {
         mutate()
     }
-  }, [attendance, mutate]);
+  }, [attendance, error, isLoading, mutate]);
 
   if (isLoading) return <Loading size="max" />;
   if (error) return <Error component="Attendance" />;
