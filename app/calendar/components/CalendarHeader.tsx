@@ -1,6 +1,8 @@
 import Refresh from "@/components/Refresh";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { LiaDownloadSolid } from "react-icons/lia";
 
 interface CalendarHeaderProps {
   mobile?: boolean;
@@ -17,6 +19,7 @@ export default function CalendarHeader({
   current,
   setCurrent,
 }: CalendarHeaderProps) {
+  const router = useRouter()
   return (
     <>
     <div
@@ -44,9 +47,15 @@ export default function CalendarHeader({
         ) : null}
       </div>
 
-      <div className="px-3 py-3 dark:bg-dark-background-dark bg-light-background-light rounded-full">
+      <div className="px-3 py-3 dark:bg-dark-background-dark flex gap-3 bg-light-background-light rounded-full">
         <Refresh type={{ mutateCalendar: true }} />
-
+        <button
+      tabIndex={0}
+      className={`rounded-full p-1 text-sm text-light-color opacity-60 transition duration-200 hover:bg-light-background-dark active:-rotate-45 dark:text-dark-color dark:hover:bg-dark-background-dark`}
+      onClick={() => router.push("/calendar/download")}
+    >
+      <LiaDownloadSolid />
+    </button>
       </div>
     </div>
     </>

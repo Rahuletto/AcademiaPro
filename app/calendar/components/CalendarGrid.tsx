@@ -9,9 +9,10 @@ const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 interface CalendarGridProps {
   month: number;
   days: Day[];
+  isDownload?: boolean;
 }
 
-export default function CalendarGrid({ days, month }: CalendarGridProps) {
+export default function CalendarGrid({ days, month, isDownload }: CalendarGridProps) {
   const todayRef = useRef<HTMLDivElement>(null);
   const date = new Date().getDate();
 
@@ -42,12 +43,12 @@ export default function CalendarGrid({ days, month }: CalendarGridProps) {
               key={index}
               day={day}
               isTomorrow={
-                date + 1 === Number(day.date) &&
+                isDownload ? false : (date + 1 === Number(day.date) &&
                 new Date().getMonth() === month &&
-                new Date().getHours() > 16
+                new Date().getHours() > 16)
               }
               isToday={
-                date === Number(day.date) && new Date().getMonth() === month
+                isDownload ? false : date === Number(day.date) && new Date().getMonth() === month
               }
               ref={date === Number(day.date) ? todayRef : null}
             />

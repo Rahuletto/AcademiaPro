@@ -4,7 +4,7 @@ import TimetableGen from "@/components/Generators/Timetable";
 
 export async function POST(request: Request) {
   const geist = await fetch(
-    new URL("../../public/fonts/Geist.ttf", import.meta.url),
+    new URL("../../../public/fonts/Geist.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
 
   try {
