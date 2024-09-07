@@ -2,7 +2,7 @@
 
 import { Cookie } from "@/utils/Cookies";
 import { token } from "@/utils/Encrypt";
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
 import React, { useEffect } from "react";
 import { RiLoader3Fill } from "react-icons/ri";
@@ -10,7 +10,7 @@ import { RiLoader3Fill } from "react-icons/ri";
 export default function Logout() {
   const router = useRouter();
   useEffect(() => {
-    fetch(`${ProscrapeURL}/logout`, {
+    fetch(`${getUrl()}/logout`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token()}`,

@@ -4,7 +4,7 @@ import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceResponse, AttendanceCourse } from "@/types/Attendance";
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 
 interface AttendanceContextType {
@@ -90,7 +90,7 @@ export function AttendanceProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<AttendanceCourse[] | null>(`${ProscrapeURL}/attendance`, fetcher, {
+  } = useSWR<AttendanceCourse[] | null>(`${getUrl()}/attendance`, fetcher, {
     fallbackData: initialAttendance || getCachedAttendance(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

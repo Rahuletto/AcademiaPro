@@ -9,7 +9,7 @@ import {
 } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import { Mark } from "@/types/Marks";
 import { token } from "@/utils/Encrypt";
 
@@ -93,7 +93,7 @@ export function MarksProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<Mark[] | null>(`${ProscrapeURL}/marks`, fetcher, {
+  } = useSWR<Mark[] | null>(`${getUrl()}/marks`, fetcher, {
     fallbackData: initialMarks || getCachedMarks(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

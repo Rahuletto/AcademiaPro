@@ -1,4 +1,4 @@
-function getProscrape() {
+export function getUrl() {
     const rand = Math.floor(Math.random() * 3) + 1;
     switch (rand) {
         case 1:
@@ -11,6 +11,3 @@ function getProscrape() {
             return process.env.NEXT_PUBLIC_API_URL;
     }
 }
-
-
-export const ProscrapeURL = getProscrape()

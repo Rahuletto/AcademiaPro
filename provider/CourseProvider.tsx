@@ -9,7 +9,7 @@ import {
 } from "react";
 import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import { Course } from "@/types/Course";
 import { token } from "@/utils/Encrypt";
 
@@ -93,7 +93,7 @@ export function CourseProvider({
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<Course[] | null>(`${ProscrapeURL}/courses`, fetcher, {
+  } = useSWRImmutable<Course[] | null>(`${getUrl()}/courses`, fetcher, {
     fallbackData: initialCourses || getCachedCourses(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

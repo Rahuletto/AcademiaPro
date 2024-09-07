@@ -3,7 +3,7 @@ import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import { Calendar, CalendarResponse } from "@/types/Calendar";
 import { token } from "@/utils/Encrypt";
 
@@ -82,7 +82,7 @@ export function CalendarProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<Calendar[] | null>(`${ProscrapeURL}/calendar`, fetcher, {
+  } = useSWR<Calendar[] | null>(`${getUrl()}/calendar`, fetcher, {
     fallbackData: initialCalendar,
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

@@ -3,7 +3,7 @@ import React, { useCallback, useState } from "react";
 import UidInput from "./form/UidInput";
 import PasswordInput from "./form/PasswordInput";
 import { Cookie as cookies } from "@/utils/Cookies";
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import Button from "@/components/Button";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
 import { useMutateAll } from "@/hooks/useMutate";
@@ -23,7 +23,7 @@ export default function Form() {
     setError(-1);
 
     try {
-      const response = await fetch(`${ProscrapeURL}/login`, {
+      const response = await fetch(`${getUrl()}/login`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token()}`,

@@ -1,5 +1,5 @@
 import { token } from "@/utils/Encrypt";
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import { useSWRConfig } from "swr";
 import { Cookie as cookies } from "@/utils/Cookies";
 
@@ -56,13 +56,13 @@ export function useMutateAll() {
     } = options;
 
     const urls = {
-      user: `${ProscrapeURL}/user`,
-      attendance: `${ProscrapeURL}/attendance`,
-      dayorder: `${ProscrapeURL}/dayorder`,
-      marks: `${ProscrapeURL}/marks`,
-      timetable: `${ProscrapeURL}/timetable`,
-      courses: `${ProscrapeURL}/courses`,
-      calendar: `${ProscrapeURL}/calendar`,
+      user: `${getUrl()}/user`,
+      attendance: `${getUrl()}/attendance`,
+      dayorder: `${getUrl()}/dayorder`,
+      marks: `${getUrl()}/marks`,
+      timetable: `${getUrl()}/timetable`,
+      courses: `${getUrl()}/courses`,
+      calendar: `${getUrl()}/calendar`,
     };
 
     const addCacheBustParam = (url: string) => {

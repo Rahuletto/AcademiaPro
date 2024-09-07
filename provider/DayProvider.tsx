@@ -2,7 +2,7 @@
 import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import { DayOrderResponse } from "@/types/DayOrder";
 import { token } from "@/utils/Encrypt";
 import Storage from "@/utils/Storage";
@@ -85,7 +85,7 @@ export function DayProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<DayOrderResponse | null>(`${ProscrapeURL}/dayorder`, fetcher, {
+  } = useSWR<DayOrderResponse | null>(`${getUrl()}/dayorder`, fetcher, {
     fallbackData: initialDay || getCachedDayOrder(),
     revalidateOnFocus: false,
     refreshInterval: 1000 * 60 * 60,

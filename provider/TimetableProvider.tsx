@@ -10,7 +10,7 @@ import {
 } from "react";
 import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
-import { ProscrapeURL } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import { Table } from "@/types/Timetable";
 import { useUser } from "./UserProvider";
 import { token } from "@/utils/Encrypt";
@@ -98,7 +98,7 @@ export function TableProvider({
     mutate,
   } = useSWRImmutable<Table[] | null>(
     shouldFetch && !getCachedTable()
-      ? `${ProscrapeURL}/timetable?batch=${user.batch}`
+      ? `${getUrl()}/timetable?batch=${user.batch}`
       : null,
     fetcher,
     {
