@@ -4,7 +4,7 @@ import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceResponse, AttendanceCourse } from "@/types/Attendance";
-import { getUrl } from "@/utils/URL";
+import { getUrl, revalUrl } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 
 interface AttendanceContextType {
@@ -35,19 +35,23 @@ const fetcher = async (url: string) => {
     return null;
   else
     try {
-      const response = await fetch(url, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token()}`,
-          "X-CSRF-Token": cookie,
-          "Set-Cookie": cookie,
-          Cookie: cookie,
-          Connection: "keep-alive",
-          "Accept-Encoding": "gzip, deflate, br, zstd",
-          "content-type": "application/json",
-          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+      const response = await fetch(
+        getUrl(cookie, "/attendance") + "/attendance",
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token()}`,
+            "X-CSRF-Token": cookie,
+            "Set-Cookie": cookie,
+            Cookie: cookie,
+            Connection: "keep-alive",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "content-type": "application/json",
+            "Cache-Control":
+              "private, maxage=86400, stale-while-revalidate=7200",
+          },
         },
-      });
+      );
       if (!response.ok) {
         const errorBody = await response.text();
         throw new Error(
@@ -85,12 +89,14 @@ export function AttendanceProvider({
   const getCachedAttendance = () =>
     Storage.get<AttendanceCourse[] | null>("attendance", null);
 
+  const cookie = cookies.get("key");
+
   const {
     data: attendance,
     error,
     isValidating,
     mutate,
-  } = useSWR<AttendanceCourse[] | null>(`${getUrl()}/attendance`, fetcher, {
+  } = useSWR<AttendanceCourse[] | null>(`${revalUrl}/attendance`, fetcher, {
     fallbackData: initialAttendance || getCachedAttendance(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,
@@ -101,10 +107,10 @@ export function AttendanceProvider({
     dedupingInterval: 1000 * 60 * 2,
     onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
       if (retryCount >= 2) return;
-
       setTimeout(() => revalidate({ retryCount }), 3000);
     },
     onSuccess: (data) => {
+      console.log(data);
       if (data) {
         Storage.set("attendance", data);
       }

@@ -3,7 +3,7 @@ import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 
-import { getUrl } from "@/utils/URL";
+import { getUrl, revalUrl } from "@/utils/URL";
 import { Calendar, CalendarResponse } from "@/types/Calendar";
 import { token } from "@/utils/Encrypt";
 
@@ -29,7 +29,7 @@ const fetcher = async (url: string) => {
   if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
   else
   try {
-    const response = await fetch(url, {
+    const response = await fetch(getUrl(cookie, '/calendar') + "/calendar", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token()}`,
@@ -77,12 +77,14 @@ export function CalendarProvider({
 }) {
   const [retryCount, setRetryCount] = useState(0);
 
+  const cookie = cookies.get("key");
+
   const {
     data: calendar,
     error,
     isValidating,
     mutate,
-  } = useSWR<Calendar[] | null>(`${getUrl()}/calendar`, fetcher, {
+  } = useSWR<Calendar[] | null>(`${revalUrl}/calendar`, fetcher, {
     fallbackData: initialCalendar,
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

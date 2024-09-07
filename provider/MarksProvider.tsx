@@ -9,7 +9,7 @@ import {
 } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
-import { getUrl } from "@/utils/URL";
+import { getUrl, revalUrl } from "@/utils/URL";
 import { Mark } from "@/types/Marks";
 import { token } from "@/utils/Encrypt";
 
@@ -35,7 +35,7 @@ const fetcher = async (url: string) => {
   if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
 else
   try {
-    const response = await fetch(url, {
+    const response = await fetch(getUrl(cookie, "/marks") + "/marks", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token()}`,
@@ -93,7 +93,7 @@ export function MarksProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<Mark[] | null>(`${getUrl()}/marks`, fetcher, {
+  } = useSWR<Mark[] | null>(`${revalUrl}/marks`, fetcher, {
     fallbackData: initialMarks || getCachedMarks(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

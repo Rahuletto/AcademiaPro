@@ -9,7 +9,7 @@ import {
 } from "react";
 import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
-import { getUrl } from "@/utils/URL";
+import { getUrl, revalUrl } from "@/utils/URL";
 import { Course } from "@/types/Course";
 import { token } from "@/utils/Encrypt";
 
@@ -35,7 +35,7 @@ const fetcher = async (url: string) => {
   if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
   else
   try {
-    const response = await fetch(url, {
+    const response = await fetch(getUrl(cookie, "/courses") + "/courses", {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${token()}`,
@@ -88,12 +88,14 @@ export function CourseProvider({
     [],
   );
 
+  const cookie = cookies.get("key");
+
   const {
     data: courses,
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<Course[] | null>(`${getUrl()}/courses`, fetcher, {
+  } = useSWRImmutable<Course[] | null>(`${revalUrl}/courses`, fetcher, {
     fallbackData: initialCourses || getCachedCourses(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

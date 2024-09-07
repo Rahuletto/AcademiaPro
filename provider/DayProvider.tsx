@@ -2,7 +2,7 @@
 import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
-import { getUrl } from "@/utils/URL";
+import { getUrl, revalUrl } from "@/utils/URL";
 import { DayOrderResponse } from "@/types/DayOrder";
 import { token } from "@/utils/Encrypt";
 import Storage from "@/utils/Storage";
@@ -29,7 +29,7 @@ const fetcher = async (url: string) => {
   if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
   else
   try {
-    const response = await fetch(url, {
+    const response = await fetch(getUrl(cookie, "/dayorder") + "/dayorder", {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${token()}`,
@@ -78,6 +78,7 @@ export function DayProvider({
 
   const getCachedDayOrder = () =>
     Storage.get<DayOrderResponse | null>("dayorder", null);
+  const cookie = cookies.get("key");
 
 
   const {
@@ -85,7 +86,7 @@ export function DayProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<DayOrderResponse | null>(`${getUrl()}/dayorder`, fetcher, {
+  } = useSWR<DayOrderResponse | null>(`${revalUrl}/dayorder`, fetcher, {
     fallbackData: initialDay || getCachedDayOrder(),
     revalidateOnFocus: false,
     refreshInterval: 1000 * 60 * 60,

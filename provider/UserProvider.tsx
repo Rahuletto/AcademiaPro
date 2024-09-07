@@ -10,7 +10,7 @@ import {
 } from "react";
 import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
-import { getUrl } from "@/utils/URL";
+import { getUrl, revalUrl } from "@/utils/URL";
 import { useTransitionRouter } from "next-view-transitions";
 import { token } from "@/utils/Encrypt";
 
@@ -37,7 +37,7 @@ const fetcher = async (url: string) => {
   else
 
   try {
-    const response = await fetch(url, {
+    const response = await fetch(getUrl(cookie, "/user") + "/user", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token()}`,
@@ -92,12 +92,14 @@ export function UserProvider({
     [],
   );
 
+  const cookie = cookies.get("key");
+
   const {
     data: user,
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<User | null>(`${getUrl()}/user`, fetcher, {
+  } = useSWRImmutable<User | null>(`${revalUrl}/user`, fetcher, {
     fallbackData: initialUser || getCachedUser(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,

@@ -10,7 +10,7 @@ import {
 } from "react";
 import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
-import { getUrl } from "@/utils/URL";
+import { getUrl, revalUrl } from "@/utils/URL";
 import { Table } from "@/types/Timetable";
 import { useUser } from "./UserProvider";
 import { token } from "@/utils/Encrypt";
@@ -33,42 +33,53 @@ const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
+  const batch = url.split("?batch=")[1];
   const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
-  if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
+  if (
+    !cook ||
+    cook === "" ||
+    cook === "undefined" ||
+    cookie.includes("undefined")
+  )
+    return null;
   else
-  try {
-    const response = await fetch(url, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token()}`,
-        "X-CSRF-Token": cookie,
-        "Set-Cookie": cookie,
-        Cookie: cookie,
-        Connection: "keep-alive",
-        "content-type": "application/json",
-        "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
-      },
-    });
-
-    if (!response.ok) {
-      const errorBody = await response.text();
-      throw new Error(
-        `HTTP error! status: ${response.status}, body: ${errorBody}`,
+    try {
+      const response = await fetch(
+        getUrl(cookie, "/timetable") + "/timetable?batch=" + batch,
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token()}`,
+            "X-CSRF-Token": cookie,
+            "Set-Cookie": cookie,
+            Cookie: cookie,
+            Connection: "keep-alive",
+            "content-type": "application/json",
+            "Cache-Control":
+              "private, maxage=86400, stale-while-revalidate=7200",
+          },
+        },
       );
-    }
 
-    const data = await response.json();
-    if (!data || !data.table) {
-      throw new Error("Invalid response format");
-    }
+      if (!response.ok) {
+        const errorBody = await response.text();
+        throw new Error(
+          `HTTP error! status: ${response.status}, body: ${errorBody}`,
+        );
+      }
 
-    return data.table;
-  } catch (error) {
-    if (error instanceof Error) {
-      throw error;
+      const data = await response.json();
+      if (!data || !data.table) {
+        throw new Error("Invalid response format");
+      }
+
+      return data.table;
+    } catch (error) {
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error("An unexpected error occurred");
     }
-    throw new Error("An unexpected error occurred");
-  }
 };
 
 export function useTimetable() {
@@ -91,6 +102,8 @@ export function TableProvider({
 
   const shouldFetch = user !== null;
 
+  const cookie = cookies.get("key");
+
   const {
     data: timetable,
     error,
@@ -98,7 +111,7 @@ export function TableProvider({
     mutate,
   } = useSWRImmutable<Table[] | null>(
     shouldFetch && !getCachedTable()
-      ? `${getUrl()}/timetable?batch=${user.batch}`
+      ? `${revalUrl}/timetable?batch=${user.batch}`
       : null,
     fetcher,
     {
@@ -111,7 +124,7 @@ export function TableProvider({
       dedupingInterval: 1000 * 60 * 2,
       onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
         if (retryCount >= 2) return;
-  
+
         setTimeout(() => revalidate({ retryCount }), 3000);
       },
       onSuccess: (data) => {

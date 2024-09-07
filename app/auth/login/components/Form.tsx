@@ -23,7 +23,7 @@ export default function Form() {
     setError(-1);
 
     try {
-      const response = await fetch(`${getUrl()}/login`, {
+      const response = await fetch(`${getUrl("login", "/login")}/login`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token()}`,
