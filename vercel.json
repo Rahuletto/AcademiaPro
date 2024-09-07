@@ -9,6 +9,11 @@
       "permanent": true
     },
     {
+      "source": "/papers",
+      "destination": "https://docu-pro.vercel.app",
+      "permanent": true
+    },
+    {
       "source": "/map",
       "destination": "https://d23qowwaqkh3fj.cloudfront.net/wp-content/uploads/2022/06/srmist-ktr-campus-layout.jpg",
       "permanent": true

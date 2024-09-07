@@ -230,17 +230,17 @@ export function Sidebar({
 
               <hr className="border-t-light-side dark:border-t-dark-side" />
 
-              <Link
+              {/* <Link
                 className="font-semibold text-light-warn-color hover:bg-light-warn-background hover:text-light-warn-color dark:text-dark-warn-color dark:hover:bg-dark-warn-background dark:hover:text-dark-warn-color"
                 title="BetterLab"
                 href="https://better-lab.vercel.app"
               >
                 <HiLightningBolt className="text-xl" />
                 eLab
-              </Link>
+              </Link> */}
 
               <Link
-                className="font-semibold text-[#786CFF] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
+                className="font-semibold border after:content-['NEW'] after:absolute after:text-xs after:-top-1 after:-right-2 after:bg-[#1E2036] after:p-0.5 after:px-1 after:rounded-md relative border-[#786CFF] border-opacity-40 text-[#786CFF] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
                 title="Question papers"
                 href="/papers"
               >
