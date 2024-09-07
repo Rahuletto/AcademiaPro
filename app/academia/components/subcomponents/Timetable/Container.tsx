@@ -25,7 +25,7 @@ export default function Container({ currentDayOrder, day }: ContainerProps) {
         <TableHeader />
         <TableCard view={view} currentDayOrder={currentDayOrder} />
       </div>
-      <div className="flex w-full animate-fadeIn flex-row items-center justify-center transition duration-150">
+      {!isNaN(currentDayOrder) && <div className="flex w-full animate-fadeIn flex-row items-center justify-center transition duration-150">
         <div
           className={`h-2 w-3 rounded-full border-2 opacity-50 transition duration-150 ${view ? "border-light-success-color bg-light-success-color dark:border-dark-success-color dark:bg-dark-success-color" : "border-dark-side"} p-1`}
         />
@@ -37,7 +37,7 @@ export default function Container({ currentDayOrder, day }: ContainerProps) {
         >
           {view ? "Hide" : "Show"} classrooms
         </button>
-      </div>
+      </div>}
     </div>
   );
 }

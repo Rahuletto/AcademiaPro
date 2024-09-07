@@ -5,7 +5,7 @@ export type User = UserInfo & ProscrapeError
 
 export interface SuccessUserData {
   user: UserInfo;
-  expireAt: number;
+  requestedAt: number | null;
 }
 
 export interface UserInfo {

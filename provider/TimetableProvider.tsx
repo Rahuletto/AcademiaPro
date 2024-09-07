@@ -11,19 +11,22 @@ import {
 import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
 import { getUrl, revalUrl } from "@/utils/URL";
-import { Table } from "@/types/Timetable";
+import { Table, TimeTableResponse } from "@/types/Timetable";
 import { useUser } from "./UserProvider";
 import { token } from "@/utils/Encrypt";
+import { User } from "@/types/User";
 
 interface TimetableContextType {
   timetable: Table[] | null;
+  requestedAt: number | null;
   error: Error | null;
   isLoading: boolean;
-  mutate: () => Promise<void | Table[] | null | undefined>;
+  mutate: () => Promise<void | TimeTableResponse | null | undefined>;
 }
 
 const TimetableContext = createContext<TimetableContextType>({
   timetable: null,
+  requestedAt: null,
   error: null,
   isLoading: false,
   mutate: async () => {},
@@ -73,7 +76,7 @@ const fetcher = async (url: string) => {
         throw new Error("Invalid response format");
       }
 
-      return data.table;
+      return data;
     } catch (error) {
       if (error instanceof Error) {
         throw error;
@@ -91,26 +94,23 @@ export function TableProvider({
   initialTable,
 }: {
   children: ReactNode;
-  initialTable?: Table[] | null;
+  initialTable?: TimeTableResponse | null;
 }) {
-  const { user } = useUser();
 
   const getCachedTable = useCallback(
-    () => Storage.get<Table[] | null>("timetable", null),
+    () => Storage.get<TimeTableResponse | null>("timetable", null),
     [],
   );
-
+  const { user } = useUser();
   const shouldFetch = user !== null;
-
-  const cookie = cookies.get("key");
 
   const {
     data: timetable,
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<Table[] | null>(
-    shouldFetch && !getCachedTable()
+  } = useSWRImmutable<TimeTableResponse | null>(
+    shouldFetch
       ? `${revalUrl}/timetable?batch=${user.batch}`
       : null,
     fetcher,
@@ -142,7 +142,8 @@ export function TableProvider({
   return (
     <TimetableContext.Provider
       value={{
-        timetable: timetable || null,
+        timetable: timetable?.table || null,
+        requestedAt: timetable?.requestedAt || 0,
         error: error || null,
         isLoading: isValidating,
         mutate,

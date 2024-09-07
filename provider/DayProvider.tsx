@@ -9,6 +9,7 @@ import Storage from "@/utils/Storage";
 
 interface DayContextType {
   day: string | null;
+  requestedAt: number | null;
   error: Error | null;
   isLoading: boolean;
   mutate: () => Promise<void | DayOrderResponse | null | undefined>;
@@ -16,9 +17,10 @@ interface DayContextType {
 
 const DayContext = createContext<DayContextType>({
   day: null,
+  requestedAt: null,
   error: null,
   isLoading: false,
-  mutate: async () => { },
+  mutate: async () => {},
 });
 
 const fetcher = async (url: string) => {
@@ -26,41 +28,47 @@ const fetcher = async (url: string) => {
   if (!cookie) return null;
 
   const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
-  if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
+  if (
+    !cook ||
+    cook === "" ||
+    cook === "undefined" ||
+    cookie.includes("undefined")
+  )
+    return null;
   else
-  try {
-    const response = await fetch(getUrl(cookie, "/dayorder") + "/dayorder", {
-      method: "GET",
-      headers: {
-        "Authorization": `Bearer ${token()}`,
-        "X-CSRF-Token": cookie,
-        "Set-Cookie": cookie,
-        Cookie: cookie,
-        Connection: "keep-alive",
-        "content-type": "application/json",
-        "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
-      },
-    });
+    try {
+      const response = await fetch(getUrl(cookie, "/dayorder") + "/dayorder", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token()}`,
+          "X-CSRF-Token": cookie,
+          "Set-Cookie": cookie,
+          Cookie: cookie,
+          Connection: "keep-alive",
+          "content-type": "application/json",
+          "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
+        },
+      });
 
-    if (!response.ok) {
-      const errorBody = await response.text();
-      throw new Error(
-        `HTTP error! status: ${response.status}, body: ${errorBody}`,
-      );
-    }
+      if (!response.ok) {
+        const errorBody = await response.text();
+        throw new Error(
+          `HTTP error! status: ${response.status}, body: ${errorBody}`,
+        );
+      }
 
-    const data = await response.json();
-    if (!data || !data.date) {
-      throw new Error("Invalid response format");
-    }
+      const data = await response.json();
+      if (!data || !data.date) {
+        throw new Error("Invalid response format");
+      }
 
-    return data;
-  } catch (error) {
-    if (error instanceof Error) {
-      throw error;
+      return data;
+    } catch (error) {
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error("An unexpected error occurred");
     }
-    throw new Error("An unexpected error occurred");
-  }
 };
 
 export function useDay() {
@@ -80,35 +88,38 @@ export function DayProvider({
     Storage.get<DayOrderResponse | null>("dayorder", null);
   const cookie = cookies.get("key");
 
-
   const {
     data: day,
     error,
     isValidating,
     mutate,
-  } = useSWR<DayOrderResponse | null>(`${revalUrl}/dayorder`, fetcher, {
-    fallbackData: initialDay || getCachedDayOrder(),
-    revalidateOnFocus: false,
-    refreshInterval: 1000 * 60 * 60,
-    errorRetryCount: 2,
-    revalidateOnReconnect: true,
-    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
-      if (retryCount >= 2) return;
+  } = useSWR<DayOrderResponse | null>(
+    cookie ? `${revalUrl}/dayorder` : null,
+    fetcher,
+    {
+      fallbackData: initialDay || getCachedDayOrder(),
+      revalidateOnFocus: false,
+      refreshInterval: 1000 * 60 * 60,
+      errorRetryCount: 2,
+      revalidateOnReconnect: true,
+      onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+        if (retryCount >= 2) return;
 
-      setTimeout(() => revalidate({ retryCount }), 3000);
+        setTimeout(() => revalidate({ retryCount }), 3000);
+      },
+      onSuccess: (data) => {
+        Storage.set("dayorder", data);
+        setRetryCount(0);
+        return data;
+      },
     },
-    onSuccess: (data) => {
-      Storage.set("dayorder", data);
-      setRetryCount(0);
-      return data;
-    },
-    
-  });
+  );
 
   return (
     <DayContext.Provider
       value={{
         day: day?.dayOrder || null,
+        requestedAt: day?.requestedAt || 0,
         error: error || null,
         isLoading: isValidating,
         mutate,

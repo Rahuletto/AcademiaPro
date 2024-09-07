@@ -1,5 +1,5 @@
 import { useDay } from "@/provider/DayProvider";
-import React from "react";
+import React, { useEffect } from "react";
 import { BiError } from "react-icons/bi";
 import { RiLoader3Fill } from "react-icons/ri";
 
@@ -10,7 +10,17 @@ export default function DayOrder({
   [x: string]: any;
   mini?: boolean;
 }) {
-  const { day, isLoading, error } = useDay();
+  const { day, isLoading, error, mutate, requestedAt } = useDay();
+
+  useEffect(() => {
+    if (
+      (!day && !isLoading && !error) ||
+      (day && (!requestedAt || Date.now() - requestedAt > 60 * 60 * 1000))
+    ) {
+      mutate();
+    }
+  }, [day, error, isLoading, mutate, requestedAt]);
+
   return (
     <div
       role="contentinfo"

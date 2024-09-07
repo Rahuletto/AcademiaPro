@@ -3,7 +3,7 @@ import { ProscrapeError } from "./Error";
 export type AttendanceResponse = SuccessAttendanceResponse & ProscrapeError;
 
 export interface SuccessAttendanceResponse {
-  expireAt: number;
+  requestedAt: number | null;
   attendance: AttendanceCourse[];
 }
 

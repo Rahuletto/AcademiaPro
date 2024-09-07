@@ -2,6 +2,7 @@ import Storage from "./Storage";
 
 export const Cookie = {
   clear() {
+    if (typeof document === 'undefined') return null;
     const cookies = document.cookie.split(";");
     localStorage.clear();
     for (let i = 0; i < cookies.length; i++) {
@@ -13,6 +14,8 @@ export const Cookie = {
   },
 
   set(name: string, value: string, expirationMonths: number = 3) {
+    if (typeof document === 'undefined') return null;
+
     const exdate = new Date();
     exdate.setMonth(exdate.getMonth() + expirationMonths);
   
@@ -28,6 +31,8 @@ export const Cookie = {
   },
 
   get(name: string): string | null {
+    if (typeof document === 'undefined') return null;
+
     const nameEQ = `${encodeURIComponent(name)}=`;
     const cookies = document.cookie.split(";");
 

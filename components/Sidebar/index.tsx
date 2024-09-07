@@ -10,7 +10,6 @@ import {
 import { HiLightningBolt } from "react-icons/hi";
 import { BsCalendar2WeekFill } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa";
 
 import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
@@ -257,7 +256,6 @@ export function Sidebar({
                 </h4>
                 <MiniButtons icon={<FiGithub />} href="/github" />
                 <MiniButtons icon={<FaWhatsapp />} href="/whatsapp" />
-                <MiniButtons icon={<FaInstagram />} href="/instagram" />
               </div>
               <ProfileBadge
                 className={isOpen ? "animate-fadeIn" : "opacity-0"}

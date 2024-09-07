@@ -33,44 +33,49 @@ const fetcher = async (url: string) => {
   if (!cookie) return null;
 
   const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
-  if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
+  if (
+    !cook ||
+    cook === "" ||
+    cook === "undefined" ||
+    cookie.includes("undefined")
+  )
+    return null;
   else
+    try {
+      const response = await fetch(getUrl(cookie, "/user") + "/user", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token()}`,
+          "X-CSRF-Token": cookie,
+          "Set-Cookie": cookie,
+          Cookie: cookie,
+          Connection: "keep-alive",
+          "content-type": "application/json",
+          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+        },
+      });
 
-  try {
-    const response = await fetch(getUrl(cookie, "/user") + "/user", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token()}`,
-        "X-CSRF-Token": cookie,
-        "Set-Cookie": cookie,
-        Cookie: cookie,
-        Connection: "keep-alive",
-        "content-type": "application/json",
-        "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
-      },
-    });
+      if (!response.ok) {
+        const errorBody = await response.json();
+        if (errorBody.logout) return errorBody;
 
-    if (!response.ok) {
-      const errorBody = await response.json();
-      if (errorBody.logout) return errorBody;
+        throw new Error(
+          `HTTP error! status: ${response.status}, body: ${errorBody}`,
+        );
+      }
 
-      throw new Error(
-        `HTTP error! status: ${response.status}, body: ${errorBody}`,
-      );
+      const data = await response.json();
+      if (!data || !data.user) {
+        throw new Error("Invalid response format");
+      }
+
+      return data.user;
+    } catch (error) {
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error("An unexpected error occurred");
     }
-
-    const data = await response.json();
-    if (!data || !data.user) {
-      throw new Error("Invalid response format");
-    }
-
-    return data.user;
-  } catch (error) {
-    if (error instanceof Error) {
-      throw error;
-    }
-    throw new Error("An unexpected error occurred");
-  }
 };
 
 export function useUser() {
@@ -99,28 +104,32 @@ export function UserProvider({
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<User | null>(`${revalUrl}/user`, fetcher, {
-    fallbackData: initialUser || getCachedUser(),
-    revalidateOnFocus: false,
-    revalidateOnReconnect: true,
-    keepPreviousData: true,
-    errorRetryCount: 2,
-    revalidateIfStale: false,
-    shouldRetryOnError: false,
-    dedupingInterval: 1000 * 60 * 2,
-    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
-      if (retryCount >= 2) return;
+  } = useSWRImmutable<User | null>(
+    cookie ? `${revalUrl}/user` : null,
+    fetcher,
+    {
+      fallbackData: initialUser || getCachedUser(),
+      revalidateOnFocus: false,
+      revalidateOnReconnect: true,
+      keepPreviousData: true,
+      errorRetryCount: 2,
+      revalidateIfStale: false,
+      shouldRetryOnError: false,
+      dedupingInterval: 1000 * 60 * 2,
+      onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+        if (retryCount >= 2) return;
 
-      setTimeout(() => revalidate({ retryCount }), 3000);
+        setTimeout(() => revalidate({ retryCount }), 3000);
+      },
+      onSuccess: (data) => {
+        if (data) {
+          if (data.logout) router.push("/auth/logout");
+          Storage.set("user", data);
+        }
+        setRetryCount(0);
+      },
     },
-    onSuccess: (data) => {
-      if (data) {
-        if (data.logout) router.push("/auth/logout");
-        Storage.set("user", data);
-      }
-      setRetryCount(0);
-    },
-  });
+  );
 
   return (
     <UserContext.Provider

@@ -7,7 +7,6 @@ import PredictResetButtons from "./Predict/ResetButtons";
 import InfoPopup from "./InfoPopup";
 import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
-import { useAttendance } from "@/provider/AttendanceProvider";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
@@ -28,14 +27,8 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   setShowDatePicker,
   setIsPredicted
 }) => {
-  // const { attendance } = useAttendance();
-  // const [isOld, setIsOld] = useState<boolean>(false);
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
-
-  // useEffect(() => {
-
-  // }, [attendance])
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

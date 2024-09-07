@@ -3,7 +3,7 @@ import { ProscrapeError } from "./Error";
 export type TimeTableResponse = SuccessTimeTableResponse & ProscrapeError;
 export interface SuccessTimeTableResponse {
   table: Table[];
-  expireAt: number;
+  requestedAt: number | null;
 }
 
 export interface Table {

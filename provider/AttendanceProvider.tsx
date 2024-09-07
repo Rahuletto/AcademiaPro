@@ -10,13 +10,15 @@ import { token } from "@/utils/Encrypt";
 interface AttendanceContextType {
   attendance: AttendanceCourse[] | null;
   error: Error | null;
+  requestedAt: number | null;
   isLoading: boolean;
-  mutate: () => Promise<void | AttendanceCourse[] | null | undefined>;
+  mutate: () => Promise<void | AttendanceResponse  | null | undefined>;
 }
 
 const AttendanceContext = createContext<AttendanceContextType>({
   attendance: null,
   error: null,
+  requestedAt: null,
   isLoading: false,
   mutate: async () => {},
 });
@@ -64,7 +66,7 @@ const fetcher = async (url: string) => {
         throw new Error("Invalid response format");
       }
 
-      return data.attendance;
+      return data;
     } catch (error) {
       if (error instanceof Error) {
         throw error;
@@ -82,12 +84,12 @@ export function AttendanceProvider({
   initialAttendance,
 }: {
   children: ReactNode;
-  initialAttendance?: AttendanceCourse[] | null;
+  initialAttendance?: AttendanceResponse | null;
 }) {
   const [retryCount, setRetryCount] = useState(0);
 
   const getCachedAttendance = () =>
-    Storage.get<AttendanceCourse[] | null>("attendance", null);
+    Storage.get<AttendanceResponse | null>("attendance", null);
 
   const cookie = cookies.get("key");
 
@@ -96,33 +98,37 @@ export function AttendanceProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<AttendanceCourse[] | null>(`${revalUrl}/attendance`, fetcher, {
-    fallbackData: initialAttendance || getCachedAttendance(),
-    revalidateOnFocus: false,
-    revalidateOnReconnect: true,
-    keepPreviousData: true,
-    refreshInterval: 1000 * 60 * 30,
-    errorRetryCount: 2,
-    revalidateIfStale: false,
-    dedupingInterval: 1000 * 60 * 2,
-    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
-      if (retryCount >= 2) return;
-      setTimeout(() => revalidate({ retryCount }), 3000);
+  } = useSWR<AttendanceResponse | null>(
+    cookie ? `${revalUrl}/attendance` : null,
+    fetcher,
+    {
+      fallbackData: initialAttendance || getCachedAttendance(),
+      revalidateOnFocus: false,
+      revalidateOnReconnect: true,
+      keepPreviousData: true,
+      refreshInterval: 1000 * 60 * 30,
+      errorRetryCount: 2,
+      revalidateIfStale: false,
+      dedupingInterval: 1000 * 60 * 2,
+      onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+        if (retryCount >= 2) return;
+        setTimeout(() => revalidate({ retryCount }), 3000);
+      },
+      onSuccess: (data) => {
+        if (data) {
+          Storage.set("attendance", data);
+        }
+        setRetryCount(0);
+        return data;
+      },
     },
-    onSuccess: (data) => {
-      console.log(data);
-      if (data) {
-        Storage.set("attendance", data);
-      }
-      setRetryCount(0);
-      return data;
-    },
-  });
+  );
 
   return (
     <AttendanceContext.Provider
       value={{
-        attendance: attendance || null,
+        attendance: attendance?.attendance || null,
+        requestedAt: attendance?.requestedAt || 0,
         error: error || null,
         isLoading: isValidating,
         mutate,

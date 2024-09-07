@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
 import { IoRefreshOutline } from "react-icons/io5";
 import NoData from "./subcomponents/NoData";
+import { useMutateAll } from "@/hooks/useMutate";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -23,13 +24,19 @@ const MarkCard = dynamic(
 );
 
 export default function Marks() {
-  const { marks, isLoading, error, mutate } = useMarks();
+  const mutate = useMutateAll();
+  const { marks, isLoading, error, requestedAt } = useMarks();
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if(!marks && !isLoading && !error) mutate()
-  }, [error, isLoading, marks, mutate])
+    if (
+      (!marks && !isLoading && !error) ||
+      (marks && (!requestedAt || Date.now() - requestedAt > 2 * 60 * 60 * 1000))
+    )
+      mutate({ mutateMarks: true });
+  }, [error, isLoading, marks, mutate, requestedAt]);
+
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
 

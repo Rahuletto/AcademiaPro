@@ -10,18 +10,20 @@ import {
 import useSWRImmutable from "swr/immutable";
 import Storage from "@/utils/Storage";
 import { getUrl, revalUrl } from "@/utils/URL";
-import { Course } from "@/types/Course";
+import { Course, CourseResponse } from "@/types/Course";
 import { token } from "@/utils/Encrypt";
 
 interface CourseContextType {
   courses: Course[] | null;
+  requestedAt: number | null;
   error: Error | null;
   isLoading: boolean;
-  mutate: () => Promise<void | Course[] | null | undefined>;
+  mutate: () => Promise<void | CourseResponse | null | undefined>;
 }
 
 const CourseContext = createContext<CourseContextType>({
   courses: null,
+  requestedAt: null,
   error: null,
   isLoading: false,
   mutate: async () => {},
@@ -56,12 +58,12 @@ const fetcher = async (url: string) => {
       );
     }
 
-    const data: { courses: Course[] } = await response.json();
+    const data: CourseResponse = await response.json();
     if (!data || !data.courses) {
       throw new Error("Invalid response format");
     }
 
-    return data.courses;
+    return data;
   } catch (error) {
     if (error instanceof Error) {
       throw error;
@@ -79,12 +81,12 @@ export function CourseProvider({
   initialCourses,
 }: {
   children: ReactNode;
-  initialCourses?: Course[] | null;
+  initialCourses?: CourseResponse | null;
 }) {
   const [retryCount, setRetryCount] = useState(0);
 
   const getCachedCourses = useCallback(
-    () => Storage.get<Course[] | null>("courses", null),
+    () => Storage.get<CourseResponse | null>("courses", null),
     [],
   );
 
@@ -95,7 +97,7 @@ export function CourseProvider({
     error,
     isValidating,
     mutate,
-  } = useSWRImmutable<Course[] | null>(`${revalUrl}/courses`, fetcher, {
+  } = useSWRImmutable<CourseResponse | null>(cookie ? `${revalUrl}/courses` : null, fetcher, {
     fallbackData: initialCourses || getCachedCourses(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,
@@ -121,7 +123,8 @@ export function CourseProvider({
   return (
     <CourseContext.Provider
       value={{
-        courses: courses || null,
+        courses: courses?.courses || null,
+        requestedAt: courses?.requestedAt || 0,
         error: error || null,
         isLoading: isValidating,
         mutate,

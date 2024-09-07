@@ -2,6 +2,7 @@ import { token } from "@/utils/Encrypt";
 import { getUrl, revalUrl } from "@/utils/URL";
 import { useSWRConfig } from "swr";
 import { Cookie as cookies } from "@/utils/Cookies";
+import { useUser } from "@/provider/UserProvider";
 
 export interface MutateOptions {
   mutateUser?: boolean;
@@ -15,7 +16,7 @@ export interface MutateOptions {
 
 export function useMutateAll() {
   const { mutate } = useSWRConfig();
-
+  const { user } = useUser()
   const fetcher = async (url: string) => {
     const cookie = cookies.get("key");
     if (!cookie) return null;
@@ -60,7 +61,7 @@ export function useMutateAll() {
       attendance: `${revalUrl}/attendance`,
       dayorder: `${revalUrl}/dayorder`,
       marks: `${revalUrl}/marks`,
-      timetable: `${revalUrl}/timetable`,
+      timetable: `${revalUrl}/timetable?batch=${user?.batch || 1}`,
       courses: `${revalUrl}/courses`,
       calendar: `${revalUrl}/calendar`,
     };
@@ -78,7 +79,8 @@ export function useMutateAll() {
       mutate(url, undefined, { revalidate: true });
 
       const uniqueUrl = addCacheBustParam(url);
-      await fetcher(uniqueUrl);
+      const data = await fetcher(uniqueUrl);
+      mutate(url, data, { revalidate: false });
     };
 
     if (shouldMutateUser) await clearAndRevalidate(urls.user);

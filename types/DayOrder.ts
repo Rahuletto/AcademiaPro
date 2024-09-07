@@ -4,5 +4,5 @@ export type DayOrderResponse = SuccessDayOrderResponse & ProscrapeError;
 export interface SuccessDayOrderResponse {
   date: string;
   dayOrder: string;
-  expireAt: number;
+  requestedAt: number | null;
 }

@@ -24,8 +24,10 @@ export default function Timetable() {
     timetable,
     isLoading: timetableLoading,
     error: timetableError,
-    mutate,
+    requestedAt,
   } = useTimetable();
+
+  const [isOld, setIsOld] = useState(false);
 
   const { day, isLoading: dayLoading, error: dayError } = useDay();
   const [showInfoPopup, setShowInfoPopup] = useState(false);
@@ -33,14 +35,22 @@ export default function Timetable() {
   const [currentDayOrder, setCurrentDayOrder] = useState<string | number>("1");
 
   useEffect(() => {
-    if(!timetable && !timetableLoading && !timetableError) mutate()
-  }, [timetable, mutate, timetableLoading, timetableError, day])
+    if (
+      (!timetable && !timetableLoading && !timetableError) ||
+      (timetable &&
+        (!requestedAt || Date.now() - requestedAt > 24 * 60 * 60 * 1000))
+    ) {
+      setIsOld(true);
+    }
 
+    if (requestedAt && Date.now() - requestedAt < 24 * 60 * 60 * 1000) {
+      setIsOld(false);
+    }
+  }, [timetable, requestedAt, timetableLoading, timetableError, day]);
 
   useEffect(() => {
     if (day) setCurrentDayOrder(day);
   }, [day]);
-
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
   const isHoliday = day && typeof day === "string" && day.includes("No");
@@ -106,12 +116,16 @@ export default function Timetable() {
       </div>
 
       {timetable ? (
-        <Container day={day} currentDayOrder={Number(currentDayOrder)} />
+        <div
+          className={`${isOld ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"} rounded-2xl border-2 border-dotted`}
+        >
+          <Container day={day} currentDayOrder={Number(currentDayOrder)} />
+        </div>
       ) : timetableLoading || dayLoading ? (
         <Loading />
       ) : timetableError || dayError ? (
         (timetableError || dayError) && <Error component="timetable" />
-      ) : ( 
+      ) : (
         <NoData component="Timetable" />
       )}
 

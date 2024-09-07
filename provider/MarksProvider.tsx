@@ -10,18 +10,20 @@ import {
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { getUrl, revalUrl } from "@/utils/URL";
-import { Mark } from "@/types/Marks";
+import { Mark, MarksResponse } from "@/types/Marks";
 import { token } from "@/utils/Encrypt";
 
 interface MarksContextType {
   marks: Mark[] | null;
+  requestedAt: number | null;
   error: Error | null;
   isLoading: boolean;
-  mutate: () => Promise<void | Mark[] | null | undefined>;
+  mutate: () => Promise<void | MarksResponse | null | undefined>;
 }
 
 const MarksContext = createContext<MarksContextType>({
   marks: null,
+  requestedAt: null,
   error: null,
   isLoading: false,
   mutate: async () => {},
@@ -32,42 +34,48 @@ const fetcher = async (url: string) => {
   if (!cookie) return null;
 
   const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
-  if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
-else
-  try {
-    const response = await fetch(getUrl(cookie, "/marks") + "/marks", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token()}`,
-        "X-CSRF-Token": cookie,
-        Origin: "https://academia-pro.vercel.app",
-        "Set-Cookie": cookie,
-        Cookie: cookie,
-        Connection: "keep-alive",
-        "content-type": "application/json",
-        "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
-      },
-    });
+  if (
+    !cook ||
+    cook === "" ||
+    cook === "undefined" ||
+    cookie.includes("undefined")
+  )
+    return null;
+  else
+    try {
+      const response = await fetch(getUrl(cookie, "/marks") + "/marks", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token()}`,
+          "X-CSRF-Token": cookie,
+          Origin: "https://academia-pro.vercel.app",
+          "Set-Cookie": cookie,
+          Cookie: cookie,
+          Connection: "keep-alive",
+          "content-type": "application/json",
+          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+        },
+      });
 
-    if (!response.ok) {
-      const errorBody = await response.text();
-      throw new Error(
-        `HTTP error! status: ${response.status}, body: ${errorBody}`,
-      );
-    }
+      if (!response.ok) {
+        const errorBody = await response.text();
+        throw new Error(
+          `HTTP error! status: ${response.status}, body: ${errorBody}`,
+        );
+      }
 
-    const data = await response.json();
-    if (!data || !data.marks) {
-      throw new Error("Invalid response format");
-    }
+      const data = await response.json();
+      if (!data || !data.marks) {
+        throw new Error("Invalid response format");
+      }
 
-    return data.marks;
-  } catch (error) {
-    if (error instanceof Error) {
-      throw error;
+      return data;
+    } catch (error) {
+      if (error instanceof Error) {
+        throw error;
+      }
+      throw new Error("An unexpected error occurred");
     }
-    throw new Error("An unexpected error occurred");
-  }
 };
 
 export function useMarks() {
@@ -79,12 +87,12 @@ export function MarksProvider({
   initialMarks,
 }: {
   children: ReactNode;
-  initialMarks?: Mark[] | null;
+  initialMarks?: MarksResponse | null;
 }) {
   const [retryCount, setRetryCount] = useState(0);
 
   const getCachedMarks = useCallback(
-    () => Storage.get<Mark[] | null>("marks", null),
+    () => Storage.get<MarksResponse | null>("marks", null),
     [],
   );
 
@@ -93,7 +101,7 @@ export function MarksProvider({
     error,
     isValidating,
     mutate,
-  } = useSWR<Mark[] | null>(`${revalUrl}/marks`, fetcher, {
+  } = useSWR<MarksResponse | null>(`${revalUrl}/marks`, fetcher, {
     fallbackData: initialMarks || getCachedMarks(),
     revalidateOnFocus: false,
     revalidateOnReconnect: true,
@@ -119,7 +127,10 @@ export function MarksProvider({
     <MarksContext.Provider
       value={{
         marks:
-          marks?.sort((a, b) => (a.courseName < b.courseName ? -1 : 1)) || null,
+          marks?.marks?.sort((a, b) =>
+            a.courseName < b.courseName ? -1 : 1,
+          ) || null,
+        requestedAt: marks?.requestedAt || 0,
         error: error || null,
         isLoading: isValidating,
         mutate,
