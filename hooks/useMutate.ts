@@ -17,32 +17,28 @@ export interface MutateOptions {
 export function useMutateAll() {
   const { mutate } = useSWRConfig();
   const { user } = useUser();
+
   const fetcher = async (url: string) => {
     const cookie = cookies.get("key");
     if (!cookie) return null;
 
-    try {
-      const response = await fetch(url, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token()}`,
-          "X-CSRF-Token": cookie,
-          "Set-Cookie": cookie,
-          Cookie: cookie,
-          Connection: "keep-alive",
-          "Accept-Encoding": "gzip, deflate, br, zstd",
-          "content-type": "application/json",
-        },
-      });
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${token()}`,
+        "X-CSRF-Token": cookie,
+        "Set-Cookie": cookie,
+        Cookie: cookie,
+        Connection: "keep-alive",
+        "Accept-Encoding": "gzip, deflate, br, zstd",
+        "content-type": "application/json",
+      },
+    });
 
-      if (!response.ok) {
-        throw new Error(`Failed to fetch ${url}`);
-      }
-      return response.json();
-    } catch (error) {
-      console.error("Fetch error:", error);
-      return null;
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${url}`);
     }
+    return response.json();
   };
 
   return async function (options: MutateOptions = {}) {
