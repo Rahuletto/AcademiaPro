@@ -16,7 +16,7 @@ export interface MutateOptions {
 
 export function useMutateAll() {
   const { mutate } = useSWRConfig();
-  const { user } = useUser()
+  const { user } = useUser();
   const fetcher = async (url: string) => {
     const cookie = cookies.get("key");
     if (!cookie) return null;
@@ -79,8 +79,12 @@ export function useMutateAll() {
       mutate(url, undefined, { revalidate: true });
 
       const uniqueUrl = addCacheBustParam(url);
-      const data = await fetcher(uniqueUrl);
-      mutate(url, data, { revalidate: false });
+      try {
+        const data = await fetcher(uniqueUrl);
+        mutate(url, data, { revalidate: false });
+      } catch (error) {
+        throw new Error("Server might be down, try again");
+      }
     };
 
     if (shouldMutateUser) await clearAndRevalidate(urls.user);
