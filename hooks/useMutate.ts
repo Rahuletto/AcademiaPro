@@ -73,13 +73,15 @@ export function useMutateAll() {
 
     const clearAndRevalidate = async (url: string) => {
       mutate(url, undefined, { revalidate: true });
+      const splitted = url.split("/");
+      const last = splitted[splitted.length - 1];
 
-      const uniqueUrl = addCacheBustParam(url);
+      const uniqueUrl = addCacheBustParam(`${getUrl(cookies.get("key") ?? "", `/${last}`)}/${last}`);
       try {
         const data = await fetcher(uniqueUrl);
         mutate(url, data, { revalidate: false });
-      } catch (error) {
-        throw new Error("Server might be down, try again");
+      } catch (error: any) {
+        throw new Error(error.message.includes("fetch") ? "Server might be down, try again" : error.message );
       }
     };
 
