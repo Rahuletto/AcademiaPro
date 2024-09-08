@@ -100,6 +100,7 @@ export function CourseProvider({
   } = useSWRImmutable<CourseResponse | null>(cookie ? `${revalUrl}/courses` : null, fetcher, {
     fallbackData: initialCourses || getCachedCourses(),
     revalidateOnFocus: false,
+    shouldRetryOnError: false,
     revalidateOnReconnect: true,
     keepPreviousData: true,
     errorRetryCount: 2,

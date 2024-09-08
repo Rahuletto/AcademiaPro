@@ -99,6 +99,7 @@ export function DayProvider({
     {
       fallbackData: initialDay || getCachedDayOrder(),
       revalidateOnFocus: false,
+      shouldRetryOnError: false,
       refreshInterval: 1000 * 60 * 60,
       errorRetryCount: 2,
       revalidateOnReconnect: true,

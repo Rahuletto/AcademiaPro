@@ -98,6 +98,7 @@ export function CalendarProvider({
     {
       fallbackData: initialCalendar,
       revalidateOnFocus: false,
+      shouldRetryOnError: false,
       revalidateOnReconnect: true,
       keepPreviousData: true,
       refreshInterval: 1000 * 60 * 30,

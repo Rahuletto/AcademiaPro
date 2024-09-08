@@ -12,7 +12,7 @@ interface AttendanceContextType {
   error: Error | null;
   requestedAt: number | null;
   isLoading: boolean;
-  mutate: () => Promise<void | AttendanceResponse  | null | undefined>;
+  mutate: () => Promise<void | AttendanceResponse | null | undefined>;
 }
 
 const AttendanceContext = createContext<AttendanceContextType>({
@@ -106,6 +106,7 @@ export function AttendanceProvider({
       revalidateOnFocus: false,
       revalidateOnReconnect: true,
       keepPreviousData: true,
+      shouldRetryOnError: false,
       refreshInterval: 1000 * 60 * 30,
       errorRetryCount: 2,
       revalidateIfStale: false,

@@ -106,6 +106,7 @@ export function MarksProvider({
     revalidateOnFocus: false,
     revalidateOnReconnect: true,
     keepPreviousData: true,
+    shouldRetryOnError: false,
     refreshInterval: 1000 * 60 * 30,
     errorRetryCount: 2,
     revalidateIfStale: false,

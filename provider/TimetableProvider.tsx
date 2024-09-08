@@ -119,6 +119,7 @@ export function TableProvider({
       revalidateOnMount: true,
       revalidateOnFocus: false,
       revalidateOnReconnect: false,
+      shouldRetryOnError: false,
       keepPreviousData: true,
       revalidateIfStale: true,
       dedupingInterval: 1000 * 60 * 2,
