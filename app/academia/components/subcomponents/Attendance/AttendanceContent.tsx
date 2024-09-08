@@ -9,13 +9,13 @@ import { useMutateAll } from "@/hooks/useMutate";
 
 export default function AttendanceContent(): JSX.Element {
   const { attendance, requestedAt, isLoading, error } = useAttendance();
-  const mutate = useMutateAll()
+  const mutate = useMutateAll();
 
   useEffect(() => {
     if (
-      (!attendance && !isLoading && !error) ||
-      (attendance &&
-        (!requestedAt || Date.now() - requestedAt > 60 * 60 * 1000))
+      !isLoading &&
+      !error &&
+      (!requestedAt || Date.now() - requestedAt > 60 * 60 * 1000)
     ) {
       mutate({ mutateAttendance: true });
     }

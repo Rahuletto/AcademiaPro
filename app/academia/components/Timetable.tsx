@@ -36,9 +36,9 @@ export default function Timetable() {
 
   useEffect(() => {
     if (
-      (!timetable && !timetableLoading && !timetableError) ||
-      (timetable &&
-        (!requestedAt || Date.now() - requestedAt > 24 * 60 * 60 * 1000))
+      !timetableLoading &&
+      !timetableError &&
+      (!requestedAt || Date.now() - requestedAt >  24 * 60 * 60 * 1000)
     ) {
       setIsOld(true);
     }

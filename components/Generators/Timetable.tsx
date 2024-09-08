@@ -96,7 +96,7 @@ export default function TimetableGen({ body }: { body: Table[] }) {
     >
       <div tw="m-0 w-[610px] flex flex-col bg-[#12171e] rounded-[8px] rounded-t-[14px] p-[2px]">
         <div tw="flex text-white font-bold h-[20px]">
-          {body?.[0].subjects.map((_e, i) => (
+          {body?.[0]?.subjects.map((_e, i) => (
             <div
               key={`timeslot-${i}`}
               style={{ fontSize: 6 }}
@@ -109,7 +109,7 @@ export default function TimetableGen({ body }: { body: Table[] }) {
         <div tw="flex flex-col bg-[#04070b] rounded-[6px]">
           {body?.map((row, i) => (
             <div tw="flex" key={i}>
-              {row.subjects.map((elem, j) =>
+              {row?.subjects.map((elem, j) =>
                 elem && elem !== "null" && elem !== null ? (
                   <div tw="flex w-[10%] border-0" key={`table-${i}-${j}`}>
                     <td
@@ -132,7 +132,7 @@ export default function TimetableGen({ body }: { body: Table[] }) {
                     key={i}
                     tw="opacity-15 w-[10%]"
                     style={{
-                      ...constructNullStyles(i, j, row.subjects),
+                      ...constructNullStyles(i, j, row?.subjects),
                       border: "0.3px solid #12171e",
                     }}
                   />

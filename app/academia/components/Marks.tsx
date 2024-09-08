@@ -31,12 +31,12 @@ export default function Marks() {
 
   useEffect(() => {
     if (
-      (!marks && !isLoading && !error) ||
-      (marks && (!requestedAt || Date.now() - requestedAt > 2 * 60 * 60 * 1000))
+      !isLoading &&
+      !error &&
+      (!requestedAt || Date.now() - requestedAt > 2 * 60 * 60 * 1000)
     )
       mutate({ mutateMarks: true });
   }, [error, isLoading, marks, mutate, requestedAt]);
-
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
 

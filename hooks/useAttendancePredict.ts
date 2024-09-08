@@ -59,7 +59,7 @@ export const useAttendancePrediction = (
       );
       if (!daySchedule) return;
 
-      daySchedule.subjects.forEach((subject) => {
+      daySchedule?.subjects.forEach((subject) => {
         if (!subject) return;
 
         const cleanedSubject = subject.replace(/\[.*?\]/g, "").trim();
