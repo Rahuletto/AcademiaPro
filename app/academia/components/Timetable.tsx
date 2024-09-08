@@ -38,7 +38,7 @@ export default function Timetable() {
     if (
       !timetableLoading &&
       !timetableError &&
-      (!requestedAt || Date.now() - requestedAt >  24 * 60 * 60 * 1000)
+      (!requestedAt || Date.now() - requestedAt > 24 * 60 * 60 * 1000)
     ) {
       setIsOld(true);
     }
@@ -112,7 +112,7 @@ export default function Timetable() {
             )}
           </div>
         </div>
-        <Refresh type={{ mutateTimetable: true }} />
+        {!timetableError && <Refresh type={{ mutateTimetable: true }} />}
       </div>
 
       {timetable ? (

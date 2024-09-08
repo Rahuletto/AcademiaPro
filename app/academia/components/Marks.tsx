@@ -69,7 +69,7 @@ export default function Marks() {
             )}
           </div>
         </div>
-        <Refresh type={{ mutateMarks: true }} />
+        {!error && <Refresh type={{ mutateMarks: true }} />}
       </div>
       {isLoading ? (
         <Loading size="3xl" />
