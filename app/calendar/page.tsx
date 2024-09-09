@@ -28,8 +28,8 @@ export default function Calendar() {
 
   useEffect(() => {
     if (
-      (!calendar && !isLoading && !error) ||
-      (calendar &&
+      !isLoading && !error &&
+      (
         (!requestedAt || Date.now() - requestedAt > 4 * 60 * 60 * 1000))
     ) {
       setIsOld(true);
