@@ -14,8 +14,8 @@ export default function DayOrder({
 
   useEffect(() => {
     if (
-      (!day && !isLoading && !error) ||
-      (day && (!requestedAt || Date.now() - requestedAt > 60 * 60 * 1000))
+       !isLoading && !error &&
+      ((!requestedAt || Date.now() - requestedAt > 60 * 60 * 1000))
     ) {
       mutate();
     }
