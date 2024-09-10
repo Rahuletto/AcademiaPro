@@ -11,6 +11,7 @@ interface AttendanceContextType {
   attendance: AttendanceCourse[] | null;
   error: Error | null;
   requestedAt: number | null;
+  isOld?: boolean;
   isLoading: boolean;
   mutate: () => Promise<void | AttendanceResponse | null | undefined>;
 }
@@ -18,6 +19,7 @@ interface AttendanceContextType {
 const AttendanceContext = createContext<AttendanceContextType>({
   attendance: null,
   error: null,
+  isOld: false,
   requestedAt: null,
   isLoading: false,
   mutate: async () => {},
@@ -131,6 +133,7 @@ export function AttendanceProvider({
         attendance: attendance?.attendance || null,
         requestedAt: attendance?.requestedAt || 0,
         error: error || null,
+        isOld: !isValidating && !error && attendance?.requestedAt ? Date.now() - attendance?.requestedAt > 2 * 60 * 60 * 1000 : false,
         isLoading: isValidating,
         mutate,
       }}

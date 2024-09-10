@@ -15,6 +15,7 @@ import { token } from "@/utils/Encrypt";
 
 interface MarksContextType {
   marks: Mark[] | null;
+  isOld?: boolean;
   requestedAt: number | null;
   error: Error | null;
   isLoading: boolean;
@@ -24,6 +25,7 @@ interface MarksContextType {
 const MarksContext = createContext<MarksContextType>({
   marks: null,
   requestedAt: null,
+  isOld: false,
   error: null,
   isLoading: false,
   mutate: async () => {},
@@ -133,6 +135,7 @@ export function MarksProvider({
           ) || null,
         requestedAt: marks?.requestedAt || 0,
         error: error || null,
+        isOld: !isValidating && !error && marks?.requestedAt ? Date.now() - marks?.requestedAt > 4 * 60 * 60 * 1000 : false,
         isLoading: isValidating,
         mutate,
       }}

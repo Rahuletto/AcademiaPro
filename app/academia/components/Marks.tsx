@@ -4,11 +4,9 @@ import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
 import { useMarks } from "@/provider/MarksProvider";
 import dynamic from "next/dynamic";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
-import { IoRefreshOutline } from "react-icons/io5";
 import NoData from "./subcomponents/NoData";
-import { useMutateAll } from "@/hooks/useMutate";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -24,19 +22,9 @@ const MarkCard = dynamic(
 );
 
 export default function Marks() {
-  const mutate = useMutateAll();
-  const { marks, isLoading, error, requestedAt } = useMarks();
+  const { marks, isLoading, error, isOld } = useMarks();
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (
-      !isLoading &&
-      !error &&
-      (!requestedAt || Date.now() - requestedAt > 2 * 60 * 60 * 1000)
-    )
-      mutate({ mutateMarks: true });
-  }, [error, isLoading, marks, mutate, requestedAt]);
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
 
@@ -69,14 +57,16 @@ export default function Marks() {
             )}
           </div>
         </div>
-        {!error && <Refresh type={{ mutateMarks: true }} />}
+        {!error && <Refresh type={{ mutateMarks: true }} isOld={isOld} />}
       </div>
       {isLoading ? (
         <Loading size="3xl" />
       ) : error ? (
         <Error component="Marks" />
       ) : marks ? (
-        <>
+        <div
+          className={`${isOld ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"} flex flex-col gap-6 -mx-2 rounded-3xl border-4 border-dotted`}
+        >
           <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
             {marks
               ?.filter((a) => a.courseType === "Theory")
@@ -91,7 +81,7 @@ export default function Marks() {
               )
               .map((mark, i) => <MarkCard key={i} mark={mark} />)}
           </div>
-        </>
+        </div>
       ) : (
         <NoData component="Marks" />
       )}

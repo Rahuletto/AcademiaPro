@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AttendanceCourse } from "@/types/Attendance";
 import { calculateMargin } from "@/utils/Margin";
 import { useTimetable } from "@/provider/TimetableProvider";
@@ -9,10 +9,9 @@ import AttendancePill from "./AttendancePill";
 import Margin from "./Margin";
 import Title from "./Title";
 
-const Legend = dynamic(
-  () => import("./Legend").then((a) => a.default),
-  { ssr: true },
-);
+const Legend = dynamic(() => import("./Legend").then((a) => a.default), {
+  ssr: true,
+});
 
 export default function AttendanceCard({
   course,
@@ -23,6 +22,7 @@ export default function AttendanceCard({
 }) {
   const { timetable } = useTimetable();
   const { day } = useDay();
+  
 
   const {
     courseTitle,
@@ -56,15 +56,17 @@ export default function AttendanceCard({
     <div
       tabIndex={0}
       role="gridcell"
-      className="my-6 -mx-2 grid w-full grid-cols-[3fr_1fr] grid-rows-[repeat(2,1fr)] items-center gap-3 gap-y-2 rounded-3xl p-4 px-6 transition duration-200 md:my-0 md:flex md:items-center md:justify-between md:rounded-xl"
+      className="my-6 grid w-full grid-cols-[3fr_1fr] grid-rows-[repeat(2,1fr)] items-center gap-3 gap-y-2 rounded-3xl p-4 px-6 transition duration-200 md:my-0 md:flex md:items-center md:justify-between md:rounded-xl"
     >
       <Title courseTitle={courseTitle} category={category} />
-      <Margin
-        margin={margin}
-        category={category}
-        courseTitle={courseTitle}
-        countHoursPerDay={countHoursPerDay}
-      />
+      <div>
+        <Margin
+          margin={margin}
+          category={category}
+          courseTitle={courseTitle}
+          countHoursPerDay={countHoursPerDay}
+        />
+      </div>
       <AttendancePill present={present} absent={absent} total={total} />
       <span
         className={`w-24 self-end justify-self-end text-right font-semibold md:self-center md:justify-self-center ${

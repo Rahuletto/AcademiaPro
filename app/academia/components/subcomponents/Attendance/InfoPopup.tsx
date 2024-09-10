@@ -12,7 +12,7 @@ const InfoPopup: React.FC<InfoPopupProps> = ({
 }) => (
   <div
     style={{ WebkitBackdropFilter: "blur(10px)" }}
-    className={`absolute ${bottom ? "top-6" : "bottom-6"} md:-left-20 -left-28 z-10 w-48 animate-fadeIn rounded-xl bg-light-background-light bg-opacity-60 text-light-color shadow-lg backdrop-blur-sm dark:bg-dark-background-light dark:bg-opacity-70 dark:text-dark-color`}
+    className={`absolute ${bottom ? "top-6" : "bottom-6"} md:-left-20 -left-28 w-48 animate-fadeIn rounded-xl bg-light-background-light bg-opacity-60 text-light-color shadow-lg backdrop-blur-sm dark:bg-dark-background-light dark:bg-opacity-70 dark:text-dark-color`}
   >
     <p className="p-3 px-4 text-xs font-medium opacity-100 md:text-sm dark:opacity-70">
       {text}

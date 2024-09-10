@@ -14,13 +14,12 @@ interface AttendanceListProps {
 }
 
 export default function AttendanceList({
-  open,
   displayedAttendance,
 }: AttendanceListProps) {
   return (
     <>
       {displayedAttendance && (
-        <div className={`-mx-3 transition duration-200`}>
+        <div className={`transition duration-200`}>
           <AttendanceCard legend course={displayedAttendance[0]} />
         </div>
       )}
@@ -31,7 +30,7 @@ export default function AttendanceList({
             .map((course, index) => (
               <div
                 key={index}
-                className="-mx-3 my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-transparent"
+                className="my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-transparent"
               >
                 <AttendanceCard course={course} />
               </div>
@@ -42,7 +41,7 @@ export default function AttendanceList({
           <Indicator type="Practical" separator />
         )}
 
-        <div className="my-4">
+        <div className="mt-4">
           {displayedAttendance
             ?.filter((a) => a.category === "Practical")
             .map((course, index) => (

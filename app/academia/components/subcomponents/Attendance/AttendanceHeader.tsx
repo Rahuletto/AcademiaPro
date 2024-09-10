@@ -31,7 +31,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
-  const {error} = useAttendance()
+  const {error, isOld} = useAttendance()
   
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -92,7 +92,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
           )}
         </div>
       </div>
-      {!error && <Refresh type={{ mutateAttendance: true }} />}
+      {!error && <Refresh type={{ mutateAttendance: true }} isOld={isOld} />}
     </div>
   );
 };

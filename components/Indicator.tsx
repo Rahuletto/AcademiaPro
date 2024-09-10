@@ -10,7 +10,7 @@ export default function Indicator({
   separator?: boolean
 }) {
   return separator ? (
-    <div className="select-none flex w-full gap-3 items-center" aria-hidden="true" style={{ WebkitUserSelect: "none" }} >
+    <div className="select-none ml-3 max-w-[97%] flex w-full gap-3 items-center" aria-hidden="true" style={{ WebkitUserSelect: "none" }} >
       <span
         className={`flex items-start justify-start rounded-full text-xs font-semibold ${type === "Practical" || type === "Lab" ? "dark:text-practical text-light-success-color" : "dark:text-theory text-light-warn-color"}`}
       >
