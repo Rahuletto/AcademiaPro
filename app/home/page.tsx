@@ -1,10 +1,12 @@
 import Link from "@/components/Link";
 import dynamic from "next/dynamic";
+import { cookies } from "next/headers";
 import { FaBookOpen } from "react-icons/fa";
 
 const Bento = dynamic(() => import("../components/Bento").then(a => a.default), { ssr: false });
 
 export default function Academia() {
+  const cookie = cookies().get("key");
   return (
     <main className="flex flex-col items-center justify-start gap-4 bg-light-background-normal p-4 dark:bg-dark-background-normal">
       <div className="flex h-full w-full animate-fadeIn flex-col items-center justify-start gap-2 rounded-3xl bg-light-background-dark px-6 py-12 transition-all duration-300 md:px-12 lg:flex-row lg:gap-6 lg:py-6 dark:bg-dark-background-dark">
@@ -15,12 +17,21 @@ export default function Academia() {
         <p className="text-md text-center font-medium text-light-color opacity-70 lg:hidden lg:text-lg dark:text-dark-color">
           University data, beautifully presented at your fingertips
         </p>
-        <Link
+        { cookie ? 
+          <Link
           href="/auth/login"
-          className="text-md flex w-auto transform items-center justify-center rounded-xl border-2 border-transparent bg-light-accent px-3 py-1 text-lg font-semibold text-dark-color transition-all duration-300 hover:border-light-accent hover:bg-transparent hover:px-7 hover:text-light-accent dark:bg-dark-accent dark:text-light-color hover:dark:border-dark-accent hover:dark:text-dark-accent"
+          className="flex items-center justify-center px-3 py-1 text-md hover:px-7 text-lg hover:bg-transparent hover:dark:border-dark-accent hover:border-light-accent border-2 border-transparent dark:bg-dark-accent bg-light-accent text-dark-color hover:text-light-accent hover:dark:text-dark-accent dark:text-light-color font-semibold rounded-xl transition-all duration-300 transform w-52"
+        >
+          Go to Dashboard
+        </Link>
+        :
+        <Link
+          href="/academia"
+          className="flex items-center justify-center px-2 py-1 text-md hover:px-7 text-lg hover:bg-transparent hover:dark:border-dark-accent hover:border-light-accent border-2 border-transparent dark:bg-dark-accent bg-light-accent text-dark-color hover:text-light-accent hover:dark:text-dark-accent dark:text-light-color font-semibold rounded-xl transition-all duration-300 transform w-auto"
         >
           Login
         </Link>
+        }
       </div>
 
       <div className="h-auto w-full animate-fadeIn flex-col items-center justify-center gap-6 rounded-3xl bg-light-background-dark px-8 py-6 transition-all duration-300 md:px-12 md:py-12 dark:bg-dark-background-dark">
