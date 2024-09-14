@@ -42,7 +42,7 @@ const fetcher = async (url: string) => {
     return null;
   else
     try {
-      const response = await fetch(getUrl(cookie, "/user") + "/user", {
+      const response = await fetch(getUrl() + "/user", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token()}`,

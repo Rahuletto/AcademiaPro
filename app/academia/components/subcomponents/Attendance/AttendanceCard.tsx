@@ -8,6 +8,7 @@ import dynamic from "next/dynamic";
 import AttendancePill from "./AttendancePill";
 import Margin from "./Margin";
 import Title from "./Title";
+import { useData } from "@/provider/DataProvider";
 
 const Legend = dynamic(() => import("./Legend").then((a) => a.default), {
   ssr: true,
@@ -20,7 +21,7 @@ export default function AttendanceCard({
   course: AttendanceCourse;
   legend?: boolean;
 }) {
-  const { timetable } = useTimetable();
+  const { timetable } = useData();
   const { day } = useDay();
   
 

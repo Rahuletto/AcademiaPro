@@ -40,7 +40,7 @@ const fetcher = async (url: string) => {
   else
     try {
       const response = await fetch(
-        getUrl(cookie, "/attendance") + "/attendance",
+        getUrl() + "/attendance",
         {
           method: "GET",
           headers: {

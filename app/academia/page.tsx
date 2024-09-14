@@ -6,6 +6,7 @@ import { useUser } from "@/provider/UserProvider";
 import dynamic from "next/dynamic";
 
 import { Sidebar } from "@/components/Sidebar";
+import { useData } from "@/provider/DataProvider";
 
 const Attendance = dynamic(
   () => import("./components/Attendance").then((a) => a.default),
@@ -21,7 +22,7 @@ const Timetable = dynamic(
 );
 
 export default function Academia() {
-  const { user, isLoading, mutate, error } = useUser();
+  const { user, isLoading, mutate, error } = useData();
 
   const [mounted, setMounted] = useState(false);
 

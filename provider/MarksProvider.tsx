@@ -45,7 +45,7 @@ const fetcher = async (url: string) => {
     return null;
   else
     try {
-      const response = await fetch(getUrl(cookie, "/marks") + "/marks", {
+      const response = await fetch(getUrl() + "/marks", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token()}`,

@@ -1,6 +1,7 @@
 "use client";
 import Link from "@/components/Link";
 import Loading from "@/components/States/Loading";
+import { useData } from "@/provider/DataProvider";
 import { useTimetable } from "@/provider/TimetableProvider";
 import { useUser } from "@/provider/UserProvider";
 import Image from "next/image";
@@ -8,8 +9,7 @@ import React, { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 
 export default function Timetable() {
-  const { user } = useUser();
-  const { timetable } = useTimetable();
+  const { timetable, user } = useData();
 
   const [data, setData] = useState("");
 

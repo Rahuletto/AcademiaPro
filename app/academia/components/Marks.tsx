@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 import { useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
 import NoData from "./subcomponents/NoData";
+import { useData } from "@/provider/DataProvider";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -22,7 +23,8 @@ const MarkCard = dynamic(
 );
 
 export default function Marks() {
-  const { marks, isLoading, error, isOld } = useMarks();
+  const { marks, isLoading, error } = useData();
+  const isOld = false;
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 

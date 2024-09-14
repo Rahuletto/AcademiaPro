@@ -10,7 +10,7 @@ import { RiLoader3Fill } from "react-icons/ri";
 export default function Logout() {
   const router = useRouter();
   useEffect(() => {
-    fetch(`${getUrl("logout", "/logout")}/logout`, {
+    fetch(`${getUrl()}/logout`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token()}`,

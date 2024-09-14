@@ -48,7 +48,7 @@ const fetcher = async (url: string) => {
   else
     try {
       const response = await fetch(
-        getUrl(cookie, "/timetable") + "/timetable?batch=" + batch,
+        getUrl() + "/timetable?batch=" + batch,
         {
           method: "GET",
           headers: {

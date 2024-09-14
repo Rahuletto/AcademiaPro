@@ -8,6 +8,7 @@ import InfoPopup from "./InfoPopup";
 import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
 import { useAttendance } from "@/provider/AttendanceProvider";
+import { useData } from "@/provider/DataProvider";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
@@ -31,7 +32,8 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
-  const {error, isOld} = useAttendance()
+  const {error} = useData();
+  const isOld = false;
   
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

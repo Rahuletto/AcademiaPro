@@ -7,6 +7,7 @@ import { timeRange } from "@/utils/Range";
 import { getISTTime, Time } from "@/utils/Times";
 import { useCourses } from "@/provider/CourseProvider";
 import { Course } from "@/types/Course";
+import { useData } from "@/provider/DataProvider";
 
 interface SubjectCellProps {
   subject: string | null;
@@ -89,8 +90,7 @@ interface TableCardProps {
 }
 
 export default function TableCard({ view, currentDayOrder }: TableCardProps) {
-  const { timetable } = useTimetable();
-  const { courses, mutate , isLoading, error} = useCourses();
+  const { timetable, courses, mutate , isLoading, error} = useData();
   const { day } = useDay();
   const [time, setTime] = useState<Date>(getISTTime());
 

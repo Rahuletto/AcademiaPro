@@ -8,15 +8,15 @@ import Loading from "@/components/States/Loading";
 import NoData from "../NoData";
 import AttendanceList from "./Predict/AttendanceList";
 import { DateRange, AttendanceCourse, CalendarMonth, TimetableDay } from "@/types/Attendance";
+import { useData } from "@/provider/DataProvider";
 
 interface PredictionContentProps {
   dateRange: DateRange;
 }
 
 export default function PredictionContent({ dateRange }: PredictionContentProps): JSX.Element {
-  const { attendance, isLoading: isLoadingAttendance, error: attendanceError } = useAttendance();
   const { calendar, isLoading: isLoadingCalendar, error: calendarError } = useCalendar();
-  const { timetable, isLoading: isLoadingTimetable, error: timetableError } = useTimetable();
+  const { timetable, attendance, isLoading: isLoadingTimetable, error: timetableError } = useData();
 
   const {
     predictedAttendance,
@@ -34,8 +34,8 @@ export default function PredictionContent({ dateRange }: PredictionContentProps)
     }
   }, [attendance, timetable, calendar, dateRange, performPrediction]);
 
-  if (isLoadingAttendance || isLoadingCalendar || isLoadingTimetable) return <Loading size="max" />;
-  if (attendanceError || calendarError || timetableError) return <Error component="Attendance Prediction" />;
+  if (isLoadingCalendar || isLoadingTimetable) return <Loading size="max" />;
+  if (calendarError || timetableError) return <Error component="Attendance Prediction" />;
   if (!predictedAttendance) return <NoData component="Attendance Prediction" />;
 
   return <AttendanceList open={true} displayedAttendance={predictedAttendance} />;

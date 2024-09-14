@@ -37,7 +37,7 @@ const fetcher = async (url: string) => {
     return null;
   else
     try {
-      const response = await fetch(getUrl(cookie, "/dayorder") + "/dayorder", {
+      const response = await fetch(getUrl() + "/dayorder", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token()}`,
