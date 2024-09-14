@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
-import { useAttendance } from "@/provider/AttendanceProvider";
 import { useCalendar } from "@/provider/CalendarProvider";
-import { useTimetable } from "@/provider/TimetableProvider";
 import { useAttendancePrediction } from "@/hooks/useAttendancePredict";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";

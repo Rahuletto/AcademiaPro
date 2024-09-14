@@ -39,23 +39,19 @@ const fetcher = async (url: string) => {
     return null;
   else
     try {
-      const response = await fetch(
-        getUrl() + "/attendance",
-        {
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${token()}`,
-            "X-CSRF-Token": cookie,
-            "Set-Cookie": cookie,
-            Cookie: cookie,
-            Connection: "keep-alive",
-            "Accept-Encoding": "gzip, deflate, br, zstd",
-            "content-type": "application/json",
-            "Cache-Control":
-              "private, maxage=86400, stale-while-revalidate=7200",
-          },
+      const response = await fetch(getUrl() + "/attendance", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token()}`,
+          "X-CSRF-Token": cookie,
+          "Set-Cookie": cookie,
+          Cookie: cookie,
+          Connection: "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
+          "content-type": "application/json",
+          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
         },
-      );
+      });
       if (!response.ok) {
         const errorBody = await response.text();
         throw new Error(
@@ -133,7 +129,10 @@ export function AttendanceProvider({
         attendance: attendance?.attendance || null,
         requestedAt: attendance?.requestedAt || 0,
         error: error || null,
-        isOld: !isValidating && !error && attendance?.requestedAt ? Date.now() - attendance?.requestedAt > 2 * 60 * 60 * 1000 : false,
+        isOld:
+          !isValidating && !error && attendance?.requestedAt
+            ? Date.now() - attendance?.requestedAt > 2 * 60 * 60 * 1000
+            : false,
         isLoading: isValidating,
         mutate,
       }}

@@ -7,7 +7,6 @@ import PredictResetButtons from "./Predict/ResetButtons";
 import InfoPopup from "./InfoPopup";
 import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
-import { useAttendance } from "@/provider/AttendanceProvider";
 import { useData } from "@/provider/DataProvider";
 
 interface AttendanceHeaderProps {

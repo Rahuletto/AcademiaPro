@@ -2,7 +2,6 @@ import { token } from "@/utils/Encrypt";
 import { getUrl, revalUrl } from "@/utils/URL";
 import { useSWRConfig } from "swr";
 import { Cookie as cookies } from "@/utils/Cookies";
-import { useUser } from "@/provider/UserProvider";
 import { useData } from "@/provider/DataProvider";
 
 export interface MutateOptions {

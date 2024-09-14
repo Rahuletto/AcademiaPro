@@ -1,5 +1,4 @@
 import React from "react";
-import { useAttendance } from "@/provider/AttendanceProvider";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
 import NoData from "../NoData";
