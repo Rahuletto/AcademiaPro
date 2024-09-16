@@ -1,4 +1,6 @@
+
 export function getUrl() {
+
   const rand = Math.floor(Math.random() * 4) + 1;
   switch (rand) {
     case 1:
@@ -14,7 +16,9 @@ export function getUrl() {
         process.env.NEXT_PUBLIC_API_URL_NIGHT || process.env.NEXT_PUBLIC_API_URL
       );
     case 4:
-      return process.env.NEXT_PUBLIC_API_URL_2 || process.env;
+      return (
+        process.env.NEXT_PUBLIC_API_URL_2 || process.env.NEXT_PUBLIC_API_URL
+      );
     default:
       return process.env.NEXT_PUBLIC_API_URL;
   }
