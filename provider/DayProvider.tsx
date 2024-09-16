@@ -2,7 +2,7 @@
 import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
-import { getUrl, revalUrl } from "@/utils/URL";
+import { getAllUrls, getUrl, revalUrl } from "@/utils/URL";
 import { DayOrderResponse } from "@/types/DayOrder";
 import { token } from "@/utils/Encrypt";
 import Storage from "@/utils/Storage";
@@ -35,9 +35,11 @@ const fetcher = async (url: string) => {
     cookie.includes("undefined")
   )
     return null;
-  else
+  const urls = getAllUrls();
+
+  for (const url of urls) {
     try {
-      const response = await fetch(getUrl() + "/dayorder", {
+      const response = await fetch(`${url}/dayorder`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token()}`,
@@ -45,30 +47,27 @@ const fetcher = async (url: string) => {
           "Set-Cookie": cookie,
           Cookie: cookie,
           Connection: "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
           "content-type": "application/json",
-          "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
         },
       });
 
-      if (!response.ok) {
-        const errorBody = await response.text();
-        throw new Error(
-          `HTTP error! status: ${response.status}, body: ${errorBody}`,
-        );
-      }
+      if (!response.ok) continue;
 
-      const data = await response.json();
-      if (!data || !data.date) {
+      const data: DayOrderResponse = await response.json();
+      if (!data || !data.dayOrder) {
         throw new Error("Invalid response format");
       }
 
       return data;
     } catch (error) {
-      if (error instanceof Error) {
-        throw error;
-      }
-      throw new Error("An unexpected error occurred");
+      console.error(`Error fetching from ${url}:`, (error as any).message);
+      continue;
     }
+  }
+
+  throw new Error("All URLs failed to fetch data.");
 };
 
 export function useDay() {

@@ -4,7 +4,7 @@ import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceCourse } from "@/types/Attendance";
-import { getUrl, revalUrl } from "@/utils/URL";
+import { getUrl, getAllUrls } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
@@ -36,7 +36,7 @@ const DataContext = createContext<DataContextType>({
   mutate: async () => {},
 });
 
-const fetcher = async (url: string) => {
+const fetcher = async () => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
@@ -46,11 +46,15 @@ const fetcher = async (url: string) => {
     cook === "" ||
     cook === "undefined" ||
     cookie.includes("undefined")
-  )
+  ) {
     return null;
-  else
+  }
+
+  const urls = getAllUrls();
+
+  for (const url of urls) {
     try {
-      const response = await fetch(url, {
+      const response = await fetch(`${url}/get`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token()}`,
@@ -63,12 +67,8 @@ const fetcher = async (url: string) => {
           "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
         },
       });
-      if (!response.ok) {
-        const errorBody = await response.text();
-        throw new Error(
-          `HTTP error! status: ${response.status}, body: ${errorBody}`,
-        );
-      }
+
+      if (!response.ok) continue;
 
       const data: AllResponses = await response.json();
       if (
@@ -84,11 +84,12 @@ const fetcher = async (url: string) => {
 
       return data;
     } catch (error) {
-      if (error instanceof Error) {
-        throw error;
-      }
-      throw new Error("An unexpected error occurred");
+      console.error(`Error fetching from ${url}:`, (error as any).message);
+      continue;
     }
+  }
+
+  throw new Error("All URLs failed to fetch data.");
 };
 
 export function useData() {
@@ -103,7 +104,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     error,
     isValidating,
     mutate,
-  } = useSWR<AllResponses | null>(cookie ? `${revalUrl}/get` : null, fetcher, {
+  } = useSWR<AllResponses | null>(cookie ? `${getUrl()}/get` : null, fetcher, {
     revalidateOnFocus: false,
     revalidateOnReconnect: false,
     keepPreviousData: true,
