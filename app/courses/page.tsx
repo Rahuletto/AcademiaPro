@@ -8,6 +8,7 @@ import { Sidebar } from "@/components/Sidebar";
 import dynamic from "next/dynamic";
 import Refresh from "@/components/Refresh";
 import NoData from "../academia/components/subcomponents/NoData";
+import { useData } from "@/provider/DataProvider";
 
 const Indicator = dynamic(
   () => import("@/components/Indicator").then((a) => a.default),
@@ -20,7 +21,7 @@ const CourseCard = dynamic(
 );
 
 export default function Courses() {
-  const { courses, isLoading, error, mutate } = useCourses();
+  const { courses, isLoading, error, mutate } = useData();
 
   useEffect(() => {
     if (!isLoading && !courses && !error) mutate();

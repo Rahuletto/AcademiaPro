@@ -9,6 +9,7 @@ import { FiChevronLeft, FiChevronRight, FiInfo } from "react-icons/fi";
 import dynamic from "next/dynamic";
 import Refresh from "@/components/Refresh";
 import NoData from "./subcomponents/NoData";
+import { useData } from "@/provider/DataProvider";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -24,29 +25,12 @@ export default function Timetable() {
     timetable,
     isLoading: timetableLoading,
     error: timetableError,
-    requestedAt,
-  } = useTimetable();
-
-  const [isOld, setIsOld] = useState(false);
+  } = useData();
 
   const { day, isLoading: dayLoading, error: dayError } = useDay();
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
   const [currentDayOrder, setCurrentDayOrder] = useState<string | number>("1");
-
-  useEffect(() => {
-    if (
-      !timetableLoading &&
-      !timetableError &&
-      (!requestedAt || Date.now() - requestedAt > 24 * 60 * 60 * 1000)
-    ) {
-      setIsOld(true);
-    }
-
-    if (requestedAt && Date.now() - requestedAt < 24 * 60 * 60 * 1000) {
-      setIsOld(false);
-    }
-  }, [timetable, requestedAt, timetableLoading, timetableError, day]);
 
   useEffect(() => {
     if (day) setCurrentDayOrder(day);
@@ -116,11 +100,7 @@ export default function Timetable() {
       </div>
 
       {timetable ? (
-        <div
-          className={`${isOld ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"} rounded-2xl border-2 border-dotted`}
-        >
-          <Container day={day} currentDayOrder={Number(currentDayOrder)} />
-        </div>
+        <Container day={day} currentDayOrder={Number(currentDayOrder)} />
       ) : timetableLoading || dayLoading ? (
         <Loading />
       ) : timetableError || dayError ? (

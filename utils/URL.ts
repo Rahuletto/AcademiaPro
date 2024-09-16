@@ -1,4 +1,6 @@
-export function getUrl(key: string, endpoint: string) {
+
+export function getUrl() {
+
   const rand = Math.floor(Math.random() * 4) + 1;
   switch (rand) {
     case 1:

@@ -1,32 +1,37 @@
 "use client";
 import { Cookie as cookies, getCookie } from "@/utils/Cookies";
-import {
-  type ReactNode,
-  createContext,
-  useContext,
-  useState,
-  useCallback,
-} from "react";
+import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
+import { AttendanceCourse } from "@/types/Attendance";
 import { getUrl, revalUrl } from "@/utils/URL";
-import { Mark, MarksResponse } from "@/types/Marks";
 import { token } from "@/utils/Encrypt";
+import { Mark } from "@/types/Marks";
+import { Course } from "@/types/Course";
+import { User } from "@/types/User";
+import { Table } from "@/types/Timetable";
+import { AllResponses } from "@/types/Response";
 
-interface MarksContextType {
+interface DataContextType {
+  attendance: AttendanceCourse[] | null;
   marks: Mark[] | null;
-  isOld?: boolean;
-  requestedAt: number | null;
+  courses: Course[] | null;
+  user: User | null;
+  timetable: Table[] | null;
   error: Error | null;
+  requestedAt: number | null;
   isLoading: boolean;
-  mutate: () => Promise<void | MarksResponse | null | undefined>;
+  mutate: () => Promise<void | AllResponses | null | undefined>;
 }
 
-const MarksContext = createContext<MarksContextType>({
+const DataContext = createContext<DataContextType>({
+  attendance: null,
   marks: null,
-  requestedAt: null,
-  isOld: false,
+  courses: null,
+  user: null,
+  timetable: null,
   error: null,
+  requestedAt: null,
   isLoading: false,
   mutate: async () => {},
 });
@@ -45,20 +50,19 @@ const fetcher = async (url: string) => {
     return null;
   else
     try {
-      const response = await fetch(getUrl() + "/marks", {
+      const response = await fetch(url, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token()}`,
           "X-CSRF-Token": cookie,
-          Origin: "https://academia-pro.vercel.app",
           "Set-Cookie": cookie,
           Cookie: cookie,
           Connection: "keep-alive",
+          "Accept-Encoding": "gzip, deflate, br, zstd",
           "content-type": "application/json",
           "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
         },
       });
-
       if (!response.ok) {
         const errorBody = await response.text();
         throw new Error(
@@ -66,8 +70,15 @@ const fetcher = async (url: string) => {
         );
       }
 
-      const data = await response.json();
-      if (!data || !data.marks) {
+      const data: AllResponses = await response.json();
+      if (
+        !data ||
+        !data.user ||
+        !data.attendance ||
+        !data.marks ||
+        !data.courses ||
+        !data.timetable
+      ) {
         throw new Error("Invalid response format");
       }
 
@@ -80,67 +91,57 @@ const fetcher = async (url: string) => {
     }
 };
 
-export function useMarks() {
-  return useContext(MarksContext);
+export function useData() {
+  return useContext(DataContext);
 }
 
-export function MarksProvider({
-  children,
-  initialMarks,
-}: {
-  children: ReactNode;
-  initialMarks?: MarksResponse | null;
-}) {
-  const [retryCount, setRetryCount] = useState(0);
-
-  const getCachedMarks = useCallback(
-    () => Storage.get<MarksResponse | null>("marks", null),
-    [],
-  );
+export function DataProvider({ children }: { children: ReactNode }) {
+  const cookie = cookies.get("key");
 
   const {
-    data: marks,
+    data: data,
     error,
     isValidating,
     mutate,
-  } = useSWR<MarksResponse | null>(`${revalUrl}/marks`, fetcher, {
-    fallbackData: initialMarks || getCachedMarks(),
+  } = useSWR<AllResponses | null>(cookie ? `${revalUrl}/get` : null, fetcher, {
     revalidateOnFocus: false,
-    revalidateOnReconnect: true,
+    revalidateOnReconnect: false,
     keepPreviousData: true,
     shouldRetryOnError: false,
-    refreshInterval: 1000 * 60 * 30,
-    errorRetryCount: 2,
+    errorRetryCount: 0,
     revalidateIfStale: false,
-    dedupingInterval: 1000 * 60 * 2,
+    dedupingInterval: 1000 * 60 * 3,
     onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
-      if (retryCount >= 2) return;
-
-      setTimeout(() => revalidate({ retryCount }), 3000);
+      return;
     },
     onSuccess: (data) => {
       if (data) {
-        Storage.set("marks", data);
+        Storage.set("attendance", data.attendance);
+        Storage.set("marks", data.marks);
+        Storage.set("courses", data.courses);
+        Storage.set("timetable", data.timetable);
       }
-      setRetryCount(0);
+      return data;
     },
   });
 
   return (
-    <MarksContext.Provider
+    <DataContext.Provider
       value={{
-        marks:
-          marks?.marks?.sort((a, b) =>
-            a.courseName < b.courseName ? -1 : 1,
-          ) || null,
-        requestedAt: marks?.requestedAt || 0,
+        attendance: data?.attendance || null,
+        marks: data?.marks || null,
+        courses: data?.courses || null,
+        user: data?.user || null,
+        timetable: data?.timetable || null,
+
+        requestedAt: data?.requestedAt || 0,
         error: error || null,
-        isOld: !isValidating && !error && marks?.requestedAt ? Date.now() - marks?.requestedAt > 4 * 60 * 60 * 1000 : false,
+
         isLoading: isValidating,
         mutate,
       }}
     >
       {children}
-    </MarksContext.Provider>
+    </DataContext.Provider>
   );
 }

@@ -17,6 +17,7 @@ import { CalendarProvider } from "@/provider/CalendarProvider";
 import { CourseProvider } from "@/provider/CourseProvider";
 import { ReactNode } from "react";
 import ErrorBoundary from "./Boundary";
+import { DataProvider } from "@/provider/DataProvider";
 
 const APP_NAME = "AcademiaPro";
 const APP_DEFAULT_TITLE = "AcademiaPro";
@@ -134,18 +135,10 @@ export default async function RootLayout({
 
 function GroupProviders({ children }: { children: ReactNode }) {
   return (
-    <UserProvider>
+    <DataProvider>
       <DayProvider>
-        <AttendanceProvider>
-          <MarksProvider>
-            <CourseProvider>
-              <TableProvider>
-                <CalendarProvider>{children}</CalendarProvider>
-              </TableProvider>
-            </CourseProvider>
-          </MarksProvider>
-        </AttendanceProvider>
+        <CalendarProvider>{children}</CalendarProvider>
       </DayProvider>
-    </UserProvider>
+    </DataProvider>
   );
 }

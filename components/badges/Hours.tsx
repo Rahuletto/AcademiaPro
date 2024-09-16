@@ -1,3 +1,4 @@
+import { useData } from "@/provider/DataProvider";
 import { useDay } from "@/provider/DayProvider";
 import { useTimetable } from "@/provider/TimetableProvider";
 import React from "react";
@@ -6,7 +7,7 @@ import { RiLoader3Fill } from "react-icons/ri";
 
 export default function Hours({ ...props }) {
   const { day, isLoading, error } = useDay();
-  const { timetable, isLoading: tableLoad, error: tableError } = useTimetable();
+  const { timetable, isLoading: tableLoad, error: tableError } = useData();
 
   return !day || day.includes("No") ? null : (
     <div

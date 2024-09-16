@@ -37,7 +37,7 @@ const fetcher = async (url: string) => {
   if (!cook || cook === "" || cook === "undefined" || cookie.includes("undefined")) return null;
   else
   try {
-    const response = await fetch(getUrl(cookie, "/courses") + "/courses", {
+    const response = await fetch(getUrl() + "/courses", {
       method: "GET",
       headers: {
         "Authorization": `Bearer ${token()}`,

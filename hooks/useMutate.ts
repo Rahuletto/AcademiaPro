@@ -2,7 +2,7 @@ import { token } from "@/utils/Encrypt";
 import { getUrl, revalUrl } from "@/utils/URL";
 import { useSWRConfig } from "swr";
 import { Cookie as cookies } from "@/utils/Cookies";
-import { useUser } from "@/provider/UserProvider";
+import { useData } from "@/provider/DataProvider";
 
 export interface MutateOptions {
   mutateUser?: boolean;
@@ -16,7 +16,7 @@ export interface MutateOptions {
 
 export function useMutateAll() {
   const { mutate } = useSWRConfig();
-  const { user } = useUser();
+  const { attendance, marks, timetable, courses, user } = useData();
 
   const fetcher = async (url: string) => {
     const cookie = cookies.get("key");
@@ -60,6 +60,7 @@ export function useMutateAll() {
       timetable: `${revalUrl}/timetable?batch=${user?.batch || 1}`,
       courses: `${revalUrl}/courses`,
       calendar: `${revalUrl}/calendar`,
+      data: `${revalUrl}/get`,
     };
 
     const addCacheBustParam = (url: string) => {
@@ -72,16 +73,53 @@ export function useMutateAll() {
     };
 
     const clearAndRevalidate = async (url: string) => {
-      mutate(url, undefined, { revalidate: true });
-      const splitted = url.split("/");
-      const last = splitted[splitted.length - 1];
+      if (
+        url.includes("attendance") ||
+        url.includes("marks") ||
+        url.includes("courses") ||
+        url.includes("timetable") ||
+        url.includes("user")
+      ) {
+        const splitted = url.split("/");
+        const last = splitted[splitted.length - 1];
 
-      const uniqueUrl = addCacheBustParam(`${getUrl(cookies.get("key") ?? "", `/${last}`)}/${last}`);
-      try {
-        const data = await fetcher(uniqueUrl);
-        mutate(url, data, { revalidate: false });
-      } catch (error: any) {
-        throw new Error(error.message.includes("fetch") ? "Server might be down, try again" : error.message );
+        const uniqueUrl = addCacheBustParam(`${getUrl()}/${last}`);
+        try {
+          const data = await fetcher(uniqueUrl);
+          const obj = {
+            user: url.includes("user") ? data.user : user,
+            attendance: url.includes("attendance")
+              ? data.attendance
+              : attendance,
+            marks: url.includes("marks") ? data.marks : marks,
+            courses: url.includes("courses") ? data.courses : courses,
+            timetable: url.includes("timetable") ? data.timetable : timetable,
+            requestedAt: Date.now(),
+          };
+
+          mutate(urls.data, obj, { revalidate: true });
+        } catch (error: any) {
+          throw new Error(
+            error.message.includes("fetch")
+              ? "Server might be down, try again"
+              : error.message,
+          );
+        }
+      } else {
+        const splitted = url.split("/");
+        const last = splitted[splitted.length - 1];
+
+        const uniqueUrl = addCacheBustParam(`${getUrl()}/${last}`);
+        try {
+          const data = await fetcher(uniqueUrl);
+          mutate(url, data, { revalidate: true });
+        } catch (error: any) {
+          throw new Error(
+            error.message.includes("fetch")
+              ? "Server might be down, try again"
+              : error.message,
+          );
+        }
       }
     };
 

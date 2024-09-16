@@ -1,6 +1,7 @@
 import { useUser } from "@/provider/UserProvider";
 import { FaXmark } from "react-icons/fa6";
 import Refresh from "../Refresh";
+import { useData } from "@/provider/DataProvider";
 
 interface UserDialogProps {
   isOpen: boolean;
@@ -13,7 +14,7 @@ export default function UserDialog({
   onClose,
   logout,
 }: UserDialogProps) {
-  const { user } = useUser();
+  const { user } = useData();
 
   if (!isOpen) return null;
 

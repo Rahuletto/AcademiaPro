@@ -37,7 +37,7 @@ const fetcher = async (url: string) => {
     return null;
   else
     try {
-      const response = await fetch(getUrl(cookie, "/calendar") + "/calendar", {
+      const response = await fetch(getUrl() + "/calendar", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token()}`,

@@ -9,12 +9,13 @@ import { elevatedUsers } from "@/misc/users";
 import { LuLogOut } from "react-icons/lu";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import { useData } from "@/provider/DataProvider";
 
 const UserDialog = dynamic(() => import("./UserDialog").then(a => a.default), { ssr: false });
 
 export default function ProfileBadge({ className }: { className?: string }) {
   const router = useRouter();
-  const { user, isLoading, error } = useUser();
+  const { user, isLoading, error } = useData();
 
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [dialogRoot, setDialogRoot] = useState<HTMLElement | null>(null);
