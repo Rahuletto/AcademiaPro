@@ -4,7 +4,7 @@ import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceCourse, AttendanceResponse } from "@/types/Attendance";
-import { getUrl, getAllUrls } from "@/utils/URL";
+import { getUrl, getAllUrls, revalUrl } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
@@ -110,7 +110,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     error,
     isValidating,
     mutate,
-  } = useSWR<AllResponses | null>(cookie ? `${getUrl()}/get` : null, fetcher, {
+  } = useSWR<AllResponses | null>(cookie ? `${revalUrl}/get` : null, fetcher, {
     fallbackData: getData(),
     revalidateOnFocus: false,
     shouldRetryOnError: false,

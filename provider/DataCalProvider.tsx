@@ -4,7 +4,7 @@ import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceCourse } from "@/types/Attendance";
-import { getUrl, getAllUrls } from "@/utils/URL";
+import { getUrl, getAllUrls, revalUrl } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
@@ -97,7 +97,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     isValidating,
     mutate,
   } = useSWR<CalResponses | null>(
-    cookie ? `${getUrl()}/getCal` : null,
+    cookie ? `${revalUrl}/getCal` : null,
     fetcher,
     {
       fallbackData: getCachedPlanner(),
