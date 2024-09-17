@@ -136,8 +136,8 @@ export default async function RootLayout({
 
 function GroupProviders({ children }: { children: ReactNode }) {
   return (
-    <DataProvider>
-      <PlannerProvider>{children}</PlannerProvider>
-    </DataProvider>
+    <PlannerProvider>
+      <DataProvider>{children}</DataProvider>
+    </PlannerProvider>
   );
 }

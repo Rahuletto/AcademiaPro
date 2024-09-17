@@ -3,6 +3,7 @@ import { getUrl, revalUrl } from "@/utils/URL";
 import { useSWRConfig } from "swr";
 import { Cookie as cookies } from "@/utils/Cookies";
 import { useData } from "@/provider/DataProvider";
+import { usePlanner } from "@/provider/DataCalProvider";
 
 export interface MutateOptions {
   mutateUser?: boolean;
@@ -17,6 +18,7 @@ export interface MutateOptions {
 export function useMutateAll() {
   const { mutate } = useSWRConfig();
   const { attendance, marks, timetable, courses, user } = useData();
+  const { calendar, dayOrder } = usePlanner();
 
   const fetcher = async (url: string) => {
     const cookie = cookies.get("key");
@@ -61,6 +63,7 @@ export function useMutateAll() {
       courses: `${revalUrl}/courses`,
       calendar: `${revalUrl}/calendar`,
       data: `${revalUrl}/get`,
+      planner: `${revalUrl}/getCal`,
     };
 
     const addCacheBustParam = (url: string) => {
@@ -105,14 +108,20 @@ export function useMutateAll() {
               : error.message,
           );
         }
-      } else {
+      } else if (url.includes("calendar") || url.includes("dayorder")) {
         const splitted = url.split("/");
         const last = splitted[splitted.length - 1];
 
         const uniqueUrl = addCacheBustParam(`${getUrl()}/${last}`);
         try {
           const data = await fetcher(uniqueUrl);
-          mutate(url, data, { revalidate: true });
+          const obj = {
+            calendar: url.includes("calendar") ? data.calendar : calendar,
+            dayOrder: url.includes("dayorder") ? data.today.dayOrder : dayOrder,
+            requestedAt: Date.now(),
+          };
+
+          mutate(urls.planner, obj, { revalidate: true });
         } catch (error: any) {
           throw new Error(
             error.message.includes("fetch")
