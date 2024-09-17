@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useCalendar } from "@/provider/CalendarProvider";
 import { useAttendancePrediction } from "@/hooks/useAttendancePredict";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
@@ -7,13 +6,14 @@ import NoData from "../NoData";
 import AttendanceList from "./Predict/AttendanceList";
 import { DateRange, AttendanceCourse, CalendarMonth, TimetableDay } from "@/types/Attendance";
 import { useData } from "@/provider/DataProvider";
+import { usePlanner } from "@/provider/DataCalProvider";
 
 interface PredictionContentProps {
   dateRange: DateRange;
 }
 
 export default function PredictionContent({ dateRange }: PredictionContentProps): JSX.Element {
-  const { calendar, isLoading: isLoadingCalendar, error: calendarError } = useCalendar();
+  const { calendar, isLoading: isLoadingCalendar, error: calendarError } = usePlanner();
   const { timetable, attendance, isLoading: isLoadingTimetable, error: timetableError } = useData();
 
   const {

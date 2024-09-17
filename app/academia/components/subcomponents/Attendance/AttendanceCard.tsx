@@ -1,14 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AttendanceCourse } from "@/types/Attendance";
 import { calculateMargin } from "@/utils/Margin";
-import { useTimetable } from "@/provider/TimetableProvider";
-import { useDay } from "@/provider/DayProvider";
 import dynamic from "next/dynamic";
 
 import AttendancePill from "./AttendancePill";
 import Margin from "./Margin";
 import Title from "./Title";
 import { useData } from "@/provider/DataProvider";
+import { usePlanner } from "@/provider/DataCalProvider";
 
 const Legend = dynamic(() => import("./Legend").then((a) => a.default), {
   ssr: true,
@@ -22,7 +21,7 @@ export default function AttendanceCard({
   legend?: boolean;
 }) {
   const { timetable } = useData();
-  const { day } = useDay();
+  const { dayOrder: day } = usePlanner();
   
 
   const {
@@ -43,7 +42,7 @@ export default function AttendanceCard({
   }, [present, total]);
 
   const countHoursPerDay = (title: string, category: string) => {
-    if (!timetable || !day || day.includes("No")) return 0;
+    if (!timetable || !day || day.includes("-")) return 0;
 
     const todayTable = timetable[Number(day) - 1]?.subjects ?? [];
     return todayTable.filter(

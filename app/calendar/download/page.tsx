@@ -1,13 +1,14 @@
 "use client";
 import Link from "@/components/Link";
 import Loading from "@/components/States/Loading";
-import { useCalendar } from "@/provider/CalendarProvider";
+
+import { usePlanner } from "@/provider/DataCalProvider";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 
 export default function Calendar() {
-  const { calendar, isLoading, error } = useCalendar();
+  const { calendar, isLoading, error } = usePlanner();
 
   const [data, setData] = useState("");
 

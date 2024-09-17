@@ -1,6 +1,5 @@
 "use client";
 import Loading from "@/components/States/Loading";
-import { useCalendar } from "@/provider/CalendarProvider";
 
 import React, { useEffect, useState } from "react";
 import Error from "@/components/States/Error";
@@ -9,6 +8,7 @@ import dynamic from "next/dynamic";
 import { Sidebar } from "@/components/Sidebar";
 
 import CalendarGrid from "./components/CalendarGrid";
+import { usePlanner } from "@/provider/DataCalProvider";
 
 const CalendarHeader = dynamic(
   () => import("./components/CalendarHeader").then((a) => a.default),
@@ -17,7 +17,7 @@ const CalendarHeader = dynamic(
 
 export default function Calendar() {
 
-  const { calendar, isLoading, error, requestedAt } = useCalendar();
+  const { calendar, isLoading, error, requestedAt } = usePlanner();
   const [isOld, setIsOld] = useState(false);
   const [current, setCurrent] = useState(new Date().getMonth() % 5);
   const actual = new Date().getMonth();

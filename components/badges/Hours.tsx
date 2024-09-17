@@ -1,15 +1,14 @@
+import { usePlanner } from "@/provider/DataCalProvider";
 import { useData } from "@/provider/DataProvider";
-import { useDay } from "@/provider/DayProvider";
-import { useTimetable } from "@/provider/TimetableProvider";
 import React from "react";
 import { BiError } from "react-icons/bi";
 import { RiLoader3Fill } from "react-icons/ri";
 
 export default function Hours({ ...props }) {
-  const { day, isLoading, error } = useDay();
+  const { dayOrder: day, isLoading, error } = usePlanner();
   const { timetable, isLoading: tableLoad, error: tableError } = useData();
 
-  return !day || day.includes("No") ? null : (
+  return !day || day.includes("-") || day.includes("-") ? null : (
     <div
       {...props}
       role="contentinfo"
@@ -35,7 +34,7 @@ export default function Hours({ ...props }) {
             title={`Day Order: ${day}`}
             className="text-md font-medium text-light-accent dark:text-dark-accent"
           >
-            {!day.includes("No") &&
+            {!day.includes("-") &&
               timetable
                 ?.find((e) => e.day === Number(day))
                 ?.subjects.filter((a) => a && a !== "null").length}{" "}

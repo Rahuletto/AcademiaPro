@@ -1,8 +1,6 @@
 import Link from "@/components/Link";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
-import { useDay } from "@/provider/DayProvider";
-import { useTimetable } from "@/provider/TimetableProvider";
 import { useEffect, useRef, useState } from "react";
 import { FiChevronLeft, FiChevronRight, FiInfo } from "react-icons/fi";
 
@@ -10,6 +8,7 @@ import dynamic from "next/dynamic";
 import Refresh from "@/components/Refresh";
 import NoData from "./subcomponents/NoData";
 import { useData } from "@/provider/DataProvider";
+import { usePlanner } from "@/provider/DataCalProvider";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -27,7 +26,7 @@ export default function Timetable() {
     error: timetableError,
   } = useData();
 
-  const { day, isLoading: dayLoading, error: dayError } = useDay();
+  const { dayOrder: day, isLoading: dayLoading, error: dayError } = usePlanner();
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
   const [currentDayOrder, setCurrentDayOrder] = useState<string | number>("1");
@@ -37,7 +36,7 @@ export default function Timetable() {
   }, [day]);
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
-  const isHoliday = day && typeof day === "string" && day.includes("No");
+  const isHoliday = day && typeof day === "string" && day.includes("-");
 
   const handlePreviousDayOrder = () => {
     setCurrentDayOrder((prevDayOrder) => {
@@ -65,7 +64,7 @@ export default function Timetable() {
     }
   };
 
-  const isTodaySelected = day && currentDayOrder.toString() === day.toString();
+  const isTodaySelected = day && currentDayOrder.toString() === day;
 
   return (
     <section id="timetable" className="flex flex-col gap-6">
