@@ -1,4 +1,5 @@
 
+'use client'
 import { useState } from "react";
 import { DateObject } from "react-multi-date-picker";
 

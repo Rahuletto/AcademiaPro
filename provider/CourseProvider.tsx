@@ -112,10 +112,6 @@ export function CourseProvider({
       setTimeout(() => revalidate({ retryCount }), 3000);
     },
     onSuccess: (data) => {
-      if (data) {
-        Storage.set("courses", data);
-      }
-      setRetryCount(0);
       return data;
     },
     

@@ -108,8 +108,6 @@ export function DayProvider({
         setTimeout(() => revalidate({ retryCount }), 3000);
       },
       onSuccess: (data) => {
-        Storage.set("dayorder", data);
-        setRetryCount(0);
         return data;
       },
     },

@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
 import InfoPopup from "./InfoPopup";

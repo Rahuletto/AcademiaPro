@@ -119,10 +119,7 @@ export function MarksProvider({
       setTimeout(() => revalidate({ retryCount }), 3000);
     },
     onSuccess: (data) => {
-      if (data) {
-        Storage.set("marks", data);
-      }
-      setRetryCount(0);
+      return data;
     },
   });
 

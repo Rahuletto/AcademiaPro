@@ -1,8 +1,8 @@
+'use client'
 import Link from "@/components/Link";
 import Refresh from "@/components/Refresh";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
-import { useMarks } from "@/provider/MarksProvider";
 import dynamic from "next/dynamic";
 import { useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";

@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect } from "react";
 import { useAttendancePrediction } from "@/hooks/useAttendancePredict";
 import Error from "@/components/States/Error";

@@ -1,3 +1,4 @@
+'use client'
 import Link from "@/components/Link";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";

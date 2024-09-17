@@ -3,7 +3,7 @@ import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
-import { AttendanceCourse } from "@/types/Attendance";
+import { AttendanceCourse, AttendanceResponse } from "@/types/Attendance";
 import { getUrl, getAllUrls } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 import { Mark } from "@/types/Marks";
@@ -64,7 +64,8 @@ const fetcher = async () => {
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "content-type": "application/json",
-          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "private, max-age=3600",
+          "stale-while-revalidate": "7200",
         },
       });
 
@@ -99,28 +100,33 @@ export function useData() {
 export function DataProvider({ children }: { children: ReactNode }) {
   const cookie = cookies.get("key");
 
+  const isOld = Storage.get<AttendanceResponse | null>("attendance", null);
+  if (isOld) Storage.clear();
+
+  const getData = () => Storage.get<AllResponses | null>("data", null);
+
   const {
     data: data,
     error,
     isValidating,
     mutate,
   } = useSWR<AllResponses | null>(cookie ? `${getUrl()}/get` : null, fetcher, {
+    fallbackData: getData(),
     revalidateOnFocus: false,
-    revalidateOnReconnect: false,
-    keepPreviousData: true,
     shouldRetryOnError: false,
-    errorRetryCount: 0,
+    revalidateOnReconnect: true,
+    keepPreviousData: true,
     revalidateIfStale: false,
-    dedupingInterval: 1000 * 60 * 3,
+    dedupingInterval: 1000 * 60 * 30,
+    refreshInterval: 1000 * 60 * 30, 
+    refreshWhenHidden: false, 
+    refreshWhenOffline: false,
     onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
       return;
     },
     onSuccess: (data) => {
       if (data) {
-        Storage.set("attendance", data.attendance);
-        Storage.set("marks", data.marks);
-        Storage.set("courses", data.courses);
-        Storage.set("timetable", data.timetable);
+        Storage.set("data", data);
       }
       return data;
     },

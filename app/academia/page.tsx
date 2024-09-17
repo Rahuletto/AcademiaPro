@@ -1,12 +1,7 @@
 "use client";
-import Loading from "@/components/States/Loading";
-
 import { useEffect, useState } from "react";
-import { useUser } from "@/provider/UserProvider";
 import dynamic from "next/dynamic";
-
 import { Sidebar } from "@/components/Sidebar";
-import { useData } from "@/provider/DataProvider";
 
 const Attendance = dynamic(
   () => import("./components/Attendance").then((a) => a.default),
@@ -22,25 +17,15 @@ const Timetable = dynamic(
 );
 
 export default function Academia() {
-  const { user, isLoading, mutate, error } = useData();
-
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  useEffect(() => {
-    if (!user && !isLoading && !error) mutate()
-  }, [user, isLoading, mutate, error]);
-
   if (!mounted) return null;
 
-  return isLoading ? (
-    <div className="fixed left-0 top-0 flex h-screen w-screen items-center justify-center">
-      <Loading />
-    </div>
-  ) : (
+  return (
     <div className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>
         <div className="flex flex-col gap-12">

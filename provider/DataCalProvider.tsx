@@ -100,14 +100,14 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     cookie ? `${getUrl()}/getCal` : null,
     fetcher,
     {
-    fallbackData: getCachedPlanner(),
+      fallbackData: getCachedPlanner(),
       revalidateOnFocus: false,
       shouldRetryOnError: false,
       revalidateOnReconnect: true,
       keepPreviousData: true,
-      refreshInterval: 1000 * 60 * 30,
-      errorRetryCount: 2,
+      refreshInterval: 1000 * 60 * 60 * 12,
       revalidateIfStale: false,
+      dedupingInterval: 1000 * 60 * 5,
       onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
         return;
       },

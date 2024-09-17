@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import { AttendanceCourse } from "@/types/Attendance";
 import { calculateMargin } from "@/utils/Margin";
 import dynamic from "next/dynamic";
