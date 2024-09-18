@@ -87,6 +87,7 @@ const fetcher = async () => {
 
       return data;
     } catch (error) {
+      
       err = (error as any).message
       console.error(`Error fetching from ${url}:`, (error as any).message);
       continue;
