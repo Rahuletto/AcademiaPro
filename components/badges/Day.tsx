@@ -10,12 +10,7 @@ export default function DayOrder({
   [x: string]: any;
   mini?: boolean;
 }) {
-  const { calendar, isLoading, error, mutate, requestedAt } = usePlanner();
-  const current = calendar?.[new Date().getMonth() % 5].days;
-    const val = current.find(
-      (day) => day.date === new Date().getDate().toString()
-    );
-  const day = val.dayOrder
+  const { dayOrder: day, isLoading, error, mutate, requestedAt } = usePlanner();
 
   return (
     <div
