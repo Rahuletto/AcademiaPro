@@ -124,12 +124,18 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
       },
     },
   );
+    const calendar = data?.calendar;
+    const current = calendar?.[new Date().getMonth() % 5].days;
+    const val = current.find(
+      (day) => day.date === new Date().getDate().toString()
+    );
+  const day = val.dayOrder
 
   return (
     <DayContext.Provider
       value={{
-        calendar: data?.calendar || null,
-        dayOrder: data?.today.dayOrder || null,
+        calendar: calendar || null,
+        dayOrder: day || null,
         requestedAt: data?.requestedAt || 0,
         error: error || null,
 
