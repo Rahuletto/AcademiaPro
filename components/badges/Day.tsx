@@ -10,16 +10,12 @@ export default function DayOrder({
   [x: string]: any;
   mini?: boolean;
 }) {
-  const { dayOrder: day, isLoading, error, mutate, requestedAt } = usePlanner();
-
-  useEffect(() => {
-    if (
-       !isLoading && !error &&
-      ((!requestedAt || Date.now() - requestedAt > 60 * 60 * 1000))
-    ) {
-      mutate();
-    }
-  }, [day, error, isLoading, mutate, requestedAt]);
+  const { calendar, isLoading, error, mutate, requestedAt } = usePlanner();
+  const current = calendar?.[new Date().getMonth() % 5].days;
+    const val = current.find(
+      (day) => day.date === new Date().getDate().toString()
+    );
+  const day = val.dayOrder
 
   return (
     <div
