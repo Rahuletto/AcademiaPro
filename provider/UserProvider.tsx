@@ -122,11 +122,7 @@ export function UserProvider({
         setTimeout(() => revalidate({ retryCount }), 3000);
       },
       onSuccess: (data) => {
-        if (data) {
-          if (data.logout) router.push("/auth/logout");
-          Storage.set("user", data);
-        }
-        setRetryCount(0);
+        return data;
       },
     },
   );

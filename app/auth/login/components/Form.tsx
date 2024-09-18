@@ -3,15 +3,13 @@ import React, { useCallback, useState } from "react";
 import UidInput from "./form/UidInput";
 import PasswordInput from "./form/PasswordInput";
 import { Cookie as cookies } from "@/utils/Cookies";
-import { getUrl } from "@/utils/URL";
+import { getAllUrls, getUrl } from "@/utils/URL";
 import Button from "@/components/Button";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
-import { useMutateAll } from "@/hooks/useMutate";
 import { token } from "@/utils/Encrypt";
 
 export default function Form() {
   const router = useRouter();
-  const mutateAll = useMutateAll();
 
   const [uid, setUid] = useState("");
   const [pass, setPass] = useState("");
@@ -21,38 +19,40 @@ export default function Form() {
 
   const handleLogin = useCallback(async () => {
     setError(-1);
+    const urls = getAllUrls();
+    for (const url of urls) {
+      try {
+        const response = await fetch(`${url}/login`, {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token()}`,
+            Connection: "keep-alive",
+            "content-type": "application/json",
+            Origin: "https://academia-pro.vercel.app",
+          },
+          body: JSON.stringify({
+            account: uid.replaceAll(" ", "").replace("@srmist.edu.in", ""),
+            password: pass,
+          }),
+        });
+        if (!response.ok) continue;
 
-    try {
-      const response = await fetch(`${getUrl()}/login`, {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token()}`,
-          Connection: "keep-alive",
-          "content-type": "application/json",
-          "Origin": "https://academia-pro.vercel.app",
-        },
-        body: JSON.stringify({
-          account: uid.replaceAll(" ", "").replace("@srmist.edu.in", ""),
-          password: pass,
-        }),
-      });
-
-      const res = await response.json();
-      if (res.cookies) {
-        setError(2);
-        cookies.set("key", res.cookies);
-        console.log("Logged in");
-        mutateAll()
-        router.refresh()
-      } else if (res.message) {
-        setError(1);
-        setMessage(res.message);
+        const res = await response.json();
+        if (res.cookies) {
+          setError(2);
+          cookies.set("key", res.cookies);
+          console.log("Logged in");
+          router.refresh();
+        } else if (res.message) {
+          setError(1);
+          setMessage(res.message);
+        }
+        return;
+      } catch (error) {
+        console.warn(error);
+      } finally {
+        setTimeout(() => setError(0), 6000);
       }
-    } catch (error) {
-      console.warn(error);
-      setError(1);
-    } finally {
-      setTimeout(() => setError(0), 6000);
     }
   }, [uid, pass, router]);
 

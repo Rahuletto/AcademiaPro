@@ -1,3 +1,4 @@
+'use client'
 import { Overall } from "@/types/Marks";
 import React, { useState, useEffect } from "react";
 

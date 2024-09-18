@@ -15,7 +15,8 @@
 
 # production
 /build
-
+#service worker
+/public/serviceWorker
 # misc
 .DS_Store
 *.pem

@@ -129,9 +129,7 @@ export function TableProvider({
         setTimeout(() => revalidate({ retryCount }), 3000);
       },
       onSuccess: (data) => {
-        if (data) {
-          Storage.set("timetable", data);
-        }
+        return data;
       },
     },
   );

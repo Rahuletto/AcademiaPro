@@ -37,7 +37,7 @@ export default function Courses() {
         {isLoading ? (
           <Loading size="max" />
         ) : error ? (
-          <Error component="Courses" />
+          <Error component="Courses" error={error} />
         ) : courses ? (
           <div>
             <div className="animate-fadeIn transition duration-200">

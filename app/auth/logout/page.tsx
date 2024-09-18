@@ -2,38 +2,53 @@
 
 import { Cookie } from "@/utils/Cookies";
 import { token } from "@/utils/Encrypt";
-import { getUrl } from "@/utils/URL";
+import { getAllUrls, getUrl } from "@/utils/URL";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { RiLoader3Fill } from "react-icons/ri";
 
 export default function Logout() {
   const router = useRouter();
-  useEffect(() => {
-    fetch(`${getUrl()}/logout`, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${token()}`,
-        "X-CSRF-Token": Cookie.get("key") as string,
-        Origin: "https://academia-pro.vercel.app",
-      },
-    }).then((a) => {
-      Cookie.clear();
-      sessionStorage.clear();
+  useMemo(() => {
+    const logout = async () => {
+      const urls = getAllUrls();
 
-      if ("caches" in window) {
-        caches.keys().then(function (names) {
-          for (let name of names) {
-            caches.delete(name);
+      try {
+        for (const url of urls) {
+          const response = await fetch(`${url}/logout`, {
+            method: "DELETE",
+            headers: {
+              Authorization: `Bearer ${token()}`,
+              "X-CSRF-Token": Cookie.get("key") as string,
+              Origin: "https://academia-pro.vercel.app",
+            },
+          });
+
+          if (!response.ok) {
+            alert("An error occurred! Try to clear cookies manually.");
+            continue;
+          } else {
+            Cookie.clear();
+            sessionStorage.clear();
+            if ("caches" in window) {
+              const cacheNames = await caches.keys();
+              for (const name of cacheNames) {
+                await caches.delete(name);
+              }
+            }
+            router.push("/");
+            break;
           }
-        });
+        }
+      } catch (error) {
+        console.warn(error);
+        setError(1);
+      } finally {
+        setTimeout(() => setError(0), 6000);
       }
+    };
 
-      if (!a.ok) {
-        alert("An error occured! Try to clear cookies manually.");
-      }
-      router.push("/");
-    });
+    logout();
   }, [router]);
 
   return (
@@ -45,4 +60,7 @@ export default function Logout() {
       <h1 className="mt-4 text-xl font-medium">Logging out...</h1>
     </main>
   );
+}
+function setError(arg0: number) {
+  throw new Error("Function not implemented.");
 }

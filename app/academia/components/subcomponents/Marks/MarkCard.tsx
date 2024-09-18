@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import { Mark } from "@/types/Marks";
 import TotalSection from "./Total";

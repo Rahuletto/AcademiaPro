@@ -2,28 +2,39 @@
 import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
-import { getAllUrls, getUrl, revalUrl } from "@/utils/URL";
-import { DayOrderResponse } from "@/types/DayOrder";
-import { token } from "@/utils/Encrypt";
 import Storage from "@/utils/Storage";
+import { AttendanceCourse } from "@/types/Attendance";
+import { getUrl, getAllUrls, revalUrl } from "@/utils/URL";
+import { token } from "@/utils/Encrypt";
+import { Mark } from "@/types/Marks";
+import { Course } from "@/types/Course";
+import { User } from "@/types/User";
+import { Table } from "@/types/Timetable";
+import { AllResponses, CalResponses } from "@/types/Response";
+import DayOrder from "../components/badges/Day";
+import { Calendar, CalendarResponse } from "@/types/Calendar";
 
 interface DayContextType {
-  day: string | null;
-  requestedAt: number | null;
+  calendar: Calendar[] | null;
+  dayOrder: string | null;
   error: Error | null;
+  requestedAt: number | null;
   isLoading: boolean;
-  mutate: () => Promise<void | DayOrderResponse | null | undefined>;
+  isValidating: boolean;
+  mutate: () => Promise<void | CalResponses | null | undefined>;
 }
 
 const DayContext = createContext<DayContextType>({
-  day: null,
-  requestedAt: null,
+  calendar: null,
+  dayOrder: null,
   error: null,
+  requestedAt: null,
   isLoading: false,
+  isValidating: false,
   mutate: async () => {},
 });
 
-const fetcher = async (url: string) => {
+const fetcher = async () => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
@@ -33,13 +44,15 @@ const fetcher = async (url: string) => {
     cook === "" ||
     cook === "undefined" ||
     cookie.includes("undefined")
-  )
+  ) {
     return null;
+  }
+
   const urls = getAllUrls();
 
   for (const url of urls) {
     try {
-      const response = await fetch(`${url}/dayorder`, {
+      const response = await fetch(`${url}/getCal`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token()}`,
@@ -49,14 +62,14 @@ const fetcher = async (url: string) => {
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "content-type": "application/json",
-          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
         },
       });
 
       if (!response.ok) continue;
 
-      const data: DayOrderResponse = await response.json();
-      if (!data || !data.dayOrder) {
+      const data: CalResponses = await response.json();
+      if (!data || !data.calendar || !data.today) {
         throw new Error("Invalid response format");
       }
 
@@ -70,44 +83,43 @@ const fetcher = async (url: string) => {
   throw new Error("All URLs failed to fetch data.");
 };
 
-export function useDay() {
+export function usePlanner() {
   return useContext(DayContext);
 }
 
-export function DayProvider({
-  children,
-  initialDay,
-}: {
-  children: ReactNode;
-  initialDay?: DayOrderResponse | null;
-}) {
-  const [retryCount, setRetryCount] = useState(0);
-
-  const getCachedDayOrder = () =>
-    Storage.get<DayOrderResponse | null>("dayorder", null);
+export function PlannerProvider({ children }: { children: ReactNode }) {
   const cookie = cookies.get("key");
 
+  const getCachedPlanner = () =>
+    Storage.get<CalResponses | null>("planner", null);
+
   const {
-    data: day,
+    data: data,
     error,
     isValidating,
+    isLoading,
     mutate,
-  } = useSWR<DayOrderResponse | null>(
-    cookie ? `${revalUrl}/dayorder` : null,
+  } = useSWR<CalResponses | null>(
+    cookie ? `${revalUrl}/getCal` : null,
     fetcher,
     {
-      fallbackData: initialDay || getCachedDayOrder(),
+      fallbackData: getCachedPlanner(),
       revalidateOnFocus: false,
+      suspense: true,
       shouldRetryOnError: false,
-      refreshInterval: 1000 * 60 * 60,
-      errorRetryCount: 2,
       revalidateOnReconnect: true,
+      revalidateOnMount: true,
+      keepPreviousData: true,
+      refreshInterval: 1000 * 60 * 60 * 12,
+      revalidateIfStale: false,
+      dedupingInterval: 1000 * 60 * 5,
       onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
-        if (retryCount >= 2) return;
-
-        setTimeout(() => revalidate({ retryCount }), 3000);
+        return;
       },
       onSuccess: (data) => {
+        if (data) {
+          Storage.set("planner", data);
+        }
         return data;
       },
     },
@@ -116,10 +128,13 @@ export function DayProvider({
   return (
     <DayContext.Provider
       value={{
-        day: day?.dayOrder || null,
-        requestedAt: day?.requestedAt || 0,
+        calendar: data?.calendar || null,
+        dayOrder: data?.today.dayOrder || null,
+        requestedAt: data?.requestedAt || 0,
         error: error || null,
-        isLoading: isValidating,
+
+        isLoading,
+        isValidating,
         mutate,
       }}
     >

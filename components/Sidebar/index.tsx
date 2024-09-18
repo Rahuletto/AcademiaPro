@@ -224,7 +224,7 @@ export function Sidebar({
 
                 <Link href="/links">
                   <FaLink className="text-xl" />
-                  Resources
+                  Links
                 </Link>
               </div>
 
@@ -245,7 +245,7 @@ export function Sidebar({
                 href="/papers"
               >
                 <IoLibrarySharp className="text-xl" />
-                DocuPro
+                Library
               </Link>
             </div>
 

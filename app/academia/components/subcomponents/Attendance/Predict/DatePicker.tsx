@@ -1,8 +1,10 @@
-import { useCalendar } from "@/provider/CalendarProvider";
+
+'use client'
 import { useState } from "react";
 import { DateObject } from "react-multi-date-picker";
 
 import dynamic from "next/dynamic";
+import { usePlanner } from "@/provider/DataCalProvider";
 
 const DatePicker = dynamic(
   () => import("react-multi-date-picker").then((a) => a.default),
@@ -20,7 +22,7 @@ export default function DatePickerComponent({
   handleDateChange,
 }: DatePickerComponentProps) {
   const [opened, setOpened] = useState(false);
-  const { calendar } = useCalendar();
+  const { calendar } = usePlanner();
   function selector() {
     setOpened(!opened);
     document.querySelector<HTMLInputElement>(".rmdp-input")?.focus();

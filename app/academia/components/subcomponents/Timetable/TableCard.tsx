@@ -1,13 +1,11 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { constructNullStyles } from "@/components/Generators/Timetable";
-import { useDay } from "@/provider/DayProvider";
-import { useTimetable } from "@/provider/TimetableProvider";
 import { useInterval } from "@/utils/Interval";
 import { timeRange } from "@/utils/Range";
 import { getISTTime, Time } from "@/utils/Times";
-import { useCourses } from "@/provider/CourseProvider";
 import { Course } from "@/types/Course";
 import { useData } from "@/provider/DataProvider";
+import { usePlanner } from "@/provider/DataCalProvider";
 
 interface SubjectCellProps {
   subject: string | null;
@@ -91,7 +89,7 @@ interface TableCardProps {
 
 export default function TableCard({ view, currentDayOrder }: TableCardProps) {
   const { timetable, courses, mutate , isLoading, error} = useData();
-  const { day } = useDay();
+  const { dayOrder: day } = usePlanner();
   const [time, setTime] = useState<Date>(getISTTime());
 
   useMemo(() => {
@@ -109,9 +107,9 @@ export default function TableCard({ view, currentDayOrder }: TableCardProps) {
   if (
     !day ||
     !timetable ||
-    (typeof day === "string" && day.includes("No") && isNaN(currentDayOrder))
+    (typeof day === "string" && day.includes("-") && isNaN(currentDayOrder))
   ) {
-    return day && typeof day === "string" && day.includes("No") ? (
+    return day && typeof day === "string" && day.includes("-") ? (
       <div className="flex h-28 animate-fadeIn items-center justify-center rounded-xl bg-light-error-background transition-all duration-200 md:h-24 dark:bg-dark-error-background">
         <h1
           aria-label="Holiday"

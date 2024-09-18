@@ -3,6 +3,7 @@ import { getUrl, revalUrl } from "@/utils/URL";
 import { useSWRConfig } from "swr";
 import { Cookie as cookies } from "@/utils/Cookies";
 import { useData } from "@/provider/DataProvider";
+import { usePlanner } from "@/provider/DataCalProvider";
 
 export interface MutateOptions {
   mutateUser?: boolean;
@@ -17,6 +18,17 @@ export interface MutateOptions {
 export function useMutateAll() {
   const { mutate } = useSWRConfig();
   const { attendance, marks, timetable, courses, user } = useData();
+  const { calendar, dayOrder } = usePlanner();
+
+  const urls = {
+    user: `${revalUrl}/user`,
+    attendance: `${revalUrl}/attendance`,
+    marks: `${revalUrl}/marks`,
+    timetable: `${revalUrl}/timetable?batch=${user?.batch || 1}`,
+    courses: `${revalUrl}/courses`,
+    data: `${revalUrl}/get`,
+    planner: `${revalUrl}/getCal`,
+  };
 
   const fetcher = async (url: string) => {
     const cookie = cookies.get("key");
@@ -27,112 +39,105 @@ export function useMutateAll() {
       headers: {
         Authorization: `Bearer ${token()}`,
         "X-CSRF-Token": cookie,
-        "Set-Cookie": cookie,
         Cookie: cookie,
-        Connection: "keep-alive",
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "content-type": "application/json",
       },
     });
 
     if (!response.ok) {
-      throw new Error(`Failed to fetch ${url}`);
+      console.error(`Fetch failed: ${url}, status: ${response.status}`);
+      return null;
     }
     return response.json();
   };
 
+  const addCacheBustParam = (url: string) => {
+    const cacheBustParam = `cache_bust=${Date.now()}`;
+    return url.includes("?")
+      ? `${url}&${cacheBustParam}`
+      : `${url}?${cacheBustParam}`;
+  };
+
+  const clearAndRevalidate = async (url: string, type: string) => {
+    const cacheBustedUrl = addCacheBustParam(url);
+    const data = await fetcher(cacheBustedUrl);
+
+    if (!data) return;
+
+    if (type === "planner") {
+      mutate(
+        urls.data,
+        {
+          calendar: data.calendar || calendar,
+          dayOrder: data.today?.dayOrder || dayOrder,
+        },
+        false,
+      );
+      return;
+    } else {
+      let obj: any = {
+        user,
+        attendance,
+        marks,
+        courses,
+        timetable,
+        requestedAt: Date.now(),
+      };
+
+      switch (type) {
+        case "user":
+          obj.user = data.user || user;
+          break;
+        case "attendance":
+          obj.attendance = data.attendance || attendance;
+          break;
+        case "marks":
+          obj.marks = data.marks || marks;
+          break;
+        case "courses":
+          obj.courses = data.courses || courses;
+          break;
+        case "timetable":
+          obj.timetable = data.timetable || timetable;
+          break;
+      }
+
+      mutate(urls.data, { ...obj }, false);
+    }
+  };
+
   return async function (options: MutateOptions = {}) {
     const {
-      mutateUser: shouldMutateUser,
-      mutateAttendance: shouldMutateAttendance,
-      mutateDay: shouldMutateDay,
-      mutateMarks: shouldMutateMarks,
-      mutateTimetable: shouldMutateTimetable,
-      mutateCourse: shouldMutateCourse,
-      mutateCalendar: shouldMutateCalendar,
+      mutateUser,
+      mutateAttendance,
+      mutateDay,
+      mutateMarks,
+      mutateTimetable,
+      mutateCourse,
+      mutateCalendar,
     } = options;
 
-    const urls = {
-      user: `${revalUrl}/user`,
-      attendance: `${revalUrl}/attendance`,
-      dayorder: `${revalUrl}/dayorder`,
-      marks: `${revalUrl}/marks`,
-      timetable: `${revalUrl}/timetable?batch=${user?.batch || 1}`,
-      courses: `${revalUrl}/courses`,
-      calendar: `${revalUrl}/calendar`,
-      data: `${revalUrl}/get`,
-    };
+    const tasks = [];
 
-    const addCacheBustParam = (url: string) => {
-      const [baseUrl, queryParams] = url.split("?");
-      const cacheBustParam = `cache_bust=${Date.now()}`;
-      if (queryParams) {
-        return `${baseUrl}?${queryParams}&${cacheBustParam}`;
-      }
-      return `${baseUrl}?${cacheBustParam}`;
-    };
+    if (mutateCalendar || mutateDay) {
+      tasks.push(clearAndRevalidate(urls.planner, "planner"));
+    }
+    if (mutateUser) tasks.push(clearAndRevalidate(urls.user, "user"));
+    if (mutateAttendance)
+      tasks.push(clearAndRevalidate(urls.attendance, "attendance"));
+    if (mutateMarks) tasks.push(clearAndRevalidate(urls.marks, "marks"));
+    if (mutateCourse) tasks.push(clearAndRevalidate(urls.courses, "courses"));
+    if (mutateTimetable)
+      tasks.push(clearAndRevalidate(urls.timetable, "timetable"));
 
-    const clearAndRevalidate = async (url: string) => {
-      if (
-        url.includes("attendance") ||
-        url.includes("marks") ||
-        url.includes("courses") ||
-        url.includes("timetable") ||
-        url.includes("user")
-      ) {
-        const splitted = url.split("/");
-        const last = splitted[splitted.length - 1];
-
-        const uniqueUrl = addCacheBustParam(`${getUrl()}/${last}`);
-        try {
-          const data = await fetcher(uniqueUrl);
-          const obj = {
-            user: url.includes("user") ? data.user : user,
-            attendance: url.includes("attendance")
-              ? data.attendance
-              : attendance,
-            marks: url.includes("marks") ? data.marks : marks,
-            courses: url.includes("courses") ? data.courses : courses,
-            timetable: url.includes("timetable") ? data.timetable : timetable,
-            requestedAt: Date.now(),
-          };
-
-          mutate(urls.data, obj, { revalidate: true });
-        } catch (error: any) {
-          throw new Error(
-            error.message.includes("fetch")
-              ? "Server might be down, try again"
-              : error.message,
-          );
-        }
-      } else {
-        const splitted = url.split("/");
-        const last = splitted[splitted.length - 1];
-
-        const uniqueUrl = addCacheBustParam(`${getUrl()}/${last}`);
-        try {
-          const data = await fetcher(uniqueUrl);
-          mutate(url, data, { revalidate: true });
-        } catch (error: any) {
-          throw new Error(
-            error.message.includes("fetch")
-              ? "Server might be down, try again"
-              : error.message,
-          );
-        }
-      }
-    };
-
-    if (shouldMutateUser) await clearAndRevalidate(urls.user);
-    else if (shouldMutateCalendar) await clearAndRevalidate(urls.calendar);
-    else if (shouldMutateCourse) await clearAndRevalidate(urls.courses);
-    else if (shouldMutateAttendance) await clearAndRevalidate(urls.attendance);
-    else if (shouldMutateDay) await clearAndRevalidate(urls.dayorder);
-    else if (shouldMutateMarks) await clearAndRevalidate(urls.marks);
-    else if (shouldMutateTimetable) await clearAndRevalidate(urls.timetable);
-    else {
+    if (tasks.length > 0) {
+      await Promise.all(tasks);
+    } else {
       await Promise.all(
-        Object.values(urls).map((url) => clearAndRevalidate(url)),
+        Object.keys(urls).map((key) =>
+          clearAndRevalidate(urls[key as keyof typeof urls], key),
+        ),
       );
     }
   };

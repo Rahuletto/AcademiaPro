@@ -3,8 +3,8 @@ import { Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
-import { AttendanceCourse } from "@/types/Attendance";
-import { getUrl, getAllUrls } from "@/utils/URL";
+import { AttendanceCourse, AttendanceResponse } from "@/types/Attendance";
+import { getUrl, getAllUrls, revalUrl } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
@@ -21,6 +21,7 @@ interface DataContextType {
   error: Error | null;
   requestedAt: number | null;
   isLoading: boolean;
+  isValidating: boolean;
   mutate: () => Promise<void | AllResponses | null | undefined>;
 }
 
@@ -33,6 +34,7 @@ const DataContext = createContext<DataContextType>({
   error: null,
   requestedAt: null,
   isLoading: false,
+  isValidating: false,
   mutate: async () => {},
 });
 
@@ -52,6 +54,7 @@ const fetcher = async () => {
 
   const urls = getAllUrls();
 
+  let err = ""
   for (const url of urls) {
     try {
       const response = await fetch(`${url}/get`, {
@@ -64,7 +67,7 @@ const fetcher = async () => {
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "content-type": "application/json",
-          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "private, maxage=3600, stale-while-revalidate=7200",
         },
       });
 
@@ -84,12 +87,14 @@ const fetcher = async () => {
 
       return data;
     } catch (error) {
+      
+      err = (error as any).message
       console.error(`Error fetching from ${url}:`, (error as any).message);
       continue;
     }
   }
 
-  throw new Error("All URLs failed to fetch data.");
+  throw new Error(err || "All URL's failed to fetch.");
 };
 
 export function useData() {
@@ -99,28 +104,35 @@ export function useData() {
 export function DataProvider({ children }: { children: ReactNode }) {
   const cookie = cookies.get("key");
 
+  const getCachedData = () => Storage.get<AllResponses | null>("data", null);
+
   const {
     data: data,
     error,
+    isLoading,
     isValidating,
     mutate,
-  } = useSWR<AllResponses | null>(cookie ? `${getUrl()}/get` : null, fetcher, {
+  } = useSWR<AllResponses | null>(cookie ? `${revalUrl}/get` : null, fetcher, {
+    fallbackData: getCachedData(),
     revalidateOnFocus: false,
-    revalidateOnReconnect: false,
-    keepPreviousData: true,
     shouldRetryOnError: false,
-    errorRetryCount: 0,
+    suspense: true,
+    revalidateOnReconnect: true,
+    keepPreviousData: true,
+    refreshInterval: 1000 * 60 * 60 * 12,
+    revalidateOnMount: true,
     revalidateIfStale: false,
-    dedupingInterval: 1000 * 60 * 3,
+    dedupingInterval: 1000 * 60 * 5,
+    errorRetryCount: 0,
     onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
       return;
     },
+    onLoadingSlow: (key) => {
+      alert("Seems like your internet is slow, please switch to a faster network")
+    },
     onSuccess: (data) => {
       if (data) {
-        Storage.set("attendance", data.attendance);
-        Storage.set("marks", data.marks);
-        Storage.set("courses", data.courses);
-        Storage.set("timetable", data.timetable);
+        Storage.set("data", data);
       }
       return data;
     },
@@ -138,7 +150,8 @@ export function DataProvider({ children }: { children: ReactNode }) {
         requestedAt: data?.requestedAt || 0,
         error: error || null,
 
-        isLoading: isValidating,
+        isLoading: isLoading,
+        isValidating: isValidating,
         mutate,
       }}
     >

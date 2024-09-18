@@ -1,3 +1,4 @@
+'use client'
 import React, { useRef, useEffect, useState, Dispatch, FC, SetStateAction } from "react";
 import { FaCheck } from "react-icons/fa";
 import { FiInfo } from "react-icons/fi";

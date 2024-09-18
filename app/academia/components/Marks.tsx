@@ -1,8 +1,8 @@
+'use client'
 import Link from "@/components/Link";
 import Refresh from "@/components/Refresh";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
-import { useMarks } from "@/provider/MarksProvider";
 import dynamic from "next/dynamic";
 import { useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
@@ -23,7 +23,7 @@ const MarkCard = dynamic(
 );
 
 export default function Marks() {
-  const { marks, isLoading, error } = useData();
+  const { marks, isLoading, error, isValidating } = useData();
   const isOld = false;
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
@@ -64,10 +64,10 @@ export default function Marks() {
       {isLoading ? (
         <Loading size="3xl" />
       ) : error ? (
-        <Error component="Marks" />
+        <Error component="Marks" error={error} />
       ) : marks ? (
         <div
-          className={`${isOld ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"} flex flex-col gap-6 -mx-2 rounded-3xl border-4 border-dotted`}
+          className={`${isValidating ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"} flex flex-col gap-6 -mx-2 rounded-3xl border-4 border-dotted`}
         >
           <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
             {marks

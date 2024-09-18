@@ -114,10 +114,6 @@ export function AttendanceProvider({
         setTimeout(() => revalidate({ retryCount }), 3000);
       },
       onSuccess: (data) => {
-        if (data) {
-          Storage.set("attendance", data);
-        }
-        setRetryCount(0);
         return data;
       },
     },
