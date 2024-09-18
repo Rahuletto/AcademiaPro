@@ -20,6 +20,7 @@ interface DayContextType {
   error: Error | null;
   requestedAt: number | null;
   isLoading: boolean;
+  isValidating: boolean;
   mutate: () => Promise<void | CalResponses | null | undefined>;
 }
 
@@ -29,6 +30,7 @@ const DayContext = createContext<DayContextType>({
   error: null,
   requestedAt: null,
   isLoading: false,
+  isValidating: false,
   mutate: async () => {},
 });
 
@@ -60,7 +62,7 @@ const fetcher = async () => {
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
           "content-type": "application/json",
-          "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+          "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
         },
       });
 
@@ -95,6 +97,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     data: data,
     error,
     isValidating,
+    isLoading,
     mutate,
   } = useSWR<CalResponses | null>(
     cookie ? `${revalUrl}/getCal` : null,
@@ -102,8 +105,10 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     {
       fallbackData: getCachedPlanner(),
       revalidateOnFocus: false,
+      suspense: true,
       shouldRetryOnError: false,
       revalidateOnReconnect: true,
+      revalidateOnMount: true,
       keepPreviousData: true,
       refreshInterval: 1000 * 60 * 60 * 12,
       revalidateIfStale: false,
@@ -128,7 +133,8 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
         requestedAt: data?.requestedAt || 0,
         error: error || null,
 
-        isLoading: isValidating,
+        isLoading,
+        isValidating,
         mutate,
       }}
     >

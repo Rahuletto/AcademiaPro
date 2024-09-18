@@ -47,7 +47,7 @@ export default function Calendar() {
               <Loading size="max" />
             </>
           ) : error ? (
-            <Error component="Calendar" />
+            <Error error={error} component="Calendar" />
           ) : (
             <section id="calendar" className="flex flex-col gap-6">
               <CalendarHeader mobile month={"Calendar"} />

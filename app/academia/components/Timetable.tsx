@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Link from "@/components/Link";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
@@ -27,7 +27,11 @@ export default function Timetable() {
     error: timetableError,
   } = useData();
 
-  const { dayOrder: day, isLoading: dayLoading, error: dayError } = usePlanner();
+  const {
+    dayOrder: day,
+    isLoading: dayLoading,
+  } = usePlanner();
+  
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
   const [currentDayOrder, setCurrentDayOrder] = useState<string | number>("1");
@@ -103,8 +107,8 @@ export default function Timetable() {
         <Container day={day} currentDayOrder={Number(currentDayOrder)} />
       ) : timetableLoading || dayLoading ? (
         <Loading />
-      ) : timetableError || dayError ? (
-        (timetableError || dayError) && <Error component="timetable" />
+      ) : timetableError ? (
+        <Error error={timetableError} component="timetable" />
       ) : (
         <NoData component="Timetable" />
       )}

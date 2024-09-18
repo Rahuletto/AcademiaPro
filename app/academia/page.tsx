@@ -1,7 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { Sidebar } from "@/components/Sidebar";
+import Loading from "@/components/States/Loading";
 
 const Attendance = dynamic(
   () => import("./components/Attendance").then((a) => a.default),
@@ -30,10 +31,14 @@ export default function Academia() {
       <Sidebar>
         <div className="flex flex-col gap-12">
           <Timetable />
-          <Attendance />
-          <Marks />
+          <Suspense fallback={<Loading size="xl" />}>
+            <Attendance />
+          </Suspense>
+          <Suspense fallback={<Loading size="xl" />}>
+            <Marks />
+          </Suspense>
         </div>
       </Sidebar>
     </div>
-  )
+  );
 }
