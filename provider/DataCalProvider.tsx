@@ -126,10 +126,10 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
   );
     const calendar = data?.calendar;
     const current = calendar?.[new Date().getMonth() % 5].days;
-    const val = current.find(
+    const val = current?.find(
       (day) => day.date === new Date().getDate().toString()
     );
-  const day = val.dayOrder
+  const day = val?.dayOrder
 
   return (
     <DayContext.Provider
