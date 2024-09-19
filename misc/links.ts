@@ -6,6 +6,20 @@ export interface DirLink {
 }
 
 export const priorityUrl: DirLink[] = [
+  // {
+  //   site: "Bulletin",
+  //   url: "#",
+  //   type: "void",
+  //   description:
+  //     "A centralized online platform to discover various events that happen in SRM.",
+  // },
+  {
+    site: "Docupro",
+    url: "https://docu-pro.vercel.app",
+    type: "void",
+    description:
+      "Past exam papers at your fingertips.",
+  },
   {
     site: "Better-Lab",
     url: "https://better-lab.vercel.app",
