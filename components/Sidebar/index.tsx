@@ -10,7 +10,6 @@ import {
 import { HiLightningBolt } from "react-icons/hi";
 import { BsCalendar2WeekFill, BsFillPinAngleFill } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
-
 import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
 
@@ -53,34 +52,9 @@ export function Sidebar({
   const [isAnchored, setIsAnchored] = useState(true);
   const [isHoverEnabled, setIsHoverEnabled] = useState(false);
 
-  const [promptEvent, setPromptEvent] = useState<any>(null);
-
   const ref = useRef<HTMLDivElement>(null);
   const installRef = useRef<HTMLButtonElement>(null);
   const content = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    window.addEventListener("beforeinstallprompt", (e) => {
-      e.preventDefault();
-      setPromptEvent(e);
-    });
-  }, []);
-
-  function install() {
-    if (promptEvent) {
-      promptEvent.prompt();
-      promptEvent.userChoice.then((choiceResult: { outcome: string }) => {
-        if (choiceResult.outcome === "accepted") {
-          console.log("User accepted the install prompt");
-          setPromptEvent(null);
-        } else {
-          console.log("User dismissed the install prompt");
-        }
-      });
-    } else {
-      alert("Browser/Device doesnt support install prompt");
-    }
-  }
 
   function resize() {
     if (window.innerWidth > 768) {
@@ -299,7 +273,6 @@ export function Sidebar({
               />
             </div>
             <InstallButton
-              onClick={install}
               anchor={isAnchored}
               ref={installRef}
             />

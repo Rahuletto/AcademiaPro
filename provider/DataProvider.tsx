@@ -54,7 +54,7 @@ const fetcher = async () => {
 
   const urls = getAllUrls();
 
-  let err = ""
+  let err = "";
   for (const url of urls) {
     try {
       const response = await fetch(`${url}/get`, {
@@ -90,8 +90,7 @@ const fetcher = async () => {
 
       return data;
     } catch (error) {
-      
-      err = (error as any).message
+      err = (error as any).message;
       console.error(`Error fetching from ${url}:`, (error as any).message);
       continue;
     }
@@ -106,6 +105,15 @@ export function useData() {
 
 export function DataProvider({ children }: { children: ReactNode }) {
   const cookie = cookies.get("key");
+
+  const getAttendance = () =>
+    Storage.get<AttendanceResponse | null>("attendance", null);
+  const attendance = getAttendance();
+
+  if (attendance) {
+    cookies.clear();
+    Storage.clear();
+  }
 
   const getCachedData = () => Storage.get<AllResponses | null>("data", null);
 
