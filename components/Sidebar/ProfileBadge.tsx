@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { FaUser, FaUserLock } from "react-icons/fa";
 import { createPortal } from "react-dom";
 import { RiLoader3Fill } from "react-icons/ri";
-import { useTransitionRouter as useRouter } from "next-view-transitions";
+import { useRouter } from "next/navigation";
 import { profileColor } from "@/utils/ProfileColor";
 import { elevatedUsers } from "@/misc/users";
 import { LuLogOut } from "react-icons/lu";
@@ -11,7 +11,10 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { useData } from "@/provider/DataProvider";
 
-const UserDialog = dynamic(() => import("./UserDialog").then(a => a.default), { ssr: false });
+const UserDialog = dynamic(
+  () => import("./UserDialog").then((a) => a.default),
+  { ssr: false },
+);
 
 export default function ProfileBadge({ className }: { className?: string }) {
   const router = useRouter();
@@ -27,6 +30,13 @@ export default function ProfileBadge({ className }: { className?: string }) {
       setDialogRoot(null);
     };
   }, []);
+
+  useEffect(() => {
+    if (!isLoading && !user && !error && dialogRoot) {
+      alert("Cannot get users data. Logging you out.");
+      router.push("/auth/logout");
+    }
+  }, [isLoading, user, error, router, dialogRoot]);
 
   const openDialog = () => setIsDialogOpen(true);
   const closeDialog = () => setIsDialogOpen(false);
@@ -81,7 +91,7 @@ export default function ProfileBadge({ className }: { className?: string }) {
                 alt="Batman"
                 width={40}
                 height={40}
-                style={{ width: 'auto', height: '40px' }}
+                style={{ width: "auto", height: "40px" }}
               />
             ) : (
               <FaUser />
@@ -105,14 +115,14 @@ export default function ProfileBadge({ className }: { className?: string }) {
   ) : (
     <>
       <button
-      onClick={() => router.push("/auth/login")}
-      className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-success-background text-light-success-color lg:w-[82%] dark:bg-dark-success-background dark:text-dark-success-color"
-    >
-      <FaUserLock className="text-xl" />
-      <h1 className="text-md font-medium text-light-success-color dark:text-dark-success-color">
-        Login.
-      </h1>
-    </button>
+        onClick={() => router.push("/auth/login")}
+        className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-success-background text-light-success-color lg:w-[82%] dark:bg-dark-success-background dark:text-dark-success-color"
+      >
+        <FaUserLock className="text-xl" />
+        <h1 className="text-md font-medium text-light-success-color dark:text-dark-success-color">
+          Login.
+        </h1>
+      </button>
     </>
   );
 }

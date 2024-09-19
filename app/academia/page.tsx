@@ -3,6 +3,7 @@ import { Suspense, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { Sidebar } from "@/components/Sidebar";
 import Loading from "@/components/States/Loading";
+import { Cookie } from "@/utils/Cookies";
 
 const Attendance = dynamic(
   () => import("./components/Attendance").then((a) => a.default),
@@ -19,9 +20,13 @@ const Timetable = dynamic(
 
 export default function Academia() {
   const [mounted, setMounted] = useState(false);
-
+  
   useEffect(() => {
     setMounted(true);
+    const key = Cookie.get("key");
+    if (!key) {
+      window.location.href = "/auth/login";
+    }
   }, []);
 
   if (!mounted) return null;

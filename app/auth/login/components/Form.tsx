@@ -13,46 +13,96 @@ export default function Form() {
 
   const [uid, setUid] = useState("");
   const [pass, setPass] = useState("");
+  const [captcha, setCaptcha] = useState("");
+  const [response, setResponse] = useState<any>(null);
 
   const [error, setError] = useState<number | null>(null);
   const [message, setMessage] = useState("");
 
+  const handleCaptcha = useCallback(async () => {
+    setError(-1);
+
+    const r = await fetch(`${getUrl()}/login`, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${token()}`,
+        Connection: "keep-alive",
+        "content-type": "application/json",
+        Origin: "https://academia-pro.vercel.app",
+      },
+      body: JSON.stringify({
+        account: uid.replaceAll(" ", "").replace("@srmist.edu.in", ""),
+        password: pass,
+        captcha: captcha,
+        identifier: response.identifier,
+        digest: response.digest,
+        cdigest: response.cdigest,
+      }),
+    });
+
+    if (!response.ok) {
+      setError(1);
+      setMessage("Server down.");
+    }
+    const res = await r.json();
+    if (res.authenticated) {
+      setError(2);
+      cookies.set("key", res.cookies);
+      console.log("Logged in");
+      router.refresh();
+    } else if (res?.message) {
+      setError(1);
+      setMessage(res?.message);
+    }
+  }, [captcha, uid, pass, router]);
+
   const handleLogin = useCallback(async () => {
     setError(-1);
-    const urls = getAllUrls();
-    for (const url of urls) {
-      try {
-        const response = await fetch(`${url}/login`, {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${token()}`,
-            Connection: "keep-alive",
-            "content-type": "application/json",
-            Origin: "https://academia-pro.vercel.app",
-          },
-          body: JSON.stringify({
-            account: uid.replaceAll(" ", "").replace("@srmist.edu.in", ""),
-            password: pass,
-          }),
-        });
-        if (!response.ok) continue;
 
-        const res = await response.json();
-        if (res.cookies) {
-          setError(2);
-          cookies.set("key", res.cookies);
-          console.log("Logged in");
-          router.refresh();
-        } else if (res.message) {
-          setError(1);
-          setMessage(res.message);
-        }
-        return;
-      } catch (error) {
-        console.warn(error);
-      } finally {
-        setTimeout(() => setError(0), 6000);
+    try {
+      const response = await fetch(`${getUrl()}/login`, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token()}`,
+          Connection: "keep-alive",
+          "content-type": "application/json",
+          Origin: "https://academia-pro.vercel.app",
+        },
+        body: JSON.stringify({
+          account: uid.replaceAll(" ", "").replace("@srmist.edu.in", ""),
+          password: pass,
+        }),
+      });
+      if (!response.ok) {
+        setError(1);
+        setMessage("Server down.");
       }
+
+      const res = await response.json();
+
+      if (res.captcha) {
+        setResponse(res);
+      } else if (res?.message?.includes("HIP")) {
+        if (res?.localized_message) {
+          setError(1);
+          setMessage(res.localized_message);
+        } else {
+          setError(1);
+          setMessage(res?.message);
+        }
+      } else if (res.authenticated) {
+        setError(2);
+        cookies.set("key", res.cookies);
+        console.log("Logged in");
+        router.refresh();
+      } else if (res?.message) {
+        setError(1);
+        setMessage(res?.message);
+      }
+    } catch (error) {
+      console.warn(error);
+    } finally {
+      setTimeout(() => setError(0), 6000);
     }
   }, [uid, pass, router]);
 
@@ -61,7 +111,7 @@ export default function Form() {
       className="flex flex-col gap-6"
       onSubmit={(e) => {
         e.preventDefault();
-        handleLogin();
+        response?.captcha ? handleCaptcha() : handleLogin();
       }}
     >
       {error === 1 && (
@@ -69,27 +119,51 @@ export default function Form() {
           SRM: {message}
         </p>
       )}
-      <div className="relative flex flex-col gap-1">
-        <UidInput uid={uid} setUid={setUid} />
-        <PasswordInput password={pass} setPassword={setPass} />
-      </div>
-
-      <Button
-        disabled={!uid || !pass}
-        className={
-          error === 2
-            ? "border border-light-success-color bg-light-success-background text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
-            : error === -1
-              ? "border border-light-warn-color bg-light-warn-background text-light-warn-color dark:border-dark-warn-color dark:bg-dark-warn-background dark:text-dark-warn-color"
-              : error === 1
-                ? "border border-light-error-color bg-light-error-background text-light-error-color dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color"
-                : ""
-        }
-        type="submit"
-        onClick={handleLogin}
-      >
-        {error === -1 ? "Authenticating" : error === 2 ? "Success" : "Login"}
-      </Button>
+      {!response?.captcha && (
+        <div className="relative flex flex-col gap-1">
+          <UidInput uid={uid} setUid={setUid} />
+          <PasswordInput password={pass} setPassword={setPass} />
+        </div>
+      )}
+      {response?.captcha && (
+        <>
+          <div className="flex flex-col gap-2">
+            <img src={response?.captcha} alt="captcha" className="rounded-xl" />
+            <input
+              type="text"
+              className="rounded-2xl border border-light-background-darker bg-dark-input px-6 py-3 font-sans font-medium text-light-color dark:border-dark-background-darker dark:text-dark-color"
+              placeholder="Enter captcha"
+              value={captcha}
+              onChange={(e) => setCaptcha(e.target.value)}
+            />
+          </div>
+          <button
+            type="submit"
+            onClick={handleCaptcha}
+            className={`w-fit transform rounded-xl bg-light-accent px-4 py-2 font-medium text-light-background-dark transition-all duration-200 hover:scale-95 hover:opacity-80 hover:shadow-lg active:scale-90 dark:bg-dark-accent dark:text-dark-background-dark`}
+          >
+            Validate
+          </button>
+        </>
+      )}
+      {!response?.captcha && (
+        <Button
+          disabled={!uid || !pass}
+          className={
+            error === 2
+              ? "border border-light-success-color bg-light-success-background text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
+              : error === -1
+                ? "border border-light-warn-color bg-light-warn-background text-light-warn-color dark:border-dark-warn-color dark:bg-dark-warn-background dark:text-dark-warn-color"
+                : error === 1
+                  ? "border border-light-error-color bg-light-error-background text-light-error-color dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color"
+                  : ""
+          }
+          type="submit"
+          onClick={handleLogin}
+        >
+          {error === -1 ? "Authenticating" : error === 2 ? "Success" : "Login"}
+        </Button>
+      )}
     </form>
   );
 }
