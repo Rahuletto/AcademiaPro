@@ -22,7 +22,7 @@ export default function Academia() {
           href="/auth/login"
           className="flex items-center justify-center px-3 py-1 text-md hover:px-7 text-lg hover:bg-transparent hover:dark:border-dark-accent hover:border-light-accent border-2 border-transparent dark:bg-dark-accent bg-light-accent text-dark-color hover:text-light-accent hover:dark:text-dark-accent dark:text-light-color font-semibold rounded-xl transition-all duration-300 transform w-52"
         >
-          Go to Dashboard
+          Dashboard
         </Link>
         :
         <Link
