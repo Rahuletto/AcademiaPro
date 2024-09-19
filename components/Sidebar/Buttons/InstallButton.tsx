@@ -13,6 +13,7 @@ export default function InstallButton({
     usePwa();
 
   const handleInstallPrompt = useCallback(() => {
+    console.log(canInstall, isStandalone, isInstalled);
     if (canInstall) {
       installPrompt();
     }
@@ -22,6 +23,8 @@ export default function InstallButton({
 
   return (
     (!isInstalled || !isStandalone) && (
+      <>
+      
       <button
         ref={ref}
         type="button"
@@ -32,8 +35,11 @@ export default function InstallButton({
         <GrInstallOption
           className={`text-xl text-light-color transition-all duration-75 dark:text-dark-color`}
         />
-        {anchor && <p className="m-0 hidden font-semibold lg:block">Install</p>}
+        {anchor && <p className="m-0 hidden font-semibold lg:block">{String(canInstall)}
+      {String(isStandalone)}
+      {String(isInstalled)}</p>}
       </button>
+      </>
     )
   );
 }
