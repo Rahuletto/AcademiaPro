@@ -71,7 +71,10 @@ const fetcher = async () => {
         },
       });
 
-      if (!response.ok) continue;
+      if (!response.ok) {
+        err = "Server seems to be down at the moment";
+        continue;
+      }
 
       const data: AllResponses = await response.json();
       if (
@@ -126,9 +129,6 @@ export function DataProvider({ children }: { children: ReactNode }) {
     errorRetryCount: 0,
     onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
       return;
-    },
-    onLoadingSlow: (key) => {
-      alert("Seems like your internet is slow, please switch to a faster network")
     },
     onSuccess: (data) => {
       if (data) {
