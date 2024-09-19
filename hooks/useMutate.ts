@@ -42,6 +42,7 @@ export function useMutateAll() {
         Cookie: cookie,
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "content-type": "application/json",
+        "Cache-Control": "private, max-age=3600, stale-while-revalidate=7200",
       },
     });
 
@@ -53,11 +54,14 @@ export function useMutateAll() {
   };
 
   const addCacheBustParam = (url: string) => {
-    const cacheBustParam = `cache_bust=${Date.now()}`;
+    const now = new Date();
+    const cacheBustParam = `cache_bust=${now.getUTCFullYear()}${now.getUTCMonth() + 1}${now.getUTCDate()}${now.getUTCHours()}${now.getUTCMinutes()}`; // Year, month, date, hour, and minute
+  
     return url.includes("?")
       ? `${url}&${cacheBustParam}`
       : `${url}?${cacheBustParam}`;
   };
+  
 
   const clearAndRevalidate = async (url: string, type: string) => {
     const cacheBustedUrl = addCacheBustParam(url);
@@ -84,6 +88,8 @@ export function useMutateAll() {
         timetable,
         requestedAt: Date.now(),
       };
+
+      mutate(urls.data, null, false);
 
       switch (type) {
         case "user":
