@@ -22,6 +22,7 @@ import Footer from "../Footer";
 
 // import Poster from "../Poster";
 import { IoLibrarySharp } from "react-icons/io5";
+import InstallButton from "./Buttons/InstallButton";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -52,8 +53,33 @@ export function Sidebar({
   const [isAnchored, setIsAnchored] = useState(true);
   const [isHoverEnabled, setIsHoverEnabled] = useState(false);
 
+  const [promptEvent, setPromptEvent] = useState<any>(null);
+
   const ref = useRef<HTMLDivElement>(null);
+  const installRef = useRef<HTMLButtonElement>(null);
   const content = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    window.addEventListener("beforeinstallprompt", (e) => {
+      e.preventDefault();
+      setPromptEvent(e);
+      if (installRef.current) installRef.current.style.display = "flex";
+    });
+  }, []);
+
+  function install() {
+    if (promptEvent) {
+      promptEvent.prompt();
+      promptEvent.userChoice.then((choiceResult: { outcome: string }) => {
+        if (choiceResult.outcome === "accepted") {
+          console.log("User accepted the install prompt");
+          setPromptEvent(null);
+        } else {
+          console.log("User dismissed the install prompt");
+        }
+      });
+    }
+  }
 
   function resize() {
     if (window.innerWidth > 768) {
@@ -240,7 +266,7 @@ export function Sidebar({
               </Link> */}
 
               <Link
-                className="font-semibold border after:content-['NEW'] after:absolute after:text-xs after:-top-1 after:-right-2 after:bg-[#1E2036] after:p-0.5 after:px-1 after:rounded-md relative border-[#786CFF] border-opacity-40 text-[#786CFF] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
+                className="relative border border-[#786CFF] border-opacity-40 font-semibold text-[#786CFF] after:absolute after:-right-2 after:-top-1 after:rounded-md after:bg-[#1E2036] after:p-0.5 after:px-1 after:text-xs after:content-['NEW'] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
                 title="Question papers"
                 href="/papers"
               >
@@ -261,6 +287,7 @@ export function Sidebar({
                 className={isOpen ? "animate-fadeIn" : "opacity-0"}
               />
             </div>
+            <InstallButton onClick={install} anchor={isAnchored} ref={installRef} />
             <OpenButton
               anchor={isAnchored}
               isOpen={isOpen}

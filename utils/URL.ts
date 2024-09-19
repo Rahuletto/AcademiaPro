@@ -7,7 +7,6 @@ function shuffleArray(array: (string | undefined)[]) {
 }
 
 const urls = [
-  process.env.NEXT_PUBLIC_API_URL_MORN,
   process.env.NEXT_PUBLIC_API_URL_EVEN,
   process.env.NEXT_PUBLIC_API_URL_NIGHT,
   process.env.NEXT_PUBLIC_API_URL_2,
@@ -15,13 +14,15 @@ const urls = [
   process.env.NEXT_PUBLIC_API_URL,
 ];
 
+const mornUrl = process.env.NEXT_PUBLIC_API_URL_MORN;
+
 export function getAllUrls() {
-  return shuffleArray(urls);
+  const shuffledUrls = shuffleArray(urls);
+  return [...shuffledUrls, mornUrl];
 }
 
 export function getUrl() {
   const rand = Math.floor(Math.random() * urls.length);
-
   return urls[rand] || process.env.NEXT_PUBLIC_API_URL_H;
 }
 
