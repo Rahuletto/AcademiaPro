@@ -63,7 +63,6 @@ export function Sidebar({
     window.addEventListener("beforeinstallprompt", (e) => {
       e.preventDefault();
       setPromptEvent(e);
-      if (installRef.current) installRef.current.style.display = "flex";
     });
   }, []);
 
@@ -78,6 +77,8 @@ export function Sidebar({
           console.log("User dismissed the install prompt");
         }
       });
+    } else {
+      alert("Browser/Device doesnt support install prompt");
     }
   }
 

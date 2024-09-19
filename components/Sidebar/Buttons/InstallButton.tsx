@@ -14,7 +14,7 @@ export default function InstallButton({
       ref={ref}
       type="button"
       name="Open navbar"
-      className={`fixed hidden items-center justify-start gap-3 lg:bottom-36 bottom-[5.14rem] transition-all duration-100 rounded-full p-3 ${anchor ? "lg:left-8 right-[2.1rem]" : "lg:right-7"} bg-light-background-light dark:bg-dark-background-light`}
+      className={`fixed flex items-center justify-start gap-3 lg:bottom-36 bottom-[5.14rem] transition-all duration-100 rounded-full p-3 ${anchor ? "lg:left-8 right-[2.1rem]" : "lg:right-7"} bg-light-background-light dark:bg-dark-background-light`}
       onClick={onClick}
     >
       <GrInstallOption
