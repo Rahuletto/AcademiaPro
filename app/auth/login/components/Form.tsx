@@ -3,7 +3,7 @@ import React, { useCallback, useState } from "react";
 import UidInput from "./form/UidInput";
 import PasswordInput from "./form/PasswordInput";
 import { Cookie as cookies } from "@/utils/Cookies";
-import { getAllUrls, getUrl } from "@/utils/URL";
+import { getUrl } from "@/utils/URL";
 import Button from "@/components/Button";
 import { useTransitionRouter as useRouter } from "next-view-transitions";
 import { token } from "@/utils/Encrypt";
@@ -80,6 +80,10 @@ export default function Form() {
 
       const res = await response.json();
 
+      if(res.cookies && !res.cookies?.includes("undefined")) {
+        setError(1);
+        setMessage("Session invalid?");
+      }
       if (res.captcha) {
         setResponse(res);
       } else if (res?.message?.includes("HIP")) {

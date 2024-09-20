@@ -1,4 +1,3 @@
-import { useUser } from "@/provider/UserProvider";
 import { FaXmark } from "react-icons/fa6";
 import Refresh from "../Refresh";
 import { useData } from "@/provider/DataProvider";

@@ -4,6 +4,8 @@ import dynamic from "next/dynamic";
 import { Sidebar } from "@/components/Sidebar";
 import Loading from "@/components/States/Loading";
 import { Cookie } from "@/utils/Cookies";
+import Storage from "@/utils/Storage";
+import { useRouter } from "next/navigation";
 
 const Attendance = dynamic(
   () => import("./components/Attendance").then((a) => a.default),
@@ -20,14 +22,17 @@ const Timetable = dynamic(
 
 export default function Academia() {
   const [mounted, setMounted] = useState(false);
-  
+  const router = useRouter();
+
   useEffect(() => {
     setMounted(true);
     const key = Cookie.get("key");
-    if (!key) {
-      window.location.href = "/auth/login";
+    if (!key || key.includes("undefined")) {
+      Storage.clear();
+      Cookie.clear();
+      router.push("/auth/login");
     }
-  }, []);
+  }, [router]);
 
   if (!mounted) return null;
 

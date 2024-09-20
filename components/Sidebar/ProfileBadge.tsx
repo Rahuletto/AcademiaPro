@@ -1,4 +1,3 @@
-import { useUser } from "@/provider/UserProvider";
 import { useState, useEffect } from "react";
 import { FaUser, FaUserLock } from "react-icons/fa";
 import { createPortal } from "react-dom";

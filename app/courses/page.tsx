@@ -1,5 +1,4 @@
 "use client";
-import { useCourses } from "@/provider/CourseProvider";
 import React, { useEffect } from "react";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";

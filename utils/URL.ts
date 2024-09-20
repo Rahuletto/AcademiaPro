@@ -27,3 +27,10 @@ export function getUrl() {
 }
 
 export const revalUrl = process.env.NEXT_PUBLIC_API_URL;
+
+
+export function rotateArray(array: (string | undefined)[], urlIndex: number = 0) {
+  const rotatedArray = array.slice(urlIndex).concat(array.slice(0, urlIndex));
+  urlIndex = (urlIndex + 1) % array.length;
+  return rotatedArray;
+}

@@ -2,8 +2,6 @@
 import Link from "@/components/Link";
 import Loading from "@/components/States/Loading";
 import { useData } from "@/provider/DataProvider";
-import { useTimetable } from "@/provider/TimetableProvider";
-import { useUser } from "@/provider/UserProvider";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
