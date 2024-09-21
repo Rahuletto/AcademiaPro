@@ -27,7 +27,7 @@ export default function Academia() {
   useEffect(() => {
     setMounted(true);
     const key = Cookie.get("key");
-    if (!key || key.includes("undefined")) {
+    if (!key || key.includes("undefined") || !key.includes("priority")) {
       Storage.clear();
       Cookie.clear();
       router.push("/auth/login");
