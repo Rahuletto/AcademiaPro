@@ -4,7 +4,7 @@ import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceCourse, AttendanceResponse } from "@/types/Attendance";
-import { getUrl, getAllUrls, revalUrl } from "@/utils/URL";
+import { getUrl, getAllUrls, revalUrl, rotateArray } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
@@ -38,6 +38,7 @@ const DataContext = createContext<DataContextType>({
   mutate: async () => {},
 });
 
+const urlIndex = 0;
 const fetcher = async () => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
@@ -52,9 +53,8 @@ const fetcher = async () => {
     return null;
   }
 
-  const urls = getAllUrls();
+  const urls = rotateArray(getAllUrls(), urlIndex);
 
-  let err = ""
   for (const url of urls) {
     try {
       const response = await fetch(`${url}/get`, {
@@ -66,38 +66,30 @@ const fetcher = async () => {
           Cookie: cookie,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
-          "content-type": "application/json",
-          "Cache-Control": "private, maxage=3600, stale-while-revalidate=7200",
+          "Content-Type": "application/json",
+          "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
         },
       });
 
-      if (!response.ok) {
-        err = "Server seems to be down at the moment";
+      if (response.ok) {
+        const data: AllResponses = await response.json();
+        if (data && data.user) {
+          return data;
+        } else {
+          console.error("Invalid response format, moving to the next URL");
+          continue;
+        }
+      } else {
+        console.error(`Response not OK from ${url}, trying next URL`);
         continue;
       }
-
-      const data: AllResponses = await response.json();
-      if (
-        !data ||
-        !data.user ||
-        !data.attendance ||
-        !data.marks ||
-        !data.courses ||
-        !data.timetable
-      ) {
-        throw new Error("Invalid response format");
-      }
-
-      return data;
     } catch (error) {
-      
-      err = (error as any).message
       console.error(`Error fetching from ${url}:`, (error as any).message);
-      continue;
+      continue; // If there's an error, continue to the next URL
     }
   }
 
-  throw new Error(err || "All URL's failed to fetch.");
+  throw new Error("All URLs failed to fetch data.");
 };
 
 export function useData() {
@@ -106,6 +98,16 @@ export function useData() {
 
 export function DataProvider({ children }: { children: ReactNode }) {
   const cookie = cookies.get("key");
+
+  const getAttendance = () =>
+    Storage.get<AttendanceResponse | null>("attendance", null);
+  const attendance = getAttendance();
+
+  if (attendance) {
+    cookies.clear();
+    Storage.clear();
+    sessionStorage.clear();
+  }
 
   const getCachedData = () => Storage.get<AllResponses | null>("data", null);
 

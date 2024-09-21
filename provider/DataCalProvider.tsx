@@ -4,7 +4,7 @@ import { type ReactNode, createContext, useContext, useState } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceCourse } from "@/types/Attendance";
-import { getUrl, getAllUrls, revalUrl } from "@/utils/URL";
+import { getUrl, getAllUrls, revalUrl, rotateArray } from "@/utils/URL";
 import { token } from "@/utils/Encrypt";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
@@ -24,6 +24,8 @@ interface DayContextType {
   mutate: () => Promise<void | CalResponses | null | undefined>;
 }
 
+const urlIndex = 0;
+
 const DayContext = createContext<DayContextType>({
   calendar: null,
   dayOrder: null,
@@ -33,7 +35,6 @@ const DayContext = createContext<DayContextType>({
   isValidating: false,
   mutate: async () => {},
 });
-
 const fetcher = async () => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
@@ -48,7 +49,7 @@ const fetcher = async () => {
     return null;
   }
 
-  const urls = getAllUrls();
+  const urls = rotateArray(getAllUrls(), urlIndex);
 
   for (const url of urls) {
     try {
@@ -61,19 +62,23 @@ const fetcher = async () => {
           Cookie: cookie,
           Connection: "keep-alive",
           "Accept-Encoding": "gzip, deflate, br, zstd",
-          "content-type": "application/json",
+          "Content-Type": "application/json",
           "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
         },
       });
 
-      if (!response.ok) continue;
-
-      const data: CalResponses = await response.json();
-      if (!data || !data.calendar || !data.today) {
-        throw new Error("Invalid response format");
+      if (response.ok) {
+        const data: CalResponses = await response.json();
+        if (data && data.calendar && data.today) {
+          return data;
+        } else {
+          console.error("Invalid response format, moving to the next URL");
+          continue;
+        }
+      } else {
+        console.error(`Response not OK from ${url}, trying next URL`);
+        continue;
       }
-
-      return data;
     } catch (error) {
       console.error(`Error fetching from ${url}:`, (error as any).message);
       continue;
@@ -124,12 +129,12 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
       },
     },
   );
-    const calendar = data?.calendar;
-    const current = calendar?.[new Date().getMonth() % 5].days;
-    const val = current?.find(
-      (day) => day.date === new Date().getDate().toString()
-    );
-  const day = val?.dayOrder
+  const calendar = data?.calendar;
+  const current = calendar?.[new Date().getMonth() % 5].days;
+  const val = current?.find(
+    (day) => day.date === new Date().getDate().toString(),
+  );
+  const day = val?.dayOrder;
 
   return (
     <DayContext.Provider

@@ -8,9 +8,8 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 import { HiLightningBolt } from "react-icons/hi";
-import { BsCalendar2WeekFill } from "react-icons/bs";
+import { BsCalendar2WeekFill, BsFillPinAngleFill } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
-
 import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
 
@@ -22,6 +21,7 @@ import Footer from "../Footer";
 
 // import Poster from "../Poster";
 import { IoLibrarySharp } from "react-icons/io5";
+import InstallButton from "./Buttons/InstallButton";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -53,6 +53,7 @@ export function Sidebar({
   const [isHoverEnabled, setIsHoverEnabled] = useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
+  const installRef = useRef<HTMLButtonElement>(null);
   const content = useRef<HTMLDivElement>(null);
 
   function resize() {
@@ -240,12 +241,22 @@ export function Sidebar({
               </Link> */}
 
               <Link
-                className="font-semibold border after:content-['NEW'] after:absolute after:text-xs after:-top-1 after:-right-2 after:bg-[#1E2036] after:p-0.5 after:px-1 after:rounded-md relative border-[#786CFF] border-opacity-40 text-[#786CFF] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
+                className="relative font-semibold text-[#786CFF] after:absolute after:-right-2 after:-top-1 after:rounded-md after:bg-[#1E2036] after:p-0.5 after:px-1 after:text-xs after:content-['NEW'] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
                 title="Question papers"
                 href="/papers"
               >
                 <IoLibrarySharp className="text-xl" />
                 Library
+              </Link>
+
+              <Link
+                aria-disabled
+                className="relative cursor-not-allowed border border-dashed border-[#F34F4F1e] font-semibold text-[#F34F4F] after:absolute after:-right-2 after:-top-1 after:rounded-md after:bg-[#361e1e] after:p-0.5 after:px-1 after:text-xs after:content-['🏗️'] hover:bg-[#F34F4F1e] hover:text-[#F34F4F] dark:text-[#F34F4F] dark:hover:bg-[#F34F4F1e] dark:hover:text-[#F34F4F]"
+                title="Coming Soon"
+                href="#"
+              >
+                <BsFillPinAngleFill className="text-xl" />
+                Events
               </Link>
             </div>
 
@@ -261,6 +272,10 @@ export function Sidebar({
                 className={isOpen ? "animate-fadeIn" : "opacity-0"}
               />
             </div>
+            <InstallButton
+              anchor={isAnchored}
+              ref={installRef}
+            />
             <OpenButton
               anchor={isAnchored}
               isOpen={isOpen}
