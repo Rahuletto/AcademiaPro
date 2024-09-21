@@ -39,7 +39,7 @@ const fetcher = async () => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
-  const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
+  const cook = cookie;
   if (
     !cook ||
     cook === "" ||
