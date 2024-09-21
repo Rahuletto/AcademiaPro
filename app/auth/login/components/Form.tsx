@@ -80,7 +80,7 @@ export default function Form() {
 
       const res = await response.json();
 
-      if(res.cookies && !res.cookies?.includes("undefined")) {
+      if(res.cookies && res.cookies?.includes("undefined")) {
         setError(1);
         setMessage("Session invalid?");
       }
