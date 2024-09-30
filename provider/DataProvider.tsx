@@ -99,16 +99,6 @@ export function useData() {
 export function DataProvider({ children }: { children: ReactNode }) {
   const cookie = cookies.get("key");
 
-  const getAttendance = () =>
-    Storage.get<AttendanceResponse | null>("attendance", null);
-  const attendance = getAttendance();
-
-  if (attendance) {
-    cookies.clear();
-    Storage.clear();
-    sessionStorage.clear();
-  }
-
   const getCachedData = () => Storage.get<AllResponses | null>("data", null);
 
   const {
