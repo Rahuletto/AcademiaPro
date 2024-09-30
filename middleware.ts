@@ -7,6 +7,8 @@ const MAINTENANCE = false;
 
 const isAuthenticated = (request: NextRequest): boolean => {
   const token = request.cookies.get("key");
+  
+
   return !!token;
 };
 
