@@ -30,13 +30,6 @@ export default function ProfileBadge({ className }: { className?: string }) {
     };
   }, []);
 
-  useEffect(() => {
-    if (!isLoading && !user && !error && dialogRoot) {
-      alert("Cannot get users data. Logging you out.");
-      router.push("/auth/logout");
-    }
-  }, [isLoading, user, error, router, dialogRoot]);
-
   const openDialog = () => setIsDialogOpen(true);
   const closeDialog = () => setIsDialogOpen(false);
   const logout = () => {

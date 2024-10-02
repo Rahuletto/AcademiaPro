@@ -11,7 +11,7 @@ export default forwardRef<HTMLDivElement, DayCellProps>(function DayCell(
   { day, isToday, isTomorrow },
   ref,
 ) {
-  const isErrorDay = day.dayOrder === "-";
+  const isErrorDay = day?.dayOrder === "-";
 
   const cellClasses = ` 
     flex min-h-48 flex-col items-start justify-between gap-3 border border-dark-background-light p-4 xl:max-h-none xl:min-h-64 xl:items-end
@@ -31,13 +31,13 @@ export default forwardRef<HTMLDivElement, DayCellProps>(function DayCell(
   return (
     <div
       ref={ref}
-      aria-label={day.date}
-      title={`${day.date} - Day Order: ${day.dayOrder}`}
+      aria-label={day?.date}
+      title={`${day.date} - Day Order: ${day?.dayOrder}`}
       className={cellClasses}
     >
       <DateDisplay
         date={day.date}
-        day={day.day}
+        day={day?.day}
         isToday={isToday}
         isErrorDay={isErrorDay}
       />

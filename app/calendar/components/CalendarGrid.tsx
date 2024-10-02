@@ -12,7 +12,11 @@ interface CalendarGridProps {
   isDownload?: boolean;
 }
 
-export default function CalendarGrid({ days, month, isDownload }: CalendarGridProps) {
+export default function CalendarGrid({
+  days,
+  month,
+  isDownload,
+}: CalendarGridProps) {
   const todayRef = useRef<HTMLDivElement>(null);
   const date = new Date().getDate();
 
@@ -21,11 +25,11 @@ export default function CalendarGrid({ days, month, isDownload }: CalendarGridPr
       todayRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
   }, [month]);
 
-  const getFirstDayIndex = () => weekdays.indexOf(days[0].day);
+  const getFirstDayIndex = () => weekdays.indexOf(days[0]?.day);
 
   return (
     <div className="w-full pt-1">
-      <div className="hidden text-center dark:shadow-[0px_-60px_40px_50px_#06090de7] shadow-[0px_-60px_40px_50px_#ffffffe7] font-bold sticky top-16 z-10 dark:bg-dark-background-dark bg-light-background-light 2xl:grid 2xl:grid-cols-7 2xl:gap-4">
+      <div className="sticky top-16 z-10 hidden bg-light-background-light text-center font-bold shadow-[0px_-60px_40px_50px_#ffffffe7] 2xl:grid 2xl:grid-cols-7 2xl:gap-4 dark:bg-dark-background-dark dark:shadow-[0px_-60px_40px_50px_#06090de7]">
         {weekdays.map((weekday) => (
           <div key={weekday} className="p-2 font-medium">
             {weekday}
@@ -43,12 +47,16 @@ export default function CalendarGrid({ days, month, isDownload }: CalendarGridPr
               key={index}
               day={day}
               isTomorrow={
-                isDownload ? false : (date + 1 === Number(day.date) &&
-                new Date().getMonth() === month &&
-                new Date().getHours() > 16)
+                isDownload
+                  ? false
+                  : date + 1 === Number(day.date) &&
+                    new Date().getMonth() === month &&
+                    new Date().getHours() > 16
               }
               isToday={
-                isDownload ? false : date === Number(day.date) && new Date().getMonth() === month
+                isDownload
+                  ? false
+                  : date === Number(day.date) && new Date().getMonth() === month
               }
               ref={date === Number(day.date) ? todayRef : null}
             />

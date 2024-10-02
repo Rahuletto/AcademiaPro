@@ -48,9 +48,10 @@ export const Cookie = {
 };
 
 export function getCookie(cookie: string, name: string) {
-  const regex = new RegExp(`(^| )${name}=([^;]+)`);
-  const match = cookie.match(regex);
-  if (match) {
-    return match[2];
-  }
+  // const regex = new RegExp(`(^| )${name}=([^;]+)`);
+  // const match = cookie.match(regex);
+  // if (match) {
+  //   return match[2];
+  // }
+  return cookie;
 }

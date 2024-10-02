@@ -24,8 +24,6 @@ interface DayContextType {
   mutate: () => Promise<void | CalResponses | null | undefined>;
 }
 
-const urlIndex = 0;
-
 const DayContext = createContext<DayContextType>({
   calendar: null,
   dayOrder: null,
@@ -39,7 +37,7 @@ const fetcher = async () => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
-  const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
+  const cook = cookie;
   if (
     !cook ||
     cook === "" ||
@@ -49,39 +47,26 @@ const fetcher = async () => {
     return null;
   }
 
-  const urls = rotateArray(getAllUrls(), urlIndex);
+  const response = await fetch(`${getUrl()}/getCal`, {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${token()}`,
+      "X-CSRF-Token": cookie,
+      "Set-Cookie": cookie,
+      Cookie: cookie,
+      Connection: "keep-alive",
+      "Accept-Encoding": "gzip, deflate, br, zstd",
+      "Content-Type": "application/json",
+      "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
+    },
+  });
 
-  for (const url of urls) {
-    try {
-      const response = await fetch(`${url}/getCal`, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token()}`,
-          "X-CSRF-Token": cookie,
-          "Set-Cookie": cookie,
-          Cookie: cookie,
-          Connection: "keep-alive",
-          "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Content-Type": "application/json",
-          "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
-        },
-      });
-
-      if (response.ok) {
-        const data: CalResponses = await response.json();
-        if (data && data.calendar && data.today) {
-          return data;
-        } else {
-          console.error("Invalid response format, moving to the next URL");
-          continue;
-        }
-      } else {
-        console.error(`Response not OK from ${url}, trying next URL`);
-        continue;
-      }
-    } catch (error) {
-      console.error(`Error fetching from ${url}:`, (error as any).message);
-      continue;
+  if (response.ok) {
+    const data: CalResponses = await response.json();
+    if (data && data.calendar && data.today) {
+      return data;
+    } else {
+      console.error("Invalid response format, moving to the next URL");
     }
   }
 

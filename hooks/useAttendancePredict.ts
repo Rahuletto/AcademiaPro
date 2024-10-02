@@ -52,7 +52,7 @@ export const useAttendancePrediction = (
       if (!currentMonth) return;
 
       const dayInfo = currentMonth.days.find((d) => d.date === formattedDate);
-      if (!dayInfo || dayInfo.day === "Sat" || dayInfo.day === "Sun") return;
+      if (!dayInfo || dayInfo?.day === "Sat" || dayInfo?.day === "Sun") return;
 
       const daySchedule = timetable.find(
         (t) => t.dayOrder.replace("Day ", "") === dayInfo.dayOrder,

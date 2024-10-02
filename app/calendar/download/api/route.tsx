@@ -1,5 +1,4 @@
 import { ImageResponse } from "next/og";
-// import CalendarGen from "@/components/Generators/Calendar";
 import { Day } from "@/types/Calendar";
 
 const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -27,10 +26,10 @@ export async function POST(request: Request) {
         },
       );
 
-    const month = calendar.calendar.month;
-    const days = calendar.calendar.days;
+    const month = calendar.calendar?.month;
+    const days = calendar.calendar?.days;
 
-    const getFirstDayIndex = () => weekdays.indexOf(days[0].day);
+    const getFirstDayIndex = () => weekdays.indexOf(days[0]?.day);
 
     return new ImageResponse(
       (
@@ -102,7 +101,7 @@ function DayCell({ day }: { day: Day }) {
     >
       <DateDisplay
         date={day.date}
-        day={day.day}
+        day={day?.day}
         isToday={false}
         isErrorDay={isErrorDay}
       />
