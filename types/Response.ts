@@ -13,10 +13,13 @@ export interface AllResponses {
   timetable: Table[];
   courses: Course[];
   requestedAt: number;
+  error?: string;
+
 }
 
 export interface CalResponses {
   today: Day;
   calendar: Calendar[];
   requestedAt: number;
+  error?: string;
 }

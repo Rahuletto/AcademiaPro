@@ -1,11 +1,11 @@
 "use client";
 import { Cookie as cookies, getCookie } from "@/utils/Cookies";
-import { type ReactNode, createContext, useContext, useState } from "react";
+import { type ReactNode, createContext, useContext } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
-import { AttendanceCourse, AttendanceResponse } from "@/types/Attendance";
-import { getUrl, getAllUrls, revalUrl, rotateArray } from "@/utils/URL";
-import { token } from "@/utils/Encrypt";
+import { AttendanceCourse } from "@/types/Attendance";
+import rotateUrl from "@/utils/URL";
+import { token } from "@/utils/Tokenize";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
 import { User } from "@/types/User";
@@ -38,58 +38,25 @@ const DataContext = createContext<DataContextType>({
   mutate: async () => {},
 });
 
-const urlIndex = 0;
-const fetcher = async () => {
+const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
-  const cook = getCookie(cookie ?? "", "_iamadt_client_10002227248");
-  if (
-    !cook ||
-    cook === "" ||
-    cook === "undefined" ||
-    cookie.includes("undefined")
-  ) {
-    return null;
-  }
+  const response = await fetch(url, {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${token()}`,
+      "X-CSRF-Token": cookie,
+      "Set-Cookie": cookie,
+      Cookie: cookie,
+      "Content-Type": "application/json",
+      "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+    },
+  });
 
-  const urls = rotateArray(getAllUrls(), urlIndex);
-
-  for (const url of urls) {
-    try {
-      const response = await fetch(`${url}/get`, {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token()}`,
-          "X-CSRF-Token": cookie,
-          "Set-Cookie": cookie,
-          Cookie: cookie,
-          Connection: "keep-alive",
-          "Accept-Encoding": "gzip, deflate, br, zstd",
-          "Content-Type": "application/json",
-          "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
-        },
-      });
-
-      if (response.ok) {
-        const data: AllResponses = await response.json();
-        if (data && data.user) {
-          return data;
-        } else {
-          console.error("Invalid response format, moving to the next URL");
-          continue;
-        }
-      } else {
-        console.error(`Response not OK from ${url}, trying next URL`);
-        continue;
-      }
-    } catch (error) {
-      console.error(`Error fetching from ${url}:`, (error as any).message);
-      continue; // If there's an error, continue to the next URL
-    }
-  }
-
-  throw new Error("All URLs failed to fetch data.");
+  const data: AllResponses = await response.json();
+  console.log(response)
+  return data;
 };
 
 export function useData() {
@@ -107,28 +74,32 @@ export function DataProvider({ children }: { children: ReactNode }) {
     isLoading,
     isValidating,
     mutate,
-  } = useSWR<AllResponses | null>(cookie ? `${revalUrl}/get` : null, fetcher, {
-    fallbackData: getCachedData(),
-    revalidateOnFocus: false,
-    shouldRetryOnError: false,
-    suspense: true,
-    revalidateOnReconnect: true,
-    keepPreviousData: true,
-    refreshInterval: 1000 * 60 * 60 * 12,
-    revalidateOnMount: true,
-    revalidateIfStale: false,
-    dedupingInterval: 1000 * 60 * 5,
-    errorRetryCount: 0,
-    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
-      return;
+  } = useSWR<AllResponses | null>(
+    cookie ? `${rotateUrl()}/getData` : null,
+    fetcher,
+    {
+      fallbackData: getCachedData(),
+      revalidateOnFocus: false,
+      shouldRetryOnError: false,
+      suspense: true,
+      revalidateOnReconnect: true,
+      keepPreviousData: true,
+      refreshInterval: 1000 * 60 * 60 * 12,
+      revalidateOnMount: true,
+      revalidateIfStale: false,
+      dedupingInterval: 1000 * 60 * 5,
+      errorRetryCount: 0,
+      onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+        return;
+      },
+      onSuccess: (data) => {
+        if (data) {
+          Storage.set("data", data);
+        }
+        return data;
+      },
     },
-    onSuccess: (data) => {
-      if (data) {
-        Storage.set("data", data);
-      }
-      return data;
-    },
-  });
+  );
 
   return (
     <DataContext.Provider
