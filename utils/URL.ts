@@ -1,6 +1,6 @@
-const serverUrls = [
-  "https://newscrape.rameshrahul1974.workers.dev"
-];
+const serverUrls = ["https://newscrape.rameshrahul1974.workers.dev"];
+
+export const revalUrl = serverUrls[0];
 
 export default function rotateUrl(): string {
   const timestamp = Date.now();

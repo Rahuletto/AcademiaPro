@@ -40,7 +40,7 @@ export default function Form() {
       }),
     });
 
-    if (!response.ok) {
+    if (!r.ok) {
       setError(1);
       setMessage("Server down.");
     }
@@ -54,7 +54,7 @@ export default function Form() {
       setError(1);
       setMessage(res?.message);
     }
-  }, [captcha, uid, pass, router]);
+  }, [captcha, uid, pass, router, response]);
 
   const handleLogin = useCallback(async () => {
     setError(-1);
