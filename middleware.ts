@@ -3,7 +3,7 @@ import { NextRequest } from "next/server";
 
 const protectedRoutes = ["/academia", "/calendar", "/links", "/courses"];
 const home = ["/"];
-const MAINTENANCE = true;
+const MAINTENANCE = false;
 
 const isAuthenticated = (request: NextRequest): boolean => {
   const token = request.cookies.get("key");
