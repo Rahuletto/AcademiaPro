@@ -13,7 +13,11 @@ const isAuthenticated = (request: NextRequest): boolean => {
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+  const token = request.cookies.get("key");
 
+  if (token && token.value && token.value.length <= 500) {
+    return NextResponse.redirect(new URL("/auth/logout", request.url));
+  }
   if (MAINTENANCE && pathname !== "/maintenance") {
     return NextResponse.redirect(new URL("/maintenance", request.url));
   } else if (!MAINTENANCE && pathname === "/maintenance") {
