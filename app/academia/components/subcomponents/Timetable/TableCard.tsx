@@ -155,13 +155,13 @@ const TableCard: React.FC<TableCardProps> = ({ view, currentDayOrder }) => {
 
   return (
     <div className="flex w-full animate-fadeIn flex-col justify-between rounded-xl bg-light-background-light transition duration-200 xl:flex-row dark:bg-dark-background-dark">
-      {timetable[currentDayOrder - 1]?.map((sub, i) => {
+      {timetable[currentDayOrder - 1]?.table.map((sub, i) => {
         const [subject, typeWithParens] = sub?.split("(") ?? [];
         const type = typeWithParens?.split(")")?.[0];
         const nullStyler = constructNullStyles(
           0,
           i,
-          timetable[currentDayOrder - 1],
+          timetable[currentDayOrder - 1].table,
           true,
           true,
         );

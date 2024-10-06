@@ -16,7 +16,7 @@ interface DataContextType {
   marks: Mark[] | null;
   courses: Course[] | null;
   user: User | null;
-  timetable: (string | undefined)[][] | null;
+  timetable: { day: number; table: (string | undefined)[] }[] | null;
   error: Error | null;
   requestedAt: number | null;
   isLoading: boolean;

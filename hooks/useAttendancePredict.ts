@@ -55,11 +55,11 @@ export const useAttendancePrediction = (
       if (!dayInfo || dayInfo?.day === "Sat" || dayInfo?.day === "Sun") return;
 
       const daySchedule = timetable.find(
-        (t) => t.dayOrder.replace("Day ", "") === dayInfo.dayOrder,
+        (t) => t.day.replace("Day ", "") === dayInfo.dayOrder,
       );
       if (!daySchedule) return;
 
-      daySchedule?.subjects.forEach((subject) => {
+      daySchedule?.table.forEach((subject) => {
         if (!subject) return;
 
         const cleanedSubject = subject.replace(/\[.*?\]/g, "").trim();

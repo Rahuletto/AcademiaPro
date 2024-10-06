@@ -4,6 +4,6 @@ export type TimeTableResponse = SuccessTimeTableResponse & ProscrapeError;
 export interface SuccessTimeTableResponse {
   regNumber: string;
   batch: string;
-  schedule: ((string | undefined)[])[];
+  schedule: { day: number; table: (string | undefined)[] }[];
   requestedAt: number | null;
 }
