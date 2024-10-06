@@ -77,7 +77,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     fetcher,
     {
       fallbackData: getCachedData(),
-      revalidateOnFocus: false,
+      revalidateOnFocus: true,
       shouldRetryOnError: false,
       suspense: true,
       revalidateOnReconnect: true,

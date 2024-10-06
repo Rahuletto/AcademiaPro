@@ -71,7 +71,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     fetcher,
     {
       fallbackData: getCachedPlanner(),
-      revalidateOnFocus: false,
+      revalidateOnFocus: true,
       suspense: true,
       shouldRetryOnError: false,
       revalidateOnReconnect: true,
