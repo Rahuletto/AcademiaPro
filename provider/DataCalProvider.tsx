@@ -41,7 +41,7 @@ const fetcher = async (url: string) => {
       Connection: "keep-alive",
       "Accept-Encoding": "gzip, deflate, br, zstd",
       "Content-Type": "application/json",
-      "Cache-Control": "public, maxage=86400, stale-while-revalidate=7200",
+      "Cache-Control": "public, max-age=3600, s-maxage=7200, stale-while-revalidate=3600, stale-if-error=86400",
     },
   });
 
@@ -75,10 +75,10 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
       suspense: true,
       shouldRetryOnError: false,
       revalidateOnReconnect: true,
-      revalidateOnMount: true,
+      revalidateOnMount: false,
       keepPreviousData: true,
-      refreshInterval: 1000 * 60 * 60 * 12,
-      revalidateIfStale: false,
+      refreshInterval: 1000 * 60 * 30,
+      revalidateIfStale: true,
       dedupingInterval: 1000 * 60 * 5,
       onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
         return;

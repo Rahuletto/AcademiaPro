@@ -49,7 +49,7 @@ const fetcher = async (url: string) => {
       "Set-Cookie": cookie,
       Cookie: cookie,
       "Content-Type": "application/json",
-      "Cache-Control": "private, maxage=86400, stale-while-revalidate=7200",
+      "Cache-Control": "public, max-age=900, s-maxage=1800, stale-while-revalidate=300, stale-if-error=86400"
     },
   });
 
@@ -82,9 +82,9 @@ export function DataProvider({ children }: { children: ReactNode }) {
       suspense: true,
       revalidateOnReconnect: true,
       keepPreviousData: true,
-      refreshInterval: 1000 * 60 * 60 * 12,
-      revalidateOnMount: true,
-      revalidateIfStale: false,
+      refreshInterval: 1000 * 60 * 10,
+      revalidateOnMount: false,
+      revalidateIfStale: true,
       dedupingInterval: 1000 * 60 * 5,
       errorRetryCount: 0,
       onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
