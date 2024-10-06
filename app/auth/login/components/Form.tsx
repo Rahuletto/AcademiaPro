@@ -3,10 +3,10 @@ import React, { useCallback, useState } from "react";
 import UidInput from "./form/UidInput";
 import PasswordInput from "./form/PasswordInput";
 import { Cookie as cookies } from "@/utils/Cookies";
-import { getUrl } from "@/utils/URL";
+import rotateUrl from "@/utils/URL";
 import Button from "@/components/Button";
 import { useRouter } from "next/navigation";
-import { token } from "@/utils/Encrypt";
+import { token } from "@/utils/Tokenize";
 
 export default function Form() {
   const router = useRouter();
@@ -22,7 +22,7 @@ export default function Form() {
   const handleCaptcha = useCallback(async () => {
     setError(-1);
 
-    const r = await fetch(`${getUrl()}/login`, {
+    const r = await fetch(`${rotateUrl()}/login/captcha`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token()}`,
@@ -40,7 +40,7 @@ export default function Form() {
       }),
     });
 
-    if (!response.ok) {
+    if (!r.ok) {
       setError(1);
       setMessage("Server down.");
     }
@@ -54,13 +54,13 @@ export default function Form() {
       setError(1);
       setMessage(res?.message);
     }
-  }, [captcha, uid, pass, router]);
+  }, [captcha, uid, pass, router, response]);
 
   const handleLogin = useCallback(async () => {
     setError(-1);
 
     try {
-      const response = await fetch(`${getUrl()}/login`, {
+      const response = await fetch(`${rotateUrl()}/login`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token()}`,

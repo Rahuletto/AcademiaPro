@@ -42,8 +42,8 @@ export default function Courses() {
             <div className="animate-fadeIn transition duration-200">
               {courses &&
                 courses
-                  ?.filter((a) => a.courseTitle !== "null")
-                  ?.filter((a) => a.courseType === "Theory")
+                  ?.filter((a) => a.title !== "null")
+                  ?.filter((a) => a.slotType === "Theory")
                   .map((course, i) => (
                     <div
                       key={i}
@@ -57,8 +57,8 @@ export default function Courses() {
             <div className="mt-4 animate-fadeIn transition duration-200">
               {courses &&
                 courses
-                  ?.filter((a) => a.courseTitle !== "null")
-                  ?.filter((a) => a.courseType === "Practical")
+                  ?.filter((a) => a.title !== "null")
+                  ?.filter((a) => a.slotType === "Practical")
                   .map((course, i) => (
                     <div
                       key={i}

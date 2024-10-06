@@ -33,6 +33,6 @@ export interface CalendarMonth {
 }
 
 export interface TimetableDay {
-  dayOrder: string;
-  subjects: string[];
+  day: number;
+  table: (string|undefined)[];
 }

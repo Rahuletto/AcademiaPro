@@ -2,12 +2,10 @@ import { ProscrapeError } from "./Error";
 
 export type TimeTableResponse = SuccessTimeTableResponse & ProscrapeError;
 export interface SuccessTimeTableResponse {
-  table: Table[];
+  regNumber: string;
+  batch: string;
+  schedule: Table[];
   requestedAt: number | null;
 }
 
-export interface Table {
-  day: number;
-  dayOrder: string;
-  subjects: (string | undefined)[];
-}
+export interface Table { day: number; table: (string | undefined)[] }

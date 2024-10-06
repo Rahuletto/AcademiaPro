@@ -1,5 +1,5 @@
-import { token } from "@/utils/Encrypt";
-import { getUrl, revalUrl } from "@/utils/URL";
+import { token } from "@/utils/Tokenize";
+import {revalUrl} from "@/utils/URL";
 import { useSWRConfig } from "swr";
 import { Cookie as cookies } from "@/utils/Cookies";
 import { useData } from "@/provider/DataProvider";

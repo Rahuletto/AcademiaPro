@@ -1,14 +1,11 @@
+import React, { forwardRef } from 'react';
 import { GrInstallOption } from "react-icons/gr";
 import { usePwa } from "@dotmind/react-use-pwa";
 import { useCallback } from "react";
 
-export default function InstallButton({
-  ref,
+export default forwardRef<HTMLButtonElement, {anchor: boolean}>(function InstallButton({
   anchor,
-}: {
-  ref: any;
-  anchor?: boolean;
-}) {
+}, ref) {
   const { installPrompt, isInstalled, isStandalone, isOffline, canInstall } =
     usePwa();
 
@@ -39,3 +36,4 @@ export default function InstallButton({
     )
   );
 }
+)

@@ -9,7 +9,7 @@ import Class from "./Class";
 import CourseTitle from "@/app/academia/components/subcomponents/Attendance/Title";
 
 export default function CourseCard({ course }: { course: Course }) {
-  const url = searchUrl(course.facultyName.split("(")[0])[0]?.url
+  const url = searchUrl(course.faculty.split("(")[0])[0]?.url
 
   return (
     <div
@@ -19,31 +19,31 @@ export default function CourseCard({ course }: { course: Course }) {
     >
       <div className="flex md:w-[35%] w-auto flex-col items-start gap-1 md:gap-3 lg:w-[40%] lg:flex-row lg:items-center lg:gap-8 xl:w-[50%]">
         <CourseTitle
-          courseTitle={course.courseTitle}
-          category={course.courseType}
+          courseTitle={course.title}
+          category={course.slotType}
         />
         <Class
-          classroom={course.roomNo}
-          category={course.courseType}
+          classroom={course.room}
+          category={course.slotType as "Practical" | "Theory"}
           className="hidden lg:flex"
         />
         <Credit credit={Number(course.credit)} className="ml-9 lg:hidden" />
       </div>
       <Class
-        classroom={course.roomNo}
-        category={course.courseType}
+        classroom={course.room}
+        category={course.slotType as "Practical" | "Theory"}
         className="h-fit w-fit self-start justify-self-end lg:hidden"
       />
       <Credit
         credit={Number(course.credit)}
         className="hidden w-[20%] lg:flex"
       />
-      <CourseCode code={course.courseCode} className="hidden md:flex" />
-      <Link href={url || ""} target="_blank" title={course.facultyName.split("(")[0]} aria-label={course.facultyName.split("(")[0]} className={`${url ? "decoration-2 underline decoration-light-info-color dark:decoration-dark-info-color " : ""} mb-1 ml-1 mt-4 text-left self-end md:self-center text-base font-medium text-light-color opacity-90 md:mb-0 md:ml-0 md:mt-0 md:w-[20%] md:text-right lg:my-3 lg:mr-3 dark:text-dark-color`} >
-        {course.facultyName.split("(")[0]}
+      <CourseCode code={course.code} className="hidden md:flex" />
+      <Link href={url || ""} target="_blank" title={course.faculty.split("(")[0]} aria-label={course.faculty.split("(")[0]} className={`${url ? "decoration-2 underline decoration-light-info-color dark:decoration-dark-info-color " : ""} mb-1 ml-1 mt-4 text-left self-end md:self-center text-base font-medium text-light-color opacity-90 md:mb-0 md:ml-0 md:mt-0 md:w-[20%] md:text-right lg:my-3 lg:mr-3 dark:text-dark-color`} >
+        {course.faculty.split("(")[0]}
       </Link>
       <CourseCode
-        code={course.courseCode}
+        code={course.code}
         className="h-fit w-fit self-end justify-self-end md:hidden"
       />
     </div>

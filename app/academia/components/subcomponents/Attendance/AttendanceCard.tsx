@@ -45,7 +45,7 @@ export default function AttendanceCard({
   const countHoursPerDay = (title: string, category: string) => {
     if (!timetable || !day || day.includes("-")) return 0;
 
-    const todayTable = timetable[Number(day) - 1]?.subjects ?? [];
+    const todayTable = timetable[Number(day) - 1].table ?? [];
     return todayTable.filter(
       (item) => item && item.includes(title) && item.includes(category),
     ).length;
@@ -80,7 +80,7 @@ export default function AttendanceCard({
                 : "text-2xl text-light-color dark:text-dark-color"
         }`}
       >
-        {attendancePercentage.replace(".00", "")}%
+        {attendancePercentage.replace(".00", "").replace("%", "")}%
       </span>
     </div>
   );

@@ -105,7 +105,7 @@ function DayCell({ day }: { day: Day }) {
         isToday={false}
         isErrorDay={isErrorDay}
       />
-      <HolidayDisplay holiday={day.holiday || ""} isErrorDay={isErrorDay} />
+      <EventDisplay holiday={day.event || ""} isErrorDay={isErrorDay} />
       <DayOrderDisplay dayOrder={day.dayOrder} isToday={false} />
     </div>
   );
@@ -129,12 +129,12 @@ const DateDisplay: React.FC<DateDisplayProps> = ({
   </div>
 );
 
-interface HolidayDisplayProps {
+interface EventDisplayProps {
   holiday: string | null;
   isErrorDay: boolean;
 }
 
-const HolidayDisplay: React.FC<HolidayDisplayProps> = ({
+const EventDisplay: React.FC<EventDisplayProps> = ({
   holiday,
   isErrorDay,
 }) => {
@@ -142,7 +142,7 @@ const HolidayDisplay: React.FC<HolidayDisplayProps> = ({
   return (
     <p
       style={{ whiteSpace: "break-spaces" }}
-      tw={`text-right pr-1 -mb-0.5 -mx-2 text-base ${isErrorDay ? "text-[#F75B5B]" : "rounded-md border-l-2 border-r-0 border-[#7CB3EB] bg-[#1B1D2B] px-1 py-0.5 pl-2 text-[#7CB3EB] opacity-70"}`}
+      tw={`text-left pr-1 -mb-0.5 -mx-2 text-base ${isErrorDay ? "text-[#F75B5B]" : "rounded-md border-l-2 border-r-0 border-[#7CB3EB] bg-[#1B1D2B] px-1 py-0.5 pl-2 text-[#7CB3EB] opacity-70"}`}
     >
       {holiday.replaceAll(",", ", ")}
     </p>

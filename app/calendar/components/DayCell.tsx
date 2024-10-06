@@ -41,7 +41,7 @@ export default forwardRef<HTMLDivElement, DayCellProps>(function DayCell(
         isToday={isToday}
         isErrorDay={isErrorDay}
       />
-      <HolidayDisplay holiday={day.holiday || ""} isErrorDay={isErrorDay} />
+      <HolidayDisplay holiday={day.event || ""} isErrorDay={isErrorDay} />
       <DayOrderDisplay dayOrder={day.dayOrder} isToday={isToday} />
     </div>
   );

@@ -8,7 +8,7 @@ interface CalendarHeaderProps {
   mobile?: boolean;
   month: string;
   length?: number | undefined;
-  current?: number;
+  current: number;
   setCurrent?: React.Dispatch<React.SetStateAction<number>>;
 }
 
@@ -52,7 +52,7 @@ export default function CalendarHeader({
         <button
       tabIndex={0}
       className={`rounded-full p-1 text-sm text-light-color opacity-60 transition duration-200 hover:bg-light-background-dark active:-rotate-45 dark:text-dark-color dark:hover:bg-dark-background-dark`}
-      onClick={() => router.push("/calendar/download")}
+      onClick={() => router.push("/calendar/download?index=" + current)}
     >
       <LiaDownloadSolid />
     </button>
