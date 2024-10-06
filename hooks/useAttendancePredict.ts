@@ -55,7 +55,7 @@ export const useAttendancePrediction = (
       if (!dayInfo || dayInfo?.day === "Sat" || dayInfo?.day === "Sun") return;
 
       const daySchedule = timetable.find(
-        (t) => t.day.replace("Day ", "") === dayInfo.dayOrder,
+        (t) => t.day === Number(dayInfo.dayOrder),
       );
       if (!daySchedule) return;
 

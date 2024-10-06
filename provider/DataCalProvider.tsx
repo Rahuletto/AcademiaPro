@@ -75,7 +75,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
       suspense: true,
       shouldRetryOnError: false,
       revalidateOnReconnect: true,
-      revalidateOnMount: false,
+      revalidateOnMount: true,
       keepPreviousData: true,
       refreshInterval: 1000 * 60 * 30,
       revalidateIfStale: true,
@@ -95,6 +95,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
       },
     },
   );
+
 
   return (
     <DayContext.Provider

@@ -83,7 +83,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       revalidateOnReconnect: true,
       keepPreviousData: true,
       refreshInterval: 1000 * 60 * 10,
-      revalidateOnMount: false,
+      revalidateOnMount: true,
       revalidateIfStale: true,
       dedupingInterval: 1000 * 60 * 5,
       errorRetryCount: 0,
@@ -98,6 +98,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       },
     },
   );
+
 
   return (
     <DataContext.Provider
