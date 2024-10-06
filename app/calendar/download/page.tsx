@@ -6,9 +6,13 @@ import { usePlanner } from "@/provider/DataCalProvider";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
+import { useSearchParams } from "next/navigation";
 
 export default function Calendar() {
   const { calendar, isLoading, error } = usePlanner();
+
+  const searchParams = useSearchParams();
+  const id = searchParams.get("index");
 
   const [data, setData] = useState("");
 
@@ -17,11 +21,11 @@ export default function Calendar() {
       fetch(`/calendar/download/api`, {
         method: "POST",
         body: JSON.stringify({
-          calendar: calendar?.[new Date().getMonth() % 5]
+          calendar: calendar?.[Number(id)] || calendar?.[new Date().getMonth() % 5],
         }),
         headers: {
-            "Content-Type": "application/json",
-        }
+          "Content-Type": "application/json",
+        },
       })
         .then((d) => d.blob())
         .then((res: Blob | MediaSource) => {
@@ -29,7 +33,7 @@ export default function Calendar() {
           setData(imageUrl);
         });
     }
-  }, [calendar]);
+  }, [calendar, id]);
   return (
     <main className="flex h-screen w-screen flex-col items-center justify-center gap-12 bg-light-background-normal dark:bg-dark-background-normal">
       {data ? (
