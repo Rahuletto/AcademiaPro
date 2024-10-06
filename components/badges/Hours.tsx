@@ -37,7 +37,7 @@ export default function Hours({ ...props }) {
             {!day.includes("-") &&
               timetable
                 ?.find((e) => e.day === Number(day))
-                ?.subjects.filter((a) => a && a !== "null").length}{" "}
+                ?.table.filter((a) => a && a !== "null").length}{" "}
             hours
           </span>
         )
