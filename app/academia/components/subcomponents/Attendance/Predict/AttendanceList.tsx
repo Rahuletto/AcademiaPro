@@ -1,3 +1,4 @@
+import React from "react";
 import AttendanceCard from "../AttendanceCard";
 import { AttendanceCourse } from "@/types/Attendance";
 

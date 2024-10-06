@@ -54,7 +54,7 @@ export default function UserDialog({
             </div>
           </div>
           <p className="mb-6 text-lg font-medium text-light-accent opacity-80 dark:text-dark-accent">
-            {user?.reg}
+            {user?.regNumber}
           </p>
           <div className="grid grid-cols-2 gap-4 text-light-color dark:text-dark-color">
             <div>
@@ -73,7 +73,7 @@ export default function UserDialog({
               <p className="text-sm font-medium text-light-color opacity-50 dark:text-dark-color dark:opacity-30">
                 Classroom:
               </p>
-              <p className="text-lg font-semibold">{user?.classroom}</p>
+              <p className="text-lg font-semibold">{user?.classRoom}</p>
             </div>
             <div>
               <p className="text-sm font-medium text-light-color opacity-50 dark:text-dark-color dark:opacity-30">
@@ -104,7 +104,7 @@ export default function UserDialog({
             <p className="text-sm font-medium text-light-color opacity-50 dark:text-dark-color dark:dark:opacity-30">
               Department:
             </p>
-            <p className="text-md font-medium">{user?.dept}</p>
+            <p className="text-md font-medium">{user?.department}</p>
           </div>
         </div>
         <button

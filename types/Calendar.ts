@@ -15,6 +15,7 @@ export interface Calendar {
 export interface Day {
   date: string;
   day: string;
-  holiday?: string;
+  event?: string;
   dayOrder: string;
 }
+

@@ -1,6 +1,4 @@
-
 import { ProscrapeError } from "./Error";
-
 
 export type CourseResponse = SuccessCourseResponse & ProscrapeError;
 export interface SuccessCourseResponse {
@@ -9,15 +7,12 @@ export interface SuccessCourseResponse {
 }
 
 export interface Course {
-  courseCode: string;
-  courseTitle: string;
+  code: string;
+  title: string;
   credit: string;
-  regnType: string;
-  category: string;
-  courseType: "Theory" | "Practical";
-  facultyName: string;
+  type: string;
+  slotType: string;
+  faculty: string;
   slot: string;
-  gcrCode: string;
-  roomNo: string;
-  academicYear: string;
+  room: string;
 }

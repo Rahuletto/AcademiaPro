@@ -105,7 +105,7 @@ function DayCell({ day }: { day: Day }) {
         isToday={false}
         isErrorDay={isErrorDay}
       />
-      <HolidayDisplay holiday={day.holiday || ""} isErrorDay={isErrorDay} />
+      <EventDisplay holiday={day.event || ""} isErrorDay={isErrorDay} />
       <DayOrderDisplay dayOrder={day.dayOrder} isToday={false} />
     </div>
   );
@@ -129,12 +129,12 @@ const DateDisplay: React.FC<DateDisplayProps> = ({
   </div>
 );
 
-interface HolidayDisplayProps {
+interface EventDisplayProps {
   holiday: string | null;
   isErrorDay: boolean;
 }
 
-const HolidayDisplay: React.FC<HolidayDisplayProps> = ({
+const EventDisplay: React.FC<EventDisplayProps> = ({
   holiday,
   isErrorDay,
 }) => {

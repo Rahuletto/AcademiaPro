@@ -9,7 +9,6 @@ import { token } from "@/utils/Tokenize";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
 import { User } from "@/types/User";
-import { Table } from "@/types/Timetable";
 import { AllResponses } from "@/types/Response";
 
 interface DataContextType {
@@ -17,7 +16,7 @@ interface DataContextType {
   marks: Mark[] | null;
   courses: Course[] | null;
   user: User | null;
-  timetable: Table[] | null;
+  timetable: (string | undefined)[][] | null;
   error: Error | null;
   requestedAt: number | null;
   isLoading: boolean;
@@ -55,7 +54,6 @@ const fetcher = async (url: string) => {
   });
 
   const data: AllResponses = await response.json();
-  console.log(response)
   return data;
 };
 
@@ -106,9 +104,9 @@ export function DataProvider({ children }: { children: ReactNode }) {
       value={{
         attendance: data?.attendance || null,
         marks: data?.marks || null,
-        courses: data?.courses || null,
+        courses: data?.course?.courses || null,
         user: data?.user || null,
-        timetable: data?.timetable || null,
+        timetable: data?.timetable?.schedule || null,
 
         requestedAt: data?.requestedAt || 0,
         error: error || null,

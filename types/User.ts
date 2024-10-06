@@ -8,16 +8,17 @@ export interface SuccessUserData {
   requestedAt: number | null;
 }
 
+
 export interface UserInfo {
-  reg: string;
+  regNumber: string;
+  year: number;
   name: string;
-  combo: string;
+  batch: string;
   mobile: string;
   program: string;
-  dept: string;
-  year: number;
-  semester: number;
-  classroom: string;
+  department: string;
   section: string;
-  batch: string;
+  semester: string;
+  classRoom: string;
+  combo: string;
 }

@@ -1,9 +1,8 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { constructNullStyles } from "@/components/Generators/Timetable";
 import { useInterval } from "@/utils/Interval";
 import { timeRange } from "@/utils/Range";
 import { getISTTime, Time } from "@/utils/Times";
-import { Course } from "@/types/Course";
 import { useData } from "@/provider/DataProvider";
 import { usePlanner } from "@/provider/DataCalProvider";
 
@@ -17,7 +16,7 @@ interface SubjectCellProps {
   index: number;
 }
 
-function SubjectCell({
+const SubjectCell: React.FC<SubjectCellProps> = ({
   subject,
   type,
   isActive,
@@ -25,35 +24,47 @@ function SubjectCell({
   inRange,
   nullStyler,
   index,
-}: SubjectCellProps) {
-  const baseClasses = `
-    group relative h-auto ${!subject || subject === "null" && isActive ? "flex items-center justify-center" : ""} xl:min-h-24 min-h-16 xl:w-[10%] xl:max-w-[10%] w-full border-[0.3px]
-    border-dark-background-dark p-2 xl:pb-2 ${isActive ? "pb-2" : "pb-8"}  text-xs font-semibold 
-    text-dark-background-dark dark:border-dark-background-dark 
-    dark:text-dark-background-darker
-    ${index === 0 ? "xl:rounded-none xl:rounded-l-xl rounded-t-xl" : index === 9 ? "xl:rounded-none xl:rounded-r-xl rounded-b-xl" : ""}
-    ${type === "Theory" ? "bg-theory" : type === "Practical" ? "bg-practical" : ""}
-  `;
+}) => {
+  const baseClasses = useMemo(
+    () =>
+      `
+    group relative h-auto ${
+      !subject || (subject === "null" && isActive)
+        ? "flex items-center justify-center"
+        : ""
+    } xl:min-h-24 min-h-16 xl:w-[10%] w-full border-[0.3px] border-dark-background-dark p-2 ${
+      isActive ? "pb-2" : "pb-8"
+    } text-xs font-semibold text-dark-background-dark ${
+      type === "Theory"
+        ? "bg-theory"
+        : type === "Practical"
+          ? "bg-practical"
+          : ""
+    } ${
+      index === 0
+        ? "xl:rounded-l-xl xl:rounded-t-none xl:rounded-tl-xl rounded-t-xl"
+        : index === 9
+          ? "xl:rounded-r-xl xl:rounded-b-none xl:rounded-br-xl rounded-b-xl"
+          : ""
+    }`,
+    [subject, isActive, type, index],
+  );
 
-  const style: React.CSSProperties = subject && subject !== "null"
-    ? inRange && !isActive
-      ? { opacity: 0.5 }
-      : isActive
-        ? { opacity: 1 }
-        : {}
-    : inRange && !isActive
-      ? { ...nullStyler }
-      : isActive
+  const style: React.CSSProperties = useMemo(
+    () =>
+      subject && subject !== "null"
         ? {
-            opacity: 1,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            ...nullStyler,
+            opacity: inRange && !isActive ? 0.5 : isActive ? 1 : undefined,
           }
         : {
             ...nullStyler,
-          };
+            opacity: inRange && !isActive ? undefined : 1,
+            display: isActive ? "flex" : undefined,
+            alignItems: isActive ? "center" : undefined,
+            justifyContent: isActive ? "center" : undefined,
+          },
+    [subject, inRange, isActive, nullStyler],
+  );
 
   return (
     <div className={baseClasses} style={style}>
@@ -70,46 +81,62 @@ function SubjectCell({
           className="absolute bottom-2 left-2 flex animate-fastfade text-xs capitalize opacity-70"
           style={{ width: "min-content" }}
         >
-          {classRoom.split(" ")[0]}
+          {classRoom}
         </span>
       )}
-
       <span
-        className={`${subject == "null" ? "hidden xl:block xl:text-light-color xl:dark:text-dark-color" : "text-dark-background-dark"} absolute ${classRoom ? "bottom-1 md:bottom-6" : "bottom-1"} right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
+        className={`absolute ${
+          classRoom ? "bottom-1 md:bottom-6" : "bottom-1"
+        } right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
       >
-        {Time.start[index] + " - " + Time.end[index]}
+        {Time.start[index]} - {Time.end[index]}
       </span>
     </div>
   );
-}
+};
+
 interface TableCardProps {
   view: boolean;
   currentDayOrder: number;
 }
 
-export default function TableCard({ view, currentDayOrder }: TableCardProps) {
-  const { timetable, courses, mutate , isLoading, error} = useData();
+const TableCard: React.FC<TableCardProps> = ({ view, currentDayOrder }) => {
+  const { timetable, courses } = useData();
   const { dayOrder: day } = usePlanner();
   const [time, setTime] = useState<Date>(getISTTime());
+
+  const getClass = (subject?: string) => {
+    if (!subject || !courses) return;
+    if(subject.split('[')[1]) {
+      return subject.split('[')[1].split(']')[0];
+    }
+    const match = subject.match(/^(.*?) \((.*?)\)$/);
+    if (!match) return;
+
+    const courseTitle = match[1].trim();
+    const courseType = match[2].trim();
+
+    const course = courses.find(
+      (course) =>
+        course.title.toLowerCase().trim() ===
+          courseTitle.toLowerCase().trim() &&
+        course.slotType.toLowerCase().trim() ===
+          courseType.toLowerCase().trim(),
+    );
+
+    return course ? course.room : null;
+  };
 
   useMemo(() => {
     setTime(getISTTime());
   }, []);
 
-  useEffect(() => {
-    if (!courses && !isLoading && !error) mutate();
-  }, [courses, error, isLoading, mutate]);
-
   useInterval(() => {
     setTime(getISTTime());
   }, 30 * 1000);
 
-  if (
-    !day ||
-    !timetable ||
-    (typeof day === "string" && day.includes("-") && isNaN(currentDayOrder))
-  ) {
-    return day && typeof day === "string" && day.includes("-") ? (
+  if (!day || !timetable || isNaN(currentDayOrder)) {
+    return (
       <div className="flex h-28 animate-fadeIn items-center justify-center rounded-xl bg-light-error-background transition-all duration-200 md:h-24 dark:bg-dark-error-background">
         <h1
           aria-label="Holiday"
@@ -118,7 +145,7 @@ export default function TableCard({ view, currentDayOrder }: TableCardProps) {
           Holiday
         </h1>
       </div>
-    ) : null;
+    );
   }
 
   const inRange = timeRange(
@@ -127,67 +154,35 @@ export default function TableCard({ view, currentDayOrder }: TableCardProps) {
   );
 
   return (
-    <>
-      <div className="flex w-full animate-fadeIn flex-col justify-between rounded-xl bg-light-background-light transition duration-200 xl:flex-row dark:bg-dark-background-dark">
-        {timetable[currentDayOrder - 1]?.subjects.map((sub, i) => {
-          const [subject, typeWithParens] = sub?.split("(") ?? [];
-          const type = typeWithParens?.split(")")?.[0];
-          const nullStyler = constructNullStyles(
-            0,
-            i,
-            timetable[currentDayOrder - 1]?.subjects,
-            true,
-            true,
-          );
-          const isActive = timeRange(time, `${Time.start[i]}-${Time.end[i]}`);
+    <div className="flex w-full animate-fadeIn flex-col justify-between rounded-xl bg-light-background-light transition duration-200 xl:flex-row dark:bg-dark-background-dark">
+      {timetable[currentDayOrder - 1]?.map((sub, i) => {
+        const [subject, typeWithParens] = sub?.split("(") ?? [];
+        const type = typeWithParens?.split(")")?.[0];
+        const nullStyler = constructNullStyles(
+          0,
+          i,
+          timetable[currentDayOrder - 1],
+          true,
+          true,
+        );
+        const isActive = timeRange(time, `${Time.start[i]}-${Time.end[i]}`);
+        const classroom = getClass(sub);
 
-          return (
-            <SubjectCell
-              key={i}
-              classRoom={view && courses ? getClass(String(sub), courses) : ""}
-              subject={subject}
-              type={type}
-              isActive={isActive}
-              inRange={inRange}
-              nullStyler={nullStyler}
-              index={i}
-            />
-          );
-        })}
-      </div>
-    </>
+        return (
+          <SubjectCell
+            key={i}
+            classRoom={view ? (classroom ?? "") : ""}
+            subject={subject}
+            type={type}
+            isActive={isActive}
+            inRange={inRange}
+            nullStyler={nullStyler}
+            index={i}
+          />
+        );
+      })}
+    </div>
   );
-}
+};
 
-function getClass(subject: string, courses: Course[]) {
-  const [courseTitle, courseType] = subject.split(" (");
-  const formattedCourseType = courseType
-    ?.replace(")", "")
-    ?.split(" [")[0]
-    .trim();
-
-  const course = courses.find(
-    (course) =>
-      course.courseTitle === courseTitle.trim() &&
-      (formattedCourseType ? course.courseType === formattedCourseType : true),
-  );
-
-  if (course) {
-    if (course.roomNo) {
-      const roomParts = course.roomNo.split("-");
-      if (roomParts.length > 1) {
-        return roomParts[0].trim();
-      } else {
-        return course.roomNo.replace(/\s+/g, "").trim();
-      }
-    } else {
-      const roomFromSubject = subject.split("[")[1]?.replace("]", "");
-      if (roomFromSubject) {
-        const roomParts = roomFromSubject.split("-");
-        return roomParts[0].replace(/\s+/g, "").trim();
-      }
-    }
-  }
-
-  return null;
-}
+export default TableCard;

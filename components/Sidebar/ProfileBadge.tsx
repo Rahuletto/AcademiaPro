@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import { FaUser, FaUserLock } from "react-icons/fa";
 import { createPortal } from "react-dom";
@@ -73,10 +74,10 @@ export default function ProfileBadge({ className }: { className?: string }) {
       >
         <div
           className={`flex h-10 w-10 items-center justify-center rounded-full text-dark-background-darker`}
-          style={{ backgroundColor: profileColor(user?.reg as string) }}
+          style={{ backgroundColor: profileColor(user?.regNumber as string) }}
         >
           <span className="text-lg font-semibold">
-            {elevatedUsers.includes(user?.reg as string) ? (
+            {elevatedUsers.includes(user?.regNumber as string) ? (
               <Image
                 className="mt-1"
                 src="/images/batman.svg"

@@ -12,7 +12,7 @@ export default function Timetable() {
   const [data, setData] = useState("");
 
   useEffect(() => {
-    if (user?.reg && timetable) {
+    if (user?.regNumber && timetable) {
       fetch(`/timetable/download`, {
         method: "POST",
         body: JSON.stringify({
