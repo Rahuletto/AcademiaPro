@@ -52,7 +52,7 @@ const fetcher = async (url: string) => {
       "Set-Cookie": cookie,
       Cookie: cookie,
       "Content-Type": "application/json",
-      "Cache-Control": "public, max-age=900, s-maxage=1800, stale-while-revalidate=300, stale-if-error=86400"
+      "Cache-Control": "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400"
     },
   });
 
@@ -80,7 +80,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     fetcher,
     {
       fallbackData: getCachedData(),
-      revalidateOnFocus: true,
+      revalidateOnFocus: false,
       shouldRetryOnError: false,
       suspense: true,
       revalidateOnReconnect: true,

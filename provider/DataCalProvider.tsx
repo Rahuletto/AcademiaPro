@@ -41,7 +41,8 @@ const fetcher = async (url: string) => {
       Connection: "keep-alive",
       "Accept-Encoding": "gzip, deflate, br, zstd",
       "Content-Type": "application/json",
-      "Cache-Control": "public, max-age=3600, s-maxage=7200, stale-while-revalidate=3600, stale-if-error=86400",
+      "Cache-Control":
+        "public, max-age=3600, s-maxage=7200, stale-while-revalidate=3600, stale-if-error=86400",
     },
   });
 
@@ -70,7 +71,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     fetcher,
     {
       fallbackData: getCachedPlanner(),
-      revalidateOnFocus: true,
+      revalidateOnFocus: false,
       suspense: true,
       shouldRetryOnError: false,
       revalidateOnReconnect: true,
@@ -94,7 +95,6 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
       },
     },
   );
-
 
   return (
     <DayContext.Provider
