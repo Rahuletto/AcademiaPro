@@ -26,7 +26,7 @@ export function useMutateAll() {
     marks: `${revalUrl}/marks`,
     timetable: `${revalUrl}/timetable?batch=${user?.batch || 1}`,
     courses: `${revalUrl}/courses`,
-    data: `${revalUrl}/get`,
+    data: `${revalUrl}/getData`,
     planner: `${revalUrl}/getCal`,
   };
 

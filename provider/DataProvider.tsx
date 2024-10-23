@@ -4,7 +4,7 @@ import { type ReactNode, createContext, useContext } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import { AttendanceCourse } from "@/types/Attendance";
-import rotateUrl from "@/utils/URL";
+import rotateUrl, { revalUrl } from "@/utils/URL";
 import { token } from "@/utils/Tokenize";
 import { Mark } from "@/types/Marks";
 import { Course } from "@/types/Course";
@@ -44,7 +44,7 @@ const fetcher = async (url: string) => {
   if(cookie?.length < 800) {
     Cookie.clear();
   }
-  const response = await fetch(url, {
+  const response = await fetch(`${rotateUrl()}/getData`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token()}`,
@@ -76,7 +76,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     isValidating,
     mutate,
   } = useSWR<AllResponses | null>(
-    cookie ? `${rotateUrl()}/getData` : null,
+    cookie ? `${revalUrl}/getData` : null,
     fetcher,
     {
       fallbackData: getCachedData(),

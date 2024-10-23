@@ -3,7 +3,7 @@ import { Cookie as cookies } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
-import rotateUrl from "@/utils/URL";
+import rotateUrl, { revalUrl } from "@/utils/URL";
 import { token } from "@/utils/Tokenize";
 import { CalResponses } from "@/types/Response";
 import { Calendar } from "@/types/Calendar";
@@ -31,7 +31,7 @@ const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
 
-  const response = await fetch(url, {
+  const response = await fetch(`${rotateUrl()}/calendar`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token()}`,
@@ -67,7 +67,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     isLoading,
     mutate,
   } = useSWR<CalResponses | null>(
-    cookie ? `${rotateUrl()}/calendar` : null,
+    cookie ? `${revalUrl}/calendar` : null,
     fetcher,
     {
       fallbackData: getCachedPlanner(),
