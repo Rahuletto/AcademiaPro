@@ -1,5 +1,10 @@
 const serverUrls = [
-  "https://newscrape.rameshrahul1974.workers.dev"
+  process.env.NEXT_PUBLIC_API_URL_H,
+  process.env.NEXT_PUBLIC_API_URL_EVEN,
+  process.env.NEXT_PUBLIC_API_URL_NIGHT,
+  process.env.NEXT_PUBLIC_API_URL,
+  process.env.NEXT_PUBLIC_API_URL_MORN,
+  process.env.NEXT_PUBLIC_API_URL_2,
 ];
 
 export const revalUrl = serverUrls[0];
