@@ -10,7 +10,7 @@ export default function Academia() {
       <div className="flex lg:flex-row flex-col dark:bg-dark-background-dark lg:gap-6 gap-2 h-full w-full bg-light-background-dark items-center justify-start md:px-12 px-6 lg:py-6 py-12 rounded-3xl animate-fadeIn duration-300 transition-all">
         <FaBookOpen className="lg:text-4xl text-6xl dark:text-dark-accent text-light-accent" />
         <h1 className="lg:text-xl text-2xl dark:text-dark-color text-light-color font-semibold">
-          AcademiaPro.
+          ClassPro.
         </h1>
         <p className="lg:hidden lg:text-lg text-md dark:text-dark-color text-light-color font-medium opacity-70 text-center">
           University data, beautifully presented at your fingertips

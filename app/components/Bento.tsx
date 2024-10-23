@@ -81,7 +81,7 @@ export default function Bento() {
             Useful Resources
           </div>
           <div className="font-sans lg:text-lg text-md font-normal opacity-60 dark:text-dark-color text-light-color">
-            AcademiaPro comes with useful resource links so you can get any SRM
+            ClassPro comes with useful resource links so you can get any SRM
             related thing in milliseconds, Powered by lazy searching.
           </div>
         </div>

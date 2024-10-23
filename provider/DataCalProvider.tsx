@@ -46,7 +46,6 @@ const fetcher = async (url: string) => {
   });
 
   const data: CalResponses = await response.json();
-  console.log("CAL", data);
   return data;
 };
 

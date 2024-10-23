@@ -13,8 +13,8 @@ import ErrorBoundary from "./Boundary";
 import { DataProvider } from "@/provider/DataProvider";
 import { PlannerProvider } from "@/provider/DataCalProvider";
 
-const APP_NAME = "AcademiaPro";
-const APP_DEFAULT_TITLE = "AcademiaPro";
+const APP_NAME = "ClassPro";
+const APP_DEFAULT_TITLE = "ClassPro";
 const APP_TITLE_TEMPLATE = "%s - PWA App";
 const APP_DESCRIPTION =
   "📖 University data, beautifully presented at your fingertips";

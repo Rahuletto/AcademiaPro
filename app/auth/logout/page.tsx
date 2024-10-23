@@ -25,7 +25,6 @@ export default function Logout() {
 
       Cookie.clear();
       Storage.clear();
-      sessionStorage.clear();
 
       if ("caches" in window) {
         const cacheNames = await caches.keys();

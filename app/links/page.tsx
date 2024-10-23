@@ -28,7 +28,7 @@ export default function Urls() {
                 You can add your own links here just by doing a{" "}
                 <Link
                   className="underline decoration-dark-info-color decoration-solid"
-                  href="https://github.com/Rahuletto/academiapro"
+                  href="https://github.com/Rahuletto/classpro"
                   target="_blank"
                 >
                   Github Pull Request
@@ -41,7 +41,7 @@ export default function Urls() {
                 searchQuery={searchQuery}
                 setSearchQuery={setSearchQuery}
               />
-              <UrlSection special title="From AcademiaPro" urls={priority} />
+              <UrlSection special title="From ClassPro" urls={priority} />
               <UrlSection title="Official URLs" urls={officials} />
               <UrlSection title="Other URLs" urls={others} />
             </div>

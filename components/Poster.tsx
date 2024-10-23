@@ -20,14 +20,14 @@ export default function Poster() {
               <PiConfettiBold />
             </h1>
             <h3 className="text-xl font-medium opacity-90 md:text-2xl">
-              AcademiaPro has evolved to{" "}
+              ClassPro has evolved to{" "}
               <span className="text-light-success-color dark:text-dark-success-color">
                 Version 2
               </span>
               !
             </h3>
             <p className="text-md font-normal opacity-70">
-              We re-did AcademiaPro with many features and using new
+              We re-did ClassPro with many features and using new
               technologies.
             </p>
           </div>

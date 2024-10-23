@@ -1,5 +1,5 @@
 "use client";
-import { useState, ReactNode, useEffect, useRef } from "react";
+import React, { useState, ReactNode, useEffect, useRef } from "react";
 import { Link as TransitionLink } from "next-view-transitions";
 import {
   FaBookOpen,
@@ -22,6 +22,7 @@ import Footer from "../Footer";
 // import Poster from "../Poster";
 import { IoLibrarySharp } from "react-icons/io5";
 import InstallButton from "./Buttons/InstallButton";
+import Popup from "./Popup";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -190,7 +191,7 @@ export function Sidebar({
                     href="/home"
                     className="text-3xl font-semibold"
                   >
-                    AcademiaPro
+                    ClassPro
                   </TransitionLink>
                   <ThemeToggle />
                 </div>
@@ -272,10 +273,7 @@ export function Sidebar({
                 className={isOpen ? "animate-fadeIn" : "opacity-0"}
               />
             </div>
-            <InstallButton
-              anchor={isAnchored}
-              ref={installRef}
-            />
+            <InstallButton anchor={isAnchored} ref={installRef} />
             <OpenButton
               anchor={isAnchored}
               isOpen={isOpen}
@@ -306,6 +304,8 @@ export function Sidebar({
               <Footer className="mt-12" />
             </main>
           </div>
+
+          <Popup />
 
           <OpenButton
             mobile

@@ -4,7 +4,7 @@ import Refresh from "@/components/Refresh";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
 import dynamic from "next/dynamic";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FiInfo } from "react-icons/fi";
 import NoData from "./subcomponents/NoData";
 import { useData } from "@/provider/DataProvider";
@@ -23,12 +23,19 @@ const MarkCard = dynamic(
 );
 
 export default function Marks() {
-  const { marks, isLoading, error, isValidating } = useData();
+  const { marks, isLoading, error, isValidating, mutate } = useData();
   const isOld = false;
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
+
+  useEffect(() => {
+    if(!isLoading && !error && !marks) {
+      mutate()
+    }
+  }, [isLoading, mutate, marks, error]);
+
 
   return (
     <section id="marks" className="flex flex-col gap-6">

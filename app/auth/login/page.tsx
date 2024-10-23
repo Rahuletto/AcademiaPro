@@ -17,7 +17,7 @@ export default function Login() {
           <div className="flex flex-col gap-3">
             <div className="flex flex-row items-center justify-center gap-5 text-light-accent md:justify-start dark:text-dark-accent">
               <h1 className="text-2xl font-semibold md:text-4xl">
-                AcademiaPro
+                ClassPro
               </h1>
               <FaBookOpen className="text-2xl md:text-4xl" />
             </div>
