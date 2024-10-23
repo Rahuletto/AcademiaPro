@@ -1,7 +1,6 @@
 import { AttendanceCourse } from "./Attendance";
 import { Calendar, Day } from "./Calendar";
 import { Course } from "./Course";
-import { DayOrderResponse } from "./DayOrder";
 import { Mark } from "./Marks";
 import { SuccessTimeTableResponse } from "./Timetable";
 import { User } from "./User";

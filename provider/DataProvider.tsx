@@ -1,5 +1,5 @@
 "use client";
-import { Cookie as cookies, getCookie } from "@/utils/Cookies";
+import { Cookie, Cookie as cookies, getCookie } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
@@ -40,7 +40,10 @@ const DataContext = createContext<DataContextType>({
 const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
-
+  
+  if(cookie?.length < 800) {
+    Cookie.clear();
+  }
   const response = await fetch(url, {
     method: "GET",
     headers: {
