@@ -44,7 +44,7 @@ export const urls: DirLink[] = [
   },
   {
     site: "KaizenKlass",
-    url: "https://kaizenklass.me/",
+    url: "https://kaizenklass.xyz/",
     type: "unofficial",
     description: "Get your notes, assignments and every resource you need.",
   },
