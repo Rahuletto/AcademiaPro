@@ -20,4 +20,5 @@ export interface CalResponses {
   calendar: Calendar[];
   requestedAt: number;
   error?: string;
+  index: number;
 }
