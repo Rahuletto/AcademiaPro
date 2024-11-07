@@ -16,7 +16,7 @@ interface DayContextType {
   isLoading: boolean;
   isValidating: boolean;
   mutate: () => Promise<void | CalResponses | null | undefined>;
-  index: number | null;
+  index: number;
 }
 
 const DayContext = createContext<DayContextType>({
@@ -27,7 +27,7 @@ const DayContext = createContext<DayContextType>({
   isLoading: false,
   isValidating: false,
   mutate: async () => {},
-  index: null,
+  index: 0,
 });
 
 const fetcher = async (url: string) => {
@@ -109,7 +109,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
         isLoading,
         isValidating,
         mutate,
-        index: data?.index || null,
+        index: data?.index ?? 0,
       }}
     >
       {children}

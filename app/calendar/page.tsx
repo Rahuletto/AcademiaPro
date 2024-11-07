@@ -18,9 +18,7 @@ const CalendarHeader = dynamic(
 export default function Calendar() {
   const { calendar, isLoading, error, index } = usePlanner();
   console.log(calendar);
-  const [current, setCurrent] = useState(
-    index ? index : (new Date().getMonth() - 5 + 7) % 7,
-  );
+  const [current, setCurrent] = useState(index);
   const actual = new Date().getMonth();
 
   const month = calendar?.[current].month || "";
