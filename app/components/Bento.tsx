@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function Bento() {
   return (
-    <div className="z-10 w-full lg:grid flex flex-col lg:auto-rows-[18rem] lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
-      <div className="hover:dark:border-dark-accent hover:border-light-accent border border-transparent w-full row-span-2 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-dark-background-normal bg-light-background-normal justify-between flex flex-col space-y-2">
+    <div className="z-10 mx-auto flex w-full max-w-7xl flex-col gap-4 lg:grid lg:auto-rows-[18rem] lg:grid-cols-3">
+      <div className="group/bento shadow-input row-span-2 flex w-full flex-col justify-between space-y-2 rounded-3xl border border-transparent bg-light-background-normal p-4 transition duration-200 hover:border-light-accent hover:shadow-xl dark:bg-dark-background-normal dark:shadow-none hover:dark:border-dark-accent">
         <div className="px-2 transition duration-200">
-          <div className="font-sans lg:text-2xl text-xl font-bold dark:text-dark-color text-light-color mb-2 mt-2">
+          <div className="mb-2 mt-2 font-sans text-xl font-bold text-light-color lg:text-2xl dark:text-dark-color">
             Generate Timetable
           </div>
-          <div className="font-sans lg:text-lg text-md font-normal opacity-60 dark:text-dark-color text-light-color">
+          <div className="text-md font-sans font-normal text-light-color opacity-60 lg:text-lg dark:text-dark-color">
             Generates a full timetable image based on your class schedule.
           </div>
         </div>
@@ -22,18 +22,18 @@ export default function Bento() {
         />
       </div>
 
-      <div className="hover:dark:border-dark-accent hover:border-light-accent border border-transparent row-span-1 col-span-2 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-dark-background-normal bg-light-background-normal justify-between flex lg:flex-row flex-col lg:space-x-4 space-y-2">
+      <div className="group/bento shadow-input col-span-2 row-span-1 flex flex-col justify-between space-y-2 rounded-3xl border border-transparent bg-light-background-normal p-4 transition duration-200 hover:border-light-accent hover:shadow-xl lg:flex-row lg:space-x-4 dark:bg-dark-background-normal dark:shadow-none hover:dark:border-dark-accent">
         <div className="px-2 transition duration-200">
-          <div className="font-sans lg:text-2xl text-xl font-bold dark:text-dark-color text-light-color mb-2 mt-2">
+          <div className="mb-2 mt-2 font-sans text-xl font-bold text-light-color lg:text-2xl dark:text-dark-color">
             Data at your fingertips
           </div>
-          <div className="font-sans lg:text-lg text-md font-normal opacity-60 dark:text-dark-color text-light-color">
+          <div className="text-md font-sans font-normal text-light-color opacity-60 lg:text-lg dark:text-dark-color">
             Look at today&apos;s day order, the hours of class you have that
             day, and any academia data in your fingertips.
           </div>
         </div>
         <Image
-          className="saturate-150 aspect-square rounded-2xl lg:max-w-[40%] object-cover mt-0 object-left-top"
+          className="mt-0 aspect-square rounded-2xl object-cover object-left-top saturate-150 lg:max-w-[40%]"
           src="/images/academia.png"
           alt="academia"
           height={500}
@@ -41,18 +41,18 @@ export default function Bento() {
         />
       </div>
 
-      <div className="hover:dark:border-dark-accent hover:border-light-accent border border-transparent row-span-2 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-dark-background-normal bg-light-background-normal justify-between flex flex-col space-y-2">
+      <div className="group/bento shadow-input row-span-2 flex flex-col justify-between space-y-2 rounded-3xl border border-transparent bg-light-background-normal p-4 transition duration-200 hover:border-light-accent hover:shadow-xl dark:bg-dark-background-normal dark:shadow-none hover:dark:border-dark-accent">
         <div className="px-2 transition duration-200">
-          <div className="font-sans lg:text-2xl text-xl font-bold dark:text-dark-color text-light-color mb-2 mt-2">
+          <div className="mb-2 mt-2 font-sans text-xl font-bold text-light-color lg:text-2xl dark:text-dark-color">
             Plan your comeback.
           </div>
-          <div className="font-sans lg:text-lg text-md font-normal opacity-60 dark:text-dark-color text-light-color">
+          <div className="text-md font-sans font-normal text-light-color opacity-60 lg:text-lg dark:text-dark-color">
             Look out and plan your academics with up-to-date planner{" "}
             {"(calendar)"}, with many indications to make you focus
           </div>
         </div>
         <Image
-          className="saturate-150 aspect-square rounded-2xl object-cover object-left-top"
+          className="aspect-square rounded-2xl object-cover object-left-top saturate-150"
           src="/images/calendar.png"
           alt="calendar"
           height={1000}
@@ -60,14 +60,14 @@ export default function Bento() {
         />
       </div>
 
-      <div className="hover:dark:border-dark-accent hover:border-light-accent border border-transparent row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-dark-background-normal bg-light-background-normal justify-between flex flex-col space-y-2">
+      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-2 rounded-3xl border border-transparent bg-light-background-normal p-4 transition duration-200 hover:border-light-accent hover:shadow-xl dark:bg-dark-background-normal dark:shadow-none hover:dark:border-dark-accent">
         <div className="px-2 transition duration-200">
-          <div className="font-sans lg:text-2xl text-xl font-bold dark:text-dark-color text-light-color mb-2">
+          <div className="mb-2 font-sans text-xl font-bold text-light-color lg:text-2xl dark:text-dark-color">
             Up-to-date attendance.
           </div>
         </div>
         <Image
-          className="saturate-150 rounded-2xl object-cover object-left-top"
+          className="rounded-2xl object-cover object-left-top saturate-150"
           src="/images/attendance.png"
           alt="attendance"
           height={300}
@@ -75,24 +75,24 @@ export default function Bento() {
         />
       </div>
 
-      <div className="hover:dark:border-dark-accent hover:border-light-accent border border-transparent row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-dark-background-normal bg-light-background-normal justify-between flex flex-col space-y-2">
+      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-2 rounded-3xl border border-transparent bg-light-background-normal p-4 transition duration-200 hover:border-light-accent hover:shadow-xl dark:bg-dark-background-normal dark:shadow-none hover:dark:border-dark-accent">
         <div className="px-2 transition duration-200">
-          <div className="font-sans lg:text-2xl text-xl font-bold dark:text-dark-color text-light-color mb-2 mt-2">
+          <div className="mb-2 mt-2 font-sans text-xl font-bold text-light-color lg:text-2xl dark:text-dark-color">
             Useful Resources
           </div>
-          <div className="font-sans lg:text-lg text-md font-normal opacity-60 dark:text-dark-color text-light-color">
+          <div className="text-md font-sans font-normal text-light-color opacity-60 lg:text-lg dark:text-dark-color">
             ClassPro comes with useful resource links so you can get any SRM
             related thing in milliseconds, Powered by lazy searching.
           </div>
         </div>
       </div>
 
-      <div className="hover:dark:border-dark-accent hover:border-light-accent border border-transparent row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-dark-background-normal bg-light-background-normal justify-between flex flex-col space-y-2">
+      <div className="group/bento shadow-input row-span-1 flex flex-col justify-between space-y-2 rounded-3xl border border-transparent bg-light-background-normal p-4 transition duration-200 hover:border-light-accent hover:shadow-xl dark:bg-dark-background-normal dark:shadow-none hover:dark:border-dark-accent">
         <div className="px-2 transition duration-200">
-          <div className="font-sans lg:text-2xl text-xl font-bold dark:text-dark-color text-light-color mb-2 mt-2">
+          <div className="mb-2 mt-2 font-sans text-xl font-bold text-light-color lg:text-2xl dark:text-dark-color">
             ⚡ Zip-Zap Performance
           </div>
-          <div className="font-sans lg:text-lg text-md font-normal opacity-60 dark:text-dark-color text-light-color">
+          <div className="text-md font-sans font-normal text-light-color opacity-60 lg:text-lg dark:text-dark-color">
             We use top of-the-line edge networks to provide you the data in the
             fastest way to you, even faster than SRM academia.
           </div>
