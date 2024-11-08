@@ -3,10 +3,10 @@ import dynamic from "next/dynamic";
 import { cookies } from "next/headers";
 import { FaBookOpen } from "react-icons/fa";
 
-const Bento = dynamic(() => import("../components/Bento").then(a => a.default), { ssr: false });
+const Bento = dynamic(() => import("../components/Bento").then(a => a.default));
 
-export default function Academia() {
-  const cookie = cookies().get("key");
+export default async function Academia() {
+  const cookie = (await cookies()).get("key");
   return (
     <main className="flex flex-col items-center justify-start gap-4 bg-light-background-normal p-4 dark:bg-dark-background-normal">
       <div className="flex h-full w-full animate-fadeIn flex-col items-center justify-start gap-2 rounded-3xl bg-light-background-dark px-6 py-12 transition-all duration-300 md:px-12 lg:flex-row lg:gap-6 lg:py-6 dark:bg-dark-background-dark">

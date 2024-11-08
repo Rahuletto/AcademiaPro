@@ -18,7 +18,7 @@ const APP_DEFAULT_TITLE = "ClassPro";
 const APP_TITLE_TEMPLATE = "%s - PWA App";
 const APP_DESCRIPTION =
   "📖 University data, beautifully presented at your fingertips";
-const PRODUCTION_URL = "https://academia-pro.vercel.app";
+const PRODUCTION_URL = "https://class-pro.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -90,7 +90,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const key = cookies().get("key");
+  const key = (await cookies()).get("key");
   return (
     <ViewTransitions>
       <html
