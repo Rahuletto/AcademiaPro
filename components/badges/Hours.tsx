@@ -8,7 +8,7 @@ export default function Hours({ ...props }) {
   const { dayOrder: day, isLoading, error } = usePlanner();
   const { timetable, isLoading: tableLoad, error: tableError } = useData();
 
-  return !day || day.includes("-") || day.includes("-") ? null : (
+  return !day || day.includes("-") || day.includes("-") || !timetable ? null : (
     <div
       {...props}
       role="contentinfo"

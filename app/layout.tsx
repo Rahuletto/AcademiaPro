@@ -114,11 +114,13 @@ export default async function RootLayout({
 
             <body className="h-screen">
               <Analytics />
-              {key && key.value ? (
-                <GroupProviders>{children}</GroupProviders>
-              ) : (
-                children
-              )}
+              <PlannerProvider>
+                {key && key.value ? (
+                  <GroupProviders>{children}</GroupProviders>
+                ) : (
+                  children
+                )}
+              </PlannerProvider>
             </body>
           </ThemeProvider>
         </ErrorBoundary>
@@ -128,9 +130,5 @@ export default async function RootLayout({
 }
 
 function GroupProviders({ children }: { children: ReactNode }) {
-  return (
-    <PlannerProvider>
-      <DataProvider>{children}</DataProvider>
-    </PlannerProvider>
-  );
+  return <DataProvider>{children}</DataProvider>;
 }

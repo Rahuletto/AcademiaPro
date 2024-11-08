@@ -16,7 +16,6 @@ const withPWA = pwa({
 
 const conf = {
   poweredByHeader: false,
-  swcMinify: true,
   reactStrictMode: true,
   compress: true,
   experimental: {

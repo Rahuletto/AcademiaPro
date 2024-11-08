@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
 
-const protectedRoutes = ["/academia", "/calendar", "/links", "/courses"];
+const protectedRoutes = ["/academia", "/courses"];
 const home = ["/"];
 const MAINTENANCE = false;
 

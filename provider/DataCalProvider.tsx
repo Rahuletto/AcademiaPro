@@ -1,10 +1,8 @@
 "use client";
-import { Cookie as cookies } from "@/utils/Cookies";
 import { type ReactNode, createContext, useContext } from "react";
 import useSWR from "swr";
 import Storage from "@/utils/Storage";
 import rotateUrl, { revalUrl } from "@/utils/URL";
-import { token } from "@/utils/Tokenize";
 import { CalResponses } from "@/types/Response";
 import { Calendar } from "@/types/Calendar";
 
@@ -31,16 +29,10 @@ const DayContext = createContext<DayContextType>({
 });
 
 const fetcher = async (url: string) => {
-  const cookie = cookies.get("key");
-  if (!cookie) return null;
-
+  console.log("Fetching planner");
   const response = await fetch(`${rotateUrl()}/calendar`, {
     method: "GET",
     headers: {
-      Authorization: `Bearer ${token()}`,
-      "X-CSRF-Token": cookie,
-      "Set-Cookie": cookie,
-      Cookie: cookie,
       Connection: "keep-alive",
       "Accept-Encoding": "gzip, deflate, br, zstd",
       "Content-Type": "application/json",
@@ -58,10 +50,6 @@ export function usePlanner() {
 }
 
 export function PlannerProvider({ children }: { children: ReactNode }) {
-  const cookie = cookies.get("key");
-
-  const getCachedPlanner = () =>
-    Storage.get<CalResponses | null>("planner", null);
 
   const {
     data: data,
@@ -70,10 +58,10 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     isLoading,
     mutate,
   } = useSWR<CalResponses | null>(
-    cookie ? `${revalUrl}/calendar` : null,
+    `${revalUrl}/calendar`,
     fetcher,
     {
-      fallbackData: getCachedPlanner(),
+      // fallbackData: getCachedPlanner(),
       revalidateOnFocus: false,
       suspense: true,
       shouldRetryOnError: false,

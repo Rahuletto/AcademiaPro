@@ -49,7 +49,7 @@ function Svg() {
       <path
         d="M6 0V63C6 103.869 39.1309 137 80 137H84"
         stroke="currentColor"
-        stroke-width="12"
+        strokeWidth="12"
       />
     </svg>
   );
