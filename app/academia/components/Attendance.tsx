@@ -6,6 +6,7 @@ import { AttendanceHeader } from "./subcomponents/Attendance/AttendanceHeader";
 import { AttendanceStatusChips } from "./subcomponents/Attendance/AttendanceStatusChip";
 import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
+import ODMLContent from "./subcomponents/Attendance/ODMLContent";
 
 const AttendanceContent = dynamic(
   () => import("./subcomponents/Attendance/AttendanceContent"),
@@ -29,6 +30,7 @@ export default function Attendance(): JSX.Element {
   const [ODMLdateRange, setODMLDateRange] = useState<DateRange[]>([]);
   const [showDatePicker, setShowDatePicker] = useState<boolean>(false);
   const [isPredicted, setIsPredicted] = useState<boolean>(false);
+  const [isODML, setIsODML] = useState<boolean>(false);
   useEffect(() => {
     console.log("odmldaterange", ODMLdateRange);
   }, [ODMLdateRange]);
@@ -69,6 +71,8 @@ export default function Attendance(): JSX.Element {
       <div className="group px-2 pt-3">
         {isPredicted ? (
           <PredictionContent dateRange={dateRange} />
+        ) : isODML ? (
+          <ODMLContent dateRanges={ODMLdateRange} />
         ) : (
           <AttendanceContent />
         )}

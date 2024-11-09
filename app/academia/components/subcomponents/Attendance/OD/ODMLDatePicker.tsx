@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { DateObject } from "react-multi-date-picker";
 import dynamic from "next/dynamic";
 import { usePlanner } from "@/provider/DataCalProvider";
@@ -38,7 +38,7 @@ export default function ODMLDatePicker({
         to: dates[1].toDate(),
       };
       setDateRanges([...dateRanges, newRange]);
-      setTempRange([]); // Reset temp range after adding
+      setTempRange([]);
     }
   };
 
@@ -66,16 +66,8 @@ export default function ODMLDatePicker({
           value={tempRange}
           onChange={handleDateChange}
           range
-          minDate={new DateObject(new Date())}
-          maxDate={
-            new DateObject(
-              new Date(
-                new Date().getFullYear(),
-                new Date().getMonth() + 4,
-                new Date().getDate(),
-              ),
-            )
-          }
+          minDate={new DateObject(new Date(2000, 0, 1))}
+          maxDate={new DateObject(new Date())}
           mapDays={({ date }) => {
             if (isHoliday(date)) {
               return {
@@ -101,19 +93,16 @@ export default function ODMLDatePicker({
         <div className="absolute left-0 top-12 z-50 mt-2 w-64 rounded-lg border border-gray-200 bg-white p-2 shadow-lg dark:border-gray-700 dark:bg-gray-800">
           <div className="max-h-40 space-y-2 overflow-y-auto">
             {dateRanges.map((range, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-between gap-2 rounded-md bg-gray-50 p-2 text-sm dark:bg-gray-700"
-              >
+              <div key={index} className="flex items-center justify-between">
                 <span>
                   {range.from?.toLocaleDateString()} -{" "}
                   {range.to?.toLocaleDateString()}
                 </span>
                 <button
                   onClick={() => removeDateRange(index)}
-                  className="rounded-full p-1 text-red-500 hover:bg-red-50 dark:hover:bg-red-900/20"
+                  className="text-red-500 hover:text-red-700"
                 >
-                  ×
+                  Remove
                 </button>
               </div>
             ))}
