@@ -16,7 +16,8 @@ import InfoPopup from "./InfoPopup";
 import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
 import { useData } from "@/provider/DataProvider";
-import ODPicker from "./OD/ODPicker";
+import ODPicker from "./OD/ODMLDatePicker";
+import ODMLDatePicker from "./OD/ODMLDatePicker";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
@@ -26,6 +27,8 @@ interface AttendanceHeaderProps {
   showDatePicker: boolean;
   setShowDatePicker: Dispatch<SetStateAction<boolean>>;
   setIsPredicted: Dispatch<SetStateAction<boolean>>;
+  ODMLdateRange: DateRange[];
+  setODMLDateRange: Dispatch<SetStateAction<DateRange[]>>;
 }
 
 export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
@@ -36,6 +39,8 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   showDatePicker,
   setShowDatePicker,
   setIsPredicted,
+  ODMLdateRange,
+  setODMLDateRange,
 }) => {
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
@@ -70,7 +75,12 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
             handleDateChange={handleDateChange}
           />
         )}
-        <ODPicker />
+        {!isPredicted && (
+          <ODMLDatePicker
+            dateRanges={ODMLdateRange}
+            setDateRanges={setODMLDateRange}
+          />
+        )}
         {!isPredicted && dateRange.from && dateRange.to && (
           <button
             onClick={() => setIsPredicted(true)}

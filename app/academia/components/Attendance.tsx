@@ -1,5 +1,5 @@
-'use client'
-import React, { useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Loading from "@/components/States/Loading";
 import { AttendanceHeader } from "./subcomponents/Attendance/AttendanceHeader";
@@ -26,9 +26,12 @@ export default function Attendance(): JSX.Element {
     from: null,
     to: null,
   });
+  const [ODMLdateRange, setODMLDateRange] = useState<DateRange[]>([]);
   const [showDatePicker, setShowDatePicker] = useState<boolean>(false);
   const [isPredicted, setIsPredicted] = useState<boolean>(false);
-
+  useEffect(() => {
+    console.log("odmldaterange", ODMLdateRange);
+  }, [ODMLdateRange]);
   const handleDateChange = (dates: DateObject[]): void => {
     if (dates.length === 2) {
       setDateRange({
@@ -53,6 +56,8 @@ export default function Attendance(): JSX.Element {
         showDatePicker={showDatePicker}
         setShowDatePicker={setShowDatePicker}
         setIsPredicted={setIsPredicted}
+        ODMLdateRange={ODMLdateRange}
+        setODMLDateRange={setODMLDateRange}
       />
 
       <AttendanceStatusChips
