@@ -1,5 +1,12 @@
-'use client'
-import React, { useRef, useEffect, useState, Dispatch, FC, SetStateAction } from "react";
+"use client";
+import React, {
+  useRef,
+  useEffect,
+  useState,
+  Dispatch,
+  FC,
+  SetStateAction,
+} from "react";
 import { FaCheck } from "react-icons/fa";
 import { FiInfo } from "react-icons/fi";
 import Refresh from "@/components/Refresh";
@@ -9,6 +16,7 @@ import InfoPopup from "./InfoPopup";
 import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
 import { useData } from "@/provider/DataProvider";
+import ODPicker from "./OD/ODPicker";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
@@ -27,17 +35,20 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   handleDateChange,
   showDatePicker,
   setShowDatePicker,
-  setIsPredicted
+  setIsPredicted,
 }) => {
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
-  const {error} = useData();
+  const { error } = useData();
   const isOld = false;
-  
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (infoIconRef.current && !infoIconRef.current.contains(event.target as Node)) {
+      if (
+        infoIconRef.current &&
+        !infoIconRef.current.contains(event.target as Node)
+      ) {
         setShowInfoPopup(false);
       }
     };
@@ -59,11 +70,11 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
             handleDateChange={handleDateChange}
           />
         )}
-
+        <ODPicker />
         {!isPredicted && dateRange.from && dateRange.to && (
           <button
             onClick={() => setIsPredicted(true)}
-            className="flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color predict-button"
+            className="predict-button flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
           >
             <FaCheck />
           </button>
@@ -75,8 +86,8 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
           setShowDatePicker={setShowDatePicker}
           resetAttendance={() => {
             setDateRange({ from: null, to: null });
-            setIsPredicted(false)
-        }}
+            setIsPredicted(false);
+          }}
         />
         <div className="relative" ref={infoIconRef}>
           <FiInfo
