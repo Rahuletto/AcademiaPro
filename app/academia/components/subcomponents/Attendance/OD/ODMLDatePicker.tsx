@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, Dispatch, SetStateAction, useEffect } from "react";
 import { DateObject } from "react-multi-date-picker";
 import dynamic from "next/dynamic";
 import { usePlanner } from "@/provider/DataCalProvider";
@@ -16,12 +16,20 @@ interface DateRange {
 interface ODMLDatePickerProps {
   dateRanges: DateRange[];
   setDateRanges: React.Dispatch<React.SetStateAction<DateRange[]>>;
+  isODML: boolean;
+  setIsODML: Dispatch<SetStateAction<boolean>>;
+  resetODML: () => void;
 }
 
 export default function ODMLDatePicker({
   dateRanges,
   setDateRanges,
+  setIsODML,
+  resetODML,
 }: ODMLDatePickerProps) {
+  useEffect(() => {
+    console.log("dateRanges", dateRanges);
+  }, [dateRanges]);
   const [tempRange, setTempRange] = useState<DateObject[]>([]);
   const datePickerRef = useRef<{ openCalendar: () => void } | null>(null);
   const { calendar } = usePlanner();
@@ -43,7 +51,14 @@ export default function ODMLDatePicker({
   };
 
   const removeDateRange = (index: number) => {
-    setDateRanges(dateRanges.filter((_, i) => i !== index));
+    const updatedRanges = [...dateRanges];
+    updatedRanges.splice(index, 1);
+    setDateRanges(updatedRanges);
+    if (updatedRanges.length === 0) {
+      resetODML();
+      setIsODML(false);
+      setDateRanges([]);
+    }
   };
 
   function isHoliday(dateobj: DateObject) {

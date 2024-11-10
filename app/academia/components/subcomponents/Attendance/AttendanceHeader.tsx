@@ -69,7 +69,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
 
   return (
     <div className="mb-4 flex items-center justify-between">
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-3">
         <h1 className="text-2xl font-semibold">Attendance</h1>
 
         {!isPredicted && (
@@ -82,6 +82,12 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
           <ODMLDatePicker
             dateRanges={ODMLdateRange}
             setDateRanges={setODMLDateRange}
+            isODML={isODML}
+            setIsODML={setIsODML}
+            resetODML={() => {
+              setODMLDateRange([{ from: null, to: null }]);
+              setIsODML(false);
+            }}
           />
         )}
         {!isPredicted && dateRange.from && dateRange.to && (
