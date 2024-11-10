@@ -27,9 +27,6 @@ export default function ODMLDatePicker({
   setIsODML,
   resetODML,
 }: ODMLDatePickerProps) {
-  useEffect(() => {
-    console.log("dateRanges", dateRanges);
-  }, [dateRanges]);
   const [tempRange, setTempRange] = useState<DateObject[]>([]);
   const datePickerRef = useRef<{ openCalendar: () => void } | null>(null);
   const { calendar } = usePlanner();
