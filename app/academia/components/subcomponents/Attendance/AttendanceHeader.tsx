@@ -1,4 +1,3 @@
-"use client";
 import React, {
   useRef,
   useEffect,
@@ -16,23 +15,25 @@ import InfoPopup from "./InfoPopup";
 import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
 import { useData } from "@/provider/DataProvider";
-import ODPicker from "./OD/ODMLDatePicker";
 import ODMLDatePicker from "./OD/ODMLDatePicker";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
+  isODML: boolean;
   dateRange: DateRange;
   setDateRange: Dispatch<SetStateAction<DateRange>>;
   handleDateChange: (dates: DateObject[]) => void;
   showDatePicker: boolean;
   setShowDatePicker: Dispatch<SetStateAction<boolean>>;
   setIsPredicted: Dispatch<SetStateAction<boolean>>;
+  setIsODML: Dispatch<SetStateAction<boolean>>;
   ODMLdateRange: DateRange[];
   setODMLDateRange: Dispatch<SetStateAction<DateRange[]>>;
 }
 
 export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   isPredicted,
+  isODML,
   dateRange,
   setDateRange,
   handleDateChange,
@@ -41,6 +42,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   setIsPredicted,
   ODMLdateRange,
   setODMLDateRange,
+  setIsODML,
 }) => {
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
@@ -84,6 +86,14 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
         {!isPredicted && dateRange.from && dateRange.to && (
           <button
             onClick={() => setIsPredicted(true)}
+            className="predict-button flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
+          >
+            <FaCheck />
+          </button>
+        )}
+        {!isODML && ODMLdateRange.some(range => range.from && range.to) && (
+          <button
+            onClick={() => setIsODML(true)}
             className="predict-button flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
           >
             <FaCheck />

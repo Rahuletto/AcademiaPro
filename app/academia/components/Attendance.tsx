@@ -60,6 +60,8 @@ export default function Attendance(): JSX.Element {
         setIsPredicted={setIsPredicted}
         ODMLdateRange={ODMLdateRange}
         setODMLDateRange={setODMLDateRange}
+        isODML={isODML}
+        setIsODML={setIsODML}
       />
 
       <AttendanceStatusChips

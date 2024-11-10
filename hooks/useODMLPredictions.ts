@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import {
   AttendanceCourse,
   DateRange,
@@ -19,20 +19,13 @@ export const useODMLPredictions = (
 
   const performCalculation = useCallback(() => {
     if (!dateRanges.length || !attendance || !timetable || !calendar) {
-      console.warn("Missing required data for calculation");
+      setCalculatedAttendance(null);
       return;
     }
 
-    console.log("Starting calculation with data:", {
-      attendance,
-      timetable,
-      calendar,
-      dateRanges,
-    });
-
-    const updatedAttendance: AttendanceCourse[] = attendance
-      .filter((a) => a.courseTitle !== "null")
-      .map((a) => ({ ...a }));
+    const updatedAttendance: AttendanceCourse[] = JSON.parse(
+      JSON.stringify(attendance.filter((a) => a.courseTitle !== "null")),
+    );
 
     const processDay = (date: Date) => {
       const formattedDate = format(date, "d");
@@ -58,6 +51,7 @@ export const useODMLPredictions = (
         const [subjectTitle, subjectCategory] = cleanedSubject
           .split(" (")
           .map((s) => s.replace(")", "").trim());
+
         const courseAttendance = updatedAttendance.find(
           (a) =>
             a.courseTitle === subjectTitle && a.category === subjectCategory,
@@ -76,8 +70,10 @@ export const useODMLPredictions = (
     };
 
     dateRanges.forEach((range) => {
-      const startDate = new Date(range.from!);
-      const endDate = new Date(range.to!);
+      if (!range.from || !range.to) return;
+
+      const startDate = new Date(range.from);
+      const endDate = new Date(range.to);
 
       startDate.setHours(0, 0, 0, 0);
       endDate.setHours(0, 0, 0, 0);
@@ -90,10 +86,14 @@ export const useODMLPredictions = (
       }
     });
 
-    console.log("Calculation completed with updated attendance:", updatedAttendance);
     setCalculatedAttendance(updatedAttendance);
   }, [attendance, timetable, calendar, dateRanges]);
 
+  useEffect(() => {
+    performCalculation();
+  }, [performCalculation]);
+  console.log("caluclateAttendnace", calculatedAttendance);
+  console.log("performCalculation", performCalculation);
   return {
     calculatedAttendance,
     performCalculation,
