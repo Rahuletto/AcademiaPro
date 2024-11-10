@@ -16,6 +16,7 @@ import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
 import { useData } from "@/provider/DataProvider";
 import ODMLDatePicker from "./OD/ODMLDatePicker";
+import ODMLResetButtons from "./OD/ResetButtons";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
@@ -91,7 +92,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
             <FaCheck />
           </button>
         )}
-        {!isODML && ODMLdateRange.some(range => range.from && range.to) && (
+        {!isODML && ODMLdateRange.some((range) => range.from && range.to) && (
           <button
             onClick={() => setIsODML(true)}
             className="predict-button flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
@@ -107,6 +108,14 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
           resetAttendance={() => {
             setDateRange({ from: null, to: null });
             setIsPredicted(false);
+          }}
+        />
+        <ODMLResetButtons
+          isODML={isODML}
+          setIsODML={setIsODML}
+          resetODML={() => {
+            setODMLDateRange([{ from: null, to: null }]);
+            setIsODML(false);
           }}
         />
         <div className="relative" ref={infoIconRef}>
