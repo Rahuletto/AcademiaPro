@@ -59,12 +59,12 @@ export const useODMLPredictions = (
 
         if (!courseAttendance) return;
 
-        const conducted = parseInt(courseAttendance.hoursConducted) + 1;
-        courseAttendance.hoursConducted = conducted.toString();
-        const percentage = (
-          ((conducted - parseInt(courseAttendance.hoursAbsent)) / conducted) *
-          100
-        ).toFixed(2);
+        const absent = Math.max(0, parseInt(courseAttendance.hoursAbsent) - 1);
+        courseAttendance.hoursAbsent = absent.toString();
+        const conducted = parseInt(courseAttendance.hoursConducted);
+        const percentage = (((conducted - absent) / conducted) * 100).toFixed(
+          2,
+        );
         courseAttendance.attendancePercentage = percentage;
       });
     };
@@ -92,8 +92,7 @@ export const useODMLPredictions = (
   useEffect(() => {
     performCalculation();
   }, [performCalculation]);
-  console.log("caluclateAttendnace", calculatedAttendance);
-  console.log("performCalculation", performCalculation);
+
   return {
     calculatedAttendance,
     performCalculation,
