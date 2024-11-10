@@ -31,9 +31,6 @@ export default function Attendance(): JSX.Element {
   const [showDatePicker, setShowDatePicker] = useState<boolean>(false);
   const [isPredicted, setIsPredicted] = useState<boolean>(false);
   const [isODML, setIsODML] = useState<boolean>(false);
-  useEffect(() => {
-    console.log("odmldaterange", ODMLdateRange);
-  }, [ODMLdateRange]);
   const handleDateChange = (dates: DateObject[]): void => {
     if (dates.length === 2) {
       setDateRange({

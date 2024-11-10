@@ -29,7 +29,6 @@ const DayContext = createContext<DayContextType>({
 });
 
 const fetcher = async (url: string) => {
-  console.log("Fetching planner");
   const response = await fetch(`${rotateUrl()}/calendar`, {
     method: "GET",
     headers: {
@@ -50,42 +49,37 @@ export function usePlanner() {
 }
 
 export function PlannerProvider({ children }: { children: ReactNode }) {
-
   const {
     data: data,
     error,
     isValidating,
     isLoading,
     mutate,
-  } = useSWR<CalResponses | null>(
-    `${revalUrl}/calendar`,
-    fetcher,
-    {
-      // fallbackData: getCachedPlanner(),
-      revalidateOnFocus: false,
-      suspense: true,
-      shouldRetryOnError: false,
-      revalidateOnReconnect: true,
-      revalidateOnMount: true,
-      keepPreviousData: true,
-      refreshInterval: 1000 * 60 * 30,
-      revalidateIfStale: true,
-      dedupingInterval: 1000 * 60 * 5,
-      onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
-        return;
-      },
-      onError: (error) => {
-        console.warn(error);
-        throw new Error(error);
-      },
-      onSuccess: (data) => {
-        if (data) {
-          Storage.set("planner", data);
-        }
-        return data;
-      },
+  } = useSWR<CalResponses | null>(`${revalUrl}/calendar`, fetcher, {
+    // fallbackData: getCachedPlanner(),
+    revalidateOnFocus: false,
+    suspense: true,
+    shouldRetryOnError: false,
+    revalidateOnReconnect: true,
+    revalidateOnMount: true,
+    keepPreviousData: true,
+    refreshInterval: 1000 * 60 * 30,
+    revalidateIfStale: true,
+    dedupingInterval: 1000 * 60 * 5,
+    onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
+      return;
     },
-  );
+    onError: (error) => {
+      console.warn(error);
+      throw new Error(error);
+    },
+    onSuccess: (data) => {
+      if (data) {
+        Storage.set("planner", data);
+      }
+      return data;
+    },
+  });
 
   return (
     <DayContext.Provider
