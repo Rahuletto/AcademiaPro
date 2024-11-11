@@ -112,7 +112,7 @@ export default function ODMLDatePicker({
                 </span>
                 <button
                   onClick={() => removeDateRange(index)}
-                  className="text-red-500 hover:text-red-700"
+                  className="text-light-error-color hover:text-light-error-color dark:text-dark-error-color dark:hover:text-dark-error-color"
                 >
                   Remove
                 </button>

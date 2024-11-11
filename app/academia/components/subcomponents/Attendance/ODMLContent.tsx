@@ -58,9 +58,9 @@ export default function ODMLContent({
   }
 
   return (
-    <>
-      ODML
+    <div>
+      <h2 className="px-2 text-sm font-semibold">ODML</h2>
       <AttendanceList open={true} displayedAttendance={calculatedAttendance} />
-    </>
+    </div>
   );
 }
