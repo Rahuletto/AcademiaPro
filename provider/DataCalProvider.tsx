@@ -49,6 +49,11 @@ export function usePlanner() {
 }
 
 export function PlannerProvider({ children }: { children: ReactNode }) {
+
+  const getCachedPlanner = () => {
+    return Storage.get("planner", null);
+  };
+
   const {
     data: data,
     error,
@@ -56,7 +61,7 @@ export function PlannerProvider({ children }: { children: ReactNode }) {
     isLoading,
     mutate,
   } = useSWR<CalResponses | null>(`${revalUrl}/calendar`, fetcher, {
-    // fallbackData: getCachedPlanner(),
+    fallbackData: getCachedPlanner(),
     revalidateOnFocus: false,
     suspense: true,
     shouldRetryOnError: false,
