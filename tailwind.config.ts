@@ -39,6 +39,7 @@ const config: Config = {
         fadeIn: "fadeIn 0.4s ease-in-out forwards",
         fastfade: "fadeIn 0.1s ease-in forwards",
         fadeOut: "fadeOut 0.4s ease-in-out forwards",
+        slowSpin: "spin 5s linear infinite",
       },
       colors: {
         ...(Themes as any),
