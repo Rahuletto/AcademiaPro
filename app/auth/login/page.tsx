@@ -7,6 +7,7 @@ import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 import { IoLockClosed } from "react-icons/io5";
 import { Link as ALink } from "next-view-transitions";
+import ThemeToggle from "@/components/Sidebar/Buttons/ThemeToggle";
 
 export default async function Login() {
   const cookie = (await cookies()).get("key");
@@ -14,6 +15,9 @@ export default async function Login() {
 
   return (
     <main className="flex h-screen w-screen items-center justify-center bg-light-background-normal dark:bg-dark-background-normal">
+      <div className="fixed top-8 right-8">
+        <ThemeToggle />
+      </div>
       <div className="flex h-fit w-[95vw] flex-col justify-between gap-24 rounded-[48px] bg-light-background-dark px-12 py-12 md:h-[40vh] lg:w-[70vw] dark:bg-dark-background-dark">
         <div className="flex flex-col items-center justify-between gap-12 lg:items-start lg:flex-row">
           <div className="flex h-fit max-w-[400px] flex-col justify-between lg:h-full">

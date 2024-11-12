@@ -13,7 +13,7 @@ export default function UidInput({
     <input
       value={uid}
       maxLength={20}
-      className={`rounded-2xl rounded-bl-[6px] rounded-br-[6px] bg-dark-input dark:text-dark-color text-light-color px-6 py-3 font-medium font-sans`}
+      className={`rounded-2xl rounded-bl-[6px] rounded-br-[6px] dark:bg-dark-input bg-light-input dark:text-dark-color text-light-color px-6 py-3 font-medium font-sans`}
       onChange={(e) => setUid(e.target.value)}
       placeholder="User ID"
     />

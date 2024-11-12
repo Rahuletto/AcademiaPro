@@ -133,7 +133,7 @@ export default function Form() {
             <img src={response?.captcha} alt="captcha" className="rounded-xl" />
             <input
               type="text"
-              className="rounded-2xl border border-light-background-darker bg-dark-input px-6 py-3 font-sans font-medium text-light-color dark:border-dark-background-darker dark:text-dark-color"
+              className="rounded-2xl border border-light-background-darker dark:bg-dark-input bg-light-input px-6 py-3 font-sans font-medium text-light-color dark:border-dark-background-darker dark:text-dark-color"
               placeholder="Enter captcha"
               value={captcha}
               onChange={(e) => setCaptcha(e.target.value)}

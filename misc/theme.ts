@@ -37,10 +37,10 @@ export const Themes = {
       dark: "#E2E2E2",
       darker: "#D0D0D0",
     },
-    input: "rgba(0, 0, 0, 0.03)",
+    input: "rgba(0, 0, 0, 0.1)",
     button: "#F0F0F0",
     side: "#E8E8Ef",
-    accent: "#3A3A5F",
+    accent: "#07090D",
     color: "#1A1A1A",
     error: {
       background: "#FFEBEB",
