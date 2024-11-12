@@ -14,22 +14,22 @@ export default async function Login() {
 
   return (
     <main className="flex h-screen w-screen items-center justify-center bg-light-background-normal dark:bg-dark-background-normal">
-      <div className="flex h-fit w-[95vw] flex-col justify-between gap-24 rounded-[48px] bg-light-background-dark px-12 py-12 md:h-[40vh] md:w-[70vw] dark:bg-dark-background-dark">
-        <div className="flex flex-col items-center justify-between gap-12 md:items-start lg:flex-row">
-          <div className="flex h-fit max-w-[400px] flex-col justify-between md:h-full">
+      <div className="flex h-fit w-[95vw] flex-col justify-between gap-24 rounded-[48px] bg-light-background-dark px-12 py-12 md:h-[40vh] lg:w-[70vw] dark:bg-dark-background-dark">
+        <div className="flex flex-col items-center justify-between gap-12 lg:items-start lg:flex-row">
+          <div className="flex h-fit max-w-[400px] flex-col justify-between lg:h-full">
             <div className="flex flex-col gap-3">
-              <div className="flex flex-row items-center justify-center gap-5 text-light-accent md:justify-start dark:text-dark-accent">
-                <h1 className="text-2xl font-semibold md:text-4xl">ClassPro</h1>
-                <FaBookOpen className="text-2xl md:text-4xl" />
+              <div className="flex flex-row items-center justify-center gap-5 text-light-accent lg:justify-start dark:text-dark-accent">
+                <h1 className="text-2xl font-semibold lg:text-4xl">ClassPro</h1>
+                <FaBookOpen className="text-2xl lg:text-4xl" />
               </div>
-              <p className="text-center text-sm font-medium text-light-color opacity-60 md:text-lg lg:text-left dark:text-dark-color">
+              <p className="text-center text-sm font-medium text-light-color opacity-60 lg:text-lg lg:text-left dark:text-dark-color">
                 University data, beautifully presented at your fingertips
               </p>
             </div>
           </div>
           <Form />
         </div>
-        <div className="-mb-24 flex w-full items-center justify-between gap-2">
+        <div className="md:-mb-24 -mb-32 flex md:flex-row flex-col w-full items-center justify-between gap-2">
           <div className="flex items-center justify-center gap-2 text-light-color opacity-30 dark:text-dark-color">
             <IoLockClosed />
             <p className="font-mono text-xs">
