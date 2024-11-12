@@ -67,7 +67,7 @@ export default function Attendance(): JSX.Element {
         resetAttendance={resetAttendance}
       />
 
-      <div className={`group -mx-3 pt-3 border rounded-xl border-dashed ${isPredicted || isODML ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"}`}>
+      <div className={`group -mx-3 lg:!mx-0 pt-3 border rounded-xl border-dashed ${isPredicted || isODML ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"}`}>
         {isPredicted ? (
           <PredictionContent dateRange={dateRange} />
         ) : isODML ? (

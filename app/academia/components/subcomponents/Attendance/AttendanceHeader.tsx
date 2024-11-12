@@ -68,7 +68,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   const toggleInfoPopup = () => setShowInfoPopup((prev) => !prev);
 
   return (
-    <div className="mb-4 flex items-center justify-between">
+    <div className="mb-0 md:mb-4 flex items-center justify-between">
       <div className="flex items-center gap-3">
         <h1 className="text-2xl font-semibold">Attendance</h1>
 
