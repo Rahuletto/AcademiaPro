@@ -142,7 +142,7 @@ const TableCard: React.FC<TableCardProps> = ({ view, currentDayOrder }) => {
           aria-label="Holiday"
           className="text-3xl font-semibold text-light-error-color dark:text-dark-error-color"
         >
-          Holiday
+          {!day || !timetable ? "Error" : "Holiday"}
         </h1>
       </div>
     );
