@@ -151,7 +151,7 @@ export default function Form() {
       {!response?.captcha && (
         <Button
           disabled={!uid || !pass}
-          className={`${
+          className={`w-full md:w-fit ${
             error === 2
               ? "border border-light-success-color bg-light-success-background text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
               : error === -1
