@@ -2,6 +2,10 @@ import Link from "@/components/Link";
 import { FaBookOpen } from "react-icons/fa";
 import dynamic from "next/dynamic";
 
+const Bento = dynamic(() =>
+  import("../components/Bento").then((a) => a.default),
+);
+
 export default function Academia() {
   return (
     <main className="flex flex-col items-center justify-start gap-4 bg-light-background-normal p-4 dark:bg-dark-background-normal">
@@ -108,7 +112,25 @@ export default function Academia() {
           </p>
 
           <h2 className="text-xl font-semibold text-light-color dark:text-dark-color">
-            7. Your Privacy Rights
+            7. Open Source and Transparency
+          </h2>
+          <p className="text-md text-light-color dark:text-dark-color">
+            ClassPro is an open-source project, developed entirely by a team of
+            two dedicated individuals. Our codebase is open for public review,
+            ensuring full transparency in our data handling and security
+            practices. You are welcome to explore the project and even
+            contribute. The source code is available on our official repository:{" "}
+            <a
+              className="underline"
+              target="_blank"
+              href="https://github.com/Rahuletto/ClassPro"
+            >
+              Github
+            </a>
+          </p>
+
+          <h2 className="text-xl font-semibold text-light-color dark:text-dark-color">
+            8. Your Privacy Rights
           </h2>
           <p className="text-md text-light-color dark:text-dark-color">
             You may request to view or delete your attendance and marks data at
@@ -116,7 +138,7 @@ export default function Academia() {
           </p>
 
           <h2 className="text-xl font-semibold text-light-color dark:text-dark-color">
-            8. Policy Changes
+            9. Policy Changes
           </h2>
           <p className="text-md text-light-color dark:text-dark-color">
             We may periodically update this Privacy Policy to reflect changes in
@@ -125,7 +147,7 @@ export default function Academia() {
           </p>
 
           <h2 className="text-xl font-semibold text-light-color dark:text-dark-color">
-            9. Contact Us
+            10. Contact Us
           </h2>
           <p className="text-md text-light-color dark:text-dark-color">
             For any questions or concerns regarding this Privacy Policy or your
