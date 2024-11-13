@@ -56,6 +56,19 @@ const fetcher = async (url: string) => {
     },
   });
 
+  await fetch(`${rotateUrl()}/update`, {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${token()}`,
+      "X-CSRF-Token": cookie,
+      "Set-Cookie": cookie,
+      Cookie: cookie,
+      "Content-Type": "application/json",
+      "Cache-Control": "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400"
+    },
+  });
+
+
   const data: AllResponses = await response.json();
   return data;
 };
@@ -83,7 +96,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       revalidateOnFocus: false,
       shouldRetryOnError: false,
       suspense: true,
-      revalidateOnReconnect: true,
+      revalidateOnReconnect: false,
       keepPreviousData: true,
       refreshInterval: 1000 * 60 * 10,
       revalidateOnMount: true,

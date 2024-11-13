@@ -53,7 +53,7 @@ export default function Academia() {
           </Suspense>
 
           <div className="group sticky bottom-4 flex w-full items-center justify-center gap-4 transition-all duration-150 hover:gap-12 hover:p-0.5 lg:hidden">
-            <div className="flex w-fit items-center justify-center gap-2 rounded-full border-2 border-light-input bg-light-background-light shadow-xl dark:border-dark-input dark:bg-dark-background-dark">
+            <div className="flex w-fit items-center justify-center gap-2 rounded-full border-2 border-light-input bg-light-background-light shadow-xl dark:shadow-2xl dark:border-dark-input dark:bg-dark-background-dark">
               <a
                 title="Timetable"
                 aria-label="Timetable"
