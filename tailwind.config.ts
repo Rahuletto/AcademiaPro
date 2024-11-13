@@ -34,12 +34,17 @@ const config: Config = {
           "0%": { opacity: "1" },
           "100%": { opacity: "0" },
         },
+        expandHeight: {
+          "0%": { height: "0" },
+          "100%": { height: "100%" },
+        },
       },
       animation: {
         fadeIn: "fadeIn 0.4s ease-in-out forwards",
         fastfade: "fadeIn 0.1s ease-in forwards",
         fadeOut: "fadeOut 0.4s ease-in-out forwards",
         slowSpin: "spin 5s linear infinite",
+        expandHeight: "expandHeight 0.5s ease-in-out forwards",
       },
       colors: {
         ...(Themes as any),
