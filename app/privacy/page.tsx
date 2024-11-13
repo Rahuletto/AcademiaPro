@@ -25,7 +25,7 @@ export default function Academia() {
         </Link>
       </div>
 
-      <div className="h-auto w-full animate-fadeIn flex-col items-center justify-center gap-6 rounded-3xl bg-light-background-dark px-8 py-6 transition-all duration-300 md:px-12 md:py-12 dark:bg-dark-background-dark">
+      <div className="h-auto w-full animate-fadeIn flex-col items-center justify-center gap-6 rounded-3xl bg-light-background-dark px-8 py-6 transition-all duration-300 sm:w-3/4 md:px-12 md:py-12 dark:bg-dark-background-dark">
         <div className="mx-auto flex max-w-7xl flex-col gap-8">
           <h1 className="text-3xl font-semibold text-light-color dark:text-dark-color">
             Privacy Policy
