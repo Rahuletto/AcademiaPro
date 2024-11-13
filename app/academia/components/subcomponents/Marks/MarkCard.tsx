@@ -44,19 +44,22 @@ export default function MarkCard({
           </h1>
           <Indicator type={mark.courseType as "Practical" | "Theory"} />
         </div>
-        {graph ? (
-          <PerformanceChart testPerformance={mark.testPerformance} />
-        ) : (
+        <div className="flex flex-col gap-16">
+          {graph ? (
+            <PerformanceChart testPerformance={mark.testPerformance} />
+          ) : null}
+
           <MarkList testPerformance={mark.testPerformance} />
-        )}
+        </div>
       </div>
+      
       <TotalSection
         graph={graph}
         overall={mark.overall}
         calculate={calculate}
         setCalculate={setCalculate}
       />
-      {calculate && !graph && <CalculatorSection overall={mark.overall} />}
+      {calculate && <CalculatorSection overall={mark.overall} />}
     </div>
   );
 }
