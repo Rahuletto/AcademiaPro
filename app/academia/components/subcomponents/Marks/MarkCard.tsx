@@ -52,7 +52,7 @@ export default function MarkCard({
           <MarkList testPerformance={mark.testPerformance} />
         </div>
       </div>
-      
+
       <TotalSection
         graph={graph}
         overall={mark.overall}
