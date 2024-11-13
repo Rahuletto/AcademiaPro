@@ -41,7 +41,7 @@ export default function Marks() {
   const focusOn = marks?.filter(
     (a) =>
       Number(a.overall.total) > 4 &&
-      Number(a.overall.marks) / Number(a.overall.total) < 0.85,
+      Number(a.overall.marks) / Number(a.overall.total) < 0.6,
   );
   return (
     <section id="marks" className="flex flex-col gap-6">

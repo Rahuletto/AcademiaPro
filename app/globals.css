@@ -46,6 +46,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   min-height: 100vh !important;
   transition: all 0.2s ease-in;
   -webkit-transition: all 0.2s ease-in;
