@@ -23,7 +23,7 @@ export default function TotalSection({
   ).toFixed(1);
 
   return (
-    <div className="ml-2 mt-3 flex flex-col gap-2 relative">
+    <div className="relative ml-2 mt-3 flex flex-col gap-2">
       {/* <div className="absolute right-2 bottom-7 z-10">
         {Number(overall.total) <= 60 && (
           <button
@@ -46,6 +46,18 @@ export default function TotalSection({
         className={`${calculate ? "opacity-80" : "opacity-100"} flex items-center justify-between gap-2 border-t-2 border-dashed border-dark-background-light pt-4`}
       >
         <div className="flex flex-row items-center gap-4">
+          {Number(overall.total) <= 60 && (
+            <button
+              className={`rounded-full p-2 text-xs opacity-70 transition duration-200 ${calculate ? "bg-light-error-background dark:bg-dark-error-background" : "bg-light-background-dark dark:bg-dark-background-dark"}`}
+              onClick={() => setCalculate(!calculate)}
+            >
+              {calculate ? (
+                <FaXmark className="text-light-error-color dark:text-dark-error-color" />
+              ) : (
+                <FaCalculator />
+              )}
+            </button>
+          )}
           <h2>Total</h2>
 
           {graph ? (
