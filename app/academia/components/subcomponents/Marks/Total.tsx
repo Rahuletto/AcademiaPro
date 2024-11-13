@@ -23,7 +23,7 @@ export default function TotalSection({
   ).toFixed(1);
 
   return (
-    <div className="relative ml-2 mt-3 flex flex-col gap-2">
+    <div className="ml-2 mt-3 flex flex-col gap-2 relative">
       {/* <div className="absolute right-2 bottom-7 z-10">
         {Number(overall.total) <= 60 && (
           <button
