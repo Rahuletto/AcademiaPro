@@ -9,6 +9,8 @@ import { FiInfo } from "react-icons/fi";
 import NoData from "./subcomponents/NoData";
 import { useData } from "@/provider/DataProvider";
 import { PiStarFourFill } from "react-icons/pi";
+import { BsGraphUp } from "react-icons/bs";
+import { FaPercentage } from "react-icons/fa";
 
 const InfoPopup = dynamic(
   () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
@@ -28,6 +30,7 @@ export default function Marks() {
   const isOld = false;
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const [openFocus, setFocus] = useState(false);
+  const [graph, setGraph] = useState(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
   const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
@@ -81,6 +84,14 @@ export default function Marks() {
               <PiStarFourFill className="text-xl text-light-info-color dark:text-dark-info-color" />
             </button>
           )}
+          <button
+      tabIndex={0}
+      className={`rounded-full p-1 text-sm group ${isOld ? "bg-light-info-color dark:bg-dark-info-color dark:text-light-color text-dark-color px-2" : "hover:bg-light-background-dark text-light-color opacity-60 dark:text-dark-color dark:hover:bg-dark-background-dark"}`}
+      onClick={() => setGraph((prev) => !prev)}
+    >
+       {graph ? <FaPercentage /> : <BsGraphUp />}
+    </button>
+         
           {!error && <Refresh type={{ mutateMarks: true }} isOld={isOld} />}
         </div>
       </div>
@@ -141,7 +152,7 @@ export default function Marks() {
             <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
               {marks
                 ?.filter((a) => a.courseType === "Theory")
-                .map((mark, i) => <MarkCard key={i} mark={mark} />)}
+                .map((mark, i) => <MarkCard graph={graph} key={i} mark={mark} />)}
             </div>
             {marks && marks[0] && <Indicator type="Practical" separator />}
 
@@ -150,7 +161,7 @@ export default function Marks() {
                 ?.filter(
                   (a) => a.courseType === "Practical" || a.courseType === "Lab",
                 )
-                .map((mark, i) => <MarkCard key={i} mark={mark} />)}
+                .map((mark, i) => <MarkCard graph={graph}  key={i} mark={mark} />)}
             </div>
           </div>
         </>

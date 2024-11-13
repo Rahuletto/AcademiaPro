@@ -1,10 +1,11 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import { Mark } from "@/types/Marks";
 import TotalSection from "./Total";
 import MarkList from "./MarkList";
 
 import dynamic from "next/dynamic";
+import PerformanceChart from "./PerfGraph";
 
 const CalculatorSection = dynamic(
   () => import("./Calculate").then((a) => a.default),
@@ -16,7 +17,13 @@ const Indicator = dynamic(
   { ssr: false },
 );
 
-export default function MarkCard({ mark }: { mark: Mark }) {
+export default function MarkCard({
+  mark,
+  graph = false,
+}: {
+  mark: Mark;
+  graph: boolean;
+}) {
   const [calculate, setCalculate] = useState(false);
 
   return (
@@ -33,18 +40,23 @@ export default function MarkCard({ mark }: { mark: Mark }) {
             aria-label={`${mark.courseName} (${mark.courseCode})`}
             className="text-md font-medium capitalize"
           >
-            {mark.courseName?.toLowerCase()} 
+            {mark.courseName?.toLowerCase()}
           </h1>
           <Indicator type={mark.courseType as "Practical" | "Theory"} />
         </div>
-        <MarkList testPerformance={mark.testPerformance} />
+        {graph ? (
+          <PerformanceChart testPerformance={mark.testPerformance} />
+        ) : (
+          <MarkList testPerformance={mark.testPerformance} />
+        )}
       </div>
       <TotalSection
+        graph={graph}
         overall={mark.overall}
         calculate={calculate}
         setCalculate={setCalculate}
       />
-      {calculate && <CalculatorSection overall={mark.overall} />}
+      {calculate && !graph && <CalculatorSection overall={mark.overall} />}
     </div>
   );
 }
