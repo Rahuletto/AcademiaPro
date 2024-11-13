@@ -1,20 +1,23 @@
-'use client'
+"use client";
 import { Overall } from "@/types/Marks";
 import React, { useState, useEffect } from "react";
-
-const grade_points: { [key: string]: number } = {
-  O: 91,
-  "A+": 81,
-  A: 71,
-  "B+": 61,
-  B: 56,
-  C: 50,
-};
+import { grade_points } from "@/types/Grade";
+import { determineGrade } from "@/utils/Grade";
 
 export default function CalculatorSection({ overall }: { overall: Overall }) {
   const [grade, setGrade] = useState("O");
   const [req, setReq] = useState("0");
   const [expectedInternal, setExpectedInternal] = useState(0);
+
+  useEffect(() => {
+    const lostMark: number = Number(overall.total) - Number(overall.marks);
+    const newGrade = determineGrade(lostMark);
+    console.log(newGrade);
+    setGrade(newGrade);
+    if (Number(overall.total) != 60) {
+      setExpectedInternal(60 - Number(overall.total));
+    }
+  }, [overall.total, overall.marks]);
 
   useEffect(() => {
     setReq(
