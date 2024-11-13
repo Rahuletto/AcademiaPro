@@ -92,7 +92,7 @@ export default function Marks() {
       ) : marks ? (
         <>
           {focusOn?.[0] && openFocus && (
-            <div className="animate-slide transition-all duration-150">
+            <div className="animate-expandHeight transition-all duration-150">
               <div className="flex h-full flex-col gap-3 rounded-xl border-l-2 border-light-info-color bg-light-info-background bg-opacity-50 p-3 px-5 dark:border-dark-info-color dark:bg-dark-info-background">
                 <div
                   className="flex cursor-pointer items-center justify-between"
@@ -118,7 +118,7 @@ export default function Marks() {
                   <ul className="ml-6 list-disc">
                     {focusOn.map((a, i) => (
                       <li key={i} className="list-disc text-sm opacity-70">
-                        {a.courseName} {" ->  "}
+                        <span className="max-w-[60vw]">{a.courseName}</span> {" ->  "}
                         <span className="text-light-warn-color ml-2 dark:text-dark-warn-color">
                           {Number(
                             (
