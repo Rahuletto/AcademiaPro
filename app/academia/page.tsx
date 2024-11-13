@@ -52,25 +52,31 @@ export default function Academia() {
             <Marks />
           </Suspense>
 
-          <div className="sticky bottom-3 flex w-full items-center justify-center gap-4 shadow-xl lg:hidden">
-            <div className="flex w-fit items-center justify-center gap-2 rounded-full bg-light-background-light dark:bg-dark-background-dark">
+          <div className="group sticky bottom-4 flex w-full items-center justify-center gap-4 transition-all duration-150 hover:gap-12 hover:p-0.5 lg:hidden">
+            <div className="flex w-fit items-center justify-center gap-2 rounded-full border-2 border-light-input bg-light-background-light shadow-xl dark:border-dark-input dark:bg-dark-background-dark">
               <a
+                title="Timetable"
+                aria-label="Timetable"
                 href="#timetable"
-                className="rounded-full p-3  hover:bg-white/10"
+                className="rounded-full p-3 transition-all duration-150 hover:bg-white/10 hover:p-4"
               >
-                <BsClockHistory className="text-2xl text-light-accent dark:text-dark-accent" />
+                <BsClockHistory className="text-xl text-light-color dark:text-dark-color" />
               </a>
               <a
-                className="rounded-full p-3  hover:bg-white/10"
+                title="Attendance"
+                aria-label="Attendance"
+                className="rounded-full p-3 transition-all duration-150 hover:bg-white/10 hover:p-4"
                 href="#attendance"
               >
-                <BsPersonCheckFill className="text-2xl text-light-accent dark:text-dark-accent" />
+                <BsPersonCheckFill className="text-xl text-light-color dark:text-dark-color" />
               </a>
               <a
-                className="rounded-full p-3  hover:bg-white/10"
+                title="Marks"
+                aria-label="Marks"
+                className="rounded-full p-3 transition-all duration-150 hover:bg-white/10 hover:p-4"
                 href="#marks"
               >
-                <FaGraduationCap className="text-2xl text-light-accent dark:text-dark-accent" />
+                <FaGraduationCap className="text-xl text-light-color dark:text-dark-color" />
               </a>
             </div>
           </div>
