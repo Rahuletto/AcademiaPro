@@ -33,12 +33,6 @@ export default function Academia() {
           <Bento />
         </div>
       </div>
-      <div className="h-auto w-full animate-fadeIn flex-col gap-6 rounded-3xl bg-light-warn-background px-6 py-4 md:px-12 md:py-6 dark:bg-dark-warn-background">
-        <h3 className="text-light-warn-color dark:text-dark-warn-color">
-          We scrape the information from SRM Academia, This website acts as a
-          wrapper and does not store any information whatsoever!
-        </h3>
-      </div>
     </main>
   );
 }

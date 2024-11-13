@@ -40,7 +40,8 @@ export default function TotalSection({
               <p className="text-xs font-semibold">{percent}%</p>
             </div>
           ) : (
-            Number(overall.total) <= 60 && (
+            Number(overall.total) <= 60 &&
+            Number(overall.total) > 0 && (
               <button
                 className={`rounded-full p-2 text-xs opacity-70 transition duration-200 ${calculate ? "bg-light-error-background dark:bg-dark-error-background" : "hover:bg-light-background-dark dark:hover:bg-dark-background-dark"}`}
                 onClick={() => setCalculate(!calculate)}
