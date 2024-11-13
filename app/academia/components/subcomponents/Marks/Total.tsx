@@ -25,16 +25,18 @@ export default function TotalSection({
     >
       <div className="flex flex-row items-center gap-4">
         <h2>Total</h2>
-        <button
-          className={`rounded-full p-2 text-xs opacity-70 transition duration-200 ${calculate ? "bg-light-error-background dark:bg-dark-error-background" : "hover:bg-light-background-dark dark:hover:bg-dark-background-dark"}`}
-          onClick={() => setCalculate(!calculate)}
-        >
-          {calculate ? (
-            <FaXmark className="text-light-error-color dark:text-dark-error-color" />
-          ) : (
-            <FaCalculator />
-          )}
-        </button>
+        {Number(overall.total) <= 60 && (
+          <button
+            className={`rounded-full p-2 text-xs opacity-70 transition duration-200 ${calculate ? "bg-light-error-background dark:bg-dark-error-background" : "hover:bg-light-background-dark dark:hover:bg-dark-background-dark"}`}
+            onClick={() => setCalculate(!calculate)}
+          >
+            {calculate ? (
+              <FaXmark className="text-light-error-color dark:text-dark-error-color" />
+            ) : (
+              <FaCalculator />
+            )}
+          </button>
+        )}
       </div>
       <MarkDisplay marks={overall} />
     </div>
