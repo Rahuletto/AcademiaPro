@@ -157,11 +157,13 @@ export default function Marks() {
             {marks && marks[0] && <Indicator type="Practical" separator />}
 
             <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
-              {marks
+                {marks
                 ?.filter(
-                  (a) => a.courseType === "Practical" || a.courseType === "Lab",
+                  (a) =>
+                  (a.courseType === "Practical" || a.courseType === "Lab") &&
+                  (a.courseCode.includes("J") ? Number(a.overall.total) > 0 : true),
                 )
-                .map((mark, i) => <MarkCard graph={graph}  key={i} mark={mark} />)}
+                .map((mark, i) => <MarkCard graph={graph} key={i} mark={mark} />)}
             </div>
           </div>
         </>
