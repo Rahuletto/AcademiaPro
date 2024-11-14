@@ -5,6 +5,7 @@ import Storage from "@/utils/Storage";
 import rotateUrl, { revalUrl } from "@/utils/URL";
 import { CalResponses } from "@/types/Response";
 import { Calendar } from "@/types/Calendar";
+import { Cookie as cookies } from "@/utils/Cookies";
 
 interface DayContextType {
   calendar: Calendar[] | null;
@@ -29,19 +30,40 @@ const DayContext = createContext<DayContextType>({
 });
 
 const fetcher = async (url: string) => {
-  const response = await fetch(`${rotateUrl()}/calendar`, {
-    method: "GET",
-    headers: {
-      Connection: "keep-alive",
-      "Accept-Encoding": "gzip, deflate, br, zstd",
-      "Content-Type": "application/json",
-      "Cache-Control":
-        "public, max-age=3600, s-maxage=7200, stale-while-revalidate=3600, stale-if-error=86400",
-    },
-  });
+  const cookie = cookies.get("key");
 
-  const data: CalResponses = await response.json();
-  return data;
+  if (!cookie) {
+    const response = await fetch(`${rotateUrl()}/calendar`, {
+      method: "GET",
+      headers: {
+        Connection: "keep-alive",
+        "Accept-Encoding": "gzip, deflate, br, zstd",
+        "Content-Type": "application/json",
+        "Cache-Control":
+          "public, max-age=3600, s-maxage=7200, stale-while-revalidate=3600, stale-if-error=86400",
+      },
+    });
+
+    const data: CalResponses = await response.json();
+    return data;
+  } else {
+    const response = await fetch(`${rotateUrl()}/calendar`, {
+      method: "GET",
+      headers: {
+        "X-CSRF-Token": cookie,
+        "Set-Cookie": cookie,
+        Cookie: cookie,
+        Connection: "keep-alive",
+        "Accept-Encoding": "gzip, deflate, br, zstd",
+        "Content-Type": "application/json",
+        "Cache-Control":
+          "public, max-age=3600, s-maxage=7200, stale-while-revalidate=3600, stale-if-error=86400",
+      },
+    });
+
+    const data: CalResponses = await response.json();
+    return data;
+  }
 };
 
 export function usePlanner() {
@@ -49,7 +71,6 @@ export function usePlanner() {
 }
 
 export function PlannerProvider({ children }: { children: ReactNode }) {
-
   const getCachedPlanner = () => {
     return Storage.get("planner", null);
   };
