@@ -48,7 +48,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
-  const { error } = useData();
+  const { error, attendance } = useData();
   const isOld = false;
 
   useEffect(() => {
@@ -68,17 +68,20 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   const toggleInfoPopup = () => setShowInfoPopup((prev) => !prev);
 
   return (
-    <div className="mb-0 md:mb-4 flex items-center justify-between">
-      <div className="flex items-center gap-3">
-        <h1 className="text-2xl font-semibold">Attendance</h1>
+    <>
+      <div className="mb-0 flex items-center justify-between md:mb-4">
+        <div className="flex items-center gap-3">
+          <h1 className="text-2xl font-semibold">Attendance</h1>
 
-        {!isPredicted && (
-          <DatePickerComponent
-            dateRange={dateRange}
-            handleDateChange={handleDateChange}
-          />
-        )}
-        {!isPredicted && (
+          {attendance && attendance.length > 0 && 
+            <>
+              {!isPredicted && (
+                <DatePickerComponent
+                  dateRange={dateRange}
+                  handleDateChange={handleDateChange}
+                />
+              )}
+              {/* {!isPredicted && (
           <ODMLDatePicker
             dateRanges={ODMLdateRange}
             setDateRanges={setODMLDateRange}
@@ -89,58 +92,61 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
               setIsODML(false);
             }}
           />
-        )}
-        {!isPredicted && dateRange.from && dateRange.to && (
-          <button
-            onClick={() => setIsPredicted(true)}
-            className="predict-button flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
-          >
-            <FaCheck />
-          </button>
-        )}
-        {!isODML && ODMLdateRange.some((range) => range.from && range.to) && (
+        )} */}
+              {!isPredicted && dateRange.from && dateRange.to && (
+                <button
+                  onClick={() => setIsPredicted(true)}
+                  className="predict-button flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
+                >
+                  <FaCheck />
+                </button>
+              )}
+              {/* {!isODML && ODMLdateRange.some((range) => range.from && range.to) && (
           <button
             onClick={() => setIsODML(true)}
             className="predict-button flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
           >
             <FaCheck />
           </button>
-        )}
+        )} */}
 
-        <PredictResetButtons
-          isPredicted={isPredicted}
-          showDatePicker={showDatePicker}
-          setShowDatePicker={setShowDatePicker}
-          resetAttendance={() => {
-            setDateRange({ from: null, to: null });
-            setIsPredicted(false);
-          }}
-        />
-        <ODMLResetButtons
-          isODML={isODML}
-          setIsODML={setIsODML}
-          resetODML={() => {
-            setODMLDateRange([{ from: null, to: null }]);
-            setIsODML(false);
-          }}
-        />
-        <div className="relative" ref={infoIconRef}>
-          <FiInfo
-            className="cursor-help opacity-40"
-            onClick={toggleInfoPopup}
-            onMouseEnter={toggleInfoPopup}
-            onMouseLeave={() => setShowInfoPopup(false)}
-          />
-          {showInfoPopup && (
-            <InfoPopup
-              warn
-              text="Enter the dates you'll be absent to see a predicted attendance percentage and margin."
-              onClose={() => setShowInfoPopup(false)}
-            />
-          )}
+              <PredictResetButtons
+                isPredicted={isPredicted}
+                showDatePicker={showDatePicker}
+                setShowDatePicker={setShowDatePicker}
+                resetAttendance={() => {
+                  setDateRange({ from: null, to: null });
+                  setIsPredicted(false);
+                }}
+              />
+              {/* <ODMLResetButtons
+            isODML={isODML}
+            setIsODML={setIsODML}
+            resetODML={() => {
+              setODMLDateRange([{ from: null, to: null }]);
+              setIsODML(false);
+            }}
+          /> */}
+              <div className="relative" ref={infoIconRef}>
+                <FiInfo
+                  className="cursor-help opacity-40"
+                  onClick={toggleInfoPopup}
+                  onMouseEnter={toggleInfoPopup}
+                  onMouseLeave={() => setShowInfoPopup(false)}
+                />
+                {showInfoPopup && (
+                  <InfoPopup
+                    warn
+                    text="Enter the dates you'll be absent to see a predicted attendance percentage and margin."
+                    onClose={() => setShowInfoPopup(false)}
+                  />
+                )}
+              </div>
+            </>
+          }
         </div>
+        {!error && <Refresh type={{ mutateAttendance: true }} isOld={isOld} />}
       </div>
-      {!error && <Refresh type={{ mutateAttendance: true }} isOld={isOld} />}
-    </div>
+    </>
   );
 };

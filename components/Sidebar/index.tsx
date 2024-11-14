@@ -23,6 +23,7 @@ import Footer from "../Footer";
 import { IoLibrarySharp } from "react-icons/io5";
 import InstallButton from "./Buttons/InstallButton";
 import Popup from "./Popup";
+import Debugger from "@/app/academia/components/subcomponents/Debugger";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -52,6 +53,7 @@ export function Sidebar({
   const [isOpen, setIsOpen] = useState(true);
   const [isAnchored, setIsAnchored] = useState(true);
   const [isHoverEnabled, setIsHoverEnabled] = useState(false);
+  const [debug, setDebug] = useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
   const installRef = useRef<HTMLButtonElement>(null);
@@ -174,6 +176,7 @@ export function Sidebar({
   } else
     return (
       <>
+        {debug && <Debugger setOpen={setDebug} />}
         {/* <Poster /> */}
         <nav className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
           <header
@@ -187,12 +190,12 @@ export function Sidebar({
                 className={`transition duration-200 ${isOpen ? "opacity-100" : "opacity-0"}`}
               >
                 <div className="text-color flex items-center justify-between text-light-color dark:text-dark-color">
-                  <TransitionLink
-                    href="/home"
+                  <button
+                    onClick={() => setDebug(true)}
                     className="text-3xl font-semibold"
                   >
                     ClassPro
-                  </TransitionLink>
+                  </button>
                   <ThemeToggle />
                 </div>
                 <div className="my-4 flex gap-2">
@@ -294,7 +297,7 @@ export function Sidebar({
           >
             <main
               ref={content}
-              className={`m-0.5 h-full scroll-smooth w-full overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
+              className={`m-0.5 h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
               <div
                 style={error ? { height: "-webkit-fill-available" } : {}}

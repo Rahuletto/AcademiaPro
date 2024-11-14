@@ -24,8 +24,8 @@ export default function AttendanceList({
     (course) => Number(course.attendancePercentage.split(".")[0]) > 75,
   );
   return (
-    <>
-      {displayedAttendance && (
+    displayedAttendance ? <>
+      {displayedAttendance?.[0] && (
         <div className={`transition duration-200`}>
           <AttendanceCard legend course={displayedAttendance[0]} />
         </div>
@@ -98,6 +98,6 @@ export default function AttendanceList({
             ))}
         </div>
       </div>
-    </>
+    </> : null
   );
 }

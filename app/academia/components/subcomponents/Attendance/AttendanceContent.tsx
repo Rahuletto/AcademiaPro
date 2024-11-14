@@ -11,7 +11,7 @@ export default function AttendanceContent(): JSX.Element {
 
   if (isLoading) return <Loading size="max" />;
   if (error) return <Error error={error} component="Attendance" />;
-  if (!attendance) return <NoData component="Attendance" />;
+  if (!attendance || !attendance?.[0]) return <NoData component="Attendance" />;
 
   return (
     <div
