@@ -35,7 +35,7 @@ export default async function Privacy() {
 
         <section className="text-base text-light-color dark:text-dark-color leading-relaxed">
           <p>
-            ClassPro ("we," "us," or "our") is committed to safeguarding your
+            ClassPro (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is committed to safeguarding your
             privacy. This{" "}
             <span className="underline decoration-light-accent dark:decoration-dark-accent">
               Privacy Policy

@@ -1,7 +1,6 @@
 import Link from "@/components/Link";
 import dynamic from "next/dynamic";
 import { cookies } from "next/headers";
-import { Suspense } from "react";
 import { FaBookOpen } from "react-icons/fa";
 
 const Bento = dynamic(() => import("../components/Bento").then(a => a.default), {

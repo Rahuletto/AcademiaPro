@@ -2,12 +2,12 @@ import React from "react";
 import Form from "./components/Form";
 
 import { FaBookOpen } from "react-icons/fa";
-import Link from "@/components/Link";
 import { redirect } from "next/navigation";
 import { cookies } from "next/headers";
 import { IoLockClosed } from "react-icons/io5";
 import { Link as ALink } from "next-view-transitions";
 import ThemeToggle from "@/components/Sidebar/Buttons/ThemeToggle";
+
 
 export default async function Login() {
   const cookie = (await cookies()).get("key");
