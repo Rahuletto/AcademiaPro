@@ -99,7 +99,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
           Storage.set("data", data);
         }
 
-        fetch(`${rotateUrl()}/update`, {
+        fetch(`${rotateUrl().replace("proscrape", "newscrape")}/update`, {
           method: "PATCH",
           headers: {
             Authorization: `Bearer ${token()}`,
@@ -111,7 +111,6 @@ export function DataProvider({ children }: { children: ReactNode }) {
               "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
           },
         });
-
 
         return data;
       },
