@@ -40,8 +40,8 @@ const DataContext = createContext<DataContextType>({
 const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
-  
-  if(cookie?.length < 800) {
+
+  if (cookie?.length < 800) {
     Cookie.clear();
   }
   const response = await fetch(`${rotateUrl()}/getData`, {
@@ -52,7 +52,8 @@ const fetcher = async (url: string) => {
       "Set-Cookie": cookie,
       Cookie: cookie,
       "Content-Type": "application/json",
-      "Cache-Control": "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400"
+      "Cache-Control":
+        "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
     },
   });
 
@@ -64,10 +65,10 @@ const fetcher = async (url: string) => {
       "Set-Cookie": cookie,
       Cookie: cookie,
       "Content-Type": "application/json",
-      "Cache-Control": "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400"
+      "Cache-Control":
+        "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
     },
   });
-
 
   const data: AllResponses = await response.json();
   return data;
@@ -114,7 +115,6 @@ export function DataProvider({ children }: { children: ReactNode }) {
       },
     },
   );
-
 
   return (
     <DataContext.Provider
