@@ -48,30 +48,14 @@ const fetcher = async (url: string) => {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token()}`,
-      "X-CSRF-Token": cookie,
-      "Set-Cookie": cookie,
-      Cookie: cookie,
+      "X-CSRF-Token": cookie || "",
+      "Set-Cookie": cookie || "",
+      Cookie: cookie || "",
       "Content-Type": "application/json",
       "Cache-Control":
         "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
     },
   });
-
-  const u = await fetch(`${rotateUrl()}/update`, {
-    method: "PATCH",
-    headers: {
-      Authorization: `Bearer ${token()}`,
-      "X-CSRF-Token": cookie,
-      "Set-Cookie": cookie,
-      Cookie: cookie,
-      "Content-Type": "application/json",
-      "Cache-Control":
-        "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
-    },
-  });
-
-  const ud = await u.json();
-  console.log(ud)
 
   const data: AllResponses = await response.json();
   return data;
@@ -110,10 +94,24 @@ export function DataProvider({ children }: { children: ReactNode }) {
       onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
         return;
       },
-      onSuccess: (data) => {
+      onSuccess: async (data) => {
         if (data) {
           Storage.set("data", data);
         }
+
+        fetch(`${rotateUrl()}/update`, {
+          method: "PATCH",
+          headers: {
+            Authorization: `Bearer ${token()}`,
+            "X-CSRF-Token": cookie || "",
+            "Set-Cookie": cookie || "",
+            Cookie: cookie || "",
+            "Content-Type": "application/json",
+            "Cache-Control":
+              "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
+          },
+        });
+
         return data;
       },
     },
