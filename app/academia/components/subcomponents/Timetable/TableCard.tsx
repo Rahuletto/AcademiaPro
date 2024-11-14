@@ -87,7 +87,7 @@ const SubjectCell: React.FC<SubjectCellProps> = ({
       <span
         className={`absolute ${
           classRoom ? "bottom-1 md:bottom-6" : "bottom-1"
-        } right-2 text-xs font-normal opacity-40 transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
+        } right-2 ${subject && subject !== "null" ? "text-black opacity-40" : "text-white opacity-10"} text-xs font-normal transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
       >
         {Time.start[index]} - {Time.end[index]}
       </span>

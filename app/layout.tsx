@@ -12,6 +12,7 @@ import { ReactNode } from "react";
 import ErrorBoundary from "./Boundary";
 import { DataProvider } from "@/provider/DataProvider";
 import { PlannerProvider } from "@/provider/DataCalProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const APP_NAME = "ClassPro";
 const APP_DEFAULT_TITLE = "ClassPro";
@@ -114,6 +115,7 @@ export default async function RootLayout({
 
             <body className="h-screen">
               <Analytics />
+              <SpeedInsights />
               <PlannerProvider>
                 {key && key.value ? (
                   <GroupProviders>{children}</GroupProviders>

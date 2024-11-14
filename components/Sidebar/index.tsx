@@ -23,6 +23,7 @@ import Footer from "../Footer";
 import { IoLibrarySharp } from "react-icons/io5";
 import InstallButton from "./Buttons/InstallButton";
 import Popup from "./Popup";
+import Debugger from "@/app/academia/components/subcomponents/Debugger";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -52,6 +53,7 @@ export function Sidebar({
   const [isOpen, setIsOpen] = useState(true);
   const [isAnchored, setIsAnchored] = useState(true);
   const [isHoverEnabled, setIsHoverEnabled] = useState(false);
+  const [debug, setDebug] = useState(false);
 
   const ref = useRef<HTMLDivElement>(null);
   const installRef = useRef<HTMLButtonElement>(null);
@@ -174,6 +176,7 @@ export function Sidebar({
   } else
     return (
       <>
+        {debug && <Debugger setOpen={setDebug} />}
         {/* <Poster /> */}
         <nav className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
           <header
@@ -187,12 +190,12 @@ export function Sidebar({
                 className={`transition duration-200 ${isOpen ? "opacity-100" : "opacity-0"}`}
               >
                 <div className="text-color flex items-center justify-between text-light-color dark:text-dark-color">
-                  <TransitionLink
-                    href="/home"
+                  <button
+                    onClick={() => setDebug(true)}
                     className="text-3xl font-semibold"
                   >
                     ClassPro
-                  </TransitionLink>
+                  </button>
                   <ThemeToggle />
                 </div>
                 <div className="my-4 flex gap-2">
@@ -242,7 +245,7 @@ export function Sidebar({
               </Link> */}
 
               <Link
-                className="relative font-semibold text-[#786CFF] after:absolute after:-right-2 after:-top-1 after:rounded-md after:bg-[#1E2036] after:p-0.5 after:px-1 after:text-xs after:content-['NEW'] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
+                className="relative font-semibold text-[#786CFF] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
                 title="Question papers"
                 href="/papers"
               >
@@ -252,11 +255,12 @@ export function Sidebar({
 
               <Link
                 aria-disabled
-                className="relative cursor-not-allowed border border-dashed border-[#F34F4F1e] font-semibold text-[#F34F4F] after:absolute after:-right-2 after:-top-1 after:rounded-md after:bg-[#361e1e] after:p-0.5 after:px-1 after:text-xs after:content-['🏗️'] hover:bg-[#F34F4F1e] hover:text-[#F34F4F] dark:text-[#F34F4F] dark:hover:bg-[#F34F4F1e] dark:hover:text-[#F34F4F]"
+                className="relative cursor-not-allowed border border-dashed border-[#F34F4F1e] font-semibold text-[#F34F4F] hover:bg-[#F34F4F1e] hover:text-[#F34F4F] dark:text-[#F34F4F] dark:hover:bg-[#F34F4F1e] dark:hover:text-[#F34F4F]"
                 title="Coming Soon"
                 href="#"
               >
-                <BsFillPinAngleFill className="text-xl" />
+                {/* <BsFillPinAngleFill className="text-xl" /> */}
+                <span className="text-xl">🏗️</span>
                 Events
               </Link>
             </div>
@@ -293,7 +297,7 @@ export function Sidebar({
           >
             <main
               ref={content}
-              className={`m-0.5 h-full w-full overflow-y-auto overflow-x-hidden rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
+              className={`m-0.5 h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
               <div
                 style={error ? { height: "-webkit-fill-available" } : {}}

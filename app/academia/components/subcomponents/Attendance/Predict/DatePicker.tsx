@@ -1,8 +1,5 @@
-
-'use client'
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { DateObject } from "react-multi-date-picker";
-
 import dynamic from "next/dynamic";
 import { usePlanner } from "@/provider/DataCalProvider";
 
@@ -10,7 +7,6 @@ const DatePicker = dynamic(
   () => import("react-multi-date-picker").then((a) => a.default),
   { ssr: false },
 );
-
 
 interface DatePickerComponentProps {
   dateRange: { from: Date | null; to: Date | null };
@@ -21,12 +17,13 @@ export default function DatePickerComponent({
   dateRange,
   handleDateChange,
 }: DatePickerComponentProps) {
-  const [opened, setOpened] = useState(false);
+  const datePickerRef = useRef<{ openCalendar: () => void } | null>(null);
   const { calendar } = usePlanner();
+
   function selector() {
-    setOpened(!opened);
-    document.querySelector<HTMLInputElement>(".rmdp-input")?.focus();
+    datePickerRef.current?.openCalendar();
   }
+
   function isHoliday(dateobj: DateObject) {
     if (!calendar) return false;
     const date = dateobj.format("DD");
@@ -46,6 +43,7 @@ export default function DatePickerComponent({
   return (
     <div className="relative flex items-center gap-4">
       <DatePicker
+        ref={datePickerRef}
         value={[
           new DateObject(dateRange.from || new Date()),
           new DateObject(dateRange.to || new Date()),

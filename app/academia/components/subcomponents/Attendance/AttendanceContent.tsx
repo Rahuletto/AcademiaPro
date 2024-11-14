@@ -11,11 +11,11 @@ export default function AttendanceContent(): JSX.Element {
 
   if (isLoading) return <Loading size="max" />;
   if (error) return <Error error={error} component="Attendance" />;
-  if (!attendance) return <NoData component="Attendance" />;
+  if (!attendance || !attendance?.[0]) return <NoData component="Attendance" />;
 
   return (
     <div
-      className={`${isValidating ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"} -mx-2 rounded-2xl border-4 border-dotted`}
+      className={`${isValidating ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"} -mx-3 rounded-2xl border-4 border-dotted`}
     >
       <AttendanceList
         open={false}

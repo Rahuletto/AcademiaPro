@@ -1,4 +1,4 @@
-"use client"; // Error components must be Client Components
+"use client"; 
 
 import { Link } from "next-view-transitions";
 import { useEffect } from "react";
@@ -16,7 +16,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="h-screen p-4 absolute top-0">
+  <div className="h-screen p-4 absolute top-0">
       <div className="h-full w-full rounded-2xl bg-dark-background-dark p-2">
         <div className="flex h-full animate-fadeIn flex-col items-center justify-center gap-2 rounded-xl bg-light-error-background p-8 text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
           <BiError className="mb-3 text-4xl" />

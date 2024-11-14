@@ -32,7 +32,7 @@ export default function Popup() {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className="relative w-[30%] min-w-[400px] cursor-default items-center justify-center flex flex-col rounded-[42px] bg-light-background-normal p-4 pb-20 text-white shadow-lg dark:bg-dark-background-normal"
+        className="relative md:w-[30%] w-[25%] min-w-[350px] cursor-default items-center justify-center flex flex-col rounded-[42px] bg-light-background-normal p-4 pb-20 text-white shadow-lg dark:bg-dark-background-normal"
       >
         <div className="mb-6 flex flex-col items-center justify-center gap-5 p-2">
           <FaBookOpen
@@ -48,7 +48,7 @@ export default function Popup() {
         </div>
         <p className="mx-2 text-center opacity-50">
           This platform is entirely developed by two students, operates independently, without any
-          direct connection or endorsement from the university. The content is fetched from the university website itself.
+          direct connection or endorsement from the university.
         </p>
         <Link className="mt-4 dark:bg-dark-info-background bg-light-info-background px-3 py-1 rounded-lg text-light-info-color dark:text-dark-info-color font-medium" href="https://academia.srmist.edu.in" target="_blank">Link to official academia</Link>
         <button onClick={clicked} className="absolute bottom-0 left-0 flex h-12 w-full items-center justify-center rounded-b-[42px] bg-light-accent bg-opacity-25 font-medium text-light-accent dark:bg-dark-accent dark:bg-opacity-25 dark:text-dark-accent">

@@ -1,11 +1,12 @@
-'use client'
-import React, { useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Loading from "@/components/States/Loading";
 import { AttendanceHeader } from "./subcomponents/Attendance/AttendanceHeader";
 import { AttendanceStatusChips } from "./subcomponents/Attendance/AttendanceStatusChip";
 import { DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
+import ODMLContent from "./subcomponents/Attendance/ODMLContent";
 
 const AttendanceContent = dynamic(
   () => import("./subcomponents/Attendance/AttendanceContent"),
@@ -26,9 +27,10 @@ export default function Attendance(): JSX.Element {
     from: null,
     to: null,
   });
+  const [ODMLdateRange, setODMLDateRange] = useState<DateRange[]>([]);
   const [showDatePicker, setShowDatePicker] = useState<boolean>(false);
   const [isPredicted, setIsPredicted] = useState<boolean>(false);
-
+  const [isODML, setIsODML] = useState<boolean>(false);
   const handleDateChange = (dates: DateObject[]): void => {
     if (dates.length === 2) {
       setDateRange({
@@ -53,6 +55,10 @@ export default function Attendance(): JSX.Element {
         showDatePicker={showDatePicker}
         setShowDatePicker={setShowDatePicker}
         setIsPredicted={setIsPredicted}
+        ODMLdateRange={ODMLdateRange}
+        setODMLDateRange={setODMLDateRange}
+        isODML={isODML}
+        setIsODML={setIsODML}
       />
 
       <AttendanceStatusChips
@@ -61,9 +67,11 @@ export default function Attendance(): JSX.Element {
         resetAttendance={resetAttendance}
       />
 
-      <div className="group px-2 pt-3">
+      <div className={`group -mx-3 lg:!mx-0 pt-3 border rounded-xl border-dashed ${isPredicted || isODML ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"}`}>
         {isPredicted ? (
           <PredictionContent dateRange={dateRange} />
+        ) : isODML ? (
+          <ODMLContent dateRanges={ODMLdateRange} />
         ) : (
           <AttendanceContent />
         )}

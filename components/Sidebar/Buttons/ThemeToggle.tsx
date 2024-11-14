@@ -1,3 +1,4 @@
+'use client';
 import useLongPress from "@/hooks/useLongPress";
 import { useTheme } from "@/provider/ThemeProvider";
 import React from "react";
@@ -17,7 +18,7 @@ export default function ThemeToggle() {
       onMouseDown={onStart}
       onMouseUp={onEnd}
       title="Toggle Theme (Ctrl+Shift+P)"
-      className="text-md rounded-full p-2 opacity-60 transition duration-200 hover:bg-light-background-dark active:-rotate-45 dark:hover:bg-dark-background-dark"
+      className="text-md rounded-full p-2 opacity-60 transition duration-200 text-light-color dark:text-dark-color hover:bg-light-background-dark active:-rotate-45 dark:hover:bg-dark-background-dark"
     >
       {isDark ? <LuMoon /> : <LuSun />}
     </button>

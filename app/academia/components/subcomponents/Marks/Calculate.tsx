@@ -32,7 +32,7 @@ export default function CalculatorSection({ overall }: { overall: Overall }) {
   return (
     <div
       role="alert"
-      className="absolute bottom-14 left-0 z-10 ml-2 mt-1 w-[97%] animate-fastfade items-center justify-between gap-2 rounded-2xl bg-light-background-light p-4 px-5 pb-5 pt-2 text-sm text-light-accent transition duration-300 md:bottom-[70px] md:w-[95%] dark:bg-dark-side dark:text-dark-accent"
+      className="absolute bottom-16 left-0 z-10 ml-2 mt-1 w-[97%] animate-fastfade justify-between flex-col flex gap-2 rounded-2xl bg-light-background-light p-4 px-5 pb-5 pt-2 text-sm text-light-accent transition duration-300 md:bottom-[80px] md:w-[95%] dark:bg-dark-side dark:text-dark-accent"
     >
       <div className="flex items-center justify-between pt-2">
         <div>Enter the required Grade</div>
@@ -51,7 +51,7 @@ export default function CalculatorSection({ overall }: { overall: Overall }) {
         </div>
       </div>
       {60 - Number.parseFloat(overall.total) > 0 && (
-        <div className="flex items-center justify-between py-2">
+        <div className="flex items-center justify-between">
           <p>Expected Internal of {60 - Number.parseFloat(overall.total)}:</p>
           <input
             type="text"

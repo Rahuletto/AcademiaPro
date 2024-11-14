@@ -3,7 +3,9 @@ import dynamic from "next/dynamic";
 import { cookies } from "next/headers";
 import { FaBookOpen } from "react-icons/fa";
 
-const Bento = dynamic(() => import("../components/Bento").then(a => a.default));
+const Bento = dynamic(() => import("../components/Bento").then(a => a.default), {
+  
+});
 
 export default async function Academia() {
   const cookie = (await cookies()).get("key");

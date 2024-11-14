@@ -24,6 +24,11 @@
       "permanent": true
     },
     {
+      "source": "/leave",
+      "destination": "http://10.1.105.62/srmleaveapp",
+      "permanent": true
+    },
+    {
       "source": "/github",
       "destination": "https://github.com/rahuletto/classpro",
       "permanent": true

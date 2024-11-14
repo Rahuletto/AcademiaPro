@@ -40,8 +40,8 @@ const DataContext = createContext<DataContextType>({
 const fetcher = async (url: string) => {
   const cookie = cookies.get("key");
   if (!cookie) return null;
-  
-  if(cookie?.length < 800) {
+
+  if (cookie?.length < 800) {
     Cookie.clear();
   }
   const response = await fetch(`${rotateUrl()}/getData`, {
@@ -52,9 +52,26 @@ const fetcher = async (url: string) => {
       "Set-Cookie": cookie,
       Cookie: cookie,
       "Content-Type": "application/json",
-      "Cache-Control": "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400"
+      "Cache-Control":
+        "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
     },
   });
+
+  const u = await fetch(`${rotateUrl()}/update`, {
+    method: "PATCH",
+    headers: {
+      Authorization: `Bearer ${token()}`,
+      "X-CSRF-Token": cookie,
+      "Set-Cookie": cookie,
+      Cookie: cookie,
+      "Content-Type": "application/json",
+      "Cache-Control":
+        "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
+    },
+  });
+
+  const ud = await u.json();
+  console.log(ud)
 
   const data: AllResponses = await response.json();
   return data;
@@ -83,7 +100,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       revalidateOnFocus: false,
       shouldRetryOnError: false,
       suspense: true,
-      revalidateOnReconnect: true,
+      revalidateOnReconnect: false,
       keepPreviousData: true,
       refreshInterval: 1000 * 60 * 10,
       revalidateOnMount: true,
@@ -102,18 +119,17 @@ export function DataProvider({ children }: { children: ReactNode }) {
     },
   );
 
-
   return (
     <DataContext.Provider
       value={{
+        user: data?.user || null,
         attendance: data?.attendance || null,
         marks: data?.marks || null,
         courses: data?.course?.courses || null,
-        user: data?.user || null,
         timetable: data?.timetable?.schedule || null,
 
-        requestedAt: data?.requestedAt || 0,
         error: error || null,
+        requestedAt: data?.requestedAt || 0,
 
         isLoading: isLoading,
         isValidating: isValidating,
