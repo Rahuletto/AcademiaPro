@@ -6,6 +6,7 @@ import MarkList from "./MarkList";
 
 import dynamic from "next/dynamic";
 import PerformanceChart from "./PerfGraph";
+import { useData } from "@/provider/DataProvider";
 
 const CalculatorSection = dynamic(
   () => import("./Calculate").then((a) => a.default),
@@ -25,11 +26,12 @@ export default function MarkCard({
   graph: boolean;
 }) {
   const [calculate, setCalculate] = useState(false);
+  const {courses} = useData();
 
   return (
     <div
       title={`${mark.courseName} (${mark.courseCode})`}
-      className="relative flex min-h-[195px] flex-col justify-between gap-3 rounded-3xl bg-light-background-normal p-4 px-5 pb-5 dark:bg-dark-background-normal"
+      className={`relative flex min-h-[195px] flex-col ${courses?.find((a) => a.code === mark.courseCode)?.credit === "0" ? "border-light-background-light dark:border-dark-background-light border-x-2" : "border-transparent"} border justify-between gap-3 rounded-3xl bg-light-background-normal p-4 px-5 pb-5 dark:bg-dark-background-normal`}
     >
       <div
         className={`${calculate ? "opacity-50" : "opacity-100"} flex h-full flex-col gap-4`}
