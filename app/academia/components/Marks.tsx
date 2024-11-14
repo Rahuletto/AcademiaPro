@@ -75,7 +75,7 @@ export default function Marks() {
             )}
           </div>
         </div>
-        <div className="flex gap-3">
+      <div className="flex gap-3">
           {focusOn?.[0] && (
             <button
               onClick={() => setFocus((prev) => !prev)}

@@ -23,8 +23,8 @@ interface PerformanceChartProps {
 const CustomTooltip = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     return (
-      <div className="flex min-w-[200px] flex-col justify-between rounded-lg bg-light-background-dark px-3 py-1 text-sm text-white shadow-lg dark:bg-dark-background-darker">
-        <h3 className="font-semibold text-lg">{payload[0].payload.name}</h3>
+      <div className="flex min-w-[200px] flex-col pr-1 rounded-br-2xl justify-between rounded-lg bg-light-background-light px-3 py-1 text-sm text-white shadow-lg dark:bg-dark-background-darker">
+        <h3 className="font-semibold text-lg text-light-color dark:text-dark-color">{payload[0].payload.name}</h3>
         <div className="flex w-full items-center justify-between gap-6">
           <p className="font-semibold text-light-success-color dark:text-dark-success-color">
             {payload[0].payload.percentage.toFixed(1)}%
