@@ -46,6 +46,18 @@ const fetcher = async (url: string) => {
   if (cookie?.length < 800) {
     Cookie.clear();
   }
+  const response = await fetch(`${rotateUrl()}/getData`, {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${token()}`,
+      "X-CSRF-Token": cookie || "",
+      "Set-Cookie": cookie || "",
+      Cookie: cookie || "",
+      "Content-Type": "application/json",
+      "Cache-Control":
+        "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
+    },
+  });
 
   if (url.includes("getData")) {
     const response = await fetch(`${rotateUrl()}/getData`, {
@@ -124,7 +136,19 @@ export function DataProvider({ children }: { children: ReactNode }) {
           Storage.set("data", data);
         }
 
-        console.log(data)
+        fetch(`${rotateUrl()}/update`, {
+          method: "PATCH",
+          headers: {
+            Authorization: `Bearer ${token()}`,
+            "X-CSRF-Token": cookie || "",
+            "Set-Cookie": cookie || "",
+            Cookie: cookie || "",
+            "Content-Type": "application/json",
+            "Cache-Control":
+              "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
+          },
+        });
+
         return data;
       },
     },
