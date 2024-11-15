@@ -46,38 +46,37 @@ const fetcher = async (url: string) => {
   if (cookie?.length < 800) {
     Cookie.clear();
   }
+  const response = await fetch(`${rotateUrl()}/getData`, {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${token()}`,
+      "X-CSRF-Token": cookie,
+      "Set-Cookie": cookie,
+      Cookie: cookie,
+      "Content-Type": "application/json",
+      "Cache-Control":
+        "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
+    },
+  });
 
-  if (url.includes("getData")) {
-    const response = await fetch(`${rotateUrl()}/getData`, {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${token()}`,
-        "X-CSRF-Token": cookie,
-        "Set-Cookie": cookie,
-        Cookie: cookie,
-        "Content-Type": "application/json",
-        "Cache-Control":
-          "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
-      },
-    });
+  const u = await fetch(`${rotateUrl()}/update`, {
+    method: "PATCH",
+    headers: {
+      Authorization: `Bearer ${token()}`,
+      "X-CSRF-Token": cookie,
+      "Set-Cookie": cookie,
+      Cookie: cookie,
+      "Content-Type": "application/json",
+      "Cache-Control":
+        "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
+    },
+  });
 
-    const data: AllResponses = await response.json();
-    return data;
-  } else {
-    const response = await fetch(`${rotateUrl()}/update`, {
-      method: "PATCH",
-      headers: {
-        Authorization: `Bearer ${token()}`,
-        "X-CSRF-Token": cookie,
-        "Set-Cookie": cookie,
-        Cookie: cookie,
-        "Content-Type": "application/json",
-      },
-    });
+  const ud = await u.json();
+  console.log(ud)
 
-    const data: AllResponses = await response.json();
-    return data;
-  }
+  const data: AllResponses = await response.json();
+  return data;
 };
 
 export function useData() {
@@ -89,8 +88,6 @@ export function DataProvider({ children }: { children: ReactNode }) {
 
   const getCachedData = () => Storage.get<AllResponses | null>("data", null);
 
-  const cached = getCachedData();
-
   const {
     data: data,
     error,
@@ -98,11 +95,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     isValidating,
     mutate,
   } = useSWR<AllResponses | null>(
-    cookie
-      ? cached && Date.now() - cached.lastUpdated > 1000 * 60 * 30
-        ? `${revalUrl}/update`
-        : `${revalUrl}/getData`
-      : null,
+    cookie ? `${revalUrl}/getData` : null,
     fetcher,
     {
       fallbackData: getCachedData(),
