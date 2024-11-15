@@ -20,10 +20,10 @@ const CourseCard = dynamic(
 );
 
 export default function Courses() {
-  const { courses, isLoading, error, mutate } = useData();
+  const { courses, isLoading, error, mutate, isValidating } = useData();
 
   useEffect(() => {
-    if (!isLoading && !courses && !error) mutate();
+    if (!isLoading && !courses && !error && !isValidating) mutate();
   }, [mutate, isLoading, courses, error]);
 
   return (
@@ -33,7 +33,7 @@ export default function Courses() {
           <h1 className="mb-4 text-2xl font-semibold">Courses</h1>
           <Refresh type={{ mutateCourse: true }} />
         </div>
-        {isLoading ? (
+        {isLoading || isValidating ? (
           <Loading size="max" />
         ) : error ? (
           <Error component="Courses" error={error} />

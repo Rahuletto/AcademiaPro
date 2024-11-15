@@ -9,7 +9,7 @@ import { useData } from "@/provider/DataProvider";
 export default function AttendanceContent(): JSX.Element {
   const { attendance, isLoading, error, isValidating } = useData();
 
-  if (isLoading) return <Loading size="max" />;
+  if (isLoading || isValidating) return <Loading size="max" />;
   if (error) return <Error error={error} component="Attendance" />;
   if (!attendance || !attendance?.[0]) return <NoData component="Attendance" />;
 

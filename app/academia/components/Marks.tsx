@@ -96,7 +96,7 @@ export default function Marks() {
         </div>
       </div>
 
-      {isLoading ? (
+      {isLoading || isValidating ? (
         <Loading size="3xl" />
       ) : error ? (
         <Error component="Marks" error={error} />

@@ -16,7 +16,7 @@ const CalendarHeader = dynamic(
 );
 
 export default function Calendar() {
-  const { calendar, isLoading, error, index } = usePlanner();
+  const { calendar, isLoading, isValidating, error, index } = usePlanner();
   const [current, setCurrent] = useState(index);
   const actual = new Date().getMonth();
 
@@ -27,7 +27,7 @@ export default function Calendar() {
     <main className="h-screen w-full bg-light-background-normal text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>
         <div className="flex flex-col gap-12">
-          {isLoading ? (
+          {isLoading || isValidating ? (
             <>
               <CalendarHeader current={current} month={"Calendar"} />
               <Loading size="max" />

@@ -23,6 +23,7 @@ export default function ODMLContent({
   const {
     calendar,
     isLoading: isLoadingCalendar,
+    isValidating: isValidatingCalendar,
     error: calendarError,
   } = usePlanner();
 
@@ -30,6 +31,7 @@ export default function ODMLContent({
     timetable,
     attendance,
     isLoading: isLoadingTimetable,
+    isValidating: isValidatingTimetable,
     error: timetableError,
   } = useData();
 
@@ -40,7 +42,7 @@ export default function ODMLContent({
     dateRanges,
   );
 
-  if (isLoadingCalendar || isLoadingTimetable) {
+  if (isLoadingCalendar || isLoadingTimetable || isValidatingCalendar || isValidatingTimetable) {
     return <Loading size="max" />;
   }
 

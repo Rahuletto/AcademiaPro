@@ -94,23 +94,10 @@ export function DataProvider({ children }: { children: ReactNode }) {
       onErrorRetry: (error, key, config, revalidate, { retryCount }) => {
         return;
       },
-      onSuccess: (data) => {
+      onSuccess: async (data) => {
         if (data) {
           Storage.set("data", data);
         }
-
-        fetch(`${rotateUrl().replace("proscrape", "newscrape")}/update`, {
-          method: "PATCH",
-          headers: {
-            Authorization: `Bearer ${token()}`,
-            "X-CSRF-Token": cookie || "",
-            "Set-Cookie": cookie || "",
-            Cookie: cookie || "",
-            "Content-Type": "application/json",
-            "Cache-Control":
-              "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
-          },
-        });
 
         return data;
       },
