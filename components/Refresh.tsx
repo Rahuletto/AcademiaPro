@@ -2,13 +2,19 @@ import React from "react";
 import { IoRefreshOutline } from "react-icons/io5";
 import { MutateOptions, useMutateAll } from "@/hooks/useMutate";
 
+
 export default function Refresh({ type, isOld }: { type?: MutateOptions; isOld?: boolean }) {
   const mutateAll = useMutateAll();
+  
   const clickHandler = () => {
     const c = confirm(
       `Are you sure you want to refresh ${type ? "the particular component?" : "all data?"}`,
     );
-    if (c) mutateAll(type);
+    
+    if (c) {
+
+      mutateAll(type)
+    };
   };
 
   return (

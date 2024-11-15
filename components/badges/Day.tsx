@@ -10,7 +10,7 @@ export default function DayOrder({
   [x: string]: any;
   mini?: boolean;
 }) {
-  const { dayOrder: day, isLoading, error, mutate, requestedAt } = usePlanner();
+  const { dayOrder: day, isLoading, isValidating, error } = usePlanner();
 
   return (
     <div
@@ -21,7 +21,7 @@ export default function DayOrder({
           : "bg-light-side dark:bg-dark-side"
       } ${props.className}`}
     >
-      {isLoading ? (
+      {isLoading || isValidating ? (
         <RiLoader3Fill
           title="loading"
           className={`animate-spin font-medium ${error || !day || day.includes("-") ? "text-light-error-color dark:text-dark-error-color" : "text-light-accent dark:text-dark-accent"}`}

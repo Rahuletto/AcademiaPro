@@ -24,12 +24,14 @@ export default function PredictionContent({
   const {
     calendar,
     isLoading: isLoadingCalendar,
+    isValidating: isValidatingCalendar,
     error: calendarError,
   } = usePlanner();
   const {
     timetable,
     attendance,
     isLoading: isLoadingTimetable,
+    isValidating: isValidatingTimetable,
     error: timetableError,
   } = useData();
 
@@ -46,7 +48,7 @@ export default function PredictionContent({
     }
   }, [attendance, timetable, calendar, dateRange, performPrediction]);
 
-  if (isLoadingCalendar || isLoadingTimetable) return <Loading size="max" />;
+  if (isLoadingCalendar || isLoadingTimetable || isValidatingCalendar || isValidatingTimetable) return <Loading size="max" />;
   if (calendarError || timetableError)
     return <Error error={calendarError || timetableError!} component="Attendance Prediction" />;
   if (!predictedAttendance) return <NoData component="Attendance Prediction" />;

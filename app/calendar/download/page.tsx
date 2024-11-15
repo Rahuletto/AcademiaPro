@@ -9,7 +9,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { useSearchParams } from "next/navigation";
 
 export default function Calendar() {
-  const { calendar, isLoading, error } = usePlanner();
+  const { calendar } = usePlanner();
 
   const searchParams = useSearchParams();
   const id = searchParams.get("index");
