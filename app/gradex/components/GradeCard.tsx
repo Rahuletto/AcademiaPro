@@ -13,7 +13,7 @@ const gradeMap: { [key: number]: string } = {
   5: "O",
 };
 
-export default function MarkCard({
+export default function GradeCard({
   mark,
   currentGrade,
   updateGrade,

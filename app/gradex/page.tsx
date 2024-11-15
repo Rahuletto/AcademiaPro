@@ -4,7 +4,7 @@ import { Sidebar } from "@/components/Sidebar";
 import { useData } from "@/provider/DataProvider";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
-import MarkCard from "./components/CourseCard";
+import GradeCard from "./components/GradeCard";
 
 export default function GradeX() {
   const { marks, isLoading, error, courses, isValidating } = useData();
@@ -31,7 +31,7 @@ export default function GradeX() {
 
   useEffect(() => {
     sgpaCalculator();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [grades, courses]);
 
   const updateGrade = (courseCode: string, grade: string) => {
@@ -83,7 +83,7 @@ export default function GradeX() {
                       .filter((a) => a.courseType === "Theory")
                       .map((mark, index) => (
                         <div className="py-4" key={mark.courseCode}>
-                          <MarkCard
+                          <GradeCard
                             mark={mark}
                             currentGrade={grades[mark.courseCode] || "O"}
                             updateGrade={updateGrade}
