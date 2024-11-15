@@ -13,6 +13,7 @@ export interface AllResponses {
   course: { courses: Course[] };
   requestedAt: number;
   error?: string;
+  lastUpdated: number;
 }
 
 export interface CalResponses {
