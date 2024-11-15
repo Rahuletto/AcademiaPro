@@ -34,7 +34,7 @@ export default function AttendanceList({
         {priority && priority[0] && (
           <>
           <div className="-m-1 mb-3 mt-2 rounded-xl border-2 border-dashed border-light-warn-color bg-light-warn-background p-1 relative dark:border-dark-warn-color dark:bg-dark-warn-background">
-            <p className="font-semibold font-mono dark:text-dark-warn-color text-light-warn-color -mb-4 mx-3 py-1 text-xs">Attention needed!</p>
+            <p className="font-semibold font-mono dark:text-dark-warn-color text-light-warn-color mx-3 py-1 text-xs">Attention needed!</p>
             <div className="dark:bg-dark-background-dark bg-light-background-dark rounded-xl">
             {priority.filter((a) => a.category === "Theory").length > 0 &&
               priority
