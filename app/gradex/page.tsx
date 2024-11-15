@@ -1,10 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Link } from "next-view-transitions";
-import useSearch from "@/hooks/useSearch";
 import { Sidebar } from "@/components/Sidebar";
-
-import dynamic from "next/dynamic";
 
 export default function Urls() {
   return (
