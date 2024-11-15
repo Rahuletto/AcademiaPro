@@ -52,7 +52,7 @@ export default function Marks() {
         <div className="flex items-center gap-4">
           <h1 className="text-2xl font-semibold">Marks</h1>
           <Link
-            href="https://gradex.vercel.app"
+            href="/gradex"
             target="_blank"
             secondary
             className="flex items-center justify-center text-sm text-light-accent dark:text-dark-accent"
