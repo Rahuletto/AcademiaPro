@@ -43,7 +43,7 @@ export default function GradeCard({
   };
 
   return (
-    <div className="mb-4 space-y-2 rounded-lg bg-light-background-light p-4 text-light-color dark:bg-dark-background-light dark:text-dark-color">
+    <div className="mb-4 space-y-2 rounded-lg bg-light-background-light p-4 text-light-color dark:bg-dark-background-light dark:text-dark-color h-64">
       <div className="font-semibold">
         {!mark.courseName.toLowerCase().includes("n/a")
           ? mark.courseName?.toLowerCase()
@@ -62,21 +62,26 @@ export default function GradeCard({
         <div>Grade: {currentGrade}</div>
       </div>
 
-      <div className="flex items-center justify-between text-xs text-light-accent dark:text-dark-accent">
-        <span>C</span>
-        <span>B</span>
-        <span>B+</span>
-        <span>A</span>
-        <span>A+</span>
-        <span>O</span>
-      </div>
-      <Slider
-        max={5}
-        step={1}
-        value={[parseInt(getSliderValue(currentGrade))]}
-        onValueChange={handleSliderChange}
-        className="w-full"
-      />
+      {Number(mark.overall.total) <= 60 && (
+        <>
+          <div className="flex items-center justify-between text-xs text-light-accent dark:text-dark-accent">
+            <span>C</span>
+            <span>B</span>
+            <span>B+</span>
+            <span>A</span>
+            <span>A+</span>
+            <span>O</span>
+          </div>
+          <Slider
+            max={5}
+            step={1}
+            value={[parseInt(getSliderValue(currentGrade))]}
+            onValueChange={handleSliderChange}
+            className="w-full"
+          />
+        </>
+      )}
+
       <div className="mt-2 text-sm">
         Overall: {mark.overall.marks}/{mark.overall.total}
       </div>
