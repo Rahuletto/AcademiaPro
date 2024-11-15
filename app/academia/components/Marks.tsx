@@ -26,7 +26,7 @@ const MarkCard = dynamic(
 );
 
 export default function Marks() {
-  const { marks, isLoading, error, isValidating, mutate } = useData();
+  const { marks, isLoading, error, courses, isValidating, mutate } = useData();
   const isOld = false;
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const [openFocus, setFocus] = useState(false);
@@ -75,7 +75,7 @@ export default function Marks() {
             )}
           </div>
         </div>
-      <div className="flex gap-3">
+        <div className="flex gap-3">
           {focusOn?.[0] && (
             <button
               onClick={() => setFocus((prev) => !prev)}
@@ -85,13 +85,13 @@ export default function Marks() {
             </button>
           )}
           <button
-      tabIndex={0}
-      className={`rounded-full p-1 text-sm group ${isOld ? "bg-light-info-color dark:bg-dark-info-color dark:text-light-color text-dark-color px-2" : "hover:bg-light-background-dark text-light-color opacity-60 dark:text-dark-color dark:hover:bg-dark-background-dark"}`}
-      onClick={() => setGraph((prev) => !prev)}
-    >
-       {graph ? <FaPercentage /> : <BsGraphUp />}
-    </button>
-         
+            tabIndex={0}
+            className={`group rounded-full p-1 text-sm ${isOld ? "bg-light-info-color px-2 text-dark-color dark:bg-dark-info-color dark:text-light-color" : "text-light-color opacity-60 hover:bg-light-background-dark dark:text-dark-color dark:hover:bg-dark-background-dark"}`}
+            onClick={() => setGraph((prev) => !prev)}
+          >
+            {graph ? <FaPercentage /> : <BsGraphUp />}
+          </button>
+
           {!error && <Refresh type={{ mutateMarks: true }} isOld={isOld} />}
         </div>
       </div>
@@ -129,8 +129,16 @@ export default function Marks() {
                   <ul className="ml-6 list-disc">
                     {focusOn.map((a, i) => (
                       <li key={i} className="list-disc text-sm opacity-70">
-                        <span className="max-w-[60vw]">{a.courseName}</span> {" ->  "}
-                        <span className="text-light-warn-color ml-2 dark:text-dark-warn-color">
+                        <span className="max-w-[60vw]">
+                          {!a.courseName.toLowerCase()?.includes("n/a")
+                            ? a.courseName
+                            : courses
+                              ? courses.find((c) => c.code === a.courseCode)
+                                  ?.title
+                              : a.courseCode}
+                        </span>{" "}
+                        {" ->  "}
+                        <span className="ml-2 text-light-warn-color dark:text-dark-warn-color">
                           {Number(
                             (
                               Number(a.overall.marks) / Number(a.overall.total)
@@ -152,18 +160,24 @@ export default function Marks() {
             <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
               {marks
                 ?.filter((a) => a.courseType === "Theory")
-                .map((mark, i) => <MarkCard graph={graph} key={i} mark={mark} />)}
+                .map((mark, i) => (
+                  <MarkCard graph={graph} key={i} mark={mark} />
+                ))}
             </div>
             {marks && marks[0] && <Indicator type="Practical" separator />}
 
             <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
-                {marks
+              {marks
                 ?.filter(
                   (a) =>
-                  (a.courseType === "Practical" || a.courseType === "Lab") &&
-                  (a.courseCode.includes("J") ? Number(a.overall.total) > 0 : true),
+                    (a.courseType === "Practical" || a.courseType === "Lab") &&
+                    (a.courseCode.includes("J")
+                      ? Number(a.overall.total) > 0
+                      : true),
                 )
-                .map((mark, i) => <MarkCard graph={graph} key={i} mark={mark} />)}
+                .map((mark, i) => (
+                  <MarkCard graph={graph} key={i} mark={mark} />
+                ))}
             </div>
           </div>
         </>
