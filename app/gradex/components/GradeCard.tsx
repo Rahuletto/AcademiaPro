@@ -21,22 +21,26 @@ export const medalStyles = {
   A: {
     text: "text-light-color dark:text-dark-color",
     bg: "bg-light-background-normal dark:bg-dark-background-light",
-    border: "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
+    border:
+      "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
   },
   "B+": {
     text: "text-light-color dark:text-dark-color",
     bg: "bg-light-background-normal dark:bg-dark-background-light",
-    border: "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
+    border:
+      "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
   },
   B: {
     text: "text-light-color dark:text-dark-color",
     bg: "bg-light-background-normal dark:bg-dark-background-light",
-    border: "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
+    border:
+      "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
   },
   C: {
     text: "text-light-color dark:text-dark-color",
     bg: "bg-light-background-normal dark:bg-dark-background-light",
-    border: "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20 border-dashed",
+    border:
+      "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20 border-dashed",
   },
 };
 
@@ -83,7 +87,7 @@ export default function GradeCard({
       ).toFixed(2),
     );
   }, [currentGrade, expectedInternal, mark.overall.marks]);
-  
+
   useEffect(() => {
     const lostMark: number =
       Number(mark.overall.total) - Number(mark.overall.marks);
@@ -155,7 +159,7 @@ export default function GradeCard({
               </div>
             )}
 
-            <div className="flex flex-row pt-3 border-t-2 border-dashed border-black/10 dark:border-white/10 items-center justify-between gap-2">
+            <div className="flex flex-row items-center justify-between gap-2 border-t-2 border-dashed border-black/10 pt-3 dark:border-white/10">
               <h2>Required for sem exam</h2>
               <div className="flex items-center gap-1 rounded-full bg-light-background-dark dark:bg-dark-background-dark">
                 <span
@@ -197,30 +201,40 @@ export default function GradeCard({
           </>
         ) : (
           <>
-          <Medal edit={editMode} setEdit={setEditMode} setGrade={(newGrade: string) => updateGrade(mark.courseCode, newGrade)} grade={determineGrade(Number(mark.overall.total) - Number(mark.overall.marks)) as "O" | "A+" | "A" | "B+" | "B" | "C"} />
-          
-          {editMode && <>
-          <div className="flex items-center justify-between text-xs text-light-accent dark:text-dark-accent">
-              {["C", "B", "B+", "A", "A+", "O"].map((grade) => (
-                <span
-                  key={grade}
-                  className={`${
-                    currentGrade === grade ? "font-semibold" : "opacity-40"
-                  }`}
-                >
-                  {grade}
-                </span>
-              ))}
-            </div>
-            <Slider
-              max={5}
-              step={1}
-              value={[parseInt(getSliderValue(currentGrade))]}
-              onValueChange={handleSliderChange}
-              className="w-full"
+            <Medal
+              edit={editMode}
+              setEdit={setEditMode}
+              grade={
+                determineGrade(
+                  Number(mark.overall.total) - Number(mark.overall.marks),
+                ) as "O" | "A+" | "A" | "B+" | "B" | "C"
+              }
             />
-            </>}
-            </>
+
+            {editMode && (
+              <>
+                <div className="flex items-center justify-between text-xs text-light-accent dark:text-dark-accent">
+                  {["C", "B", "B+", "A", "A+", "O"].map((grade) => (
+                    <span
+                      key={grade}
+                      className={`${
+                        currentGrade === grade ? "font-semibold" : "opacity-40"
+                      }`}
+                    >
+                      {grade}
+                    </span>
+                  ))}
+                </div>
+                <Slider
+                  max={5}
+                  step={1}
+                  value={[parseInt(getSliderValue(currentGrade))]}
+                  onValueChange={handleSliderChange}
+                  className="w-full"
+                />
+              </>
+            )}
+          </>
         )}
       </div>
     </div>

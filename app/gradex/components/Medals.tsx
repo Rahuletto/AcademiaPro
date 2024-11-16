@@ -5,15 +5,10 @@ type MedalProps = {
   grade: "O" | "A+" | "A" | "B+" | "B" | "C";
   edit: boolean;
   setEdit: React.Dispatch<React.SetStateAction<boolean>>;
-  setGrade: (newGrade: string) => void;
 };
 
-const Medal: React.FC<MedalProps> = ({ grade, edit, setEdit, setGrade }) => {
+const Medal: React.FC<MedalProps> = ({ grade, edit, setEdit }) => {
   const { text, bg, border } = medalStyles[grade];
-
-  useEffect(() => {
-    if (!edit) setGrade(grade);
-  }, [edit]);
 
   return (
     <button
