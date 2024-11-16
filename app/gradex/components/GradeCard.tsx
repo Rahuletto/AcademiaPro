@@ -3,6 +3,35 @@ import { Slider } from "@/components/ui/slider";
 import { Mark } from "@/types/Marks";
 import { useData } from "@/provider/DataProvider";
 import { determineGrade } from "@/utils/Grade";
+import { MarkDisplay } from "@/app/academia/components/subcomponents/Marks/MarkElement";
+import Medal from "./Medals";
+
+export const medalStyles = {
+  O: {
+    text: "text-light-success-color dark:text-dark-success-color",
+    bg: "bg-light-success-background dark:bg-dark-success-background",
+  },
+  "A+": {
+    text: "text-gray-500 dark:text-gray-400",
+    bg: "bg-gray-200 dark:bg-gray-700",
+  },
+  A: {
+    text: "text-light-color dark:text-dark-color",
+    bg: "bg-light-background-normal dark:bg-dark-background-light",
+  },
+  "B+": {
+    text: "text-light-color dark:text-dark-color",
+    bg: "bg-light-background-normal dark:bg-dark-background-light",
+  },
+  B: {
+    text: "text-light-color dark:text-dark-color",
+    bg: "bg-light-background-normal dark:bg-dark-background-light",
+  },
+  C: {
+    text: "text-light-color dark:text-dark-color",
+    bg: "bg-light-background-normal dark:bg-dark-background-light",
+  },
+};
 
 const gradeMap: { [key: number]: string } = {
   0: "C",
@@ -43,47 +72,61 @@ export default function GradeCard({
   };
 
   return (
-    <div className="mb-4 space-y-2 rounded-lg bg-light-background-light p-4 text-light-color dark:bg-dark-background-light dark:text-dark-color h-64">
-      <div className="font-semibold">
-        {!mark.courseName.toLowerCase().includes("n/a")
-          ? mark.courseName?.toLowerCase()
-          : courseDetails?.title || mark.courseCode}
-      </div>
-      <div className="text-sm text-light-accent dark:text-dark-accent">
-        Code: {mark.courseCode}
-      </div>
-      <div className="text-sm text-light-accent dark:text-dark-accent">
-        Type: {mark.courseType}
-      </div>
-      <div className="mt-2 grid grid-cols-3 items-center gap-4">
-        <div className="text-light-accent dark:text-dark-accent">
-          Credit: {courseDetails?.credit || 0}
+    <div
+      className={`flex min-h-40 flex-col justify-between gap-8 rounded-2xl ${Number(mark.overall.marks) <= 60 ? "bg-light-background-normal dark:bg-dark-background-normal" : `bg-opacity-80 dark:bg-opacity-40 ${medalStyles[currentGrade as "O" | "A+" | "A" | "B+" | "B" | "C"].bg}`} p-4 px-5 text-light-color dark:text-dark-color`}
+    >
+      <div className="grid grid-cols-[1fr_0.2fr] items-start justify-between gap-4">
+        <div>
+          <h2 className="text-lg font-semibold">
+            {!mark.courseName.toLowerCase().includes("n/a")
+              ? mark.courseName?.toLowerCase()
+              : courseDetails?.title || mark.courseCode}
+          </h2>
+          <p className="text-sm font-medium text-light-accent opacity-80 dark:text-dark-accent">
+            Credit:{" "}
+            <span className="text-sm text-light-info-color dark:text-dark-info-color">
+              {courseDetails?.credit || 0}
+            </span>
+          </p>
         </div>
-        <div>Grade: {currentGrade}</div>
+
+        <MarkDisplay marks={mark.overall} />
       </div>
 
-      {Number(mark.overall.total) <= 60 && (
-        <>
-          <div className="flex items-center justify-between text-xs text-light-accent dark:text-dark-accent">
-            <span>C</span>
-            <span>B</span>
-            <span>B+</span>
-            <span>A</span>
-            <span>A+</span>
-            <span>O</span>
-          </div>
-          <Slider
-            max={5}
-            step={1}
-            value={[parseInt(getSliderValue(currentGrade))]}
-            onValueChange={handleSliderChange}
-            className="w-full"
-          />
-        </>
-      )}
-
-      <div className="mt-2 text-sm">
-        Overall: {mark.overall.marks}/{mark.overall.total}
+      <div className="relative flex flex-col-reverse gap-2">
+        {Number(mark.overall.marks) <= 60 ? (
+          <>
+            <div className="flex items-center justify-between text-xs text-light-accent dark:text-dark-accent">
+              <span className={`${currentGrade === "C" ? "font-semibold" : "opacity-40"}`}>
+                C
+              </span>
+              <span className={`${currentGrade === "B" ? "font-semibold" : "opacity-40"}`}>
+                B
+              </span>
+              <span className={`${currentGrade === "B+" ? "font-semibold" : "opacity-40"}`}>
+                B+
+              </span>
+              <span className={`${currentGrade === "A" ? "font-semibold" : "opacity-40"}`}>
+                A
+              </span>
+              <span className={`${currentGrade === "A+" ? "font-semibold" : "opacity-40"}`}>
+                A+
+              </span>
+              <span className={`${currentGrade === "O" ? "font-semibold" : "opacity-40"}`}>
+                O
+              </span>
+            </div>
+            <Slider
+              max={5}
+              step={1}
+              value={[parseInt(getSliderValue(currentGrade))]}
+              onValueChange={handleSliderChange}
+              className="w-full"
+            />
+          </>
+        ) : (
+          <Medal grade={currentGrade as "O" | "A+" | "A" | "B+" | "B" | "C"} />
+        )}
       </div>
     </div>
   );

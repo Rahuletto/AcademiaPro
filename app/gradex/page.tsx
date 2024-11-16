@@ -5,6 +5,7 @@ import { useData } from "@/provider/DataProvider";
 import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
 import GradeCard from "./components/GradeCard";
+import Indicator from "@/components/Indicator";
 
 export default function GradeX() {
   const { marks, isLoading, error, courses, isValidating } = useData();
@@ -62,38 +63,93 @@ export default function GradeX() {
     setSgpa(parseFloat(calculatedSgpa.toFixed(2)));
   };
 
+  const theory = marks
+    ?.filter((a) => a.courseType === "Theory")
+    .filter((a) =>
+      courses
+        ? (Number(courses.find((c) => c.code === a.courseCode)?.credit) ?? 0) >
+          0
+        : false,
+    );
+
+  const practicals = marks
+    ?.filter((a) => a.courseType === "Practical")
+    .filter((a) =>
+      courses
+        ? (Number(courses.find((c) => c.code === a.courseCode)?.credit) ?? 0) >
+          0
+        : false,
+    )
+    .filter(
+      (practical) =>
+        !theory?.some(
+          (theory) =>
+            theory.courseType === "Theory" &&
+            theory.courseName === practical.courseName,
+        ),
+    );
+
   return (
     <main className="h-screen w-full bg-light-background-normal pb-0 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
       <Sidebar>
         <div className="flex flex-col gap-12">
           <section id="links" className="flex flex-col gap-6">
-            <h1 className="text-3xl font-semibold">GradeX</h1>
-            <div className="bg-light-background-dark p-4 px-5 pb-5 dark:bg-dark-background-dark">
-              <h2 className="text-2xl font-semibold capitalize">
-                SGPA Calculator: {sgpa}
-              </h2>
-              <div>
-                {isLoading || isValidating ? (
-                  <Loading size="3xl" />
-                ) : error ? (
-                  <Error component="GradeX" error={error} />
-                ) : marks ? (
-                  <div className="grid animate-fadeIn grid-cols-marks gap-2 transition-all duration-200">
-                    {marks
-                      .filter((a) => a.courseType === "Theory")
-                      .map((mark, index) => (
-                        <div className="py-4" key={mark.courseCode}>
+            <h1 className="text-3xl font-semibold text-light-color dark:text-dark-color">
+              GradeX
+            </h1>
+
+            <div className="flex flex-col gap-6 rounded-3xl border-opacity-10 lg:border lg:p-2 dark:border-white/10">
+              <div className="hidden w-full items-center justify-center lg:flex">
+                <h2
+                  className={`rounded-2xl px-8 py-4 text-center text-5xl font-semibold border ${sgpa > 8.5 ? "bg-light-success-background text-light-success-color dark:bg-dark-success-background dark:text-dark-success-color border-transparent" : sgpa < 6 ? "border-dashed border-light-error-color bg-light-error-background text-light-error-color dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color" : "border border-light-input bg-light-background-light text-light-color dark:border-dark-input dark:bg-dark-background-darker dark:text-dark-color"}`}
+                >
+                  {sgpa} <span className="text-base opacity-40">SGPA</span>
+                </h2>
+              </div>
+
+              {isLoading || isValidating ? (
+                <Loading size="3xl" />
+              ) : error ? (
+                <Error component="GradeX" error={error} />
+              ) : marks ? (
+                <>
+                  <div className="grid animate-fadeIn grid-cols-1 gap-2 transition-all duration-200 lg:grid-cols-2 xl:grid-cols-3">
+                    {theory?.map((mark, index) => (
+                      <GradeCard
+                        mark={mark}
+                        key={index}
+                        currentGrade={grades[mark.courseCode] || "O"}
+                        updateGrade={updateGrade}
+                      />
+                    ))}
+                  </div>
+
+                  {practicals?.[0] && (
+                    <>
+                      <Indicator type="Practical" separator />
+                      <div className="grid animate-fadeIn grid-cols-1 gap-2 transition-all duration-200 lg:grid-cols-2 xl:grid-cols-3">
+                        {practicals?.map((mark, index) => (
                           <GradeCard
                             mark={mark}
+                            key={index}
                             currentGrade={grades[mark.courseCode] || "O"}
                             updateGrade={updateGrade}
                           />
-                        </div>
-                      ))}
-                  </div>
-                ) : (
-                  <></>
-                )}
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </>
+              ) : (
+                <></>
+              )}
+
+              <div className="sticky bottom-4 flex items-center justify-center lg:hidden">
+                <h2
+                  className={`rounded-full px-6 py-3 text-center text-3xl font-semibold shadow-xl dark:shadow-xl ${sgpa > 8.5 ? "bg-light-success-background text-light-success-color dark:bg-dark-success-background dark:text-dark-success-color" : sgpa < 6 ? "border border-dashed border-light-error-color bg-light-error-background text-light-error-color dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color" : "border border-light-input bg-light-background-light text-light-color dark:border-dark-input dark:bg-dark-background-darker dark:text-dark-color"}`}
+                >
+                  {sgpa} <span className="text-sm opacity-40">SGPA</span>
+                </h2>
               </div>
             </div>
           </section>

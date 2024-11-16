@@ -38,10 +38,15 @@ const config: Config = {
           "0%": { height: "0" },
           "100%": { height: "100%" },
         },
+        shimmer: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         fadeIn: "fadeIn 0.4s ease-in-out forwards",
         fastfade: "fadeIn 0.1s ease-in forwards",
+        shimmer: "shimmer 2s infinite linear",
         fadeOut: "fadeOut 0.4s ease-in-out forwards",
         slowSpin: "spin 5s linear infinite",
         expandHeight: "expandHeight 0.5s ease-in-out forwards",
