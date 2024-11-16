@@ -6,10 +6,10 @@ type MedalProps = {
 };
 
 const Medal: React.FC<MedalProps> = ({ grade }) => {
-  const { text } = medalStyles[grade];
+  const { text, bg, border } = medalStyles[grade];
 
   return (
-    <div className="group absolute bottom-2 right-2 flex flex-col items-center justify-center">
+    <div className={`group flex w-full gap-3 ${bg} py-5 rounded-xl ${border} items-center justify-center`}>
         <h3 className={`text-3xl font-bold ${text}`}>{grade}</h3>
         <span className={`font-medium text-base ${text}`}>Grade</span>
     </div>

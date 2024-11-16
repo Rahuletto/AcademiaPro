@@ -5,31 +5,38 @@ import { useData } from "@/provider/DataProvider";
 import { MarkDisplay } from "@/app/academia/components/subcomponents/Marks/MarkElement";
 import Medal from "./Medals";
 import { grade_points } from "@/types/Grade";
+import { determineGrade } from "@/utils/Grade";
 
 export const medalStyles = {
   O: {
     text: "text-light-success-color dark:text-dark-success-color",
     bg: "bg-light-success-background dark:bg-dark-success-background",
+    border: "border-light-success-color dark:border-dark-success-color border",
   },
   "A+": {
     text: "text-gray-500 dark:text-gray-400",
     bg: "bg-gray-200 dark:bg-gray-700",
+    border: "border-gray-300 dark:border-gray-600 border",
   },
   A: {
     text: "text-light-color dark:text-dark-color",
     bg: "bg-light-background-normal dark:bg-dark-background-light",
+    border: "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
   },
   "B+": {
     text: "text-light-color dark:text-dark-color",
     bg: "bg-light-background-normal dark:bg-dark-background-light",
+    border: "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
   },
   B: {
     text: "text-light-color dark:text-dark-color",
     bg: "bg-light-background-normal dark:bg-dark-background-light",
+    border: "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20",
   },
   C: {
     text: "text-light-color dark:text-dark-color",
     bg: "bg-light-background-normal dark:bg-dark-background-light",
+    border: "border-light-color dark:border-dark-color border border-opacity-30 dark:border-opacity-20 border-dashed",
   },
 };
 
@@ -75,6 +82,14 @@ export default function GradeCard({
       ).toFixed(2),
     );
   }, [currentGrade, expectedInternal, mark.overall.marks]);
+  
+  useEffect(() => {
+    const lostMark: number =
+      Number(mark.overall.total) - Number(mark.overall.marks);
+    const calculatedGrade = determineGrade(lostMark);
+    updateGrade(mark.courseCode, calculatedGrade);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mark.overall.total, mark.overall.marks, mark.courseCode]);
 
   const getSliderValue = (grade: string) => {
     return Object.entries(gradeMap).find(([_, g]) => g === grade)?.[0] || "5";
@@ -139,8 +154,8 @@ export default function GradeCard({
               </div>
             )}
 
-            <div className="flex flex-row items-center justify-between gap-2">
-              <h2>Required Marks</h2>
+            <div className="flex flex-row pt-3 border-t-2 border-dashed border-black/10 dark:border-white/10 items-center justify-between gap-2">
+              <h2>Required for sem exam</h2>
               <div className="flex items-center gap-1 rounded-full bg-light-background-dark dark:bg-dark-background-dark">
                 <span
                   className={`pl-2 text-sm font-medium ${
