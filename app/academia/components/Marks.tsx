@@ -139,11 +139,11 @@ export default function Marks() {
                         </span>{" "}
                         {" ->  "}
                         <span className="ml-2 text-light-warn-color dark:text-dark-warn-color">
-                          {Number(
-                            (
-                              Number(a.overall.marks) / Number(a.overall.total)
-                            ).toFixed(3),
-                          ) * 100}
+                          {(
+                            (Number(a.overall.marks) /
+                              Number(a.overall.total)) *
+                            100
+                          ).toFixed(2)}
                           %
                         </span>
                       </li>
