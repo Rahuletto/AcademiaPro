@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Slider } from "@/components/ui/slider";
 import { Mark } from "@/types/Marks";
 import { useData } from "@/provider/DataProvider";
-import { determineGrade } from "@/utils/Grade";
 import { MarkDisplay } from "@/app/academia/components/subcomponents/Marks/MarkElement";
 import Medal from "./Medals";
+import { grade_points } from "@/types/Grade";
 
 export const medalStyles = {
   O: {
@@ -54,13 +54,27 @@ export default function GradeCard({
   const { courses } = useData();
   const courseDetails = courses?.find((a) => a.code === mark.courseCode);
 
+  const [requiredMarks, setRequiredMarks] = useState("0");
+  const [expectedInternal, setExpectedInternal] = useState(0);
+
+  // Set the expected internal marks based on total marks
   useEffect(() => {
-    const lostMark: number =
-      Number(mark.overall.total) - Number(mark.overall.marks);
-    const calculatedGrade = determineGrade(lostMark);
-    updateGrade(mark.courseCode, calculatedGrade);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mark.overall.total, mark.overall.marks, mark.courseCode]);
+    if (Number(mark.overall.total) !== 60) {
+      setExpectedInternal(60 - Number(mark.overall.total));
+    }
+  }, [mark.overall.total]);
+
+  // Calculate required marks whenever the selected grade or marks change
+  useEffect(() => {
+    setRequiredMarks(
+      (
+        ((grade_points[currentGrade] -
+          (Number(mark.overall.marks) + expectedInternal)) /
+          40) *
+        75
+      ).toFixed(2),
+    );
+  }, [currentGrade, expectedInternal, mark.overall.marks]);
 
   const getSliderValue = (grade: string) => {
     return Object.entries(gradeMap).find(([_, g]) => g === grade)?.[0] || "5";
@@ -73,7 +87,14 @@ export default function GradeCard({
 
   return (
     <div
-      className={`flex min-h-40 flex-col justify-between gap-8 rounded-2xl ${Number(mark.overall.marks) <= 60 ? "bg-light-background-normal dark:bg-dark-background-normal" : `bg-opacity-80 dark:bg-opacity-40 ${medalStyles[currentGrade as "O" | "A+" | "A" | "B+" | "B" | "C"].bg}`} p-4 px-5 text-light-color dark:text-dark-color`}
+      className={`flex min-h-40 flex-col justify-between gap-8 rounded-2xl ${
+        Number(mark.overall.marks) <= 60
+          ? "bg-light-background-normal dark:bg-dark-background-normal"
+          : `bg-opacity-80 dark:bg-opacity-40 ${
+              medalStyles[currentGrade as "O" | "A+" | "A" | "B+" | "B" | "C"]
+                .bg
+            }`
+      } p-4 px-5 text-light-color dark:text-dark-color`}
     >
       <div className="grid grid-cols-[1fr_0.2fr] items-start justify-between gap-4">
         <div>
@@ -93,28 +114,62 @@ export default function GradeCard({
         <MarkDisplay marks={mark.overall} />
       </div>
 
-      <div className="relative flex flex-col-reverse gap-2">
+      <div className="relative flex flex-col-reverse gap-4">
         {Number(mark.overall.marks) <= 60 ? (
           <>
+            {60 - Number(mark.overall.total) > 0 && (
+              <div className="flex items-center justify-between">
+                <p>Expected Internal of {60 - Number(mark.overall.total)}:</p>
+                <input
+                  type="number"
+                  className="w-16 appearance-none rounded-md border-none bg-light-background-dark px-2 py-1 text-center outline-none dark:bg-dark-background-normal"
+                  value={expectedInternal}
+                  maxLength={3}
+                  max={60 - Number(mark.overall.total)}
+                  onChange={(e) => {
+                    const value = Number(e.target.value);
+                    if (
+                      value >= 0 &&
+                      value <= 60 - Number(mark.overall.total)
+                    ) {
+                      setExpectedInternal(value);
+                    }
+                  }}
+                />
+              </div>
+            )}
+
+            <div className="flex flex-row items-center justify-between gap-2">
+              <h2>Required Marks</h2>
+              <div className="flex items-center gap-1 rounded-full bg-light-background-dark dark:bg-dark-background-dark">
+                <span
+                  className={`pl-2 text-sm font-medium ${
+                    Number(requiredMarks) <= 0
+                      ? "text-light-accent dark:text-dark-accent"
+                      : Number(requiredMarks) > 75
+                        ? "text-light-error-color dark:text-dark-error-color"
+                        : "text-light-success-color dark:text-dark-success-color"
+                  }`}
+                >
+                  {requiredMarks}
+                </span>
+                <span className="ml-1 rounded-full bg-light-success-color px-2 py-0.5 pr-2 text-sm font-bold text-light-success-background dark:bg-dark-success-color dark:text-dark-success-background">
+                  75
+                </span>
+              </div>
+            </div>
+
             <div className="flex items-center justify-between text-xs text-light-accent dark:text-dark-accent">
-              <span className={`${currentGrade === "C" ? "font-semibold" : "opacity-40"}`}>
-                C
-              </span>
-              <span className={`${currentGrade === "B" ? "font-semibold" : "opacity-40"}`}>
-                B
-              </span>
-              <span className={`${currentGrade === "B+" ? "font-semibold" : "opacity-40"}`}>
-                B+
-              </span>
-              <span className={`${currentGrade === "A" ? "font-semibold" : "opacity-40"}`}>
-                A
-              </span>
-              <span className={`${currentGrade === "A+" ? "font-semibold" : "opacity-40"}`}>
-                A+
-              </span>
-              <span className={`${currentGrade === "O" ? "font-semibold" : "opacity-40"}`}>
-                O
-              </span>
+              {["C", "B", "B+", "A", "A+", "O"].map((grade) => (
+                <span
+                  key={grade}
+                  className={`${
+                    currentGrade === grade ? "font-semibold" : "opacity-40"
+                  }`}
+                >
+                  {grade}
+                </span>
+              ))}
             </div>
             <Slider
               max={5}
