@@ -6,3 +6,4 @@ export const grade_points: { [key: string]: number } = {
   B: 56,
   C: 50,
 };
+ 

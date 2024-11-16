@@ -24,6 +24,7 @@ import { IoLibrarySharp } from "react-icons/io5";
 import InstallButton from "./Buttons/InstallButton";
 import Popup from "./Popup";
 import Debugger from "@/app/academia/components/subcomponents/Debugger";
+import GradeX from "@/public/images/gradex";
 
 const MiniButtons = dynamic(
   () => import("./Buttons/MiniButtons").then((a) => a.default),
@@ -222,9 +223,16 @@ export function Sidebar({
                   Course list
                 </Link>
 
+
+
                 <Link href="/calendar">
                   <BsCalendar2WeekFill className="text-xl" />
                   Calendar
+                </Link>
+                
+                <Link href="/gradex">
+                  <GradeX className="text-xl" />
+                  GradeX
                 </Link>
 
                 <Link href="/links">

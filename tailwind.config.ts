@@ -7,7 +7,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "selector",
+  darkMode: "selector", // Custom dark mode
   theme: {
     fontFamily: {
       sans: ["var(--font-geist-sans)"],
@@ -23,7 +23,7 @@ const config: Config = {
     },
     extend: {
       gridTemplateColumns: {
-        marks: "repeat(auto-fill, minmax(18rem, 1fr))",
+        marks: "repeat(auto-fill, minmax(18rem, 1fr))", // Custom column grid
       },
       keyframes: {
         fadeIn: {
@@ -38,24 +38,30 @@ const config: Config = {
           "0%": { height: "0" },
           "100%": { height: "100%" },
         },
+        shimmer: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         fadeIn: "fadeIn 0.4s ease-in-out forwards",
         fastfade: "fadeIn 0.1s ease-in forwards",
+        shimmer: "shimmer 2s infinite linear",
         fadeOut: "fadeOut 0.4s ease-in-out forwards",
         slowSpin: "spin 5s linear infinite",
         expandHeight: "expandHeight 0.5s ease-in-out forwards",
       },
       colors: {
-        ...(Themes as any),
+        ...(Themes as any), // Custom colors from Themes
       },
       backgroundColor: {
-        ...(Themes as any),
+        ...(Themes as any), // Custom background colors
       },
       transitionTimingFunction: {
-        bouncy: "cubic-bezier(0.68, -0.55, 0.27, 1.55)",
+        bouncy: "cubic-bezier(0.68, -0.55, 0.27, 1.55)", // Custom easing
       },
     },
   },
+  plugins: [], // Add Tailwind plugins here if needed
 };
 export default config;
