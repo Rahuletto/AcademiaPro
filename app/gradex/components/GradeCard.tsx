@@ -59,6 +59,7 @@ export default function GradeCard({
   updateGrade: (courseCode: string, grade: string) => void;
 }) {
   const { courses } = useData();
+  const [editMode, setEditMode] = useState(false);
   const courseDetails = courses?.find((a) => a.code === mark.courseCode);
 
   const [requiredMarks, setRequiredMarks] = useState("0");
@@ -195,7 +196,31 @@ export default function GradeCard({
             />
           </>
         ) : (
-          <Medal grade={currentGrade as "O" | "A+" | "A" | "B+" | "B" | "C"} />
+          <>
+          <Medal edit={editMode} setEdit={setEditMode} setGrade={(newGrade: string) => updateGrade(mark.courseCode, newGrade)} grade={determineGrade(Number(mark.overall.total) - Number(mark.overall.marks)) as "O" | "A+" | "A" | "B+" | "B" | "C"} />
+          
+          {editMode && <>
+          <div className="flex items-center justify-between text-xs text-light-accent dark:text-dark-accent">
+              {["C", "B", "B+", "A", "A+", "O"].map((grade) => (
+                <span
+                  key={grade}
+                  className={`${
+                    currentGrade === grade ? "font-semibold" : "opacity-40"
+                  }`}
+                >
+                  {grade}
+                </span>
+              ))}
+            </div>
+            <Slider
+              max={5}
+              step={1}
+              value={[parseInt(getSliderValue(currentGrade))]}
+              onValueChange={handleSliderChange}
+              className="w-full"
+            />
+            </>}
+            </>
         )}
       </div>
     </div>

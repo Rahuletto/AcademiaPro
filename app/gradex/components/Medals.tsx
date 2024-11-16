@@ -1,18 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { medalStyles } from "./GradeCard";
 
 type MedalProps = {
   grade: "O" | "A+" | "A" | "B+" | "B" | "C";
+  edit: boolean;
+  setEdit: React.Dispatch<React.SetStateAction<boolean>>;
+  setGrade: (newGrade: string) => void;
 };
 
-const Medal: React.FC<MedalProps> = ({ grade }) => {
+const Medal: React.FC<MedalProps> = ({ grade, edit, setEdit, setGrade }) => {
   const { text, bg, border } = medalStyles[grade];
 
+  useEffect(() => {
+    if (!edit) setGrade(grade);
+  }, [edit]);
+
   return (
-    <div className={`group flex w-full gap-3 ${bg} py-5 rounded-xl ${border} items-center justify-center`}>
-        <h3 className={`text-3xl font-bold ${text}`}>{grade}</h3>
-        <span className={`font-medium text-base ${text}`}>Grade</span>
-    </div>
+    <button
+      tabIndex={0}
+      onClick={() => setEdit((prev) => !prev)}
+      className={`group flex w-full gap-3 ${bg} ${edit ? "py-1" : "py-5"} rounded-xl ${border} items-center justify-center`}
+    >
+      <h3 className={`text-3xl font-bold ${text}`}>{grade}</h3>
+      <span className={`text-base font-medium ${text}`}>Grade</span>
+    </button>
   );
 };
 
