@@ -305,7 +305,7 @@ export function Sidebar({
           >
             <main
               ref={content}
-              className={`m-0.5 ${isOpen ? "scale-[0.98] brightness-60 shadow-inner" : "scale-100"} transition-all duration-300 h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
+              className={`m-0.5 ${isOpen ? "scale-[0.98] brightness-60 shadow-inner" : ""} transition-all duration-300 h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
               <div
                 style={error ? { height: "-webkit-fill-available" } : {}}
