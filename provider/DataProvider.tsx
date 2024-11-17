@@ -124,7 +124,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
           Storage.set("data", data);
         }
 
-        console.log(data)
+        console.log(data);
         return data;
       },
     },
