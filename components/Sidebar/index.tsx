@@ -179,7 +179,7 @@ export function Sidebar({
       <>
         {debug && <Debugger setOpen={setDebug} />}
         {/* <Poster /> */}
-        <nav className="fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3">
+        <nav className={`fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3`}>
           <header
             ref={ref}
             className={`fixed left-0 top-0 flex h-full transform flex-col justify-between bg-light-background-normal p-4 text-white transition-transform md:duration-300 dark:bg-dark-background-normal ${
@@ -305,7 +305,7 @@ export function Sidebar({
           >
             <main
               ref={content}
-              className={`m-0.5 h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
+              className={`m-0.5 ${isOpen ? "scale-[0.98] brightness-60 shadow-inner" : "scale-100"} transition-all duration-300 h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
               <div
                 style={error ? { height: "-webkit-fill-available" } : {}}

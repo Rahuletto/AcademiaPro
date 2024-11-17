@@ -22,18 +22,9 @@ export default function GradeX() {
   };
 
   useEffect(() => {
-    if (marks) {
-      const initialGrades = Object.fromEntries(
-        marks.map((mark) => [mark.courseCode, "O"]),
-      );
-      setGrades(initialGrades);
-    }
-  }, [marks]);
-
-  useEffect(() => {
     sgpaCalculator();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [grades, courses]);
+  }, [grades, courses, marks]);
 
   const updateGrade = (courseCode: string, grade: string) => {
     setGrades((prevGrades) => ({
