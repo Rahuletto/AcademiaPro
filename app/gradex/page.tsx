@@ -6,6 +6,7 @@ import Loading from "@/components/States/Loading";
 import Error from "@/components/States/Error";
 import GradeCard from "./components/GradeCard";
 import Indicator from "@/components/Indicator";
+import { determineGrade } from "@/utils/Grade";
 
 export default function GradeX() {
   const { marks, isLoading, error, courses, isValidating } = useData();
@@ -20,6 +21,19 @@ export default function GradeX() {
     B: 6,
     C: 5,
   };
+
+  useEffect(() => {
+    marks?.forEach((mark) => {
+      setGrades((prevGrades) => ({
+        ...prevGrades,
+        [mark.courseCode]: determineGrade(
+          Number(mark.overall.total) - Number(mark.overall.marks),
+        ),
+      }));
+    });
+  }, [marks]);
+
+
 
   useEffect(() => {
     sgpaCalculator();
