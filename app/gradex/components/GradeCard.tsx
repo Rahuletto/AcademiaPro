@@ -101,6 +101,10 @@ export default function GradeCard({
   };
 
   const handleSliderChange = (value: number[]) => {
+    if (navigator.vibrate) {
+      navigator.vibrate(50); // Vibrate for 50ms
+    }
+    
     const newGrade = gradeMap[value[0]];
     updateGrade(mark.courseCode, newGrade);
   };
