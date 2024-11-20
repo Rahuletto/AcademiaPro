@@ -9,6 +9,7 @@ interface SearchBarProps {
 
 export function SearchBar({ searchQuery, setSearchQuery }: SearchBarProps) {
   const searchbox = useRef<HTMLInputElement>(null);
+  const [isMounted, setIsMounted] = React.useState(false);
 
   useEffect(() => {
     function keyHandler(e: KeyboardEvent) {
@@ -19,8 +20,12 @@ export function SearchBar({ searchQuery, setSearchQuery }: SearchBarProps) {
         e.preventDefault();
         searchbox.current?.focus();
       }
-      if (e.key === "Escape") searchbox.current?.blur();
+      if (e.key === "Escape" && searchbox.current) {
+        searchbox.current.blur();
+      }
     }
+
+    setIsMounted(true);
     window.addEventListener("keydown", keyHandler);
 
     return () => {
@@ -28,8 +33,9 @@ export function SearchBar({ searchQuery, setSearchQuery }: SearchBarProps) {
     };
   }, []);
 
+  if(!isMounted) return null;
   return (
-    <div className="fixed z-50 bottom-12 left-0 z-20 flex w-full items-center justify-center duration-200 focus-within:mb-8 focus-within:scale-105 active:mb-8 active:scale-105">
+    <div className="sticky z-50 bottom-6 left-0 flex w-full items-center justify-center duration-200 focus-within:mb-8 focus-within:scale-105 active:mb-8 active:scale-105">
       <input
         tabIndex={0}
         ref={searchbox}
@@ -37,8 +43,7 @@ export function SearchBar({ searchQuery, setSearchQuery }: SearchBarProps) {
         placeholder="Search"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        style={{ WebkitBackdropFilter: "blur(12px)" }}
-        className="relative z-10 w-[250px] animate-fastfade rounded-xl bg-light-button bg-opacity-80 px-4 py-2 text-lg font-medium shadow-lg outline-none backdrop-blur-md transition-all duration-200 md:w-[350px] dark:bg-dark-button"
+        className="relative z-10 w-[250px] animate-fastfade rounded-xl bg-light-button px-4 py-2 text-lg font-medium shadow-lg outline-none backdrop-blur-lg dark:backdrop-blur-lg transition-all duration-200 md:w-[350px] dark:bg-dark-button"
       />
       <div className="relative right-8 z-10 text-xl opacity-50">
         <LuSquareSlash />

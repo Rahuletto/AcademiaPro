@@ -158,6 +158,12 @@ export function Sidebar({
     };
   }, [isAnchored, isHoverEnabled]);
 
+  useEffect(() => {
+    if (navigator.vibrate) {
+      navigator.vibrate(5); // Vibrate for 50ms
+    }
+  }, [isOpen]);
+
   function onOpenClick() {
     const newIsAnchored = !isAnchored;
     setIsAnchored(newIsAnchored);
@@ -179,7 +185,9 @@ export function Sidebar({
       <>
         {debug && <Debugger setOpen={setDebug} />}
         {/* <Poster /> */}
-        <nav className={`fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3`}>
+        <nav
+          className={`fixed left-0 top-0 flex h-screen w-screen flex-row justify-between gap-10 p-2 transition duration-300 md:p-3`}
+        >
           <header
             ref={ref}
             className={`fixed left-0 top-0 flex h-full transform flex-col justify-between bg-light-background-normal p-4 text-white transition-transform md:duration-300 dark:bg-dark-background-normal ${
@@ -223,13 +231,11 @@ export function Sidebar({
                   Course list
                 </Link>
 
-
-
                 <Link href="/calendar">
                   <BsCalendar2WeekFill className="text-xl" />
                   Calendar
                 </Link>
-                
+
                 <Link href="/gradex">
                   <GradeX className="text-xl" />
                   GradeX
@@ -305,7 +311,7 @@ export function Sidebar({
           >
             <main
               ref={content}
-              className={`m-0.5 ${isOpen ? "scale-[0.98] md:scale-100 brightness-60 md:brightness-100 md:shadow-none shadow-inner" : ""} transition-all duration-300 h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
+              className={`m-0.5 ${isOpen ? "brightness-60 scale-[0.98] shadow-inner md:scale-100 md:shadow-none md:brightness-100" : ""} h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light transition-all duration-300 ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
               <div
                 style={error ? { height: "-webkit-fill-available" } : {}}
