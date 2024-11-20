@@ -53,7 +53,6 @@ export default function Marks() {
           <h1 className="text-2xl font-semibold">Marks</h1>
           <Link
             href="/gradex"
-            target="_blank"
             secondary
             className="flex items-center justify-center text-sm after:text-[#D8FFC6] after:absolute after:-right-5 after:-top-3 after:rounded-md after:bg-[#0E100E] after:p-0.5 after:px-1 after:text-xs after:content-['NEW']"
           >
