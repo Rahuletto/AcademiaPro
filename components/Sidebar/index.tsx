@@ -160,9 +160,15 @@ export function Sidebar({
 
   useEffect(() => {
     if (navigator.vibrate) {
-      navigator.vibrate(5); // Vibrate for 50ms
+      navigator.vibrate(5);
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    if (navigator.vibrate) {
+      navigator.vibrate(200);
+    }
+  }, [debug]);
 
   function onOpenClick() {
     const newIsAnchored = !isAnchored;

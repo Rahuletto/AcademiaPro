@@ -97,11 +97,11 @@ const CollapsibleNode: React.FC<{ label: string; value: any; level: number }> = 
         </span>
       )}
       {" "}
-      <span className="text-white">{label}: </span>
-      <span className="text-gray-400">{preview}</span>
+      <span className="dark:text-dark-color text-light-color">{label}: </span>
+      <span className="dark:text-dark-color text-light-color">{preview}</span>
 
       {!collapsed && isExpandable && (
-        <div className="ml-4 text-gray-300">
+        <div className="ml-4 dark:text-dark-color text-light-color">
           {Array.isArray(value) ? (
             value.map((item, index) => (
               <CollapsibleArrayItem key={index} index={index} item={item} level={level + 1} />
@@ -136,11 +136,11 @@ const CollapsibleArrayItem: React.FC<{ index: number; item: any; level: number }
         {collapsed ? "+" : "-"}
       </span>
       {" "}
-      <span className="text-gray-400">[{index}]:</span>{" "}
-      <span className="text-gray-400">{preview}</span>
+      <span className="dark:text-dark-color text-light-color">[{index}]:</span>{" "}
+      <span className="dark:text-dark-color text-light-color">{preview}</span>
 
       {!collapsed && (
-        <div className="ml-4 text-gray-300">
+        <div className="ml-4 dark:text-dark-color text-light-color">
           <pre>{JSON.stringify(item, null, 2)}</pre>
         </div>
       )}
