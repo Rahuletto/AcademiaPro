@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { FaUser, FaUserLock } from "react-icons/fa";
 import { createPortal } from "react-dom";
-import { RiLoader3Fill } from "react-icons/ri";
+import { RiLoader3Fill, RiRestartFill, RiRestartLine } from "react-icons/ri";
 import { useRouter } from "next/navigation";
 import { profileColor } from "@/utils/ProfileColor";
 import { elevatedUsers } from "@/misc/users";
@@ -10,6 +10,7 @@ import { LuLogOut } from "react-icons/lu";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { useData } from "@/provider/DataProvider";
+import { Cookie } from "@/utils/Cookies";
 
 const UserDialog = dynamic(
   () => import("./UserDialog").then((a) => a.default),
@@ -30,6 +31,13 @@ export default function ProfileBadge({ className }: { className?: string }) {
       setDialogRoot(null);
     };
   }, []);
+
+  useEffect(() => {
+    if (!user && !isLoading && Cookie.get("key")) {
+      Cookie.clear();
+      router.push("/home");
+    }
+  }, [user, error, isLoading, router]);
 
   const openDialog = () => setIsDialogOpen(true);
   const closeDialog = () => setIsDialogOpen(false);
@@ -105,17 +113,15 @@ export default function ProfileBadge({ className }: { className?: string }) {
           dialogRoot,
         )}
     </>
-  ) : (
-    <>
-      <button
-        onClick={() => router.push("/auth/login")}
-        className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-success-background text-light-success-color lg:w-[82%] dark:bg-dark-success-background dark:text-dark-success-color"
-      >
-        <FaUserLock className="text-xl" />
-        <h1 className="text-md font-medium text-light-success-color dark:text-dark-success-color">
-          Login.
-        </h1>
-      </button>
-    </>
-  );
+  ) : !Cookie.get("key") ? (
+    <button
+      onClick={() => {Cookie.clear(); router.push("/home");}}
+      className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-error-background text-light-error-color lg:w-[82%] dark:bg-dark-error-background dark:text-dark-error-color"
+    >
+      <RiRestartLine className="text-xl" />
+      <h1 className="text-md font-medium text-light-error-color dark:text-dark-error-color">
+        Reset.
+      </h1>
+    </button>
+  ) : null;
 }
