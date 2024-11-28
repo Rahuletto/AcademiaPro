@@ -15,7 +15,7 @@ interface ContainerProps {
 }
 
 export default function Container({ currentDayOrder, day }: ContainerProps) {
-  const [view, setView] = useState(false);
+  const [view, setView] = useState(true);
   return (
     <div className="flex flex-col gap-3">
       <div
@@ -26,8 +26,11 @@ export default function Container({ currentDayOrder, day }: ContainerProps) {
         <TableCard view={view} currentDayOrder={currentDayOrder} />
       </div>
       {!isNaN(currentDayOrder) && <div className="flex w-full animate-fadeIn flex-row items-center justify-center transition duration-150">
-        <div
-          className={`h-2 w-3 rounded-full border-2 opacity-50 transition duration-150 ${view ? "border-light-success-color bg-light-success-color dark:border-dark-success-color dark:bg-dark-success-color" : "border-dark-side"} p-1`}
+        <button
+          onClick={() => {
+            setView((prev) => !prev);
+          }}
+          className={`h-2 w-3 rounded-full border-2 opacity-50 transition duration-150 ring-1 ${view ? "ring-light-success-color bg-light-success-color dark:ring-dark-success-color dark:bg-dark-success-color border-dark-side" : "border-dark-side ring-transparent"} p-1`}
         />
         <button
           className="px-3 font-medium opacity-40 transition duration-150"

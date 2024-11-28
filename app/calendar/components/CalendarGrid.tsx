@@ -18,20 +18,23 @@ export default function CalendarGrid({
   isDownload,
 }: CalendarGridProps) {
   const todayRef = useRef<HTMLDivElement>(null);
+  const head = useRef<HTMLDivElement>(null);
   const date = new Date().getDate();
 
   useEffect(() => {
     if (todayRef.current)
       todayRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    else head.current?.scrollIntoView({ behavior: "smooth", block: "center" });
   }, [month]);
 
   const getFirstDayIndex = () => weekdays.indexOf(days[0]?.day);
 
   return (
     <div className="w-full pt-1">
+      <div ref={head} />
       <div className="sticky top-16 z-10 hidden bg-light-background-light text-center font-bold shadow-[0px_-60px_40px_50px_#ffffffe7] 2xl:grid 2xl:grid-cols-7 2xl:gap-4 dark:bg-dark-background-dark dark:shadow-[0px_-60px_40px_50px_#06090de7]">
         {weekdays.map((weekday) => (
-          <div key={weekday} className="p-2 font-medium">
+          <div key={weekday} id="weekdays" className="p-2 font-medium">
             {weekday}
           </div>
         ))}
@@ -58,7 +61,11 @@ export default function CalendarGrid({
                   ? false
                   : date === Number(day.date) && new Date().getMonth() === month
               }
-              ref={date === Number(day.date) ? todayRef : null}
+              ref={
+                date === Number(day.date) && new Date().getMonth() === month
+                  ? todayRef
+                  : null
+              }
             />
           ))}
       </div>

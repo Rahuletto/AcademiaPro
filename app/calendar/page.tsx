@@ -1,7 +1,7 @@
 "use client";
 import Loading from "@/components/States/Loading";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Error from "@/components/States/Error";
 import dynamic from "next/dynamic";
 

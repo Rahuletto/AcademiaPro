@@ -3,6 +3,8 @@ import { ProscrapeError } from "./Error";
 
 export type CalendarResponse = SuccessCalendarResponse & ProscrapeError;
 export interface SuccessCalendarResponse {
+  today: Day;
+  index: number;
   calendar: Calendar[];
   requestedAt: number | null;
 }

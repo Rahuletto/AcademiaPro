@@ -11,8 +11,8 @@ export default function NoData({ component }: { component: string }) {
         title="loading"
         className={`text-2xl font-medium text-light-accent dark:text-dark-accent`}
       />
-      <h4 className="text-lg font-medium text-light-accent dark:text-dark-accent text-center">We couldn&apos;t find {component} from SRM Academia</h4>
-      <p className="text-center text-sm text-light-accent dark:text-dark-accent opacity-50">Might be because of data refresh. If you can see in SRM Academia, report in <Link className="underline font-medium" href="/whatsapp">Whatsapp</Link></p>
+      <h4 className="text-lg font-medium text-light-accent dark:text-dark-accent text-center">We can&apos;t fetch {component} from SRM Academia</h4>
+      <p className="text-center text-sm text-light-accent dark:text-dark-accent opacity-50">If you can see in <Link className="underline font-medium" href="https://academia.srmist.edu.in">SRM Academia</Link>, report in <Link className="underline font-medium" href="/whatsapp">Whatsapp</Link></p>
     </div>
     </>
   );
