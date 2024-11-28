@@ -89,10 +89,10 @@ const SubjectCell: React.FC<SubjectCellProps> = ({
       <span
         className={`absolute ${
           classRoom ? "bottom-1 md:bottom-6" : "bottom-1"
-        } right-2 ${subject && subject !== "null" ? "text-black opacity-40" : "text-white opacity-10"} text-xs font-normal transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
+        } right-2 ${subject && subject !== "null" ? "text-black opacity-40" : "text-white opacity-10"} text-[10px] font-normal transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
       >
         {ampm
-          ? ` ${Number(Time.start[index].split(":")[0]) % 12 || 12}:${Time.start[index].split(":")[1]} ${Number(Time.start[index].split(":")[0]) >= 12 ? "PM" : "AM"} - ${Number(Time.start[index].split(":")[0]) % 12 || 12}:${Time.end[index].split(":")[1]} ${Number(Time.start[index].split(":")[0]) >= 12 ? "PM" : "AM"}`
+          ? ` ${Number(Time.start[index].split(":")[0]) % 12 || 12}:${Time.start[index].split(":")[1]}${Number(Time.start[index].split(":")[0]) >= 12 ? "PM" : "AM"} - ${Number(Time.end[index].split(":")[0]) % 12 || 12}:${Time.end[index].split(":")[1]}${Number(Time.end[index].split(":")[0]) >= 12 ? "PM" : "AM"}`
           : `${Time.start[index]} - ${Time.end[index]}`}
       </span>
     </div>
