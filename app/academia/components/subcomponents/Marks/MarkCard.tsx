@@ -26,42 +26,55 @@ export default function MarkCard({
   graph: boolean;
 }) {
   const [calculate, setCalculate] = useState(false);
-  const {courses} = useData();
+  const { courses } = useData();
 
   return (
-    <div
-      title={`${mark.courseName} (${mark.courseCode})`}
-      className={`relative flex min-h-[195px] flex-col ${courses?.find((a) => a.code === mark.courseCode)?.credit === "0" ? "border-light-background-light dark:border-dark-background-light border-x-2" : "border-transparent"} border justify-between gap-3 rounded-3xl bg-light-background-normal p-4 px-5 pb-5 dark:bg-dark-background-normal`}
-    >
+    <div className={`relative flex flex-col items-center`}>
       <div
-        className={`${calculate ? "opacity-50" : "opacity-100"} flex h-full flex-col gap-4`}
+        title={`${mark.courseName} (${mark.courseCode})`}
+        className={`relative flex h-full min-h-[195px] w-full flex-col ${courses?.find((a) => a.code === mark.courseCode)?.credit === "0" ? "border-x-2 border-light-background-light dark:border-dark-background-light" : "border-transparent"} justify-between gap-3 rounded-3xl border bg-light-background-normal p-4 px-5 pb-5 dark:bg-dark-background-normal`}
       >
-        <div className="flex w-full items-start justify-between gap-2">
-          <h1
-            title={mark.courseCode}
-            aria-label={`${mark.courseName} (${mark.courseCode})`}
-            className="text-md font-medium capitalize"
-          >
-            {!mark.courseName.toLowerCase().includes("n/a") ? mark.courseName?.toLowerCase() : courses ? courses.find((a) => a.code === mark.courseCode)?.title : mark.courseCode}
-          </h1>
-          <Indicator type={mark.courseType as "Practical" | "Theory"} />
-        </div>
-        <div className="flex flex-col gap-16">
-          {graph ? (
-            <PerformanceChart testPerformance={mark.testPerformance} />
-          ) : null}
+        <div
+          className={`${calculate ? "opacity-50" : "opacity-100"} flex h-full flex-col gap-4`}
+        >
+          <div className="flex w-full items-start justify-between gap-2">
+            <h1
+              title={mark.courseCode}
+              aria-label={`${mark.courseName} (${mark.courseCode})`}
+              className="text-md font-medium capitalize"
+            >
+              {!mark.courseName.toLowerCase().includes("n/a")
+                ? mark.courseName?.toLowerCase()
+                : courses
+                  ? courses.find((a) => a.code === mark.courseCode)?.title
+                  : mark.courseCode}
+            </h1>
+            <Indicator type={mark.courseType as "Practical" | "Theory"} />
+          </div>
+          <div className="flex flex-col gap-16">
+            {graph ? (
+              <PerformanceChart testPerformance={mark.testPerformance} />
+            ) : null}
 
-          <MarkList testPerformance={mark.testPerformance} />
+            <MarkList testPerformance={mark.testPerformance} />
+          </div>
         </div>
+
+        <TotalSection
+          graph={graph}
+          overall={mark.overall}
+          calculate={calculate}
+          setCalculate={setCalculate}
+        />
+        {calculate && <CalculatorSection overall={mark.overall} />}
       </div>
-
-      <TotalSection
-        graph={graph}
-        overall={mark.overall}
-        calculate={calculate}
-        setCalculate={setCalculate}
-      />
-      {calculate && <CalculatorSection overall={mark.overall} />}
+      {courses?.find((a) => a.code === mark.courseCode)?.credit === "0" && (
+        <div className="absolute -bottom-3 z-10 mx-auto my-0.5 w-fit rounded-full border border-light-background-light bg-light-background-dark px-3 py-0.5 dark:border-dark-background-light dark:bg-dark-background-light">
+        <p className="text-center font-mono text-[10px] text-light-color opacity-40 dark:text-dark-color">
+          Zero Credit
+        </p>
+        </div>
+      )}
     </div>
   );
 }
