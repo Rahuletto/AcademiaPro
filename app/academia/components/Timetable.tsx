@@ -2,8 +2,8 @@
 import Link from "@/components/Link";
 import Error from "@/components/States/Error";
 import Loading from "@/components/States/Loading";
-import { useEffect, useRef, useState } from "react";
-import { FiChevronLeft, FiChevronRight, FiInfo } from "react-icons/fi";
+import { useEffect, useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 import dynamic from "next/dynamic";
 import Refresh from "@/components/Refresh";
@@ -11,10 +11,6 @@ import NoData from "./subcomponents/NoData";
 import { useData } from "@/provider/DataProvider";
 import { usePlanner } from "@/provider/DataCalProvider";
 
-const InfoPopup = dynamic(
-  () => import("./subcomponents/Attendance/InfoPopup").then((a) => a.default),
-  { ssr: false },
-);
 const Container = dynamic(
   () => import("./subcomponents/Timetable/Container").then((a) => a.default),
   { ssr: false },
@@ -27,20 +23,20 @@ export default function Timetable() {
     error: timetableError,
   } = useData();
 
-  const {
-    dayOrder: day,
-    isLoading: dayLoading,
-  } = usePlanner();
-  
-  const [showInfoPopup, setShowInfoPopup] = useState(false);
-  const infoIconRef = useRef<HTMLDivElement>(null);
+  const { dayOrder: day, isLoading: dayLoading } = usePlanner();
+
   const [currentDayOrder, setCurrentDayOrder] = useState<string | number>("1");
+  const [ampm, setAmpm] = useState(false);
+
+  useEffect(() => {
+    const ampm = localStorage.getItem("ampm");
+    if (ampm) setAmpm(ampm === "true");
+  }, []);
 
   useEffect(() => {
     if (day) setCurrentDayOrder(day);
   }, [day]);
 
-  const toggleInfoPopup = () => setShowInfoPopup((e) => !e);
   const isHoliday = day && typeof day === "string" && day.includes("-");
 
   const handlePreviousDayOrder = () => {
@@ -74,7 +70,7 @@ export default function Timetable() {
   return (
     <section id="timetable" className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-4 z-20">
+        <div className="z-20 flex items-center gap-4">
           <h1 className="text-2xl font-semibold">Timetable</h1>
           <Link
             href="/timetable"
@@ -84,27 +80,23 @@ export default function Timetable() {
             Download
           </Link>
 
-          <div className="relative" ref={infoIconRef}>
-            <FiInfo
-              className="cursor-help opacity-40"
-              onClick={toggleInfoPopup}
-              onMouseEnter={toggleInfoPopup}
-              onMouseLeave={() => setShowInfoPopup(false)}
-            />
-            {showInfoPopup && (
-              <InfoPopup
-                bottom
-                text="Generate your full schedule timetable and download it as image."
-                onClose={() => setShowInfoPopup(false)}
-              />
-            )}
-          </div>
         </div>
-        {!timetableError && <Refresh type={{ mutateTimetable: true }} />}
+        <div className="flex items-center justify-center gap-2">
+          <button
+            onClick={() => {
+              setAmpm((prev) => !prev)
+              localStorage.setItem("ampm", (!ampm).toString());
+            }}
+            className={`rounded-full p-0.5 text-xs font-mono text-light-color opacity-60 hover:bg-light-background-dark dark:text-dark-color dark:hover:bg-dark-background-dark`}
+          >
+            {ampm ? "24H" : "12H"}
+          </button>
+          {!timetableError && <Refresh type={{ mutateTimetable: true }} />}
+        </div>
       </div>
 
       {timetable ? (
-        <Container day={day} currentDayOrder={Number(currentDayOrder)} />
+        <Container ampm={ampm} day={day} currentDayOrder={Number(currentDayOrder)} />
       ) : timetableLoading || dayLoading ? (
         <Loading />
       ) : timetableError ? (

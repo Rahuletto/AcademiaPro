@@ -12,6 +12,7 @@ interface SubjectCellProps {
   isActive: boolean;
   inRange: boolean;
   classRoom: string | null;
+  ampm?: boolean;
   nullStyler: React.CSSProperties;
   index: number;
 }
@@ -19,6 +20,7 @@ interface SubjectCellProps {
 const SubjectCell: React.FC<SubjectCellProps> = ({
   subject,
   type,
+  ampm,
   isActive,
   classRoom,
   inRange,
@@ -78,7 +80,7 @@ const SubjectCell: React.FC<SubjectCellProps> = ({
       ) : null}
       {classRoom && (
         <span
-          className="absolute bottom-2 left-2 flex animate-fastfade text-xs capitalize opacity-70"
+          className="absolute bottom-2 left-2 flex text-xs capitalize opacity-70"
           style={{ width: "min-content" }}
         >
           {classRoom}
@@ -89,7 +91,9 @@ const SubjectCell: React.FC<SubjectCellProps> = ({
           classRoom ? "bottom-1 md:bottom-6" : "bottom-1"
         } right-2 ${subject && subject !== "null" ? "text-black opacity-40" : "text-white opacity-10"} text-xs font-normal transition duration-200 xl:left-2 xl:opacity-0 xl:group-hover:opacity-40`}
       >
-        {Time.start[index]} - {Time.end[index]}
+        {ampm
+          ? ` ${Number(Time.start[index].split(":")[0]) % 12 || 12}:${Time.start[index].split(":")[1]} ${Number(Time.start[index].split(":")[0]) >= 12 ? "PM" : "AM"} - ${Number(Time.start[index].split(":")[0]) % 12 || 12}:${Time.end[index].split(":")[1]} ${Number(Time.start[index].split(":")[0]) >= 12 ? "PM" : "AM"}`
+          : `${Time.start[index]} - ${Time.end[index]}`}
       </span>
     </div>
   );
@@ -98,17 +102,22 @@ const SubjectCell: React.FC<SubjectCellProps> = ({
 interface TableCardProps {
   view: boolean;
   currentDayOrder: number;
+  ampm?: boolean;
 }
 
-const TableCard: React.FC<TableCardProps> = ({ view, currentDayOrder }) => {
+const TableCard: React.FC<TableCardProps> = ({
+  view,
+  currentDayOrder,
+  ampm,
+}) => {
   const { timetable, courses } = useData();
   const { dayOrder: day } = usePlanner();
   const [time, setTime] = useState<Date>(getISTTime());
 
   const getClass = (subject?: string) => {
     if (!subject || !courses) return;
-    if(subject.split('[')[1]) {
-      return subject.split('[')[1].split(']')[0];
+    if (subject.split("[")[1]) {
+      return subject.split("[")[1].split("]")[0];
     }
     const match = subject.match(/^(.*?) \((.*?)\)$/);
     if (!match) return;
@@ -171,6 +180,7 @@ const TableCard: React.FC<TableCardProps> = ({ view, currentDayOrder }) => {
         return (
           <SubjectCell
             key={i}
+            ampm={ampm}
             classRoom={view ? (classroom ?? "") : ""}
             subject={subject}
             type={type}
