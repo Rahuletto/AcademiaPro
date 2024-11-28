@@ -32,7 +32,7 @@ export default function Container({ currentDayOrder, day, ampm }: ContainerProps
               onClick={() => {
                 setView((prev) => !prev);
               }}
-              className={`h-2 w-3 rounded-full border-2 opacity-50 ring-1 transition duration-150 ${view ? "border-dark-side bg-light-success-color ring-light-success-color dark:bg-dark-success-color dark:ring-dark-success-color" : "border-dark-side ring-transparent"} p-1`}
+              className={`h-2 w-3 rounded-full border-2 opacity-50 ring-1 transition duration-150 ${view ? "dark:border-dark-side border-light-side bg-light-success-color ring-light-success-color dark:bg-dark-success-color dark:ring-dark-success-color" : "border-dark-side ring-transparent"} p-1`}
             />
             <button
               className="px-3 font-medium opacity-40 transition duration-150"
