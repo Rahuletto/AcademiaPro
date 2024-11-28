@@ -4,7 +4,7 @@ import { Mark } from "@/types/Marks";
 import { useData } from "@/provider/DataProvider";
 import { MarkDisplay } from "@/app/academia/components/subcomponents/Marks/MarkElement";
 import Medal from "./Medals";
-import { grade_points } from "@/types/Grade";
+import { getGrade, grade_points } from "@/types/Grade";
 import { determineGrade } from "@/utils/Grade";
 
 export const medalStyles = {
@@ -91,7 +91,7 @@ export default function GradeCard({
   useEffect(() => {
     const lostMark: number =
       Number(mark.overall.total) - Number(mark.overall.marks);
-    const calculatedGrade = determineGrade(lostMark);
+    const calculatedGrade = Number(mark.overall.total) == 100 ? getGrade(Number(mark.overall.marks)) : determineGrade(lostMark);
     updateGrade(mark.courseCode, calculatedGrade);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mark.overall.total, mark.overall.marks, mark.courseCode]);
@@ -143,10 +143,10 @@ export default function GradeCard({
           <>
             {60 - Number(mark.overall.total) > 0 && (
               <div className="flex items-center justify-between">
-                <p>Expected Internal of {60 - Number(mark.overall.total)}:</p>
+                <p>Expected remaining from {60 - Number(mark.overall.total)}:</p>
                 <input
                   type="number"
-                  className="w-16 appearance-none rounded-md border-none bg-light-background-dark px-2 py-1 text-center outline-none dark:bg-dark-background-normal"
+                  className="w-16 appearance-none rounded-md border-none bg-light-background-darker px-2 py-1 text-center outline-none dark:bg-dark-background-dark"
                   value={expectedInternal}
                   maxLength={3}
                   max={60 - Number(mark.overall.total)}
@@ -164,7 +164,7 @@ export default function GradeCard({
             )}
 
             <div className="flex flex-row items-center justify-between gap-2 border-t-2 border-dashed border-black/10 pt-3 dark:border-white/10">
-              <h2>Required for sem exam</h2>
+              <h2>Goal for sem exam</h2>
               <div className="flex items-center gap-1 rounded-full bg-light-background-dark dark:bg-dark-background-dark">
                 <span
                   className={`pl-2 text-sm font-medium ${
@@ -209,9 +209,9 @@ export default function GradeCard({
               edit={editMode}
               setEdit={setEditMode}
               grade={
-                determineGrade(
+                (Number(mark.overall.total) == 100 ? getGrade(Number(mark.overall.marks)) : determineGrade(
                   Number(mark.overall.total) - Number(mark.overall.marks),
-                ) as "O" | "A+" | "A" | "B+" | "B" | "C"
+                )) as "O" | "A+" | "A" | "B+" | "B" | "C"
               }
             />
 

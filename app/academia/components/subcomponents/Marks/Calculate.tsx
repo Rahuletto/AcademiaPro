@@ -1,7 +1,7 @@
 "use client";
 import { Overall } from "@/types/Marks";
 import React, { useState, useEffect } from "react";
-import { grade_points } from "@/types/Grade";
+import { getGrade, grade_points } from "@/types/Grade";
 import { determineGrade } from "@/utils/Grade";
 
 export default function CalculatorSection({ overall }: { overall: Overall }) {
@@ -11,7 +11,7 @@ export default function CalculatorSection({ overall }: { overall: Overall }) {
 
   useEffect(() => {
     const lostMark: number = Number(overall.total) - Number(overall.marks);
-    const newGrade = determineGrade(lostMark);
+    const newGrade = Number(overall.total) == 100 ? getGrade(Number(overall.marks)) : determineGrade(lostMark);
     console.log(newGrade);
     setGrade(newGrade);
     if (Number(overall.total) != 60) {

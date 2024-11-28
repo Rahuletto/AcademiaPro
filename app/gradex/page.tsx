@@ -7,6 +7,7 @@ import Error from "@/components/States/Error";
 import GradeCard from "./components/GradeCard";
 import Indicator from "@/components/Indicator";
 import { determineGrade } from "@/utils/Grade";
+import { getGrade } from "@/types/Grade";
 
 export default function GradeX() {
   const { marks, isLoading, error, courses, isValidating } = useData();
@@ -26,7 +27,7 @@ export default function GradeX() {
     marks?.forEach((mark) => {
       setGrades((prevGrades) => ({
         ...prevGrades,
-        [mark.courseCode]: determineGrade(
+        [mark.courseCode]: Number(mark.overall.total) == 100 ? getGrade(Number(mark.overall.marks)) : determineGrade(
           Number(mark.overall.total) - Number(mark.overall.marks),
         ),
       }));
