@@ -125,3 +125,4 @@ export default function ProfileBadge({ className }: { className?: string }) {
     </button>
   ) : null;
 }
+
