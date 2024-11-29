@@ -90,9 +90,9 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
           {attendance && attendance.length > 0 && (
             <>
               <button
-
-          className="flex after:absolute after:-right-5 opacity-100 scale-100 after:-top-3 after:rounded-md after:bg-[#0E100E] after:p-0.5 after:px-1 after:text-xs after:text-light-accent after:content-['NEW'] dark:after:text-dark-accent w-fit items-center justify-center rounded-xl bg-light-button px-5 py-1 text-sm font-medium text-light-accent transition-all duration-300 dark:bg-dark-button dark:text-dark-accent"
-         onClick={() => setOpen(true)} >
+                className="flex w-fit scale-100 items-center justify-center rounded-xl bg-light-button px-5 py-1 text-sm font-medium text-light-accent opacity-100 transition-all duration-300 after:absolute after:-right-5 after:-top-3 after:rounded-md after:bg-[#0E100E] after:p-0.5 after:px-1 after:text-xs after:text-light-accent after:content-['NEW'] dark:bg-dark-button dark:text-dark-accent dark:after:text-dark-accent"
+                onClick={() => setOpen(true)}
+              >
                 Predict
               </button>
               {/* {!isPredicted && (
@@ -114,7 +114,8 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
           />
         )} */}
 
-              {dialogRoot && open &&
+              {dialogRoot &&
+                open &&
                 createPortal(
                   <Predictor onClose={() => setOpen(false)} />,
                   dialogRoot,
@@ -135,7 +136,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
             <FaCheck />
           </button>
         )} */}
-{/* 
+              {/* 
               <PredictResetButtons
                 isPredicted={isPredicted}
                 showDatePicker={showDatePicker}
