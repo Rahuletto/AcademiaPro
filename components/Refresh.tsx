@@ -13,7 +13,7 @@ export default function Refresh({
 
   const clickHandler = () => {
     if (navigator.vibrate) {
-      navigator.vibrate(20); // Vibrate for 50ms
+      navigator.vibrate(30); // Vibrate for 50ms
     }
 
     const c = confirm(

@@ -20,6 +20,7 @@ interface DataContextType {
   error: Error | null;
   requestedAt: number | null;
   isLoading: boolean;
+  token: string | null;
   isValidating: boolean;
   lastUpdated: number;
   mutate: () => Promise<void | AllResponses | null | undefined>;
@@ -30,6 +31,7 @@ const DataContext = createContext<DataContextType>({
   marks: null,
   courses: null,
   user: null,
+  token: null,
   timetable: null,
   error: null,
   requestedAt: null,
@@ -138,7 +140,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         marks: data?.marks || null,
         courses: data?.course?.courses || null,
         timetable: data?.timetable?.schedule || null,
-
+        token: data?.token || null,
         error: error || null,
         requestedAt: data?.requestedAt || 0,
 

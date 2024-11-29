@@ -166,7 +166,7 @@ export function Sidebar({
 
   useEffect(() => {
     if (navigator.vibrate) {
-      navigator.vibrate(200);
+      navigator.vibrate(100);
     }
   }, [debug]);
 

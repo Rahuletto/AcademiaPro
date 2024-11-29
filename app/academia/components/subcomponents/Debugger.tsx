@@ -15,7 +15,9 @@ export default function Debugger({
   const handlePrint = () => {
     const printWindow = window.open("", "_blank");
     if (printWindow) {
-      printWindow.document.write("<pre>" + JSON.stringify(data, null, 2) + "</pre>");
+      printWindow.document.write(
+        "<pre>" + JSON.stringify(data, null, 2) + "</pre>",
+      );
       printWindow.document.close();
       printWindow.print();
     }
@@ -31,7 +33,7 @@ export default function Debugger({
           setOpen(false);
         }
       }}
-      className="absolute animate-fastfade left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-black/50 backdrop-blur-md"
+      className="absolute left-0 top-0 z-50 flex h-screen w-screen animate-fastfade items-center justify-center bg-black/50 backdrop-blur-md"
     >
       <div
         role="dialog"
@@ -39,16 +41,32 @@ export default function Debugger({
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className="relative cursor-default h-[80%] w-[95%] rounded-3xl border-4 border-dashed border-light-warn-color bg-light-warn-background p-4 text-light-color lg:w-1/2 dark:border-dark-warn-color dark:bg-dark-warn-background dark:text-dark-color"
+        className="relative h-[80%] w-[95%] cursor-default rounded-3xl border-2 border-dashed border-light-warn-color bg-light-warn-background p-4 text-light-color lg:w-1/2 dark:border-dark-warn-color dark:bg-dark-warn-background dark:text-dark-color"
       >
+        <h3 className="m-2 mt-0 text-xl font-semibold">RAW Data</h3>
+        <p className="absolute bottom-3 left-4 z-50 text-xs font-semibold text-light-warn-color dark:text-dark-warn-color font-mono">Key: <code>{data.token || "************"}</code></p>
         <button
           onClick={handlePrint}
-          className="absolute cursor-pointer hover:px-4 hover:py-2 transition-all duration-150 z-50 bottom-2 right-2 text-xs rounded-xl bg-light-warn-color px-3 py-1 font-semibold text-light-warn-background dark:text-dark-warn-background dark:bg-dark-warn-color"
+          className="absolute bottom-2 right-2 z-50 cursor-pointer rounded-xl bg-light-warn-color px-3 py-1 text-xs font-semibold text-light-warn-background transition-all duration-150 hover:px-4 hover:py-2 dark:bg-dark-warn-color dark:text-dark-warn-background"
         >
           Print
         </button>
         <pre className="h-full min-w-[350px] overflow-auto text-xs opacity-80 lg:text-sm">
-          <JsonNode node={data} level={0} />
+          <JsonNode
+            node={{
+              user: data.user,
+              attendance: data.attendance,
+              marks: data.marks,
+              timetable: data.timetable,
+              courses: data.courses,
+              error: data.error,
+              requestedAt: data.requestedAt,
+              lastUpdated: data.lastUpdated,
+              isLoading: data.isLoading,
+              isValidating: data.isValidating,
+            }}
+            level={0}
+          />
         </pre>
       </div>
     </div>
@@ -60,7 +78,12 @@ const JsonNode: React.FC<{ node: any; level: number }> = ({ node, level }) => {
     <div className={`ml-2 border-l-${level} border-gray-600`}>
       {typeof node === "object" && node !== null ? (
         Object.entries(node).map(([key, value]) => (
-          <CollapsibleNode key={key} label={key} value={value} level={level + 1} />
+          <CollapsibleNode
+            key={key}
+            label={key}
+            value={value}
+            level={level + 1}
+          />
         ))
       ) : (
         <span>{JSON.stringify(node)}</span>
@@ -69,25 +92,22 @@ const JsonNode: React.FC<{ node: any; level: number }> = ({ node, level }) => {
   );
 };
 
-const CollapsibleNode: React.FC<{ label: string; value: any; level: number }> = ({
-  label,
-  value,
-  level,
-}) => {
+const CollapsibleNode: React.FC<{
+  label: string;
+  value: any;
+  level: number;
+}> = ({ label, value, level }) => {
   const [collapsed, setCollapsed] = useState(true);
   const isExpandable = typeof value === "object" && value !== null;
   const toggleCollapse = () => isExpandable && setCollapsed(!collapsed);
   const preview = Array.isArray(value)
     ? `[Array(${value.length})]`
     : typeof value === "object"
-    ? `{...}`
-    : JSON.stringify(value);
+      ? `{...}`
+      : JSON.stringify(value);
 
   return (
-    <div
-      className={`mb-1 pl-2`}
-      style={{ paddingLeft: `${level * 10}px` }}
-    >
+    <div className={`mb-1 pl-2`} style={{ paddingLeft: `${level * 10}px` }}>
       {isExpandable && (
         <span
           onClick={toggleCollapse}
@@ -95,16 +115,19 @@ const CollapsibleNode: React.FC<{ label: string; value: any; level: number }> = 
         >
           {collapsed ? "+" : "-"}
         </span>
-      )}
-      {" "}
-      <span className="dark:text-dark-color text-light-color">{label}: </span>
-      <span className="dark:text-dark-color text-light-color">{preview}</span>
-
+      )}{" "}
+      <span className="text-light-color dark:text-dark-color">{label}: </span>
+      <span className="text-light-color dark:text-dark-color">{preview}</span>
       {!collapsed && isExpandable && (
-        <div className="ml-4 dark:text-dark-color text-light-color">
+        <div className="ml-4 text-light-color dark:text-dark-color">
           {Array.isArray(value) ? (
             value.map((item, index) => (
-              <CollapsibleArrayItem key={index} index={index} item={item} level={level + 1} />
+              <CollapsibleArrayItem
+                key={index}
+                index={index}
+                item={item}
+                level={level + 1}
+              />
             ))
           ) : (
             <pre>{JSON.stringify(value, null, 2)}</pre>
@@ -115,32 +138,27 @@ const CollapsibleNode: React.FC<{ label: string; value: any; level: number }> = 
   );
 };
 
-const CollapsibleArrayItem: React.FC<{ index: number; item: any; level: number }> = ({
-  index,
-  item,
-  level,
-}) => {
+const CollapsibleArrayItem: React.FC<{
+  index: number;
+  item: any;
+  level: number;
+}> = ({ index, item, level }) => {
   const [collapsed, setCollapsed] = useState(true);
   const toggleCollapse = () => setCollapsed(!collapsed);
   const preview = typeof item === "object" ? `{...}` : JSON.stringify(item);
 
   return (
-    <div
-      className={`mb-1 pl-2`}
-      style={{ paddingLeft: `${level * 10}px` }}
-    >
+    <div className={`mb-1 pl-2`} style={{ paddingLeft: `${level * 10}px` }}>
       <span
         onClick={toggleCollapse}
         className="cursor-pointer font-bold text-light-warn-color dark:text-dark-warn-color"
       >
         {collapsed ? "+" : "-"}
-      </span>
-      {" "}
-      <span className="dark:text-dark-color text-light-color">[{index}]:</span>{" "}
-      <span className="dark:text-dark-color text-light-color">{preview}</span>
-
+      </span>{" "}
+      <span className="text-light-color dark:text-dark-color">[{index}]:</span>{" "}
+      <span className="text-light-color dark:text-dark-color">{preview}</span>
       {!collapsed && (
-        <div className="ml-4 dark:text-dark-color text-light-color">
+        <div className="ml-4 text-light-color dark:text-dark-color">
           <pre>{JSON.stringify(item, null, 2)}</pre>
         </div>
       )}

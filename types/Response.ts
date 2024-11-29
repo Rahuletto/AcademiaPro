@@ -13,6 +13,7 @@ export interface AllResponses {
   course: { courses: Course[] };
   requestedAt: number;
   error?: string;
+  token: string;
   lastUpdated: number;
 }
 
