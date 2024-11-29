@@ -35,10 +35,10 @@ export default function Calendar() {
           ) : error ? (
             <Error error={error} component="Calendar" />
           ) : (
-            <section id="calendar" className="flex flex-col gap-6">
-              <CalendarHeader current={current} mobile month={"Calendar"} />
+            <section id="calendar" className="flex flex-col gap-6 relative">
+              <CalendarHeader current={current} month={"Calendar"} header />
               <CalendarHeader
-                month={month}
+                month={month || "Calendar"}
                 length={calendar?.length}
                 setCurrent={setCurrent}
                 current={current}
@@ -49,6 +49,10 @@ export default function Calendar() {
                   month={actual <= 4 ? current : current + 5}
                 />
               </div>
+              <CalendarHeader month={month || "Calendar"}
+                length={calendar?.length}
+                setCurrent={setCurrent}
+                current={current} mobile />
             </section>
           )}
         </div>

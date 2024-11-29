@@ -8,6 +8,7 @@ interface CalendarHeaderProps {
   mobile?: boolean;
   month: string;
   length?: number | undefined;
+  header?: boolean;
   current: number;
   setCurrent?: React.Dispatch<React.SetStateAction<number>>;
 }
@@ -16,6 +17,7 @@ export default function CalendarHeader({
   mobile,
   month,
   length,
+  header,
   current,
   setCurrent,
 }: CalendarHeaderProps) {
@@ -24,9 +26,9 @@ export default function CalendarHeader({
   return (
     <>
       <div
-        className={`${mobile ? "flex justify-start md:hidden" : "fixed bottom-3 flex justify-center md:sticky md:top-1 md:justify-start"} left-0 z-50 w-full items-center gap-3 md:w-fit`}
+        className={header ? "flex justify-start md:hidden" : `${mobile ? "flex justify-center md:hidden sticky bottom-3" : "hidden fixed bottom-3 md:flex justify-center md:sticky md:top-1 md:justify-start"} left-0 z-50 w-full items-center gap-3 md:w-fit`}
       >
-        <div className="ml-3 flex w-fit items-center justify-center gap-3 rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark">
+        <div className="md:-ml-2 md:-mt-4 flex w-fit items-center justify-center gap-3 rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark">
           {setCurrent ? (
             <button
               onClick={() => setCurrent((prev) => prev - 1)}
@@ -50,7 +52,7 @@ export default function CalendarHeader({
           ) : null}
         </div>
 
-        <div className="flex gap-3 rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark">
+        <div className={mobile ? "hidden" : "flex gap-3 rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark"}>
           <Refresh type={{ mutateCalendar: true }} />
           <button
             tabIndex={0}
