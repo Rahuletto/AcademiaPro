@@ -160,7 +160,7 @@ export function Sidebar({
 
   useEffect(() => {
     if (navigator.vibrate) {
-      navigator.vibrate(5);
+      navigator.vibrate(20);
     }
   }, [isOpen]);
 

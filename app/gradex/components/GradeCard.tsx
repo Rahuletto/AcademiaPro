@@ -72,7 +72,7 @@ export default function GradeCard({
   // Set the expected internal marks based on total marks
   useEffect(() => {
     if (Number(mark.overall.total) !== 60) {
-      setExpectedInternal(60 - Number(mark.overall.total));
+      setExpectedInternal(0);
     }
   }, [mark.overall.total]);
 
@@ -102,7 +102,7 @@ export default function GradeCard({
 
   const handleSliderChange = (value: number[]) => {
     if (navigator.vibrate) {
-      navigator.vibrate(10); 
+      navigator.vibrate(40); 
     }
     
     const newGrade = gradeMap[value[0]];
@@ -122,7 +122,7 @@ export default function GradeCard({
     >
       <div className="grid grid-cols-[1fr_0.2fr] items-start justify-between gap-4">
         <div>
-          <h2 className="text-lg font-semibold">
+          <h2 className="text-lg font-semibold capitalize">
             {!mark.courseName.toLowerCase().includes("n/a")
               ? mark.courseName?.toLowerCase()
               : courseDetails?.title || mark.courseCode}

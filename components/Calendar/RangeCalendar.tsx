@@ -35,7 +35,7 @@ export function LeaveODRangeCalendar() {
 
   const handleCategoryAdd = (category: DateCategory) => {
     if (window.navigator.vibrate) {
-      window.navigator.vibrate(50);
+      window.navigator.vibrate(80);
     }
     if (dateRange.from && dateRange.to) {
       const newRange = { from: dateRange.from, to: dateRange.to, category };
@@ -68,7 +68,7 @@ export function LeaveODRangeCalendar() {
 
   const handleDelete = (rangeToDelete: DateRange) => {
     if (window.navigator.vibrate) {
-      window.navigator.vibrate(10);
+      window.navigator.vibrate(30);
     }
     setCategorizedRanges((prev) =>
       prev.filter((range) => range !== rangeToDelete),
