@@ -17,6 +17,8 @@ import { DateObject } from "react-multi-date-picker";
 import { useData } from "@/provider/DataProvider";
 import ODMLDatePicker from "./OD/ODMLDatePicker";
 import ODMLResetButtons from "./OD/ResetButtons";
+import Predictor from "./Predictor";
+import { createPortal } from "react-dom";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
@@ -48,6 +50,16 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
 
+  const [dialogRoot, setDialogRoot] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setDialogRoot(document.getElementById("dialog-root"));
+
+    return () => {
+      setDialogRoot(null);
+    };
+  }, []);
+
   const { error, attendance } = useData();
   const isOld = false;
 
@@ -73,14 +85,14 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
         <div className="flex items-center gap-3">
           <h1 className="text-2xl font-semibold">Attendance</h1>
 
-          {attendance && attendance.length > 0 && 
+          {attendance && attendance.length > 0 && (
             <>
-              {!isPredicted && (
+              {/* {!isPredicted && (
                 <DatePickerComponent
                   dateRange={dateRange}
                   handleDateChange={handleDateChange}
                 />
-              )}
+              )} */}
               {/* {!isPredicted && (
           <ODMLDatePicker
             dateRanges={ODMLdateRange}
@@ -93,6 +105,22 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
             }}
           />
         )} */}
+
+              {dialogRoot &&
+                createPortal(
+                  <Predictor
+                    onClose={() => setShowDatePicker(false)}
+                    dateRanges={ODMLdateRange}
+                    setDateRanges={setODMLDateRange}
+                    isODML={isODML}
+                    setIsODML={setIsODML}
+                    resetODML={() => {
+                      setODMLDateRange([{ from: null, to: null }]);
+                      setIsODML(false);
+                    }}
+                  />,
+                  dialogRoot,
+                )}
               {!isPredicted && dateRange.from && dateRange.to && (
                 <button
                   onClick={() => setIsPredicted(true)}
@@ -143,7 +171,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
                 )}
               </div>
             </>
-          }
+          )}
         </div>
         {!error && <Refresh type={{ mutateAttendance: true }} isOld={isOld} />}
       </div>
