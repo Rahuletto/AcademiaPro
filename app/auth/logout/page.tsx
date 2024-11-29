@@ -6,7 +6,8 @@ import Storage from "@/utils/Storage";
 import { useRouter } from "next/navigation";
 import React, { useMemo } from "react";
 import { RiLoader3Fill } from "react-icons/ri";
-import rotateUrl from "@/utils/URL";
+import rotateUrl, { revalUrl } from "@/utils/URL";
+import { cache } from "swr/_internal";
 
 export default function Logout() {
   const router = useRouter();
@@ -28,9 +29,19 @@ export default function Logout() {
 
       if ("caches" in window) {
         const cacheNames = await caches.keys();
-        for (const name of cacheNames) {
-          await caches.delete(name);
+        await Promise.all(cacheNames.map((name) => caches.delete(name)));
+      }
+
+      cache.delete(`${revalUrl}/getData`);
+      if ("serviceWorker" in navigator) {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        for (const registration of registrations) {
+          registration.unregister();
         }
+      }
+
+      if ("storage" in navigator && "persist" in navigator.storage) {
+        await navigator.storage.persist();
       }
 
       router.push("/auth/login");

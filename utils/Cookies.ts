@@ -28,6 +28,7 @@ export const Cookie = {
     document.cookie = cookieString;
 
     Storage.set(name, value);
+    return true;
   },
 
   get(name: string): string | null {

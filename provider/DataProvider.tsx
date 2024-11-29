@@ -41,8 +41,8 @@ const DataContext = createContext<DataContextType>({
   mutate: async () => {},
 });
 
-const fetcher = async (url: string) => {
-  const cookie = cookies.get("key");
+export const fetcher = async (url: string, cookieToken?: string, nostore?: boolean) => {
+  const cookie = cookieToken || cookies.get("key");
   if (!cookie) return null;
 
   if (cookie?.length < 800) {
@@ -52,23 +52,23 @@ const fetcher = async (url: string) => {
   if (url.includes("getData")) {
     const response = await fetch(`${rotateUrl()}/getData`, {
       method: "GET",
+      cache: "no-cache",
       headers: {
         Authorization: `Bearer ${token()}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
         Cookie: cookie,
         "Content-Type": "application/json",
-        "Cache-Control":
-          "private, max-age=1200, s-maxage=3600, stale-while-revalidate=600, stale-if-error=86400",
       },
     });
 
     const data: AllResponses = await response.json();
     return data;
-  } else {
+  } 
     const response = await fetch(`${rotateUrl()}/update`, {
       method: "PATCH",
       headers: {
+        cache: "no-cache",
         Authorization: `Bearer ${token()}`,
         "X-CSRF-Token": cookie,
         "Set-Cookie": cookie,
@@ -79,7 +79,7 @@ const fetcher = async (url: string) => {
 
     const data: AllResponses = await response.json();
     return data;
-  }
+  
 };
 
 export function useData() {

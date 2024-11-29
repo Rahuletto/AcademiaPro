@@ -3,13 +3,16 @@ import React, { useCallback, useState } from "react";
 import UidInput from "./form/UidInput";
 import PasswordInput from "./form/PasswordInput";
 import { Cookie as cookies } from "@/utils/Cookies";
-import rotateUrl from "@/utils/URL";
+import rotateUrl, { revalUrl } from "@/utils/URL";
 import Button from "@/components/Button";
 import { useRouter } from "next/navigation";
 import { token } from "@/utils/Tokenize";
+import { fetcher, useData } from "@/provider/DataProvider";
+import useSWR from "swr";
 
 export default function Form() {
   const router = useRouter();
+  const { mutate } = useSWR(`${revalUrl}/getData`);
 
   const [uid, setUid] = useState("");
   const [pass, setPass] = useState("");
@@ -95,8 +98,17 @@ export default function Form() {
         }
       } else if (res.authenticated) {
         setError(2);
+        setMessage("Loading data...");
         cookies.set("key", res.cookies);
-        router.refresh();
+        setTimeout(() => {
+          fetcher(`${revalUrl}/update`, res.cookies, true).then((data) => {
+            mutate(data, {
+              optimisticData: data,
+              revalidate: false,
+              populateCache: true,
+            }).then(() => router.push("/academia"));
+          });
+        }, 100);
       } else if (res?.message) {
         setError(1);
         setMessage(res?.message);
@@ -121,6 +133,13 @@ export default function Form() {
           SRM: {message}
         </p>
       )}
+
+      {error === 2 && message && (
+        <p className="rounded-2xl bg-light-success-background px-4 py-2 text-light-success-color dark:bg-dark-success-background dark:text-dark-success-color">
+          {message}
+        </p>
+      )}
+
       {!response?.captcha && (
         <div className="relative flex flex-col gap-1">
           <UidInput uid={uid} setUid={setUid} />
@@ -133,7 +152,7 @@ export default function Form() {
             <img src={response?.captcha} alt="captcha" className="rounded-xl" />
             <input
               type="text"
-              className="rounded-2xl border border-light-background-darker dark:bg-dark-input bg-light-input px-6 py-3 font-sans font-medium text-light-color dark:border-dark-background-darker dark:text-dark-color"
+              className="rounded-2xl border border-light-background-darker bg-light-input px-6 py-3 font-sans font-medium text-light-color dark:border-dark-background-darker dark:bg-dark-input dark:text-dark-color"
               placeholder="Enter captcha"
               value={captcha}
               onChange={(e) => setCaptcha(e.target.value)}
