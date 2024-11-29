@@ -52,7 +52,7 @@ export default function CalendarHeader({
           ) : null}
         </div>
 
-        <div className={mobile ? "hidden" : "flex gap-3 rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark"}>
+        <div className={mobile ? "hidden" : "md:-ml-2 md:-mt-4 flex gap-3 rounded-full bg-light-background-light px-3 py-3 dark:bg-dark-background-dark"}>
           <Refresh type={{ mutateCalendar: true }} />
           <button
             tabIndex={0}
