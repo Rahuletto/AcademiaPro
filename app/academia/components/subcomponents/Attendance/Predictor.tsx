@@ -1,51 +1,13 @@
 import { LeaveODRangeCalendar } from "@/components/Calendar/RangeCalendar";
-import { usePlanner } from "@/provider/DataCalProvider";
-import { DateRange } from "@/types/Attendance";
-import React, { Dispatch, SetStateAction, useRef, useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 
 interface DatePickerProps {
-  dateRanges: DateRange[];
-  setDateRanges: React.Dispatch<React.SetStateAction<DateRange[]>>;
-  isODML: boolean;
-  setIsODML: Dispatch<SetStateAction<boolean>>;
-  resetODML: () => void;
   onClose: () => void;
 }
 
 export default function Predictor({
   onClose,
-  dateRanges,
-  setDateRanges,
-  setIsODML,
-  resetODML,
 }: DatePickerProps) {
-  const [tempRange, setTempRange] = useState<any[]>([[]]);
-  const datePickerRef = useRef<{ openCalendar: () => void } | null>(null);
-
-
-  const handleDateChange = (dates: any) => {
-    setTempRange(dates);
-    if (dates.length === 2) {
-      const newRange = {
-        from: dates[0][0].toDate(),
-        to: dates[1][1].toDate(),
-      };
-      setDateRanges([...dateRanges, newRange]);
-      setTempRange([]);
-    }
-  };
-
-  const removeDateRange = (index: number) => {
-    const updatedRanges = [...dateRanges];
-    updatedRanges.splice(index, 1);
-    setDateRanges(updatedRanges);
-    if (updatedRanges.length === 0) {
-      resetODML();
-      setIsODML(false);
-      setDateRanges([]);
-    }
-  };
 
   return (
     <div

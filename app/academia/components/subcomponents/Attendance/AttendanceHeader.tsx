@@ -19,6 +19,7 @@ import ODMLDatePicker from "./OD/ODMLDatePicker";
 import ODMLResetButtons from "./OD/ResetButtons";
 import Predictor from "./Predictor";
 import { createPortal } from "react-dom";
+import Button from "@/components/Button";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
@@ -49,6 +50,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
 }) => {
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
+  const [open, setOpen] = useState<boolean>(false);
 
   const [dialogRoot, setDialogRoot] = useState<HTMLElement | null>(null);
 
@@ -87,6 +89,12 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
 
           {attendance && attendance.length > 0 && (
             <>
+              <button
+
+          className="flex after:absolute after:-right-5 opacity-100 scale-100 after:-top-3 after:rounded-md after:bg-[#0E100E] after:p-0.5 after:px-1 after:text-xs after:text-light-accent after:content-['NEW'] dark:after:text-dark-accent w-fit items-center justify-center rounded-xl bg-light-button px-5 py-1 text-sm font-medium text-light-accent transition-all duration-300 dark:bg-dark-button dark:text-dark-accent"
+         onClick={() => setOpen(true)} >
+                Predict
+              </button>
               {/* {!isPredicted && (
                 <DatePickerComponent
                   dateRange={dateRange}
@@ -106,29 +114,19 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
           />
         )} */}
 
-              {dialogRoot &&
+              {dialogRoot && open &&
                 createPortal(
-                  <Predictor
-                    onClose={() => setShowDatePicker(false)}
-                    dateRanges={ODMLdateRange}
-                    setDateRanges={setODMLDateRange}
-                    isODML={isODML}
-                    setIsODML={setIsODML}
-                    resetODML={() => {
-                      setODMLDateRange([{ from: null, to: null }]);
-                      setIsODML(false);
-                    }}
-                  />,
+                  <Predictor onClose={() => setOpen(false)} />,
                   dialogRoot,
                 )}
-              {!isPredicted && dateRange.from && dateRange.to && (
+              {/* {!isPredicted && dateRange.from && dateRange.to && (
                 <button
                   onClick={() => setIsPredicted(true)}
                   className="predict-button flex animate-fadeIn items-center rounded-full border border-light-success-color bg-light-success-background px-2 py-1 text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
                 >
                   <FaCheck />
                 </button>
-              )}
+              )} */}
               {/* {!isODML && ODMLdateRange.some((range) => range.from && range.to) && (
           <button
             onClick={() => setIsODML(true)}
@@ -137,7 +135,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
             <FaCheck />
           </button>
         )} */}
-
+{/* 
               <PredictResetButtons
                 isPredicted={isPredicted}
                 showDatePicker={showDatePicker}
@@ -146,7 +144,7 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
                   setDateRange({ from: null, to: null });
                   setIsPredicted(false);
                 }}
-              />
+              /> */}
               {/* <ODMLResetButtons
             isODML={isODML}
             setIsODML={setIsODML}
