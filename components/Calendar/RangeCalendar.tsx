@@ -13,14 +13,24 @@ import { CategorizedDateRange } from "@/types/Attendance";
 
 type DateCategory = "Leave" | "OD";
 
-export function LeaveODRangeCalendar() {
+interface LeaveODRangeCalendarProps {
+  categorizedRanges: CategorizedDateRange[];
+  setCategorizedRanges: React.Dispatch<
+    React.SetStateAction<CategorizedDateRange[]>
+  >;
+}
+
+export function LeaveODRangeCalendar({
+  categorizedRanges,
+  setCategorizedRanges,
+}: LeaveODRangeCalendarProps) {
   const [dateRange, setDateRange] = React.useState<{
     from: Date | undefined;
     to: Date | undefined;
   }>({ from: undefined, to: undefined });
-  const [categorizedRanges, setCategorizedRanges] = React.useState<
-    CategorizedDateRange[]
-  >([]);
+  // const [categorizedRanges, setCategorizedRanges] = React.useState<
+  //   CategorizedDateRange[]
+  // >([]);
   const { calendar } = usePlanner();
 
   const handleSelect = (value: any) => {

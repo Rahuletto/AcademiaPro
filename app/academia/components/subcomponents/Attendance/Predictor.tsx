@@ -1,14 +1,20 @@
 import { LeaveODRangeCalendar } from "@/components/Calendar/RangeCalendar";
+import { CategorizedDateRange } from "@/types/Attendance";
+import { set } from "date-fns";
+import { Dispatch, SetStateAction } from "react";
 import { FaXmark } from "react-icons/fa6";
 
 interface DatePickerProps {
   onClose: () => void;
+  categorizedDateRanges: CategorizedDateRange[];
+  setCategorizedDateRanges: Dispatch<SetStateAction<CategorizedDateRange[]>>;
 }
 
 export default function Predictor({
   onClose,
+  categorizedDateRanges,
+  setCategorizedDateRanges,
 }: DatePickerProps) {
-
   return (
     <div
       role="button"
@@ -30,15 +36,14 @@ export default function Predictor({
       >
         <div className="p-2">
           <div className="flex items-start justify-between">
-            <div className="flex gap-1 flex-col">
-            <h2 className="text-2xl font-semibold capitalize text-light-color dark:text-dark-color">
-              Predict Attendance
-            </h2>
-            <p className="mb-6 text-xs font-medium text-light-accent opacity-80 dark:text-dark-accent">
-              This feature is under development.
-            </p>
+            <div className="flex flex-col gap-1">
+              <h2 className="text-2xl font-semibold capitalize text-light-color dark:text-dark-color">
+                Predict Attendance
+              </h2>
+              <p className="mb-6 text-xs font-medium text-light-accent opacity-80 dark:text-dark-accent">
+                This feature is under development.
+              </p>
             </div>
-            
 
             <div className="flex flex-row-reverse items-center justify-center gap-3">
               <button
@@ -52,10 +57,15 @@ export default function Predictor({
             </div>
           </div>
 
-          <LeaveODRangeCalendar />
+          <LeaveODRangeCalendar
+            categorizedRanges={categorizedDateRanges}
+            setCategorizedRanges={setCategorizedDateRanges}
+          />
         </div>
         <button
-          onClick={() => {}}
+          onClick={() => {
+            onClose();
+          }}
           className="mt-3 w-full rounded-full bg-light-accent py-2 font-semibold text-dark-color dark:bg-dark-accent dark:text-light-color"
         >
           Predict
