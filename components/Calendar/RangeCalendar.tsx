@@ -9,23 +9,18 @@ import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { usePlanner } from "@/provider/DataCalProvider";
+import { CategorizedDateRange } from "@/types/Attendance";
 
 type DateCategory = "Leave" | "OD";
-
-interface DateRange {
-  from: Date;
-  to: Date;
-  category: DateCategory;
-}
 
 export function LeaveODRangeCalendar() {
   const [dateRange, setDateRange] = React.useState<{
     from: Date | undefined;
     to: Date | undefined;
   }>({ from: undefined, to: undefined });
-  const [categorizedRanges, setCategorizedRanges] = React.useState<DateRange[]>(
-    [],
-  );
+  const [categorizedRanges, setCategorizedRanges] = React.useState<
+    CategorizedDateRange[]
+  >([]);
   const { calendar } = usePlanner();
 
   const handleSelect = (value: any) => {
@@ -66,7 +61,7 @@ export function LeaveODRangeCalendar() {
     }
   };
 
-  const handleDelete = (rangeToDelete: DateRange) => {
+  const handleDelete = (rangeToDelete: CategorizedDateRange) => {
     if (window.navigator.vibrate) {
       window.navigator.vibrate(30);
     }
