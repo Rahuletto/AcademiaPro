@@ -32,13 +32,6 @@ export default function ProfileBadge({ className }: { className?: string }) {
     };
   }, []);
 
-  useEffect(() => {
-    if (!user && !isLoading && Cookie.get("key")) {
-      Cookie.clear();
-      router.push("/home");
-    }
-  }, [user, error, isLoading, router]);
-
   const openDialog = () => setIsDialogOpen(true);
   const closeDialog = () => setIsDialogOpen(false);
   const logout = () => {
