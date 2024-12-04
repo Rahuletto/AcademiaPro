@@ -149,7 +149,7 @@ export default function SummarySection() {
           ) : (
             null
           )}
-          <img src="/holo.png" style={{ animationDelay: "3s"}} className={`${attendance?.[0] ? "mt-8" : "mt-32"} opacity-0 animate-fadeIn w-full`} />
+          <img src="/holo.png" style={{ animationDelay: "2s"}} className={`${attendance?.[0] ? "mt-8" : "mt-32"} opacity-0 animate-fadeIn w-full`} />
         </div>
       </div>
     </>
