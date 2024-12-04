@@ -45,18 +45,18 @@ export default function IntroSection() {
         <div className="animate-gradient absolute inset-0 bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-500" />
         <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-600 to-gray-900 opacity-70 mix-blend-multiply" />
         <div className="relative z-10 flex flex-col items-center justify-center text-gray-100">
-          <h1 className="animate-text-slide-up pl-32 text-8xl font-semibold">
+          <h1 className="animate-text-slide-up pl-32 md:text-8xl text-6xl font-semibold">
             2024
           </h1>
           <h1
             style={{ animationDelay: "0.1s" }}
-            className="animate-text-slide-up text-8xl font-semibold opacity-0"
+            className="animate-text-slide-up md:text-8xl text-6xl font-semibold opacity-0"
           >
             Wrapped
           </h1>
           <h2
             style={{ animationDelay: "3s" }}
-            className="animate-text-slide-up mt-12 text-xl font-medium text-gray-300 opacity-0"
+            className="animate-text-slide-up mt-12 md:text-xl text-lg font-medium text-gray-300 opacity-0"
           >
             Wrappin up your <span className="underline">Semester</span>
           </h2>
