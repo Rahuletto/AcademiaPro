@@ -5,13 +5,13 @@ import {
   CalendarMonth,
   TimetableDay,
 } from "@/types/Attendance";
-import { format } from "date-fns";
+import { format, isWithinInterval } from "date-fns";
 
 export const useAttendancePrediction = (
   attendance: AttendanceCourse[],
   timetable: TimetableDay[],
   calendar: CalendarMonth[],
-  dateRange: DateRange,
+  dateRanges: DateRange[],
 ) => {
   const [predictedAttendance, setPredictedAttendance] = useState<
     AttendanceCourse[] | null
@@ -19,8 +19,8 @@ export const useAttendancePrediction = (
 
   const performPrediction = useCallback(() => {
     if (
-      !dateRange.from ||
-      !dateRange.to ||
+      !dateRanges ||
+      dateRanges.length === 0 ||
       !attendance ||
       !timetable ||
       !calendar
@@ -32,15 +32,6 @@ export const useAttendancePrediction = (
     const updatedAttendance: AttendanceCourse[] = attendance
       .filter((a) => a.courseTitle !== "null")
       .map((a) => ({ ...a }));
-
-    const startDate = new Date(dateRange.from);
-    const endDate = new Date(dateRange.to);
-
-    startDate.setHours(0, 0, 0, 0);
-    endDate.setHours(0, 0, 0, 0);
-
-    let currentDate = new Date();
-    currentDate.setHours(0, 0, 0, 0);
 
     const processDay = (date: Date, incrementAbsent: boolean = false) => {
       const formattedDate = format(date, "d");
@@ -66,6 +57,7 @@ export const useAttendancePrediction = (
         const [subjectTitle, subjectCategory] = cleanedSubject
           .split(" (")
           .map((s) => s.replace(")", "").trim());
+
         const courseAttendance = updatedAttendance.find(
           (a) =>
             a.courseTitle === subjectTitle && a.category === subjectCategory,
@@ -75,12 +67,15 @@ export const useAttendancePrediction = (
 
         const conducted = parseInt(courseAttendance.hoursConducted) + 1;
         courseAttendance.hoursConducted = conducted.toString();
+
         const absent = incrementAbsent
           ? parseInt(courseAttendance.hoursAbsent) + 1
           : parseInt(courseAttendance.hoursAbsent);
+
         if (incrementAbsent) {
           courseAttendance.hoursAbsent = absent.toString();
         }
+
         const percentage = (((conducted - absent) / conducted) * 100).toFixed(
           2,
         );
@@ -88,14 +83,28 @@ export const useAttendancePrediction = (
       });
     };
 
+    let currentDate = new Date();
+    currentDate.setHours(0, 0, 0, 0);
+    const endDate = new Date(currentDate);
+    endDate.setFullYear(currentDate.getFullYear() + 1);
+
     while (currentDate <= endDate) {
-      const isAbsent = currentDate.getTime() >= startDate.getTime();
-      processDay(currentDate, isAbsent);
+      const isAbsentDay = dateRanges.some(
+        (range) =>
+          range.from &&
+          range.to &&
+          isWithinInterval(currentDate, {
+            start: range.from,
+            end: range.to,
+          }),
+      );
+
+      processDay(currentDate, isAbsentDay);
       currentDate.setDate(currentDate.getDate() + 1);
     }
 
     setPredictedAttendance(updatedAttendance);
-  }, [attendance, timetable, calendar, dateRange]);
+  }, [attendance, timetable, calendar, dateRanges]);
 
   return {
     predictedAttendance,

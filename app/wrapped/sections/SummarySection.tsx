@@ -56,7 +56,7 @@ export default function SummarySection() {
 
   return (
     <>
-      <div className="relative mb-24 flex h-[85vh] w-[100vw] mx-2 max-w-[500px] flex-col items-start justify-start overflow-hidden rounded-3xl p-8 md:h-[80vh]">
+      <div className="relative mx-2 mb-24 mt-10 flex h-[85vh] w-[100vw] max-w-[500px] flex-col items-start justify-start overflow-hidden rounded-3xl p-8 md:h-[80vh]">
         <div
           style={{ animationDelay: "0.05s" }}
           className="absolute inset-0 animate-fadeIn bg-dark-background-dark opacity-0 transition-all duration-200"
@@ -146,10 +146,13 @@ export default function SummarySection() {
                 </div>
               </div>
             </>
-          ) : (
-            null
-          )}
-          <img src="/holo.png" style={{ animationDelay: "2s"}} className={`${attendance?.[0] ? "mt-8" : "mt-32"} opacity-0 animate-fadeIn w-full`} />
+          ) : null}
+          <img
+            src="/holo.png"
+            alt="holo"
+            style={{ animationDelay: "2s" }}
+            className={`${attendance?.[0] ? "mt-8" : "mt-32"} w-full animate-fadeIn opacity-0`}
+          />
         </div>
       </div>
     </>

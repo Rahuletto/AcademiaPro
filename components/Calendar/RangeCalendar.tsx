@@ -225,13 +225,13 @@ export function LeaveODRangeCalendar({
         >
           Add as Leave
         </Button>
-        <Button
+        {/* <Button
           onClick={() => handleCategoryAdd("OD")}
           disabled={!dateRange.from || !dateRange.to}
           className="flex-1 rounded-lg border-light-success-color bg-light-success-background font-semibold text-light-success-color hover:bg-light-success-color hover:text-dark-success-background disabled:cursor-not-allowed disabled:opacity-50 dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color dark:hover:bg-dark-success-color"
         >
           Add as OD
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
