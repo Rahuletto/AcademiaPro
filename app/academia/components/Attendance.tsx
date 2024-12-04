@@ -1,10 +1,11 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Loading from "@/components/States/Loading";
 import { AttendanceHeader } from "./subcomponents/Attendance/AttendanceHeader";
 import { AttendanceStatusChips } from "./subcomponents/Attendance/AttendanceStatusChip";
-import { DateRange } from "@/types/Attendance";
+import { CategorizedDateRange, DateRange } from "@/types/Attendance";
 import { DateObject } from "react-multi-date-picker";
 import ODMLContent from "./subcomponents/Attendance/ODMLContent";
 
@@ -27,10 +28,14 @@ export default function Attendance(): JSX.Element {
     from: null,
     to: null,
   });
+  const [categorizedDateRanges, setCategorizedDateRanges] = useState<
+    CategorizedDateRange[]
+  >([]);
   const [ODMLdateRange, setODMLDateRange] = useState<DateRange[]>([]);
   const [showDatePicker, setShowDatePicker] = useState<boolean>(false);
   const [isPredicted, setIsPredicted] = useState<boolean>(false);
   const [isODML, setIsODML] = useState<boolean>(false);
+
   const handleDateChange = (dates: DateObject[]): void => {
     if (dates.length === 2) {
       setDateRange({
@@ -40,9 +45,45 @@ export default function Attendance(): JSX.Element {
     }
   };
 
+  useEffect(() => {
+    const leaveRanges = categorizedDateRanges.filter(
+      (e) => e.category === "Leave",
+    );
+
+    if (leaveRanges.length > 0) {
+      setIsPredicted(true);
+      // Instead of setting the first range, set the overall date range
+      const earliestFrom = new Date(
+        Math.min(...leaveRanges.map((range) => range.from.getTime())),
+      );
+      const latestTo = new Date(
+        Math.max(...leaveRanges.map((range) => range.to.getTime())),
+      );
+
+      setDateRange({
+        from: earliestFrom,
+        to: latestTo,
+      });
+    } else {
+      setIsPredicted(false);
+    }
+  }, [categorizedDateRanges]);
+
   const resetAttendance = (): void => {
     setDateRange({ from: null, to: null });
     setIsPredicted(false);
+    setIsODML(false);
+    setCategorizedDateRanges([]);
+    setODMLDateRange([]);
+  };
+
+  const getPredictionDateRanges = (): DateRange[] => {
+    if (isPredicted) {
+      return categorizedDateRanges
+        .filter((range) => range.category === "Leave")
+        .map((range) => ({ from: range.from, to: range.to }));
+    }
+    return [];
   };
 
   return (
@@ -59,6 +100,8 @@ export default function Attendance(): JSX.Element {
         setODMLDateRange={setODMLDateRange}
         isODML={isODML}
         setIsODML={setIsODML}
+        categorizedDateRanges={categorizedDateRanges}
+        setCategorizedDateRanges={setCategorizedDateRanges}
       />
 
       <AttendanceStatusChips
@@ -67,9 +110,15 @@ export default function Attendance(): JSX.Element {
         resetAttendance={resetAttendance}
       />
 
-      <div className={`group -mx-3 lg:!mx-0 pt-3 border rounded-xl border-dashed ${isPredicted || isODML ? "border-light-info-color dark:border-dark-info-color" : "border-transparent"}`}>
+      <div
+        className={`group -mx-3 rounded-xl border border-dashed pt-3 lg:!mx-0 ${
+          isPredicted || isODML
+            ? "border-light-info-color dark:border-dark-info-color"
+            : "border-transparent"
+        }`}
+      >
         {isPredicted ? (
-          <PredictionContent dateRange={dateRange} />
+          <PredictionContent dateRange={getPredictionDateRanges()} />
         ) : isODML ? (
           <ODMLContent dateRanges={ODMLdateRange} />
         ) : (

@@ -20,6 +20,7 @@ import ODMLResetButtons from "./OD/ResetButtons";
 import Predictor from "./Predictor";
 import { createPortal } from "react-dom";
 import Button from "@/components/Button";
+import { CategorizedDateRange } from "../../../../../types/Attendance";
 
 interface AttendanceHeaderProps {
   isPredicted: boolean;
@@ -33,6 +34,8 @@ interface AttendanceHeaderProps {
   setIsODML: Dispatch<SetStateAction<boolean>>;
   ODMLdateRange: DateRange[];
   setODMLDateRange: Dispatch<SetStateAction<DateRange[]>>;
+  categorizedDateRanges: CategorizedDateRange[];
+  setCategorizedDateRanges: Dispatch<SetStateAction<CategorizedDateRange[]>>;
 }
 
 export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
@@ -47,6 +50,8 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
   ODMLdateRange,
   setODMLDateRange,
   setIsODML,
+  categorizedDateRanges,
+  setCategorizedDateRanges,
 }) => {
   const [showInfoPopup, setShowInfoPopup] = useState<boolean>(false);
   const infoIconRef = useRef<HTMLDivElement>(null);
@@ -117,7 +122,11 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
               {dialogRoot &&
                 open &&
                 createPortal(
-                  <Predictor onClose={() => setOpen(false)} />,
+                  <Predictor
+                    categorizedDateRanges={categorizedDateRanges}
+                    setCategorizedDateRanges={setCategorizedDateRanges}
+                    onClose={() => setOpen(false)}
+                  />,
                   dialogRoot,
                 )}
               {/* {!isPredicted && dateRange.from && dateRange.to && (

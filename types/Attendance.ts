@@ -23,6 +23,12 @@ export interface DateRange {
   to: Date | null;
 }
 
+export interface CategorizedDateRange {
+  from: Date;
+  to: Date;
+  category: "Leave" | "OD";
+}
+
 export interface CalendarMonth {
   month: string;
   days: {
@@ -34,5 +40,5 @@ export interface CalendarMonth {
 
 export interface TimetableDay {
   day: number;
-  table: (string|undefined)[];
+  table: (string | undefined)[];
 }

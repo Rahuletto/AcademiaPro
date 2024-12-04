@@ -27,6 +27,7 @@ export default function Form() {
 
     const r = await fetch(`${rotateUrl()}/login/captcha`, {
       method: "POST",
+      cache: "no-cache",
       headers: {
         Authorization: `Bearer ${token()}`,
         Connection: "keep-alive",
@@ -64,6 +65,7 @@ export default function Form() {
     try {
       const response = await fetch(`${rotateUrl()}/login`, {
         method: "POST",
+        cache: "no-cache",
         headers: {
           Authorization: `Bearer ${token()}`,
           Connection: "keep-alive",

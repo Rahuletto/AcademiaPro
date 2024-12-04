@@ -26,6 +26,26 @@ const config: Config = {
         marks: "repeat(auto-fill, minmax(18rem, 1fr))", // Custom column grid
       },
       keyframes: {
+        textPopUp: {
+          "0%": { transform: "scale(0.5)", opacity: "0" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        textSlideUp: {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        textSlideDown: {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
+        textSlideLeft: {
+          "0%": { transform: "translateX(100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
+        textSlideRight: {
+          "0%": { transform: "translateX(-100%)", opacity: "0" },
+          "100%": { transform: "translateX(0)", opacity: "1" },
+        },
         fadeIn: {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
@@ -42,6 +62,18 @@ const config: Config = {
           "0%": { transform: "translateX(-100%)" },
           "100%": { transform: "translateX(100%)" },
         },
+        slideRight: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        slideLeft: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        shrink: {
+          "0%": { width: "99vw", height: "99vh" },
+          "100%": { width: "80vw", height: "80vh" },
+        },
       },
       animation: {
         fadeIn: "fadeIn 0.4s ease-in-out forwards",
@@ -50,6 +82,15 @@ const config: Config = {
         fadeOut: "fadeOut 0.4s ease-in-out forwards",
         slowSpin: "spin 5s linear infinite",
         expandHeight: "expandHeight 0.5s ease-in-out forwards",
+        "slide-right": "slideRight 0.5s ease-in-out forwards",
+        "slide-left": "slideLeft 0.5s ease-in-out forwards",
+        "text-pop-up": "textPopUp 0.5s ease-in-out forwards",
+        "text-slide-up":
+          "textSlideUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards",
+        "text-slide-down": "textSlideDown 0.5s ease-in-out forwards",
+        "text-slide-left": "textSlideLeft 0.5s ease-in-out forwards",
+        "text-slide-right": "textSlideRight 0.5s ease-in-out forwards",
+        shrink: "shrink 1s ease forwards",
       },
       colors: {
         ...(Themes as any), // Custom colors from Themes

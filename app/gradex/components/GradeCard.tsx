@@ -72,7 +72,7 @@ export default function GradeCard({
   // Set the expected internal marks based on total marks
   useEffect(() => {
     if (Number(mark.overall.total) !== 60) {
-      setExpectedInternal(0);
+      setExpectedInternal(60 - Number(mark.overall.total));
     }
   }, [mark.overall.total]);
 
@@ -91,7 +91,10 @@ export default function GradeCard({
   useEffect(() => {
     const lostMark: number =
       Number(mark.overall.total) - Number(mark.overall.marks);
-    const calculatedGrade = Number(mark.overall.total) == 100 ? getGrade(Number(mark.overall.marks)) : determineGrade(lostMark);
+    const calculatedGrade =
+      Number(mark.overall.total) == 100
+        ? getGrade(Number(mark.overall.marks))
+        : determineGrade(lostMark);
     updateGrade(mark.courseCode, calculatedGrade);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mark.overall.total, mark.overall.marks, mark.courseCode]);
@@ -102,9 +105,9 @@ export default function GradeCard({
 
   const handleSliderChange = (value: number[]) => {
     if (navigator.vibrate) {
-      navigator.vibrate(40); 
+      navigator.vibrate(40);
     }
-    
+
     const newGrade = gradeMap[value[0]];
     updateGrade(mark.courseCode, newGrade);
   };
@@ -143,7 +146,9 @@ export default function GradeCard({
           <>
             {60 - Number(mark.overall.total) > 0 && (
               <div className="flex items-center justify-between">
-                <p>Expected remaining from {60 - Number(mark.overall.total)}:</p>
+                <p>
+                  Expected remaining from {60 - Number(mark.overall.total)}:
+                </p>
                 <input
                   type="number"
                   className="w-16 appearance-none rounded-md border-none bg-light-background-darker px-2 py-1 text-center outline-none dark:bg-dark-background-dark"
@@ -209,9 +214,11 @@ export default function GradeCard({
               edit={editMode}
               setEdit={setEditMode}
               grade={
-                (Number(mark.overall.total) == 100 ? getGrade(Number(mark.overall.marks)) : determineGrade(
-                  Number(mark.overall.total) - Number(mark.overall.marks),
-                )) as "O" | "A+" | "A" | "B+" | "B" | "C"
+                (Number(mark.overall.total) == 100
+                  ? getGrade(Number(mark.overall.marks))
+                  : determineGrade(
+                      Number(mark.overall.total) - Number(mark.overall.marks),
+                    )) as "O" | "A+" | "A" | "B+" | "B" | "C"
               }
             />
 

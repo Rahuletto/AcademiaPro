@@ -45,10 +45,6 @@ export const fetcher = async (url: string, cookieToken?: string, nostore?: boole
   const cookie = cookieToken || cookies.get("key");
   if (!cookie) return null;
 
-  if (cookie?.length < 800) {
-    Cookie.clear();
-  }
-
   if (url.includes("getData")) {
     const response = await fetch(`${rotateUrl()}/getData`, {
       method: "GET",

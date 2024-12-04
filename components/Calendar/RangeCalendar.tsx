@@ -9,23 +9,28 @@ import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { usePlanner } from "@/provider/DataCalProvider";
+import { CategorizedDateRange } from "@/types/Attendance";
 
 type DateCategory = "Leave" | "OD";
 
-interface DateRange {
-  from: Date;
-  to: Date;
-  category: DateCategory;
+interface LeaveODRangeCalendarProps {
+  categorizedRanges: CategorizedDateRange[];
+  setCategorizedRanges: React.Dispatch<
+    React.SetStateAction<CategorizedDateRange[]>
+  >;
 }
 
-export function LeaveODRangeCalendar() {
+export function LeaveODRangeCalendar({
+  categorizedRanges,
+  setCategorizedRanges,
+}: LeaveODRangeCalendarProps) {
   const [dateRange, setDateRange] = React.useState<{
     from: Date | undefined;
     to: Date | undefined;
   }>({ from: undefined, to: undefined });
-  const [categorizedRanges, setCategorizedRanges] = React.useState<DateRange[]>(
-    [],
-  );
+  // const [categorizedRanges, setCategorizedRanges] = React.useState<
+  //   CategorizedDateRange[]
+  // >([]);
   const { calendar } = usePlanner();
 
   const handleSelect = (value: any) => {
@@ -66,7 +71,7 @@ export function LeaveODRangeCalendar() {
     }
   };
 
-  const handleDelete = (rangeToDelete: DateRange) => {
+  const handleDelete = (rangeToDelete: CategorizedDateRange) => {
     if (window.navigator.vibrate) {
       window.navigator.vibrate(30);
     }
@@ -220,13 +225,13 @@ export function LeaveODRangeCalendar() {
         >
           Add as Leave
         </Button>
-        <Button
+        {/* <Button
           onClick={() => handleCategoryAdd("OD")}
           disabled={!dateRange.from || !dateRange.to}
           className="flex-1 rounded-lg border-light-success-color bg-light-success-background font-semibold text-light-success-color hover:bg-light-success-color hover:text-dark-success-background disabled:cursor-not-allowed disabled:opacity-50 dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color dark:hover:bg-dark-success-color"
         >
           Add as OD
-        </Button>
+        </Button> */}
       </div>
     </div>
   );

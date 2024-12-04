@@ -15,7 +15,7 @@ import { useData } from "@/provider/DataProvider";
 import { usePlanner } from "@/provider/DataCalProvider";
 
 interface PredictionContentProps {
-  dateRange: DateRange;
+  dateRange: DateRange[];
 }
 
 export default function PredictionContent({
@@ -43,14 +43,31 @@ export default function PredictionContent({
   );
 
   useEffect(() => {
-    if (attendance && timetable && calendar && dateRange.from && dateRange.to) {
+    if (
+      attendance &&
+      timetable &&
+      calendar &&
+      dateRange.length > 0 &&
+      dateRange.every((range) => range.from && range.to)
+    ) {
       performPrediction();
     }
   }, [attendance, timetable, calendar, dateRange, performPrediction]);
 
-  if (isLoadingCalendar || isLoadingTimetable || isValidatingCalendar || isValidatingTimetable) return <Loading size="max" />;
+  if (
+    isLoadingCalendar ||
+    isLoadingTimetable ||
+    isValidatingCalendar ||
+    isValidatingTimetable
+  )
+    return <Loading size="max" />;
   if (calendarError || timetableError)
-    return <Error error={calendarError || timetableError!} component="Attendance Prediction" />;
+    return (
+      <Error
+        error={calendarError || timetableError!}
+        component="Attendance Prediction"
+      />
+    );
   if (!predictedAttendance) return <NoData component="Attendance Prediction" />;
 
   return (
