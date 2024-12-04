@@ -45,7 +45,16 @@ export default function Attendance(): JSX.Element {
   };
 
   useEffect(() => {
-    console.log(categorizedDateRanges)
+    console.log(categorizedDateRanges);
+    const leaveRanges = categorizedDateRanges.filter(
+      (e) => e.category === "Leave",
+    );
+    if (leaveRanges.length > 0) {
+      setIsPredicted(true);
+      setDateRange({ from: leaveRanges[0].from, to: leaveRanges[0].to });
+    } else {
+      setIsPredicted(false);
+    }
   }, [categorizedDateRanges]);
   const resetAttendance = (): void => {
     setDateRange({ from: null, to: null });
