@@ -106,7 +106,7 @@ export default function ProfileBadge({ className }: { className?: string }) {
           dialogRoot,
         )}
     </>
-  ) : !Cookie.get("key") ? (
+  ) : Cookie.get("key") ? (
     <button
       onClick={() => {Cookie.clear(); router.push("/home");}}
       className="flex h-12 w-full animate-fadeIn flex-row items-center justify-center gap-2 rounded-full bg-light-error-background text-light-error-color lg:w-[82%] dark:bg-dark-error-background dark:text-dark-error-color"
