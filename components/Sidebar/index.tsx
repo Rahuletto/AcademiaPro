@@ -10,7 +10,7 @@ import { BsCalendar2WeekFill } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
-
+import NextLink from "next/link";
 import Link from "./SidebarLink";
 import DayOrder from "../badges/Day";
 import Hours from "../badges/Hours";
@@ -325,7 +325,7 @@ export function Sidebar({
               </div>
               <Footer className="mt-12" />
             </main>
-            <Link href="/wrapped" className="dark:text-dark-accent font-medium text-light-accent bg-light-info-background dark:bg-dark-info-background h-10 flex items-center justify-center w-full absolute -top-1 rounded-t-xl">Sem Wrapped&apos;24</Link>
+            <NextLink href="/wrapped" className="dark:text-dark-accent font-medium text-light-accent bg-light-info-background dark:bg-dark-info-background h-10 flex items-center justify-center w-full absolute -top-1 rounded-t-xl">Sem Wrapped&apos;24</NextLink>
           </div>
 
           <Popup />
