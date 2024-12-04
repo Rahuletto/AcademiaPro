@@ -27,12 +27,14 @@ export default function IntroSection() {
     setTimeout(() => {
       setMounted(true);
     }, 6 * 1000);
-    // try {
-    //   const a = new Audio("/audio/secret.mp3");
-    //   a.volume = 0.1;
-    //   a.loop = true;
-    //   a.play();
-    // } catch (e) {}
+    try {
+      const a = new Audio("/audio/secret.mp3");
+      a.volume = 0.1;
+      a.loop = true;
+      a.play();
+    } catch (e) {
+      console.warn("Play song")
+    }
   }, []);
   return (
     <>
