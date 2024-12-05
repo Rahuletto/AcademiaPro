@@ -49,16 +49,16 @@ const WrappedPage: React.FC = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="absolute z-50 bottom-12 mt-6 flex justify-between gap-4 lg:w-full transition-all duration-150 lg:px-24">
+      <div className="absolute z-10 bottom-12 mt-6 flex justify-between gap-4 lg:w-full transition-all duration-150 lg:px-24">
         {currentSection !== 0 ? <button
           onClick={() => changeSection("prev")}
-          className="rounded-full z-50 border-2 hover:px-5 border-light-accent transition-all duration-150 text-light-accent dark:border-dark-accent dark:text-dark-accent p-3"
+          className="rounded-full border-2 hover:px-5 border-light-accent transition-all duration-150 text-light-accent dark:border-dark-accent dark:text-dark-accent p-3"
         >
           <FaArrowLeftLong />
         </button> : <div />}
         <button
           onClick={() => changeSection("next")}
-          className="rounded-full z-50 border-2 hover:px-5 transition-all duration-150 border-light-accent text-light-accent dark:border-dark-accent dark:text-dark-accent p-3"
+          className="rounded-full border-2 hover:px-5 transition-all duration-150 border-light-accent text-light-accent dark:border-dark-accent dark:text-dark-accent p-3"
         >
           <FaArrowRightLong />
         </button>

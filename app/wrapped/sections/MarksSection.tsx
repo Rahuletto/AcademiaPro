@@ -82,7 +82,7 @@ export default function Marks() {
           </div>
         </div>
         <div className="absolute bottom-20 left-3 flex w-[96%] max-w-[700px] flex-col items-center justify-center rounded-2xl bg-dark-background-normal p-7 pl-0 lg:bottom-5 lg:left-5 lg:w-full lg:-rotate-3">
-          <ResponsiveContainer height={420}>
+          <ResponsiveContainer height={360}>
             <BarChart
               data={
                 marks

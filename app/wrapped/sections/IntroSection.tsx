@@ -28,10 +28,13 @@ export default function IntroSection() {
       setMounted(true);
     }, 6 * 1000);
     try {
-      const a = new Audio("/audio/secret.mp3");
-      a.volume = 0.1;
-      a.loop = true;
-      a.play();
+      if (!document.getElementById("intro-audio")) {
+        const a = new Audio("/audio/secret.mp3");
+        a.id = "intro-audio";
+        a.volume = 0.05;
+        a.loop = true;
+        a.play();
+      }
     } catch (e) {
       console.warn("Play song")
     }
