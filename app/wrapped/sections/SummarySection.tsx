@@ -56,7 +56,7 @@ export default function SummarySection() {
 
   return (
     <>
-      <div className="relative mx-2 md:mb-24 mt-10 my-10 flex h-[85vh] z-50 min-h-[680px] max-h-[710px] lg:max-h-[760px] w-[100vw] max-w-[500px] flex-col items-start justify-start overflow-hidden rounded-3xl p-8 md:h-[80vh]">
+      <div className="relative mx-2 md:mb-24 mt-10 my-10 flex h-[100vh] z-50 min-h-[680px] max-h-[740px] lg:max-h-[760px] w-[100vw] max-w-[500px] flex-col items-start justify-start overflow-hidden rounded-3xl p-8 md:h-[80vh]">
         <div
           style={{ animationDelay: "0.05s" }}
           className="absolute inset-0 animate-fadeIn bg-dark-background-dark opacity-0 transition-all duration-200"
