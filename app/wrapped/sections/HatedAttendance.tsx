@@ -78,7 +78,7 @@ export default function HatedAttendance() {
             </p>
           ))}
         </div>
-        <div className="absolute -right-2 bottom-[-20px] z-10 flex scale-75 flex-col items-center justify-center gap-14 md:bottom-3 md:right-3 md:flex-row md:gap-3 lg:bottom-14 lg:right-14 lg:scale-100">
+        <div className="absolute -right-2 bottom-[10px] z-10 flex scale-75 flex-col items-center justify-center gap-14 md:bottom-3 md:right-3 md:flex-row md:gap-3 lg:bottom-14 lg:right-14 lg:scale-100">
           {attendance?.[0] &&
             (detainable?.[0]
               ? detainable
