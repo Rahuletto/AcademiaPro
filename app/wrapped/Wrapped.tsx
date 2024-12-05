@@ -5,6 +5,8 @@ import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import HatedAttendance from "./sections/HatedAttendance";
 import Marks from "./sections/MarksSection";
 import SummarySection from "./sections/SummarySection";
+import { useRouter } from "next/navigation";
+import { FaBookOpen } from "react-icons/fa";
 
 const sections = [
   { id: 1, title: "Welcome to Your Wrapped", component: <IntroSection /> },
@@ -18,6 +20,7 @@ const sections = [
 ];
 
 const WrappedPage: React.FC = () => {
+  const router = useRouter();
   const [currentSection, setCurrentSection] = useState(0);
   const [transitionStage, setTransitionStage] = useState<
     "fade-out" | "fade-in" | "none"
@@ -57,10 +60,10 @@ const WrappedPage: React.FC = () => {
           <FaArrowLeftLong />
         </button> : <div />}
         <button
-          onClick={() => changeSection("next")}
+          onClick={() => currentSection === 3 ? router.push("/academia") : changeSection("next")}
           className="rounded-full border-2 hover:px-5 transition-all duration-150 border-light-accent text-light-accent dark:border-dark-accent dark:text-dark-accent p-3"
         >
-          <FaArrowRightLong />
+          {currentSection === 3 ? <FaBookOpen /> : <FaArrowRightLong />}
         </button>
       </div>
     </div>

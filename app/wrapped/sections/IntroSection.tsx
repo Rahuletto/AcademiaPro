@@ -32,7 +32,6 @@ export default function IntroSection() {
         const a = new Audio("/audio/secret.mp3");
         a.id = "intro-audio";
         a.volume = 0.05;
-        a.loop = true;
         a.play();
       }
     } catch (e) {
