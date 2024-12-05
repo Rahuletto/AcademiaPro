@@ -69,7 +69,7 @@ export default function SummarySection() {
             {user?.regNumber}
           </p>
         </div>
-        <p style={{ animationDelay: "2.2s" }} className="absolute animate-fadeIn bottom-4 right-6 text-right text-lg font-semibold text-dark-accent  opacity-0">
+        <p style={{ animationDelay: "2.8s" }} className="absolute animate-fadeIn bottom-4 right-6 text-right text-lg font-semibold text-dark-accent  opacity-0">
           #SEMWRAPPED24
         </p>
         <FaBookOpen style={{ animationDelay: "0.2s" }} className="absolute animate-fadeIn opacity-0 right-10 top-10 z-20 text-6xl text-dark-accent" />
@@ -124,7 +124,7 @@ export default function SummarySection() {
           {attendance?.[0] ? (
             <>
               <div
-                style={{ animationDelay: "1.4s" }}
+                style={{ animationDelay: "2s" }}
                 className="flex w-full animate-fadeIn flex-col items-end justify-start gap-3 border-t border-dashed border-gray-600 pt-5 opacity-0"
               >
                 <h1 className="text-right text-4xl font-bold text-gray-100">
@@ -150,7 +150,7 @@ export default function SummarySection() {
           <img
             src="/holo.png"
             alt="holo"
-            style={{ animationDelay: "2s" }}
+            style={{ animationDelay: "2.3s" }}
             className={`${attendance?.[0] ? "mt-8" : "mt-32"} w-full animate-fadeIn opacity-0`}
           />
         </div>
