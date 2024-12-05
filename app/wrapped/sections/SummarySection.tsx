@@ -107,7 +107,7 @@ export default function SummarySection() {
                   ).toFixed(2)}
                   %
                 </span>
-                <h3 className="text-sm font-medium">
+                <h3 className="text-sm font-medium text-left">
                   {
                     (
                       (courses
@@ -151,7 +151,7 @@ export default function SummarySection() {
             src="/holo.png"
             alt="holo"
             style={{ animationDelay: "2.3s" }}
-            className={`${attendance?.[0] ? "mt-8" : "mt-32"} w-full animate-fadeIn opacity-0`}
+            className={`${attendance?.[0] ? "mt-5" : "mt-32"} w-full animate-fadeIn opacity-0`}
           />
         </div>
       </div>
