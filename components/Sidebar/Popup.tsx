@@ -32,7 +32,7 @@ export default function Popup() {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className="relative md:w-[30%] w-[25%] min-w-[350px] cursor-default items-center justify-center flex flex-col rounded-[42px] bg-light-background-normal p-4 pb-20 text-white shadow-lg dark:bg-dark-background-normal"
+        className="relative md:w-[30%] w-[25%] min-w-[350px] text-light-color dark:text-dark-color cursor-default items-center justify-center flex flex-col rounded-[42px] bg-light-background-normal p-4 pb-20 shadow-lg dark:bg-dark-background-normal"
       >
         <div className="mb-6 flex flex-col items-center justify-center gap-5 p-2">
           <FaBookOpen
@@ -42,11 +42,11 @@ export default function Popup() {
           <h2 className="text-2xl font-semibold capitalize text-light-color dark:text-dark-color">
             Welcome to ClassPro
           </h2>
-          <p className="-mt-3 text-sm underline decoration-light-accent opacity-40 dark:decoration-dark-accent">
+          <p className="-mt-3 text-sm underline text-light-color dark:text-dark-color decoration-light-accent opacity-40 dark:decoration-dark-accent">
             AcademiaPro is now ClassPro
           </p>
         </div>
-        <p className="mx-2 text-center opacity-50">
+        <p className="mx-2 text-center opacity-50 text-light-color dark:text-dark-color">
           This platform is entirely developed by two students, operates independently, without any
           direct connection or endorsement from the university.
         </p>
