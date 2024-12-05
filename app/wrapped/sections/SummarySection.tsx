@@ -76,7 +76,7 @@ export default function SummarySection() {
 
         <div className="z-10 mt-2 flex h-full w-full flex-col items-start justify-start gap-2">
           <div
-            style={{ animationDelay: "1.4s" }}
+            style={{ animationDelay: "0.95s" }}
             className="flex animate-fadeIn flex-col items-start justify-start gap-3 rounded-2xl opacity-0"
           >
             <h1 className="text-4xl font-bold text-gray-100">
@@ -95,7 +95,7 @@ export default function SummarySection() {
               <div
                 key={index}
                 style={{
-                  animationDelay: `${1.6 + index * 0.2}s`,
+                  animationDelay: `${1.2 + index * 0.2}s`,
                 }}
                 className="flex animate-fadeIn items-center justify-start gap-3 opacity-0"
               >
