@@ -35,7 +35,7 @@ export default function Marks() {
             <>
               <h1
                 style={{ animationDelay: "0.1s" }}
-                className="animate-text-slide-up text-right text-4xl font-semibold opacity-0"
+                className="animate-text-slide-up text-right lg:text-4xl text-3xl font-semibold opacity-0"
               >
                 Your best marks in this
                 <br />
@@ -58,7 +58,7 @@ export default function Marks() {
             borderTopRightRadius: "6rem",
             borderBottomRightRadius: "6rem",
           }}
-          className="absolute right-12 top-64 z-20 flex max-w-[400px] rotate-6 scale-90 items-center justify-center gap-6 bg-dark-background-normal p-3 px-5 pr-3 transition-all duration-150 lg:scale-100"
+          className="absolute right-12 shadow-lg top-64 z-20 flex max-w-[400px] rotate-6 scale-90 items-center justify-center gap-6 bg-dark-background-normal p-3 px-5 pr-3 transition-all duration-150 lg:scale-100"
         >
           <div className="flex flex-col items-start justify-start">
             <h2 className="text-left text-base font-semibold">

@@ -37,7 +37,7 @@ export default function HatedAttendance() {
           {attendance?.[0] && (detainable?.[0] ? (
             <h1
               style={{ animationDelay: "0.1s" }}
-              className="animate-text-slide-up text-left text-4xl font-semibold opacity-0"
+              className="animate-text-slide-up text-left lg:text-4xl text-3xl font-semibold opacity-0"
             >
               Bro. You really need
               <br />
@@ -46,7 +46,7 @@ export default function HatedAttendance() {
           ) : low ? (
             <h1
               style={{ animationDelay: "0.1s" }}
-              className="animate-text-slide-up text-left text-4xl font-semibold opacity-0"
+              className="animate-text-slide-up text-left lg:text-4xl text-3xl font-semibold opacity-0"
             >
               Seems like you hated
               <br />
@@ -55,7 +55,7 @@ export default function HatedAttendance() {
           ) : (
             <h1
               style={{ animationDelay: "0.1s" }}
-              className="animate-text-slide-up text-left text-4xl font-semibold opacity-0"
+              className="animate-text-slide-up text-left lg:text-4xl text-3xl font-semibold opacity-0"
             >
               Seems like you loved
               <br />
@@ -182,7 +182,7 @@ export default function HatedAttendance() {
           <div className="flex flex-col gap-2">
             <h1
               style={{ animationDelay: "0.5s" }}
-              className="animate-text-slide-up mx-5 text-center text-4xl font-semibold opacity-0"
+              className="animate-text-slide-up mx-5 text-center lg:text-4xl text-3xl font-semibold opacity-0"
             >
               Hope you attended all of your classes
             </h1>
