@@ -147,7 +147,7 @@ export default function SummarySection() {
               </div>
             </>
           ) : null}
-          <div class = "flex">
+          <div className = "flex">
 
           <img
             src="/holo.png"
