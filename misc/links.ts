@@ -174,4 +174,10 @@ export const urls: DirLink[] = [
     type: "official",
     description: "Apply for Research Funding",
   },
+  {
+    site: "SRM Margin Check",
+    url: "https://chromewebstore.google.com/detail/srm-margin-check/dofniecopchojcnidpeiodcfnodlenph",
+    type: "unofficial",
+    description: "Chrome extension to make academia better.",
+  },
 ].sort((a, b) => a.site.localeCompare(b.site));
