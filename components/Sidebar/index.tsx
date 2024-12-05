@@ -1,18 +1,16 @@
 "use client";
 import React, { useState, ReactNode, useEffect, useRef } from "react";
-import { Link as TransitionLink } from "next-view-transitions";
 import {
   FaBookOpen,
   FaGraduationCap,
   FaLink,
   FaWhatsapp,
 } from "react-icons/fa6";
-import { HiLightningBolt } from "react-icons/hi";
-import { BsCalendar2WeekFill, BsFillPinAngleFill } from "react-icons/bs";
+import { BsCalendar2WeekFill } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
-
+import NextLink from "next/link";
 import Link from "./SidebarLink";
 import DayOrder from "../badges/Day";
 import Hours from "../badges/Hours";
@@ -160,7 +158,7 @@ export function Sidebar({
 
   useEffect(() => {
     if (navigator.vibrate) {
-      navigator.vibrate(5);
+      navigator.vibrate(20);
     }
   }, [isOpen]);
 
@@ -317,7 +315,7 @@ export function Sidebar({
           >
             <main
               ref={content}
-              className={`m-0.5 ${isOpen ? "brightness-60 scale-[0.98] shadow-inner md:scale-100 md:shadow-none md:brightness-100" : ""} h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light transition-all duration-300 ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
+              className={`m-0.5 !pt-14 ${isOpen ? "brightness-60 scale-[0.98] shadow-inner md:scale-100 md:shadow-none md:brightness-100" : ""} h-full w-full overflow-y-auto overflow-x-hidden scroll-smooth rounded-2xl bg-light-background-light transition-all duration-300 ${error ? "p-1" : "p-6 md:p-7"} dark:bg-dark-background-dark`}
             >
               <div
                 style={error ? { height: "-webkit-fill-available" } : {}}
@@ -327,6 +325,7 @@ export function Sidebar({
               </div>
               <Footer className="mt-12" />
             </main>
+            <NextLink href="/wrapped" className="dark:text-dark-accent font-medium text-light-accent bg-light-info-background dark:bg-dark-info-background h-10 flex items-center justify-center w-full absolute -top-1 rounded-t-xl">Sem Wrapped&apos;24</NextLink>
           </div>
 
           <Popup />

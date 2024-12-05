@@ -60,13 +60,15 @@ export default function DatePickerComponent({
           )
         }
         maxDate={
-          new DateObject(
-            new Date(
-              new Date().getFullYear(),
-              new Date().getMonth() + 4,
-              new Date().getDate(),
-            ),
-          )
+          new Date().getMonth() >= 9
+            ? new DateObject(new Date(new Date().getFullYear(), 11, 31))
+            : new DateObject(
+                new Date(
+                  new Date().getFullYear(),
+                  new Date().getMonth() + 4,
+                  new Date().getDate(),
+                ),
+              )
         }
         mapDays={({ date }) => {
           if (isHoliday(date)) {

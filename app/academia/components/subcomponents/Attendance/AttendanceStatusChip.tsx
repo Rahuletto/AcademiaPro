@@ -38,7 +38,7 @@ export const AttendanceStatusChips = ({
           >
             {startDate &&
               endDate &&
-              `Absent ${startDate.getDate() === endDate.getDate() ? `on ${format(startDate, "LLL dd")}` : `from ${format(startDate, "LLL dd")} to ${format(endDate, "LLL dd")}`}`}
+              `Absent on selected days`}
           </button>
         </>
       )}

@@ -54,7 +54,7 @@ export default function Marks() {
           <Link
             href="/gradex"
             secondary
-            className="flex items-center justify-center text-sm after:text-[#D8FFC6] after:absolute after:-right-5 after:-top-3 after:rounded-md after:bg-[#0E100E] after:p-0.5 after:px-1 after:text-xs after:content-['NEW']"
+            className="flex items-center justify-center text-sm"
           >
             Predict
           </Link>

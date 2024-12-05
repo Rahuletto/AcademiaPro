@@ -22,9 +22,6 @@ export function middleware(request: NextRequest) {
   }
 
   if (isAuthenticated(request) && home.includes(pathname)) {
-    if (token && token.value && token.value.length <= 500) {
-      return NextResponse.redirect(new URL("/auth/logout", request.url));
-    }
     return NextResponse.redirect(new URL("/academia", request.url));
   } else if (!isAuthenticated(request) && home.includes(pathname)) {
     return NextResponse.redirect(new URL("/home", request.url));
