@@ -86,10 +86,10 @@ export default function HatedAttendance() {
                   .slice(0, 2)
                   .map((subject, index) => (
                     <div
-                      key={index}
-                      style={{ animationDelay: `${0.5 + index * 0.5}s` }}
-                      className={`${index == 1 ? "rotate-12 md:-ml-4" : "-mb-24 mr-12 -rotate-12 md:mb-0 md:mr-0 md:-rotate-2"} relative flex h-[400px] w-[320px] animate-fadeIn flex-col items-start justify-between rounded-3xl bg-light-background-light p-7 opacity-0 shadow-xl dark:bg-dark-background-normal`}
-                    >
+                        key={index}
+                        style={{ animationDelay: `${0.5 + index * 0.5}s` }}
+                        className={`${index == 1 ? "rotate-12 md:-ml-4" : "bottom-10 right-16 -mb-24 -rotate-12 md:mb-0 md:-rotate-2 lg:bottom-0 lg:right-0"} relative flex h-[400px] w-[320px] animate-fadeIn flex-col items-start justify-between rounded-3xl bg-light-background-light p-7 opacity-0 shadow-xl dark:bg-dark-background-normal`}
+                      >
                       <div className="flex flex-col gap-2">
                         <h1 className="text-left text-3xl font-semibold text-light-color dark:text-dark-color">
                           {subject.courseTitle}
@@ -120,7 +120,7 @@ export default function HatedAttendance() {
                       <div
                         key={index}
                         style={{ animationDelay: `${0.5 + index * 0.5}s` }}
-                        className={`${index == 1 ? "rotate-12 md:-ml-4" : "-mb-24 mr-12 -rotate-12 md:mb-0 md:mr-0 md:-rotate-2"} relative flex h-[400px] w-[320px] animate-fadeIn flex-col items-start justify-between rounded-3xl bg-light-background-light p-7 opacity-0 shadow-xl dark:bg-dark-background-normal`}
+                        className={`${index == 1 ? "rotate-12 md:-ml-4" : "bottom-10 right-16 -mb-24 -rotate-12 md:mb-0 md:-rotate-2 lg:bottom-0 lg:right-0"} relative flex h-[400px] w-[320px] animate-fadeIn flex-col items-start justify-between rounded-3xl bg-light-background-light p-7 opacity-0 shadow-xl dark:bg-dark-background-normal`}
                       >
                         <div className="flex flex-col gap-2">
                           <h1 className="text-left text-3xl font-semibold text-light-color dark:text-dark-color">
