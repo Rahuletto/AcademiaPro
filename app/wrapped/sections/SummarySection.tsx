@@ -62,7 +62,7 @@ export default function SummarySection() {
           className="absolute inset-0 animate-fadeIn bg-dark-background-dark opacity-0 transition-all duration-200"
         />
         <div style={{ animationDelay: "0.4s" }} className="absolute animate-fadeIn bottom-4 left-6 flex opacity-0 flex-col items-start justify-start gap-1">
-          <h2 className="text-left text-lg font-semibold capitalize max-w-[500px]">
+          <h2 className="text-left text-lg font-semibold capitalize max-w-[70%]">
             {user?.name.toLowerCase()}
           </h2>
           <p className="ext-left text-xs font-medium capitalize opacity-40">
