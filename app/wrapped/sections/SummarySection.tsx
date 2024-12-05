@@ -147,12 +147,14 @@ export default function SummarySection() {
               </div>
             </>
           ) : null}
-          <img
-            src="/holo.png"
-            alt="holo"
-            style={{ animationDelay: "2.3s" }}
-            className={`absolute ${attendance?.[0] ? "bottom-28" : "bottom-32"} w-full px-12 left-0 animate-fadeIn opacity-0`}
-          />
+          <div className="flex">
+            <img
+              src="/holo.png"
+              alt="holo"
+              style={{ animationDelay: "2.3s" }}
+              className="absolute w-full px-12 left-0 animate-fadeIn opacity-0"
+            />
+          </div>
         </div>
       </div>
     </>
