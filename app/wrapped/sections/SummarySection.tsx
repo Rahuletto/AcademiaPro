@@ -61,7 +61,7 @@ export default function SummarySection() {
           style={{ animationDelay: "0.05s" }}
           className="absolute inset-0 animate-fadeIn bg-dark-background-dark opacity-0 transition-all duration-200"
         />
-        <div style={{ animationDelay: "0.1s" }} className="absolute animate-fadeIn bottom-4 left-6 flex opacity-0 flex-col items-start justify-start gap-1">
+        <div style={{ animationDelay: "0.4s" }} className="absolute animate-fadeIn bottom-4 left-6 flex opacity-0 flex-col items-start justify-start gap-1">
           <h2 className="text-left text-lg font-semibold capitalize max-w-[500px]">
             {user?.name.toLowerCase()}
           </h2>
@@ -72,7 +72,7 @@ export default function SummarySection() {
         <p style={{ animationDelay: "2.2s" }} className="absolute animate-fadeIn bottom-4 right-6 text-right text-lg font-semibold text-dark-accent  opacity-0">
           #SEMWRAPPED24
         </p>
-        <FaBookOpen className="absolute animate-fadeIn opacity-0 right-10 top-10 z-20 text-6xl text-dark-accent" />
+        <FaBookOpen style={{ animationDelay: "0.2s" }} className="absolute animate-fadeIn opacity-0 right-10 top-10 z-20 text-6xl text-dark-accent" />
 
         <div className="z-10 mt-2 flex h-full w-full flex-col items-start justify-start gap-2">
           <div
