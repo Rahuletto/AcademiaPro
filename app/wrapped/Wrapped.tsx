@@ -44,28 +44,28 @@ const WrappedPage: React.FC = () => {
     <div className="relative animate-fadeIn flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-dark-background-normal text-white">
       {/* Section Wrapper */}
       <div
-        className={`absolute flex h-full w-full items-center justify-center transition-all duration-300 ease-out ${
+        className={`absolute flex flex-col h-full w-full items-center justify-center transition-all duration-300 ease-out ${
           transitionStage === "fade-out" ? "opacity-0" : ""
         } ${transitionStage === "fade-in" ? "opacity-100" : ""}`}
       >
         <div className="text-center">{sections[currentSection].component}</div>
+        {/* Navigation Buttons */}
+        <div className="relative z-10 bottom-12 mb-6 mt-6 flex justify-between gap-4 lg:w-full transition-all duration-150 lg:px-24">
+          {currentSection !== 0 ? <button
+            onClick={() => changeSection("prev")}
+            className="rounded-full border-2 hover:px-5 transition-all duration-150 border-dark-accent text-dark-accent p-3"
+          >
+            <FaArrowLeftLong />
+          </button> : <div />}
+          <button
+            onClick={() => currentSection === 3 ? router.push("/academia") : changeSection("next")}
+            className="rounded-full border-2 hover:px-5 transition-all duration-150 border-dark-accent text-dark-accent p-3"
+          >
+            {currentSection === 3 ? <FaBookOpen /> : <FaArrowRightLong />}
+          </button>
+        </div>
       </div>
 
-      {/* Navigation Buttons */}
-      <div className="absolute z-10 bottom-12 mt-6 flex justify-between gap-4 lg:w-full transition-all duration-150 lg:px-24">
-        {currentSection !== 0 ? <button
-          onClick={() => changeSection("prev")}
-          className="rounded-full border-2 hover:px-5 transition-all duration-150 border-dark-accent text-dark-accent p-3"
-        >
-          <FaArrowLeftLong />
-        </button> : <div />}
-        <button
-          onClick={() => currentSection === 3 ? router.push("/academia") : changeSection("next")}
-          className="rounded-full border-2 hover:px-5 transition-all duration-150 border-dark-accent text-dark-accent p-3"
-        >
-          {currentSection === 3 ? <FaBookOpen /> : <FaArrowRightLong />}
-        </button>
-      </div>
     </div>
   );
 };
