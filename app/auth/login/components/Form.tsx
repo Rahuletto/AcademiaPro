@@ -110,7 +110,10 @@ export default function Form() {
               optimisticData: data,
               revalidate: false,
               populateCache: true,
-            }).then(() => router.push("/academia"));
+            }).then(() => router.push("/academia")).catch(() => {
+              console.warn("Failed to update data.");
+              router.push("/academia");
+            })
           });
         }, 100);
       } else if (res?.message) {

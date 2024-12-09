@@ -19,37 +19,14 @@ import ODMLDatePicker from "./OD/ODMLDatePicker";
 import ODMLResetButtons from "./OD/ResetButtons";
 import Predictor from "./Predictor";
 import { createPortal } from "react-dom";
-import Button from "@/components/Button";
 import { CategorizedDateRange } from "../../../../../types/Attendance";
 
 interface AttendanceHeaderProps {
-  isPredicted: boolean;
-  isODML: boolean;
-  dateRange: DateRange;
-  setDateRange: Dispatch<SetStateAction<DateRange>>;
-  handleDateChange: (dates: DateObject[]) => void;
-  showDatePicker: boolean;
-  setShowDatePicker: Dispatch<SetStateAction<boolean>>;
-  setIsPredicted: Dispatch<SetStateAction<boolean>>;
-  setIsODML: Dispatch<SetStateAction<boolean>>;
-  ODMLdateRange: DateRange[];
-  setODMLDateRange: Dispatch<SetStateAction<DateRange[]>>;
   categorizedDateRanges: CategorizedDateRange[];
   setCategorizedDateRanges: Dispatch<SetStateAction<CategorizedDateRange[]>>;
 }
 
 export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
-  isPredicted,
-  isODML,
-  dateRange,
-  setDateRange,
-  handleDateChange,
-  showDatePicker,
-  setShowDatePicker,
-  setIsPredicted,
-  ODMLdateRange,
-  setODMLDateRange,
-  setIsODML,
   categorizedDateRanges,
   setCategorizedDateRanges,
 }) => {

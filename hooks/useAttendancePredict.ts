@@ -29,6 +29,7 @@ export const useAttendancePrediction = (
       return;
     }
 
+    console.log("DATERANGES", dateRanges);
     const updatedAttendance: AttendanceCourse[] = attendance
       .filter((a) => a.courseTitle !== "null")
       .map((a) => ({ ...a }));
@@ -36,6 +37,7 @@ export const useAttendancePrediction = (
     const processDay = (date: Date, incrementAbsent: boolean = false) => {
       const formattedDate = format(date, "d");
       const monthName = format(date, "MMM");
+      // console.log("DATE", formattedDate, monthName);
       const currentMonth = calendar.find(
         (m) => monthName === m.month.split("'")[0].trim(),
       );
@@ -43,7 +45,7 @@ export const useAttendancePrediction = (
       if (!currentMonth) return;
 
       const dayInfo = currentMonth.days.find((d) => d.date === formattedDate);
-      if (!dayInfo || dayInfo?.day === "Sat" || dayInfo?.day === "Sun") return;
+      if (!dayInfo || dayInfo?.day === "Sun") return;
 
       const daySchedule = timetable.find(
         (t) => t.day === Number(dayInfo.dayOrder),
@@ -85,10 +87,10 @@ export const useAttendancePrediction = (
 
     let currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
-    const endDate = new Date(currentDate);
-    endDate.setFullYear(currentDate.getFullYear() + 1);
 
-    while (currentDate <= endDate) {
+    const endDate = new Date(dateRanges[0].from || "");
+
+    while (currentDate < endDate) {
       const isAbsentDay = dateRanges.some(
         (range) =>
           range.from &&

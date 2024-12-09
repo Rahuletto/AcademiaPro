@@ -32,33 +32,29 @@ export default function Attendance(): JSX.Element {
     CategorizedDateRange[]
   >([]);
   const [ODMLdateRange, setODMLDateRange] = useState<DateRange[]>([]);
-  const [showDatePicker, setShowDatePicker] = useState<boolean>(false);
   const [isPredicted, setIsPredicted] = useState<boolean>(false);
   const [isODML, setIsODML] = useState<boolean>(false);
 
-  const handleDateChange = (dates: DateObject[]): void => {
-    if (dates.length === 2) {
-      setDateRange({
-        from: dates[0].toDate(),
-        to: dates[1].toDate(),
-      });
-    }
-  };
-
   useEffect(() => {
+    console.log('runnin')
     const leaveRanges = categorizedDateRanges.filter(
       (e) => e.category === "Leave",
     );
+
+    console.log(leaveRanges)
 
     if (leaveRanges.length > 0) {
       setIsPredicted(true);
       // Instead of setting the first range, set the overall date range
       const earliestFrom = new Date(
         Math.min(...leaveRanges.map((range) => range.from.getTime())),
-      );
+      )
+      console.log(earliestFrom.toISOString())
       const latestTo = new Date(
         Math.max(...leaveRanges.map((range) => range.to.getTime())),
-      );
+      )
+      console.log(latestTo.toISOString())
+
 
       setDateRange({
         from: earliestFrom,
@@ -89,17 +85,6 @@ export default function Attendance(): JSX.Element {
   return (
     <section id="attendance">
       <AttendanceHeader
-        isPredicted={isPredicted}
-        dateRange={dateRange}
-        setDateRange={setDateRange}
-        handleDateChange={handleDateChange}
-        showDatePicker={showDatePicker}
-        setShowDatePicker={setShowDatePicker}
-        setIsPredicted={setIsPredicted}
-        ODMLdateRange={ODMLdateRange}
-        setODMLDateRange={setODMLDateRange}
-        isODML={isODML}
-        setIsODML={setIsODML}
         categorizedDateRanges={categorizedDateRanges}
         setCategorizedDateRanges={setCategorizedDateRanges}
       />
