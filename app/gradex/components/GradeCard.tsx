@@ -78,15 +78,23 @@ export default function GradeCard({
 
   // Calculate required marks whenever the selected grade or marks change
   useEffect(() => {
-    setRequiredMarks(
-      (
-        ((grade_points[currentGrade] -
-          (Number(mark.overall.marks) + expectedInternal)) /
-          40) *
-        75
-      ).toFixed(2),
-    );
-  }, [currentGrade, expectedInternal, mark.overall.marks]);
+    if (mark.courseType === "Practical")
+      setRequiredMarks(
+        (
+          (grade_points[currentGrade] -
+            (Number(mark.overall.marks) + expectedInternal))
+        ).toFixed(2),
+      );
+    else
+      setRequiredMarks(
+        (
+          ((grade_points[currentGrade] -
+            (Number(mark.overall.marks) + expectedInternal)) /
+            40) *
+          75
+        ).toFixed(2),
+      );
+  }, [currentGrade, expectedInternal, mark.overall.marks, mark.courseType]);
 
   useEffect(() => {
     const lostMark: number =
@@ -175,7 +183,7 @@ export default function GradeCard({
                   className={`pl-2 text-sm font-medium ${
                     Number(requiredMarks) <= 0
                       ? "text-light-accent dark:text-dark-accent"
-                      : Number(requiredMarks) > 75
+                      : Number(requiredMarks) > (mark.courseType === "Practical" ? 40 : 75)
                         ? "text-light-error-color dark:text-dark-error-color"
                         : "text-light-success-color dark:text-dark-success-color"
                   }`}
@@ -183,7 +191,7 @@ export default function GradeCard({
                   {requiredMarks}
                 </span>
                 <span className="ml-1 rounded-full bg-light-success-color px-2 py-0.5 pr-2 text-sm font-bold text-light-success-background dark:bg-dark-success-color dark:text-dark-success-background">
-                  75
+                 {mark.courseType === "Practical" ? 40 : 75}
                 </span>
               </div>
             </div>

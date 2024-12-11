@@ -8,11 +8,15 @@ import GradeCard from "./components/GradeCard";
 import Indicator from "@/components/Indicator";
 import { determineGrade } from "@/utils/Grade";
 import { getGrade } from "@/types/Grade";
+import { Mark } from "@/types/Marks";
 
 export default function GradeX() {
   const { marks, isLoading, error, courses, isValidating } = useData();
   const [grades, setGrades] = useState<{ [courseCode: string]: string }>({});
   const [sgpa, setSgpa] = useState(0);
+
+  const [theory, setTheory] = useState<Mark[]>([]);
+  const [practicals, setPracticals] = useState<Mark[]>([]);
 
   const gradePoints: { [key: string]: number } = {
     O: 10,
@@ -27,14 +31,50 @@ export default function GradeX() {
     marks?.forEach((mark) => {
       setGrades((prevGrades) => ({
         ...prevGrades,
-        [mark.courseCode]: Number(mark.overall.total) == 100 ? getGrade(Number(mark.overall.marks)) : determineGrade(
-          Number(mark.overall.total) - Number(mark.overall.marks),
-        ),
+        [mark.courseCode]:
+          Number(mark.overall.total) == 100
+            ? getGrade(Number(mark.overall.marks))
+            : determineGrade(
+                Number(mark.overall.total) - Number(mark.overall.marks),
+              ),
       }));
     });
   }, [marks]);
 
+  useEffect(() => {
+    setTheory(
+      marks
+        ?.filter((a) => a.courseType === "Theory")
+        .filter((a) =>
+          courses
+            ? (Number(courses.find((c) => c.code === a.courseCode)?.credit) ??
+                0) > 0
+            : false,
+        ) || [],
+    );
+  }, [marks, courses]);
 
+  useEffect(() => {
+    const p =
+      marks
+        ?.filter((a) => a.courseType === "Practical")
+        .filter((a) =>
+          courses
+            ? (Number(courses.find((c) => c.code === a.courseCode)?.credit) ??
+                0) > 0
+            : false,
+        )
+        .filter(
+          (practical) =>
+            !theory?.some(
+              (theory) =>
+                theory.courseType === "Theory" &&
+                theory.courseCode === practical.courseCode,
+            ),
+        ) || [];
+
+    setPracticals(p);
+  }, [theory, courses, marks]);
 
   useEffect(() => {
     sgpaCalculator();
@@ -68,32 +108,6 @@ export default function GradeX() {
     const calculatedSgpa = totalCredits > 0 ? totalPoints / totalCredits : 0;
     setSgpa(parseFloat(calculatedSgpa.toFixed(2)));
   };
-
-  const theory = marks
-    ?.filter((a) => a.courseType === "Theory")
-    .filter((a) =>
-      courses
-        ? (Number(courses.find((c) => c.code === a.courseCode)?.credit) ?? 0) >
-          0
-        : false,
-    );
-
-  const practicals = marks
-    ?.filter((a) => a.courseType === "Practical")
-    .filter((a) =>
-      courses
-        ? (Number(courses.find((c) => c.code === a.courseCode)?.credit) ?? 0) >
-          0
-        : false,
-    )
-    .filter(
-      (practical) =>
-        !theory?.some(
-          (theory) =>
-            theory.courseType === "Theory" &&
-            theory.courseName === practical.courseName,
-        ),
-    );
 
   return (
     <main className="h-screen w-full bg-light-background-normal pb-0 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
