@@ -36,12 +36,10 @@ export default function Attendance(): JSX.Element {
   const [isODML, setIsODML] = useState<boolean>(false);
 
   useEffect(() => {
-    console.log('runnin')
     const leaveRanges = categorizedDateRanges.filter(
       (e) => e.category === "Leave",
     );
 
-    console.log(leaveRanges)
 
     if (leaveRanges.length > 0) {
       setIsPredicted(true);
@@ -49,11 +47,9 @@ export default function Attendance(): JSX.Element {
       const earliestFrom = new Date(
         Math.min(...leaveRanges.map((range) => range.from.getTime())),
       )
-      console.log(earliestFrom.toISOString())
       const latestTo = new Date(
         Math.max(...leaveRanges.map((range) => range.to.getTime())),
       )
-      console.log(latestTo.toISOString())
 
 
       setDateRange({
