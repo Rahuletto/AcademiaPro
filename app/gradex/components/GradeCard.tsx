@@ -81,8 +81,8 @@ export default function GradeCard({
     if (mark.courseType === "Practical")
       setRequiredMarks(
         (
-          (grade_points[currentGrade] -
-            (Number(mark.overall.marks) + expectedInternal))
+          grade_points[currentGrade] -
+          (Number(mark.overall.marks) + expectedInternal)
         ).toFixed(2),
       );
     else
@@ -154,7 +154,7 @@ export default function GradeCard({
           <>
             {60 - Number(mark.overall.total) > 0 && (
               <div className="flex items-center justify-between">
-                <p>
+                <p className="text-sm font-medium opacity-80">
                   Expected remaining from {60 - Number(mark.overall.total)}:
                 </p>
                 <input
@@ -177,13 +177,16 @@ export default function GradeCard({
             )}
 
             <div className="flex flex-row items-center justify-between gap-2 border-t-2 border-dashed border-black/10 pt-3 dark:border-white/10">
-              <h2>Goal for sem exam</h2>
+              <h2 className="text-sm font-medium opacity-80">
+                Goal for sem exam
+              </h2>
               <div className="flex items-center gap-1 rounded-full bg-light-background-dark dark:bg-dark-background-dark">
                 <span
                   className={`pl-2 text-sm font-medium ${
                     Number(requiredMarks) <= 0
                       ? "text-light-accent dark:text-dark-accent"
-                      : Number(requiredMarks) > (mark.courseType === "Practical" ? 40 : 75)
+                      : Number(requiredMarks) >
+                          (mark.courseType === "Practical" ? 40 : 75)
                         ? "text-light-error-color dark:text-dark-error-color"
                         : "text-light-success-color dark:text-dark-success-color"
                   }`}
@@ -191,7 +194,7 @@ export default function GradeCard({
                   {requiredMarks}
                 </span>
                 <span className="ml-1 rounded-full bg-light-success-color px-2 py-0.5 pr-2 text-sm font-bold text-light-success-background dark:bg-dark-success-color dark:text-dark-success-background">
-                 {mark.courseType === "Practical" ? 40 : 75}
+                  {mark.courseType === "Practical" ? 40 : 75}
                 </span>
               </div>
             </div>
