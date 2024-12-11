@@ -77,24 +77,6 @@ export const AttendanceHeader: FC<AttendanceHeaderProps> = ({
               >
                 Predict
               </button>
-              {/* {!isPredicted && (
-                <DatePickerComponent
-                  dateRange={dateRange}
-                  handleDateChange={handleDateChange}
-                />
-              )} */}
-              {/* {!isPredicted && (
-          <ODMLDatePicker
-            dateRanges={ODMLdateRange}
-            setDateRanges={setODMLDateRange}
-            isODML={isODML}
-            setIsODML={setIsODML}
-            resetODML={() => {
-              setODMLDateRange([{ from: null, to: null }]);
-              setIsODML(false);
-            }}
-          />
-        )} */}
 
               {dialogRoot &&
                 open &&
