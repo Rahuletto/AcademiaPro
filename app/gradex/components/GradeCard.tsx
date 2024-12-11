@@ -57,10 +57,12 @@ export default function GradeCard({
   mark,
   currentGrade,
   updateGrade,
+  excludedCourses,
 }: {
   mark: Mark;
   currentGrade: string;
-  updateGrade: (courseCode: string, grade: string) => void;
+  updateGrade: (courseCode: string, grade: string, exclude?: boolean) => void;
+  excludedCourses: string[];
 }) {
   const { courses } = useData();
   const [editMode, setEditMode] = useState(false);
@@ -120,9 +122,15 @@ export default function GradeCard({
     updateGrade(mark.courseCode, newGrade);
   };
 
+  const handleExcludeToggle = () => {
+    updateGrade(mark.courseCode, currentGrade, true);
+  };
+
+  const isExcluded = excludedCourses.includes(mark.courseCode);
+
   return (
     <div
-      className={`flex min-h-40 flex-col justify-between gap-8 rounded-2xl ${
+      className={`${isExcluded ? "opacity-30" : "opacity-100"} flex min-h-40 flex-col justify-between gap-8 rounded-2xl transition-all duration-100 ${
         Number(mark.overall.marks) <= 60
           ? "bg-light-background-normal dark:bg-dark-background-normal"
           : `bg-opacity-80 dark:bg-opacity-40 ${
@@ -146,7 +154,18 @@ export default function GradeCard({
           </p>
         </div>
 
-        <MarkDisplay marks={mark.overall} />
+        <div className="flex flex-col items-end justify-end gap-2">
+          <MarkDisplay marks={mark.overall} />
+          <button
+            onClick={handleExcludeToggle}
+            className="w-fit flex items-center justify-center gap-2 transform rounded-xl py-1 text-xs font-medium text-light-color transition-all duration-300 dark:text-dark-color"
+          >
+            <div
+              className={`h-1 w-2 rounded-full border-2 ring-1 transition duration-150 ${!isExcluded ? "border-light-side bg-light-accent ring-light-accent dark:border-dark-side dark:bg-dark-accent dark:ring-dark-accent" : "border-dark-accent ring-transparent"} p-1`}
+            />{" "}
+            Included
+          </button>
+        </div>
       </div>
 
       <div className="relative flex flex-col-reverse gap-4">

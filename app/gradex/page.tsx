@@ -14,6 +14,7 @@ export default function GradeX() {
   const { marks, isLoading, error, courses, isValidating } = useData();
   const [grades, setGrades] = useState<{ [courseCode: string]: string }>({});
   const [sgpa, setSgpa] = useState(0);
+  const [excludedCourses, setExcludedCourses] = useState<string[]>([]);
 
   const [theory, setTheory] = useState<Mark[]>([]);
   const [practicals, setPracticals] = useState<Mark[]>([]);
@@ -81,11 +82,25 @@ export default function GradeX() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [grades, courses, marks]);
 
-  const updateGrade = (courseCode: string, grade: string) => {
+  const updateGrade = (
+    courseCode: string,
+    grade: string,
+    exclude: boolean = false,
+  ) => {
     setGrades((prevGrades) => ({
       ...prevGrades,
       [courseCode]: grade,
     }));
+
+    if (exclude) {
+      setExcludedCourses((prevExcluded) => {
+        if (prevExcluded.includes(courseCode)) {
+          return prevExcluded.filter((code) => code !== courseCode);
+        } else {
+          return [...prevExcluded, courseCode];
+        }
+      });
+    }
   };
 
   const sgpaCalculator = () => {
@@ -95,6 +110,8 @@ export default function GradeX() {
     let totalCredits = 0;
 
     Object.entries(grades).forEach(([courseCode, grade]) => {
+      if (excludedCourses.includes(courseCode)) return;
+
       const course = courses.find((c) => c.code === courseCode);
       if (course) {
         const credits = Number(course.credit);
@@ -136,6 +153,7 @@ export default function GradeX() {
                     {theory?.map((mark, index) => (
                       <GradeCard
                         mark={mark}
+                        excludedCourses={excludedCourses}
                         key={index}
                         currentGrade={grades[mark.courseCode] || "O"}
                         updateGrade={updateGrade}
@@ -151,6 +169,7 @@ export default function GradeX() {
                           <GradeCard
                             mark={mark}
                             key={index}
+                            excludedCourses={excludedCourses}
                             currentGrade={grades[mark.courseCode] || "O"}
                             updateGrade={updateGrade}
                           />
