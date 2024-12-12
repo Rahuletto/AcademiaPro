@@ -71,31 +71,16 @@ export default function GradeCard({
   const [requiredMarks, setRequiredMarks] = useState("0");
   const [expectedInternal, setExpectedInternal] = useState(0);
 
-  // Set the expected internal marks based on total marks
-  useEffect(() => {
-    if (Number(mark.overall.total) !== 60) {
-      setExpectedInternal(60 - Number(mark.overall.total));
-    }
-  }, [mark.overall.total]);
-
   // Calculate required marks whenever the selected grade or marks change
   useEffect(() => {
-    if (mark.courseType === "Practical")
-      setRequiredMarks(
-        (
-          grade_points[currentGrade] -
-          (Number(mark.overall.marks) + expectedInternal)
-        ).toFixed(2),
-      );
-    else
-      setRequiredMarks(
-        (
-          ((grade_points[currentGrade] -
-            (Number(mark.overall.marks) + expectedInternal)) /
-            40) *
-          75
-        ).toFixed(2),
-      );
+    setRequiredMarks(
+      (
+        ((grade_points[currentGrade] -
+          (Number(mark.overall.marks) + expectedInternal)) /
+          40) *
+        75
+      ).toFixed(2),
+    );
   }, [currentGrade, expectedInternal, mark.overall.marks, mark.courseType]);
 
   useEffect(() => {
@@ -106,7 +91,7 @@ export default function GradeCard({
         ? getGrade(Number(mark.overall.marks))
         : determineGrade(lostMark);
     updateGrade(mark.courseCode, calculatedGrade);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [mark.overall.total, mark.overall.marks, mark.courseCode]);
 
   const getSliderValue = (grade: string) => {
@@ -158,7 +143,7 @@ export default function GradeCard({
           <MarkDisplay marks={mark.overall} />
           <button
             onClick={handleExcludeToggle}
-            className="w-fit flex items-center justify-center gap-2 transform rounded-xl py-1 text-xs font-medium text-light-color transition-all duration-300 dark:text-dark-color"
+            className="flex w-fit transform items-center justify-center gap-2 rounded-xl py-1 text-xs font-medium text-light-color transition-all duration-300 dark:text-dark-color"
           >
             <div
               className={`h-1 w-2 rounded-full border-2 ring-1 transition duration-150 ${!isExcluded ? "border-light-side bg-light-accent ring-light-accent dark:border-dark-side dark:bg-dark-accent dark:ring-dark-accent" : "border-dark-accent ring-transparent"} p-1`}
@@ -202,15 +187,30 @@ export default function GradeCard({
               <div className="flex items-center gap-1 rounded-full bg-light-background-dark dark:bg-dark-background-dark">
                 <span
                   className={`pl-2 text-sm font-medium ${
-                    Number(requiredMarks) <= 0
+                    Number(
+                      mark.courseType === "Practical"
+                        ? grade_points[currentGrade] -
+                            (Number(mark.overall.marks) + expectedInternal)
+                        : requiredMarks,
+                    ) <= 0
                       ? "text-light-accent dark:text-dark-accent"
-                      : Number(requiredMarks) >
-                          (mark.courseType === "Practical" ? 40 : 75)
+                      : Number(
+                            mark.courseType === "Practical"
+                              ? grade_points[currentGrade] -
+                                  (Number(mark.overall.marks) +
+                                    expectedInternal)
+                              : requiredMarks,
+                          ) > (mark.courseType === "Practical" ? 40 : 75)
                         ? "text-light-error-color dark:text-dark-error-color"
                         : "text-light-success-color dark:text-dark-success-color"
                   }`}
                 >
-                  {requiredMarks}
+                  {mark.courseType === "Practical"
+                    ? (
+                        grade_points[currentGrade] -
+                        (Number(mark.overall.marks) + expectedInternal)
+                      ).toFixed(2)
+                    : requiredMarks}
                 </span>
                 <span className="ml-1 rounded-full bg-light-success-color px-2 py-0.5 pr-2 text-sm font-bold text-light-success-background dark:bg-dark-success-color dark:text-dark-success-background">
                   {mark.courseType === "Practical" ? 40 : 75}

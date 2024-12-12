@@ -29,7 +29,6 @@ export const useAttendancePrediction = (
       return;
     }
 
-    console.log("DATERANGES", dateRanges);
     const updatedAttendance: AttendanceCourse[] = attendance
       .filter((a) => a.courseTitle !== "null")
       .map((a) => ({ ...a }));
@@ -37,7 +36,6 @@ export const useAttendancePrediction = (
     const processDay = (date: Date, incrementAbsent: boolean = false) => {
       const formattedDate = format(date, "d");
       const monthName = format(date, "MMM");
-      // console.log("DATE", formattedDate, monthName);
       const currentMonth = calendar.find(
         (m) => monthName === m.month.split("'")[0].trim(),
       );
@@ -104,6 +102,20 @@ export const useAttendancePrediction = (
       processDay(currentDate, isAbsentDay);
       currentDate.setDate(currentDate.getDate() + 1);
     }
+
+    dateRanges.forEach((range) => {
+      if (range.from && range.to) {
+        let rangeStartDate = new Date(range.from);
+        rangeStartDate.setHours(0, 0, 0, 0);
+        let rangeEndDate = new Date(range.to);
+        rangeEndDate.setHours(0, 0, 0, 0);
+
+        while (rangeStartDate <= rangeEndDate) {
+          processDay(rangeStartDate, true);
+          rangeStartDate.setDate(rangeStartDate.getDate() + 1);
+        }
+      }
+    });
 
     setPredictedAttendance(updatedAttendance);
   }, [attendance, timetable, calendar, dateRanges]);
