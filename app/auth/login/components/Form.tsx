@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { token } from "@/utils/Tokenize";
 import { fetcher, useData } from "@/provider/DataProvider";
 import useSWR from "swr";
+import SvgForm from "./SvgForm";
 
 export default function Form() {
   const router = useRouter();
@@ -123,70 +124,7 @@ export default function Form() {
   }, [uid, pass, router]);
 
   return (
-    <form
-      className="flex flex-col gap-6"
-      onSubmit={(e) => {
-        e.preventDefault();
-        response?.captcha ? handleCaptcha() : handleLogin();
-      }}
-    >
-      {error === 1 && (
-        <p className="rounded-2xl bg-light-error-background px-4 py-2 text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
-          SRM: {message}
-        </p>
-      )}
-
-      {error === 2 && message && (
-        <p className="rounded-2xl bg-light-success-background px-4 py-2 text-light-success-color dark:bg-dark-success-background dark:text-dark-success-color">
-          {message}
-        </p>
-      )}
-
-      {!response?.captcha && (
-        <div className="relative flex flex-col gap-1">
-          <UidInput uid={uid} setUid={setUid} />
-          <PasswordInput password={pass} setPassword={setPass} />
-        </div>
-      )}
-      {response?.captcha && (
-        <>
-          <div className="flex flex-col gap-2">
-            <img src={response?.captcha} alt="captcha" className="rounded-xl" />
-            <input
-              type="text"
-              className="rounded-2xl border border-light-background-darker bg-light-input px-6 py-3 font-sans font-medium text-light-color dark:border-dark-background-darker dark:bg-dark-input dark:text-dark-color"
-              placeholder="Enter captcha"
-              value={captcha}
-              onChange={(e) => setCaptcha(e.target.value)}
-            />
-          </div>
-          <button
-            type="submit"
-            onClick={handleCaptcha}
-            className={`w-fit transform rounded-xl bg-light-accent px-4 py-2 font-medium text-light-background-dark transition-all duration-200 hover:scale-95 hover:opacity-80 hover:shadow-lg active:scale-90 dark:bg-dark-accent dark:text-dark-background-dark`}
-          >
-            Validate
-          </button>
-        </>
-      )}
-      {!response?.captcha && (
-        <Button
-          disabled={!uid || !pass || error === -1 || error === 2}
-          className={`w-full md:w-fit ${
-            error === 2
-              ? "border border-light-success-color bg-light-success-background text-light-success-color dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color"
-              : error === -1
-                ? "border border-light-warn-color bg-light-warn-background text-light-warn-color dark:border-dark-warn-color dark:bg-dark-warn-background dark:text-dark-warn-color"
-                : error === 1
-                  ? "border border-light-error-color bg-light-error-background text-light-error-color dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color"
-                  : ""
-          }`}
-          type="submit"
-          onClick={handleLogin}
-        >
-          {error === -1 ? "Authenticating" : error === 2 ? "Success" : "Login"}
-        </Button>
-      )}
-    </form>
+    <SvgForm />
+    
   );
 }

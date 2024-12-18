@@ -18,7 +18,7 @@ export default async function Login() {
       <div className="fixed top-8 right-8">
         <ThemeToggle />
       </div>
-      <div className="flex h-fit w-[95vw] flex-col justify-between gap-24 rounded-[48px] bg-light-background-dark px-12 py-12 md:h-[40vh] lg:w-[70vw] dark:bg-dark-background-dark">
+      <div className="flex h-fit w-[95vw] flex-col justify-between gap-24 rounded-[48px] bg-light-background-dark px-12 lg:w-[70vw] dark:bg-dark-background-dark " style={{paddingTop:'1rem'}} >
         <div className="flex flex-col items-center justify-between gap-12 lg:items-start lg:flex-row">
           <div className="flex h-fit max-w-[400px] flex-col justify-between lg:h-full">
             <div className="flex flex-col gap-3">
