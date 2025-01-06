@@ -240,10 +240,10 @@ export function Sidebar({
                   Calendar
                 </Link>
 
-                <Link href="/gradex">
+                {/* <Link href="/gradex">
                   <GradeX className="text-xl" />
                   GradeX
-                </Link>
+                </Link> */}
 
                 <Link href="/links">
                   <FaLink className="text-xl" />
