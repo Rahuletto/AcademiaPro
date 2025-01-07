@@ -1,13 +1,11 @@
 "use client";
-import { SetStateAction, Suspense, useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import { Sidebar } from "@/components/Sidebar";
 import Loading from "@/components/States/Loading";
 import { Cookie } from "@/utils/Cookies";
 import Storage from "@/utils/Storage";
 import { useRouter } from "next/navigation";
-import { HiTableCells } from "react-icons/hi2";
-import { CiViewTimeline } from "react-icons/ci";
 import { BsClockHistory, BsPersonCheckFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa6";
 

@@ -325,7 +325,7 @@ export function Sidebar({
               </div>
               <Footer className="mt-12" />
             </main>
-            <NextLink href="/wrapped" className="dark:text-dark-accent font-medium text-light-accent ml-[2px] bg-light-info-background dark:bg-dark-info-background h-10 flex items-center justify-center w-full absolute -top-1 rounded-t-xl">#SEMWRAPPED&apos;24</NextLink>
+            {/* <NextLink href="/wrapped" className="dark:text-dark-accent font-medium text-light-accent ml-[2px] bg-light-info-background dark:bg-dark-info-background h-10 flex items-center justify-center w-full absolute -top-1 rounded-t-xl">#SEMWRAPPED&apos;24</NextLink> */}
           </div>
 
           <Popup />
