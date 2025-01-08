@@ -240,10 +240,10 @@ export function Sidebar({
                   Calendar
                 </Link>
 
-                {/* <Link href="/gradex">
+                <Link target="_blank" href="https://gradex.vercel.app/">
                   <GradeX className="text-xl" />
                   GradeX
-                </Link> */}
+                </Link>
 
                 <Link href="/links">
                   <FaLink className="text-xl" />
