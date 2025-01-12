@@ -23,8 +23,8 @@ export default function AttendanceList({
   const remaining = displayedAttendance?.filter(
     (course) => Number(course.attendancePercentage.split(".")[0]) > 75,
   );
-  return (
-    displayedAttendance ? <>
+  return displayedAttendance ? (
+    <>
       {displayedAttendance?.[0] && (
         <div className={`transition duration-200`}>
           <AttendanceCard legend course={displayedAttendance[0]} />
@@ -33,41 +33,52 @@ export default function AttendanceList({
       <div className={`animate-fadeIn transition duration-200`}>
         {priority && priority[0] && (
           <>
-          <div className="-m-1 mb-3 mt-2 rounded-xl border-2 border-dashed border-light-warn-color bg-light-warn-background p-1 relative dark:border-dark-warn-color dark:bg-dark-warn-background">
-            <p className="font-semibold font-mono dark:text-dark-warn-color text-light-warn-color mx-3 py-1 text-xs">Attention needed!</p>
-            <div className="dark:bg-dark-background-dark bg-light-background-dark rounded-xl">
-            {priority.filter((a) => a.category === "Theory").length > 0 &&
-              priority
-                .filter((a) => a.category === "Theory")
-                .sort((a, b) => Number(a.attendancePercentage.split('.')[0]) - Number(b.attendancePercentage.split('.')[0]))
-                .map((course, index) => (
-                  <div
-                    key={index}
-                    className="my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-transparent"
-                  >
-                    <AttendanceCard course={course} />
-                  </div>
-                ))}
+            <div className="relative -m-1 mb-3 mt-2 rounded-xl border-2 border-dashed border-light-warn-color bg-light-warn-background p-1 dark:border-dark-warn-color dark:bg-dark-warn-background">
+              <p className="mx-3 py-1 font-mono text-xs font-semibold text-light-warn-color dark:text-dark-warn-color">
+                Attention needed!
+              </p>
+              <div className="rounded-xl bg-light-background-dark dark:bg-dark-background-dark">
+                {priority.filter((a) => a.category === "Theory").length > 0 &&
+                  priority
+                    .filter((a) => a.category === "Theory")
+                    .sort(
+                      (a, b) =>
+                        Number(a.attendancePercentage.split(".")[0]) -
+                        Number(b.attendancePercentage.split(".")[0]),
+                    )
+                    .map((course, index) => (
+                      <div
+                        key={index}
+                        className="my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-transparent"
+                      >
+                        <AttendanceCard course={course} />
+                      </div>
+                    ))}
 
-            {priority.filter((a) => a.category === "Practical").length > 0 && (
-              <>
-                <Indicator type="Practical" separator />
-                {priority
-                  .filter((a) => a.category === "Practical")
-                  .sort((a, b) => Number(a.attendancePercentage.split('.')[0]) - Number(b.attendancePercentage.split('.')[0]))
-                  .map((course, index) => (
-                    <div
-                      key={index}
-                      className="my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-transparent"
-                    >
-                      <AttendanceCard course={course} />
-                    </div>
-                  ))}
-              </>
-            )}
+                {priority.filter((a) => a.category === "Practical").length >
+                  0 && (
+                  <>
+                    <Indicator type="Practical" separator />
+                    {priority
+                      .filter((a) => a.category === "Practical")
+                      .sort(
+                        (a, b) =>
+                          Number(a.attendancePercentage.split(".")[0]) -
+                          Number(b.attendancePercentage.split(".")[0]),
+                      )
+                      .map((course, index) => (
+                        <div
+                          key={index}
+                          className="my-1 rounded-xl odd:bg-light-background-normal even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-transparent"
+                        >
+                          <AttendanceCard course={course} />
+                        </div>
+                      ))}
+                  </>
+                )}
+              </div>
             </div>
-          </div>
-          <Indicator type="Theory" separator />
+            <Indicator type="Theory" separator />
           </>
         )}
         <div className="mb-4">
@@ -83,7 +94,10 @@ export default function AttendanceList({
             ))}
         </div>
 
-        {remaining && remaining[0] && <Indicator type="Practical" separator />}
+        {remaining &&
+          remaining?.filter((a) => a.category === "Practical").length > 0 && (
+            <Indicator type="Practical" separator />
+          )}
 
         <div className="mt-4">
           {remaining
@@ -98,6 +112,6 @@ export default function AttendanceList({
             ))}
         </div>
       </div>
-    </> : null
-  );
+    </>
+  ) : null;
 }
