@@ -6,7 +6,6 @@ import Loading from "@/components/States/Loading";
 import { AttendanceHeader } from "./subcomponents/Attendance/AttendanceHeader";
 import { AttendanceStatusChips } from "./subcomponents/Attendance/AttendanceStatusChip";
 import { CategorizedDateRange, DateRange } from "@/types/Attendance";
-import { DateObject } from "react-multi-date-picker";
 import ODMLContent from "./subcomponents/Attendance/ODMLContent";
 
 const AttendanceContent = dynamic(
