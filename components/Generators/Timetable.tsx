@@ -148,7 +148,7 @@ export default function TimetableGen({ body }: { body: Table[] }) {
       >
         <h2 tw="text-[#ffffff] opacity-60">Made by</h2>
         <h2 tw="py-0 text-[#B3B3D1] rounded-full">
-          https://academia-pro.vercel.app
+          https://class-pro.vercel.app
         </h2>
       </div>
     </div>
