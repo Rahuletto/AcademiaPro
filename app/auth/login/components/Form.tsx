@@ -191,7 +191,7 @@ export default function Form() {
         <a
           href="https://academia.srmist.edu.in/reset"
           target="_blank"
-          className="justify-center text-center text-sm font-medium text-light-color underline sm:justify-start sm:text-left dark:text-dark-color"
+          className="justify-center text-center text-sm font-medium text-light-color underline opacity-60 sm:justify-start sm:text-left dark:text-dark-color"
         >
           Forgot password?
         </a>
