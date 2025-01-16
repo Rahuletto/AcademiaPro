@@ -192,6 +192,15 @@ export default function Form() {
           {error === -1 ? "Authenticating" : error === 2 ? "Success" : "Login"}
         </Button>
       )}
+      <div className="flex flex-col gap-2">
+        <a
+          href="https://academia.srmist.edu.in/reset"
+          target="_blank"
+          className="justify-center text-center text-sm font-medium text-light-color underline opacity-60 sm:justify-start sm:text-left dark:text-dark-color"
+        >
+          Forgot password?
+        </a>
+      </div>
     </form>
   );
 }
