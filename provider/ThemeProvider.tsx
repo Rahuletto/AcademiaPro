@@ -24,21 +24,19 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
     useEffect(() => {
         if(theme === "") return;
+        const properties = Themes.find(t => t.title === theme)
         const root = window.document.documentElement;
         localStorage.setItem("theme", theme);
         if (theme === 'BW') {
-            const properties = Themes.find(t => t.title === 'Dark')
-            document.documentElement.classList.add("dark");
-            document.documentElement.classList.remove("light");
-            if (properties) {
-                Object.entries(properties.properties).forEach(([key, value]) => {
+            const dark = Themes.find(t => t.title === 'Dark')
+            if (dark) {
+                Object.entries(dark.properties).forEach(([key, value]) => {
                     root.style.setProperty(`--${key}`, value.toString());
                 });
             }
             document.documentElement.style.filter = 'grayscale(100%)';
         } else {
             document.documentElement.style.filter = 'none';
-            const properties = Themes.find(t => t.title === theme)
             if (properties) {
                 Object.entries(properties.properties).forEach(([key, value]) => {
                     root.style.setProperty(`--${key}`, value.toString());
@@ -46,12 +44,18 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
             }
         }
 
-        if (theme === "Dark") {
+        if (properties?.mode === "dark") {
             document.documentElement.classList.add("dark");
             document.documentElement.classList.remove("light");
-        } else if (theme === "Light") {
+        } else {
             document.documentElement.classList.add("light");
             document.documentElement.classList.remove("dark");
+        }
+
+        if(properties?.mono) {
+            document.documentElement.classList.add("mono");
+        } else {
+            document.documentElement.classList.remove("mono");
         }
 
     }, [theme]);

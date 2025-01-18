@@ -43,6 +43,10 @@ html.bw {
   -webkit-filter: saturate(0);
 }
 
+.mono * {
+  font-family: var(--font-geist-mono), monospace;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
