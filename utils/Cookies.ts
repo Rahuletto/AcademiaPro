@@ -1,72 +1,72 @@
 import Storage from "./Storage";
 
 export const Cookie = {
-  clear() {
-    if (typeof document === 'undefined') return null;
-    const cookies = document.cookie.split(";");
-    localStorage.clear();
-    for (let i = 0; i < cookies.length; i++) {
-      const cookie = cookies[i];
-      const eqPos = cookie.indexOf("=");
-      const name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
-      document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
-    }
-  },
+	clear() {
+		if (typeof document === "undefined") return null;
+		const cookies = document.cookie.split(";");
+		localStorage.clear();
+		for (let i = 0; i < cookies.length; i++) {
+			const cookie = cookies[i];
+			const eqPos = cookie.indexOf("=");
+			const name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+			document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+		}
+	},
 
-  set(name: string, value: string, expirationMonths: number = 3) {
-    if (typeof document === 'undefined') return null;
+	set(name: string, value: string, expirationMonths = 3) {
+		if (typeof document === "undefined") return null;
 
-    const exdate = new Date();
-    exdate.setMonth(exdate.getMonth() + expirationMonths);
-  
-    const encodedValue = encodeURIComponent(value);
-  
-    const cookieString = `${name}=${encodedValue}; expires=${exdate.toUTCString()}; path=/; ${
-      window.location.hostname === 'localhost' ? '' : 'Secure; '
-    }SameSite=Lax`;
-  
-    document.cookie = cookieString;
+		const exdate = new Date();
+		exdate.setMonth(exdate.getMonth() + expirationMonths);
 
-    Storage.set(name, value);
-    return true;
-  },
+		const encodedValue = encodeURIComponent(value);
 
-  get(name: string): string | null {
-    if (typeof document === 'undefined') return null;
+		const cookieString = `${name}=${encodedValue}; expires=${exdate.toUTCString()}; path=/; ${
+			window.location.hostname === "localhost" ? "" : "Secure; "
+		}SameSite=Lax`;
 
-    const nameEQ = `${encodeURIComponent(name)}=`;
-    const cookies = document.cookie.split(";");
+		document.cookie = cookieString;
 
-    for (let i = 0; i < cookies.length; i++) {
-      let cookie = cookies[i].trim();
-      if (cookie.indexOf(nameEQ) === 0) {
-        return decodeURIComponent(cookie.substring(nameEQ.length));
-      }
-    }
+		Storage.set(name, value);
+		return true;
+	},
 
-    return Storage.get(name, null);
-  },
+	get(name: string): string | null {
+		if (typeof document === "undefined") return null;
+
+		const nameEq = `${encodeURIComponent(name)}=`;
+		const cookies = document.cookie.split(";");
+
+		for (let i = 0; i < cookies.length; i++) {
+			const cookie = cookies[i].trim();
+			if (cookie.indexOf(nameEq) === 0) {
+				return decodeURIComponent(cookie.substring(nameEq.length));
+			}
+		}
+
+		return Storage.get(name, null);
+	},
 };
 
 export function getCookie(cookie: string, name: string) {
-  // const regex = new RegExp(`(^| )${name}=([^;]+)`);
-  // const match = cookie.match(regex);
-  // if (match) {
-  //   return match[2];
-  // }
-  return cookie;
+	// const regex = new RegExp(`(^| )${name}=([^;]+)`);
+	// const match = cookie.match(regex);
+	// if (match) {
+	//   return match[2];
+	// }
+	return cookie;
 }
 
 export function encode(str: string): string {
-  let hash = 2166136261;
-  for (let i = 0; i < str?.length; i++) {
-    hash ^= str.charCodeAt(i);
-    hash +=
-      (hash << 1) + (hash << 4) + (hash << 7) + (hash << 8) + (hash << 24);
-  }
-  return (
-    (hash >>> 0).toString() +
-    (hash >>> 1).toString(16) +
-    (hash >>> 2).toString(32)
-  );
+	let hash = 2166136261;
+	for (let i = 0; i < str?.length; i++) {
+		hash ^= str.charCodeAt(i);
+		hash +=
+			(hash << 1) + (hash << 4) + (hash << 7) + (hash << 8) + (hash << 24);
+	}
+	return (
+		(hash >>> 0).toString() +
+		(hash >>> 1).toString(16) +
+		(hash >>> 2).toString(32)
+	);
 }
