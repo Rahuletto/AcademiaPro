@@ -4,70 +4,105 @@
 
 /* styles/global.css */
 html {
-  --sidebar-width: 310px;
-  --metacolor: #11151b;
-  --background-normal: 17 21 27;
-  --background-light: 30 35 43;
-  --background-dark: 6 9 13;
-  --background-darker: 4 7 11;
-  --input: 255 255 255 / 0.03;
-  --button: 18 22 27;
-  --side: 23 29 38;
-  --accent: 179 179 209;
-  --color: 254 254 254;
-  --error-background: 29 12 12;
-  --error-color: 247 91 91;
-  --warn-background: 43 40 31;
-  --warn-color: 255 202 99;
-  --success-background: 17 37 32;
-  --success-color: 124 235 155;
-  --info-background: 27 29 43;
-  --info-color: 124 179 235;
-  --theory: 242 216 105;
-  --practical: 105 224 105;
+	--sidebar-width: 310px;
+	--metacolor: #11151b;
+	--background-normal: 17 21 27;
+	--background-light: 30 35 43;
+	--background-dark: 6 9 13;
+	--background-darker: 4 7 11;
+	--input: 255 255 255 / 0.03;
+	--button: 18 22 27;
+	--side: 23 29 38;
+	--accent: 179 179 209;
+	--color: 254 254 254;
+	--error-background: 29 12 12;
+	--error-color: 247 91 91;
+	--warn-background: 43 40 31;
+	--warn-color: 255 202 99;
+	--success-background: 17 37 32;
+	--success-color: 124 235 155;
+	--info-background: 27 29 43;
+	--info-color: 124 179 235;
+	--theory: 242 216 105;
+	--practical: 105 224 105;
 }
 
 html,
 body {
-  scroll-behavior: smooth;
-  min-height: 100vh !important;
-  transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
+	scroll-behavior: smooth;
+	min-height: 100vh !important;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
 }
 
 html.bw {
-  filter: saturate(0);
-  -webkit-filter: saturate(0);
+	filter: saturate(0);
+	-webkit-filter: saturate(0);
 }
 
 .mono * {
-  font-family: var(--font-geist-mono), monospace;
+	font-family: var(--font-geist-mono), monospace;
+}
+
+.animate-gradient {
+	background-size: 1000% 1000%;
+	animation: gradient 6s ease infinite;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
 }
 
 @layer base {
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+	input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
 
-  :root {
-    --radius: 0.5rem;
-  }
+	:root {
+		--radius: 0.5rem;
+	}
 }
 
 @media (max-width: 1024px) {
-  #content {
-    margin-left: 0 !important;
-    transform: translateX(var(--sidebar-width));
-  }
+	#content {
+		margin-left: 0 !important;
+		transform: translateX(var(--sidebar-width));
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 100%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes twinkle {
+	0%,
+	100% {
+		opacity: 0.2;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+@keyframes move {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(5px, 5px);
+	}
 }
