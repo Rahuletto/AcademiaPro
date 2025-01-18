@@ -61,17 +61,17 @@ export default async function Academia() {
 			<div className="flex gap-3 items-center justify-center mt-8">
 				{cookie?.value ? (
 					<Link
-						href="/auth/login"
-						className="text-md flex w-auto transform items-center justify-center rounded-2xl border-2 border-transparent bg-light-accent px-5 py-2 text-lg font-semibold text-light-background-light transition-all duration-150  dark:bg-dark-accent dark:text-dark-background-darker hover:opacity-80"
-					>
-						Login
-					</Link>
-				) : (
-					<Link
 						href="/academia"
 						className="text-md flex w-auto transform items-center justify-center rounded-2xl border-2 border-transparent bg-light-accent px-5 py-2 text-lg font-semibold text-light-background-light transition-all duration-150  dark:bg-dark-accent dark:text-dark-background-darker hover:opacity-80"
 					>
 						Dashboard
+					</Link>
+				) : (
+					<Link
+						href="/auth/login"
+						className="text-md flex w-auto transform items-center justify-center rounded-2xl border-2 border-transparent bg-light-accent px-5 py-2 text-lg font-semibold text-light-background-light transition-all duration-150  dark:bg-dark-accent dark:text-dark-background-darker hover:opacity-80"
+					>
+						Login
 					</Link>
 				)}
 				<Link
