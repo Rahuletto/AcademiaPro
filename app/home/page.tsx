@@ -55,7 +55,7 @@ export default async function Academia() {
 				<br />
 				your academics.
 			</h1>
-			<p className="text-xl font-medium opacity-70 text-light-color dark:text-dark-color">
+			<p className="text-xl font-medium text-center opacity-70 text-light-color dark:text-dark-color">
 				View, predict, and strategize your success.
 			</p>
 			<div className="flex gap-3 items-center justify-center mt-8">
