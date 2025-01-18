@@ -1,4 +1,24 @@
 {
+	"linter": {
+		"rules": {
+			"a11y": {
+				"useSemanticElements": "off"
+			},
+			"suspicious": {
+				"noDebugger": "off",
+				"noConsoleLog": "info",
+				"noArrayIndexKey": "off",
+				"noExplicitAny": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off"
+			},
+			"style": {
+				"noShoutyConstants": "warn",
+				"useNamingConvention": "warn"
+			}
+		}
+	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
