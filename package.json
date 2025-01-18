@@ -37,7 +37,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
 		"@builder.io/partytown": "^0.10.3",
-		"@eslint/eslintrc": "^3",
+		"@eslint/eslintrc": "^3.2.0",
 		"@types/node": "^20",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
