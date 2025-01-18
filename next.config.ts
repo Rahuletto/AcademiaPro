@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
 		// reactCompiler: true,
 		parallelServerCompiles: true,
 		nextScriptWorkers: true,
-		useLightningcss: true,
+		// useLightningcss: true,
 		turbo: {
 			treeShaking: true,
 		},
