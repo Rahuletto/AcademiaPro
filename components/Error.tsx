@@ -4,7 +4,7 @@ import { Link } from "next-view-transitions";
 import { useEffect } from "react";
 import { BiError } from "react-icons/bi";
 
-export default function Error({ error }: { error: Error | string }) {
+export default function ErrorComponent({ error }: { error: Error | string }) {
 	useEffect(() => {
 		console.error(error);
 	}, [error]);
