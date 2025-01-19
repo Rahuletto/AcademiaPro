@@ -55,10 +55,14 @@ export function Sidebar({
 	}, [isOpen]);
 
 	useEffect(() => {
+		const isMobile = window.innerWidth <= 1024;
+		if (isMobile) setIsOpen(false);
+
 		const handleResize = () => {
-			setIsOpen(true);
+			const isMobile = window.innerWidth <= 1024;
+			setIsOpen(!isMobile);
 		};
-		window.addEventListener("resize", () => handleResize());
+		window.addEventListener("resize", handleResize);
 
 		return () => window.removeEventListener("resize", handleResize);
 	}, []);

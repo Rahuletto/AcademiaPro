@@ -71,6 +71,9 @@ html.bw {
 }
 
 @media (max-width: 1024px) {
+	html {
+		--sidebar-width: 0px;
+	}
 	#content {
 		margin-left: 0 !important;
 		transform: translateX(var(--sidebar-width));
