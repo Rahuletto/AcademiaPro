@@ -121,8 +121,9 @@ function TableCell({ cell }: { cell: ScheduleSlot | null }) {
 			<p tw="text-2xl font-semibold text-left mr-3">
 				{cell?.name.split(":")[0]}
 			</p>
-			<div tw="flex items-end justify-start w-full opacity-60 flex">
+			<div tw="flex items-end justify-between w-full opacity-60 flex">
 				<p tw="text-lg font-semibold">{cell?.roomNo}</p>
+				{cell?.isOptional && <p tw="text-lg font-semibold">(Optional)</p>}
 			</div>
 		</div>
 	);

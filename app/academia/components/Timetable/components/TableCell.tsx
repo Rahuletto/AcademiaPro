@@ -33,8 +33,13 @@ export default function TableCell({
 				<p className="text-xs font-semibold text-left mr-3">
 					{cell?.name.split(":")[0]}
 				</p>
-				<div className="flex items-end justify-start w-full opacity-60">
+				<div className="flex items-end justify-between w-full opacity-60">
 					<p className="text-xs font-semibold">{cell?.roomNo}</p>
+					{cell?.isOptional && (
+						<p className="text-xs absolute left-2 bottom-6 font-semibold">
+							(Optional)
+						</p>
+					)}
 				</div>
 				<div className="opacity-40 md:opacity-0 transition-all duration-200 absolute right-2 bottom-1 lg:group-hover:opacity-40">
 					<p className="text-[10px] font-semibold">

@@ -125,7 +125,7 @@ export default function Predictor({
 										Predict Attendance
 									</h2>
 									<p className=" text-xs font-medium text-light-accent opacity-80 dark:text-dark-accent">
-										This feature is under development.
+										Let&apos;s you predict the percentages with leaves and ODs
 									</p>
 								</div>
 

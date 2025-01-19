@@ -24,7 +24,7 @@ const serwist = new Serwist({
 	fallbacks: {
 		entries: [
 			{
-				url: "/~offline",
+				url: "/offline",
 				matcher({ request }) {
 					return request.destination === "document";
 				},
@@ -48,6 +48,13 @@ self.addEventListener("push", (event) => {
 	event.waitUntil(
 		self.registration.showNotification("Push Notification", options),
 	);
+});
+
+// Cache
+self.addEventListener("fetch", (event) => {
+	if (event.request.url === "/academia") {
+		return false;
+	}
 });
 
 serwist.addEventListeners();
