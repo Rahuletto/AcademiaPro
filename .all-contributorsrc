@@ -1,4 +1,5 @@
 {
 	"projectName": "classpro",
-	"projectOwner": "rahuletto"
+	"projectOwner": "rahuletto",
+	"commitConvention": "eslint"
 }
