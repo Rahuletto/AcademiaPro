@@ -4,33 +4,30 @@ import { useTheme } from "@/provider/ThemeProvider";
 import React, { useState } from "react";
 import { BiBrush } from "react-icons/bi";
 
-const sortedThemes = [...Themes, { title: "BW", displayName: "Batman" }].sort((a, b) => {
-    // Special handling for Light and Dark themes
-    if (a.title === "Light") return -1;
-    if (b.title === "Light") return 1;
-    if (a.title === "Dark") return -1;
-    if (b.title === "Dark") return 1;
-    
-    // Alphabetical sort for all other themes
-    return a.title.localeCompare(b.title);
-});
-
 export default function ThemeToggle({
-    className,
+	className,
 }: {
-    className?: string;
+	className?: string;
 }) {
-    const { theme: actualtheme, setTheme } = useTheme();
-    const [open, setOpen] = useState(false);
-    const selectRef = React.useRef<HTMLSelectElement>(null);
+	const { theme: actualtheme, setTheme } = useTheme();
+	const [open, setOpen] = useState(false);
+	const selectRef = React.useRef<HTMLSelectElement>(null);
 
-    const handleButtonClick = () => {
-        setOpen((prev) => !prev);
-        if (selectRef.current) {
-            selectRef.current.focus();
-            selectRef.current.size = sortedThemes.length;
-        }
-    };
+	// Sort themes: "Light" and "Dark" first, followed by others in alphabetical order
+	const sortedThemes = [
+		...Themes.filter((theme) => theme.title === "Light" || theme.title === "Dark"),
+		...Themes.filter((theme) => theme.title !== "Light" && theme.title !== "Dark").sort((a, b) =>
+			a.title.localeCompare(b.title)
+		),
+	];
+
+	const handleButtonClick = () => {
+		setOpen((prev) => !prev);
+		if (selectRef.current) {
+			selectRef.current.focus();
+			selectRef.current.size = sortedThemes.length;
+		}
+	};
 
 	return (
 		<div className={className ?? ""}>
@@ -53,8 +50,7 @@ export default function ThemeToggle({
 							aria-orientation="vertical"
 							aria-labelledby="options-menu"
 						>
-							{Themes.map((theme) => (
-								// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
+							{sortedThemes.map((theme) => (
 								<li
 									key={theme.title}
 									className={`cursor-pointer select-none rounded-lg font-semibold relative py-2 pl-3 pr-9 hover:bg-light-input dark:hover:bg-dark-input ${actualtheme === theme.title ? "bg-light-input dark:bg-dark-input" : ""}`}
@@ -66,7 +62,6 @@ export default function ThemeToggle({
 									{theme.title}
 								</li>
 							))}
-							{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 							<li
 								key={"BW"}
 								className={`cursor-pointer select-none rounded-lg font-semibold relative py-2 pl-3 pr-9 hover:bg-light-input dark:hover:bg-dark-input ${actualtheme === "BW" ? "bg-light-input dark:bg-dark-input" : ""}`}
