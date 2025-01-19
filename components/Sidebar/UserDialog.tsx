@@ -18,7 +18,6 @@ export default function UserDialog({
 
 	return (
 		<div
-			// biome-ignore lint/a11y/useSemanticElements: this acts as backdrop
 			role="button"
 			tabIndex={0}
 			className="fixed inset-0 z-50 flex animate-fastfade items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm transition duration-150"
