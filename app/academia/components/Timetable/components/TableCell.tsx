@@ -25,7 +25,7 @@ export default function TableCell({
 
 	return (
 		<div
-			className={`border-[0.3px]  flex flex-col text-black group relative justify-between items-start ${!cell || cell.isOptional ? "bg-white/80 dark:bg-black/60" : isClassGoing ? (inRange ? "" : "bg-white/30 dark:bg-black/30") : ""} border-dark-background-dark/60 ${first ? "xl:first:rounded-l-xl first:rounded-t-xl xl:first:rounded-tr-none" : ""} ${last ? "xl:last:rounded-r-xl xl:last:rounded-bl-none last:rounded-b-xl" : ""}`}
+			className={`border-[0.3px] flex flex-col text-black group relative justify-between items-start ${!cell || cell.isOptional ? "bg-white/80 dark:bg-black/60" : isClassGoing ? (inRange ? "" : "bg-white/30 dark:bg-black/30") : ""} border-dark-background-dark/60 ${first ? "lg:first:rounded-l-xl first:rounded-t-xl lg:first:rounded-tr-none" : ""} ${last ? "lg:last:rounded-r-xl lg:last:rounded-bl-none last:rounded-b-xl" : ""}`}
 		>
 			<div
 				className={`flex flex-col min-h-16 relative h-full w-full p-2 justify-between items-start ${cell?.isOptional ? "opacity-40" : ""}`}
@@ -36,7 +36,7 @@ export default function TableCell({
 				<div className="flex items-end justify-start w-full opacity-60">
 					<p className="text-xs font-semibold">{cell?.roomNo}</p>
 				</div>
-				<div className="opacity-40 lg:opacity-0 transition-all duration-200 absolute right-2 bottom-1 lg:group-hover:opacity-40">
+				<div className="opacity-40 md:opacity-0 transition-all duration-200 absolute right-2 bottom-1 lg:group-hover:opacity-40">
 					<p className="text-[10px] font-semibold">
 						{timeConvert(start)}-{timeConvert(end)}
 					</p>
