@@ -16,7 +16,7 @@ const nextConfig: NextConfig = {
 
 	experimental: {
 		// reactCompiler: true,
-		parallelServerCompiles: true,
+		// parallelServerCompiles: true,
 		nextScriptWorkers: true,
 		// useLightningcss: true,
 	},
