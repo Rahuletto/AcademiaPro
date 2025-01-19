@@ -64,8 +64,15 @@ export function Sidebar({
 		};
 		window.addEventListener("resize", handleResize);
 
-		return () => window.removeEventListener("resize", handleResize);
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
 	}, []);
+
+	function handleClick() {
+		const isMobile = window.innerWidth <= 1024;
+		setIsOpen(!isMobile);
+	}
 
 	return (
 		<>
@@ -82,35 +89,35 @@ export function Sidebar({
 							<h1 className="text-3xl font-semibold">ClassPro</h1>
 							<ThemeToggle />
 						</div>
-						<div className="flex my-4">{isOpen && dayorder}</div>
+						<div className="my-4 flex">{dayorder}</div>
 					</div>
 					{!isOpen && mini}
 
 					<hr className="border-t-light-side dark:border-t-dark-side" />
 
 					<div className="text-md flex flex-col gap-2 font-semibold text-light-color dark:text-dark-color">
-						<Link href="/academia">
+						<Link onClick={handleClick} href="/academia">
 							<FaBookOpen className="text-xl" />
 							Home
 						</Link>
 
-						<Link href="/academia/courses">
+						<Link onClick={handleClick} href="/academia/courses">
 							<FaGraduationCap className="text-xl" />
 							Course list
 						</Link>
 
-						<Link href="/academia/calendar">
+						<Link onClick={handleClick} href="/academia/calendar">
 							<BsCalendar2WeekFill className="text-xl" />
 							Calendar
 						</Link>
 
 						<hr className="border-t-light-side dark:border-t-dark-side" />
 
-						<Link href="/academia/links">
+						<Link onClick={handleClick} href="/academia/links">
 							<FaLink className="text-xl" />
 							Links
 						</Link>
-						<Link href="/academia/faculties">
+						<Link onClick={handleClick} href="/academia/faculties">
 							<FaUserGraduate className="text-xl" />
 							Faculties
 						</Link>
