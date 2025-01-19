@@ -1,5 +1,21 @@
 {
-	"projectName": "classpro",
-	"projectOwner": "rahuletto",
-	"commitConvention": "eslint"
+  "projectName": "ClassPro",
+  "projectOwner": "Rahuletto",
+  "commitConvention": "eslint",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "DebadityaMalakar",
+      "name": "Debaditya Malakar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123065261?v=4",
+      "profile": "https://portfolio-debaditya.vercel.app/",
+      "contributions": [
+        "design"
+      ]
+    }
+  ]
 }
