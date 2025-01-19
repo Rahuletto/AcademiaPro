@@ -55,6 +55,7 @@ This project was intended to show the timetable and attendance. but it grew and 
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://portfolio-debaditya.vercel.app/"><img src="https://avatars.githubusercontent.com/u/123065261?v=4?s=100" width="100px;" alt="Debaditya Malakar"/><br /><sub><b>Debaditya Malakar</b></sub></a><br /><a href="#design-DebadityaMalakar" title="Design">🎨</a> <a href="#code-DebadityaMalakar" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/root-daemon"><img src="https://avatars.githubusercontent.com/u/47695678?v=4?s=100" width="100px;" alt="Srivishal Sivasubramanian"/><br /><sub><b>Srivishal Sivasubramanian</b></sub></a><br /><a href="#code-root-daemon" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
