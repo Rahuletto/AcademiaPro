@@ -21,15 +21,54 @@ export function useTheme() {
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
 	const [theme, setTheme] = useState("");
+	const updateFavicon = async () => {
+		try {
+			const response = await fetch("/icons/icon.svg");
+			const svgText = await response.text();
+
+			const parser = new DOMParser();
+			const svgDoc = parser.parseFromString(svgText, "image/svg+xml");
+
+			const rect = svgDoc.querySelector("rect");
+			const path = svgDoc.querySelector("path");
+
+			if (rect && path) {
+				const bgColor = getComputedStyle(document.documentElement)
+					.getPropertyValue("--background-normal")
+					.trim();
+				const accentColor = getComputedStyle(document.documentElement)
+					.getPropertyValue("--accent")
+					.trim();
+
+				rect.setAttribute("fill", `rgb(${bgColor})`);
+				path.setAttribute("fill", `rgb(${accentColor})`);
+
+				// Update favicon
+				const svgData = new XMLSerializer().serializeToString(svgDoc);
+				const faviconUrl = `data:image/svg+xml;base64,${btoa(svgData)}`;
+
+				const link = (document.querySelector("link[rel*='icon']") ||
+					document.createElement("link")) as HTMLLinkElement;
+				link.type = "image/svg+xml";
+				link.rel = "icon";
+				link.href = faviconUrl;
+				document.head.appendChild(link);
+			}
+		} catch (error) {
+			console.error("Error updating icons:", error);
+		}
+	};
 
 	useEffect(() => {
 		if (theme === "") return;
 		const properties = Themes.find((t) => t.title === theme);
+
 		if (properties?.properties.metacolor) {
 			document
 				.querySelector('meta[name="theme-color"]')
 				?.setAttribute("content", properties.properties.metacolor);
 		}
+
 		const root = window.document.documentElement;
 		localStorage.setItem("theme", theme);
 		if (theme === "Batman") {
@@ -55,6 +94,9 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 		} else {
 			document.documentElement.classList.remove("mono");
 		}
+
+		// Update favicon after theme properties are set
+		updateFavicon();
 	}, [theme]);
 
 	useEffect(() => {

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/react";
@@ -14,9 +14,8 @@ import type { ReactNode } from "react";
 const APP_NAME = "ClassPro";
 const APP_DEFAULT_TITLE = "ClassPro";
 const APP_TITLE_TEMPLATE = "%s - PWA App";
-const APP_DESCRIPTION =
-	"📖 University data, beautifully presented at your fingertips";
-const PRODUCTION_URL = "https://class-pro.vercel.app";
+const APP_DESCRIPTION = "Better way to manage your academics.";
+const PRODUCTION_URL = "https://apro-beta.vercel.app";
 
 export const metadata: Metadata = {
 	metadataBase: new URL(
@@ -33,7 +32,7 @@ export const metadata: Metadata = {
 	manifest: "/manifest.json",
 	appleWebApp: {
 		capable: true,
-		statusBarStyle: "default",
+		statusBarStyle: "black-translucent",
 		title: APP_DEFAULT_TITLE,
 	},
 	formatDetection: {
@@ -68,19 +67,23 @@ export const metadata: Metadata = {
 	icons: {
 		icon: [
 			{
-				url: "/icons/android-icon-192x192.png",
+				url: "/icons/icon.svg",
 				sizes: "192x192",
-				type: "image/png",
+				type: "image/svg+xml",
 			},
 		],
 		apple: [
 			{
-				url: "/icons/maskable_icon_x192.png",
+				url: "/icons/icon.svg",
 				sizes: "192x192",
-				type: "image/png",
+				type: "image/svg+xml",
 			},
 		],
 	},
+};
+
+export const viewport: Viewport = {
+	themeColor: "#11151b",
 };
 
 export default async function RootLayout({
@@ -96,6 +99,7 @@ export default async function RootLayout({
 			>
 				<ErrorBoundary>
 					<ThemeProvider>
+						<meta name="apple-mobile-web-app-title" content="ClassPro" />
 						<meta
 							name="theme-color"
 							media="(prefers-color-scheme: dark)"

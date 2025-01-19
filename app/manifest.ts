@@ -1,0 +1,112 @@
+import type { MetadataRoute } from "next";
+
+export default function manifest(): MetadataRoute.Manifest {
+	return {
+		name: "ClassPro",
+		short_name: "ClassPro",
+		description: "Better way to manage your academics.",
+		theme_color: "#11151b",
+		lang: "en",
+		background_color: "#11151b",
+		start_url: "https://class-pro.vercel.app/",
+		scope: "https://class-pro.vercel.app/",
+		launch_handler: {
+			client_mode: "focus-existing",
+		},
+		display_override: ["fullscreen", "window-controls-overlay"],
+		display: "standalone",
+		id: "7272005",
+		dir: "ltr",
+		orientation: "portrait",
+		categories: [
+			"education",
+			"lifestyle",
+			"navigation",
+			"personalization",
+			"productivity",
+		],
+		icons: [
+			{
+				src: "/icons/maskable_icon_x192.png",
+				sizes: "192x192",
+				type: "image/png",
+				purpose: "maskable",
+			},
+			{
+				src: "/icons/maskable_icon_x512.png",
+				sizes: "512x512",
+				type: "image/png",
+				purpose: "maskable",
+			},
+		],
+		screenshots: [
+			{
+				src: "/screenshots/phone/academia.webp",
+				type: "image/webp",
+				sizes: "430x932",
+				form_factor: "narrow",
+				label: "Academia Page",
+				platform: "ios",
+			},
+			{
+				src: "/screenshots/phone/calendar.webp",
+				type: "image/webp",
+				sizes: "430x932",
+				form_factor: "narrow",
+				label: "Calendar Planner",
+				platform: "ios",
+			},
+			{
+				src: "/screenshots/phone/faculties.webp",
+				type: "image/webp",
+				sizes: "430x932",
+				form_factor: "narrow",
+				label: "Faculties Search",
+				platform: "ios",
+			},
+			{
+				src: "/screenshots/phone/predict.webp",
+				type: "image/webp",
+				sizes: "430x932",
+				form_factor: "narrow",
+				label: "Attendance Prediction",
+				platform: "ios",
+			},
+			{
+				src: "/screenshots/wide/academia.webp",
+				type: "image/webp",
+				sizes: "1600x940",
+				label: "Academia Page",
+				form_factor: "wide",
+			},
+			{
+				src: "/screenshots/wide/calendar.webp",
+				type: "image/webp",
+				sizes: "1600x940",
+				label: "Calendar Planner",
+				form_factor: "wide",
+			},
+			{
+				src: "/screenshots/wide/faculties.webp",
+				type: "image/webp",
+				sizes: "1600x940",
+				form_factor: "wide",
+				label: "Faculties Search",
+			},
+			{
+				src: "/screenshots/wide/links.webp",
+				type: "image/webp",
+				sizes: "1600x940",
+				form_factor: "wide",
+				label: "Links Search",
+			},
+			{
+				src: "/screenshots/wide/predict.webp",
+				type: "image/webp",
+				sizes: "1600x940",
+				form_factor: "wide",
+				label: "Attendance Prediction",
+			},
+		],
+	};
+}

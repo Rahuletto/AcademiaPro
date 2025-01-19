@@ -48,6 +48,8 @@ This project was intended to show the timetable and attendance. but it grew and 
 
 ## Contributors
 
+[![All Contributors](https://img.shields.io/github/all-contributors/Rahuletto/ClassPro?color=b3b3d1&style=for-the-badge)](#contributors)
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
@@ -66,7 +68,6 @@ This project was intended to show the timetable and attendance. but it grew and 
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-[![All Contributors](https://img.shields.io/github/all-contributors/Rahuletto/ClassPro?color=ee8449&style=flat-square)](#contributors)
 
 ---
 

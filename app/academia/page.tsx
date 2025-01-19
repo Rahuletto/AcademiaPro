@@ -27,7 +27,8 @@ export default async function Academia() {
 		.single();
 
 	if (error) {
-		console.error("Error fetching ophours:", error);
+		if (error.code === "PGRST116") ophours = json.ophour?.split(",") ?? [];
+		else console.error("Error fetching ophours:", error);
 	} else {
 		ophours = data?.ophour?.split(",");
 	}

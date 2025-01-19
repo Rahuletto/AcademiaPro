@@ -44,7 +44,7 @@ export default async function Academia() {
 				}}
 			/>
 			<Link
-				href=""
+				href="https://marban.hashnode.dev/classpro-v3"
 				className="text-sm md:text-base font-mono text-center opacity-50 flex items-center justify-center gap-4 mb-4 text-light-color dark:text-dark-color"
 			>
 				<VscMegaphone className="-rotate-12 text-xl" /> Read about ClassPro v3
