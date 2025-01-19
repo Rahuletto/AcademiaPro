@@ -1,6 +1,7 @@
 "use client";
 import { Themes } from "@/misc/theme";
 import { useTheme } from "@/provider/ThemeProvider";
+import { Link } from "next-view-transitions";
 import React, { useState } from "react";
 import { createPortal } from "react-dom";
 import { BiBrush } from "react-icons/bi";
@@ -54,7 +55,7 @@ export default function ThemeToggle({
 								e.stopPropagation();
 							}}
 							onKeyDown={() => {}}
-							className="relative max-h-[80vh] overflow-auto max-w-96 w-full rounded-2xl p-2 shadow-lg bg-light-background-normal dark:bg-dark-background-normal"
+							className="relative max-h-[80vh] overflow-auto max-w-96 w-full rounded-3xl p-2 shadow-lg bg-light-background-normal dark:bg-dark-background-normal"
 						>
 							<ul
 								className="p-1 text-sm text-light-color dark:text-dark-color flex flex-col gap-0.5"
@@ -70,7 +71,7 @@ export default function ThemeToggle({
 									// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 									<li
 										key={theme.title}
-										className={`cursor-pointer flex items-center justify-start gap-5 select-none rounded-lg font-semibold relative py-2 pl-3 pr-9 hover:bg-light-input dark:hover:bg-dark-input ${actualtheme === theme.title ? "bg-light-input dark:bg-dark-input" : ""}`}
+										className={`cursor-pointer flex items-center justify-start gap-5 select-none rounded-xl font-semibold relative py-2 pl-3 pr-9 hover:bg-light-input dark:hover:bg-dark-input ${actualtheme === theme.title ? "bg-light-input dark:bg-dark-input" : ""}`}
 										onClick={() => {
 											setTheme(theme.title);
 										}}
@@ -78,6 +79,14 @@ export default function ThemeToggle({
 										<ColorPalette properties={theme.properties} /> {theme.title}
 									</li>
 								))}
+								<Link
+									href="https://github.com/rahuletto/classpro/blob/ssr/CONTRIBUTING.md#theming"
+									className={
+										"cursor-pointer flex bg-light-accent dark:bg-dark-accent items-center justify-start gap-5 select-none rounded-xl font-semibold relative py-2 mt-4 px-6 text-light-background-light dark:text-dark-background-darker"
+									}
+								>
+									Bring your theme
+								</Link>
 							</ul>
 						</div>
 					</div>,
