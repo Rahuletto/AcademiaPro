@@ -37,6 +37,14 @@
 			"avatar_url": "https://avatars.githubusercontent.com/u/123065261?v=4",
 			"profile": "https://portfolio-debaditya.vercel.app/",
 			"contributions": ["design"]
+		},
+		{
+			"login": "Aakarsh-Kumar",
+			"name": "Aakarsh Kumar",
+			"avatar_url": "https://avatars.githubusercontent.com/u/72206467?v=4",
+			"profile": "https://github.com/Aakarsh-Kumar",
+			"contributions": ["code", "bug"]
 		}
-	]
+	],
+	"repoType": "github"
 }
