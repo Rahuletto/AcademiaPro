@@ -47,14 +47,14 @@ export default function ThemeToggle({
 								setOpen(false);
 							}
 						}}
-						className="fixed  transition-all duration-75 animate-fadeIn inset-0 z-50 flex items-center justify-center bg-opacity-30 dark:bg-opacity-30 backdrop-blur-sm bg-white dark:bg-black"
+						className="fixed transition-all duration-75 animate-fadeIn inset-0 z-50 flex items-center justify-center bg-opacity-30 dark:bg-opacity-30 backdrop-blur-sm bg-white dark:bg-black"
 					>
 						<div
 							onClick={(e) => {
 								e.stopPropagation();
 							}}
 							onKeyDown={() => {}}
-							className="relative max-w-96 w-full rounded-2xl p-2 shadow-lg bg-light-background-normal dark:bg-dark-background-normal"
+							className="relative max-h-[80vh] overflow-auto max-w-96 w-full rounded-2xl p-2 shadow-lg bg-light-background-normal dark:bg-dark-background-normal"
 						>
 							<ul
 								className="p-1 text-sm text-light-color dark:text-dark-color flex flex-col gap-0.5"
@@ -75,8 +75,7 @@ export default function ThemeToggle({
 											setTheme(theme.title);
 										}}
 									>
-										<ColorPalette properties={theme.properties} />{" "}
-										{theme.title}
+										<ColorPalette properties={theme.properties} /> {theme.title}
 									</li>
 								))}
 							</ul>
@@ -99,9 +98,7 @@ function ColorPalette({
 				(key, index) => (
 					<div
 						key={key}
-						className={
-							"w-4 h-4  rounded-lg"
-						}
+						className={"w-4 h-4  rounded-lg"}
 						style={{
 							backgroundColor: `rgb(${properties[key]})`,
 							marginLeft: index !== 0 ? "-8px" : "0px",
