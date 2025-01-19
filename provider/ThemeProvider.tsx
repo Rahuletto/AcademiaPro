@@ -29,9 +29,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 		localStorage.setItem("theme", theme);
 		if (theme === "BW") {
 			const dark = Themes.find((t) => t.title === "Dark");
-			document.documentElement.classList.add("dark");
-			document.documentElement.classList.remove("light");
+
 			if (dark) {
+				document.documentElement.classList.add("dark");
+				document.documentElement.classList.remove("light");
 				for (const [key, value] of Object.entries(dark.properties)) {
 					root.style.setProperty(`--${key}`, value.toString());
 				}
@@ -49,7 +50,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 		if (properties?.mode === "dark") {
 			document.documentElement.classList.add("dark");
 			document.documentElement.classList.remove("light");
-		} else {
+		} else if (properties?.mode === "light") {
 			document.documentElement.classList.add("light");
 			document.documentElement.classList.remove("dark");
 		}
