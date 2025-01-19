@@ -5,6 +5,7 @@ import { Time, timeConvert } from "@/utils/Times";
 
 export async function GET() {
 	const json = await fetchUserData();
+
 	const timetable = json.timetable.schedule;
 
 	const ophours = json.ophour?.split(",");

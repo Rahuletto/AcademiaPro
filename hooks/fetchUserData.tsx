@@ -28,7 +28,6 @@ async function fetchData(): Promise<AllResponse> {
 		headers: {
 			"Content-Type": "application/json",
 			"X-CSRF-Token": cookie?.value ?? "",
-			// biome-ignore lint/style/useNamingConvention: <explanation>
 			Authorization: `Bearer ${token()}`,
 		},
 	});

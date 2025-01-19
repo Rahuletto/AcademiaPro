@@ -3,7 +3,6 @@ export const Themes = [
 		title: "Light",
 		mode: "light",
 		properties: {
-			"sidebar-width": "310px",
 			metacolor: "#f5f5f5",
 			"background-normal": "245 245 245",
 			"background-light": "255 255 255",
@@ -30,7 +29,6 @@ export const Themes = [
 		title: "Dark",
 		mode: "dark",
 		properties: {
-			"sidebar-width": "310px",
 			metacolor: "#11151b",
 			"background-normal": "17 21 27",
 			"background-light": "30 35 43",
@@ -57,7 +55,6 @@ export const Themes = [
 		title: "Catppuccin Mocha",
 		mode: "dark",
 		properties: {
-			"sidebar-width": "310px",
 			metacolor: "#181825",
 			"background-normal": "24 24 37",
 			"background-light": "30 32 48",
@@ -84,7 +81,6 @@ export const Themes = [
 		title: "GitHub Dark",
 		mode: "dark",
 		properties: {
-			"sidebar-width": "310px",
 			metacolor: "#0d1117",
 			"background-normal": "13 17 23",
 			"background-light": "22 27 34",
@@ -111,7 +107,6 @@ export const Themes = [
 		title: "Gold",
 		mode: "dark",
 		properties: {
-			"sidebar-width": "310px",
 			metacolor: "#1a1a1a",
 			"background-normal": "19 19 19",
 			"background-light": "27 26 26",
@@ -139,7 +134,6 @@ export const Themes = [
 		mono: true,
 		mode: "dark",
 		properties: {
-			"sidebar-width": "310px",
 			metacolor: "#0a0a0a",
 			"background-normal": "20 20 20",
 			"background-light": "30 30 30",
