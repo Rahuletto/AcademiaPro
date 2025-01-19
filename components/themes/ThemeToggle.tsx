@@ -89,6 +89,7 @@ export default function ThemeToggle({
 								))}
 								<Link
 									href="https://github.com/rahuletto/classpro/blob/ssr/CONTRIBUTING.md#theming"
+									target="_blank"
 									className={
 										"cursor-pointer flex bg-light-accent dark:bg-dark-accent items-center justify-start gap-5 select-none rounded-xl font-semibold relative py-2 mt-4 px-6 text-light-background-light dark:text-dark-background-darker"
 									}
