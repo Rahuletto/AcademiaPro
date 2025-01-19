@@ -187,20 +187,20 @@ export const Themes = [
 		mode: "dark",
 		properties: {
 			metacolor: "#2a2a2a",
-			"background-normal": "32 32 32",           // Darkened for better contrast
-			"background-light": "61 61 61",
-			"background-dark": "24 24 24",
-			"background-darker": "15 15 15",
+			"background-normal": "24 24 24",
+			"background-light": "31 31 31",
+			"background-dark": "15 15 15",
+			"background-darker": "8 8 8",
 			input: "255 255 255/0.05",
-			button: "174 28 40",
+			button: "174 28 40/0.2",
 			side: "61 40 35",
 			accent: "255 68 0",
 			color: "255 255 255",
-			"error-background": "51 17 17",            // Darkened for better visibility
+			"error-background": "51 17 17",
 			"error-color": "255 102 102",
-			"warn-background": "173 131 32",
+			"warn-background": "43 40 31",
 			"warn-color": "255 204 0",
-			"success-background": "17 51 25",          // Darkened for better visibility
+			"success-background": "17 51 25",
 			"success-color": "153 255 153",
 			"info-background": "24 45 102",
 			"info-color": "0 204 255",
