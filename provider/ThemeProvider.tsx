@@ -63,6 +63,12 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 		if (theme === "") return;
 		const properties = Themes.find((t) => t.title === theme);
 
+		if (properties?.properties.metacolor) {
+			document
+				.querySelector('meta[name="theme-color"]')
+				?.setAttribute("content", properties.properties.metacolor);
+		}
+
 		const root = window.document.documentElement;
 		localStorage.setItem("theme", theme);
 		if (theme === "Batman") {

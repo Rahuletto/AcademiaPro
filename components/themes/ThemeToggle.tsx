@@ -15,11 +15,19 @@ export default function ThemeToggle({
 	const [open, setOpen] = useState(false);
 	const selectRef = React.useRef<HTMLSelectElement>(null);
 
+	// Sort themes: "Light" and "Dark" first, followed by others in alphabetical order
+	const sortedThemes = [
+		...Themes.filter((theme) => theme.title === "Light" || theme.title === "Dark"),
+		...Themes.filter((theme) => theme.title !== "Light" && theme.title !== "Dark").sort((a, b) =>
+			a.title.localeCompare(b.title)
+		),
+	];
+
 	const handleButtonClick = () => {
 		setOpen((prev) => !prev);
 		if (selectRef.current) {
 			selectRef.current.focus();
-			selectRef.current.size = Themes.length;
+			selectRef.current.size = sortedThemes.length;
 		}
 	};
 
