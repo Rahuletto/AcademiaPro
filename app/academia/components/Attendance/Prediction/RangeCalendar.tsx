@@ -37,7 +37,7 @@ export function LeaveODRangeCalendar({
 
 	const handleCategoryAdd = (category: DateCategory) => {
 		if (window.navigator.vibrate) {
-			window.navigator.vibrate(80);
+			window.navigator.vibrate(30);
 		}
 		if (dateRange.from && dateRange.to) {
 			const newRange = { from: dateRange.from, to: dateRange.to, category };

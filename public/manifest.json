@@ -3,7 +3,7 @@
 	"short_name": "ClassPro",
 	"theme_color": "#11151b",
 	"lang": "en",
-	"background_color": "#11151B",
+	"background_color": "#11151b",
 	"start_url": "https://class-pro.vercel.app/",
 	"scope": "https://class-pro.vercel.app/",
 	"handle_links": "preferred",
@@ -27,26 +27,16 @@
 	},
 	"icons": [
 		{
-			"src": "/icons/maskable_icon.png",
-			"sizes": "512x512",
+			"src": "/icons/web-app-manifest-192x192.png",
+			"sizes": "192x192",
 			"type": "image/png",
 			"purpose": "maskable"
 		},
 		{
-			"src": "/icons/mono.png",
+			"src": "/icons/web-app-manifest-512x512.png",
 			"sizes": "512x512",
 			"type": "image/png",
-			"purpose": "monochrome"
-		},
-		{
-			"src": "/icons/android-icon-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/icons/apple-icon-180x180.png",
-			"sizes": "180x180",
-			"type": "image/png"
+			"purpose": "maskable"
 		}
 	],
 	"screenshots": [
