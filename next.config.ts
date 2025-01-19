@@ -1,4 +1,14 @@
 import type { NextConfig } from "next";
+import withSerwistInit from "@serwist/next";
+
+const withSerwist = withSerwistInit({
+	swSrc: "app/sw.ts",
+	swDest: "public/sw.js",
+	cacheOnNavigation: true,
+	dontCacheBustURLsMatching:
+		/^dist\/static\/([a-zA-Z0-9]+)\.([a-z0-9]+)\.(css|js)$/,
+	reloadOnOnline: true,
+});
 
 const nextConfig: NextConfig = {
 	poweredByHeader: false,
@@ -11,4 +21,4 @@ const nextConfig: NextConfig = {
 		// useLightningcss: true,
 	},
 };
-export default nextConfig;
+export default withSerwist(nextConfig);
