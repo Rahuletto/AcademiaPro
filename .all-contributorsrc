@@ -1,5 +1,21 @@
 {
-	"projectName": "classpro",
-	"projectOwner": "rahuletto",
-	"commitConvention": "eslint"
+  "projectName": "ClassPro",
+  "projectOwner": "Rahuletto",
+  "commitConvention": "eslint",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "Rahuletto",
+      "name": "Rahul Marban",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71836991?v=4",
+      "profile": "http://marban.is-a.dev",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
 }
