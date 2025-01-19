@@ -468,4 +468,82 @@ export const Themes = [
             practical: "120 250 120",
         },
     },
+	{
+        title: "Han Sooyoung",
+        mode: "dark",
+        properties: {
+            metacolor: "#282828",
+            "background-normal": "36 36 48",
+            "background-light": "46 46 60",
+            "background-dark": "24 24 36",
+            "background-darker": "16 16 24",
+            input: "255 255 255/0.03",
+            button: "50 40 60",
+            side: "45 45 55",
+            accent: "120 110 190", // Royal Purple
+            color: "245 245 245",
+            "error-background": "50 10 10",
+            "error-color": "255 70 70",
+            "warn-background": "80 20 20",
+            "warn-color": "240 90 90", // Deep Red
+            "success-background": "20 40 20",
+            "success-color": "120 240 140",
+            "info-background": "30 30 50",
+            "info-color": "160 160 180", // Metallic Silver
+            theory: "200 180 80", // Hidden Gold
+            practical: "100 200 100",
+        },
+    },
+    {
+        title: "Mommy Persephone",
+        mode: "dark",
+        properties: {
+            metacolor: "#2c1a2e",
+            "background-normal": "20 10 30",
+            "background-light": "30 20 40",
+            "background-dark": "10 5 20",
+            "background-darker": "5 3 10",
+            input: "255 255 255/0.03",
+            button: "40 30 50",
+            side: "50 40 60",
+            accent: "90 20 120", // Dark Violet
+            color: "240 240 250",
+            "error-background": "50 10 20",
+            "error-color": "200 20 50", // Blood Red
+            "warn-background": "40 40 20",
+            "warn-color": "160 140 50",
+            "success-background": "30 50 30",
+            "success-color": "100 240 100", // Poisonous Green
+            "info-background": "50 50 60",
+            "info-color": "150 130 90", // Tarnished Gold
+            theory: "200 100 100",
+            practical: "110 90 220",
+        },
+    },
+    {
+        title: "Sun Wukong",
+        mode: "light",
+        properties: {
+            metacolor: "#ffd700",
+            "background-normal": "255 250 200",
+            "background-light": "255 255 220",
+            "background-dark": "245 240 180",
+            "background-darker": "230 220 160",
+            input: "80 80 20/0.1",
+            button: "255 240 180",
+            side: "255 255 200",
+            accent: "255 210 80", // Solar Yellow
+            color: "30 30 20",
+            "error-background": "255 230 200",
+            "error-color": "255 90 40",
+            "warn-background": "255 240 180",
+            "warn-color": "255 200 90", // Sunset Orange
+            "success-background": "240 250 220",
+            "success-color": "200 200 50", // Warm Amber
+            "info-background": "250 250 240",
+            "info-color": "250 200 50", // Brilliant Gold
+            theory: "255 220 100",
+            practical: "255 180 50", // Lightning White
+        },
+    },
 ];
