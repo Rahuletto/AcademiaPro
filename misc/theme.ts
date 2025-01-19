@@ -183,7 +183,7 @@ export const Themes = [
 		},
 	},
 	{
-		title: "IronMan",
+		title: "Iron Man",
 		mode: "dark",
 		properties: {
 			metacolor: "#2a2a2a",
