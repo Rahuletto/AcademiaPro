@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
 	return {
 		name: "ClassPro",
 		short_name: "ClassPro",
-        description: "Better way to manage your academics.",
+		description: "Better way to manage your academics.",
 		theme_color: "#11151b",
 		lang: "en",
 		background_color: "#11151b",
@@ -15,7 +15,7 @@ export default function manifest(): MetadataRoute.Manifest {
 		},
 		display_override: ["fullscreen", "window-controls-overlay"],
 		display: "standalone",
-		id: "13542005",
+		id: "7272005",
 		dir: "ltr",
 		orientation: "portrait",
 		categories: [

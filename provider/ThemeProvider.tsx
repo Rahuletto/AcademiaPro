@@ -21,50 +21,6 @@ export function useTheme() {
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
 	const [theme, setTheme] = useState("");
-
-	const generatePWAIcons = async (svgDoc: Document) => {
-		const canvas = document.createElement('canvas');
-		const sizes = [192, 384, 512];
-		const icons = [];
-
-		for (const size of sizes) {
-			canvas.width = size;
-			canvas.height = size;
-			const ctx = canvas.getContext('2d');
-			if (!ctx) continue;
-
-			// Convert SVG to data URL
-			const svgData = new XMLSerializer().serializeToString(svgDoc);
-			const svgBlob = new Blob([svgData], { type: 'image/svg+xml' });
-			const url = URL.createObjectURL(svgBlob);
-
-			// Draw SVG to canvas
-			const img = new Image();
-			await new Promise((resolve) => {
-				img.onload = resolve;
-				img.src = url;
-			});
-
-			ctx.drawImage(img, 0, 0, size, size);
-			URL.revokeObjectURL(url);
-
-			// Convert canvas to blob
-			const blob = await new Promise<Blob | null>(resolve => 
-				canvas.toBlob(resolve, 'image/png')
-			);
-			if (!blob) continue;
-
-			// Store icon data
-			icons.push({
-				src: URL.createObjectURL(blob),
-				sizes: `${size}x${size}`,
-				type: 'image/png'
-			});
-		}
-
-		return icons;
-	};
-
 	const updateFavicon = async () => {
 		try {
 			const response = await fetch("/icons/icon.svg");
@@ -97,34 +53,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 				link.rel = "icon";
 				link.href = faviconUrl;
 				document.head.appendChild(link);
-
-				// Generate and update PWA icons
-				const icons = await generatePWAIcons(svgDoc);
-				
-				// Update manifest
-				const manifestUpdate = {
-					icons: icons.map(icon => ({
-						src: icon.src,
-						sizes: icon.sizes,
-						type: icon.type,
-						purpose: 'any maskable'
-					}))
-				};
-
-				// If manifest exists, update it
-				if ('serviceWorker' in navigator) {
-					try {
-						const registration = await navigator.serviceWorker.ready;
-						if (registration.active) {
-							registration.active.postMessage({
-								type: 'UPDATE_MANIFEST',
-								manifest: manifestUpdate
-							});
-						}
-					} catch (error) {
-						console.error('Error updating manifest:', error);
-					}
-				}
 			}
 		} catch (error) {
 			console.error("Error updating icons:", error);
