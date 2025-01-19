@@ -71,8 +71,8 @@ export default function TimetableStack({
 					</div>
 				</div>
 			) : (
-				<div className="my-4 xl:w-full lg:w-fit lg:min-w-[600px] md:w-full xl:h-32 dark:bg-dark-background-normal bg-light-background-dark rounded-2xl flex flex-col p-1">
-					<div className="grid-cols-10 hidden h-6 xl:grid">
+				<div className="my-4 lg:w-full md:min-w-[600px] md:w-full lg:h-32 dark:bg-dark-background-normal bg-light-background-dark rounded-2xl flex flex-col p-1">
+					<div className="grid-cols-10 hidden h-6 lg:grid">
 						{[...Array(10)].map((_, index) => (
 							<span
 								key={index}
@@ -82,9 +82,9 @@ export default function TimetableStack({
 							</span>
 						))}
 					</div>
-					<div className="h-full flex xl:flex-row flex-col">
+					<div className="h-full flex lg:flex-row flex-col">
 						<div
-							className={`xl:w-1/2 w-full ${theoryPosition === 0 ? "bg-theory" : "bg-practical"} h-full rounded-t-xl xl:rounded-tr-none xl:rounded-l-xl flex flex-col xl:grid xl:grid-cols-5`}
+							className={`lg:w-1/2 w-full ${theoryPosition === 0 ? "bg-theory" : "bg-practical"} h-full rounded-t-xl lg:rounded-tr-none lg:rounded-l-xl flex flex-col lg:grid lg:grid-cols-5`}
 						>
 							{scheduleToday?.table?.slice(0, 5).map((item, index) => (
 								<TableCell
@@ -98,7 +98,7 @@ export default function TimetableStack({
 							))}
 						</div>
 						<div
-							className={`xl:w-1/2 w-full ${theoryPosition === 0 ? "bg-practical" : "bg-theory"} h-full rounded-b-xl xl:rounded-bl-none xl:rounded-r-xl flex flex-col xl:grid xl:grid-cols-5`}
+							className={`lg:w-1/2 w-full ${theoryPosition === 0 ? "bg-practical" : "bg-theory"} h-full rounded-b-xl lg:rounded-bl-none lg:rounded-r-xl flex flex-col lg:grid lg:grid-cols-5`}
 						>
 							{scheduleToday?.table?.slice(5, 10).map((item, index) => (
 								<TableCell

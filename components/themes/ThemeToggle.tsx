@@ -35,7 +35,7 @@ export default function ThemeToggle({
 					<BiBrush className="text-lg" />
 				</button>
 				{open && (
-					<div className="absolute z-20 mt-2 w-32 top-8 right-0 rounded-lg shadow-lg bg-light-background-light dark:bg-dark-background-darker">
+					<div className="absolute z-50 mt-2 w-32 top-8 right-0 rounded-lg shadow-lg bg-light-background-light dark:bg-dark-background-darker">
 						<ul
 							className="p-1 text-sm text-light-color dark:text-dark-color flex flex-col gap-0.5"
 							role="menu"
