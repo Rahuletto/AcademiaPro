@@ -25,12 +25,17 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 	useEffect(() => {
 		if (theme === "") return;
 		const properties = Themes.find((t) => t.title === theme);
+		if (properties?.properties.metacolor) {
+			document
+				.querySelector('meta[name="theme-color"]')
+				?.setAttribute("content", properties.properties.metacolor);
+		}
 		const root = window.document.documentElement;
 		localStorage.setItem("theme", theme);
 		if (theme === "Batman") {
 			document.documentElement.style.filter = "grayscale(100%)";
 		} else document.documentElement.style.filter = "none";
-		
+
 		if (properties) {
 			for (const [key, value] of Object.entries(properties.properties)) {
 				root.style.setProperty(`--${key}`, value.toString());
