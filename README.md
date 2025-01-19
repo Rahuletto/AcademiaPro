@@ -56,6 +56,7 @@ This project was intended to show the timetable and attendance. but it grew and 
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+[![All Contributors](https://img.shields.io/github/all-contributors/Rahuletto/ClassPro?color=ee8449&style=flat-square)](#contributors)
 
 ---
 
