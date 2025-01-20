@@ -22,6 +22,12 @@ export default function EditTimetable({
 		};
 	}, []);
 
+	useEffect(() => {
+		if (isOpen && editBox.current) {
+			editBox.current.scrollIntoView({ behavior: "smooth" });
+		}
+	}, [isOpen, editBox]);
+
 	return (
 		<>
 			<button
