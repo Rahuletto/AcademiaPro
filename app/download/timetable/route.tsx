@@ -9,12 +9,14 @@ export async function GET() {
 	const timetable = json.timetable.schedule;
 
 	const ophours = json.ophour?.split(",");
+	console.log(ophours)
 	if (ophours) {
 		for (const ophour of ophours) {
 			const [day, hour] = ophour.split("-");
 			const dayIndex = Number.parseInt(day.replace("D", "")) - 1;
 			const hourIndex = Number.parseInt(hour.replace("H", "")) - 1;
 
+			console.info(dayIndex, hourIndex, slot, ophour);
 			const slot = timetable[dayIndex].table[hourIndex];
 			if (slot) slot.isOptional = true;
 		}
