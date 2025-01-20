@@ -73,8 +73,13 @@ function OptionalHours({
 							<select
 								className="text-base font-normal bg-light-input dark:bg-dark-input p-2 px-3 rounded-lg"
 								value={dayorder}
+								defaultValue={"D0"}
 								onChange={(e) => handleDayChange(i, e.target.value)}
 							>
+								<option disabled value={"D0"}>
+									Select Day
+								</option>
+
 								{[...Array(5)].map((_, index) => (
 									<option
 										key={index}
@@ -86,8 +91,12 @@ function OptionalHours({
 						<select
 							className="text-base font-normal bg-light-input dark:bg-dark-input p-2 px-3 rounded-lg max-w-[250px] truncate"
 							value={hourSlot}
+							defaultValue={"H0"}
 							onChange={(e) => handleHourChange(i, e.target.value)}
 						>
+							<option disabled value={"H0"} className="truncate">
+								Select Hour
+							</option>
 							{timetable[
 								Number(optionals[i].split("-")[0].replace("D", "")) - 1
 							]?.table?.map((slot, index) => (
@@ -107,11 +116,11 @@ function OptionalHours({
 			<div className="flex items-center justify-center gap-2 mt-2">
 				<button
 					type="button"
-					disabled={optionals[optionals.length - 1] === ""}
+					disabled={optionals[optionals.length - 1] === "D0-H0"}
 					className="bg-light-accent disabled:opacity-50 dark:bg-dark-accent text-light-background-light dark:text-dark-background-dark rounded-xl p-2 px-4 w-fit font-semibold"
 					onClick={() => {
-						if (optionals[optionals.length - 1] !== "") {
-							setOptionals([...optionals, ""]);
+						if (optionals[optionals.length - 1] !== "D0-H0") {
+							setOptionals([...optionals, "D0-H0"]);
 						}
 					}}
 				>
@@ -119,7 +128,9 @@ function OptionalHours({
 				</button>
 				<button
 					type="button"
-					disabled={button}
+					disabled={
+						button || optionals.find((a) => a === "D0-H0") !== undefined
+					}
 					onClick={handleSave}
 					className="bg-light-success-background disabled:opacity-50 dark:bg-dark-success-background text-light-success-color dark:text-dark-success-color font-semibold rounded-xl p-2 px-4 w-fit"
 				>
