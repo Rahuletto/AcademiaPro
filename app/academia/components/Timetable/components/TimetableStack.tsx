@@ -88,7 +88,7 @@ export default function TimetableStack({
 						>
 							{scheduleToday?.table?.slice(0, 5).map((item, index) => (
 								<TableCell
-									isClassGoing={isClassGoing}
+									isClassGoing={isClassGoing && today.dayOrder === dOrder}
 									key={index}
 									cell={item}
 									index={index}
@@ -102,7 +102,7 @@ export default function TimetableStack({
 						>
 							{scheduleToday?.table?.slice(5, 10).map((item, index) => (
 								<TableCell
-									isClassGoing={isClassGoing}
+									isClassGoing={isClassGoing && today.dayOrder === dOrder}
 									key={index}
 									cell={item}
 									index={index}
