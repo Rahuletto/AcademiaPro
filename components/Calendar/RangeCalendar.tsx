@@ -193,17 +193,6 @@ export function LeaveODRangeCalendar({
                   (day) => day.date.padStart(2, "0") === formatted,
                 );
 
-                // Only log weekend days that have a day order
-                if (isWeekend && cal && cal.dayOrder !== "-") {
-                  console.log(`Weekend Day ${format(date, "MMM dd yyyy")}:`, {
-                    dayOfWeek,
-                    dayOrder: cal.dayOrder,
-                    monthIndex,
-                    calendarMonth: calendar?.[monthIndex]?.month,
-                    shouldBeEnabled: true,
-                  });
-                }
-
                 if (isWeekend && (!cal || cal.dayOrder === "-")) {
                   return true;
                 }

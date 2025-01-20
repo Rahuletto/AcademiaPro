@@ -50,7 +50,6 @@ export default function PredictionContent({
       dateRange.length > 0 &&
       dateRange.every((range) => range.from && range.to)
     ) {
-      console.log("Predicting")
       performPrediction();
     }
   }, [attendance, timetable, calendar, dateRange, performPrediction]);
