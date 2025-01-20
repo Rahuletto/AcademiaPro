@@ -83,7 +83,7 @@ export function LeaveODRangeCalendar({
   return (
     <div className="flex w-full flex-col gap-4 rounded-xl bg-light-background-light dark:bg-dark-background-dark">
       <div className="flex w-full flex-col lg:flex-row">
-        <div className="w-full lg:w-1/2 flex flex-col items-center justify-between lg:max-w-[50%]">
+        <div className="flex w-full flex-col items-center justify-between lg:w-1/2 lg:max-w-[50%]">
           <Calendar
             mode="range"
             selected={dateRange}
@@ -179,7 +179,6 @@ export function LeaveODRangeCalendar({
                     today.getMonth() + 3,
                     today.getDate(),
                   ),
-              { dayOfWeek: [0, 6] },
               (date) => {
                 const monthIndex =
                   calendar?.findIndex((month) =>
@@ -187,17 +186,34 @@ export function LeaveODRangeCalendar({
                   ) || 0;
 
                 const formatted = format(date, "dd");
+                const dayOfWeek = date.getDay();
+                const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
 
                 const cal = calendar?.[monthIndex]?.days?.find(
                   (day) => day.date.padStart(2, "0") === formatted,
                 );
+
+                // Only log weekend days that have a day order
+                if (isWeekend && cal && cal.dayOrder !== "-") {
+                  console.log(`Weekend Day ${format(date, "MMM dd yyyy")}:`, {
+                    dayOfWeek,
+                    dayOrder: cal.dayOrder,
+                    monthIndex,
+                    calendarMonth: calendar?.[monthIndex]?.month,
+                    shouldBeEnabled: true,
+                  });
+                }
+
+                if (isWeekend && (!cal || cal.dayOrder === "-")) {
+                  return true;
+                }
 
                 return cal?.dayOrder === "-";
               },
             ]}
             fromDate={today}
           />
-          <div className="flex flex-row gap-3 p-1 items-center justify-center">
+          <div className="flex flex-row items-center justify-center gap-3 p-1">
             <div className="flex items-center justify-center gap-2 rounded-md bg-light-error-background font-mono text-xs text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
               <div className="h-4 w-4 rounded-md bg-light-error-color dark:bg-dark-error-color" />
               A
@@ -210,7 +226,7 @@ export function LeaveODRangeCalendar({
               <div className="h-4 w-4 rounded-md bg-light-info-color dark:bg-dark-info-color" />
             </div> */}
 
-            <div className="flex items-center justify-center gap-1 rounded-md px-3 bg-light-success-background/80 font-mono text-xs text-light-success-color dark:bg-dark-success-background/80 dark:text-dark-success-color">
+            <div className="flex items-center justify-center gap-1 rounded-md bg-light-success-background/80 px-3 font-mono text-xs text-light-success-color dark:bg-dark-success-background/80 dark:text-dark-success-color">
               P
             </div>
           </div>

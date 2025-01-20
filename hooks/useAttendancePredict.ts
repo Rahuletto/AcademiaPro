@@ -45,7 +45,15 @@ export const useAttendancePrediction = (
       if (!currentMonth) return;
 
       const dayInfo = currentMonth.days.find((d) => d.date === formattedDate);
-      if (!dayInfo || dayInfo?.day === "Sat" || dayInfo?.day === "Sun") return;
+      if (!dayInfo || dayInfo.dayOrder === "-") return;
+
+      // Debug weekend days with classes
+      if ([0, 6].includes(date.getDay())) {
+        console.log(`Processing weekend day: ${format(date, "MMM dd yyyy")}`, {
+          dayOrder: dayInfo.dayOrder,
+          day: dayInfo.day,
+        });
+      }
 
       const daySchedule = timetable.find(
         (t) => t.day === Number(dayInfo.dayOrder),
@@ -59,6 +67,15 @@ export const useAttendancePrediction = (
         endDate.setHours(0, 0, 0, 0);
         return date >= startDate && date <= endDate;
       });
+
+      if (isAbsent && [0, 6].includes(date.getDay())) {
+        console.log(
+          `Marking absent for weekend: ${format(date, "MMM dd yyyy")}`,
+          {
+            subjects: daySchedule.table.filter(Boolean),
+          },
+        );
+      }
 
       daySchedule?.table.forEach((subject) => {
         if (!subject) return;
