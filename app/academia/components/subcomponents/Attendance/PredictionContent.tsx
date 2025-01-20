@@ -39,7 +39,7 @@ export default function PredictionContent({
     attendance as AttendanceCourse[],
     timetable as TimetableDay[],
     calendar as CalendarMonth[],
-    dateRange[0],
+    dateRange,
   );
 
   useEffect(() => {

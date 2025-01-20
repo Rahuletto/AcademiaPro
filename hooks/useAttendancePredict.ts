@@ -11,20 +11,14 @@ export const useAttendancePrediction = (
   attendance: AttendanceCourse[],
   timetable: TimetableDay[],
   calendar: CalendarMonth[],
-  dateRange: DateRange,
+  dateRanges: DateRange[],
 ) => {
   const [predictedAttendance, setPredictedAttendance] = useState<
     AttendanceCourse[] | null
   >(null);
 
   const performPrediction = useCallback(() => {
-    if (
-      !dateRange.from ||
-      !dateRange.to ||
-      !attendance ||
-      !timetable ||
-      !calendar
-    ) {
+    if (!attendance || !timetable || !calendar || !dateRanges.length) {
       console.warn("Missing required data for prediction");
       return;
     }
@@ -33,16 +27,15 @@ export const useAttendancePrediction = (
       .filter((a) => a.courseTitle !== "null")
       .map((a) => ({ ...a }));
 
-    const startDate = new Date(dateRange.from);
-    const endDate = new Date(dateRange.to);
-
-    startDate.setHours(0, 0, 0, 0);
-    endDate.setHours(0, 0, 0, 0);
-
     let currentDate = new Date();
     currentDate.setHours(0, 0, 0, 0);
 
-    const processDay = (date: Date, incrementAbsent: boolean = false) => {
+    const latestEndDate = new Date(
+      Math.max(...dateRanges.map((range) => new Date(range.to || 0).getTime())),
+    );
+    latestEndDate.setHours(0, 0, 0, 0);
+
+    const processDay = (date: Date) => {
       const formattedDate = format(date, "d");
       const monthName = format(date, "MMM");
       const currentMonth = calendar.find(
@@ -52,12 +45,37 @@ export const useAttendancePrediction = (
       if (!currentMonth) return;
 
       const dayInfo = currentMonth.days.find((d) => d.date === formattedDate);
-      if (!dayInfo || dayInfo?.day === "Sat" || dayInfo?.day === "Sun") return;
+      if (!dayInfo || dayInfo.dayOrder === "-") return;
+
+      // Debug weekend days with classes
+      if ([0, 6].includes(date.getDay())) {
+        console.log(`Processing weekend day: ${format(date, "MMM dd yyyy")}`, {
+          dayOrder: dayInfo.dayOrder,
+          day: dayInfo.day,
+        });
+      }
 
       const daySchedule = timetable.find(
         (t) => t.day === Number(dayInfo.dayOrder),
       );
       if (!daySchedule) return;
+
+      const isAbsent = dateRanges.some((range) => {
+        const startDate = new Date(range.from || 0);
+        const endDate = new Date(range.to || 0);
+        startDate.setHours(0, 0, 0, 0);
+        endDate.setHours(0, 0, 0, 0);
+        return date >= startDate && date <= endDate;
+      });
+
+      if (isAbsent && [0, 6].includes(date.getDay())) {
+        console.log(
+          `Marking absent for weekend: ${format(date, "MMM dd yyyy")}`,
+          {
+            subjects: daySchedule.table.filter(Boolean),
+          },
+        );
+      }
 
       daySchedule?.table.forEach((subject) => {
         if (!subject) return;
@@ -75,10 +93,10 @@ export const useAttendancePrediction = (
 
         const conducted = parseInt(courseAttendance.hoursConducted) + 1;
         courseAttendance.hoursConducted = conducted.toString();
-        const absent = incrementAbsent
+        const absent = isAbsent
           ? parseInt(courseAttendance.hoursAbsent) + 1
           : parseInt(courseAttendance.hoursAbsent);
-        if (incrementAbsent) {
+        if (isAbsent) {
           courseAttendance.hoursAbsent = absent.toString();
         }
         const percentage = (((conducted - absent) / conducted) * 100).toFixed(
@@ -88,14 +106,13 @@ export const useAttendancePrediction = (
       });
     };
 
-    while (currentDate <= endDate) {
-      const isAbsent = currentDate.getTime() >= startDate.getTime();
-      processDay(currentDate, isAbsent);
+    while (currentDate <= latestEndDate) {
+      processDay(currentDate);
       currentDate.setDate(currentDate.getDate() + 1);
     }
 
     setPredictedAttendance(updatedAttendance);
-  }, [attendance, timetable, calendar, dateRange]);
+  }, [attendance, timetable, calendar, dateRanges]);
 
   return {
     predictedAttendance,
