@@ -23,7 +23,7 @@ export default async function page() {
 	return (
 		<main className="h-screen w-screen flex flex-col items-center justify-center bg-light-background-normal dark:bg-dark-background-normal">
 			<Image
-				className="scale-95 rounded-lg"
+				className="scale-95 rounded-2xl border border-light-accent dark:border-dark-accent"
 				alt="timetable"
 				src={imageUrl}
 				width={2000}
