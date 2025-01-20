@@ -15,7 +15,7 @@ const APP_NAME = "ClassPro";
 const APP_DEFAULT_TITLE = "ClassPro";
 const APP_TITLE_TEMPLATE = "%s - PWA App";
 const APP_DESCRIPTION = "Better way to manage your academics.";
-const PRODUCTION_URL = "https://apro-beta.vercel.app";
+const PRODUCTION_URL = "https://class-pro.vercel.app";
 
 export const metadata: Metadata = {
 	metadataBase: new URL(
