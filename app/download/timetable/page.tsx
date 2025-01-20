@@ -6,7 +6,7 @@ import { FiDownload } from "react-icons/fi";
 export default async function page() {
 	const json = await fetchUserData();
 
-	const fet = await fetch("http://localhost:243/api/timetable", {
+	const fet = await fetch("https://class-pro.vercel.app/api/timetable", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
