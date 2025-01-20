@@ -1,11 +1,10 @@
-import { fetchUserData } from "@/hooks/fetchUserData";
+import type { AllResponse } from "@/types/Response";
 import type { Schedule, ScheduleSlot } from "@/types/Timetable";
 import { ImageResponse } from "next/og";
 import { Time, timeConvert } from "@/utils/Times";
 
-export async function GET() {
-	const json = await fetchUserData();
-
+export async function POST(req: Request) {
+	const json: AllResponse = await req.json();
 	const timetable = json.timetable.schedule;
 
 	const ophours = json.ophour?.split(",");

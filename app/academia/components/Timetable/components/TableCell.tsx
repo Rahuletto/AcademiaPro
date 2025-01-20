@@ -46,14 +46,6 @@ export default function TableCell({
 						{timeConvert(start)}-{timeConvert(end)}
 					</p>
 				</div>
-				{inRange && isClassGoing && (
-					<div
-						className="absolute left-0 bottom-0 h-full w-1 bg-light-success-color/60 z-0"
-						style={{
-							left: `${((currentTime.getHours() * 60 + currentTime.getMinutes() - (Number.parseInt(start.split(":")[0]) * 60 + Number.parseInt(start.split(":")[1]))) / (Number.parseInt(end.split(":")[0]) * 60 + Number.parseInt(end.split(":")[1]) - (Number.parseInt(start.split(":")[0]) * 60 + Number.parseInt(start.split(":")[1])))) * 100}%`,
-						}}
-					/>
-				)}
 			</div>
 		</div>
 	);

@@ -4,6 +4,16 @@
 	"framework": "nextjs",
 	"redirects": [
 		{
+			"source": "/courses",
+			"destination": "https://class-pro.vercel.app/academia/courses",
+			"permanent": true
+		},
+		{
+			"source": "/calendar",
+			"destination": "https://class-pro.vercel.app/academia/calendar",
+			"permanent": true
+		},
+		{
 			"source": "/elab",
 			"destination": "https://better-lab.vercel.app",
 			"permanent": true

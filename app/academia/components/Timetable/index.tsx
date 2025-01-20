@@ -22,7 +22,6 @@ export default async function Timetable({
 				<div className="flex items-center justify-center gap-3">
 					<Link
 						href="/download/timetable"
-						download={true}
 						className="p-1 rounded-lg transition-all duration-150 hover:bg-light-button dark:hover:bg-dark-button"
 					>
 						<FiDownload className="text-lg text-light-accent dark:text-dark-accent cursor-pointer" />
