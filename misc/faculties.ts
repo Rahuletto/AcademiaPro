@@ -1,3 +1,5 @@
+import Fuse from "fuse.js";
+
 export const urlObj = [
 	{
 		title: "Dr. Rudra Banerjee",
@@ -3603,7 +3605,6 @@ export const urls = [
 			.trim(),
 	})),
 ];
-
 export type UrlSearchResult = {
 	url: {
 		title: string;
@@ -3612,25 +3613,10 @@ export type UrlSearchResult = {
 	similarity: number;
 };
 
-function fuzzyMatch(pattern: string, text: string): number {
-	const patternLen = pattern.length;
-	const textLen = text.length;
-	if (patternLen > textLen) return 0;
-
-	let matches = 0;
-	let patternIdx = 0;
-	let textIdx = 0;
-
-	while (patternIdx < patternLen && textIdx < textLen) {
-		if (pattern[patternIdx] === text[textIdx]) {
-			matches++;
-			patternIdx++;
-		}
-		textIdx++;
-	}
-
-	return matches / patternLen;
-}
+const fuse = new Fuse(urls, {
+	keys: ["title", "normalized", "url"],
+	threshold: 0.3,
+});
 
 export function searchUrl(searchName: string): UrlSearchResult[] {
 	const normalizedSearchName = searchName
@@ -3640,30 +3626,10 @@ export function searchUrl(searchName: string): UrlSearchResult[] {
 		.replace(/\s+/g, " ")
 		.trim();
 
-	const searchTokens = normalizedSearchName.split(" ");
-	const hasDrInSearch = searchTokens.includes("dr");
-
-	const results = urls
-		.map((url) => {
-			const name = url.title;
-			const normalizedUrlName = url.normalized;
-
-			const matchScore = fuzzyMatch(normalizedSearchName, normalizedUrlName);
-
-			let drBonus = 0;
-			if (hasDrInSearch && normalizedUrlName.includes("dr")) {
-				drBonus = 1;
-			}
-
-			const finalScore = Math.max(matchScore + drBonus, 0);
-
-			return {
-				url,
-				similarity: finalScore,
-			};
-		})
-		.filter((result) => result.similarity > 0.2)
-		.sort((a, b) => b.similarity - a.similarity);
+	const results = fuse.search(normalizedSearchName).map((result) => ({
+		url: result.item,
+		similarity: result.score ? 1 - result.score : 1,
+	}));
 
 	return results.splice(0, 30);
 }

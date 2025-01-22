@@ -43,7 +43,6 @@ export default function TimetableStack({
 			const dayIndex = Number.parseInt(day.replace("D", "")) - 1;
 			const hourIndex = Number.parseInt(hour.replace("H", "")) - 1;
 			const slot = schedule[dayIndex].table[hourIndex];
-			console.info(dayIndex, hourIndex, slot, ophours);
 			if (slot) slot.isOptional = true;
 		}
 	}

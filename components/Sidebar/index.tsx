@@ -125,13 +125,14 @@ export function Sidebar({
 
 					<hr className="border-t-light-side dark:border-t-dark-side" />
 
-					<Link
-						className="relative font-semibold text-[#786CFF] hover:bg-[#786CFF1e] hover:text-[#786CFF] dark:text-[#857aff] dark:hover:bg-[#786CFF1e] dark:hover:text-[#857aff]"
-						title="Question papers"
-						href="/papers"
-					>
+					<Link title="Question papers" href="/academia/library">
 						<IoLibrarySharp className="text-xl" />
-						Library
+						<span className="flex items-center justify-start gap-3">
+							Library{" "}
+							<span className="text-xs px-1 rounded-md bg-light-accent dark:bg-dark-accent text-light-background-light dark:text-dark-background-dark py-0.5">
+								NEW
+							</span>
+						</span>
 					</Link>
 					{/* 
           <Link

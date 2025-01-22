@@ -28,7 +28,9 @@ export default async function fetchCal() {
 	});
 
 	const json: CalendarResponse = await a.json();
+
 	if (json.ratelimit) redirect("/ratelimit");
+
 
 	cachedData = json;
 	lastFetchTime = now;
