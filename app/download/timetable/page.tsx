@@ -15,9 +15,10 @@ export default async function page() {
 		.eq("token", encode(cookie?.value ?? ""))
 		.single();
 
-	if (error) {
+	if (error || !json) {
 		if (error.code === "PGRST116") console.error("No data?")
 		else console.error("Error fetching data:", error);
+		return;
 	}
 
 	const fet = await fetch("https://class-pro.vercel.app/api/timetable", {
@@ -26,7 +27,7 @@ export default async function page() {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
-			timetable: json?.timetable?.timetable,
+			timetable: JSON.parse(json?.timetable)?.timetable,
 			ophour: json?.ophour,
 		}),
 	});
