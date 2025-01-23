@@ -1,10 +1,20 @@
 import { fetchUserData } from "@/hooks/fetchUserData";
 import Image from "next/image";
 import React from "react";
+import { supabase } from "@/utils/Database/supabase";
 import { FiDownload } from "react-icons/fi";
 
 export default async function page() {
-	const json = await fetchUserData();
+	const { data: json, error } = await supabase
+		.from("goscrape")
+		.select("timetable,ophour")
+		.eq("token", encode(cookie?.value ?? ""))
+		.single();
+
+	if (error) {
+		if (error.code === "PGRST116") ophours = json.ophour?.split(",") ?? [];
+		else console.error("Error fetching data:", error);
+	}
 
 	const fet = await fetch("https://class-pro.vercel.app/api/timetable", {
 		method: "POST",
@@ -12,7 +22,7 @@ export default async function page() {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
-			timetable: json.timetable,
+			timetable: json.timetable?.timetable,
 			ophour: json.ophour,
 		}),
 	});
