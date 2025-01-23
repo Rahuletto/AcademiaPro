@@ -13,7 +13,7 @@ import { MdHelpOutline } from "react-icons/md";
 import dynamic from "next/dynamic";
 import Link from "./SidebarLink";
 
-import { IoLibrarySharp } from "react-icons/io5";
+// import { IoLibrarySharp } from "react-icons/io5";
 import InstallButton from "./Buttons/InstallButton";
 import Popup from "./Popup";
 import { useGestures } from "@/hooks/useGesture";
@@ -124,7 +124,7 @@ export function Sidebar({
 					</div>
 
 					<hr className="border-t-light-side dark:border-t-dark-side" />
-
+{/* 
 					<Link title="Question papers" href="/academia/library">
 						<IoLibrarySharp className="text-xl" />
 						<span className="flex items-center justify-start gap-3">
@@ -134,7 +134,7 @@ export function Sidebar({
 							</span>
 						</span>
 					</Link>
-					{/* 
+					
           <Link
             aria-disabled
             className="relative cursor-not-allowed border border-dashed border-[#F34F4F1e] font-semibold text-[#F34F4F] hover:bg-[#F34F4F1e] hover:text-[#F34F4F] dark:text-[#F34F4F] dark:hover:bg-[#F34F4F1e] dark:hover:text-[#F34F4F]"
