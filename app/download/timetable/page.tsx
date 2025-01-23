@@ -27,7 +27,7 @@ export default async function page() {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
-			timetable: JSON.parse(json?.timetable)?.timetable,
+			timetable: JSON.parse(json?.timetable),
 			ophour: json?.ophour,
 		}),
 	});
