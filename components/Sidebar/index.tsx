@@ -1,130 +1,139 @@
-"use client";
-import React, { type ReactNode, useEffect, useState } from "react";
+'use client';
+import React, { type ReactNode, useEffect, useState } from 'react';
 import {
-	FaBookOpen,
-	FaGraduationCap,
-	FaLink,
-	FaUserGraduate,
-	FaWhatsapp,
-} from "react-icons/fa6";
-import { BsCalendar2WeekFill } from "react-icons/bs";
-import { FiGithub } from "react-icons/fi";
-import { MdHelpOutline } from "react-icons/md";
-import dynamic from "next/dynamic";
-import Link from "./SidebarLink";
+  FaBookOpen,
+  FaGraduationCap,
+  FaLink,
+  FaUserGraduate,
+  FaWhatsapp,
+} from 'react-icons/fa6';
+import { BsCalendar2WeekFill } from 'react-icons/bs';
+import { FiGithub } from 'react-icons/fi';
+import { MdHelpOutline } from 'react-icons/md';
+import dynamic from 'next/dynamic';
+import Link from './SidebarLink';
 
 // import { IoLibrarySharp } from "react-icons/io5";
-import InstallButton from "./Buttons/InstallButton";
-import Popup from "./Popup";
-import { useGestures } from "@/hooks/useGesture";
+import InstallButton from './Buttons/InstallButton';
+import Popup from './Popup';
+import { useGestures } from '@/hooks/useGesture';
 
 const MiniButtons = dynamic(
-	() => import("./Buttons/MiniButtons").then((a) => a.default),
-	{ ssr: true },
+  () => import('./Buttons/MiniButtons').then((a) => a.default),
+  { ssr: true }
 );
 
 const OpenButton = dynamic(
-	() => import("./Buttons/OpenButton").then((a) => a.default),
-	{ ssr: false },
+  () => import('./Buttons/OpenButton').then((a) => a.default),
+  { ssr: false }
 );
-import ThemeToggle from "@/components/themes/ThemeToggle";
+import ThemeToggle from '@/components/themes/ThemeToggle';
+import GradeXIcon from '@/public/images/GradeX';
 
 export function Sidebar({
-	dayorder,
-	mini,
-	profile,
+  dayorder,
+  mini,
+  profile,
 }: {
-	dayorder: ReactNode;
-	mini: ReactNode;
-	profile?: ReactNode;
+  dayorder: ReactNode;
+  mini: ReactNode;
+  profile?: ReactNode;
 }) {
-	const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
-	useGestures({
-		onSwipeLeft: () => {
-			setIsOpen(false);
-		},
-		onSwipeRight: () => {
-			setIsOpen(true);
-		},
-	});
-	useEffect(() => {
-		const isMobile = window.innerWidth <= 1024;
-		const sidebarWidth = isOpen ? "310px" : isMobile ? "0px" : "60px";
-		document.documentElement.style.setProperty("--sidebar-width", sidebarWidth);
-	}, [isOpen]);
+  useGestures({
+    onSwipeLeft: () => {
+      setIsOpen(false);
+    },
+    onSwipeRight: () => {
+      setIsOpen(true);
+    },
+  });
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 1024;
+    const sidebarWidth = isOpen ? '310px' : isMobile ? '0px' : '60px';
+    document.documentElement.style.setProperty('--sidebar-width', sidebarWidth);
+  }, [isOpen]);
 
-	useEffect(() => {
-		const isMobile = window.innerWidth <= 1024;
-		if (isMobile) setIsOpen(false);
+  useEffect(() => {
+    const isMobile = window.innerWidth <= 1024;
+    if (isMobile) setIsOpen(false);
 
-		const handleResize = () => {
-			const isMobile = window.innerWidth <= 1024;
-			setIsOpen(!isMobile);
-		};
-		window.addEventListener("resize", handleResize);
+    const handleResize = () => {
+      const isMobile = window.innerWidth <= 1024;
+      setIsOpen(!isMobile);
+    };
+    window.addEventListener('resize', handleResize);
 
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
-	}, []);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
-	function handleClick() {
-		const isMobile = window.innerWidth <= 1024;
-		setIsOpen(!isMobile);
-	}
+  function handleClick() {
+    const isMobile = window.innerWidth <= 1024;
+    setIsOpen(!isMobile);
+  }
 
-	return (
-		<>
-			<header
-				className={`fixed left-0 top-0 flex h-full transform flex-col justify-between  bg-light-background-normal p-4 text-white transition-all md:duration-150 dark:bg-dark-background-normal ${
-					isOpen ? "translate-x-0" : "-translate-x-96 lg:-translate-x-56"
-				} w-[310px] p-8`}
-			>
-				<div className="flex flex-col gap-2">
-					<div
-						className={`transition duration-150 ${isOpen ? "opacity-100" : "opacity-0"}`}
-					>
-						<div className="text-color flex items-center justify-between text-light-color dark:text-dark-color">
-							<h1 className="text-3xl font-semibold">ClassPro</h1>
-							<ThemeToggle />
-						</div>
-						<div className="my-4 flex">{dayorder}</div>
-					</div>
-					{!isOpen && mini}
+  return (
+    <>
+      <header
+        className={`fixed left-0 top-0 flex h-full transform flex-col justify-between bg-light-background-normal p-4 text-white transition-all md:duration-150 dark:bg-dark-background-normal ${
+          isOpen ? 'translate-x-0' : '-translate-x-96 lg:-translate-x-56'
+        } w-[310px] p-8`}
+      >
+        <div className='flex flex-col gap-2'>
+          <div
+            className={`transition duration-150 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
+          >
+            <div className='text-color flex items-center justify-between text-light-color dark:text-dark-color'>
+              <h1 className='text-3xl font-semibold'>ClassPro</h1>
+              <ThemeToggle />
+            </div>
+            <div className='my-4 flex'>{dayorder}</div>
+          </div>
+          {!isOpen && mini}
 
-					<hr className="border-t-light-side dark:border-t-dark-side" />
+          <hr className='border-t-light-side dark:border-t-dark-side' />
 
-					<div className="text-md flex flex-col gap-2 font-semibold text-light-color dark:text-dark-color">
-						<Link onClick={handleClick} href="/academia">
-							<FaBookOpen className="text-xl" />
-							Home
-						</Link>
+          <div className='text-md flex flex-col gap-2 font-semibold text-light-color dark:text-dark-color'>
+            <Link onClick={handleClick} href='/academia'>
+              <FaBookOpen className='text-xl' />
+              Home
+            </Link>
 
-						<Link onClick={handleClick} href="/academia/courses">
-							<FaGraduationCap className="text-xl" />
-							Course list
-						</Link>
+            <Link onClick={handleClick} href='/academia/courses'>
+              <FaGraduationCap className='text-xl' />
+              Course list
+            </Link>
 
-						<Link onClick={handleClick} href="/academia/calendar">
-							<BsCalendar2WeekFill className="text-xl" />
-							Calendar
-						</Link>
+            <Link onClick={handleClick} href='/academia/calendar'>
+              <BsCalendar2WeekFill className='text-xl' />
+              Calendar
+            </Link>
 
-						<hr className="border-t-light-side dark:border-t-dark-side" />
+            <hr className='border-t-light-side dark:border-t-dark-side' />
 
-						<Link onClick={handleClick} href="/academia/links">
-							<FaLink className="text-xl" />
-							Links
-						</Link>
-						<Link onClick={handleClick} href="/academia/faculties">
-							<FaUserGraduate className="text-xl" />
-							Faculties
-						</Link>
-					</div>
+            <Link onClick={handleClick} href='/academia/links'>
+              <FaLink className='text-xl' />
+              Links
+            </Link>
+            <Link onClick={handleClick} href='/academia/faculties'>
+              <FaUserGraduate className='text-xl' />
+              Faculties
+            </Link>
+            <Link
+              onClick={handleClick}
+              href='https://gradex.vercel.app/'
+              target='_blank'
+            >
+              <GradeXIcon className='text-xl' />
+              GradeX
+            </Link>
+          </div>
 
-					<hr className="border-t-light-side dark:border-t-dark-side" />
-{/* 
+          <hr className='border-t-light-side dark:border-t-dark-side' />
+          {/* 
 					<Link title="Question papers" href="/academia/library">
 						<IoLibrarySharp className="text-xl" />
 						<span className="flex items-center justify-start gap-3">
@@ -146,43 +155,43 @@ export function Sidebar({
             Events
           </Link>
            */}
-				</div>
+        </div>
 
-				<div className="flex flex-col-reverse gap-4">
-					<div className="flex items-center gap-2 text-light-color dark:text-dark-color">
-						<h4 className="font-mono text-xs opacity-60 transition duration-150">
-							Community:{" "}
-						</h4>
-						<MiniButtons icon={<FiGithub />} href="/github" />
-						<MiniButtons icon={<FaWhatsapp />} href="/whatsapp" />
-					</div>
-					{profile}
-				</div>
-				<InstallButton anchor={isOpen} ref={null} />
-				<OpenButton
-					anchor={isOpen}
-					isOpen={isOpen}
-					onClick={() => setIsOpen((prev) => !prev)}
-				/>
-				{!isOpen && (
-					<MiniButtons
-						className="fixed bottom-8 right-9 hidden lg:block"
-						icon={<MdHelpOutline />}
-						href="https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9"
-					/>
-				)}
-			</header>
+        <div className='flex flex-col-reverse gap-4'>
+          <div className='flex items-center gap-2 text-light-color dark:text-dark-color'>
+            <h4 className='font-mono text-xs opacity-60 transition duration-150'>
+              Community:{' '}
+            </h4>
+            <MiniButtons icon={<FiGithub />} href='/github' />
+            <MiniButtons icon={<FaWhatsapp />} href='/whatsapp' />
+          </div>
+          {profile}
+        </div>
+        <InstallButton anchor={isOpen} ref={null} />
+        <OpenButton
+          anchor={isOpen}
+          isOpen={isOpen}
+          onClick={() => setIsOpen((prev) => !prev)}
+        />
+        {!isOpen && (
+          <MiniButtons
+            className='fixed bottom-8 right-9 hidden lg:block'
+            icon={<MdHelpOutline />}
+            href='https://chat.whatsapp.com/IiKvVzwV142I11Ytqn9RF9'
+          />
+        )}
+      </header>
 
-			<Popup />
+      <Popup />
 
-			<OpenButton
-				mobile
-				isOpen={isOpen}
-				onClick={() => setIsOpen((prev) => !prev)}
-			/>
-			<div id="dialog-root" />
-		</>
-	);
+      <OpenButton
+        mobile
+        isOpen={isOpen}
+        onClick={() => setIsOpen((prev) => !prev)}
+      />
+      <div id='dialog-root' />
+    </>
+  );
 }
 
 // const GradeXIcon = ({
