@@ -2,6 +2,8 @@ import { fetchUserData } from "@/hooks/fetchUserData";
 import Image from "next/image";
 import React from "react";
 import { supabase } from "@/utils/Database/supabase";
+import { encode } from "@/utils/Cookies";
+
 import { FiDownload } from "react-icons/fi";
 
 export default async function page() {
