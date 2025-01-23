@@ -3,10 +3,12 @@ import Image from "next/image";
 import React from "react";
 import { supabase } from "@/utils/Database/supabase";
 import { encode } from "@/utils/Cookies";
-
+import { cookies } from "next/headers";
 import { FiDownload } from "react-icons/fi";
 
 export default async function page() {
+	const cookie = (await cookies()).get("key");
+	
 	const { data: json, error } = await supabase
 		.from("goscrape")
 		.select("timetable,ophour")
