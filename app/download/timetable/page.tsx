@@ -26,8 +26,8 @@ export default async function page() {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
-			timetable: json.timetable?.timetable,
-			ophour: json.ophour,
+			timetable: json?.timetable?.timetable,
+			ophour: json?.ophour,
 		}),
 	});
 	const res = await fet.arrayBuffer();
