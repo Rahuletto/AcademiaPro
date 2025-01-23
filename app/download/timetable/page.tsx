@@ -16,7 +16,7 @@ export default async function page() {
 		.single();
 
 	if (error) {
-		if (error.code === "PGRST116") ophours = json.ophour?.split(",") ?? [];
+		if (error.code === "PGRST116") comsole.error("No data?")
 		else console.error("Error fetching data:", error);
 	}
 
