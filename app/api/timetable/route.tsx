@@ -8,7 +8,7 @@ export async function POST(req: Request) {
 	const timetable = json.timetable.schedule;
 
 	const ophours = json.ophour?.split(",");
-	if (ophours) {
+	if (ophours?.[0]) {
 		for (const ophour of ophours) {
 			const [day, hour] = ophour.split("-");
 			const dayIndex = Number.parseInt(day.replace("D", "")) - 1;
