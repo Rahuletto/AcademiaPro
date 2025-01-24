@@ -122,7 +122,11 @@ export function Sidebar({
               <FaUserGraduate className='text-xl' />
               Faculties
             </Link>
-            <Link
+           
+          </div>
+
+          <hr className='border-t-light-side dark:border-t-dark-side' />
+           <Link
               onClick={handleClick}
               href='https://gradex.vercel.app/'
               target='_blank'
@@ -130,9 +134,6 @@ export function Sidebar({
               <GradeXIcon className='text-xl' />
               GradeX
             </Link>
-          </div>
-
-          <hr className='border-t-light-side dark:border-t-dark-side' />
           {/* 
 					<Link title="Question papers" href="/academia/library">
 						<IoLibrarySharp className="text-xl" />

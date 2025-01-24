@@ -1,3 +1,4 @@
+import { encodeString } from "@/misc/encode";
 import Link from "next/link";
 import { AiOutlinePaperClip } from "react-icons/ai";
 
@@ -10,7 +11,7 @@ export default function PaperLink({
 }) {
   return (
     <Link
-      href={`https://docs.google.com/viewer?url=${link}`}
+      href={`https://docs.google.com/viewer?url=https://class-pro.vercel.app/academia/library/render/${encodeString(link)}`}
       tabIndex={0}
       title={period}
       target="_blank"
