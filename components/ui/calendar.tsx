@@ -20,11 +20,12 @@ function Calendar({
 			className={cn("p-3 mt-3", className)}
 			classNames={{
 				months:
-					"flex flex-col w-fit mx-auto space-y-4 sm:space-x-4 sm:space-y-0",
+					"flex flex-col text-light-color dark:text-dark-color w-fit mx-auto space-y-4 sm:space-x-4 sm:space-y-0",
 				month_caption:
-					"flex justify-start pb-2 w-fit relative items-center px-3",
-				caption_label: "text-sm font-medium",
-				nav: "space-x-1 flex items-center z-10 justify-end mb-[-24px]",
+					"flex justify-start pb-2 w-fit relative items-center px-3 text-light-color dark:text-dark-color",
+				caption_label:
+					"text-sm font-medium text-light-color dark:text-dark-color",
+				nav: "space-x-1 flex items-center z-10 text-light-color dark:text-dark-color justify-end mb-[-24px]",
 				button_previous: cn(
 					"h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100",
 				),
@@ -67,13 +68,12 @@ function Calendar({
 								className={`h-4 w-4 ${props.disabled ? "opacity-30 cursor-not-allowed" : ""}`}
 							/>
 						);
-					} else {
+					}
 						return (
 							<LuChevronRight
 								className={`h-4 w-4 ${props.disabled ? "opacity-30 cursor-not-allowed" : ""}`}
 							/>
 						);
-					}
 				},
 			}}
 			{...props}

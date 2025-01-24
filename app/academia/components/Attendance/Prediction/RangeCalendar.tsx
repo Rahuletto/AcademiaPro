@@ -80,7 +80,7 @@ export function LeaveODRangeCalendar({
 	const today = startOfToday();
 
 	return (
-		<div className="flex w-full flex-col gap-4 rounded-xl bg-light-background-light dark:bg-dark-background-dark">
+		<div className="flex w-full h-full flex-col overflow-auto gap-4 rounded-xl bg-light-background-light dark:bg-dark-background-dark">
 			<div className="flex w-full flex-col lg:flex-row">
 				<div className="w-full lg:w-1/2 lg:max-w-[50%]">
 					<CalendarComp
@@ -188,11 +188,11 @@ export function LeaveODRangeCalendar({
 					/>
 				</div>
 				<div className="w-full lg:w-1/2 lg:max-w-[50%]">
-					<div className="h-[330px] border-t border-neutral-200 p-2 md:border-l md:border-t-0 lg:h-[330px] dark:border-neutral-800">
+					<div className="h-full border-t border-neutral-200 p-2 md:border-l md:border-t-0 lg:h-[330px] dark:border-neutral-800">
 						<div className="flex flex-col gap-1">
 							{categorizedRanges.filter((a) => a.category === "Leave").length >
 								0 && (
-								<span className="ml-1 font-mono text-xs font-semibold opacity-15">
+								<span className="ml-1 font-mono text-xs font-semibold text-light-color dark:text-dark-color opacity-15">
 									Leave
 								</span>
 							)}
@@ -202,7 +202,7 @@ export function LeaveODRangeCalendar({
 									<div
 										key={index}
 										className={cn(
-											"flex items-center justify-between rounded-md p-1 bg-light-background-normal dark:bg-dark-background-normal",
+											"flex items-center justify-between rounded-md p-1 bg-light-background-normal dark:bg-dark-background-normal text-light-color dark:text-dark-color",
 										)}
 									>
 										<span className="px-3 py-1 text-sm font-medium">
@@ -220,7 +220,7 @@ export function LeaveODRangeCalendar({
 								))}
 							{categorizedRanges.filter((a) => a.category === "OD").length >
 								0 && (
-								<span className="ml-1 mt-2 font-mono text-xs font-semibold opacity-15">
+								<span className="ml-1 mt-2 font-mono text-xs font-semibold opacity-15 text-light-color dark:text-dark-color">
 									OD/ML
 								</span>
 							)}

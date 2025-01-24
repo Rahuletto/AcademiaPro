@@ -117,14 +117,14 @@ export default function Predictor({
 							onClick={(e) => {
 								e.stopPropagation();
 							}}
-							className="w-[600px] cursor-default rounded-2xl bg-light-background-normal p-4 text-white shadow-lg dark:bg-dark-background-normal"
+							className="w-[600px] max-h-[90vh] cursor-default rounded-2xl bg-light-background-normal p-1 text-white shadow-lg dark:bg-dark-background-normal"
 						>
-							<div className="flex mb-6 justify-between items-center">
+							<div className="flex mb-6 justify-between items-center p-3 pb-0">
 								<div>
 									<h2 className="text-2xl font-semibold capitalize text-light-color dark:text-dark-color">
 										Predict Attendance
 									</h2>
-									<p className=" text-xs font-medium text-light-accent opacity-80 dark:text-dark-accent">
+									<p className=" text-xs font-medium text-light-accent opacity-80 max-w-[90%] dark:text-dark-accent">
 										Let&apos;s you predict the percentages with leaves and ODs
 									</p>
 								</div>
