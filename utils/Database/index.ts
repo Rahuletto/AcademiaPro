@@ -34,7 +34,7 @@ class Database {
 
 		for (const event of events) {
 			const [month, date] = event.date.split(" - ");
-			const monthData = calendar.find((cal) => cal.month === month);
+			const monthData = calendar?.find((cal) => cal.month === month);
 
 			if (monthData) {
 				monthData.days.push({

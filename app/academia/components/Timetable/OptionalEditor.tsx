@@ -129,7 +129,7 @@ function OptionalHours({
 				<button
 					type="button"
 					disabled={
-						button || optionals.find((a) => a === "D0-H0") !== undefined
+						button || optionals?.find((a) => a === "D0-H0") !== undefined
 					}
 					onClick={handleSave}
 					className="bg-light-success-background disabled:opacity-50 dark:bg-dark-success-background text-light-success-color dark:text-dark-success-color font-semibold rounded-xl p-2 px-4 w-fit"
