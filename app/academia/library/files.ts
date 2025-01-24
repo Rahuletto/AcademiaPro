@@ -8,23 +8,23 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE204J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE204J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwp84W5IXvjlzjp28uYYQWk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2JOzzFfvSozoau44O3qEEw",
 					},
 					{
 						period: "Dec-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE204J/Dec-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE204J/Dec-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwp84W5EVOoBFM0WqPL1zx0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2JOzzFbsvtP4D5YlsqJnfC",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE204J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE204J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwp84W5I7bzVgv9jlC7W8fe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2JOzzFfV94jVmElgfcnwNq",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE204J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE204J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwp84W5GwgzgaOxuOSSAfmo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2JOzzFeKE4uPG2wJvxSTV0",
 					},
 				],
 			},
@@ -39,8 +39,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE306J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE306J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8kGAmmMvzGyP9SOGsD7kKDG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfpkRiFXJMo3cyJTIngd27vS",
 					},
 				],
 			},
@@ -55,8 +55,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE204J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE204J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzrpXrjAlZ6K0rb3sHQAciDW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZWxJonCL8wdPEgS8uCtfuVvi",
 					},
 				],
 			},
@@ -71,8 +71,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE486T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE486T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnIkZVNkl0O60hUxnP3S1A6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osn1UyY88XTJpYZzisYjosI",
 					},
 				],
 			},
@@ -87,23 +87,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18MAB102T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18MAB102T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5roXgJKWjlAn5r7Tr0vtVpxOwiD0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4oUnqQ10gdxTEeZ4pmyXlQuEVvC",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18MAB102T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18MAB102T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5roXgJKWjlAn7SMDwQGkdaPVKSww",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4oUnqQ10gdxUptJAF7pfVt0cGf8",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18MAB102T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18MAB102T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5roXgJKWjlAn722Tg7S5LCXgxghi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4oUnqQ10gdxUPZYtwJAN81CFUPu",
 					},
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18MAB102T/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18MAB102T/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5roXgJKWjlAn5r7Tr0vtVq25bxP4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4oUnqQ10gdxTEeZ4pmyXlVatl7G",
 					},
 				],
 			},
@@ -118,18 +118,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21MAB102T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21MAB102T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSZ49YdqPMnZsQDerez9boxKx75yI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfem46gAvtdj32nbBwso0gqsoSOtgU",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21MAB102T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21MAB102T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSZ49YdqPMnZsP2jouNWEo9b3VvNO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfem46gAvtdj32mQGu8CNJq54Ynj5a",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21MAB102T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21MAB102T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSZ49YdqPMnZsQdybvHyH7L84od1S",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfem46gAvtdj32o1Vh96pM9Gba6Qje",
 					},
 				],
 			},
@@ -144,8 +144,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE435J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE435J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHn9J8RWU1YJwGCmurBKoZss",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osda3ugrP5PA53rwmeq6Nb4",
 					},
 				],
 			},
@@ -160,8 +160,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE220T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE220T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8cWq0iSWinAlaYXJilTug4M",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfi16wBcu6KFzPPcLeEzCTmY",
 					},
 				],
 			},
@@ -176,8 +176,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE323T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE323T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8kJvPvrTf8AYnORLbwFjoZS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfpoCLP1r2fFmcFWNXPl1cHe",
 					},
 				],
 			},
@@ -192,23 +192,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC207J/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC207J/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMJQR3BQ9krDFJi6cWZZsU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqaLuDYngq526Ok261rNag",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC207J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC207J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMJQR38yrZLsCMKYZPQu2g",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqaLuDWMOeZh3RMU2uihks",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC207J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC207J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMJQR3Cb4kgJlVXT87vJB8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqaLuDZybpu8caZObdD6tK",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC207J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC207J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMJQR3Cb4kgJlVXTCoaYNC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqaLuDZybpu8caZOgJsM5O",
 					},
 				],
 			},
@@ -223,8 +223,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AS0104T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AS0104T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQCJtMSyVJnKfXNYtgyrnfX6sbO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQ9RQRxFQmxi34SmiY3tj92OgJa",
 					},
 				],
 			},
@@ -239,23 +239,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ASO104T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ASO104T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQCZyenXt5OcKXClhoGfqBqlqNS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQ9hVkHooYYzi4HzWfLhlfM3e5e",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ASO104T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ASO104T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQCZyenXt5OdVSCaoKSVCm8mosA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQ9hVkHooYZ0szHodBXX8Fe4caM",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ASO104T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ASO104T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQCZyenXt5Odvlwr797naZGULvK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQ9hVkHooYZ1JJ24w0CpW2lm9dW",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ASO104T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ASO104T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQCZyenXt5Odvlwr797nadx9b7O",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQ9hVkHooYZ1JJ24w0CpW7SROpa",
 					},
 				],
 			},
@@ -270,13 +270,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MEO102T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MEO102T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bY4pFUgkgNvnG9CzldAqJBXcMeU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoY1wmaB1br6AdgIDaUFsEf2uAMg",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MEO102T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MEO102T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bY4pFUgkgNvqsMOKDCK3DtdRGB4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoY1wmaB1br6EFtTY23P59N8j3tG",
 					},
 				],
 			},
@@ -285,18 +285,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEO102T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEO102T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sJXAKiRlWjNREzmQa1VO45URC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pR4FozNEh6kyKDbHf3QrZNI9O",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEO102T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEO102T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sJXAKiRlWiCWFAfuOC8nm4VwU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pR4FozNEh5a3KOUlTE4HHMJeg",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEO102T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEO102T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sJXAKiRlWjnkzG5FFJtBBn1UM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pR4FozNEh7BI4Tu6KLoeh4pCY",
 					},
 				],
 			},
@@ -311,8 +311,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECC201JO/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECC201JO/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMqiO231WEO42N5Nxvwoj1eFhYnoqE",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRGOC99eBEHMTDcYZV0ntnbZWkJ5Jm",
 					},
 				],
 			},
@@ -327,8 +327,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECC201JOR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECC201JOR/Dec-2023.pdf",
+						url: "2gQElbwDh61rDU95lM334UT6WZFbcRctbAPS7CRVdCkG0ISjdBtoWwp8JYdF3hZJxnMjdVu7gT8LfHESUH5PMjew0pM9SHFnIWAbnwKU",
+						raw: "GDp1UkctEvJkrKAzRd2zp5iInpb1i1yjGD2GLZPIS9G39fXNthHvM81ziaPmE0pqdK47Ut92OgdILMV2bt2lsFzkZfu9npuMxgqVqycSvurjoENW6tyKs",
 					},
 				],
 			},
@@ -343,8 +343,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECC201J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECC201J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR8FGLqtDgSz16HAWtp3t37PqI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOFmLq7ogqqMYBUzNyqzMYPDYU",
 					},
 				],
 			},
@@ -359,8 +359,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18EEC206J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18EEC206J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpVPuj7dZRRhF7VfeZ1efg49zd8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspSXRobuUuc4ceatTQ6gb9ZRnLK",
 					},
 				],
 			},
@@ -375,8 +375,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18EIC206J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18EIC206J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpdzFef8MXqDXvh69MVCtqPIxTq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspb6mk9PI10avSmJyDaEpJualC2",
 					},
 				],
 			},
@@ -391,8 +391,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AUE211J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AUE211J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZqTIArpckDeTiFJqvH6IK9II7vC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImqQPhxJtfgor5mP4k8BKFcnZvdO",
 					},
 				],
 			},
@@ -407,13 +407,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECC205J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECC205J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEcWvzqTw8DECIvAo0XxUfsGiU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBk41U7PPIabjO8zf5ZsyBA4Qg",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECC205J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECC205J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEcWvzqTw8CnsYerzLFZcrVUTG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBk41U7PPIaBPdsgqQHV6MnIBS",
 					},
 				],
 			},
@@ -428,18 +428,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC204J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC204J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMI3QuXhgV46ha94PwUguU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqYyu4v5DaHvYfAztRmUcg",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC204J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC204J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMI3QubJtgOYGjLz3LeLF0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqYyu4yhQlcN7oNuWqw8xC",
 					},
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC204J/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC204J/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMI3Qua8ygZRkXWcT3dMkI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqYyu4xWVlnGbcYXwYvASU",
 					},
 				],
 			},
@@ -454,18 +454,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC206J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC206J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4Lzc8rVuMZACaLo6yKqXkU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qGXc1tHteO1RQq2Rq8LSg",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC206J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC206J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4Lzc8rSI9Npl1CbCGF1eDu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qGXc1pfgT3ZsHd7jkJRw6",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC206J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC206J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4Lzc8rVuMZACaLo6teBIYQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qGXc1tHteO1RQq2N9T6Gc",
 					},
 				],
 			},
@@ -480,8 +480,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18EEC201J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18EEC201J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQlFhvd3TdWOHr3N41oYQkn5Zl14I",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycyFf3A8xuRrSEQu9FdPVmiZ52omU",
 					},
 				],
 			},
@@ -496,8 +496,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18PCY402/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18PCY402/May-2022.pdf",
+						url: "2MZfMSx79ADZiIeYXriACIdm7cGKsxemZMFzOInSnJVj6ZpDpVXAjdu7HFgr4Q2t947I1W0GXMgxl7ZzpOiC5hrzdBpKlAYFuj38",
+						raw: "EHrjriXjSiJWmolXrv3qEJgLkTcvsoLGjqOnUCCakIhmMbfK2YnZ1mFNO2iX6eSWlMY5hdQNXSysBwd8xPxzvEWQjhWAaW5YrXtLQXBmdQagqbf7u",
 					},
 				],
 			},
@@ -512,23 +512,23 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BTC203J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BTC203J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUZ56BrSIdXF2XhoLqbslRSmBo98",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhZ2DiwwZZ0PPvEtZfSxnMwHTbrK",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BTC203J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BTC203J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUZ56BrSIdXF69uzgIB1yM6BLSTe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhZ2DiwwZZ0PTXS4u7270HZgdGBq",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BTC203J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BTC203J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUZ56BrSIdXF69uzgIB1yMAs0hfi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhZ2DiwwZZ0PTXS4u7270HeNIVNu",
 					},
 					{
 						period: "Mar-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BTC203J/Mar-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BTC203J/Mar-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUZ56BrSIdXF69upR2GtpKFHSt78",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhZ2DiwwZZ0PTXRuer7yrFimkgpK",
 					},
 				],
 			},
@@ -543,8 +543,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BTO105T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BTO105T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUZ5CPmlDEIS8E2xpNuAeFkdYoPm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhZ2JwsFU9lcVba33ClFgBE8qc7y",
 					},
 				],
 			},
@@ -559,8 +559,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18ASC101T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18ASC101T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgo0talfWk2xh4gtakgEsbgCAo2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4Cycxgl8QgFwSDDL4bm7PblGo5BTyWE",
 					},
 				],
 			},
@@ -575,8 +575,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE481T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE481T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07ekWSDs7xkwpdwgMq8ZbxW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD91RvOFVUqAeV1iIJdrPfi",
 					},
 				],
 			},
@@ -591,13 +591,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE307J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE307J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4cDTjUFuaTpVOOMPx8kLH4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOA6UPCedI7Z3KFTOLQe28zG",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE307J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE307J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4cDTjUFUGjZCZj425KNZ1q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOA6UPCecrnon1Qo5xYpfMk2",
 					},
 				],
 			},
@@ -612,8 +612,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECS301J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECS301J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz2F7StSiShu3YvCCTY1XlUd978",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzMeYNjdvsHR60Q1Kd3TEzuwpK",
 					},
 				],
 			},
@@ -628,8 +628,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ASE202T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ASE202T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZqP0VP1zpaHcPcQmp1FSUtbD2v8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImqM82UWGl3Rzn9W0dsKUQN6UqdK",
 					},
 				],
 			},
@@ -644,8 +644,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MEC107TR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MEC107TR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMvQtAqzz2w1ZJIJtSkymQ46COrXvy",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRL6hHxce2pK09pUV1oxxC1Q1aMoPW",
 					},
 				],
 			},
@@ -660,18 +660,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MEC107T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MEC107T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyHEjlwrVTTVs2ge64H6LTsvhxu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxtyEMGrR8QwdtFZlruvM8GxODVg6",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MEC107T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MEC107T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyHEjlwrVTTX2xgTCaSvi4AwgSc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxtyEMGrR8QwduQUlh1RXxdXgEUAo",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MEC107T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MEC107T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyHEjlwrVTTTQkV8l1JinVSSHKA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxtyEMGrR8QwdqoHaMZsOkiyxk52M",
 					},
 				],
 			},
@@ -686,8 +686,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MEC107TO/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MEC107TO/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMvQtAqzz2w1EivtQbDUJxmcIAweBC",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRL6hHxce2pJfZT42AHTUjjw7MRuek",
 					},
 				],
 			},
@@ -702,8 +702,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21AUC201%20T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21AUC201%20T/Dec-2023.pdf",
+						url: "B5AKyaeOXwtfjgTXnX2agXoAwTYRKk4bZSz65jNabsd05EEePp8Se2t8Kl02BHtqQtpsR8yeF1883tNll5Yckewmn82yM6BrMSzVDLfHS",
+						raw: "14z4gAyWa5cfZUBJNi5ENGxavdl2t3oAksvpLV4CSCEEH1vVqfyk0pNAEq6MR7rS5KMr0xXhJtw2FkCuAmRGgaXhnxuU6XuPl6ThFI00oyS8pnDNGHcFwsY",
 					},
 				],
 			},
@@ -718,8 +718,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MEC107TOR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MEC107TOR/Dec-2023.pdf",
+						url: "2gQElbwDh61rDU95lM334UT6WZFbcRctbAPS7CRVdCkG0ISjdBtoWwp8JYdF3hZJxnMjdVu7gT8f91oopw47ZAf8ojiYI1lppnM6FuuE",
+						raw: "GDp1UkctEvJkrKAzRd2zp5iInpb1i1yjGD2GLZPIS9G39fXNthHvM81ziaPmE0pqdK47Ut92OgdILMV2bt2lsFzkt9ekABZLftHW3mWpKkcFqlehbLwuc",
 					},
 				],
 			},
@@ -734,13 +734,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AUC203T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AUC203T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGfmqqySdYWlE1cqsIGUmLcfmLO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGcuNwSjZ1h8bYi4h9LWhp7xa3a",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AUC203T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AUC203T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGfmqqySdYWoqEoBJrPhgz1pQfu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGcuNwSjZ1hCDltP8iUjcSX7EO6",
 					},
 				],
 			},
@@ -755,8 +755,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AUC203TO/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AUC203TO/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMoOqXiEjeFO6IPM8RNWIdtpgMgjF0",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRE4eeorOe8gX8wWk0RVTPr9VYBziY",
 					},
 				],
 			},
@@ -771,8 +771,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC305JR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC305JR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWWC4HZWnEtKIygde7fWUVoQ3pMTe5bsjkE",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHiF74dwT30QvdgWwYW3f7NU308QxunO0Dm",
 					},
 				],
 			},
@@ -787,13 +787,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE424T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE424T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKskJ22GjSZbdjzN4wuTvNO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQN1EVCe6zepSb4P0QPlj5a",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE424T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE424T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKskJ22GJ8pLKvK4h56798A",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQN1EVCdgfuZ9mP6cYbOwqM",
 					},
 				],
 			},
@@ -808,18 +808,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC365J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC365J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecc1t6l7eYZt1seYa0GCZy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6sxMH8VBdnhsxgU3VY0IA",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC365J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC365J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecc1t6khKoJaDDMAmsYfWo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6sxMH84rtXP4IO6GNqTF0",
 					},
 					{
 						period: "Mar-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC365J/Mar-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC365J/Mar-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecc1t6khKe4KJ5D8vyg6AI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6sxMH84rjI9AAF4PTxtsU",
 					},
 				],
 			},
@@ -834,13 +834,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC305J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC305J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRI4k4rDiEGuU9IFyUgZXC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvZ0DFEbFJUjLEKBRzyNFO",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC305J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC305J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRI4k4upvPbM3IVAbtqDri",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvZ0DFIDSUpAuNX65P81Zu",
 					},
 				],
 			},
@@ -855,8 +855,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC312J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC312J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeT9hGRcxdK1vjVQEc3OHjC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjxQcjc0LAPFkaaSA5Yg5RO",
 					},
 				],
 			},
@@ -871,8 +871,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MEO117T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MEO117T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyHKxp4iCCPDrbNFqaWzKpLK4V4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxtyESUuYz7fZbF8STfRc1GIqbsDG",
 					},
 				],
 			},
@@ -887,13 +887,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18AIE424T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18AIE424T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmOzeYjg76LjS1mURlkCAJbX5LZyA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LybzbgGlbNHCcPA1WzZ3FLX0adNgM",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18AIE424T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18AIE424T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmOzeYjg76LjS1MAhVRNV1DoeJI74",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LybzbgGlbNHCcOjhmjGEa39I9b5pG",
 					},
 				],
 			},
@@ -908,8 +908,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18AlE424T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18AlE424T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP0rXwIahHNu14vQp2ohykkQrAZC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc0ofTO4yCr4OSSW2rfn0gDw8yHO",
 					},
 				],
 			},
@@ -924,8 +924,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MEE499T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MEE499T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhfidViH2B5o7tkao0UYCilj3Hq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhcqAbCXxeGBVQpocrZa8CH0r02",
 					},
 				],
 			},
@@ -940,8 +940,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MHE461T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MHE461T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7yer28DENZkUBIB3gRwUDklXyI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7vmO7cU9qk7riNOsXWyPhG3LgU",
 					},
 				],
 			},
@@ -956,8 +956,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE305T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE305T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiJyec0AvNtrg9eYpyW071ba",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPSvXTLIlQwtyVdrtzVOpJm",
 					},
 				],
 			},
@@ -972,8 +972,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BME466T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BME466T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8dbg0LwiCXHbdh1OrzkSmR5pbS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8ajD5qDdfhezAmFDj4mOFwNdJe",
 					},
 				],
 			},
@@ -988,13 +988,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE495T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE495T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELq4HRSe7UvjHFIX2DkY7qkA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvYYMvoUsSoV49c49E3PeSM",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE495T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE495T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELq4HRSe7UvjHFIX2DpEn5wE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvYYMvoUsSoV49c49Ik4teQ",
 					},
 				],
 			},
@@ -1009,8 +1009,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21MEE355T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21MEE355T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8ODt86skMwnG5gdoL4wTBwv5v9K2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbDqFdyEdsGQT4AtYtnYDsObCx2E",
 					},
 				],
 			},
@@ -1025,8 +1025,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE388T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE388T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzrjgZwv1EZqXdxyNZ5Vp7m",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5M0c37IOlf4MV30J2ancpy",
 					},
 				],
 			},
@@ -1035,23 +1035,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE388T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE388T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDlvCM0uuz5Z4qsLXroave",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi2qfWOIS4JNvvuH1N6Odq",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE388T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE388T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDlvCM25pyufb2hi89pZQM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi2qfWPTN48US7jdbf7N8Y",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE388T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE388T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDlvCM2W9jAyPi05zyCLfa",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi2qfWPtgoOnGn21TTU9Nm",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE388T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE388T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDlvCM25pyufb2hiHXA3oU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi2qfWPTN48US7jdl2RrWg",
 					},
 				],
 			},
@@ -1066,8 +1066,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18AUE313T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18AUE313T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP04GkKudEy9X4swxHkmRc75Bk6Y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc01OHQOuARJuSQ2B6brTXaaTXok",
 					},
 				],
 			},
@@ -1076,8 +1076,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUE313T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUE313T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGmSfGfTaYeZo6HiWWTKOaXmGE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDtzkkwP3j1xLBVXNbVFs5pZyQ",
 					},
 				],
 			},
@@ -1092,8 +1092,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18PPH4EC/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18PPH4EC/May-2022.pdf",
+						url: "2MZfMSx79ADZiIeYXriACIdm7cGKsxemZMFzOInSnJVj6ZpDpVXAjdu7HFgr4Q2t947I1W0GXMgxrpfEVFwIbdlMPJrLzTBTdU86",
+						raw: "EHrjriXjSiJWmolXrv3qEJgLkTcvsoLGjqOnUCCakIhmMbfK2YnZ1mFNO2iX6eSWlMY5hdQNXSysBwd8xPxzvEWQjoEFpBwmy3pEnJJoeetK4KQCs",
 					},
 				],
 			},
@@ -1108,8 +1108,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/18AUC303J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/18AUC303J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QxcregynYXNdfBKOpiTMyOurwtmwirIJi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLvDRgtBnVeuj9SFs05qu3cjj1viQE961u",
 					},
 				],
 			},
@@ -1118,28 +1118,28 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUC303J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUC303J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGlQK3SBQMOVedUYwrqm8LJZjy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDsxPXj6tWltBiiNnwshbqbNSA",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUC303J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUC303J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGlQK3SBQMOVedUYwrqm3eeKXu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDsxPXj6tWltBiiNnwshX9w8G6",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUC303J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUC303J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGlQK3SBQMKtRSA7NidrUw9vPS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDsxPXj6tWiGyXNwEnfmyRRj7e",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUC303J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUC303J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGlQK3SBQMOvyNkrlX99qmLrb4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDsxPXj6tWmJVSygccB5KHdfJG",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUC303J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUC303J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGlQK3SBQMOVedUYwrqmD1yow2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDsxPXj6tWltBiiNnwshgXGceE",
 					},
 				],
 			},
@@ -1154,8 +1154,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AUE363T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AUE363T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZqTIAzm8fpUIxZPsL5rXsdxA0Wc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImqQPi5GPbIegL6V69wwZo7SRoEo",
 					},
 				],
 			},
@@ -1170,18 +1170,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18EES101J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18EES101J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkw675MJrGDgOzu7D8KseHGC1zH8A",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx964CtPLX99ZNHeIM9jjJBfXH4qM",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18EES101J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18EES101J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkw675MJrGDgP152CxROq6cvhKk10",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx964CtPLX99ZOSZIBGFv8YPCcXjC",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18EES101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18EES101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkw675MJrGDgOxSp1czpgtiDbVqUQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx964CtPLX99ZKqM6qoglvdh6neCc",
 					},
 				],
 			},
@@ -1196,8 +1196,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18GEO101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18GEO101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPqawCSVxdCwJ12TjVzCZRLsSsQY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycqY3jY0EYg6gOZYxKqHbMpNkg8k",
 					},
 				],
 			},
@@ -1212,23 +1212,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE391T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE391T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzztZTlSnPoZXiVcDzrPitXy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5NqPEdAnLelXMhFvKv0hGA",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE391T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE391T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzztZTlSp13Jd7qTLkEpRP5q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5NqPEdCOaOqwhYNfiKjCo2",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE391T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE391T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzztZTlSoajZMp1o3Mb54MQo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5NqPEdByGeadst5I4aMA90",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE391T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE391T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzztZTlSoajZMp1o3MRhjs2g",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5NqPEdByGeadst5HvD1fks",
 					},
 				],
 			},
@@ -1237,8 +1237,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE391T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE391T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKFbiNrwVySxYcDNSfi7vde",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPjsdr2JtVYBNTIPO9DPjLq",
 					},
 				],
 			},
@@ -1253,18 +1253,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSE222T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSE222T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuLl2U0SrH4H8JASl2qPua9gV4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrTI7yHOKRRefOOHc7sLO5RUDG",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21%20CSE222T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21%20CSE222T/May-2024.pdf",
+						url: "B5AKyaeOXwtfjgTXnX2agXoAwTYRKk4bZSz65jNabsd05EEePp8Se2t8Kl02BHtqQtpsR9jjm2m83yOK7Uw8rQ1BykEmyABtXQHISxA5W",
+						raw: "14z4gAyWa5cfZUBJNi5ENGxavdl2t3oAksvpLV4CSCEEH1vVqfyk0pNAEq6MR7rS5KMr0xXhJtw2FkCuAmRHRg4jRxuZ76Gp8caSJhBd0n4CppOKY4rrRgc",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSE222T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSE222T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuLl2U0SrH0ev7q1BtdVHB02AY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrTI7yHOKRO2SD3q2yfQkgHpsk",
 					},
 				],
 			},
@@ -1279,13 +1279,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE333J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE333J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHfMEBYpieyBiMtoM1o8Z6zW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3okqV72062VGwBktNxHdquhi",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE333J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE333J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHfMEBYpj5HvyfiTePWZbOqc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3okqV7206Sp1CUZYgL04tCYo",
 					},
 				],
 			},
@@ -1300,8 +1300,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18BTB102T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18BTB102T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfPU76DmdUZA7ru5OqJ4lxmDk1Je",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsPREdJGuQ2KVFRAcfA9ntFj1p1q",
 					},
 				],
 			},
@@ -1316,13 +1316,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18BTB101T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18BTB101T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkpgcoY8fGqr1LC8XwZhc6IUOoDO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxpdkLdcwCK1OijDllQme1lzgbva",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18BTB101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18BTB101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkpgcoY8fGqqyttx2bWkEYK3vNZe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxpdkLdcwCK1MHR2GQNpGTnZDBHq",
 					},
 				],
 			},
@@ -1337,8 +1337,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE334T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE334T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK4J8Eyhvk8X5x4hweCLh6k",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPYa3i95JHDkuo9js7hdUow",
 					},
 				],
 			},
@@ -1353,8 +1353,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE304J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE304J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiJye8YqBXHxmaxRps6lPI2w",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPSv420Yup30PoWrnaGh5l8",
 					},
 				],
 			},
@@ -1363,8 +1363,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE304J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE304J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzcbtwR6TezxVEfBhizrRKw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX56spPbTrC5BK5kDdCV9F38",
 					},
 				],
 			},
@@ -1379,18 +1379,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MBH362T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MBH362T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7lpP1ntt92Vrvku4YTrL3Ssdcc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7iww7IAocCtFSq7tPYtGWyARKo",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MBH362T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MBH362T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7lpP1ntt92Vrvku4YTrKymDOQY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7iww7IAocCtFSq7tPYtGSHVC8k",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MBH362T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MBH362T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7lpP1ntt92WIFVANN99iqaaAfm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7iww7IAocCtfmaOCEEBeK5ryNy",
 					},
 				],
 			},
@@ -1405,13 +1405,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MBH361T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MBH361T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXyL7M9vfQjRMmIOsyd7boxciJS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXvSeReCattokJNchpi9XISuW1e",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MBH361T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MBH361T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXyL7M9vfQjQwSY8a9xpDx9Fw4E",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXvSeReCattoJzdMP12r9QeXjmQ",
 					},
 				],
 			},
@@ -1426,33 +1426,33 @@ export const files = [
 				urls: [
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21MAB101T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21MAB101T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eUM4MAlOZrZK7Gc8t7im2ZQYT14",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrUJBtGFfVKjhUnhMhynny2vqGjG",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21MAB101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21MAB101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eUM4MAlOZrZHfyTZ3BwZvfuzzHS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrUJBtGFfVKjf3VYms31br9QHmze",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21MAB101T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21MAB101T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eUM4MAlOZrZLiVP9nZl5E6RrAf8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrUJBtGFfVKjj62UNcQq79Zx8yNK",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21MAB101T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21MAB101T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eUM4MAlOZrZK7Gf4OEtxTeLTPvC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrUJBtGFfVKjhUnkID5yzP7qlDdO",
 					},
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21MAB101T/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21MAB101T/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eUM4MAlOZrZK5Jmnbl5jMeqeRWw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrUJBtGFfVKjhSqs1QcAlI8LwFF8",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21MAB101T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21MAB101T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eUM4MAlOZrZLIBetUl5mqO0oso2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrUJBtGFfVKjifik7JcAolrW6gWE",
 					},
 				],
 			},
@@ -1467,18 +1467,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18MAB101T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18MAB101T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkxEkC1eslXSU26ZGud3ZJ5W40ELO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxAEhJYkN2SvePU6M8RueL0zZI23a",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18MAB101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18MAB101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkxEkC1eslXSTyUM5aBUQ6AxLVpCw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxAEhJYkN2SveLrtAo0LV86Qqncv8",
 					},
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18MAB101T/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18MAB101T/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkxEkC1eslXSU0veH5WXNTj0SeV2k",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxAEhJYkN2SveOJBMJLOSVeTxwIkw",
 					},
 				],
 			},
@@ -1493,18 +1493,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BTE401T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BTE401T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8sbW7rhrJdDTVxxDGpnCGub3xu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8pj3DLymmnar33B27up7kPsrg6",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BTE401T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BTE401T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8sbW7rhrJdEeQxmJn1cYrCc2Sc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8pj3DLymmnc1y308e6eUKhtqAo",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BTE401T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BTE401T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8sbW7rhrJdF4ki2cbguwj0yohq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8pj3DLymmncSHnGRSlwsCWGcQ2",
 					},
 				],
 			},
@@ -1519,13 +1519,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18BTC102J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18BTC102J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkpgdKijKqqTuZ8A4Dys9GgwsOFq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxpdkroDbmJeHwfFI2pxBCASABy2",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18BTC102J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18BTC102J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkpgdKijKqqTsxtPyoe11WEqUdVu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxpdkroDbmJeGLQVCdV63RiLmRE6",
 					},
 				],
 			},
@@ -1540,13 +1540,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21CYB101J/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21CYB101J/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7d4iiLmEWRMrmEb9AdB7rL5mzqI2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJq4fpsrinMq29c8EOS2CtGZIHe0E",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21CYB101J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21CYB101J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7d4iiLmEWRMrnPWBvEoUs8pgb0sw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJq4fpsrinMq2An3H93fZu4JBsob8",
 					},
 				],
 			},
@@ -1561,8 +1561,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18CYB101J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18CYB101J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5qOuKIvzrALNMiyebwLEMfgEQKGc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI3OrRq1U85oXk6VjplCJOb9ji7yo",
 					},
 				],
 			},
@@ -1571,8 +1571,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CYB101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CYB101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvp6q1GLtOxmQbgcbvXpBTThxCTu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8p3xYLqAKQwnzDhpkOuDOxDF0C6",
 					},
 				],
 			},
@@ -1587,18 +1587,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH102T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH102T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH5zIdzHyYuKswOGzKx06g",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolMuloMfVe89k1QCSqEnos",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH102T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH102T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH5zIe1jGhUAoiaNsqVTqI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolMuloP6nmhzfncJMLnHYU",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH102T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH102T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH5zIe2uBkEmS5bBck6eRC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolMuloQHipSbJAd76FOS9O",
 					},
 				],
 			},
@@ -1613,8 +1613,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18LER102J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18LER102J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5rfpuLax46pt70fMVin325OjwKik",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4fn1sgRL2J3UOCRjXe840sFE8Qw",
 					},
 				],
 			},
@@ -1629,13 +1629,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18LEH102J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18LEH102J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkx62KsDOSvmwB7QodAhWLnDmDGpK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxA5zSPIsjrG6YUxtqzYbNihHV4XW",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18LEH102J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18LEH102J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkx62KsDOSvmwCifYia2NTXfsb1ZG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxA5zSPIsjrG6a6CdwOtSVT9NspHS",
 					},
 				],
 			},
@@ -1644,8 +1644,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18LEH102J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18LEH102J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5rfpp9t2QhAX4nQf7qRy9RRsCxyI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4fmwgyWhcdhSAxkLfJ3BMvNUlgU",
 					},
 				],
 			},
@@ -1660,8 +1660,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE441T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE441T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnBAJjnWilfoFQvPz1xPMpi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osfRFCxu6Il24I0RuVShAXu",
 					},
 				],
 			},
@@ -1676,8 +1676,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE344T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE344T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK6C7lU0uJMz8JOW70h8R3G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPaT3EeOHqSCxATY2UCQElS",
 					},
 				],
 			},
@@ -1686,8 +1686,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE344T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE344T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzk9t94sz4TOOizC0mgkNSI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5EQocFGMbYcDa4DwGC2BAU",
 					},
 				],
 			},
@@ -1702,13 +1702,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE442T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE442T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnBAm4Vj9A1uAbBToPmO6Xm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osfRhXg6Wh77zSGVjtHfuFy",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE442T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE442T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnBAm4VhXvHolGKM3xg0Lnq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osfRhXg4vSN2a7PNzRBI9W2",
 					},
 				],
 			},
@@ -1723,8 +1723,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE444T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE444T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnBBgjw7zwk60vhbTBQLZxu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osfScD6VNTpJpmmdOevdNg6",
 					},
 				],
 			},
@@ -1739,8 +1739,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE362J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE362J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK9xB2RcXueIymqZDW6AGHu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPeE6VbzvRjWndvb8zbS406",
 					},
 				],
 			},
@@ -1755,8 +1755,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE341T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE341T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzk8W8wHhtP6dED0WdDoAK6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5EPRc6f5QUKS5I2S6j5y2I",
 					},
 				],
 			},
@@ -1771,18 +1771,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH101T/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH101T/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH5WxvpGvW2yHpTsaRcie6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolMSR6CeSbGn8uVo3wuWMI",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH5WxvmraCoPigKRbVyGOc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolMSR6AF7I2EZlMN51G46o",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH101T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH101T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH5WxvqTnO8rHpXMEv7uj8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolMSR6DrKTMg8uZHiQPiRK",
 					},
 				],
 			},
@@ -1791,8 +1791,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21LEH101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21LEH101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSYvRhUOv3ILWfMf3TywwIjFJwz2s",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfelvOp1UPKDoh2kC8hno1KeipEml4",
 					},
 				],
 			},
@@ -1807,8 +1807,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC304JR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC304JR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWWC4HZWnEtKIyekebADVwZy1T2fTj75zni",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHiF74dwT30Qvdedx20kgY920docnYIbGHG",
 					},
 				],
 			},
@@ -1823,18 +1823,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC362J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC362J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfyyctVNFk9tX8xzN2KcxW3a",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4StoyXd7gykxp4Oxo8FJlm",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC362J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC362J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfyyctVNHLOdcYIqUmmjLGnW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4StoyXeiviqN9vWiGEd4Vi",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC362J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC362J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfyyctVNGv4tMFUBCP4IIywQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4StoyXeIbya4LGEKXnamec",
 					},
 				],
 			},
@@ -1849,18 +1849,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC304J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC304J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRHcPMipqnljhhjiwVtm0k",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvYXsX6DNszYYmleQ1BZiw",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC304J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC304J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRHcPMiPX3VQt2RLIlWjLi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvYXsX5n48jFk7TGmGoX3u",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC304J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC304J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRHcPMenJsAzJtEQafhpp8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvYXsX2AqxOoAyGM4AzdXK",
 					},
 				],
 			},
@@ -1869,8 +1869,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/18CSC304J/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/18CSC304J/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06Qxcregz5BCuy30lNq4maheLNGdn1O3eys",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLvDRgtC58KS3XHgr0SA7msAELfiUtLSh4",
 					},
 				],
 			},
@@ -1885,13 +1885,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE336T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE336T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWXTcPd6jXwFXuE6tRl0IBQU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3cxtL6H6vTKlj5BvNEVZz8g",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE336T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE336T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWXTcPd6jXwFXuE6tRgJcwEQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3cxtL6H6vTKlj5BvN9oujwc",
 					},
 				],
 			},
@@ -1906,13 +1906,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CSE399J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CSE399J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNhq2q8IOM2FdzEJPj8uH0uroAQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNexZvcZJpCd1WJXEaDwCUQ9bsc",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CSE399J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CSE399J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNhq2q8IOM2JGCPdrII7Bj0ghh0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNexZvcZJpCgdjUrg9N97CVyVPC",
 					},
 				],
 			},
@@ -1927,8 +1927,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSS202JR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSS202JR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMpZclVCc8lQLe9LLhzQEF7JegOpte",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRFFQsbpH8eimUgVxH3PP14dTru6NC",
 					},
 				],
 			},
@@ -1943,8 +1943,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSO162T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSO162T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a862tmUSXNtU0PXx0LC6YYlmjGY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn83AQryjSr3rNwdApCH8U2H4Wyk",
 					},
 				],
 			},
@@ -1959,8 +1959,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18GEO104T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18GEO104T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6agzxd7E3TRt9I3qg91SoMDjReGE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIngx5ACiKOv3WfavtxsXqHhEjRyQ",
 					},
 				],
 			},
@@ -1975,8 +1975,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ASE307T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ASE307T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQCUnCT3uqhvAffIUcPO0mACL7W",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQ9cKHxKqJsIYCkWJTUPwFfU8pi",
 					},
 				],
 			},
@@ -1991,8 +1991,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE351T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE351T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK83kHqeZAbYen7dUnC7mTu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcKfl11whgmTeCfQGhPaC6",
 					},
 				],
 			},
@@ -2007,8 +2007,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE465T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE465T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnEy87ewNTZ60obHdIEtnZ0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osjF3apJl0eJpfgJYlkBbHC",
 					},
 				],
 			},
@@ -2023,13 +2023,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE438J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE438J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHn9KVRf4sPdxistnxcMiV9y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osdbQupSFwjBXjypt5s0IsA",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE438J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE438J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHn9KVRf5IjOE1hZ6LKnkn14",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osdbQupSgGTRqYe8GoJ2ajG",
 					},
 				],
 			},
@@ -2044,8 +2044,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEO311J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEO311J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPXVSAsAGmH4YDAwKK9W6HUMbu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMf2Xf95jweS5IOlBPBRZmmAK6",
 					},
 				],
 			},
@@ -2060,8 +2060,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEO403J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEO403J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHD1nFa1t0YbXKDM3gZa52LtWLu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA9KL4IoTiyurIZsXec0VrBK46",
 					},
 				],
 			},
@@ -2076,8 +2076,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSE224T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSE224T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuLl2U1NWhT7v1MJ5Yy4kumP7G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrTI7yIIzrqVS6a7we00EQ4CpS",
 					},
 				],
 			},
@@ -2092,23 +2092,23 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC303J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC303J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz26ojQrMrZ2xy7AdrXXNBGTyMg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzELov8IKjQLVCOSicZIellm4s",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC303J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC303J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz26ojQrMrZ2XeMuL2sEzO8mRJW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzELov8IKjPvBS89txGure4F1i",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC303J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC303J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz26ojQrMrZ2XeMuL2sEzSpRgVa",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzELov8IKjPvBS89txGuwKjUDm",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC303J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC303J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz26ojQrMrZ2xy7AdrXXNFx9DYk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzELov8IKjQLVCOSicZIjSR1Gw",
 					},
 				],
 			},
@@ -2123,8 +2123,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSS202J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSS202J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYIaguotP23OnHJ5fJadEvTycSs",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFiE0JAKVDmAoOJUAffAOzGQB4",
 					},
 				],
 			},
@@ -2139,13 +2139,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE338J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE338J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzziIhqnp6w7hIyerWLm8c0k",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5CZdJyCUTCv7pjtRpHQPiw",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE338J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE338J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzziIhqnqHr7WPUqgt5RU4ta",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5CZdJyDfOCkELvioYwlsbm",
 					},
 				],
 			},
@@ -2160,8 +2160,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21%20CSE255T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21%20CSE255T/May-2024.pdf",
+						url: "B5AKyaeOXwtfjgTXnX2agXoAwTYRKk4bZSz65jNabsd05EEePp8Se2t8Kl02BHtqQtpsR9jjm2m83yOK7Uw8x6MldGRfjo4TH2GXQFb3G",
+						raw: "14z4gAyWa5cfZUBJNi5ENGxavdl2t3oAksvpLV4CSCEEH1vVqfyk0pNAEq6MR7rS5KMr0xXhJtw2FkCuAmRHRg4jRxuZ76Gp8cg8fGq9DfpqiP7wXJp9seM",
 					},
 				],
 			},
@@ -2176,8 +2176,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CEO309J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CEO309J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7c3DmV542NcxW3Dxg0MOk1hcJy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7ZAkrzLzVY0L38RmX5OKDWzQ2A",
 					},
 				],
 			},
@@ -2192,8 +2192,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIS203J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIS203J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGGD8noaVPIAZZ15q26ES1MgUOk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDKftIrQsSXx66JetBGNUryI6w",
 					},
 				],
 			},
@@ -2208,18 +2208,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC302J/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC302J/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfynIwMLPskUouo4W2EKuJaY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4HZrpVnGHa2jf9XxhqC7Ik",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC302J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC302J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfynIwMLR3fUe1KGLOjwG2tC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4HZrpVoRCZrqBLNKDRXqbO",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC302J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC302J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfynIwMLRTzEuK8vdmbkcp8Q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4HZrpVorWK8900fi5Fucqc",
 					},
 				],
 			},
@@ -2234,23 +2234,23 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC363J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC363J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecb7DgMGrqO2hMWtjfdTxm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6s2gqjeOvbrYRYpDAvHfy",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC363J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC363J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecb7DgMGrqO2hMWtoMIj9q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6s2gqjeOvbrYRYpHraWs2",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC363J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC363J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecb7DgLqY67jshEW1EbC6g",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6s2gqjE5BLYjmGRUjszos",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC363J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC363J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecb7DgLqY67jshEVwXvwuc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6s2gqjE5BLYjmGRQ3Dkco",
 					},
 				],
 			},
@@ -2265,8 +2265,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC3636J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC3636J/May-2024.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWWC4HZWnEtKJjN6in5T21o795YvlJ2HEBC",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHiF74dwT30QwON01Dw0CdNB8GKt58DmUek",
 					},
 				],
 			},
@@ -2281,13 +2281,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CSC302J/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CSC302J/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNhp0UfvylQj2Q0X01mlfsiuG4k",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNewXaACuEb6Px5kosrnbMEC3mw",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CSC302J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CSC302J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNhp0UfvylQkFHsct1mp9bt4hLq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNewXaACuEb7coxqhsrr55OMV42",
 					},
 				],
 			},
@@ -2302,18 +2302,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSS201T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSS201T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6yjl3YEpSE5rDR7ibE4HFNyMA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE46GqXpAIcbTOIewZgFzkkfm4M",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSS201T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSS201T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6yjl3YEpSE5rDR7ibE4Lw3DYE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE46GqXpAIcbTOIewZgFzpRL1GQ",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSS201T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSS201T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6yjl3YEpSEWAxhQXGWS4N5VPK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE46GqXpAIcbti2vFOLYNXsNJ7W",
 					},
 				],
 			},
@@ -2328,8 +2328,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC003J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC003J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6G8BlI4oDT85ZYd2IKAqiqU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dLcSglFBb0DJOPi4Dng8WYg",
 					},
 				],
 			},
@@ -2338,8 +2338,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18CSC003J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18CSC003J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5qOhToaUDzuTuXTHatoBEdwhWXJO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI3OebLfyUvNeHv0MoifGGZQCoL1a",
 					},
 				],
 			},
@@ -2354,13 +2354,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC262J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC262J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6VtdKWv9pRWFMrs72tZ5q1m",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbNuG05XCybTBix8yN4Ndjy",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC262J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC262J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6VtdKWv6DEKuvIiu8BTGwVC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbNuG05TalQ8k9nw3eyYkDO",
 					},
 				],
 			},
@@ -2375,18 +2375,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC203J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC203J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6ViJpibSmDIIcJ46xOJXEYA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbCalBlq9kNWRA98srop2GM",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC203J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC203J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6ViJpibWOQTd3sDJrx21dgc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbCalBltlxYqsjILnQXJROo",
 					},
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC203J/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC203J/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6ViJpibVDVTnxM1UVRQfuNy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbCalBlsb2Z1mD6WQuvxi6A",
 					},
 				],
 			},
@@ -2401,8 +2401,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE390T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE390T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKFbG39k5a6rdRxJdHt9Bva",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPjsBWK7T7C5SJ2LYlOQzdm",
 					},
 				],
 			},
@@ -2417,8 +2417,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MHE455T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MHE455T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bYBAZMSOIoKIfZhqON5u3KD3qq6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoY8I6RwfEHUg36n4DEAvyniLeYI",
 					},
 				],
 			},
@@ -2433,23 +2433,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE464T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE464T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07azuPLpqlcF75E7loVYaSk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5GpsWDEIhSvwJ9hI0qOAw",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE464T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE464T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07azuPLr1gc4DbPx8YAu3La",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5GpsWEPDhI2SUz41gBr3m",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE464T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE464T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07azuPLr1gc4DbPx8OnZYxS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5GpsWEPDhI2SUz3sIrMfe",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE464T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE464T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07azuPLrS0MKWQ5FWBvH60c",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5GpsWEpXRYLHAHRfQYtio",
 					},
 				],
 			},
@@ -2464,8 +2464,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%208/18AUE344T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%208/18AUE344T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QIozf7JZrl20eGRFyWVk6oaPabqMO8e3C",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLGPZhJWZosZ68XMj8ttHC2PGfdlptQRlO",
 					},
 				],
 			},
@@ -2480,8 +2480,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ASO102T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ASO102T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP004GKRUjnZ7a45Kq2reDW7AqLW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LybzxBnPvlfGjUxbAYetwg8zcSe3i",
 					},
 				],
 			},
@@ -2490,8 +2490,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ASO102T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ASO102T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQCZyenWyPyF4zEfGobfvncWsVC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQ9hVkHntt8cSWJt5fghrH7ogDO",
 					},
 				],
 			},
@@ -2506,18 +2506,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE381T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE381T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDiirMd75UFDREGuW5dedy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPhzeKX0UcZT2IJIpzavSMA",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE381T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE381T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDiirMdXPEVWFtZIJDLBh8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPhzeKX0uwJjL6ybDmiczPK",
 					},
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE381T/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE381T/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDiirMbwAUQ6v2RXvncg9G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPhzeKWzJhZdvm7TTPIuTrS",
 					},
 				],
 			},
@@ -2532,8 +2532,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE224T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE224T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwsu4fiRvHkThzJakaHBf4I",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2NB08spIophWqOcg3mTSmU",
 					},
 				],
 			},
@@ -2542,23 +2542,23 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE224T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE224T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZHEwJI7VNfyDONF7Aad10EQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6MjDElHslD3RDEK9648Inwc",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE224T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE224T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZHEwJI7Xoy9ijQCUiZ3UQsA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6MjDElHvCVEwYHHWe2YmEaM",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE224T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE224T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZHEwJI7Yzt9XpwOK59LVPMs",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6MjDElHwNQElenTM0cqnD54",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE224T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE224T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZHEwJI7Yzt9XpwOK5Iiptl0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6MjDElHwNQElenTM0mE7hTC",
 					},
 				],
 			},
@@ -2573,8 +2573,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18CSEOIlJ/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18CSEOIlJ/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5qOhUupyAFDzSNsFJlWVmbNAtXEs",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI3OecRvSRAh9plPKXaNaoWqgBKx4",
 					},
 				],
 			},
@@ -2589,8 +2589,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE493T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE493T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnKcC1kOPrcfXBE5BBYRMak",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osot7UulnOhtM2J76f3jAIw",
 					},
 				],
 			},
@@ -2605,8 +2605,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE353T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE353T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZP7erkBZySzFKRjcdBPeBy2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6UbvnDLxM04T9IoeYeuvzgE",
 					},
 				],
 			},
@@ -2621,8 +2621,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE433T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE433T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKucqDpNHdRxkw37PvaHvbq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQOtlgzkfAXBZn89LP5ZjK2",
 					},
 				],
 			},
@@ -2637,8 +2637,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EIE401T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EIE401T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPZ2T9GMRk5HVlQIFXwEcBoGG0pC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYzagLqifYRt8xNTMnJe7HlXoXO",
 					},
 				],
 			},
@@ -2653,8 +2653,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/18EIEOIOT/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/18EIEOIOT/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QxcregzMWksJSMbaIIQBfmUQMoADTrIbW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLvDRgtCMTsPOwdX3Sfnil0JHRq5gz96Ji",
 					},
 				],
 			},
@@ -2669,8 +2669,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSO106T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSO106T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a862tmJAPZiRqZZcSqJUrv4zERi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn83AQrnRL2spE6eqHhOWnOaH29u",
 					},
 				],
 			},
@@ -2679,13 +2679,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSO106T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSO106T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYIYc6fCeC7cxhuHLBCjUugAA7y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFg9C9TZfI0LEzVA2HlQOBRxqA",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSO106T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSO106T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYIYc6fCeC7cxhuHLBCjUpzUuvu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFg9C9TZfI0LEzVA2HlQJUmie6",
 					},
 				],
 			},
@@ -2694,8 +2694,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSO106T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSO106T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtXBRx8AxJOOBLsmSNyRuj9tHa",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqeiXRP6QTlliR6bJT0NOERgzm",
 					},
 				],
 			},
@@ -2710,8 +2710,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE339T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE339T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZP3vchSEcDaVX6SsZBsoJj4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6UYCYAcbzkfjLxXuUfO67RG",
 					},
 				],
 			},
@@ -2726,23 +2726,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE355T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE355T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK85ZchVsxDGn1J5itCX8Sc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcMV5rtGUIUbsO7eMhowAo",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE355T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE355T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK85ZchVsxDGn1J5j2Zrcqk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcMV5rtGUIUbsO7eW59QYw",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE355T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE355T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK85ZchUi2DRgV7GMIuW9xu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcMV5rs5ZIfVMCIHmPnxg6",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE355T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE355T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK85ZchWJGxX5pyO6l0tuhq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcMV5rtgo2kuh3Q2EWBiQ2",
 					},
 				],
 			},
@@ -2751,8 +2751,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE355T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE355T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm3L0IOoLoCf4EMOK8DOA2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GKGTSmBstQTvJOJndVBsE",
 					},
 				],
 			},
@@ -2767,8 +2767,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18AIE427T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18AIE427T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmOzeYjg77ijad3fW3VgwV5gYHn6M",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LybzbgGlbOeCl0RCbHKY1X1A3ZaoY",
 					},
 				],
 			},
@@ -2783,18 +2783,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE366J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE366J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzznwlktIkYvMEg8mohC3vmQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5IDhE3g860a3XDokAhLjUc",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE366J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE366J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzznwlktLBr6rZj6AMfcXMQA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5IDhE3iZOC5OaBCI97pA8M",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE366J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE366J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzznwlktMMm6ggFHzjFuYKus",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5IDhE3jkJBuV6N1ejPq8d4",
 					},
 				],
 			},
@@ -2809,18 +2809,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE396T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE396T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKFe03QsbPJqQ3hBJAIAQoI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPjuvWbFywP4EumDEdnSEWU",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE396T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE396T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKFe03QwDcVArcqODnhK58o",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPjuvWbJb9aOgTvQ9HCbsr0",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE396T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE396T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKFe03QwDcVArcqODsNzKKs",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPjuvWbJb9aOgTvQ9LtH834",
 					},
 				],
 			},
@@ -2835,8 +2835,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE471T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE471T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8sGPV6DyCz2fBpyhxk1KWjG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfxkgQZOLaW7t0h3jtDWcKRS",
 					},
 				],
 			},
@@ -2851,8 +2851,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC201J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC201J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6ViIv3B6Milc71VMqb63Blm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbCZqWLTkFqpvsaOm4bKzTy",
 					},
 				],
 			},
@@ -2861,8 +2861,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC201J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC201J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMGgQlwQVQmLCnxaGTYTmI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqXbtwJo2W0A3szVjyqHUU",
 					},
 				],
 			},
@@ -2877,13 +2877,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIC202J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIC202J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSaYOi01QPm5V6mV7uNb597yjO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPi5UCGwta9T2C0JyzPWYePmRa",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIC202J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIC202J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSaYOi01QPphiI6wh3aVnEwsFy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPi5UCGwtaD5FNKlY8cRGkEfyA",
 					},
 				],
 			},
@@ -2898,8 +2898,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21ECC2l2T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21ECC2l2T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8N530Zo3hwWOwFYYcK5r3rUkIfd0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKa5086tXyrzZJd5dq8ww5myFaTLC",
 					},
 				],
 			},
@@ -2914,8 +2914,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC20lJ/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC20lJ/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMhe8plXgSPjy5bTvzLyi6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqyZc08vDXdYpAdPPUdmQI",
 					},
 				],
 			},
@@ -2930,8 +2930,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18CSC162J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18CSC162J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5qOhToiSbWw3u3xzywxdAbcyVwsY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI3OebLnwsSPEHRV5CloiCX6Tnkak",
 					},
 				],
 			},
@@ -2946,23 +2946,23 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSC201J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSC201J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6qR1avxSGN72y5dg4T3LF3vCY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE3xy75CsvQkUa3JSX9UyokLiuk",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSC201J/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSC201J/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6qR1avxSGPYL6fTbqfAEkcOwA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE3xy75CsvQmvsBtISvh5iFuCeM",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSC201J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSC201J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6qR1avxSGQjG9Q5FDfxyeDZX4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE3xy75CsvQo6nEdu6IhtS9VNFG",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSC20lJ/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSC20lJ/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6qR1bMvAKFqRB3U0VJriqgJew",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE3xy75dqdUdDyGHIraLnCLy7N8",
 					},
 				],
 			},
@@ -2977,8 +2977,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CSCOOlJ/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CSCOOlJ/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvotzapKC9SM0vTbLYP1NySszNEk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8or77uoT4vWOJ0gZNG6PtwOHAww",
 					},
 				],
 			},
@@ -2993,18 +2993,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC267J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC267J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBXdNa52snteqk5grAv0X5S",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvH1uJ3FQGKysfbAimeQIKne",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC267J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC267J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBXdNa52SU9OXvQOTSTyFEM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvH1uJ3FPq1EcMmVQOvzG2wY",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC267J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC267J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBXdNa52SU9OXvQOTNnJ02I",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvH1uJ3FPq1EcMmVQOrIankU",
 					},
 				],
 			},
@@ -3019,8 +3019,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18CSE006J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18CSE006J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5qOhUqvfZeRgwEcHywgxpDzjUOCU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI3OecO19qZurJc9NClY2r9TEmBug",
 					},
 				],
 			},
@@ -3029,8 +3029,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSE006J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSE006J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUz8bJXPpHpA0suojt5tLyVOhq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS6fgnoLISCXXy8day7opTnCQ2",
 					},
 				],
 			},
@@ -3045,23 +3045,23 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC303J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC303J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRHA4eSMvW549dAbCqj674",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvY5XopkSbIt0iCWgM0tpG",
 					},
 					{
 						period: "Mar-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC303J/Mar-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC303J/Mar-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRHA4eVz8XAFoeETzM0B54",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvY5XotMfcO4fjGPSrHynG",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC303J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC303J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRHA4eVz8hPVimNVqFskRa",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvY5XotMfmdKZrPRJlAY9m",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC303J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC303J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxeRHA4eVz8hPVimNVuwXzde",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUjvY5XotMfmdKZrPRORpnLq",
 					},
 				],
 			},
@@ -3070,8 +3070,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/18CSC303J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/18CSC303J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06Qxcregz5BCuy30J37tzNxuc1fvp0TcPCw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLvDRgtC58KS3XHEWIHMv38QskxkTyuCv8",
 					},
 				],
 			},
@@ -3086,18 +3086,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE472T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE472T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27rCcSC3LHhynpExJV7gud0ju",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOI6j7WVf5Vt33oOX3APuoS6",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE472T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE472T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27rCcSC3LHhynpExJV7lbIFvy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOI6j7WVf5Vt33oOX3F6a3eA",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE472T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE472T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27rCcSC3LI8IY5XlynVU2KXn4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOI6j7WVfVpdJMd3pQxXcLVG",
 					},
 				],
 			},
@@ -3112,13 +3112,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC209J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC209J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMKL6TbRrSsA61f7ySY1nK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqbGZdypOY5yx6h3RxppVW",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC209J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC209J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMKL6TbsBD8SugxVlaFYqU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqbGZdzFiIMHllzRF5XMYg",
 					},
 				],
 			},
@@ -3133,8 +3133,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC207J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC207J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4M04TZeiXjvgBSf1e40Nvy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qGzwk264p9V2Xgx7ZIBeA",
 					},
 				],
 			},
@@ -3149,8 +3149,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE476T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE476T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnGrZysRmR9dyLB9d2YfHDa",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osl8VS2p9yErnCGBYW3x4vm",
 					},
 				],
 			},
@@ -3165,8 +3165,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE455T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE455T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnD58b9dOuKdySHTSvk73cU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3oshM44K0mRPrnJMVOPFOrKg",
 					},
 				],
 			},
@@ -3181,13 +3181,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE309T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE309T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzceCicfd54K9vfYs7crsTm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX56v8Bn30c9Xymkanb89gBy",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE309T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE309T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzceCicfClK3r70GUKVALQc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX56v8Bn2aIPHfy5IPo0S98o",
 					},
 				],
 			},
@@ -3202,13 +3202,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MBH262J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MBH262J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyAqpYiuJ3xqB9qARt80LCLGHAc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty7yMeDBEX8DYgvOGkD2GfqY4so",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MBH262J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MBH262J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyAqpYiuJ3xrM4pzYPJphmdHFfK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty7yMeDBEX8EjbvDNGOrdG8Z3NW",
 					},
 				],
 			},
@@ -3223,13 +3223,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSC204J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSC204J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuKihEv5pzuVW4NPyFpjlv8VJW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrSFmjC1JAHt39bEpKrfFQQJ1i",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSC204J/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSC204J/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuKihEv5pztKb1coKsow21XKic",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrSFmjC1JAGi86qdBxqrVWp8Qo",
 					},
 				],
 			},
@@ -3244,23 +3244,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC361J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC361J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfyycRAf4UgXGKJv8ZX5zkqE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4StMdpRsDcU9B0AV0bHYYQ",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC361J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC361J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfyycRAf3JlXRDnjJCwnymLW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4StMdpQhIcf2eoL8QJGa3i",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC361J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC361J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfyycRAf4UgXGKJv8ZgTKFEM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4StMdpRsDcU9B0AV9yc2wY",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC361J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC361J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfyycRAf4v0HWd8aQxOuMX5S",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4StMdpSIXMkRzfSssPeKne",
 					},
 				],
 			},
@@ -3275,8 +3275,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AIC306J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AIC306J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUPr3PXQzB7JZNmkwddVgYQyEn8Y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhPoAwcvG6aTwlJqASUaiTuTWaqk",
 					},
 				],
 			},
@@ -3291,8 +3291,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEE305T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEE305T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPIvErjzDLHg4YA5rBUDv0Toqu6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG2lxEG8oS3S5FJg2ZFqTz6ecI",
 					},
 				],
 			},
@@ -3307,8 +3307,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BTE418T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BTE418T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8sbW7te3B7x24RA77p9umGcico",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8pj3DNuyeIKPbWNvyuBqFluWL0",
 					},
 				],
 			},
@@ -3323,8 +3323,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE313T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE313T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4e4f1lIbnphUcWrXnlL8Du",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOA8LaUvfzKuvJTbtTHGcvw6",
 					},
 				],
 			},
@@ -3339,8 +3339,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECC204J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECC204J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEcWvzq1bQ0NUCYwp5BkF2WklC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBk41U6x4aNl1HmlgADfiXoYTO",
 					},
 				],
 			},
@@ -3355,18 +3355,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE353T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE353T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK84exH5rFVFqAb8hXGYgXm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcLaQRTEmaTf1gAd0lqUFy",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE353T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE353T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK84exH72AV4wgmy4Gvu9Qc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcLaQRUPhaIlXrzzkRBx8o",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE353T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE353T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK84exH3PxJkV7dl9Yq5Fu2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcLaQRQnUOyJyin52LN3cE",
 					},
 				],
 			},
@@ -3375,13 +3375,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE353T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE353T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm2QKrzxZ60ojiEjYUFuju",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GJLo2NL6BEdanGf1zXiS6",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE353T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE353T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm2QKrzXFLkVv2wLlMYNgk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GJLo2MumQyKm7yHErqBOw",
 					},
 				],
 			},
@@ -3396,8 +3396,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21%20CSE25IT/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21%20CSE25IT/May-2024.pdf",
+						url: "B5AKyaeOXwtfjgTXnX2agXoAwTYRKk4bZSz65jNabsd05EEePp8Se2t8Kl02BHtqQtpsR9jjm2m83yOK7Uw8xFVRtGxWriVmSGqDrqLGY",
+						raw: "14z4gAyWa5cfZUBJNi5ENGxavdl2t3oAksvpLV4CSCEEH1vVqfyk0pNAEq6MR7rS5KMr0xXhJtw2FkCuAmRHRg4jRxuZ76Gp8cgHnx69jWxl9iJB70Gkcre",
 					},
 				],
 			},
@@ -3412,28 +3412,28 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE243J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE243J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwwfaHOK1oJUE0qCyu23POg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2QwVkYhPLOi2rvEuNXLD6s",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE243J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE243J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwwfaHOIQZZOofz5EWcKtqo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2QwVkYfo6ecdX47A07chZ0",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE243J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE243J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwwfaHOK1oJUE0qCyyiieak",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2QwVkYhPLOi2rvEuSE0SIw",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE243J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE243J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwwfaHOJbUZDvCAub6uLsLW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2QwVkYgz1eRk3FwWaPdg3i",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE243J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE243J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwwfaHOJbUZDvCAubGHgMje",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2QwVkYgz1eRk3FwWjmyARq",
 					},
 				],
 			},
@@ -3448,18 +3448,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIS202T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIS202T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSir8AcInbdUd6OHz6QzoH9YwA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPqODetEGm0sABc6qBSvHmRMeM",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIS202T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIS202T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSir8AcInbd4JM7zAR8c5q7H54",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPqODetEGm0RqRLo1WAXZLP4nG",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIS202T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIS202T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSir8AcInbZS6AnXbHvhNkINYU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPqODetEGlwpdG1MSMxcrFaBGg",
 					},
 				],
 			},
@@ -3474,8 +3474,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECC204JO/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECC204JO/Nov-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWTQp7TCKCN5zTKog2A6gE2X93kUtZwjaHW",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHfTruXc00UCc8KhyT0dqpbb8EWSDP8Eql4",
 					},
 				],
 			},
@@ -3490,13 +3490,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CE0307T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CE0307T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoIqoWX1KNdNqeCPl5Tr5fGb6k",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlQNu0nwnY0lNjQEcAVmZAYOow",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CE0307T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CE0307T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoIqoWX1KNZldSryBwGwNZRhaA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlQNu0nwnXx9AY5n31Irr4jVIM",
 					},
 				],
 			},
@@ -3505,8 +3505,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/21CE0308T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/21CE0308T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU30oBx19kfh62pMu015cL5Ny0TfgwBq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d30OwyHHlBMyIXHNYAq9wSzvxAyju2",
 					},
 				],
 			},
@@ -3521,18 +3521,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEO307T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEO307T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoYw6r6P5yvTADfWh2aHKPxqju",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlgTCLNKZ9IqhItLY7cCnvFeS6",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEO307T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEO307T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoYw6r6P5ywe5DUdDEPduhypEc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlgTCLNKZ9K1cIiS4JRZODGcwo",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEO307T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEO307T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoYw6r6P5yt1s2ABe5CjLzUQ6A",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlgTCLNKZ9GPP7O0VAEepUmDoM",
 					},
 				],
 			},
@@ -3541,8 +3541,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEO307T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEO307T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHD1n7mzhElYyOikjGdJhAuz3mY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA9KDHGchvwLvnyY7iLceQGrUk",
 					},
 				],
 			},
@@ -3551,8 +3551,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEO307T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEO307T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPXVS91vrAi4Yf64UPeazRdnaI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMf2XdIrKL5S5kJtLUgWSwvbIU",
 					},
 				],
 			},
@@ -3567,8 +3567,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21MAB302T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21MAB302T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8ODkXDRHQOlatOluXbvi36TUFBh8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbDhekWlhKElGmIzlQmn51wzWzPK",
 					},
 				],
 			},
@@ -3577,8 +3577,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21MAB302T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21MAB302T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTInY1V6vOA9BiHdZsjaooTPCP0oo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfVnV92CPf5cM5fAf6YRtqOshgoX0",
 					},
 				],
 			},
@@ -3593,13 +3593,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB302T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB302T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esvOnMMVadTGp32qrjTLnJTi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mQ0t4Hpfy10M2rtvtewr57Bu",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB302T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB302T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esvOnMMVaD9WYkEBZLkul1cc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mQ0t4HpfxagbmZ5GbHEQ2pKo",
 					},
 				],
 			},
@@ -3608,8 +3608,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MAB302T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MAB302T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7jdSGgit7hLdcyABVMoIgH5VaA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7gkzMAzoarj1A3O0MRqE9mNJIM",
 					},
 				],
 			},
@@ -3618,13 +3618,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB302T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB302T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2l7k6SiENEJSRXdFLPFsk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX23DGq5lSS8JWZYiqh3aw",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB302T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB302T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2l7k6SiENEJSRXdK24V4o",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX23DGq5lSS8JWZYnXMIn0",
 					},
 				],
 			},
@@ -3639,8 +3639,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EIC306TO/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EIC306TO/Nov-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWWC4HZXwrn15ySo8Da0ei5fxg45povn4kg",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHiF74dxcfu7idShQeQXpJejwqq39e7ILEE",
 					},
 				],
 			},
@@ -3655,18 +3655,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EIC306T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EIC306T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUzExp7k7wcus3mc0fVfEX2YF6F4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhzC5MDEOs65FRJhEUMkGSW3WtxG",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EIC306T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EIC306T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUzExp7k7wcurdSrkMgzw9FQXZBu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhzC5MDEOs65F0zwyBY4y4ivpMu6",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EIC306T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EIC306T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUzExp7k7wcurdSrkMgzw9K7CoNy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhzC5MDEOs65F0zwyBY4y4ncUc6A",
 					},
 				],
 			},
@@ -3681,8 +3681,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE404T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE404T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKoyJz1emK6hZ1LkkDuuRUM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQJFFSC29rBvNsQmfhQCFCY",
 					},
 				],
 			},
@@ -3697,18 +3697,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE356T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE356T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK861xPiJLZMiBZ9YH1VsAg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcMxQa5gseaX2eBTkWnfss",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE356T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE356T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK861xPeh8O2GcPwdiJ1T2E",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcMxQa24fTG5TUyZBoJGkQ",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE356T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE356T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK861xPiJLZMiBZ9YLiB7Mk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcMxQa5gseaX2eBTpDSv4w",
 					},
 				],
 			},
@@ -3723,8 +3723,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE447T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE447T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnBD3k4jH7oNmQTmxKtHn66",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osfTzDF6eetbbHYosoOZaoI",
 					},
 				],
 			},
@@ -3739,13 +3739,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21EEC101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21EEC101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSXvWJflvElCVtD8k41owjvInXKEg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfekvTRCrPVgfgGafpHqg1lqmIp7ws",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21EEC101J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21EEC101J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSXvWJflvElCVwpLvOTO5wpwCgyZC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfekvTRCrPVgfgKCt0cIFAylPhymHO",
 					},
 				],
 			},
@@ -3760,8 +3760,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21BMC203J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21BMC203J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynS53VpEhuzrqulbS6wtiziDGEgx4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zf50dMKCBvL1I98XKlko1dglWUfG",
 					},
 				],
 			},
@@ -3776,8 +3776,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEO305T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEO305T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPJ0QZecd0diHmrTjWZ6YnyDjGQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG7xf8tYTo5fJwhYNe8UHTVWyc",
 					},
 				],
 			},
@@ -3792,8 +3792,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18MHC102T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18MHC102T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmOaAxISU3FbvzuoMtH0j4FOnCyM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczOXIUNwkyimJNRtai85kziu50gY",
 					},
 				],
 			},
@@ -3808,8 +3808,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEO307T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEO307T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPJ0QZedXg478ZZfZr5EDZcBCgY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG7xf8uT9EUW6etOiAG937T0Ok",
 					},
 				],
 			},
@@ -3824,8 +3824,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21EIC202T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21EIC202T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSVSNIUtlpL6JuaQEeJlu1yllGWk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfVPUpaO2koGhI7VSTAqvxSH34Ew",
 					},
 				],
 			},
@@ -3840,8 +3840,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18EIC201T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18EIC201T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQlFqUxz18KbIqjrrfCUwjzqnlnNu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycyFncV4VPG4TE7Owt1M1lvKJ3b66",
 					},
 				],
 			},
@@ -3856,28 +3856,28 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21EES101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21EES101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7dLixgpjtHC6o4exPV44Jjxaj0PW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqLg5DvEACfHBSC2dJv9LfR60o7i",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21EES101T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21EES101T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7dLixgpjtHC6qVx5zKzqVqr6HU98",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqLg5DvEACfHDtUBD9qvXmKbZHrK",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21EES101T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21EES101T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7dLixgpjtHC6rgs8jwdDWeazsek2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqLg5DvEACfHF4PDxlUIYa4VASSE",
 					},
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21EES101T/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21EES101T/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7dLixgpjtHC6qU0Ge3dDTAwWNSf0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqLg5DvEACfHDrXLrsUIV6Q1fGNC",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21EES101T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21EES101T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7dLixgpjtHC6rgs8jwdDWefgXtw6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqLg5DvEACfHF4PDxlUIYa9BpheI",
 					},
 				],
 			},
@@ -3892,13 +3892,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21PYB101J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21PYB101J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7evivBvjjNB33r4gM5BKCxaVDQTm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrvg2j1E0IeDREblZu2PEt40VEBy",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21PYB101J/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21PYB101J/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7evivBvjjNB32g9dbTXxC9qbcFss",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrvg2j1E0IeDQ3gipIP2E5K6u3b4",
 					},
 				],
 			},
@@ -3913,8 +3913,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO102J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO102J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIilv9hJpCWiMKg3PTlPCY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwmzhOK4hMHkXDPhysz3Cuk",
 					},
 				],
 			},
@@ -3929,8 +3929,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEO122J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEO122J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sJXAOUPhunuMA6DcMhZAKbDfi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pR4FslLB5BHtFK2TRjUdpt1Nu",
 					},
 				],
 			},
@@ -3939,13 +3939,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MEO122J/18MEO122JA/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MEO122J/18MEO122JA/May-2024.pdf",
+						url: "3vb3kgI8XA0PCRSpzQdzeWg3nH0Cwnxs2h8eFodmJDPXm7TEhrYc2wdNn2qQShweSFzVUOY3Z8wTQTShO2dTfZTnU10b2Dr1Y82p21oWOexATpUVGYOU",
+						raw: "NkFNBMcyLoq1zRGm2D0QyaHsh9lEOkudk21ZtjvIRFYMXhjPGdsTcA8wL0UIwUbL90Jj4LpuNx8DWI1j9Wg46zE6ZjvpkJwKVwgSB1MGzGuqDkDy1F909kQYrPObBa5G2",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MEO122J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MEO122J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bY4pFUkWeKJrn486CoxWMt7Sqgw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoY1wmaEnZnUFAbDK1g2YIMckeP8",
 					},
 				],
 			},
@@ -3960,13 +3960,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC313J/Dec-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC313J/Dec-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz26ojSkMO4Hu0Q1vq2qF7EPWvW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzELox1HrEfHXVFkh7sAajhKdi",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC313J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC313J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz26ojSkMO4LWDbMNPC39kdZBG2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzELox1HrEitkgaCGH55E8qyyE",
 					},
 				],
 			},
@@ -3981,8 +3981,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE316T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE316T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4e621ttsytzG7J31sXc6A2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOA8MxV4HGVzD4yO4xM2ttsE",
 					},
 				],
 			},
@@ -3991,8 +3991,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE316T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE316T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8kI3nPUmO3kepLZ1Jb2G40M",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfpmKisf9lapseCe3F4XXriY",
 					},
 				],
 			},
@@ -4007,8 +4007,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EIC301JO/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EIC301JO/Nov-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWTQp7TCL3Ry81IWxpeRBusp5LvVrnrLdhO",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHfTruXc0rZ4kgIQGGUyMWRt4WhTBd2quAw",
 					},
 				],
 			},
@@ -4023,8 +4023,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECO108J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECO108J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz2D2WwjHJ1mNGBloa91JHWxIv8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzKZcR0CmC9knGzdRE3El2F6dK",
 					},
 				],
 			},
@@ -4033,23 +4033,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO108J/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO108J/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIlVvQsGwb0q11vHKzvJv4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwn2RObFeTgEes6xCoVD7dG",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO108J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO108J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIlVvQppePVUy4XjHsme5G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwn2RObDDBUjJp9ZelO4RnS",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO108J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO108J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIlVvQtRrapwXDkdqbH3Di",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwn2RObGpOg3lOImZK6Yqvu",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO108J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO108J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIlVvQsGwb0q11vHGJG4j0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwn2RObFeTgEes6xCjoXsRC",
 					},
 				],
 			},
@@ -4064,13 +4064,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO109J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO109J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIlyG95sFwvrhToTJ6v27q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwn2tjJTFn29gYYqOmcCpq2",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO109J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO109J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIlyG92G2lbQ8KbYfhlNnK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwn2tjJPdZqpEzPdU9D3BVW",
 					},
 				],
 			},
@@ -4085,8 +4085,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE420T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE420T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKsiThBSbZOxeGHpNXoCCHu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQMzPALpz6UBT7MrJ1JU006",
 					},
 				],
 			},
@@ -4101,18 +4101,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEC308J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEC308J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6OUCCe35KGnkmIp504bFqUGIQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3W1HguyYUeBHrWdw56WjLm40c",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEC308J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEC308J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6OUCCe35KHE4WZ7tfMyyHWY9W",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3W1HguyYUebbbmwkkOuRmoLri",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEC308J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEC308J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6OUCCe35KGnkmIp504bB9p16M",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3W1HguyYUeBHrWdw56Wef6ooY",
 					},
 				],
 			},
@@ -4127,8 +4127,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18PDH201T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18PDH201T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRWYNXsYKbtnxoQ0oALBJC4hlz5RW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0djYKfPdospH8BnXtOA2OE0BHGt9i",
 					},
 				],
 			},
@@ -4143,8 +4143,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18PDH201TR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18PDH201TR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWWC4HZePxDtFl6UUAZxHE1II2Ex732KUIo",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHiF74e45lKzsQ6NmbQURpaMHD0uQsDpkmM",
 					},
 				],
 			},
@@ -4159,8 +4159,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE308T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE308T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWXNyLj19qo53BuWNgnkjmgY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3csFHCBXELAH0lbPcHG1aOk",
 					},
 				],
 			},
@@ -4175,13 +4175,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18LEH101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18LEH101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkx62KsDOSTSDwFkH1uUIuPrWl6TW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxA5zSPIsjOvOJdHMFjLNwLL22uBi",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18LEH101J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18LEH101J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkx62KsDOSTSDyh2SXFXGHxpxEX7G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxA5zSPIsjOvOM4ZXl4OLJtJSWKpS",
 					},
 				],
 			},
@@ -4196,18 +4196,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTE317T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTE317T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHcweoe1rxbunxru0Osylc35GA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEkTkIuxL7zIL35irTuuF7KsyM",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTE317T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTE317T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHcweoe1rxd5ixh0WaiLLu43ks",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEkTkIuxL80TG2upNfkGpPLrT4",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTE317T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTE317T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHcweoe1rxdW2hxJLG0jDiQq06",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEkTkIuxL80tZnB8CL2ehDidiI",
 					},
 				],
 			},
@@ -4222,13 +4222,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEC208T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEC208T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoShvy5810HuV4pJRefOtJ8Oxi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlaF1SM3UAfI2A38IjhKMoQCfu",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEC208T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEC208T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoShvy5810LWiG9l0nsJWiI3IE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlaF1SM3UAiuFLNZrsuF0DZr0Q",
 					},
 				],
 			},
@@ -4243,15 +4243,15 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CEO305T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CEO305T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7c3DmV3Fo9Qih6EevdYeegMqhy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7ZAkrzKBHJo6EBSTmiaa8BeeQA",
 					},
 				],
 			},
 		],
 	},
 	{
-		name: "Environmental Impact Assessment \u0026 Life Cycle Analysis",
+		name: "Environmental Impact Assessment & Life Cycle Analysis",
 		code: "18CEE312T",
 		urls: [
 			{
@@ -4259,8 +4259,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEE312T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEE312T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHCwbPuCzQLrD0GMBucFGLplwSU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA48VOTutWEaXLa0lhHBpL3kAg",
 					},
 				],
 			},
@@ -4275,8 +4275,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18NTO304T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18NTO304T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlh7dx5RypYq0uZfTM05cjLtoXEsY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxu7b4cXT6UJBHxCYZowhlHNJp2ak",
 					},
 				],
 			},
@@ -4291,8 +4291,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE316J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE316J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzeVo8MpuFggnGMFHJEzPRW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX58mjbXDHmluc7RHCmkHD9i",
 					},
 				],
 			},
@@ -4307,13 +4307,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MBO403T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MBO403T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyAuT0GMt9XtrtygUISHQqleYqM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty8205kdociHFR3uJ9XJMKGwMYY",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MBO403T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MBO403T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyAuT0GMt9XtrtygUISHQvSJo2Q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty8205kdociHFR3uJ9XJMOxbbkc",
 					},
 				],
 			},
@@ -4328,8 +4328,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE323T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE323T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHfKLD8wxWwFKGt0mWBUXekg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3okoc8c7KuTKY5k5oRezpSSs",
 					},
 				],
 			},
@@ -4344,8 +4344,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE205J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE205J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwp8WqnUyK5ruu55yDgrv2k",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2JPSJxsLrB5jlA7thC9ikw",
 					},
 				],
 			},
@@ -4354,18 +4354,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE205J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE205J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8cT6IEON35CHBJflsDkTb1y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfhxNDhYkQcHV0AknnhFlOkA",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE205J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE205J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8cT6IEON35CHBJfls4N96dq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfhxNDhYkQcHV0AknnXsQuM2",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE205J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE205J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8cT6IEONTOwXU8L4FwBVst4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfhxNDhYkqw1lIzQ6BPgngbG",
 					},
 				],
 			},
@@ -4380,8 +4380,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECC411J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECC411J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpb6WtlFJVBgJ9s9HOKxNjCuLW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmidcO2AmfZ3qF5y8TMsrEUi3i",
 					},
 				],
 			},
@@ -4396,8 +4396,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18AUE443T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18AUE443T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP04GkSnMFkvo64K58zX0u5gnfYE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc01OHYHdBE6BTbPIxqc2pZC5TGQ",
 					},
 				],
 			},
@@ -4412,8 +4412,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MEE322T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MEE322T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhfidNhwqxIuDgwzLAeJRbQ705e",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhcqATCDmQTHbE2DA1jLN4vOnnq",
 					},
 				],
 			},
@@ -4428,8 +4428,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MHC105J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MHC105J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlgyNfEy6TAWiwOU77Kr0RrRmqKHu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxtyKmm3ak5ztJm1CL9i5TmvI8806",
 					},
 				],
 			},
@@ -4444,28 +4444,28 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE382T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE382T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzrgwZfgrdhBbJYTesjutJW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5Lxs2q4FAmPQAdVaMFCh1i",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE382T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE382T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzrgwZfi2Yh0hpkJ1T1vroE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5Lxs2q5Q5mEWgpKwwXDfWQ",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE382T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE382T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzrgwZfi2Yh0hpkJ1cPGMCM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5Lxs2q5Q5mEWgpKx5uY9uY",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE382T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE382T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzrgwZfiSsRH0ePbPG9dOrO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5Lxs2q5qPWUpVUdKjevCZa",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE382T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE382T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzrgwZfiSsRH0ePbPKqIe3S",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5Lxs2q5qPWUpVUdKoLaRle",
 					},
 				],
 			},
@@ -4480,8 +4480,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSE004T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSE004T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUz8bJWWGTxjRiWbwDuVbkGv8I",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS6fgnnRjeL6ynkQnIwR5FYiqU",
 					},
 				],
 			},
@@ -4496,8 +4496,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC301TO/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC301TO/Nov-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWTQp7TBBQYHL1YObbuy8D1yv65AEdml4Te",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHfTruXarEfNxgYHu2lVIob2uGr7YSyGKxC",
 					},
 				],
 			},
@@ -4512,13 +4512,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CSC30lT/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CSC30lT/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNhp0UgMVFOuMI5y09fLUuzcSQA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNewXaAdQiZHjpBBp0kNQOUuG8M",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CSC301T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CSC301T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNhp0UfvXXL5fQoauD2zyxurFLS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNewXaACT0VT2xtoj481uRQ933e",
 					},
 				],
 			},
@@ -4533,8 +4533,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/18CSC261T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/18CSC261T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06Qxcregz5BCuqRFKQ5WKkWStE8SecnVusQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLvDRgtC58KRvvWFtFtiHbgi5DUa6Iniac",
 					},
 				],
 			},
@@ -4543,18 +4543,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC261T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC261T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6VtctIpTeLi7yiHA7nUUdHS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbNtolzr1snLnZMC3GzmQze",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC261T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC261T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6VtctIpVFaSDO38HsFasO1O",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbNtolzsd7XRCuDJnj6ABja",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC261T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC261T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6VtctIpUpGhx5ESzUX9q6AI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbNtolzsCnnAu5Y1Q0f7tsU",
 					},
 				],
 			},
@@ -4569,18 +4569,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIC303T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIC303T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3Z7rn03qCd1kNmwRKT3f72rCg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0gexHGzJN0PHT0lIPUz8cKeus",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIC303T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIC303T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3Z7rn03qCh4HJNgp8yM5du2aM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0gexHGzJN4RoObVgE0HZ9BqIY",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIC303T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIC303T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3Z7rn03qCfT2ZIHUHqbdXWHqQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0gexHGzJN2qZeW6LMsX72o5Yc",
 					},
 				],
 			},
@@ -4595,8 +4595,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18A1C303T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18A1C303T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZpE96IY1JDpx4I26tWVONwL93v4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImpBGdO2IEh0KRp7KiNaQJPqQrdG",
 					},
 				],
 			},
@@ -4611,23 +4611,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC301T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC301T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfynIV8Fm3UgLjgrDqWuKnPq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4HZQbQ9R1lZYXwFm0Pcb82",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC301T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC301T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfynIV8Fm3UgLjgrDqNX0J1i",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4HZQbQ9R1lZYXwFlr2I6ju",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC301T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC301T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfynIV8FmToQc2VWWEFLN5Gw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4HZQbQ9rLVprMbY9iqesz8",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSC301T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSC301T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85wfynIV8FksZgWdAfOTnEzKX0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn834D4HZQbQ8G6lkS1kQPGkH8FC",
 					},
 				],
 			},
@@ -4642,8 +4642,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/18CEE301T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/18CEE301T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06Qxcregz4hEH3q4vA0qstLNSe0euKo3rrq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLvDRgtC4eLo9KLqdBEGQQbHV5gpoJLfa2",
 					},
 				],
 			},
@@ -4652,18 +4652,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEE301T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEE301T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPSJkELmBXSse4sML76b5texuQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMZqpichehqGBA6BCC8WZOwlcc",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEE301T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEE301T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPSJkELmBXSse4sML76bAaKD6U",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMZqpichehqGBA6BCC8We5c0og",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEE301T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEE301T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPSJkELmBXPGQtXulxtgXBAYly",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMZqpichehmdxyljd2vc0gSMUA",
 					},
 				],
 			},
@@ -4678,13 +4678,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21AIS201J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21AIS201J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MVs5TJhCd8x4uOgsrP6aXyIDB38",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZVpD0PBTYc7SHvm6gGBcTRnUylK",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21AIS20lJ/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21AIS20lJ/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MVs5TJhdar0u1ZiWGAOERiUfvB0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZVpD0PBuWKBHP6nk51TGNBzxitC",
 					},
 				],
 			},
@@ -4699,13 +4699,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC20lJ/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC20lJ/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4MOIBMHHMczXxBvx0dvSbO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qfDeWeetiDMoGxsU9DGJa",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC20lJ/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC20lJ/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4MOIBMKtZoJzWL8rijkM7y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qfDeWiH6tXoNQAnCF29qA",
 					},
 				],
 			},
@@ -4720,8 +4720,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18AIC101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18AIC101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5q6f6GbGxlUqL4YEFGZbChAOuokw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI36cDnglEgy0iS5JT5QgEcduCcT8",
 					},
 				],
 			},
@@ -4736,8 +4736,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CSE318T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CSE318T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvou0ZdQhv0RNfrhKQyRRmtGmHSw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8or86iuyqTbl3OmYFpWTiMm45B8",
 					},
 				],
 			},
@@ -4752,18 +4752,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH103T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH103T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH6RdMBiMv0G3CS6N9vjok",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolNN6WZ5u0E4uHU1qfDXWw",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH103T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH103T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH6RdMFKa6KhcLf10Z5O9G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolNN6Wci7BYWTQgwU4NBrS",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH103T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH103T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH6RdME9f3a5yyeDGfUDYM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolNN6WbXC8nuq3g8kAm1GY",
 					},
 				],
 			},
@@ -4778,8 +4778,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/21LEH103TR/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/21LEH103TR/Jan-2024.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQZKCThnI4b7mJfSrPBujRU4BKIAcrRko1sU",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzKWFWUrhkPEswKSkhclGc5dFJSwaBGwJIM2",
 					},
 				],
 			},
@@ -4794,8 +4794,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH103TI/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH103TI/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWINqcpabO2WYwcc9NT3n7f2dB2HYDEkUwI",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHUQtPu0HC9dBbcVRoJaxjE6cLoEs2QFlPq",
 					},
 				],
 			},
@@ -4810,8 +4810,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18LEH103J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18LEH103J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5rfpp9t2R9VFHDp1DlcEDGphBhgM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4fmwgyWi4yPebM6RaTJFCJCTVOY",
 					},
 				],
 			},
@@ -4820,8 +4820,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18LEH103J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18LEH103J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkx62KsDOTO7eP93uoVCdXN3hZlHK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxA5zSPIskJaomWb02K3iZIXCrYzW",
 					},
 				],
 			},
@@ -4836,8 +4836,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE425T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE425T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWfEmzz9aem51zfzSccEohF8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3kj3vSJy2JAFoX4UY5k6UxK",
 					},
 				],
 			},
@@ -4846,8 +4846,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE425T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE425T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKsklMkRYcBc9ZOJ9sd4uLW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQN1gpuow9GpyQTL5M8Mi3i",
 					},
 				],
 			},
@@ -4862,8 +4862,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC208T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC208T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6ViM8Un4MvYAc31rflN16Kk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbCd3xxRkSdOQu6tbEsIu2w",
 					},
 				],
 			},
@@ -4878,18 +4878,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSS202T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSS202T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6yjl3YhAAQwZJnLhWaHSC4F7O",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE46GqXpcdKoK6P1AYbcCvhM2pa",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSS202T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSS202T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6yjl3YhAAQWFZX2srHtjl1xGI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE46GqXpcdKntmekrjwJpDGJkyU",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21CSS202T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21CSS202T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSE6yjl3YhAAQWFZX2srHtf4Mi4E",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfE46GqXpcdKntmekrjwJp8ZeVmQ",
 					},
 				],
 			},
@@ -4904,8 +4904,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MBH363T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MBH363T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXyL7M9wa69qDZ0ajJ9FGabaBja",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXvSeReDVZKDb65oYAEHC46rzRm",
 					},
 				],
 			},
@@ -4920,8 +4920,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE389T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE389T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzrk8uf7RcvwSoE2D1b9o1u",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5M14NpUpA1AHfJ48V6Rbk6",
 					},
 				],
 			},
@@ -4936,8 +4936,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21%20CSE309J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21%20CSE309J/May-2024.pdf",
+						url: "B5AKyaeOXwtfjgTXnX2agXoAwTYRKk4bZSz65jNabsd05EEePp8Se2t8Kl02BHtqQtpsR9jjm2m83yOK7UwGalFabLvf7tfxeRG7vlXwU",
+						raw: "14z4gAyWa5cfZUBJNi5ENGxavdl2t3oAksvpLV4CSCEEH1vVqfyk0pNAEq6MR7rS5KMr0xXhJtw2FkCuAmRHRg4jRxuZ76Gp8kJnY5oEhfDwJtVLWuKfpXa",
 					},
 				],
 			},
@@ -4952,8 +4952,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE314J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE314J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK0X85LWx9NjyMj1aRgfSdC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPUo3YVuKgSxnDo3VvBxGLO",
 					},
 				],
 			},
@@ -4968,8 +4968,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18PDH101TR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18PDH101TR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWL95dAFyhrgrmSknhwbMbdbq7Wzs1ccxxW",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHXC8QEfeVynURSe68n8XDCfpIIxBqo8ER4",
 					},
 				],
 			},
@@ -4984,18 +4984,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18PDH101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18PDH101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5sFBajjxgo4JwKDjiK6UA9FQoVEM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI5F8iGpRxjXUJhkow8xZC4iw6IwY",
 					},
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18PDH101T/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18PDH101T/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5sFBajjxgo4JylVvDf9RXhIXxB4A",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI5F8iGpRxjXUM930RU0WZcm3EymM",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18PDH101T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18PDH101T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5sFBajjxgo4JylVvDf9RXhDrHvs6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI5F8iGpRxjXUM930RU0WZchMZjaI",
 					},
 				],
 			},
@@ -5010,13 +5010,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18EEC208T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18EEC208T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpVPuj7eVDUhYehFsoDDtteheHW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspSXRobvQgf4wBmThfIFpN9zRzi",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18EEC208T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18EEC208T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpVPuj7eVDUh8KwzZzXvW6X07EM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspSXRobvQgf4Vs2DOqcxRa2HuwY",
 					},
 				],
 			},
@@ -5031,8 +5031,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18EEC208TO/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18EEC208TO/Nov-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMqifj0EJbExFWe81kUsGPUD5bfcsI",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRGOTq6qyb8FgNBIdJYrRBRWunAtLq",
 					},
 				],
 			},
@@ -5047,8 +5047,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE387T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE387T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDlSrdq5lN53FRwGc9DbxW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi2OKoDTISIs6WyC5eVPfi",
 					},
 				],
 			},
@@ -5063,8 +5063,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21BTC206T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21BTC206T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynS5IVfMP3luIuy1C0A24xOrLGCdK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zf5FdCRtKhNTILYHDyt9zKKqY0LW",
 					},
 				],
 			},
@@ -5079,23 +5079,23 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18BTC104T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18BTC104T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkpgdKijLmcWqq8Q3hqFDCU0YrWY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxpdkroDci5hEDfVHWhKF7xVqfEk",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18BTC104T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18BTC104T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkpgdKijLmcWqPofnP1ZuolZWZfS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxpdkroDci5hDnLl1DsewkF4oNNe",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18BTC104T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18BTC104T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkpgdKijLmcWpEtfyIVO5S1uB6mc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxpdkroDci5hCcQlC7MT7NVPSuUo",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18BTC104T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18BTC104T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkpgdKijLmcWqq8Q3hqFDCU0YrWY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxpdkroDci5hEDfVHWhKF7xVqfEk",
 					},
 				],
 			},
@@ -5110,8 +5110,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CEE309T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CEE309T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7by24aRfTeCD1pETFavKOTsvBu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7Z5ZA4iawoZaYuSI6fxFrzAiu6",
 					},
 				],
 			},
@@ -5126,8 +5126,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH104TI/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH104TI/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWINqcpabO2WYweV8tyMlgtUfXM5iZjXEso",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHUQtPu0HC9dBbeORKotwISYei832Ov2VMM",
 					},
 				],
 			},
@@ -5142,18 +5142,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH104T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH104T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH6ty4O8lH6BDSVvkyuTWo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolNpRElWIMK04XXrEUCHF0",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH104T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH104T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH6ty4Qa3Pg19Ei2eUSxGQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolNpREnxaUtq0Jjy7zkkyc",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH104T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH104T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH6ty4RkySQcmbiqOO47rK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolNpREp8VXeRdgklrtLvZW",
 					},
 				],
 			},
@@ -5168,8 +5168,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH104TR/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH104TR/Jan-2024.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWINqcpabO2WYweV9tjUSQnLhTs5bHKwOOc",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHUQtPu0HC9dBbeOSKa1d2MPgee2v6WResA",
 					},
 				],
 			},
@@ -5184,8 +5184,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CEO310T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CEO310T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNDvYIPX04AyiO0bCmN28O6ssn0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNB35NtnvXLM5v5p1dS43rcAgVC",
 					},
 				],
 			},
@@ -5200,8 +5200,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CE0406T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CE0406T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoIqwJabCvn2vxsEkcYoaxXZ0o",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlQO1nrWg6AQT363bhak4SpMj0",
 					},
 				],
 			},
@@ -5210,8 +5210,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CE0310T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CE0310T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNDfT04xcIZj4McdQtNJG7mf3na",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNAn05ZEXlk6RthrFkSLBbHwrVm",
 					},
 				],
 			},
@@ -5226,18 +5226,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEO406T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEO406T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoYwEe9yyX6JAXASClUbQ0Fn8g",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlgTK8QuRhTghcOH3qWWtVXaqs",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEO406T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEO406T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoYwEe9yyX2gxLq0dcHgrHlO0E",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlgTK8QuRhQ4UR3pUhJcKn3BiQ",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEO406T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEO406T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoYwEe9yyX6JAXASClUbUgv2Kk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlgTK8QuRhTghcOH3qWWyCCq2w",
 					},
 				],
 			},
@@ -5246,8 +5246,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEO406T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEO406T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPXVZw5VjirjdyltTwjYUjulUM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMf2fQMRCtF7B3ziL1lTyFCZCY",
 					},
 				],
 			},
@@ -5262,8 +5262,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BMO122T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BMO122T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8dgrKloDnEDwb0uCdNikvIfgV4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8aoOQG59GObK8681USkgOnxUDG",
 					},
 				],
 			},
@@ -5278,8 +5278,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE454T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE454T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07Z6usqYTR7sU3lRLu79bGA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD3NqM0vqyD6IuqTHNcROyM",
 					},
 				],
 			},
@@ -5294,13 +5294,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE351T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE351T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4lbiSM7EyJ3UucgAgyp5Wg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOAFsdvWUcVOHJlhi6AU6tEs",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE351T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE351T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4lbiSM7EyJ3UucgAlfUKik",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOAFsdvWUcVOHJlhi6FAm8Qw",
 					},
 				],
 			},
@@ -5315,18 +5315,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEC303T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEC303T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPRHP32PJtSUNqn1noeWmKbVeY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMYoUXJKn3pruw0qetgSFptJMk",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEC303T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEC303T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPRHP32PJtSuhb3KcTwuZSJ2hi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMYoUXJKn3qIEgH9TYyq2xaqPu",
 					},
 					{
 						period: "Mar-2002",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEC303T/Mar-2002.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEC303T/Mar-2002.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPRHP32PJtSUNgXltgUsD67Sf0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMYoUXJKn3prullaklWngbPGNC",
 					},
 				],
 			},
@@ -5341,8 +5341,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BME367T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BME367T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUYq7OCuvMwOBOwb5GGOBvCnyxfS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhYnEvIPCIPYYmTgJ57TDqgJGlNe",
 					},
 				],
 			},
@@ -5357,13 +5357,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTE420T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTE420T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHcwmdXrGjtB1NFKstEV48ZpjC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEkTs7omjuGYYST9jyGQXdrdRO",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTE420T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTE420T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHcwmdXrGjtbL7VdhYWsmZc7aI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEkTs7omjuGysCjSYdYoG4tvIU",
 					},
 				],
 			},
@@ -5378,8 +5378,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUO101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUO101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGre7ZGudSCkCZtTTMdGvrV5q2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDzBD3Xq6ca7jf7IKRfCPMmtYE",
 					},
 				],
 			},
@@ -5394,18 +5394,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEC206T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEC206T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoShvy4DLZx6FIEDUx32YC26vG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlaF1SL8okKTmNS2M24y1hJudS",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEC206T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEC206T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoShvy4DLZwfvXxugHkegNfKg2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlaF1SL8okK3SdBjXMma9sx8OE",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEC206T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEC206T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoShvy4DLZwfvXxugHkel4KZs6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlaF1SL8okK3SdBjXMmaEZcNaI",
 					},
 				],
 			},
@@ -5420,13 +5420,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE231J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE231J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9Hbcq9KGrCIfVCrUKaYy0zva",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoh774nREZpkj1iZMW2TIndm",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE231J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE231J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9Hbcq9KGqlyvEu2p2ClqJSsQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoh774nRE9W0Situ48FLbGac",
 					},
 				],
 			},
@@ -5435,13 +5435,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE231J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE231J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwulg5Sbm8ca2VKylylbeys",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2P2bYcz9fhnrMQ0hSGtSh4",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE231J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE231J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwulg5ScCSMqLK0H9ltJC22",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2P2bYczZzS4AB5J5FOazkE",
 					},
 				],
 			},
@@ -5456,8 +5456,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE385T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE385T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4rIWMiqIZB3bTHeN2C8Y3a",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOALZRptDg6GHQKMgIVhQLlm",
 					},
 				],
 			},
@@ -5472,23 +5472,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MBH464J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MBH464J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhZJgpEwaIhbt3RjakC9nPJ0mec",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhWRDujDVlrzGaWxPbHBisoIaMo",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MBH464J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MBH464J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhZJgpEwaIhai8RuUE0KQfdfJlm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhWRDujDVlry5fX8J55MM98x7Ty",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MBH464J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MBH464J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhZJgpEwaIhcJNBztYrSB33NpJe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhWRDujDVlrzguHDiPwU6WYfd1q",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MBH464J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MBH464J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhZJgpEwaIhcJNBztYrSB7k34Vi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhWRDujDVlrzguHDiPwU6bFKsDu",
 					},
 				],
 			},
@@ -5503,8 +5503,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE463T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE463T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnExDSEXWgquAU59yWawK8s",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osjE8vOuuDw7zLABu06E7r4",
 					},
 				],
 			},
@@ -5519,13 +5519,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE469J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE469J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07b2AyIIYVqv5NfUdiCjHAU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5J6RSfw2w8uEkWZBi14sg",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE469J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE469J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07b2AyIJjQqkBtrK0IUkFfC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5J6RSh6xvy0kwLvm023NO",
 					},
 				],
 			},
@@ -5540,23 +5540,23 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIE332T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIE332T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3aAD3yrc4km6fKJDqPSWg6WCE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0hhIYFn5F89dkY84vRO0BOJuQ",
 					},
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIE332T/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIE332T/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3aAD3yrc4nDOqpeGnn0ZnFC22",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0hhIYFn5FAavw3T7sow3IWzkE",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIE332T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIE332T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3aAD3yrc4nDOqpeGnn0V6Zwpy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0hhIYFn5FAavw3T7sovybrkYA",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIE332T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIE332T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3aAD3yrc4oodav3beukxCxhZu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0hhIYFn5FCCAg8sSjwgQiFVI6",
 					},
 				],
 			},
@@ -5571,8 +5571,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ASE201T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ASE201T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZqP0VP1zNFZPzE4gtqzOfVmEJD4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImqM82UWGIijnMl9uii4QazHW6vG",
 					},
 				],
 			},
@@ -5587,8 +5587,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18EIO133T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18EIO133T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlfpe5Ta3feD05wwuGh8pCTRaQ8GM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspbD0fXwZgATKTzUVzuEOv5hvyY",
 					},
 				],
 			},
@@ -5603,8 +5603,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EIC402T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EIC402T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPZ2S6vB7usvIwli4IEg6I2BYZfC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYzZe0fOqM5gKInI75l8DVgqNNO",
 					},
 				],
 			},
@@ -5619,8 +5619,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EIC302T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EIC302T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPRTXS68LuTBr8KxPcN0vrSLQkY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPOb4XaPHNdZEfQBETS2rKxdESk",
 					},
 				],
 			},
@@ -5635,8 +5635,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18EIE008T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18EIE008T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQlFqW04cNk2pyNwh9kXqahNKBTk6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycyFndXA6efW0LlTmNZOvccqpTHSI",
 					},
 				],
 			},
@@ -5651,13 +5651,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EIE306T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EIE306T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUzEyrSvSE9zFhaoCR2cgVkLXWNC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhzC6OYPj9d9d57tQFthiRDqpK5O",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EIE306T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EIE306T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUzEyrSvSE9zHIpYHqNToGCRvH78",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhzC6OYPj9d9egMdVfEYqBfxD4pK",
 					},
 				],
 			},
@@ -5672,13 +5672,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTE318T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTE318T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHcweoeUCfpW7JmvgqmAt6NHr4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEkTkIvPfqCteP0kXvo6Mbf5ZG",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTE318T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTE318T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHcweoeUCfpwR43EVW4YbXPZiA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEkTkIvPfqDJy9H3Mb6U52hNQM",
 					},
 				],
 			},
@@ -5693,18 +5693,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE383T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE383T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDjdWn1xsCR3lkOZMQGNGA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi0YzxPLPHescpQUpvYAyM",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE383T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE383T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDjdWn2OBwhMaPgx4rIf7G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi0YzxPlj1vBRUisYMaSpS",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE383T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE383T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDjdWn0mxCbxFYZCckuuNK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi0YzxOAUHpm6db86GCi5W",
 					},
 				],
 			},
@@ -5719,8 +5719,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIE329T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIE329T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3aAD294QYuoor8TP9XOHT27bq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0hhIWPztjICLwMIGEZJkyJvK2",
 					},
 				],
 			},
@@ -5735,8 +5735,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/21CSE282T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/21CSE282T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU30oBxVKKNxFwlUf8hPDpNTdzRrUoek",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d30OxSRrTRWsEf2WEUReEYfuvMmcMw",
 					},
 				],
 			},
@@ -5751,23 +5751,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC364J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC364J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecbZYOYGwSDf2xILKMugcg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6sV1YveTXRTu2KGnsCUKs",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC364J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC364J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecbZYOYGwSDf2xILP3Zvok",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6sV1YveTXRTu2KGsYrjWw",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC364J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC364J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecbZYOYGwSDf2xILTkFB0o",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6sV1YveTXRTu2KGxFWyj0",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSC364J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSC364J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtQxecbZYOYhGCTxrcajCBHSru",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqYUk6sV1Yw4nHhmihcefgZGa6",
 					},
 				],
 			},
@@ -5776,8 +5776,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/18CSC364J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/18CSC364J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06Qxcregz5BCuyEKiWrwHBiilLqqeZHJaa6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLvDRgtC58KS3ibe02JeinwaCvsa2mbOII",
 					},
 				],
 			},
@@ -5792,8 +5792,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE360T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE360T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK9wHTdp9sPVWMzt8COmy62",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPeDCwoCXPUjLE4v3fu4loE",
 					},
 				],
 			},
@@ -5808,8 +5808,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE225T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE225T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwsuX0QeLg6Zd9Zea2mpdyQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2NBSTb1jDBnS0egVWI7Rgc",
 					},
 				],
 			},
@@ -5824,8 +5824,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE301J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE301J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiJyclYhaG6tUpSfeNxIT4uk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPSth1rxddyieJkgJQnkscw",
 					},
 				],
 			},
@@ -5840,18 +5840,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18PMA402/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18PMA402/Nov-2022.pdf",
+						url: "2MZfMSx79ADZiIeYXriACIdm7cGKsxemZMFzOInSnJVj6ZpDpVXAjdu7HFgr4Q2t947I1W0GXMgxqGGutxFDaDwGnVC3XGo3wFhW",
+						raw: "EHrjriXjSiJWmolXrv3qEJgLkTcvsoLGjqOnUCCakIhmMbfK2YnZ1mFNO2iX6eSWlMY5hdQNXSysBwd8xPxzvEWQjmerVae5t2PPhhV9MCgwedBmI",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18PMA402/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18PMA402/May-2023.pdf",
+						url: "2MZfMSx79ADZiIeYXriACIdm7cGKsxemZMFzOInSnJVj6ZpDpVXAjdu7HFgr4Q2t947I1W0GXMgxqGGutxFDZncWXCNOEt5ctxqQ",
+						raw: "EHrjriXjSiJWmolXrv3qEJgLkTcvsoLGjqOnUCCakIhmMbfK2YnZ1mFNO2iX6eSWlMY5hdQNXSysBwd8xPxzvEWQjmerVae5t1z5xRCKguJEDatvC",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18PMA402/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18PMA402/May-2022.pdf",
+						url: "2MZfMSx79ADZiIeYXriACIdm7cGKsxemZMFzOInSnJVj6ZpDpVXAjdu7HFgr4Q2t947I1W0GXMgxqGGutxFDZncWXCNOEt0wEieM",
+						raw: "EHrjriXjSiJWmolXrv3qEJgLkTcvsoLGjqOnUCCakIhmMbfK2YnZ1mFNO2iX6eSWlMY5hdQNXSysBwd8xPxzvEWQjmerVae5t1z5xRCKguJ9Wvej8",
 					},
 				],
 			},
@@ -5866,13 +5866,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE461T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE461T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07ayXPDEZaXxLaRwHf2cNKY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5FSsNbx7dBARWyD8XuB2k",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE461T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE461T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07ayXPDFkVXmS6dleFKdLpG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5FSsNd82d0GxinZipv9XS",
 					},
 				],
 			},
@@ -5887,8 +5887,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSE253T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSE253T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuLl2ZftlVBdEMcV0GKkSa9tEk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrTI83wpEfZ0lRqJrLMfw5Rgww",
 					},
 				],
 			},
@@ -5903,13 +5903,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE331T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE331T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWXTa7xXjPyT4IOoaIlCjFg6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3cxr3Qi6nVYI7FtcEEi13OI",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE331T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE331T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWXTa7xXiF3TFBsckwAuiHBO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3cxr3Qi5caYT0jhmreQ04ta",
 					},
 				],
 			},
@@ -5924,13 +5924,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE379T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE379T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKBtO0YvxyqorDeFl1IOLR8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPgAJTjJLVw2g4jHgUng99K",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE379T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE379T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKBtO0YvXf6YYOyxNIrM3a2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPgAJTjIvCBmNG3zImMdrIE",
 					},
 				],
 			},
@@ -5945,8 +5945,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE322T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE322T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzgMzQdr0EITN9dcehlCReQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5AdutoENlNhC0ieaBGUFMc",
 					},
 				],
 			},
@@ -5955,8 +5955,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE322T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE322T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK2PE32w3rGISsQGp5WkIMQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPWg9WDJROLWHjVIkZ2264c",
 					},
 				],
 			},
@@ -5971,13 +5971,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE345T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE345T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK6Ca6CDKhj53TeZwOW7AlK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPaTVZMaiEoIsKjbrs1OyTW",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE345T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE345T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK6Ca6CBjSyze8nSBwPjQ1O",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPaTVZMZ704DSzsU7Pv1Dja",
 					},
 				],
 			},
@@ -5986,8 +5986,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE345T/Dec-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE345T/Dec-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzkALTn1nFe9sK62vX6ZSpq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5ERGwxPAmjNhBB4r0brGY2",
 					},
 				],
 			},
@@ -6002,8 +6002,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE445T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE445T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07XENh3RvGFWMrhh0qkgLpe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD1VJADpInKkBimiwKFy9Xq",
 					},
 				],
 			},
@@ -6012,18 +6012,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE445T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE445T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnBC94eKQL6Bw5xfIZFKJfy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osfT4XohnsBPkx2hE2kc7OA",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE445T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE445T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnBC94eK01LvdHIMuhQxXQk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osfT4XohNYR9S8NOqAwFL8w",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE445T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE445T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnBC94eIp6M6Wl6XY78wYw2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osfT4XogCdRKLcBZTaeEMeE",
 					},
 				],
 			},
@@ -6038,8 +6038,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE432T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE432T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELpsw7JTgmf0XYSVI78XVTny",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvND2me4AC5lNJaK2c2nHWA",
 					},
 				],
 			},
@@ -6054,18 +6054,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE462J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE462J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnEwk0tm4qCvCS727fFqpqI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osjDfU49SNI91JC438l8dYU",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE462J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE462J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnEwk0tnFlCkIyIrUOvCIj8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osjDfU4AdIHy7pNtPsQU6RK",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE462J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE462J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnEwk0tjdY1PrP9eZgpNPCY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osjDfU47156dgGEgVAKfCuk",
 					},
 				],
 			},
@@ -6074,8 +6074,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE462J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE462J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07ayydIvB06L2YiBaOracju",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5Fu6TIYXBYrPnDVsMsQS6",
 					},
 				],
 			},
@@ -6090,8 +6090,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIO351T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIO351T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3fLv2NnzjCW5TWL7IqbfL68jW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0mt0WejStZtcYk9yNsX8qNwRi",
 					},
 				],
 			},
@@ -6106,23 +6106,23 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21BTB102T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21BTB102T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7cvhWZijNEpSjVkzmFw0pZ8qQq3i",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJpvee6oDeAId6tI504n5rUcLidlu",
 					},
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21BTB102T/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21BTB102T/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7cvhWZijNEpSlv6J0oV9z07m5IJC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJpvee6oDeAId9IdOEdMF0vbHN61O",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21BTB102T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21BTB102T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7cvhWZijNEpSlx3BHayyD77GuGhS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJpvee6oDeAId9KaGVPq3F2amC4Pe",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21BTB102T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21BTB102T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7cvhWZijNEpSlx38M5rn1g2LzJnK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJpvee6oDeAId9KaDZuis3bVrH7VW",
 					},
 				],
 			},
@@ -6137,18 +6137,18 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE271T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE271T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HbkO8WucWn96zpcVX2MsxYE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGohEf404zuKEKoghXSVsAlGQ",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE271T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE271T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HbkO8Wuc6TOqh0xD9Jvqfh8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGohEf404zU0U4Vs2F4nR8TPK",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE271T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE271T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HbkO8Wuc6TOqh0xD9FFBQV4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGohEf404zU0U4Vs2F4ikTEDG",
 					},
 				],
 			},
@@ -6163,23 +6163,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE335T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE335T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4hrYkCIzPGX6r1J9QaVJHq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOAC8UDMgMwLkvi6L4u5n702",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE335T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE335T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4hrYkCIzPGX6r1J9Zxpnfy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOAC8UDMgMwLkvi6L53T7bOA",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE335T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE335T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4hrYkCIzPGX6r1J9VHAYTu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOAC8UDMgMwLkvi6L4ymSMC6",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE335T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE335T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4hrYkCJPj0nPfgbXIOs5X4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOAC8UDMgnG61EWldSlu9tFG",
 					},
 				],
 			},
@@ -6194,8 +6194,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE398T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE398T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHfXaRU34tdusjtgd5ByYmAg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3ol1rMxDSHB06Yklf0fTqZss",
 					},
 				],
 			},
@@ -6204,8 +6204,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE398T/Dec-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE398T/Dec-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzztcg6S9xGshpcTHFV3RNgc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5NtbZcXKnxveTYJAyYjBOo",
 					},
 				],
 			},
@@ -6220,8 +6220,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH105TI/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH105TI/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWINqcpabO2WYwgO8QTfkG7whtftswEJypK",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHUQtPu0HC9dBbgHQrKCurh0h4RrClPpFIs",
 					},
 				],
 			},
@@ -6236,8 +6236,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18LEH105J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18LEH105J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5rfpp9t2S4AfetgjaVQYVZ138Cbm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4fmwgyWizdq2HDooKHdXUUYQ0Jy",
 					},
 				],
 			},
@@ -6252,8 +6252,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH105TR/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH105TR/Jan-2024.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWINqcpabO2WYwgO9QEnR01njqBtldpj8L8",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHUQtPu0HC9dBbgHRr5Kbbarj0xr5T1EOog",
 					},
 				],
 			},
@@ -6268,18 +6268,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH105T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH105T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH7MImd0RllwJUls2JRgyU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolOHlx0NyqzlAZnnVojUgg",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH105T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH105T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH7MImeBMoWXwrmfmD2rZO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolOHlx1YttkMnwobFiKfHa",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21LEH105T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21LEH105T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7eLeDCjH7MImaZ9dC6NiZl8ntDEs",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrLbKjolOHlwxwgiPvEnbgcJB0x4",
 					},
 				],
 			},
@@ -6294,8 +6294,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18MAB163T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18MAB163T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5roXgJKi4AeX88vEfAG4QfWCdtaA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI4oUnqQCL67hVWSJsz79SazhvhIM",
 					},
 				],
 			},
@@ -6310,8 +6310,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECC202J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECC202J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR8FGLrLYOfPPSN5h9stGs69YM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOFmLq8H1Z2mwXauYEuokNNxGY",
 					},
 				],
 			},
@@ -6326,8 +6326,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECC202JO/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECC202JO/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMqiO231WGH3YsOMXAOr5LSQ43aYmk",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRGOC99eBGALzivX8jSqG7PjtF5pGI",
 					},
 				],
 			},
@@ -6342,8 +6342,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIS201T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIS201T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSir8AbqStR4EkIMoqNAQSApE6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPqODeslw3oRlpWBfvP5txScwI",
 					},
 				],
 			},
@@ -6358,8 +6358,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MHC201J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MHC201J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bYB9WlXT8mjNHTDAxa1JcRQ9ni2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoY8H3r1k4Ftkf0IOmR6LXuvRbQE",
 					},
 				],
 			},
@@ -6374,8 +6374,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18BMC205J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18BMC205J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfPF7mOTGdVmsvqczUkybtu8giww",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsPCFJTxXYyxGJNiDJc3dpNdyWf8",
 					},
 				],
 			},
@@ -6390,13 +6390,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE363J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE363J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK9xdN9oyJ0Otx6d2tv8zzy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPeEYqKCLq5cioBeyNQQniA",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE363J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE363J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK9xdN9rPbBuF040asLcQdi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPeEYqKEn8H83r92WLquELu",
 					},
 				],
 			},
@@ -6411,13 +6411,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIO352T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIO352T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGGB4FOQUwqa3cAH8cS942lFo7q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDIbKshQQ0xR9FUxTXAzWGXbq2",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIO352T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIO352T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGGB4FOQUwqWROywh3Iw9PM69nK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDIbKshQQ0tow4AVuNy4srNxVW",
 					},
 				],
 			},
@@ -6432,8 +6432,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EIE304T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EIE304T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPRUZnHTY6xvuR3pgQtD1MT7tf4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPOc6slkTa8JHy93VHyEwpyPhNG",
 					},
 				],
 			},
@@ -6448,8 +6448,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE392T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE392T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKFcAia4tptSjOevzd0FTy2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPjt6BkSHMygYFjxv6VXHgE",
 					},
 				],
 			},
@@ -6458,8 +6458,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE392T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE392T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzztZw6B117vSkC47BpWibkk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5NqrZLOOf0gZ3997J20PSw",
 					},
 				],
 			},
@@ -6474,8 +6474,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE307T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE307T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzcdI3CFB3c2uGIJStsWeJi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX56uDWMcYahGj7NLONNoS1u",
 					},
 				],
 			},
@@ -6484,8 +6484,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE307T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE307T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiJyfWfbKEgZrzz4xdHe4V1i",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPSwS8lhcDf5oq9zYl9MIju",
 					},
 				],
 			},
@@ -6500,8 +6500,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE491T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE491T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnKbHMK3bbq4REWSoqRL4YI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3ososCpUQz8vIG5bUkJwcsGU",
 					},
 				],
 			},
@@ -6516,8 +6516,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUE455T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUE455T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGmSnBIOZGd01fn9dRg3mtrdDS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDtzsfZK2R0NYl0yUWhzGP9Qve",
 					},
 				],
 			},
@@ -6532,8 +6532,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BME471T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BME471T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8dbg0NnQ3TaSF8zpP1FUDoysze",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8ajD5s4LWdxpmEDeG6HPhKGghq",
 					},
 				],
 			},
@@ -6548,8 +6548,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/21CSC310J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/21CSC310J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU30oBxVJIALlp06Ws9FYeHqTwqXsgWU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d30OxSQpFq2kTGuFgKmT8vVsK3AUEg",
 					},
 				],
 			},
@@ -6564,18 +6564,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE472T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE472T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07crzGQjyY8VJ71oHPMNqz8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD78ujb7M5Dj7y6qCsrfehK",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE472T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE472T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07crzGQl9T8KPdDddzeOpTq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD78ujb8X0DYEUIfZT9gdC2",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE472T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE472T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07crzGQl9T8KPdDde91jJry",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD78ujb8X0DYEUIfZcX17aA",
 					},
 				],
 			},
@@ -6584,8 +6584,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE472T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE472T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnGpke1e4rjGHg8uJVGkKNK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osl6g7C1SOoU6XDwEym285W",
 					},
 				],
 			},
@@ -6600,8 +6600,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CSC005J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CSC005J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvotzWuqH9CJSUPtCaFIVlWdt2pC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8or740KY4fTprwyQP6NXh09AqXO",
 					},
 				],
 			},
@@ -6616,8 +6616,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MBO412T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MBO412T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhZNK1E8iU7eLd9JbzxF0cflVGo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhWUr6iPdxI1jAEXQr2Gw6B3Iz0",
 					},
 				],
 			},
@@ -6632,18 +6632,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18PDH102T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18PDH102T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmoz51Pbf1md4ru7oG49PApmGMj8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczowCYV5vxFnSFRD24vER6JHYARK",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18PDH102T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18PDH102T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmoz51Pbf1md3gz7z9XxZoFUFOEQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczowCYV5vxFnR4WDCyP2bjizXBwc",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18PDH102T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18PDH102T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmoz51Pbf1md1FgwToV0CGH3lxag",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczowCYV5vxFnOdE1hdM5EBkZ3lIs",
 					},
 				],
 			},
@@ -6658,13 +6658,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE448T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE448T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07XFkhC2m7ZXpXoa7HmaH6k",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD1WgAMQ9eeleOtc2lHs4ow",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE448T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE448T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07XFkhC2m7ZXpXoa7D5v1ug",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD1WgAMQ9eeleOtc2gbCpcs",
 					},
 				],
 			},
@@ -6679,8 +6679,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18PCY4EB/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18PCY4EB/May-2022.pdf",
+						url: "2MZfMSx79ADZiIeYXriACIdm7cGKsxemZMFzOInSnJVj6ZpDpVXAjdu7HFgr4Q2t947I1W0GXMgxl7Zzz1UxYvGkWAkXYoSO30Kc",
+						raw: "EHrjriXjSiJWmolXrv3qEJgLkTcvsoLGjqOnUCCakIhmMbfK2YnZ1mFNO2iX6eSWlMY5hdQNXSysBwd8xPxzvEWQjhWAafiLd16kBQAhqEEayjwPO",
 					},
 				],
 			},
@@ -6695,8 +6695,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18MAB205T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18MAB205T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmOLAb7xmvlmxK5ofV9Zw95tV6LW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczOII8DS3rExKhcttK0ey4ZOmu3i",
 					},
 				],
 			},
@@ -6711,8 +6711,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIE339T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIE339T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3aAD423x4DnO5aVlTLYdxorYM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0hhIYIzQEbAvAoKcYNU7T6fGY",
 					},
 				],
 			},
@@ -6727,18 +6727,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEC208T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEC208T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sDJF1rWmdqYzPg0N24thPnoHO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pKqKW8SFoDwWUtpE76pAv5bza",
 					},
 					{
 						period: "Dec-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEC208T/Dec-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEC208T/Dec-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sDJF1rWmdmwmELYnsryzJyuko",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pKqKW8SFoAKJJZNextuSpGiT0",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEC208T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEC208T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sDJF1rWmdqYzPg0N24tcj8Z5K",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pKqKW8SFoDwWUtpE76p6EQMnW",
 					},
 				],
 			},
@@ -6753,8 +6753,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEC208TO/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEC208TO/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWWC4HZceVqxS3h1QNJW8ZG52r5iKxM0C0s",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHiF74e2KJy44iguioA3JAp921rfemXVSUQ",
 					},
 				],
 			},
@@ -6769,18 +6769,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BMC306J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BMC306J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUYq6LrYGeoxG45XWk6gy0662FuA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhYnDsx2XaI7dRcckYxlzvZbK3cM",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BMC306J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BMC306J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUYq6LrYGeoxGUPHn2vMGNtDjmxK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhYnDsx2XaI7drwN0rmRIJMj1afW",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BMC306J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BMC306J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUYq6LrYGeoxG45XWk6gy0AmhV6E",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhYnDsx2XaI7dRcckYxlzveHzIoQ",
 					},
 				],
 			},
@@ -6795,8 +6795,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE363J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE363J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4nVbXfI4QSA2tGy6W8satq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOAHmX0pfRxXNrkM01zeAOc2",
 					},
 				],
 			},
@@ -6811,8 +6811,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18BMC3061/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18BMC3061/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUYq6LrYGc3OuvrQHx6DuhKgQIKs",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhYnDsx2XXWZIJOVVlxIwcoBi634",
 					},
 				],
 			},
@@ -6827,8 +6827,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MHC205J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MHC205J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7ydoRBSjVB3U7UEDTJXDcW3TCY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7vlLWfjeyLQreZS2KOZ961LGuk",
 					},
 				],
 			},
@@ -6843,8 +6843,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MEE451J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MEE451J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhfidVafOIkROGQDdiHsdAn1Byg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhcqAb4wJluolnVRSZMuYeIIzgs",
 					},
 				],
 			},
@@ -6853,13 +6853,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE451J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE451J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELpwhcv9XHwpSf9Amb4seiaU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvQyYOJufTugU0FoWYNwWIg",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE451J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE451J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELpwhcv9YSrpHlfMbxoY0BTK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvQyYOJvqOuVaWRdtI3HzBW",
 					},
 				],
 			},
@@ -6874,8 +6874,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC302J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC302J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz26ojQquWqq7G0oPscBA0JnhbS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzELov7q01DUn62EjhD5Tp5VJe",
 					},
 				],
 			},
@@ -6890,8 +6890,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC302JO/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC302JO/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWWC4HZXw0i9TasTTAxfd6aoNG9ZyMjrMfu",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHiF74dxbopG6FsMlboCni9sMQvXIBvMd9S",
 					},
 				],
 			},
@@ -6906,8 +6906,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18NTC108T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18NTC108T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlh7dqr9IlcXucGD5ranKRdKt1Nag",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxu7ayOEn2Y14zdkB5PePTYoOJBIs",
 					},
 				],
 			},
@@ -6922,18 +6922,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEO303J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEO303J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPXVS905PhMWRweRTrAciIxZ2M",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMf2XdH0srjtz1sGKwCYBoFMkY",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEO303J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEO303J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPXVS905PhMwlgukIWT0QjzqtS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMf2XdH0srkKIm8Z9bUvuFHebe",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEO303J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEO303J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPXVS905PhMWRweRTrAcdcIJqI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMf2XdH0srjtz1sGKwCY77a7YU",
 					},
 				],
 			},
@@ -6948,8 +6948,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECO103T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECO103T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYphKCaem7gBkH3V6hIKLJCj30Y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmorI4vhaqZ7o8ivYNMGmi0qik",
 					},
 				],
 			},
@@ -6958,8 +6958,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECO103T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECO103T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz2D2Wwh0k5JfVx5qHheRNpmcDO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzKZcQxwDFh332Jf8mgMrL4Pva",
 					},
 				],
 			},
@@ -6968,8 +6968,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO103T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO103T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIjFMURAR6QH3Rg9oiT8lC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwn0ApeoXyBe5uWi5IDkwTO",
 					},
 				],
 			},
@@ -6984,8 +6984,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18BTC105J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18BTC105J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfPU7cONJzEDNv4KlFtF0eh65mz8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsPRF9TrauhNlIbPz4kK2aAbNahK",
 					},
 				],
 			},
@@ -7000,8 +7000,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTE424T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTE424T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHcwmdZgbahIuXtKMamCJrX4QY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEkTs7qc4l4gRd79Dfo7nMos8k",
 					},
 				],
 			},
@@ -7016,8 +7016,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE339J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE339J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK4LOnv92Fd7euex45n8d4Y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPYcKH5WPmiLTljyzZIQQmk",
 					},
 				],
 			},
@@ -7037,8 +7037,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CE0306T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CE0306T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7bn8UAUKNGJSX8m3p5OJLeGa2w",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7YufZelFqQgq4DzsgAQEp9YNl8",
 					},
 				],
 			},
@@ -7047,8 +7047,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEO306T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEO306T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPXVS91TWSVeAJ09K9albcf3sE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMf2XdIOzct1hODyBEch57wraQ",
 					},
 				],
 			},
@@ -7057,18 +7057,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CEO306T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CEO306T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7c3DmV3i8rbXqiFAl2UjaOxpg6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7ZAkrzKdc1yvNnSzc7Wf3uFdOI",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CEO306T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CEO306T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7c3DmV3i8rd95SKa5tcU2VLaQ2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7ZAkrzKdc20WcXYOwyePW0dO8E",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CEO306T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CEO306T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7c3DmV3i8rcili4HHEK6AgyoAo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7ZAkrzKdc206InI68JM1eCGbt0",
 					},
 				],
 			},
@@ -7083,8 +7083,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE303T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE303T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZOyDu7f35coz8e8ZnMviUFS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6USUpapQT9uCxVDbiqR0Hxe",
 					},
 				],
 			},
@@ -7099,8 +7099,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE359T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE359T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm5AL9CVvEaLjGbhrQ8L0I",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GM5oJZtSJoAaLddKvQ8iU",
 					},
 				],
 			},
@@ -7109,13 +7109,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE359T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE359T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHfQ2vik3PlLAVcfSF7oOY6g",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3okuJrBuQnIQOKTkUAbJgLos",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE359T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE359T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHfQ2vik5105FuxWZzZumIqc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3okuJrBuSOXATjobbv3Q46Yo",
 					},
 				],
 			},
@@ -7130,8 +7130,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE480T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE480T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnIhpV6YCeFWThwap67Zati",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osmykyGvaBKkIZ1ckZcrObu",
 					},
 				],
 			},
@@ -7146,8 +7146,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE453T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE453T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07Z6SY8I0VqBoVgsE5lJgAQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD3NO1IfO2vPdMlu9ZGbTsc",
 					},
 				],
 			},
@@ -7162,28 +7162,28 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE354T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE354T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm2sfaBxdhqR5J0B9BX7Oo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GJo8kZLAn4FwO26cgov70",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE354T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE354T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm2sfaBxdhqR5J0BIYrbmw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GJo8kZLAn4FwO26m49PV8",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE354T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE354T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm2sfa8LQWVzW9nGaT2iGM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GJo8kVixbjoNEpC3yKVyY",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE354T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE354T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm2sfaAmii1KZ7AoYtW8u6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GJo8kYAFnF9QCCk2OnwcI",
 					},
 					{
 						period: "Dec-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE354T/Dec-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE354T/Dec-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm2sfa8LQWVzW9nGVmNT4I",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GJo8kVixbjoNEpBzHfGmU",
 					},
 				],
 			},
@@ -7198,13 +7198,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21AIC202J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21AIC202J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MVrxAaEapD61OPWlNcq2Y9cPkyk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZVp4hfirkgGOlwbzCTv4Td7hYgw",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21AIC202J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21AIC202J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MVrxAaEapD61OPWlNcq2Y4vkVmg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZVp4hfirkgGOlwbzCTv4TYR2JUs",
 					},
 				],
 			},
@@ -7219,18 +7219,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC205J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC205J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4Lz9o9JTyD4HQ5kHVpCYqM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qG5HJgrVII6HAmCzKUMYY",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC205J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC205J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4Lz9o9JTyD4HQ5kHaVro2Q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qG5HJgrVII6HAmD419bkc",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC205J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC205J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4Lz9o9Frl1jpqwXMsQ2uVq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qG5HJdFI6xei1ZILvKiE2",
 					},
 				],
 			},
@@ -7245,8 +7245,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE434T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE434T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELpsx1yu5D7yT5yM7O73lQAw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvNDxS4Saf3gupR9JaZ3Dt8",
 					},
 				],
 			},
@@ -7261,8 +7261,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BME371T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BME371T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zz2d6XInr51TMblswmiA835lk50",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImyzkdcn4mYBqk8r6ldnC3Wb3XnC",
 					},
 				],
 			},
@@ -7277,8 +7277,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE352T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE352T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzm1y09n6qzeakmsWNXZdyg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5GItTKAUO4sPbruRr2rRgs",
 					},
 				],
 			},
@@ -7287,18 +7287,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE352T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE352T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK84CcYtQr99v0L4s9RZwpi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcL85jGoOENjrQ6ncwrkXu",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE352T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE352T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK84CcYubm8z1WWuEt6vPiY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcL85jHzJECqNbwAMcDDQk",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE352T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE352T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK84CcYqzYxeZxNhKB16WBy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPcL85jEN62sOoSjFeWOJuA",
 					},
 				],
 			},
@@ -7313,18 +7313,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BME469T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BME469T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8dbg0Ly5CfsSV12rY6dZDSzksY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8ajD5qF0fqFq26GgPBfUgyHYak",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BME469T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BME469T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8dbg0Ly5CfrHZyIFujclOsjL5a",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8ajD5qF0fqEf73W4loegsO18nm",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18BME469T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18BME469T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmP8dbg0Ly5CfssolJAMlvwvu22je",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lyc8ajD5qF0fqGGLqWzDqxsPPJqRq",
 					},
 				],
 			},
@@ -7339,8 +7339,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MEE328TR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MEE328TR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWTQp7TH2haCfzcnP1szAd5a1OvAsjIh7RO",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHfTruXgiVhJIecghSjWLEee0Zh8CYUCNuw",
 					},
 				],
 			},
@@ -7355,18 +7355,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MEE328T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MEE328T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bY4k42Q44COHjMSczJsEYCDAnfq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoY1rb7uKzfYf6tXqoAxGTfiSbO2",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MEE328T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MEE328T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bY4k42Q44COLLZdxQt1RSuIzhCQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoY1rb7uKzfYij6jBFk6TONoHUuc",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MEE328T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MEE328T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bY4k42Q44COKAee8KMpc6AdeEJa",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoY1rb7uKzfYhYBjM9Due1e8w21m",
 					},
 				],
 			},
@@ -7381,8 +7381,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18PPH401/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18PPH401/May-2022.pdf",
+						url: "2MZfMSx79ADZiIeYXriACIdm7cGKsxemZMFzOInSnJVj6ZpDpVXAjdu7HFgr4Q2t947I1W0GXMgxrpfELcvoE8ihA0dB0AfrYbg6",
+						raw: "EHrjriXjSiJWmolXrv3qEJgLkTcvsoLGjqOnUCCakIhmMbfK2YnZ1mFNO2iX6eSWlMY5hdQNXSysBwd8xPxzvEWQjoEFp2JmTgKC840aTfaoSFXks",
 					},
 				],
 			},
@@ -7397,8 +7397,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21MAB202T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21MAB202T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8ODkXDJUMMYKXJIElrluuJaMzU50",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbDhekOydI1UugpJzgczwF3sHHnC",
 					},
 				],
 			},
@@ -7413,18 +7413,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB206T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB206T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbl9U5yD25qFAHSxgzbNKA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt624xGLaZB441MUtAUtB2M",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB206T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB206T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbl9U61pFHAgjQfsKOl1eg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt624xGPCmMOVaVhnnu2pMs",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB206T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB206T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbl9U61pFHAgjQfsP5QGqk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt624xGPCmMOVaVhnsai4Yw",
 					},
 				],
 			},
@@ -7439,23 +7439,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21MAB206T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21MAB206T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynTdx2vdqQQVaSVmoTzChBLPAGT4w",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zgduASjKhLykptJtho3mDGsfYGn8",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21MAB206T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21MAB206T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynTdx2vdqQQVaSVmoTzChBLTqviH0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zgduASjKhLykptJtho3mDGxMDVzC",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21MAB206T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21MAB206T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynTdx2vdqQQVaRKrljNZKAXfGfIU2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zgduASjKhLykoiOqxCQPCT8lx6CE",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21MAB206T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21MAB206T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynTdx2vdqQQVaSw6YkI1MTjCHy086",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zgduASjKhLykqJddy6sRVefnFnqI",
 					},
 				],
 			},
@@ -7470,23 +7470,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB202T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB202T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbjK9FE7fqn04OQYrnVK0U",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt60FcPbVCw0ovTSULIn7ig",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB202T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB202T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbjK9FAVSfSYVFDe9hgQTu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt60FcPXszkgNMKFZdCyEC6",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB202T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB202T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbjK9FE7fqn04OQYiQApcM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt60FcPbVCw0ovTSUBvSdKY",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB202T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB202T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbjK9FE7fqn04OQYn6q4oQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt60FcPbVCw0ovTSUGc7sWc",
 					},
 				],
 			},
@@ -7501,18 +7501,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC202J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC202J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6ViJNNtJy27X8hxG2iaNOMg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbCaIr3hLZCkxZ2HyC5fC4s",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC202J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC202J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6ViJNNtJy27X8hxG2ZD2tyY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbCaIr3hLZCkxZ2Hy2iKhgk",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18CSC202J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18CSC202J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkyUy6ViJNNtKOLrnRWcYQR1PgDm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxyS5dbCaIr3hlsx1GNhaLuWhTvy",
 					},
 				],
 			},
@@ -7527,8 +7527,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21ECC215J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21ECC215J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynSVFWI6cQz6X0LhIQC1WO0rbKY3K",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zfVCdpC6huZhNjENe0sbPwL6cLlW",
 					},
 				],
 			},
@@ -7543,8 +7543,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CSC002J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CSC002J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvotzWuqFmCArDEouokWKHNAwph0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8or740KWhfLEalu8dbbMCqgEdPC",
 					},
 				],
 			},
@@ -7559,8 +7559,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21CSC101T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21CSC101T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7d4VrrYVwPaQr3qK6q9lWsu1Off4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJq4SzOe0DL3bERNPKf0qYoNWgTNG",
 					},
 				],
 			},
@@ -7569,18 +7569,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21CSC101T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21CSC101T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSXeJM9E9uAy1jYvAmPO1VAT8i97G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfekeGTgJeB6RC6wSG0EF6X5wdzwpS",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21CSC101T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21CSC101T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSXeJM9E9uAy1iO081nkeUMjF6yWM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfekeGTgJeB6RC5lXDFcbjWICkOmEY",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21CSC101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21CSC101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSXeJM9E9uAy1fwhzRxosIFpjYUmk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfekeGTgJeB6RC3KF4fmfxKBJEqIUw",
 					},
 				],
 			},
@@ -7595,8 +7595,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIC201J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIC201J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSaYOhzZ5hdhdgHKLSp47r0QP0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPi5UCGUYs15AlV9CXqzbMIE7C",
 					},
 				],
 			},
@@ -7605,13 +7605,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC201J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC201J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4LxKTIVmOmgal3UxyXHc06",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qEFwSt9vruPc8WtS2ZPiI",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIC201J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIC201J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG4q4LxKTIWCiWwtZinLlez93G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDCN9qEFwStaFcAiQnpHFAGwlS",
 					},
 				],
 			},
@@ -7626,8 +7626,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIC203J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIC203J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSaYOi0Tl7yVtSsQIARQSy6iRS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPi5UCHPEILtQY6F9FTLwTOW9e",
 					},
 				],
 			},
@@ -7642,13 +7642,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE412J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE412J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07RY10mMgvBzRQG10CxwPTS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXCvowTwk4SHDGHL2vgTEDBe",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE412J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE412J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07RY10mKFd0U6NIdSEXSypi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXCvowTwhdA5hvENfNi2kmXu",
 					},
 				],
 			},
@@ -7657,8 +7657,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE412J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE412J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiRnaFdBVMlL8yiBs5IpJ9i2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FXHrB6LskIQMnZGu0mKaxQE",
 					},
 				],
 			},
@@ -7673,8 +7673,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18AIC208J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18AIC208J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQkgSaYOi2lQgydrFM27SkZO50Ozm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycxgPi5UCJgtrM1OKZqyXmUraIChy",
 					},
 				],
 			},
@@ -7689,18 +7689,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC266J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC266J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBXcvFMq25nIclAKdzyKGKE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvH1tqiXDPcsWRcFMZTTc42Q",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC266J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC266J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBXcvFMq25nIclAKe4ezVWI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvH1tqiXDPcsWRcFMZYAHJEU",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC266J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC266J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBXcvFMqSPXYvZpd1n61nNO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvH1tqiXDpwcmkQuexGbJb5a",
 					},
 				],
 			},
@@ -7715,23 +7715,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC205J/Jan-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC205J/Jan-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMIVlcmXQAOaQzMKi0Sdfy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqZREn9uxFcPI4OGBVkROA",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC205J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC205J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMIVlck84rA1rqCtnlTQcY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqZREn7VbwNqivEpHGlEKk",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC205J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC205J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMIVlcmZN2fMunaRmBwrGI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqZREn9wu7tBlscNFhEeyU",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC205J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC205J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMIVlcnkI2UTQzPoMTxpl0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqZREnB7p7iII4RjpzFdTC",
 					},
 				],
 			},
@@ -7746,8 +7746,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18CSE001J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18CSE001J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5qOhUqvfXMm7uvjVgELTgiKxFElK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI3OecO19oIFIIJGau3CYidoSX2TW",
 					},
 				],
 			},
@@ -7762,8 +7762,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC205JR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC205JR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMpZcDDqu4REVaFDwO0XeYM5mvbvr4",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRFFQKKTZ4KWwQmOXx4WpKJPc77CKc",
 					},
 				],
 			},
@@ -7778,8 +7778,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE478T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE478T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07cujGhy891AFRRJ05hymnO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD7BejsLVg6O4IWKvZDGaVa",
 					},
 				],
 			},
@@ -7794,8 +7794,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE402T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE402T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELpnH8jxlQdYv8YsZEFvRivG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvHY4D88oAe8xPxb9jQjWdS",
 					},
 				],
 			},
@@ -7810,18 +7810,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE242J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE242J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZHIhMZ5DV6MdKHT37UzNRUU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6MmyI2FasdRr98Y52yUfFCg",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE242J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE242J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZHIhMZ5B3oB7zEVfZWYu0qk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6MmyI2FYRLGLo5ahV04BoYw",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE242J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE242J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZHIhMZ5Eg1MSQnesUEeiuNK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6MmyI2Fc3YRgFejuPiA0i5W",
 					},
 				],
 			},
@@ -7830,8 +7830,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE242J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE242J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27qwwf7wg7bPxOIqa99WD4fgc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFO2Qw3PqUyx2c7hfB4ziMTOo",
 					},
 				],
 			},
@@ -7846,8 +7846,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEE401T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEE401T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPSJs1PoOnpORUuPJZXlm8cCZi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMZqxVgjryClya8EAeZhFdu0Hu",
 					},
 				],
 			},
@@ -7856,18 +7856,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEE401T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEE401T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHCwbXfNZmOhTCbJfjADfcotOAo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA48d9eVFZ4qjgXUaFFb6KBBt0",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEE401T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEE401T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHCwbXfNZmOhtWLZyXpW3UdGAQ2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA48d9eVFZ5H3QnnOuXyy8Xy8E",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEE401T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEE401T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHCwbXfNZmOgIHbUZCyOJ2WsPg6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA48d9eVFZ3fogiO43QEW2ADOI",
 					},
 				],
 			},
@@ -7882,8 +7882,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE380T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE380T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHfVdnHqC7AZkjY9S2D0JtHa",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3okzuil0ZUheyYPETxgVbgzm",
 					},
 				],
 			},
@@ -7898,23 +7898,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21GNH101J/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21GNH101J/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7ddj6hKr1rKyRQH4HiErGh23lZVW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqdgEEQLImo8ono9VX5wIcVZ3NDi",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21GNH101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21GNH101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7ddj6hKr1rKyP0vl39fi7G3877G2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqdgEEQLImo8mOSqGyWn9BWdOuyE",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21GNH101J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21GNH101J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7ddj6hKr1rKySd8wNbErKAgXGlaY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqdgEEQLImo8q0g1bQ5wM6A2YZIk",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21GNH101J/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21GNH101J/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7ddj6hKr1rKyRSDtczbUJMwdfaze",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJqdgEEQLImo8opkyqoSZLIQ8xOhq",
 					},
 				],
 			},
@@ -7929,8 +7929,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18PYBlOlJ/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18PYBlOlJ/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5sFuXGW8pvjpxmZ98Hx0n5xEUCj0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI5Frenbd6rD0LA6EM6o5p1Qjm0RC",
 					},
 				],
 			},
@@ -7945,8 +7945,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18PYB101J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18PYB101J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkxg72rPr6KlxkfSINDTnjCnF41DC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxAg4AOVLNGF882zNb2Ksl8GkLovO",
 					},
 				],
 			},
@@ -7955,8 +7955,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/18PYB101J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/18PYB101J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9b5sFuX95V469YdaqtJ5WizsIrPW6g",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjdI5FregAzL1cj0yNyWuNo1nmMhJos",
 					},
 				],
 			},
@@ -7971,13 +7971,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18PYB103J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18PYB103J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkxg72rPr7FRO5u1pEcFAdx0AX5Us",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxAg4AOVLOAuYTHYuSR6FfsTfotD4",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18PYB103J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18PYB103J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkxg72rPr7FRO8LK0jxI81Uyb0W8c",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHxAg4AOVLOAuYVir5xm9D3QS6IJqo",
 					},
 				],
 			},
@@ -7992,8 +7992,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21PYB10lJ/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21PYB10lJ/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7evivBvkAKt6syFhzTwbqrKhgAbe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrvg2j1ERGMHGLmnDIngsmoCxyJq",
 					},
 				],
 			},
@@ -8008,8 +8008,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21PYB101JR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21PYB101JR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWINqcpd0LU9GOpLlU0lEmzMOyPHsJvgouk",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHUQtPu2g9bFt3pF3urIPOYQO9BFC97C5OI",
 					},
 				],
 			},
@@ -8024,13 +8024,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEC302J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEC302J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPIuCWYdXhSBkJn3irBjLNnIMZq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG1jc2uTAcZ7qsHXiGlGrIaAI2",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEC302J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEC302J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPIuCWYdXhS886bjHI2WQfhTT3G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG1jc2uTAcVVdgx697YM9ClGlS",
 					},
 				],
 			},
@@ -8045,8 +8045,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MHC204T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MHC204T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7ydoRBSIH5KRPkLBS5uMpZwXxO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7vlLWfjDkFhowpZ0JAwIJ5ELfa",
 					},
 				],
 			},
@@ -8061,8 +8061,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EIC305T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EIC305T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUzExp7k7UICfdOFukLPAhejGMX0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhzC5MDEOPlN30vL8ZCUCd8EYAFC",
 					},
 				],
 			},
@@ -8077,23 +8077,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUE411T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUE411T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGmSn3ib8ObOBJbJX8C4sJSxnC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDtzsXzWbYyliOp8ODE0LoklVO",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUE411T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUE411T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGmSn3ib8ObOBJbJX8C4ncnib8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDtzsXzWbYyliOp8ODE0H85WJK",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUE411T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUE411T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGmSn3ib8ObOBJbJX8C4iw8TP4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDtzsXzWbYyliOp8ODE0CRQH7G",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUE411T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUE411T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGmSn3ib8OboV3rcLnUSW3q0SE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDtzsXzWbYzC295RCsWNzZ7oAQ",
 					},
 				],
 			},
@@ -8108,18 +8108,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE405T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE405T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKoymJjqmOiXBMwWBtIqtLK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQJFhmuE9vnl0E1Y7Mo8h3W",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE405T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE405T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKoymJjrCiSnUBboZbjtBCQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQJFhmuEaFY1J2gqV5FAyuc",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEE405T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEE405T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYttoKoymJjpbTii4qkgp9dVQSU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr1LQJFhmuCz0nvthpikd8nEAg",
 					},
 				],
 			},
@@ -8128,8 +8128,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE405T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE405T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWfB10w8yhdc7uxLqHtFFDM6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3kfHwPJM5AhLjoQsDMkX14I",
 					},
 				],
 			},
@@ -8144,8 +8144,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEO304T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEO304T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPJ0QZecAfvVrOVNoMJ2jQ9EzYM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG7xf8t695tEvabdDO4eteWnGY",
 					},
 				],
 			},
@@ -8160,18 +8160,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE314T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE314T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWXPpVufik14RzAx9SGMlE7K",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3cu6RNq67Y9fo22BNjs31pW",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE314T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE314T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWXPpVufik14RzAx9SL3QTJO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3cu6RNq67Y9fo22BNoYiH1a",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEE314T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEE314T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6PWXPpVufjAKoiHzcRq3USlAU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3X3cu6RNq6Xrtw6qhTlWzkYsg",
 					},
 				],
 			},
@@ -8186,13 +8186,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEC303T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEC303T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPIuCWYe18mvavgxHYIjRdefbkM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG1jc2uwbxIySmB6PNlN79xPSY",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEC303T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEC303T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPIuCWYe18mw1FRDaMy1pVT2Nza",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG1jc2uwbxJOmWRPE33kyyKBhm",
 					},
 				],
 			},
@@ -8207,8 +8207,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEC401J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEC401J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYtslzdceLC6psYKz7u3Ft8Z3dW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr0J57tZoMUDPdYnyz5BMdqrLi",
 					},
 				],
 			},
@@ -8223,13 +8223,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEC305T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEC305T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6OUCCchBo9Ka4UFXvcTUO7OgI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3W1HgtceyWi79i4P0eOxtPCOU",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EEC305T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EEC305T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz6OUCCchBoCwnFoh74pO36bnok",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhz3W1HgtceyaKKL2Vy9rJWbtbWw",
 					},
 				],
 			},
@@ -8244,8 +8244,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18EEC214T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18EEC214T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpVPuj9VfP9CpeVKEVUmkirZRNm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspSXRodmasJaDBaY3MZogCMrF5y",
 					},
 				],
 			},
@@ -8260,8 +8260,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE332T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE332T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZP3sQMSpdT5q4weRlV7x9kc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6UY9LpdD10B3tnjTgydExSo",
 					},
 				],
 			},
@@ -8276,8 +8276,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE335T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE335T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK4JaZgsktkXbmTe1Zuwg4s",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPYaW2rG8QplQdYfx3QETn4",
 					},
 				],
 			},
@@ -8292,13 +8292,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MBO402T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MBO402T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXyOkfuKCCQWKNHvgnIyyY2A8e6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXvWHlOb7fathuN9VeO0u1XRwMI",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MBO402T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MBO402T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXyOkfuKCCQZwaTG8MSBt6keXmY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXvWHlOb7faxK7YTxDXDoaFwLUk",
 					},
 				],
 			},
@@ -8313,18 +8313,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB304T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB304T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2m2PWrZ15Q9mxfIAMhDh0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX2xshEwYAdye2hDdrz1PC",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB304T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB304T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2m2PWqO65b3GlpvQhLkoA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX2xshDldAos7qrquCdYWM",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB304T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB304T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2m2PWrzKpgSbcxfsnjVY6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX2xshFMruuHShzbMJ1JGI",
 					},
 				],
 			},
@@ -8339,8 +8339,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21MAB304T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21MAB304T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8ODkXDRHRJR1IFYcjSGEAlARXPvC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbDhekWliEuBfd5hxH7JCgdwpDdO",
 					},
 				],
 			},
@@ -8355,18 +8355,18 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21MAB204T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21MAB204T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8ODkXDJUNHDksXrldGXHp3dv83yY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbDhekOyeCgvFvOqr5OMqz7QPrgk",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21MAB204T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21MAB204T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8ODkXDJUNHDkwA4wxi6R1yHKHiJ4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbDhekOyeCgvJXc2BWxW3tkpZW1G",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21MAB204T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21MAB204T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8ODkXDJUNHDkwA4wxi6R1yM0wxV8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbDhekOyeCgvJXc2BWxW3tpWElDK",
 					},
 				],
 			},
@@ -8381,18 +8381,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB204T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB204T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbkEofcySYyqOuYDYknYEY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt61AHq0LzeCfFza92G5Lwk",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB204T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB204T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbkEofdOmJF9DZqbLsV5Hi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt61AHq0mJOSy4esWpNmszu",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB204T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB204T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbkEofcySYyqOuYDU48J2U",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt61AHq0LzeCfFza8xZQ6kg",
 					},
 				],
 			},
@@ -8407,18 +8407,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21MAB301T/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21MAB301T/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSZ49Ye5zUPfgunIoLwfZ1tzT2ata",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfem46gBBTlL8rIAptZlWe3pSyKObm",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21MAB301T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21MAB301T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSZ49Ye5zUPfgsM0fm6jmpn5xU79y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfem46gBBTlL8rFjXkzvarriZSlusA",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21MAB301T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21MAB301T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSZ49Ye5zUPfgvyDr6YIw2ho3J0gY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfem46gBBTlL8rJLkwKNA14dHYaoOk",
 					},
 				],
 			},
@@ -8427,8 +8427,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21MAB301T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21MAB301T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8ODkXDRHPwQsgyNYRglRzH0ybCn0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbDhekWlgru34LudfVcX1CUTt0VC",
 					},
 				],
 			},
@@ -8443,23 +8443,23 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB301T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB301T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2kfPOGi9lOh6qmBjKnIPu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX1asYe5gqcVxvo7Cq5686",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB301T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB301T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2kfPOF6v1JHlzeRHEPXfy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX1asYcUS6X6d4gMkjhLOA",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB301T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB301T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2kfPOGHq18OIBTnrWQWAg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX1asYdfN6MD9GVjL1iJss",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18MAB301T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18MAB301T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6bXw9Ab2kfPOGHq18OIBTo0tl0Yo",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIoXtGhgX1asYdfN6MD9GVjUP2oH0",
 					},
 				],
 			},
@@ -8474,8 +8474,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18MAB203T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18MAB203T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmOLAb7xm16MY2zMDM0OW6SRAqgA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczOII8DS2wZWvQWRRArTY1vwSeOM",
 					},
 				],
 			},
@@ -8484,13 +8484,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB203T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB203T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbjmTxMvr1YTfVHTXWfABy",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt60hx7kJO6mIWaJP11wxuA",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18MAB203T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18MAB203T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlgy8esnbjmTxQY4CsvEeUOAvooWU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxty5mPt60hx7nvbI6k5jWJeR6cEg",
 					},
 				],
 			},
@@ -8505,8 +8505,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CHC402T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CHC402T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHJM4OdgLPKqH4hm29WHr1Pm46o",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHGTbU7xGsVDebmzr0bJmUv3rp0",
 					},
 				],
 			},
@@ -8521,8 +8521,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE313T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE313T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHfISDcReYN0sEWgyLozkuoA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3okmj95c1vu663Nm0HIV2iWM",
 					},
 				],
 			},
@@ -8537,8 +8537,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18AIH201T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18AIH201T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfGG7QvJH3Pb4jYQRTH7Awgoua50",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsGDEy0nXyslS75VfI8CCsAKCNnC",
 					},
 				],
 			},
@@ -8553,18 +8553,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21CSS101J/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21CSS101J/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7d4W0AHyYekNYN8QQiZR8xQcwdVu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJq4T7hNSpaDXvkfVeXQWAsu8ERE6",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21CSS101J/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21CSS101J/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7d4W0AHyYekNYP5Flzw4BdLCqf02",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJq4T7hNSpaDXvmcKzon9DYoi8SiE",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21CSS10lJ/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21CSS10lJ/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7d4W0AHyzcSROhBKA0KiqKpIuZio",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJq4T7hNTGXvbm4iPNpBnsGIoCNR0",
 					},
 				],
 			},
@@ -8573,8 +8573,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%202/21CSS101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%202/21CSS101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QEo9dSXeJURxcWQ7yOSrxrjEXxo5VGtug",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLCOjfekeGbz36nLb8lqP35Y5czjZ0Yhcs",
 					},
 				],
 			},
@@ -8583,8 +8583,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21CSS101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21CSS101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZfTHNhxIyYPiGl1y6VsQvJsf0vD3rS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9hfUNf4q42gdjvPLdb6FmOuaUQUrZe",
 					},
 				],
 			},
@@ -8599,23 +8599,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CSS1011/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CSS1011/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvou7pm5vZZjupq32e2mMzsgJQ62",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8orFMraCV2uIDN8GStrOvMBbDoE",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CSS101J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CSS101J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvou7pm5vcLICmAjDIIlVlj7o1Bu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8orFMraCXoSa9hoR79qXhCd5ou6",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CSS101J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CSS101J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvou7pm5vcLIGONuXjruigHqIQKM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8orFMraCXoSdluzlYizkblLaE2Y",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/18CSS101J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/18CSS101J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gFkvou7pm5vcLIFDSuidLitJhYHRpe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGHx8orFMraCXoScazzwSCnvFB3ZFXq",
 					},
 				],
 			},
@@ -8630,13 +8630,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE373T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE373T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKBqe0HizIxz1PQaOzvTdJe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPg7ZTS6Mq3CqGVcKTQlR1q",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE373T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE373T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKBqe0HjPciFKE5smiMVvAk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPg7ZTS6n9nT95AuiBrnisw",
 					},
 				],
 			},
@@ -8651,8 +8651,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSE271T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSE271T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuLl2dQy95Oja7KjONpQPvlthe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrTI87htcFm77CYYFSrLtR3hPq",
 					},
 				],
 			},
@@ -8667,13 +8667,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIO353J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIO353J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3fLv2OhYX7zBZVIImXHq6Bngk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0mt0Wfd1hVMiej79rZDJbTbOw",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18AIO353J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18AIO353J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6Zq3fLv2OhYX7YrpEzU7Eu2yUGda",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImq0mt0Wfd1hUwOuSoLCGpWTm4Lm",
 					},
 				],
 			},
@@ -8688,8 +8688,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21ECE273T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21ECE273T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8N531c7d25bQK8sV1P2zoYo9IJBm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKa5099D7J14ahWPaFDu4qUHea6ty",
 					},
 				],
 			},
@@ -8704,13 +8704,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE372J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE372J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZPBQNLrVhCjaI2PRmDGKpp0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6UfhIp1t4joo6tUThglcdXC",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECE372J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECE372J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEdZPBQNLrS4zYFqTGErVAVwIQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBl6UfhIp1pSWdTfKLGmyfnk0c",
 					},
 				],
 			},
@@ -8725,8 +8725,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSE3061/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSE3061/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuLlADKHUCj8HX75VFKE6jNbnS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrTIFhbCxN6VocKuMKM9aEfPVe",
 					},
 				],
 			},
@@ -8741,13 +8741,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE310J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE310J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK0VIkUgoHlqwejOivyH59C",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPUmEDf4Bor4lVoQePTYsrO",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE310J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE310J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiK0VIkUkQUxBODsbdZNQjTi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPUmEDf7o22PD4xdZ2siXBu",
 					},
 				],
 			},
@@ -8762,8 +8762,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE426J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE426J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07TSps8UXyqeGxntqqPzZ94",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXCxjlLIrvVvs5osvmJvHMrG",
 					},
 				],
 			},
@@ -8778,8 +8778,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18PPH301/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18PPH301/May-2022.pdf",
+						url: "2MZfMSx79ADZiIeYXriACIdm7cGKsxemZMFzOInSnJVj6ZpDpVXAjdu7HFgr4Q2t947I1VqDn1dv0fuIMLXgkmIP6zpQyRqsIoAY",
+						raw: "EHrjriXjSiJWmolXrv3qEJgLkTcvsoLGjqOnUCCakIhmMbfK2YnZ1mFNO2iX6eSWlMY5hdQNXSysBwd8xPxpsUBNgx4Ut32OMCxlq0zmjdrzSzkFK",
 					},
 				],
 			},
@@ -8794,8 +8794,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18EEC402T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18EEC402T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYtslzdd7mWqgUSEXp13MINGnCA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYr0J57u3FhE41XSMg65HlsYauM",
 					},
 				],
 			},
@@ -8810,8 +8810,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21EIE202T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21EIE202T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8N5FscVj3sFlfGvOVpyzexUZF3Ze",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKa5D09bDKniw2eSTjeq4gsy4WrHq",
 					},
 				],
 			},
@@ -8826,8 +8826,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18EIE202T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18EIE202T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96Hlfpe0HzqQpqgM5J0WyHTBChJ5eJ4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspb7p5KhlJqjSq5kn8YD8AoNS1G",
 					},
 				],
 			},
@@ -8842,8 +8842,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CHE351T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CHE351T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnWma786qHFt99s9agxyJnZfDdu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnTu7CcNlkQGWgxNPY30FH4x1M6",
 					},
 				],
 			},
@@ -8858,13 +8858,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CHE351T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CHE351T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7iOXGtRZFlOqP9VqeYFw0iKsh4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7fW4MNiUivmDwEjfVdHrUDcgPG",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CHE351T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CHE351T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7iOXGtRZFlSScKqIDhSqio9mDe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7fW4MNiUivpq9Q474mUmCJRZvq",
 					},
 				],
 			},
@@ -8879,8 +8879,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18AUO102T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18AUO102T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUQGre7ZHMyASmo7JqClu11mIj4g",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhQDzBD3YIRKqALCXf3qvwVHaWms",
 					},
 				],
 			},
@@ -8895,8 +8895,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE321T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE321T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4fwjsqCjaLxgeKY3JvV9YE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOAADfM0a77RBVVPZynQmxGQ",
 					},
 				],
 			},
@@ -8905,23 +8905,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE321T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE321T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HjO1D7eRJ6uMFN9J6FBqBCY",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoosI8aoogdza4EEL1ih7yuk",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE321T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE321T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HjO1D7eRJ6uMFN9J6JsVQOc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoosI8aoogdza4EEL1nNnE6o",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE321T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE321T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HjO1D7eRJ6uMFN9J6OZAfag",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoosI8aoogdza4EEL1s4STIs",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE321T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE321T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HjO1D7eRjQecYBobU70CxRm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoosI8aop6xjqN2tdPaVUl9y",
 					},
 				],
 			},
@@ -8936,8 +8936,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CHE361T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CHE361T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhVsowZIK9reMaAECcwXgRXxWfW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhT0M23ZFd21k7FS1U1Zbv3FKNi",
 					},
 				],
 			},
@@ -8952,8 +8952,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE384T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE384T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKDk5rVEoaInHkfkmSgHOpK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPi11KfcC7O16bkmhwBZCXW",
 					},
 				],
 			},
@@ -8968,8 +8968,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE477T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE477T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07cuGvzlhkf4KHBFAht035K",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD7BCPA95HkI98GH6BOHqnW",
 					},
 				],
 			},
@@ -8978,18 +8978,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE477T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE477T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnGs2JadmVlTaglv4hwbj4Y",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osl8xml1A2qhPXqx0BRtWmk",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE477T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE477T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnGs2JaeCpVjtVRDSQNe0ve",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osl8xml1aMaxiMWFNtsvodq",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE477T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE477T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnGs2JacbaleUAa5hyHGGBi",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osl8xmkzz7qsJ1f7dRmY3tu",
 					},
 				],
 			},
@@ -9004,13 +9004,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21%20CSC308T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21%20CSC308T/May-2024.pdf",
+						url: "B5AKyaeOXwtfjgTXnX2agXoAwTYRKk4bZSz65jNabsd05EEePp8Se2t8Kl02BHtqQtpsRAUpJ4UggIomNetvY4k8ajWk9mudREyabC7r4",
+						raw: "14z4gAyWa5cfZUBJNi5ENGxavdl2t3oAksvpLV4CSCEEH1vVqfyk0pNAEq6MR7rS5KMr0xXhJtw2FkCuAmRIClblAWWtXYWz6PH72dncIkFpYZI9FN06PSA",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/21%20CSC308T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/21%20CSC308T/Dec-2023.pdf",
+						url: "B5AKyaeOXwtfjgTXnX2agXoAwTYRKk4bZSz65jNabsd05EEePp8Se2t8Kl02BHtqQtpsRAUpJ4UggIomNetvY4k8afuWyST4I23sVNEKU",
+						raw: "14z4gAyWa5cfZUBJNi5ENGxavdl2t3oAksvpLV4CSCEEH1vVqfyk0pNAEq6MR7rS5KMr0xXhJtw2FkCuAmRIClblAWWtXYWz6PH72dnYgX4V708wKeuHVva",
 					},
 				],
 			},
@@ -9025,18 +9025,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE203T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE203T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HbXC6Wns7HTsGpEfdY6IxVe",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoh1T1zyFUoZ65gJhZ1balDq",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE203T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE203T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HbXC6Wns7HTsGpEfdTPdiJa",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoh1T1zyFUoZ65gJhYwuvW1m",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18ECE203T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18ECE203T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfpR9HbXC6WnoV4IXpG5Siq0U3z4",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxspOGoh1T1zyBsbNle7AUeJVlrhG",
 					},
 				],
 			},
@@ -9051,18 +9051,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21PYB102J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21PYB102J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7evivBvjjpVlGHT2S0LaGmyKCABq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrvg2j1E0kyvdf07fpCfIiRpTxu2",
 					},
 					{
 						period: "Jul-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21PYB102J/Jul-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21PYB102J/Jul-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7evivBvjjpVlF6XzhOiDFzEQazaw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrvg2j1E0kyvcU54vDZIHuhvsnJ8",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%201/21PYB102J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%201/21PYB102J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QE8gI7evivBvjjpVlGHT2S0LaGn30rPNu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLBjGKJrvg2j1E0kyvdf07fpCfIiWW9D66",
 					},
 				],
 			},
@@ -9077,8 +9077,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE459T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE459T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnD6xw0R6Tl1f7JimT220Sk",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3oshNtPAoU0qFTyOkhwXJoAw",
 					},
 				],
 			},
@@ -9093,13 +9093,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MBH463J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MBH463J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhZJgpEw7xzPsyptyObOLjv4Kne",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhWRDujD3R9nGVv7nFgQHDQM8Vq",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MBH463J/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MBH463J/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhZJgpEw7xzPsyptyObOLfEP5ba",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhWRDujD3R9nGVv7nFgQH8jgtJm",
 					},
 				],
 			},
@@ -9114,8 +9114,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18ECO101T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18ECO101T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPEikrIiKh3yH7SdgL73CcXeTxO",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBqHwmzGAELeeXrVCC5862wHfa",
 					},
 				],
 			},
@@ -9124,8 +9124,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECO101T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECO101T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz2D2Wwg64euojEtzxBWmcBp8nG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzKZcQx1XpICGK7ooGYi5h6wVS",
 					},
 				],
 			},
@@ -9134,8 +9134,8 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECO101T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECO101T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYphKCadrSFliZLU9qaNJsa5Lte",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmorI4umvQ966QhyhfPFM5N9bq",
 					},
 				],
 			},
@@ -9150,8 +9150,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECOlOlT/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECOlOlT/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYphRdEPh2X7VWLOlbjIHz3XnFu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmoyiigcVhUt3QcaSoKDSYpay6",
 					},
 				],
 			},
@@ -9166,8 +9166,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18EIC205T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18EIC205T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQlFqUxz1A9w9g2g28IUq73qC4Uy6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycyFncV4VR5PK3QD7M7Lv8zJhMIgI",
 					},
 				],
 			},
@@ -9182,13 +9182,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18PDH103T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18PDH103T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmoz51PbfU7LHIITuBEPT0IHuLdG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczowCYV5wPaVefpZ805UUvlnC9LS",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18PDH103T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18PDH103T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmoz51PbfU7LHIITuBEPT0DbF6RC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczowCYV5wPaVefpZ805UUvh6Wu9O",
 					},
 				],
 			},
@@ -9197,8 +9197,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18PDH103T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18PDH103T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlhOmZJ5FdFUw6BA9FItWENIgjPx0",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxuOjgqAjuAy6TYhET7kbGImC1DfC",
 					},
 				],
 			},
@@ -9213,8 +9213,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21PDH201T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21PDH201T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8OeORdivJPRrQDgg8VzSwAm8fSY2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKbeLZAoPaKv1nbDlMKqXy6FdxGGE",
 					},
 				],
 			},
@@ -9229,13 +9229,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE320T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE320T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8kJu2visoGqXKiKSVebANgU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfpoAyOtGBnvl9ZPUR86SBOg",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE320T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE320T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8kJu2visNx6H1tfA7mmnbRG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfpoAyOtFlUBUqkkC3GI5P9S",
 					},
 				],
 			},
@@ -9250,8 +9250,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE456T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE456T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07Z7pYGtHguTa0T3iFEFtIc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD3Ol1RGfDzhOrY5dijXh0o",
 					},
 				],
 			},
@@ -9266,13 +9266,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC268J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC268J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBXdpunEssVUT5gSIlcHjkM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvH1ulNxcGPaiHwlUEF7ZXSY",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC268J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC268J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBXdpunFJCFkluLkgYjzGnW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvH1ulNxcgjKyalQmc2FH4Vi",
 					},
 				],
 			},
@@ -9287,8 +9287,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%20u/18AIC204T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%20u/18AIC204T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06Qxcregyn8pMjFdOJijRfR1UAHcJFPRyr8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLvDRgtBn5wtojuJmt6pCWFJ1MeEiujmZK",
 					},
 				],
 			},
@@ -9303,8 +9303,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC206JR/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC206JR/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMpZcDDqu6KE25YCVcSa0sAG9QOfna",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRFFQKKTZ6DWSw5N7BWZBe7ZybtwH8",
 					},
 				],
 			},
@@ -9319,8 +9319,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/21CSC303J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/21CSC303J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU30oBxVJIAJuCTjpAl5ONQIrGdW29iA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d30OxSQpFoB7wuCYIAcCHNtC71JxQM",
 					},
 				],
 			},
@@ -9335,23 +9335,23 @@ export const files = [
 				urls: [
 					{
 						period: "Jan-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC206J/Jan-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC206J/Jan-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMIy6KyxoWUVbFQAAW6ca6",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqZtZVMLLbiKSKS5e1OQII",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC206J/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC206J/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMIy6L0AgOaObFTdozbof8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqZtZVNYDToDSKVZIUtcNK",
 					},
 					{
 						period: "Jun-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC206J/Jun-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC206J/Jun-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMIy6KyzlOlI53eHEhaqAQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqZtZVMNITz6w8gCiCsdsc",
 					},
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CSC206J/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CSC206J/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfYISOBMIy6KwYTDFx26GjBaSAKc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsYFZvGqZtZVJw0ITltBIef5jy2o",
 					},
 				],
 			},
@@ -9366,13 +9366,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE471T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE471T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnGpIJJRE9cu3hDY6FdOoQ2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osl6DmTobgi7sYIa1j8gc8E",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE471T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE471T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnGpIJJReTNAMVsqU7RlafG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osl6DmTp20SOBMxsPax3ONS",
 					},
 				],
 			},
@@ -9387,8 +9387,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE369T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE369T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiKA0OU3Ywsgm4TVwIEGkQ6w",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FPeHJxDwKPlztKayDhm2Dp8",
 					},
 				],
 			},
@@ -9403,8 +9403,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21CSE277T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21CSE277T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8MnuLl2dTi9MbHwFuGNwCOireJy2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKZnrTI87kdcWyfTL85F1EKCMw7gE",
 					},
 				],
 			},
@@ -9419,13 +9419,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE469T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE469T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07b2C4ur9eOXpQiGHOb8Uhq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5J7Y5EXBTleHnICs6QIQ2",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE469T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE469T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07b2C4ur9eOXpQiGHJuTFVm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5J7Y5EXBTleHnICnPl3Dy",
 					},
 				],
 			},
@@ -9440,8 +9440,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE467T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE467T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHnEz2n5LEGHHr97PI3srGz8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osjFyGFibnMVg0CRDXO94hK",
 					},
 				],
 			},
@@ -9456,8 +9456,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE466T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE466T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07b0p4mGIn4WMkbNB2Ftoco",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD5HkXwdgK9kBbgP6VlBcL0",
 					},
 				],
 			},
@@ -9472,8 +9472,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE374T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE374T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtRzzporianumAkVnwcVsB6bHq",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZX5K5nBlBIJFyKf1eRLgOP02",
 					},
 				],
 			},
@@ -9488,13 +9488,13 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18ECC211J/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18ECC211J/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQlFddxajm7MavtnfYyhv2UaAOrmI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycyFalUgE32plJHKkmnZ04Q3fgfUU",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18ECC211J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18ECC211J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQlFddxajm7MaxV2PeO2mAF2GmcWE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycyFalUgE32plKsZUsCtrCAVm4QEQ",
 					},
 				],
 			},
@@ -9509,8 +9509,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18MHC103T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18MHC103T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmOaAxISUVaK8QJASoRGmtdDlwgQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczOXIUNwlR3UVnqFgdILop6j3kOc",
 					},
 				],
 			},
@@ -9525,8 +9525,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18ECC21lJ/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18ECC21lJ/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQlFddxakD54emBth1TzOVkzLXpaw",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CycyFalUgEU0Xp9ZQmFIqTXgSqpdJ8",
 					},
 				],
 			},
@@ -9541,8 +9541,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CEE310T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CEE310T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhPSJkGEJNKZr8hUmLq9JrhAVC2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhMZqpkVEqUxEfmibCvBFLCSIuE",
 					},
 				],
 			},
@@ -9551,18 +9551,18 @@ export const files = [
 				urls: [
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEE310T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEE310T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHCwbPuC4kvQkyo4wFEzr85QiIQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA48VOT0E5o8VtIl6K1mbaiW0c",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEE310T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEE310T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHCwbPuC4kvSMDYALa67baBoT2M",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA48VOT0E5pjkdOARB9X3h6GkY",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CEE310T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CEE310T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHCwbPuC4kvRvtnu2lQpDrkmBBG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHA48VOT0E5pJQt7rcVr9LG3ytS",
 					},
 				],
 			},
@@ -9577,13 +9577,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ASE304T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ASE304T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmOzzz4s70JEAByFhPzXDsQOgs4OM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lybzx6bxbHEhKZLmmdoOIuLsC9s6Y",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ASE304T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ASE304T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmOzzz4s70JEAAnKhat1233oOr5te",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6Lybzx6bxbHEhKYArmohs74zHu8tbq",
 					},
 				],
 			},
@@ -9598,8 +9598,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EEE306T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EEE306T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPIvErjzffzsUwWBmLkHkOInacA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPG2lxEGb9AFsTbPbCpJfro5OKM",
 					},
 				],
 			},
@@ -9614,8 +9614,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CSE479T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CSE479T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a85xiRyxQDpI3SWabNROXuPe33G",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn835FXTELgzfQzboQEWQTNuvqlS",
 					},
 				],
 			},
@@ -9624,8 +9624,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE479T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE479T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07cvBbQA8Dczrn24RgPFzSI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD7C74aXVkiDge76N9uXnAU",
 					},
 				],
 			},
@@ -9640,8 +9640,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/21ECE270T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/21ECE270T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96K8N531c7d0ibHirhQjdYDd4egM63a",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgMKa5099D7He4S6FEVxSPIf08Bdtlm",
 					},
 				],
 			},
@@ -9656,8 +9656,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEC205TO/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEC205TO/Dec-2023.pdf",
+						url: "eIwnJMKklTVmJPS2GTnfI2CihPZkbgqDMNbK9JFtVfEX0azQRaHZ6UmztN48A4C6FLUQWQfZxMpXcMXPLzWB6hRo2FZVzUKTgCVxe2",
+						raw: "3vb3kgI8XA0QMbL4DxLYLZm1eA4bi5K2F47oSTP14sYOywysi0JM7mRbiDf7JrTzfUWxwL6Y0AKAjrOxEzHcickRFDQTe20zPTXXyydodVAGHnVO1E7a",
 					},
 				],
 			},
@@ -9672,13 +9672,13 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEC205T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEC205T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoShvy3l0rgdK0XXwsTujqCBpW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlaF1SKgU240r5lMnxVqDLTzXi",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%204/18CEC205T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%204/18CEC205T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QG96HlfXoShvy3l0rkFXBrzW1gpNFLqA2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLDjgJxsXlaF1SKgU27d4H5oN6ikqkddsE",
 					},
 				],
 			},
@@ -9693,8 +9693,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CEO308J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CEO308J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7c3DmV4bhfUZecimtYnrmja3za",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7ZAkrzLXAprxBhwbkdpnGErrhm",
 					},
 				],
 			},
@@ -9709,13 +9709,13 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE445T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE445T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELpuqTq7ac5Z13UvzNrNWtpW",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvP7PJHxzceEsM11JKsohXi",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18MEE445T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18MEE445T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRW7sELpuqTq7b2PJHMJbHleVEQsg",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dj7pLsvP7PJHyPwOVBAgJh80WEas",
 					},
 				],
 			},
@@ -9724,8 +9724,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18MEE445T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18MEE445T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmQhfidVYoFDiPUxEMBA2kkwT1DLK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LydhcqAb35AgsmsUJa017mgPyJ13W",
 					},
 				],
 			},
@@ -9740,18 +9740,18 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21MAB201T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21MAB201T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynTdx2vdqO8q1SNp20NNOsCYk21ig",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zgduASjKf4JBplM7ECETu82FJpQs",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21MAB201T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21MAB201T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynTdx2vdqO8q1So8mGgC4AaHB4JZm",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zgduASjKf4JBqBfrUV39CVkgM7Hy",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21MAB201T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21MAB201T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynTdx2vdqO8q1SNp20NNOsCU3MmWc",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zgduASjKf4JBplM7ECETu7xYeaEo",
 					},
 				],
 			},
@@ -9766,23 +9766,23 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18MAB201T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18MAB201T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmOLAb7xl6Qw9CCe1VfsORqAXreA",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczOII8DS21u6WZjjFKWxQNJfpfMM",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18MAB201T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18MAB201T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmOLAb7xl6Qw81HeCP9gZ56VCOlK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczOII8DS21u6VOojQE0lb0a0UCTW",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18MAB201T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18MAB201T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmOLAb7xl6Qw9CCe1VfsORgnDNG2",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczOII8DS21u6WZjjFKWxQNAIVAyE",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/18MAB201T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/18MAB201T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcwQmOLAb7xl6Qw9cWOHoUXgpYba9VG",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4CyczOII8DS21u6X03TVdLcil26rxDS",
 					},
 				],
 			},
@@ -9797,8 +9797,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%203/21MAB209T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%203/21MAB209T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QFTcynTdx2vdqRnVj4DHd23W8fDLkuDGI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLD4D0zgduASjKiiytRaoiFsNDh8pGC0yU",
 					},
 				],
 			},
@@ -9813,8 +9813,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSE433T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSE433T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgwHn9IEsicaz9Y3P7jTR6a6JK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe3osdZALszyWElsGClOubru1W",
 					},
 				],
 			},
@@ -9829,8 +9829,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18CSC461J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18CSC461J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPHgvFS3c097C0dedVktWJZdZg06",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycHe2mXXsvcHZOAjrKbyYF38rTiI",
 					},
 				],
 			},
@@ -9845,8 +9845,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18BTO106T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18BTO106T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6ZzHi877FvFZO6pXezSMEV47he5u",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fImzEpfCbWqijlUMcsoJRGQXczRo6",
 					},
 				],
 			},
@@ -9861,8 +9861,8 @@ export const files = [
 				urls: [
 					{
 						period: "Dec-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18CEO405T/Dec-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18CEO405T/Dec-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6a7c3DuI7I1PildqPehcC97GlMwQ",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fIn7ZAkzmODUa69AvdTYhE4am3Aec",
 					},
 				],
 			},
@@ -9877,8 +9877,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18AIC302J/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18AIC302J/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmOzeXhD4v7A3iDp6pGaXuoy19kKE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LybzbfEIZC2dE5bMC35RcwkRWRY2Q",
 					},
 				],
 			},
@@ -9893,8 +9893,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECC301T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECC301T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz26ojQqTIlBXOwmR3sLzR2FUn8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzELov7OlvYuw20FuxNuuXXIVK",
 					},
 				],
 			},
@@ -9903,23 +9903,23 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECC301T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECC301T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpb6P4oEgM42TnS0I8KH9WtSdS",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmidUZ5A9WRQ0sfp9DMCd2BGLe",
 					},
 					{
 						period: "May-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECC301T/May-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECC301T/May-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpb6P4oEgM3cA3BhTT1tMPBvaI",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmidUZ5A9WQzh8PWKY3opuTjIU",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECC301T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECC301T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpb6P4oEgM3cA3BhTT1tR5rAmM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmidUZ5A9WQzh8PWKY3oub8yUY",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECC301T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECC301T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpb6P4oEgM3cA3BhTT1tHiWgOE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmidUZ5A9WQzh8PWKY3olDoU6Q",
 					},
 				],
 			},
@@ -9934,8 +9934,8 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18ECE314T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18ECE314T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz27r4e57MTV2CBnPmmvN6tecju",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyzFOA8M2pdsPjH1EdrxIaOwQS6",
 					},
 				],
 			},
@@ -9944,13 +9944,13 @@ export const files = [
 				urls: [
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE314T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE314T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8kI2sk4NXH2Sz12tepOIaaE",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfpmJoDEkuo7gns7vaItaOIQ",
 					},
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%207/18ECE314T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%207/18ECE314T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QI9WJmPYpc8kI2sk4N6xICgCNbH6xGIj8",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLFk6LycYmjfpmJoDEkUUNQV3SdCaSY6RK",
 					},
 				],
 			},
@@ -9965,28 +9965,28 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE458T/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE458T/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07Z8kDhLkgnzru8OHiy2GFK",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD3Pfgrj8DtDglDQDCTK3xW",
 					},
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE458T/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE458T/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07Z8kDhLkgnzru8OHZahlrC",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD3Pfgrj8DtDglDQD35zZZO",
 					},
 					{
 						period: "Nov-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE458T/Nov-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE458T/Nov-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07Z8kDhMB0YGAingfMiPIuM",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD3PfgrjYXdTzZsiaqDh6cY",
 					},
 					{
 						period: "Nov-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE458T/Nov-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE458T/Nov-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07Z8kDhMB0YGAingfRP4Y6Q",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD3PfgrjYXdTzZsiauuMLoc",
 					},
 					{
 						period: "Jun-2023",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18CSE458T/Jun-2023.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18CSE458T/Jun-2023.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUhtS07Z8kDhKZloAlNwYuzIgnMU",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhhqZXD3PfgrhxItOaF1aqSnyb4g",
 					},
 				],
 			},
@@ -10001,8 +10001,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2022",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%206/18EC0109J/May-2022.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%206/18EC0109J/May-2022.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QHU2yRUz1wxEcALs8f76EJDTaqxtoBn42",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLF4d0dhyz4UK6RHLJ2UdJX2KfstNJTamE",
 					},
 				],
 			},
@@ -10011,8 +10011,8 @@ export const files = [
 				urls: [
 					{
 						period: "May-2024",
-						url: "https://github.com/srmpyq/PYQ/tree/main/Semester%205/18EC0109J/May-2024.pdf",
-						raw: "https://raw.githubusercontent.com/srmpyq/PYQ/main/Semester%205/18EC0109J/May-2024.pdf",
+						url: "9lDGmlY5VqC3Sv1SdpmM6myEhRzSEwKOXzu1ULcEtcZ0F9vV6gCyKSli3Emx8FXvhR06QGoZd6aPESfYyCaUXmc1NdeFKsgPNXYnu",
+						raw: "wzltNnvHiYydNZcJqdbrf7GrnuKl0Jrp7IMOKgNzjBElhLWckZgedLDUZHDshT3nHZ6lYAmvCBfLlK5czLEP9fInPBaCeSTVxi9zYSrT6PubsspMW6",
 					},
 				],
 			},
