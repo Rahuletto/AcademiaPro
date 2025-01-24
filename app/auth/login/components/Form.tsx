@@ -62,7 +62,8 @@ export default function Form() {
 		>
 			{status === -1 && (
 				<p className="rounded-2xl bg-light-error-background px-4 py-2 text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
-					SRM: {statusMessage}
+					{statusMessage.includes(">_") ? "" : "SRM:"}
+					{statusMessage.replace(">_", "")}
 				</p>
 			)}
 
