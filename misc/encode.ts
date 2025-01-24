@@ -3,7 +3,7 @@ const ALPHABET =
 
 export function encodeString(str: string): string {
 	const buffer = Buffer.from(str, "utf-8");
-	let num = BigInt("0x" + buffer.toString("hex"));
+	let num = BigInt(`0x${buffer.toString("hex")}`);
 	let encoded = "";
 
 	while (num > 0) {

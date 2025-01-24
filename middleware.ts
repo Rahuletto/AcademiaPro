@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { NextRequest } from "next/server";
+import type { NextRequest } from "next/server";
 
-const protectedRoutes = ["/academia", "/academia/courses"];
+const protectedRoutes = ["/academia", "/academia/courses", "/academia/library"];
 const home = ["/"];
 const MAINTENANCE = false;
 
@@ -16,13 +16,15 @@ export function middleware(request: NextRequest) {
 
 	if (MAINTENANCE && pathname !== "/maintenance") {
 		return NextResponse.redirect(new URL("/maintenance", request.url));
-	} else if (!MAINTENANCE && pathname === "/maintenance") {
+	}
+	if (!MAINTENANCE && pathname === "/maintenance") {
 		return NextResponse.redirect(new URL("/", request.url));
 	}
 
 	if (isAuthenticated(request) && home.includes(pathname)) {
 		return NextResponse.redirect(new URL("/academia", request.url));
-	} else if (!isAuthenticated(request) && home.includes(pathname)) {
+	}
+	if (!isAuthenticated(request) && home.includes(pathname)) {
 		return NextResponse.redirect(new URL("/home", request.url));
 	}
 	if (protectedRoutes.includes(pathname) && !isAuthenticated(request)) {
