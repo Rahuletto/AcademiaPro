@@ -19,39 +19,55 @@ async function fetchData(): Promise<AllResponse> {
 		return cachedData.data;
 	}
 
-	const response = await fetch(`${rotateUrl()}/get`, {
-		method: "GET",
-		cache: "force-cache",
-		next: {
-			revalidate: 60,
-		},
-		headers: {
-			"Content-Type": "application/json",
-			"X-CSRF-Token": cookie?.value ?? "",
-			Authorization: `Bearer ${token()}`,
-		},
-	});
+	const controller = new AbortController();
+	const timeoutId = setTimeout(() => {
+		controller.abort();
+		redirect("/sleeping");
+	}, 10000);
 
-	const json: AllResponse = await response.json();
+	try {
+		const response = await fetch(`${rotateUrl()}/get`, {
+			method: "GET",
+			cache: "force-cache",
+			next: {
+				revalidate: 60,
+			},
+			headers: {
+				"Content-Type": "application/json",
+				"X-CSRF-Token": cookie?.value ?? "",
+				Authorization: `Bearer ${token()}`,
+			},
+			signal: controller.signal,
+		});
 
-	if (json.tokenInvalid) redirect("/invalid");
-	if (json.ratelimit) redirect("/ratelimit");
+		clearTimeout(timeoutId);
 
-	dataCache.set(userKey, {
-		data: json,
-		timestamp: now,
-	});
+		const json: AllResponse = await response.json();
 
-	if (dataCache.size > 100) {
-		const oldEntries = Array.from(dataCache.entries()).filter(
-			([_, value]) => now - value.timestamp > 10 * 60 * 1000,
-		);
-		for (const [key] of oldEntries) {
-			dataCache.delete(key);
+		if (json.tokenInvalid) redirect("/invalid");
+		if (json.ratelimit) redirect("/ratelimit");
+
+		dataCache.set(userKey, {
+			data: json,
+			timestamp: now,
+		});
+
+		if (dataCache.size > 100) {
+			const oldEntries = Array.from(dataCache.entries()).filter(
+				([_, value]) => now - value.timestamp > 10 * 60 * 1000,
+			);
+			for (const [key] of oldEntries) {
+				dataCache.delete(key);
+			}
 		}
-	}
 
-	return json;
+		return json;
+	} catch (error) {
+		if ((error as Error).name === "AbortError") {
+			redirect("/sleeping");
+		}
+		throw error;
+	}
 }
 
 export const fetchUserData = cache(async () => {
