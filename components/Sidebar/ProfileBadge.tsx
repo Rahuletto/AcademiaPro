@@ -9,6 +9,7 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import type { UserInfo } from "@/types/User";
 import { useTheme } from "@/provider/ThemeProvider";
+import { FaCrown } from "react-icons/fa6";
 
 const UserDialog = dynamic(
 	() => import("./UserDialog").then((a) => a.default),
@@ -18,7 +19,8 @@ const UserDialog = dynamic(
 export default function ProfileBadge({
 	className,
 	user,
-}: { className?: string; user: UserInfo }) {
+	subscribed,
+}: { className?: string; user: UserInfo; subscribed: boolean }) {
 	const router = useRouter();
 	const { theme } = useTheme();
 
@@ -62,7 +64,9 @@ export default function ProfileBadge({
 					style={{ backgroundColor: profileColor(user?.regNumber as string) }}
 				>
 					<span className="text-lg font-semibold">
-						{theme === "Batman" ? (
+						{subscribed ? (
+							<FaCrown className="text-black" />
+						) : theme === "Batman" ? (
 							<Image
 								className="mt-1"
 								src="/images/batman.svg"

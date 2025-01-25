@@ -6,6 +6,9 @@ import type { UserInfo } from "@/types/User";
 import { Link } from "next-view-transitions";
 import type { ReactNode } from "react";
 import { BiLogInCircle } from "react-icons/bi";
+import { supabase } from "@/utils/Database/supabase";
+import { cookies } from "next/headers";
+import { encode } from "@/utils/Cookies";
 
 export default async function RootLayout({
 	children,
@@ -13,6 +16,18 @@ export default async function RootLayout({
 	children: ReactNode;
 }>) {
 	const json = await fetchUserData();
+
+	const { data, error } = await supabase
+		.from("goscrape")
+		.select("subscribed, subscribedSince")
+		.eq("regNumber", json?.user?.regNumber)
+		.single();
+
+	if (error) {
+		console.warn("Cannot find");
+	}
+
+	const subscribed = data?.subscribed ?? false;
 
 	return (
 		<div className="h-screen flex-shrink-0 w-full flex flex-row bg-light-background-normal lg:p-2 transition-all duration-150 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
@@ -34,7 +49,10 @@ export default async function RootLayout({
 							<BiLogInCircle className="text-xl" /> Login
 						</Link>
 					) : (
-						<ProfileBadge user={json?.user as UserInfo} />
+						<ProfileBadge
+							user={json?.user as UserInfo}
+							subscribed={subscribed}
+						/>
 					)
 				}
 			/>

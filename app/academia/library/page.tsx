@@ -7,9 +7,12 @@ import PayRequired from "../../payment";
 export default async function Docupro() {
 	const { courses, subscribed, subscribedSince } = await fetchUserData();
 
-	if(!subscribed || !subscribedSince || subscribedSince < Date.now() - (30 * 24 * 60 * 60 * 1000)) {
+	if (
+		!subscribed ||
+		!subscribedSince ||
+		(subscribed && Date.now() - subscribedSince > 30 * 24 * 60 * 60 * 1000)
+	) {
 		return <PayRequired />;
-
 	}
 	const files = await fetchFileArray();
 	return <Library courses={courses.courses} files={files} />;
