@@ -5,10 +5,10 @@ import { FaUser } from "react-icons/fa";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { profileColor } from "@/utils/ProfileColor";
-import { elevatedUsers } from "@/misc/users";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import type { UserInfo } from "@/types/User";
+import { useTheme } from "@/provider/ThemeProvider";
 
 const UserDialog = dynamic(
 	() => import("./UserDialog").then((a) => a.default),
@@ -20,6 +20,7 @@ export default function ProfileBadge({
 	user,
 }: { className?: string; user: UserInfo }) {
 	const router = useRouter();
+	const { theme } = useTheme();
 
 	const [isDialogOpen, setIsDialogOpen] = useState(false);
 	const [dialogRoot, setDialogRoot] = useState<HTMLElement | null>(null);
@@ -61,7 +62,7 @@ export default function ProfileBadge({
 					style={{ backgroundColor: profileColor(user?.regNumber as string) }}
 				>
 					<span className="text-lg font-semibold">
-						{elevatedUsers.includes(user?.regNumber as string) ? (
+						{theme === "Batman" ? (
 							<Image
 								className="mt-1"
 								src="/images/batman.svg"
@@ -71,7 +72,7 @@ export default function ProfileBadge({
 								style={{ width: "auto", height: "40px" }}
 							/>
 						) : (
-							<FaUser />
+							<FaUser className="text-black" />
 						)}
 					</span>
 				</div>

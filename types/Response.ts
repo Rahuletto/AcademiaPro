@@ -10,6 +10,8 @@ export interface AllResponse {
 	lastUpdated: number;
 	marks: Marks;
 	ophour?: string;
+	subscribed?: boolean;
+	subscribedSince?: number;
 	regNumber: string;
 	timetable: Timetable;
 	token: string;
