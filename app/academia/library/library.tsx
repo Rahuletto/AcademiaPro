@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Fuse from "fuse.js";
-import { files } from "./files";
 import type { Course } from "@/types/Course";
 import Card from "./components/Card";
 
@@ -18,7 +17,7 @@ export type CoursePapers = {
 	}[];
 };
 
-export default function Library({ courses }: { courses: Course[] }) {
+export default function Library({ courses, files }: { courses: Course[]; files: CoursePapers[] }) {
 	const [searchQuery, setSearchQuery] = useState("");
 	const [semester, setSemester] = useState(0);
 	const [searchResults, setSearchResults] = useState<CoursePapers[]>([]);
