@@ -4,7 +4,7 @@ import React from "react";
 import { HiServerStack } from "react-icons/hi2";
 import { RiZzzFill } from "react-icons/ri";
 
-export default function sleeping() {
+export default function Sleeping() {
 	const router = useRouter();
 	return (
 		<main className="h-screen w-screen bg-light-info-background flex-col dark:bg-dark-info-background flex items-center justify-center">
