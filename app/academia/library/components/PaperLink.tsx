@@ -1,4 +1,3 @@
-import { encodeString } from "@/misc/encode";
 import Link from "next/link";
 import { AiOutlinePaperClip } from "react-icons/ai";
 
