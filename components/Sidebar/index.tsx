@@ -28,7 +28,7 @@ const OpenButton = dynamic(
   { ssr: false }
 );
 import ThemeToggle from '@/components/themes/ThemeToggle';
-import GradeXIcon from '@/public/images/GradeX';
+// import GradeXIcon from '@/public/images/GradeX';
 
 export function Sidebar({
   dayorder,
@@ -125,15 +125,15 @@ export function Sidebar({
            
           </div>
 
-          <hr className='border-t-light-side dark:border-t-dark-side' />
-           <Link
+          {/* <hr className='border-t-light-side dark:border-t-dark-side' /> */}
+           {/* <Link
               onClick={handleClick}
               href='https://gradex.vercel.app/'
               target='_blank'
             >
               <GradeXIcon className='text-xl' />
               GradeX
-            </Link>
+            </Link> */}
           {/* 
 					<Link title="Question papers" href="/academia/library">
 						<IoLibrarySharp className="text-xl" />
