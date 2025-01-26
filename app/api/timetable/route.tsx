@@ -117,7 +117,7 @@ function TableCell({ cell }: { cell: ScheduleSlot | null }) {
 			style={{ width: "240px" }}
 			tw={`border-2 flex flex-col text-black relative justify-between items-start px-6 ${!cell ? "bg-black/70" : cell.isOptional ? "bg-black/40" : ""} border-black/60`}
 		>
-			<p tw="text-2xl font-semibold text-left mr-3">
+			<p tw="text-xl font-semibold text-left mr-3">
 				{cell?.name.split(":")[0]}
 			</p>
 			<div tw="flex items-end justify-between w-full opacity-60 flex">
