@@ -1,9 +1,11 @@
 "use client";
 import type { AllResponse } from "@/types/Response";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PiBrainBold } from "react-icons/pi";
 import Predictor from "./Predictor";
 import type { Calendar } from "@/types/Calendar";
+import { createPortal } from "react-dom";
+import type { CategorizedDateRange } from "@/types/Attendance";
 
 export default function Prediction({
 	data,
@@ -20,6 +22,12 @@ export default function Prediction({
 	calendar: Calendar[];
 }) {
 	const [isOpen, setIsOpen] = useState(false);
+	const [titleSuffix, setTitleSuffix] = useState<HTMLDivElement | null>(null);
+	const [categorizedRanges, setCategorizedRanges] = useState<CategorizedDateRange[]>([]);
+
+	useEffect(() => {
+		setTitleSuffix(document.getElementById("attendance-title-suffix") as HTMLDivElement);
+	}, []);
 
 	return (
 		<>
@@ -36,7 +44,17 @@ export default function Prediction({
 				calendar={calendar}
 				setIsOpen={setIsOpen}
 				isOpen={isOpen}
+				categorizedRanges={categorizedRanges}
+				setCategorizedRanges={setCategorizedRanges}
 			/>
+			{titleSuffix && createPortal(
+				categorizedRanges.length > 0 && (
+					<span className="text-sm font-medium text-light-accent dark:text-dark-accent">
+						Predicted
+					</span>
+				),
+				titleSuffix
+			)}
 		</>
 	);
 }

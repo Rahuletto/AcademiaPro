@@ -25,6 +25,8 @@ export default function Predictor({
 	calendar,
 	setIsOpen,
 	isOpen,
+	categorizedRanges,
+	setCategorizedRanges,
 }: {
 	data: AllResponse;
 	calendar: Calendar[];
@@ -36,15 +38,14 @@ export default function Predictor({
 	}[];
 	setIsOpen: Dispatch<SetStateAction<boolean>>;
 	isOpen: boolean;
+	categorizedRanges: CategorizedDateRange[];
+	setCategorizedRanges: Dispatch<SetStateAction<CategorizedDateRange[]>>;
 }) {
 	function onClose() {
 		setIsOpen(false);
 	}
 	const original = data?.attendance?.attendance;
 	const [attendance, setAttendance] = useState<AttendanceCourse[]>(original);
-	const [categorizedDateRanges, setCategorizedDateRanges] = useState<
-		CategorizedDateRange[]
-	>([]);
 
 	const [priority, setPriority] = useState<AttendanceCourse[] | undefined>([]);
 	const [remaining, setRemaining] = useState<AttendanceCourse[] | undefined>(
@@ -68,19 +69,19 @@ export default function Predictor({
 	}, []);
 
 	useEffect(() => {
-		if (categorizedDateRanges?.[0]) {
+		if (categorizedRanges?.[0]) {
 			const att = predictAttendance(
 				original,
 				data.timetable.schedule,
 				cal,
-				categorizedDateRanges,
+				categorizedRanges,
 			);
 
 			setAttendance(att);
 		} else {
 			setAttendance(original);
 		}
-	}, [categorizedDateRanges, original]);
+	}, [categorizedRanges, original]);
 
 	useEffect(() => {
 		if (attendance) {
@@ -148,8 +149,8 @@ export default function Predictor({
 							</div>
 							<Suspense fallback={<Loading size="xl" />}>
 								<LeaveODRangeCalendar
-									categorizedRanges={categorizedDateRanges}
-									setCategorizedRanges={setCategorizedDateRanges}
+									categorizedRanges={categorizedRanges}
+									setCategorizedRanges={setCategorizedRanges}
 									calendar={calendar}
 								/>
 							</Suspense>
