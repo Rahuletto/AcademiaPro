@@ -44,7 +44,7 @@ const ColorPicker = () => {
 		if (!activeColor.key) return;
 		const rgb = hexToRgb(hex);
 		if (rgb) {
-			const rgbStr = `${rgb.r}, ${rgb.g}, ${rgb.b}`;
+			const rgbStr = `${rgb.r} ${rgb.g} ${rgb.b}`;
 			handleColorChange(activeColor.key, rgbStr);
 			setSelectedTheme((prev: { properties: any }) => ({
 				...prev,
