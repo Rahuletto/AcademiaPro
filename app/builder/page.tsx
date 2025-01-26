@@ -56,8 +56,8 @@ export default function Demo() {
 	return (
 		<div className="h-screen shrink-0 w-full flex flex-row bg-light-background-normal lg:p-2 transition-all duration-150 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
 			<div id="attendance-predict" className="z-30" />
-            <div className="border-4 border-light-warn-color dark:border-dark-warn-color fixed pointer-events-none w-screen h-screen top-0 left-0 z-50 rounded-lg" />
-        <div className="fixed top-0 left-0 flex items-center justify-center w-screen z-50">
+            <div className="border-4 border-light-warn-color dark:border-dark-warn-color fixed pointer-events-none w-screen h-screen top-0 left-0 z-100 rounded-lg" />
+        <div className="fixed top-0 left-0 flex items-center justify-center w-screen z-100">
             <div className="bg-light-warn-color dark:bg-dark-warn-color rounded-b-2xl px-5 py-1">
                 <h2 className="font-semibold text-light-error-background dark:text-dark-error-background">Builder Mode</h2>
             </div>
