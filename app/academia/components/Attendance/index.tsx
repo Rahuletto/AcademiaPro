@@ -43,8 +43,8 @@ export default async function Attendance({ data }: { data: AllResponse }) {
 			<section id="attendance">
 				<div className="flex justify-between items-center px-2 mb-1">
 					<div className="flex items-center gap-2">
-						<div id="attendance-title" className="text-2xl font-semibold">Attendance</div>
-						<div id="attendance-title-suffix" className="text-2xl font-semibold" />
+						<h1 className="text-2xl font-semibold">Attendance</h1>
+						<div id="attendance-title-suffix" />
 					</div>
 					<Prediction data={data} cal={mappedCal} calendar={cal.calendar} />
 				</div>

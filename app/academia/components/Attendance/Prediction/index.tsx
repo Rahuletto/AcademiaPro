@@ -49,8 +49,8 @@ export default function Prediction({
 			/>
 			{titleSuffix && createPortal(
 				categorizedRanges.length > 0 && (
-					<span className="text-sm font-medium text-light-accent dark:text-dark-accent">
-						Predicted
+					<span className="text-2xl font-semibold">
+						- Predicted
 					</span>
 				),
 				titleSuffix
