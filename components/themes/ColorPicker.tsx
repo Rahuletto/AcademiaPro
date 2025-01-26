@@ -61,7 +61,7 @@ const ColorPicker = () => {
 			<button
 				type="button"
 				onClick={() => setIsOpen(!isOpen)}
-				className="bg-light-accent dark:bg-dark-accent cursor-pointer p-3 rounded-full shadow-lg hover:opacity-80 transition-opacity"
+				className="bg-light-warn-color dark:bg-dark-warn-color text-light-warn-background dark:text-dark-warn-background cursor-pointer p-3 rounded-full shadow-lg hover:opacity-80 transition-opacity"
 			>
 				<HiColorSwatch className="text-2xl" />
 			</button>
