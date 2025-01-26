@@ -86,13 +86,13 @@ export default function Predictor({
 		if (attendance) {
 			setPriority(
 				attendance.filter(
-					(course) => Number(course.attendancePercentage.split(".")[0]) <= 75,
+					(course) => Number(course.attendancePercentage?.split(".")[0]) <= 75,
 				) || [],
 			);
 
 			setRemaining(
 				attendance.filter(
-					(course) => Number(course.attendancePercentage.split(".")[0]) > 75,
+					(course) => Number(course.attendancePercentage?.split(".")[0]) > 75,
 				) || [],
 			);
 		} else {
