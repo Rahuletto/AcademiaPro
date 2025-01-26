@@ -2,7 +2,7 @@ import { Sidebar } from "@/components/Sidebar";
 import DayOrder from "@/components/Sidebar/Badges/DayOrder";
 import ProfileBadge from "@/components/Sidebar/ProfileBadge";
 import Loading from "@/components/States/Loading";
-import { demo as json } from "@/demo";
+import { demo as json } from "@/mock";
 import type { UserInfo } from "@/types/User";
 import React, { Suspense } from "react";
 import Timetable from "../academia/components/Timetable";
