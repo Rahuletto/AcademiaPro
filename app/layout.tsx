@@ -10,6 +10,7 @@ import { ViewTransitions } from "next-view-transitions";
 import ErrorBoundary from "./Boundary";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { ReactNode } from "react";
+import ColorPicker from '@/components/themes/ColorPicker';
 
 const APP_NAME = "ClassPro";
 const APP_DEFAULT_TITLE = "ClassPro";
@@ -129,6 +130,7 @@ export default async function RootLayout({
 							{children}
 						</body>
 					</ThemeProvider>
+                    <ColorPicker />
 				</ErrorBoundary>
 			</html>
 		</ViewTransitions>
