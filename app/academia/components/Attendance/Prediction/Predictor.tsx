@@ -40,7 +40,7 @@ export default function Predictor({
 	function onClose() {
 		setIsOpen(false);
 	}
-	const original = data.attendance.attendance;
+	const original = data?.attendance?.attendance;
 	const [attendance, setAttendance] = useState<AttendanceCourse[]>(original);
 	const [categorizedDateRanges, setCategorizedDateRanges] = useState<
 		CategorizedDateRange[]
@@ -83,17 +83,22 @@ export default function Predictor({
 	}, [categorizedDateRanges, original]);
 
 	useEffect(() => {
-		setPriority(
-			attendance?.filter(
-				(course) => Number(course.attendancePercentage.split(".")[0]) <= 75,
-			),
-		);
+		if (attendance) {
+			setPriority(
+				attendance.filter(
+					(course) => Number(course.attendancePercentage.split(".")[0]) <= 75,
+				) || [],
+			);
 
-		setRemaining(
-			attendance?.filter(
-				(course) => Number(course.attendancePercentage.split(".")[0]) > 75,
-			),
-		);
+			setRemaining(
+				attendance.filter(
+					(course) => Number(course.attendancePercentage.split(".")[0]) > 75,
+				) || [],
+			);
+		} else {
+			setPriority([]);
+			setRemaining([]);
+		}
 	}, [attendance]);
 
 	return (

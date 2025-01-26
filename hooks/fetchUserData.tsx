@@ -22,7 +22,9 @@ async function fetchData(): Promise<AllResponse> {
 	const controller = new AbortController();
 	const timeoutId = setTimeout(() => {
 		controller.abort();
-		redirect("/sleeping");
+		try {
+			redirect("/sleeping");
+		} catch {}
 	}, 10000);
 
 	try {
