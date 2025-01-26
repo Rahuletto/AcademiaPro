@@ -20,14 +20,14 @@ export default function UserDialog({
 		<div
 			role="button"
 			tabIndex={0}
-			className="fixed inset-0 z-50 flex animate-fastfade items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm transition duration-150"
+			className="fixed inset-0 z-50 flex animate-fastfade items-center justify-center bg-black/30 backdrop-blur-xs transition duration-150"
 			onKeyDown={(e) => {
 				if (e.key === "Escape") onClose();
 			}}
 			onClick={onClose}
 		>
 			<div
-				// biome-ignore lint/a11y/useSemanticElements: this acts as backdrop
+
 				role="button"
 				tabIndex={-1}
 				onKeyDown={() => {}}

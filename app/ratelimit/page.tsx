@@ -10,7 +10,7 @@ export default function ratelimit() {
 			</div>
 			<div className="flex items-center flex-col mt-4 gap-2 justify-center text-light-color dark:text-dark-color">
 				<h1 className="text-2xl font-semibold">Chill mate.</h1>
-				<p className="font-mono opacity-70 max-w-screen-md text-center mx-3">
+				<p className="font-mono opacity-70 max-w-(--breakpoint-md) text-center mx-3">
 					Stop spamming our free tier servers, We are working tirelessly to make
 					this as a free service, So try again after some time
 				</p>

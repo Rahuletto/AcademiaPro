@@ -15,7 +15,7 @@ export default async function Login() {
 	return (
 		<main className="flex h-screen w-screen items-center justify-center bg-light-background-normal dark:bg-dark-background-dark">
 			<span
-				className="absolute z-0 top-0 left-0 bg-gradient-to-br from-light-accent/10 dark:from-dark-accent/10 to-transparent"
+				className="absolute z-0 top-0 left-0 bg-linear-to-br from-light-accent/10 dark:from-dark-accent/10 to-transparent"
 				style={{
 					width: "100%",
 					height: "100%",

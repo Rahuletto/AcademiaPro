@@ -80,7 +80,7 @@ export default function ProfileBadge({
 						)}
 					</span>
 				</div>
-				<span className="text-md line-clamp-1 flex-grow text-ellipsis font-medium capitalize text-light-accent dark:text-dark-color">
+				<span className="text-md line-clamp-1 grow text-ellipsis font-medium capitalize text-light-accent dark:text-dark-color">
 					{user?.name?.toLowerCase()}
 				</span>
 			</div>

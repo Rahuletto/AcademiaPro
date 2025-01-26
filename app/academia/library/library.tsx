@@ -68,11 +68,11 @@ export default function Library({ courses, files }: { courses: Course[]; files: 
 					placeholder="Search for papers"
 					value={searchQuery}
 					onChange={(e) => handleSearch(e.target.value)}
-					className="w-full py-2 px-4 rounded-xl focus:outline-none bg-light-input dark:bg-dark-input max-w-80 text-light-color dark:text-dark-color"
+					className="w-full py-2 px-4 rounded-xl focus:outline-hidden bg-light-input dark:bg-dark-input max-w-80 text-light-color dark:text-dark-color"
 				/>
 			</div>
 
-			<div className="bg-light-background-light/50 pb-16 relative min-h-screen shadow-lg dark:bg-dark-background-darker/50 backdrop-blur-sm w-full h-full rounded-t-3xl p-4">
+			<div className="bg-light-background-light/50 pb-16 relative min-h-screen shadow-lg dark:bg-dark-background-darker/50 backdrop-blur-xs w-full h-full rounded-t-3xl p-4">
 				<div className="flex overflow-x-auto pb-4 gap-4 items-center mb-2 justify-start w-full">
 					<button
 						type="button"

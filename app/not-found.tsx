@@ -12,7 +12,7 @@ export default function NotFoundPage() {
 			</div>
 			<div className="flex items-center flex-col mt-4 gap-2 justify-center text-light-color dark:text-dark-color">
 				<h1 className="text-2xl font-semibold">Why you here?</h1>
-				<p className="font-mono opacity-70 max-w-screen-sm text-center mx-3">
+				<p className="font-mono opacity-70 max-w-(--breakpoint-sm) text-center mx-3">
 					We don&apos;t know what you were looking for, but it never existed.
 					Don&apos;t worry, i gotchu.
 				</p>

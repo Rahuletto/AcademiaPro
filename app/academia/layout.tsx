@@ -28,7 +28,7 @@ export default async function RootLayout({
 	const subscribed = data?.subscribed ?? false;
 
 	return (
-		<div className="h-screen flex-shrink-0 w-full flex flex-row bg-light-background-normal lg:p-2 transition-all duration-150 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
+		<div className="h-screen shrink-0 w-full flex flex-row bg-light-background-normal lg:p-2 transition-all duration-150 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
 			<div id="attendance-predict" className="z-30" />
 			<Sidebar
 				dayorder={<DayOrder />}

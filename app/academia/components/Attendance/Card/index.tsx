@@ -24,7 +24,7 @@ export default function AttendanceCard({
 	return (
 		<div
 			role="cell"
-			className={`odd:bg-light-background-normal relative even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-dark-background-dark grid w-full grid-cols-[3fr_1fr] grid-rows-[repeat(2,1fr)] items-center gap-3 gap-y-2 p-4 px-6 transition duration-150 md:my-0 md:flex md:items-center md:justify-between ${continuous ? "md:first:rounded-t-xl md:last:rounded-b-xl first:rounded-t-2xl last:rounded-b-2xl" : "rounded-2xl md:rounded-xl"}`}
+			className={`odd:bg-light-background-normal relative even:bg-light-background-light dark:odd:bg-dark-background-normal dark:even:bg-dark-background-dark grid w-full grid-cols-[3fr_1fr] grid-rows-[repeat(2,1fr)] items-center gap-3 gap-y-2 p-4 px-6 transition duration-150 md:my-0 md:flex md:items-center md:justify-between ${continuous ? "md:first:rounded-t-xl md:last:rounded-b-xl first:rounded-t-2xl last:rounded-b-2xl" : "rounded-2xl md:rounded-xl"}`}
 		>
 			<CourseTitle
 				courseTitle={courseTitle.split(":")[0]}

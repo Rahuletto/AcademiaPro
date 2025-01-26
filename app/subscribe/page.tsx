@@ -64,7 +64,7 @@ export default async function Subscribe() {
 	// 			</div>
 
 	// 			<span
-	// 				className="absolute animate-gradient top-0 left-0 bg-gradient-to-br from-light-accent/10 dark:from-dark-accent/10 to-transparent"
+	// 				className="absolute animate-gradient top-0 left-0 bg-linear-to-br from-light-accent/10 dark:from-dark-accent/10 to-transparent"
 	// 				style={{
 	// 					width: "100%",
 	// 					height: "100%",
@@ -81,7 +81,7 @@ export default async function Subscribe() {
 	// 			<p className="text-xl font-medium text-center opacity-70 text-light-color dark:text-dark-color">
 	// 				Unlock all features and fund me to keep this project alive.
 	// 			</p>
-	// 			<div className="flex gap-6 flex-col md:flex-row max-w-screen-md w-full mt-12">
+	// 			<div className="flex gap-6 flex-col md:flex-row max-w-(--breakpoint-md) w-full mt-12">
 	// 				<div
 	// 					className={`bg-light-background-dark w-full md:w-1/2 dark:bg-dark-background-normal rounded-3xl p-8 px-10 border-2 ${!subscribed ? "dark:border-dark-accent border-light-accent" : "border-transparent"}`}
 	// 				>

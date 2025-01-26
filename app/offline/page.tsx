@@ -10,7 +10,7 @@ export default function offline() {
 			</div>
 			<div className="flex items-center flex-col mt-4 gap-2 justify-center text-light-color dark:text-dark-color">
 				<h1 className="text-2xl font-semibold">No Internet.</h1>
-				<p className="font-mono opacity-70 max-w-screen-sm text-center mx-3">
+				<p className="font-mono opacity-70 max-w-(--breakpoint-sm) text-center mx-3">
 					Seems like you are offline, which sucks. Please check your internet
 					connection and try again.
 				</p>

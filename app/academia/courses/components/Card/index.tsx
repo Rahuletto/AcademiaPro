@@ -15,7 +15,7 @@ export default function CourseCard({ course }: { course: Course }) {
 		<div
 			tabIndex={0}
 			role="gridcell"
-			className="animate-fadeIn odd:bg-light-background-normal relative even:bg-light-background-light odd:dark:bg-dark-background-normal even:dark:bg-dark-background-dark duration-150 transition grid w-full grid-cols-[3fr_1fr] grid-rows-[2fr_1fr] gap-3 rounded-3xl p-4 md:flex md:min-w-[900px] md:items-center md:justify-between md:rounded-xl"
+			className="animate-fadeIn odd:bg-light-background-normal relative even:bg-light-background-light dark:odd:bg-dark-background-normal dark:even:bg-dark-background-dark duration-150 transition grid w-full grid-cols-[3fr_1fr] grid-rows-[2fr_1fr] gap-3 rounded-3xl p-4 md:flex md:min-w-[900px] md:items-center md:justify-between md:rounded-xl"
 		>
 			<div className="flex md:w-[35%] w-auto flex-col items-start gap-1 md:gap-3 lg:w-[40%] lg:flex-row lg:items-center lg:gap-8 xl:w-[40%] xl:justify-between">
 				<CourseTitle courseTitle={course.title} category={course.slotType} />

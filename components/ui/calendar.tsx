@@ -49,14 +49,14 @@ function Calendar({
 				range_start: "range_start",
 				range_end: "range_end",
 				selected:
-					"bg-light-accent scale-110 z-[2] text-white rounded-lg focus:bg-light-accent focus:text-light-accent dark:bg-dark-accent dark:text-black dark:focus:bg-dark-accent dark:focus:text-black",
+					"bg-light-accent scale-110 z-2 text-white rounded-lg focus:bg-light-accent focus:text-light-accent dark:bg-dark-accent dark:text-black dark:focus:bg-dark-accent dark:focus:text-black",
 				today:
 					"bg-neutral-100 text-neutral-900 dark:bg-neutral-800 dark:text-neutral-50",
 				outside:
 					"outside  text-neutral-500 aria-selected:bg-neutral-100/50 aria-selected:text-neutral-500 dark:text-neutral-400 dark:aria-selected:bg-neutral-800/50 dark:aria-selected:text-neutral-400",
 				disabled: "text-neutral-500 opacity-50 dark:text-neutral-400",
 				range_middle:
-					"aria-selected:bg-neutral-100 !z-[1] !scale-100 !rounded-none aria-selected:text-neutral-900 dark:aria-selected:bg-neutral-800 dark:aria-selected:text-neutral-50",
+					"aria-selected:bg-neutral-100 z-1! scale-100! rounded-none! aria-selected:text-neutral-900 dark:aria-selected:bg-neutral-800 dark:aria-selected:text-neutral-50",
 				hidden: "invisible",
 				...classNames,
 			}}

@@ -43,7 +43,7 @@ export function SearchBar({ searchQuery, setSearchQuery }: SearchBarProps) {
 				placeholder="Search"
 				value={searchQuery}
 				onChange={(e) => setSearchQuery(e.target.value)}
-				className="relative z-10 w-[250px] animate-fastfade rounded-xl bg-light-button px-4 py-2 text-lg font-medium shadow-lg outline-none backdrop-blur-lg dark:backdrop-blur-lg transition-all duration-200 md:w-[350px] dark:bg-dark-button"
+				className="relative z-10 w-[250px] animate-fastfade rounded-xl bg-light-button px-4 py-2 text-lg font-medium shadow-lg outline-hidden backdrop-blur-lg dark:backdrop-blur-lg transition-all duration-200 md:w-[350px] dark:bg-dark-button"
 			/>
 			<div className="relative right-8 z-10 text-xl opacity-50">
 				<LuSquareSlash />

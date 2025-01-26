@@ -520,30 +520,4 @@ export const Themes = [
 			practical: "100 200 100",
 		},
 	},
-	// {
-	// 	title: "Mommy Persephone",
-	// 	mode: "dark",
-	// 	properties: {
-	// 		metacolor: "#2c1a2e",
-	// 		"background-normal": "20 10 30",
-	// 		"background-light": "30 20 40",
-	// 		"background-dark": "10 5 20",
-	// 		"background-darker": "5 3 10",
-	// 		input: "255 255 255/0.03",
-	// 		button: "40 30 50",
-	// 		side: "50 40 60",
-	// 		accent: "90 20 120", // Dark Violet
-	// 		color: "240 240 250",
-	// 		"error-background": "50 10 20",
-	// 		"error-color": "200 20 50", // Blood Red
-	// 		"warn-background": "40 40 20",
-	// 		"warn-color": "160 140 50",
-	// 		"success-background": "30 50 30",
-	// 		"success-color": "100 240 100", // Poisonous Green
-	// 		"info-background": "50 50 60",
-	// 		"info-color": "150 130 90", // Tarnished Gold
-	// 		theory: "200 100 100",
-	// 		practical: "110 90 220",
-	// 	},
-	// },
 ];

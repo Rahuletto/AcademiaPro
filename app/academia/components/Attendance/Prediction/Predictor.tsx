@@ -104,7 +104,7 @@ export default function Predictor({
 					<div
 						role="button"
 						tabIndex={0}
-						className="fixed inset-0 z-50 flex animate-fastfade items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm transition duration-150"
+						className="fixed inset-0 z-50 flex animate-fastfade items-center justify-center bg-black/50 backdrop-blur-xs transition duration-150"
 						onKeyDown={(e) => {
 							if (e.key === "Escape") onClose();
 						}}

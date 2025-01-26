@@ -11,7 +11,7 @@ export default function PayRequired() {
 				<FaCrown className="text-light-warn-color dark:text-dark-warn-color text-7xl" />
 				<div className="flex items-center flex-col mt-4 gap-2 justify-center text-light-color dark:text-dark-color">
 					<h1 className="text-2xl font-semibold">Payment Required</h1>
-					<p className="font-mono opacity-70 max-w-screen-sm text-center mx-3">
+					<p className="font-mono opacity-70 max-w-(--breakpoint-sm) text-center mx-3">
 						This feature is only available to supporters only. Please support me by subscribing.
 					</p>
 				</div>

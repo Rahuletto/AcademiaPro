@@ -12,7 +12,7 @@ export default function invalid() {
 			</div>
 			<div className="flex items-center flex-col mt-4 gap-2 justify-center text-light-color dark:text-dark-color">
 				<h1 className="text-2xl font-semibold">Session expired/invalid</h1>
-				<p className="font-mono opacity-70 max-w-screen-md text-center mx-3">
+				<p className="font-mono opacity-70 max-w-(--breakpoint-md) text-center mx-3">
 					Our squirrels (delulu) found out you have an invalid or expired
 					session token, Because SRM didn&apos;t return us the page with your
 					token, we want you to reset and login again

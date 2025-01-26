@@ -14,7 +14,7 @@ export default function Sleeping() {
 			</div>
 			<div className="flex items-center flex-col mt-4 gap-2 justify-center text-light-color dark:text-dark-color">
 				<h1 className="text-2xl font-semibold">Waking up..</h1>
-				<p className="font-mono opacity-70 max-w-screen-md text-center mx-3">
+				<p className="font-mono opacity-70 max-w-(--breakpoint-md) text-center mx-3">
 					Our servers were busy sleeping.. We are waking them up now. Please
 					wait for sometime and try again later.
 				</p>

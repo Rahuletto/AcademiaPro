@@ -56,7 +56,7 @@ export default function ThemeToggle({
 								setOpen(false);
 							}
 						}}
-						className="fixed transition-all duration-75 animate-fadeIn inset-0 z-50 flex items-center justify-center bg-opacity-30 dark:bg-opacity-30 backdrop-blur-sm bg-white dark:bg-black"
+						className="fixed transition-all duration-75 animate-fadeIn inset-0 z-50 flex items-center justify-center backdrop-blur-sm bg-white/30 dark:bg-black/30"
 					>
 						<div
 							onClick={(e) => {

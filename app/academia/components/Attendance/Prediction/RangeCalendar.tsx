@@ -133,11 +133,11 @@ export function LeaveODRangeCalendar({
 						}}
 						modifiersClassNames={{
 							todayHoliday:
-								"!bg-light-error-background border border-light-error-color dark:!bg-dark-error-background !text-light-error-color border-dark-error-color dark:!text-dark-error-color !opacity-100 !rounded-full",
+								"bg-light-error-background! border border-light-error-color dark:bg-dark-error-background! text-light-error-color! border-dark-error-color dark:text-dark-error-color! opacity-100! rounded-full!",
 							today:
-								"bg-light-success-color dark:bg-dark-success-color !opacity-100 !text-white !dark:text-black !rounded-full",
+								"bg-light-success-color dark:bg-dark-success-color opacity-100! text-white! !dark:text-black rounded-full!",
 							holidays:
-								"!text-light-error-color dark:!text-dark-error-color !opacity-60 cursor-not-allowed bg-transparent dark:bg-transparent",
+								"text-light-error-color! dark:text-dark-error-color! opacity-60! cursor-not-allowed bg-transparent dark:bg-transparent",
 							leave:
 								"bg-light-error-color dark:bg-dark-error-color text-black border border-transparent hover:border-light-error-color dark:hover:border-dark-error-color hover:bg-light-error-background rounded-lg dark:hover:bg-dark-error-background hover:text-light-error-color dark:hover:text-dark-error-color",
 							od: "bg-light-success-color dark:bg-dark-success-color text-black border border-transparent hover:bg-light-success-background rounded-lg hover:border-light-success-color dark:hover:border-dark-success-color dark:hover:bg-dark-success-background hover:text-light-success-color dark:hover:text-dark-success-color",

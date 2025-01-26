@@ -1,63 +1,280 @@
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-/* styles/global.css */
-html {
-	--sidebar-width: 310px;
-	--metacolor: #11151b;
-	--background-normal: 17 21 27;
-	--background-light: 30 35 43;
-	--background-dark: 6 9 13;
-	--background-darker: 4 7 11;
-	--input: 255 255 255 / 0.03;
-	--button: 18 22 27;
-	--side: 23 29 38;
-	--accent: 179 179 209;
-	--color: 254 254 254;
-	--error-background: 29 12 12;
-	--error-color: 247 91 91;
-	--warn-background: 43 40 31;
-	--warn-color: 255 202 99;
-	--success-background: 17 37 32;
-	--success-color: 124 235 155;
-	--info-background: 27 29 43;
-	--info-color: 124 179 235;
-	--theory: 242 216 105;
-	--practical: 105 224 105;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-*: initial;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --font-weight-*: initial;
+  --font-weight-normal: 500;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+
+  --grid-template-columns-marks: repeat(auto-fill, minmax(18rem, 1fr));
+
+  --animate-fade-in: fadeIn 0.4s ease-in-out forwards;
+  --animate-fastfade: fadeIn 0.1s ease-in forwards;
+  --animate-shimmer: shimmer 2s infinite linear;
+  --animate-fade-out: fadeOut 0.4s ease-in-out forwards;
+  --animate-slow-spin: spin 5s linear infinite;
+  --animate-expand-height: expandHeight 0.5s ease-in-out forwards;
+  --animate-slide-right: slideRight 0.5s ease-in-out forwards;
+  --animate-slide-left: slideLeft 0.5s ease-in-out forwards;
+  --animate-text-pop-up: textPopUp 0.5s ease-in-out forwards;
+  --animate-text-slide-up: textSlideUp 0.3s
+    cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  --animate-text-slide-down: textSlideDown 0.5s ease-in-out forwards;
+  --animate-text-slide-left: textSlideLeft 0.5s ease-in-out forwards;
+  --animate-text-slide-right: textSlideRight 0.5s ease-in-out forwards;
+  --animate-shrink: shrink 1s ease forwards;
+
+  --color-theory: rgb(var(--theory));
+  --color-practical: rgb(var(--practical));
+
+  --color-light-theory: rgb(var(--theory));
+  --color-light-practical: rgb(var(--practical));
+
+  --color-light-background-normal: rgb(var(--background-normal));
+  --color-light-background-light: rgb(var(--background-light));
+  --color-light-background-dark: rgb(var(--background-dark));
+  --color-light-background-darker: rgb(var(--background-darker));
+
+  --color-light-input: rgb(var(--input));
+  --color-light-button: rgb(var(--button));
+  --color-light-side: rgb(var(--side));
+  --color-light-accent: rgb(var(--accent));
+  --color-light-color: rgb(var(--color));
+
+  --color-light-error-background: rgb(var(--error-background));
+  --color-light-error-color: rgb(var(--error-color));
+
+  --color-light-warn-background: rgb(var(--warn-background));
+  --color-light-warn-color: rgb(var(--warn-color));
+
+  --color-light-success-background: rgb(var(--success-background));
+  --color-light-success-color: rgb(var(--success-color));
+
+  --color-light-info-background: rgb(var(--info-background));
+  --color-light-info-color: rgb(var(--info-color));
+
+  --color-dark-theory: rgb(var(--theory));
+  --color-dark-practical: rgb(var(--practical));
+
+  --color-dark-background-normal: rgb(var(--background-normal));
+  --color-dark-background-light: rgb(var(--background-light));
+  --color-dark-background-dark: rgb(var(--background-dark));
+  --color-dark-background-darker: rgb(var(--background-darker));
+
+  --color-dark-input: rgb(var(--input));
+  --color-dark-button: rgb(var(--button));
+  --color-dark-side: rgb(var(--side));
+  --color-dark-accent: rgb(var(--accent));
+  --color-dark-color: rgb(var(--color));
+
+  --color-dark-error-background: rgb(var(--error-background));
+  --color-dark-error-color: rgb(var(--error-color));
+
+  --color-dark-warn-background: rgb(var(--warn-background));
+  --color-dark-warn-color: rgb(var(--warn-color));
+
+  --color-dark-success-background: rgb(var(--success-background));
+  --color-dark-success-color: rgb(var(--success-color));
+
+  --color-dark-info-background: rgb(var(--info-background));
+  --color-dark-info-color: rgb(var(--info-color));
+
+  --ease-bouncy: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+  @keyframes textPopUp {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes textSlideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes textSlideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes textSlideLeft {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes textSlideRight {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes expandHeight {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes shrink {
+    0% {
+      width: 99vw;
+      height: 99vh;
+    }
+    100% {
+      width: 80vw;
+      height: 80vh;
+    }
+  }
 }
 
-html,
-body {
-	scroll-behavior: smooth;
-	min-height: 100vh !important;
-	transition: all 0.2s ease-in;
-	-webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
-html.bw {
-	filter: saturate(0);
-	-webkit-filter: saturate(0);
-}
-
-.mono * {
-	font-family: var(--font-geist-mono), monospace;
-}
-
-.animate-gradient {
-	background-size: 1000% 1000%;
-	animation: gradient 6s ease infinite;
+@utility text-balance {
+  text-wrap: balance;
 }
 
 @layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
+  /* styles/global.css */
+  html {
+    --sidebar-width: 310px;
+    --metacolor: #11151b;
+    --background-normal: 17 21 27;
+    --background-light: 30 35 43;
+    --background-dark: 6 9 13;
+    --background-darker: 4 7 11;
+    --input: 255 255 255 / 0.03;
+    --button: 18 22 27;
+    --side: 23 29 38;
+    --accent: 179 179 209;
+    --color: 254 254 254;
+    --error-background: 29 12 12;
+    --error-color: 247 91 91;
+    --warn-background: 43 40 31;
+    --warn-color: 255 202 99;
+    --success-background: 17 37 32;
+    --success-color: 124 235 155;
+    --info-background: 27 29 43;
+    --info-color: 124 179 235;
+    --theory: 242 216 105;
+    --practical: 105 224 105;
+  }
+
+  html,
+  body {
+    scroll-behavior: smooth;
+    min-height: 100vh !important;
+    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+  }
+
+  html.bw {
+    filter: saturate(0);
+    -webkit-filter: saturate(0);
+  }
+
+  .mono * {
+    font-family: var(--font-geist-mono), monospace;
+  }
+
+  .animate-gradient {
+    background-size: 1000% 1000%;
+    animation: gradient 6s ease infinite;
+  }
 }
 
 @layer base {

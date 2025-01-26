@@ -12,6 +12,7 @@ import type { AllResponse } from '@/types/Response'
 import Marks from '../academia/components/Marks'
 import type { Mark } from '@/types/Marks'
 import type { Course } from '@/types/Course'
+import ColorPicker from '@/components/themes/ColorPicker'
 
 export default function Demo() {
     const marks: Mark[] = json.courses.courses.map(c => {
@@ -46,10 +47,11 @@ export default function Demo() {
             testPerformance
         })
     })
-    
+
   return (
-    <div className="h-screen flex-shrink-0 w-full flex flex-row bg-light-background-normal lg:p-2 transition-all duration-150 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
+    <div className="h-screen shrink-0 w-full flex flex-row bg-light-background-normal lg:p-2 transition-all duration-150 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
 			<div id="attendance-predict" className="z-30" />
+            <ColorPicker />
 			<Sidebar
 				dayorder={<DayOrder />}
 				mini={
