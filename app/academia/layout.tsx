@@ -7,8 +7,6 @@ import { Link } from "next-view-transitions";
 import type { ReactNode } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { supabase } from "@/utils/Database/supabase";
-import { cookies } from "next/headers";
-import { encode } from "@/utils/Cookies";
 
 export default async function RootLayout({
 	children,

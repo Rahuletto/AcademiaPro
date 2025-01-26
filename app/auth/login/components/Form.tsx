@@ -2,12 +2,12 @@
 import React, { useCallback, useState } from "react";
 import UidInput from "./form/UidInput";
 import PasswordInput from "./form/PasswordInput";
-import { Cookie as cookies } from "@/utils/Cookies";
 import rotateUrl from "@/utils/URL";
 import Button from "@/components/Button";
 import { token } from "@/utils/Tokenize";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { setCookie } from "@/utils/Cookies";
 
 export default function Form() {
 	const router = useRouter();
@@ -41,7 +41,8 @@ export default function Form() {
 		if (loginResponse.authenticated) {
 			setStatus(2);
 			setMessage("Loading data...");
-			cookies.set("key", loginResponse.cookies);
+			setCookie("key", loginResponse.cookies);
+			
 			router.push("/academia");
 		} else if (loginResponse?.message) {
 			setStatus(-1);

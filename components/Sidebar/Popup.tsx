@@ -4,19 +4,18 @@
 import Link from "next/link";
 import { FaBookOpen } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import Storage from "@/utils/Storage";
 
 export default function Popup() {
 	const [opened, setOpened] = useState(false);
 
 	useEffect(() => {
-		const isAcknowledged = Storage.get("popup", false);
+		const isAcknowledged = localStorage.getItem("popup");
 		if (!isAcknowledged) setOpened(true);
 	}, []);
 
 	function clicked() {
 		setOpened(false);
-		Storage.set("popup", true);
+		localStorage.set("popup", true);
 	}
 
 	return (
