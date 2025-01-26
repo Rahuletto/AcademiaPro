@@ -547,7 +547,7 @@ export const Themes = [
 	// 	},
 	// },
 	{
-		"title": "Majenta Jam",
+		"title": "Magenta Jam",
 		"mode": "dark",
 		"properties": {
 			"metacolor": "#11151b",
