@@ -22,7 +22,7 @@ export default async function RootLayout({
 		.single();
 
 	if (error) {
-		console.warn("Cannot find");
+		console.warn("Cannot find data?", json?.user?.regNumber, json);
 	}
 
 	const subscribed = data?.subscribed ?? false;
