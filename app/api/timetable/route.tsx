@@ -2,9 +2,28 @@ import type { AllResponse } from "@/types/Response";
 import type { Schedule, ScheduleSlot } from "@/types/Timetable";
 import { ImageResponse } from "next/og";
 import { Time, timeConvert } from "@/utils/Times";
+import { cookies } from "next/headers";
+import { supabase } from "@/utils/Database/supabase";
+import { encode } from "@/utils/Cookies";
 
-export async function POST(req: Request) {
-	const json: AllResponse = await req.json();
+export async function GET() {
+	const cookie = await cookies();
+	const key = cookie.get("key")?.value ?? "";
+
+	const { data, error } = await supabase.from("goscrape")
+		.select("timetable,ophour")
+		.eq("token", encode(key))
+		.single();
+
+	if (error) {
+		throw new Error("Data not found!")
+	}
+
+	const json = {
+		timetable: JSON.parse(data?.timetable),
+		ophour: data?.ophour,
+	}
+
 	const timetable = json.timetable.schedule;
 
 	const ophours = json.ophour?.split(",");

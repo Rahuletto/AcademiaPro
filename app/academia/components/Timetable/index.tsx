@@ -20,12 +20,13 @@ export default async function Timetable({
 			<div className="flex justify-between items-center px-2 mb-1">
 				<h1 className="text-2xl font-semibold">Timetable</h1>
 				<div className="flex items-center justify-center gap-3">
-					<Link
-						href="/download/timetable"
+					<a
+						href="/api/timetable"
+						download
 						className="p-1 rounded-lg transition-all duration-150 hover:bg-light-button dark:hover:bg-dark-button"
 					>
 						<FiDownload className="text-lg text-light-accent dark:text-dark-accent cursor-pointer" />
-					</Link>
+					</a>
 					<EditTimetable timetable={schedule} ophours={ophours} />
 				</div>
 			</div>
