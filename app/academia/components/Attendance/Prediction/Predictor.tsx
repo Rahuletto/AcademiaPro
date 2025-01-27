@@ -25,8 +25,6 @@ export default function Predictor({
 	calendar,
 	setIsOpen,
 	isOpen,
-	categorizedRanges,
-	setCategorizedRanges,
 }: {
 	data: AllResponse;
 	calendar: Calendar[];
@@ -38,9 +36,10 @@ export default function Predictor({
 	}[];
 	setIsOpen: Dispatch<SetStateAction<boolean>>;
 	isOpen: boolean;
-	categorizedRanges: CategorizedDateRange[];
-	setCategorizedRanges: Dispatch<SetStateAction<CategorizedDateRange[]>>;
 }) {
+	const [categorizedRanges, setCategorizedRanges] = useState<CategorizedDateRange[]>([]);
+	const [titleSuffix, setTitleSuffix] = useState<HTMLDivElement | null>(null);
+	
 	function onClose() {
 		setIsOpen(false);
 	}
@@ -62,9 +61,12 @@ export default function Predictor({
 
 		list.current = document.getElementById("attendance-list") as HTMLDivElement;
 
+		setTitleSuffix(document.getElementById("attendance-title-suffix") as HTMLDivElement);
+
 		return () => {
 			list.current = null;
 			predictWindow.current = null;
+			setTitleSuffix(null);
 		};
 	}, []);
 
@@ -178,6 +180,14 @@ export default function Predictor({
 					</div>,
 					list.current,
 				)}
+			{titleSuffix && createPortal(
+				categorizedRanges.length > 0 && (
+					<span className="text-2xl font-semibold">
+						- Predicted
+					</span>
+				),
+				titleSuffix
+			)}
 		</>
 	);
 }
