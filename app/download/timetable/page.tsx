@@ -15,7 +15,7 @@ export default async function page() {
 		.single();
 
 	if (error || !json) {
-		if (error.code === "PGRST116") console.error("No data?")
+		if (error.code === "PGRST116") console.error("No data?: ", json)
 		else console.error("Error fetching data:", error);
 		return;
 	}
