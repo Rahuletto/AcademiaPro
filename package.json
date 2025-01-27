@@ -2,6 +2,7 @@
   "name": "classpro",
   "version": "3.0.0",
   "private": true,
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
     "dev": "next dev --port 0243",
     "build": "next build",
@@ -35,6 +36,7 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@builder.io/partytown": "^0.10.3",
     "@eslint/eslintrc": "^3.2.0",
     "@tailwindcss/postcss": "^4.0.0",
     "@types/crypto-js": "^4.2.2",

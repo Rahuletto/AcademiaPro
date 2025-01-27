@@ -1,4 +1,3 @@
-import { fetchUserData } from "@/hooks/fetchUserData";
 import Image from "next/image";
 import React from "react";
 import { supabase } from "@/utils/Database/supabase";

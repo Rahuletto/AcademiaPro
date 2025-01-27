@@ -27,13 +27,6 @@ export default function ErrorComponent({
 					<pre className="lg:text-md mx-2 mt-4 max-h-[500px] w-[80vw] overflow-auto rounded-2xl border-2 border-dashed border-light-error-color p-3 text-xs text-light-error-color opacity-90 md:text-sm dark:border-dark-error-color dark:text-dark-error-color">
 						<code>{error.stack}</code>
 					</pre>
-					{/* 
-          <button
-            onClick={reset}
-            className="mt-8 rounded-2xl border-2 border-light-error-color px-5 py-2 text-light-error-color dark:border-dark-error-color dark:text-dark-error-color"
-          >
-            Ignore
-          </button> */}
 				</div>
 			</div>
 		</div>

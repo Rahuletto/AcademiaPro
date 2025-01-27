@@ -94,7 +94,7 @@ export function LeaveODRangeCalendar({
 							holidays: (date) => {
 								const monthIndex =
 									calendar?.findIndex((month) =>
-										month.month.includes(format(date, "MMM")),
+										month.month?.includes(format(date, "MMM")),
 									) || 0;
 								const formatted = format(date, "dd");
 								const cal = calendar?.[monthIndex]?.days?.find(
@@ -154,7 +154,7 @@ export function LeaveODRangeCalendar({
 							(date) => {
 								const monthIndex =
 									calendar?.findIndex((month) =>
-										month.month.includes(format(date, "MMM")),
+										month.month?.includes(format(date, "MMM")),
 									) || 0;
 
 								const formatted = format(date, "dd");

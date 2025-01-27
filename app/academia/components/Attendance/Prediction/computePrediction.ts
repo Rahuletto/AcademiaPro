@@ -52,13 +52,13 @@ export function predictAttendance(
 
 	const absentDates =
 		absents.length > 0
-			? absents.flatMap((absent) =>
+			? absents?.flatMap((absent) =>
 					betweenDates(new Date(absent?.from), new Date(absent?.to)),
 				)
 			: [];
 	const odDates =
 		ods.length > 0
-			? ods.flatMap((od) => betweenDates(new Date(od?.from), new Date(od.to)))
+			? ods?.flatMap((od) => betweenDates(new Date(od?.from), new Date(od.to)))
 			: [];
 
 	const dayOrders = absentDates

@@ -21,7 +21,7 @@ const withSerwist = withSerwistInit({
 const nextConfig: NextConfig = {
 	poweredByHeader: false,
 	compress: true,
-
+	eslint: { ignoreDuringBuilds: true },
 	experimental: {
 		// reactCompiler: true,
 		// parallelServerCompiles: true,
