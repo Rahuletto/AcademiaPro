@@ -1,4 +1,3 @@
-import type { AllResponse } from "@/types/Response";
 import type { Schedule, ScheduleSlot } from "@/types/Timetable";
 import { ImageResponse } from "next/og";
 import { Time, timeConvert } from "@/utils/Times";
@@ -42,7 +41,7 @@ export async function GET() {
 		new URL("../../../public/fonts/Geist.ttf", import.meta.url),
 	).then((res) => res.arrayBuffer());
 
-	return new ImageResponse(
+	const response = new ImageResponse(
 		<section
 			style={{
 				height: "100%",
@@ -72,6 +71,15 @@ export async function GET() {
 			],
 		},
 	);
+
+	return new Response(await response.arrayBuffer(), {
+		headers: {
+			'Content-Type': 'image/png',
+			'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+			'Pragma': 'no-cache',
+			'Expires': '0',
+		},
+	});
 }
 function TimeArr() {
 	return (
