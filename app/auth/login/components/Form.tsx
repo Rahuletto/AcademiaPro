@@ -46,7 +46,7 @@ export default function Form() {
 			router.push("/academia");
 		} else if (loginResponse?.message) {
 			setStatus(-1);
-			if (loginResponse.message.includes("Digest"))
+			if (loginResponse.message?.includes("Digest"))
 				setMessage(
 					"Seems like this is your first time. Go to academia.srmist.edu.in and setup password!",
 				);
@@ -63,8 +63,8 @@ export default function Form() {
 		>
 			{status === -1 && (
 				<p className="rounded-2xl bg-light-error-background px-4 py-2 text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
-					{statusMessage.includes(">_") ? "" : "SRM:"}
-					{statusMessage.replace(">_", "")}
+					{statusMessage?.includes(">_") ? "" : "SRM:"}
+					{statusMessage?.replace(">_", "")}
 				</p>
 			)}
 

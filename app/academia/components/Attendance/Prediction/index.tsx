@@ -1,9 +1,10 @@
 "use client";
 import type { AllResponse } from "@/types/Response";
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { PiBrainBold } from "react-icons/pi";
 import Predictor from "./Predictor";
 import type { Calendar } from "@/types/Calendar";
+import Loading from "@/components/States/Loading";
 
 export default function Prediction({
 	data,
@@ -30,13 +31,15 @@ export default function Prediction({
 			>
 				<PiBrainBold className="text-lg text-light-accent dark:text-dark-accent cursor-pointer" />
 			</button>
-			<Predictor
-				data={data}
-				cal={cal}
-				calendar={calendar}
-				setIsOpen={setIsOpen}
-				isOpen={isOpen}
-			/>
+			<Suspense fallback={<Loading size="xl" />}>
+				<Predictor
+					data={data}
+					cal={cal}
+					calendar={calendar}
+					setIsOpen={setIsOpen}
+					isOpen={isOpen}
+				/>
+			</Suspense>
 		</>
 	);
 }
