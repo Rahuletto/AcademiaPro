@@ -35,7 +35,7 @@ export default function CalendarGrid({
 	const todayRef = useRef<HTMLDivElement>(null);
 	const head = useRef<HTMLDivElement>(null);
 
-	const days = calendar[month].days;
+	const days = calendar?.[month]?.days;
 
 	const getFirstDayIndex = () => weekdays.indexOf(days?.[0]?.day);
 

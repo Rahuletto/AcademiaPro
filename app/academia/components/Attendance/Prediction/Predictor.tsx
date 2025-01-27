@@ -71,7 +71,7 @@ export default function Predictor({
 	}, []);
 
 	useEffect(() => {
-		if (categorizedRanges?.[0]) {
+		if (categorizedRanges && categorizedRanges.length > 0) {
 			const att = predictAttendance(
 				original,
 				data.timetable.schedule,

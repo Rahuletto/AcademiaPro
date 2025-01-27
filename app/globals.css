@@ -33,6 +33,7 @@ layer(base);
     cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
   --animate-text-slide-down: textSlideDown 0.5s ease-in-out forwards;
   --animate-text-slide-left: textSlideLeft 0.5s ease-in-out forwards;
+  --animate-hourglass: hourglass 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
   --animate-text-slide-right: textSlideRight 0.5s ease-in-out forwards;
   --animate-shrink: shrink 1s ease forwards;
 
@@ -326,5 +327,23 @@ layer(base);
 	}
 	100% {
 		transform: translate(5px, 5px);
+	}
+}
+
+@keyframes hourglass {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(180deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	75% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
 	}
 }

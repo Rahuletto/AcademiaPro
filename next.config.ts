@@ -23,7 +23,7 @@ const nextConfig: NextConfig = {
 	compress: true,
 	eslint: { ignoreDuringBuilds: true },
 	experimental: {
-		// reactCompiler: true,
+		reactCompiler: true,
 		// parallelServerCompiles: true,
 		nextScriptWorkers: true,
 		// useLightningcss: true,

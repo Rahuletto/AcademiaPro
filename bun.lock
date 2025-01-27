@@ -38,6 +38,7 @@
         "@types/react": "^19.0.8",
         "@types/react-dom": "^19.0.3",
         "all-contributors-cli": "^6.26.1",
+        "babel-plugin-react-compiler": "^19.0.0-beta-27714ef-20250124",
         "eslint": "^9.19.0",
         "eslint-config-next": "15.1.6",
         "postcss": "^8.5.1",
@@ -50,7 +51,13 @@
   "packages": {
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "", {}, "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="],
 
+    "@babel/helper-string-parser": ["@babel/helper-string-parser@7.25.9", "", {}, "sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA=="],
+
+    "@babel/helper-validator-identifier": ["@babel/helper-validator-identifier@7.25.9", "", {}, "sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ=="],
+
     "@babel/runtime": ["@babel/runtime@7.26.7", "", { "dependencies": { "regenerator-runtime": "^0.14.0" } }, "sha512-AOPI3D+a8dXnja+iwsUqGRjr1BbZIe771sXdapOtYI531gSqpi92vXivKcq2asu/DFpdl1ceFAKZyRzK2PCVcQ=="],
+
+    "@babel/types": ["@babel/types@7.26.7", "", { "dependencies": { "@babel/helper-string-parser": "^7.25.9", "@babel/helper-validator-identifier": "^7.25.9" } }, "sha512-t8kDRGrKXyp6+tjUh7hw2RLyclsW4TRoRvRHtSyAX9Bb5ldlFh+90YAYY6awRXrlB4G5G2izNeGySpATlFzmOg=="],
 
     "@builder.io/partytown": ["@builder.io/partytown@0.10.3", "", { "bin": { "partytown": "bin/partytown.cjs" } }, "sha512-N2SWA3c5vEad3rgdAFM3zMb6uc7aXqibkgAz4ijvYzycgQXJ4dE5oH6fGFMXSQWj6ayVlLT1/CmpflYUJHfmQg=="],
 
@@ -367,6 +374,8 @@
     "axios": ["axios@1.7.9", "", { "dependencies": { "follow-redirects": "^1.15.6", "form-data": "^4.0.0", "proxy-from-env": "^1.1.0" } }, "sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw=="],
 
     "axobject-query": ["axobject-query@4.1.0", "", {}, "sha512-qIj0G9wZbMGNLjLmg1PT6v2mE9AH2zlnADJD/2tC6E00hgmhUOfEB6greHPAfLRSufHqROIUTkw6E+M3lH0PTQ=="],
+
+    "babel-plugin-react-compiler": ["babel-plugin-react-compiler@19.0.0-beta-27714ef-20250124", "", { "dependencies": { "@babel/types": "^7.19.0" } }, "sha512-1AnF/dlvbIJzAjw5jEbDx7csHx772VP9AtrEg2CgUUD6MIu24j5ShxmBZ0tpfdb2pZtLVwcsoGylfZTzUoCr9w=="],
 
     "balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
