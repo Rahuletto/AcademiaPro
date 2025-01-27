@@ -20,8 +20,18 @@ export const months = [
 
 export default async function Attendance({ data }: { data: AllResponse }) {
 	const cal = await fetchCalendar();
+	if(!cal || !cal?.calendar) return (
+		<>
+			<section id="attendance">
+				<div className="flex justify-between items-center px-2 mb-1">
+					<h1 className="text-2xl font-semibold">Attendance</h1>
+				</div>
+				<div id="attendance-list" />
+			</section>
+		</>
+	);
 
-	const mappedCal = cal.calendar.flatMap((day) => {
+	const mappedCal = cal.calendar?.flatMap((day) => {
 		const month = months.findIndex(
 			(month) => month.trim() === day.month.split("'")[0].trim(),
 		);
