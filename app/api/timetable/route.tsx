@@ -7,7 +7,11 @@ import { encode } from "@/utils/Cookies";
 
 export async function GET() {
 	const cookie = await cookies();
-	const key = cookie.get("key")?.value ?? "";
+	const key = cookie.get("key")?.value;
+
+	if (!key) {
+		return new Response('Unauthorized', { status: 401 });
+	}
 
 	const { data, error } = await supabase.from("goscrape")
 		.select("timetable,ophour")
@@ -75,9 +79,10 @@ export async function GET() {
 	return new Response(await response.arrayBuffer(), {
 		headers: {
 			'Content-Type': 'image/png',
-			'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+			'Cache-Control': 'private, no-store, no-cache, must-revalidate, proxy-revalidate',
 			'Pragma': 'no-cache',
 			'Expires': '0',
+			'Vary': 'Cookie',
 		},
 	});
 }
