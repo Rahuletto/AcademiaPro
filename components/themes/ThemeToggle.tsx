@@ -5,6 +5,7 @@ import { Link } from "next-view-transitions";
 import React, { useState } from "react";
 import { createPortal } from "react-dom";
 import { BiBrush } from "react-icons/bi";
+import { FaChevronDown, FaChevronRight } from "react-icons/fa6";
 
 export default function ThemeToggle({
 	className,
@@ -65,10 +66,10 @@ export default function ThemeToggle({
 							onClick={(e) => {
 								e.stopPropagation();
 							}}
-							onKeyDown={() => {}}
-							className="relative w-[calc(100%-2rem)] sm:w-full max-w-96 m-4 rounded-3xl shadow-lg bg-light-background-normal dark:bg-dark-background-normal"
+							onKeyDown={() => { }}
+							className={`${dropdownOpen ? "max-h-[80vh] h-full" : "max-h-[calc(100vh-8rem)]"} relative w-[calc(100%-2rem)] sm:w-full max-w-96 m-4 rounded-3xl shadow-lg bg-light-background-normal dark:bg-dark-background-normal`}
 						>
-							<div className="max-h-[calc(100vh-8rem)] overflow-y-auto">
+							<div className={`h-full overflow-y-auto`}>
 								<ul
 									className="p-3 text-sm text-light-color dark:text-dark-color flex flex-col gap-1"
 									role="menu"
@@ -92,16 +93,20 @@ export default function ThemeToggle({
 									})}
 									<div className="relative">
 										<li
-											className={`cursor-pointer flex items-center justify-start gap-5 select-none rounded-xl font-semibold relative py-2.5 pl-3 pr-9 hover:bg-light-input dark:hover:bg-dark-input ${dropdownOpen ? "bg-light-input dark:bg-dark-input" : ""}`}
+											className={`cursor-pointer flex items-center justify-between gap-5 select-none rounded-xl font-semibold relative py-2.5 px-3 hover:bg-light-input dark:hover:bg-dark-input ${dropdownOpen ? "bg-light-input dark:bg-dark-input" : ""}`}
 											onClick={() => setDropdownOpen(!dropdownOpen)}
 										>
-											<div className="flex gap-1 rounded-full p-0.5 bg-black/10 dark:bg-white/10">
-												<div className="w-4 h-4 rounded-lg bg-light-accent dark:bg-dark-accent" />
+											<div className="flex gap-2 items-center">
+												<div className="flex gap-1 rounded-full p-0.5 bg-black/10 dark:bg-white/10">
+													<div className="w-4 h-4 rounded-lg bg-light-accent dark:bg-dark-accent" />
+												</div>
+												More Themes
 											</div>
-											More Themes
+											{dropdownOpen ? <FaChevronDown  /> :
+											<FaChevronRight />}
 										</li>
 										{dropdownOpen && (
-											<ul className="absolute left-0 right-0 mt-1 bg-light-background-normal dark:bg-dark-background-normal rounded-xl shadow-lg p-2 z-20 max-h-[40vh] overflow-y-auto">
+											<ul className="bg-light-background-normal dark:bg-dark-background-normal rounded-xl shadow-lg p-2 z-20 h-full overflow-y-auto">
 												{Themes.map((theme) => {
 													const isMainTheme = ["Light", "Dark", "Batman"].includes(theme.title);
 													if (!isMainTheme) {

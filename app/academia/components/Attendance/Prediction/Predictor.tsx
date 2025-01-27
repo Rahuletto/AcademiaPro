@@ -182,8 +182,8 @@ export default function Predictor({
 				)}
 			{titleSuffix && createPortal(
 				categorizedRanges.length > 0 && (
-					<span className="text-2xl font-semibold">
-						- Predicted
+					<span className="text-sm px-3 py-1 rounded-full bg-light-info-background dark:bg-dark-info-background border-dotted border-light-info-color border dark:border-dark-info-color text-light-info-color dark:text-dark-info-color">
+						Prediction
 					</span>
 				),
 				titleSuffix
