@@ -179,4 +179,10 @@ export const urls: DirLink[] = [
 		type: "unofficial",
 		description: "Chrome extension to make academia better.",
 	},
+	{
+		site: "Acehive",
+		url: "https://acehive.vercel.app",
+		type: "unofficial",
+		description: "Your one-stop destination for Resources.",
+	},
 ].sort((a, b) => a.site.localeCompare(b.site));
