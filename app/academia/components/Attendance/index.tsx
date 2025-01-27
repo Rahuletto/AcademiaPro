@@ -53,7 +53,10 @@ export default async function Attendance({ data }: { data: AllResponse }) {
 		<>
 			<section id="attendance">
 				<div className="flex justify-between items-center px-2 mb-1">
-					<h1 className="text-2xl font-semibold">Attendance</h1>
+					<div className="flex items-center gap-2">
+						<h1 className="text-2xl font-semibold">Attendance</h1>
+						<div id="attendance-title-suffix" />
+					</div>
 					<Suspense fallback={<Loading size="xl" />}>
 						<Prediction data={data} cal={mappedCal} calendar={cal.calendar} />
 					</Suspense>

@@ -37,14 +37,14 @@ export default function Predictor({
 	setIsOpen: Dispatch<SetStateAction<boolean>>;
 	isOpen: boolean;
 }) {
+	const [categorizedRanges, setCategorizedRanges] = useState<CategorizedDateRange[]>([]);
+	const [titleSuffix, setTitleSuffix] = useState<HTMLDivElement | null>(null);
+	
 	function onClose() {
 		setIsOpen(false);
 	}
 	const original = data?.attendance?.attendance;
 	const [attendance, setAttendance] = useState<AttendanceCourse[]>(original);
-	const [categorizedDateRanges, setCategorizedDateRanges] = useState<
-		CategorizedDateRange[]
-	>([]);
 
 	const [priority, setPriority] = useState<AttendanceCourse[] | undefined>([]);
 	const [remaining, setRemaining] = useState<AttendanceCourse[] | undefined>(
@@ -61,26 +61,29 @@ export default function Predictor({
 
 		list.current = document.getElementById("attendance-list") as HTMLDivElement;
 
+		setTitleSuffix(document.getElementById("attendance-title-suffix") as HTMLDivElement);
+
 		return () => {
 			list.current = null;
 			predictWindow.current = null;
+			setTitleSuffix(null);
 		};
 	}, []);
 
 	useEffect(() => {
-		if (categorizedDateRanges?.[0]) {
+		if (categorizedRanges?.[0]) {
 			const att = predictAttendance(
 				original,
 				data.timetable.schedule,
 				cal,
-				categorizedDateRanges,
+				categorizedRanges,
 			);
 
 			setAttendance(att);
 		} else {
 			setAttendance(original);
 		}
-	}, [categorizedDateRanges, original]);
+	}, [categorizedRanges, original]);
 
 	useEffect(() => {
 		if (attendance) {
@@ -148,8 +151,8 @@ export default function Predictor({
 							</div>
 							<Suspense fallback={<Loading size="xl" />}>
 								<LeaveODRangeCalendar
-									categorizedRanges={categorizedDateRanges}
-									setCategorizedRanges={setCategorizedDateRanges}
+									categorizedRanges={categorizedRanges}
+									setCategorizedRanges={setCategorizedRanges}
 									calendar={calendar}
 								/>
 							</Suspense>
@@ -177,6 +180,14 @@ export default function Predictor({
 					</div>,
 					list.current,
 				)}
+			{titleSuffix && createPortal(
+				categorizedRanges.length > 0 && (
+					<span className="text-xs px-3 py-1 ml-3 font-medium rounded-full bg-light-info-background dark:bg-dark-info-background border-dotted border-light-info-color border dark:border-dark-info-color text-light-info-color dark:text-dark-info-color">
+						Prediction
+					</span>
+				),
+				titleSuffix
+			)}
 		</>
 	);
 }
