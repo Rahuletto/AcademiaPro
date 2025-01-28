@@ -15,7 +15,7 @@ export default function Popup() {
 
 	function clicked() {
 		setOpened(false);
-		localStorage.set("popup", true);
+		localStorage.setItem("popup", "true");
 	}
 
 	return (
