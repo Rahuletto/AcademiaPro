@@ -6782,6 +6782,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Gowtham P",
+        "url": "https://www.srmist.edu.in/faculty/dr-gowtham-p/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/gowtham.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Mr. Jishnu K S",
         "url": "https://www.srmist.edu.in/faculty/jishnu-k-s/",
         "Designation": "Assistant Professor",
