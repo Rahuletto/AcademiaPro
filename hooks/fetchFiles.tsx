@@ -1,14 +1,14 @@
 "use server";
 import { cache } from "react";
 import { cookies } from "next/headers";
-import { loginUrl } from "@/utils/URL";
+import { filesUrl } from "@/utils/URL";
 import type { CoursePapers } from "@/app/academia/library/library";
 
 
 async function fetchFiles() {
     const cookie = (await cookies()).get("key");
 
-    const response = await fetch(`${loginUrl}/files`, {
+    const response = await fetch(`${filesUrl}/files`, {
         method: "GET",
         cache: "force-cache",
         next: {
