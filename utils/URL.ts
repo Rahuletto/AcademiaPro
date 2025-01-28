@@ -1,4 +1,4 @@
-const serverUrls = [process.env.NEXT_PUBLIC_URL];
+const serverUrls = [process.env.NEXT_PUBLIC_URL, process.env.NEXT_PUBLIC_URL_GOAT, process.env.NEXT_PUBLIC_URL_ONE];
 
 export const revalUrl = serverUrls[0];
 export const loginUrl = process.env.NEXT_PUBLIC_FILES_URL;
