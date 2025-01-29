@@ -16,12 +16,12 @@ export default async function DayOrder({
 		<div
 			role="banner"
 			className={`w-fit cursor-default rounded-full px-3 py-1 ${
-				!day || day.includes("-")
+				!day || day?.includes("-")
 					? "bg-light-error-background dark:bg-dark-error-background"
 					: "bg-light-side dark:bg-dark-side"
 			} ${props.className}`}
 		>
-			{day.includes("-") ? (
+			{day?.includes("-") ? (
 				<span
 					aria-hidden="true"
 					// biome-ignore lint/style/useNamingConvention: <explanation>

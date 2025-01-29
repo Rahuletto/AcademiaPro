@@ -30,5 +30,5 @@ export default function useSearch({ searchQuery }: { searchQuery: string }) {
 	return { priority, officials, others };
 }
 function includesSubstring(str: string, query: string) {
-	return str.toLowerCase().includes(query.toLowerCase());
+	return str.toLowerCase()?.includes(query.toLowerCase());
 }
