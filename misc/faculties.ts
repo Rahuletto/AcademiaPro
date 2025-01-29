@@ -59,15 +59,6 @@ export const urls = [
     {
         "DepartmentCode": 24109,
         "DepartmentName": "Career Development Centre (CDC-CET)",
-        "title": "Dr. Arul Dayanand S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-arul-dayanand/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Applied & Computational Linguistics, Educational Technology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_7352.jpg"
-    },
-    {
-        "DepartmentCode": 24109,
-        "DepartmentName": "Career Development Centre (CDC-CET)",
         "title": "Dr. Balamurugan S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-balamurugan/",
         "Designation": "Assistant Professor",
@@ -90,16 +81,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-kavitha-v/",
         "Designation": "Assistant Professor",
         "Specialization": "Indian Fiction",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/KAVI_-removebg-preview-1.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/KAVI_-removebg-preview-1.png"
     },
     {
         "DepartmentCode": 24109,
         "DepartmentName": "Career Development Centre (CDC-CET)",
-        "title": "Dr. Krishna Kumari R",
-        "url": "https://www.srmist.edu.in/faculty/dr-krishna-kumari-r/",
-        "Designation": "Assistant professor",
-        "Specialization": "Formal Languages and Automata Theory",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/04/2023-08-02-13-20-16-527.jpg"
+        "title": "Dr. Mahendran K",
+        "url": "https://www.srmist.edu.in/faculty/mr-k-mahendran/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_7323.jpg"
     },
     {
         "DepartmentCode": 24109,
@@ -122,20 +113,11 @@ export const urls = [
     {
         "DepartmentCode": 24109,
         "DepartmentName": "Career Development Centre (CDC-CET)",
-        "title": "Dr. Nizamudeen",
-        "url": "https://www.srmist.edu.in/faculty/dr-nizamudeen-anvar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Human resource management",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/10/Nizam-pic-for-profile-compressed-edit-20230627211237.jpg"
-    },
-    {
-        "DepartmentCode": 24109,
-        "DepartmentName": "Career Development Centre (CDC-CET)",
         "title": "Dr. Palanisamy L",
         "url": "https://www.srmist.edu.in/faculty/dr-palanisamy-l/",
         "Designation": "Assistant Professor",
         "Specialization": "Neural Networks, Dynamical System",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PP2-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Photo.jpg"
     },
     {
         "DepartmentCode": 24109,
@@ -149,11 +131,20 @@ export const urls = [
     {
         "DepartmentCode": 24109,
         "DepartmentName": "Career Development Centre (CDC-CET)",
-        "title": "Dr. Sethupathy K",
-        "url": "https://www.srmist.edu.in/faculty/dr-sethupathy-k/",
+        "title": "Dr. Rohini R",
+        "url": "https://www.srmist.edu.in/faculty/dr-rohini-r/",
         "Designation": "Assistant Professor",
-        "Specialization": "Management",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/02/02.jpg"
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 24109,
+        "DepartmentName": "Career Development Centre (CDC-CET)",
+        "title": "Dr. Sakthivel R",
+        "url": "https://www.srmist.edu.in/faculty/mr-r-sakthivel/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Reliability Theory, Bayesian Network, Markov Models",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Sakthi-Photo.jpg"
     },
     {
         "DepartmentCode": 24109,
@@ -176,6 +167,15 @@ export const urls = [
     {
         "DepartmentCode": 24109,
         "DepartmentName": "Career Development Centre (CDC-CET)",
+        "title": "Dr. Sundar Singh D",
+        "url": "https://www.srmist.edu.in/faculty/dr-sundar-singh-d/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Sundar.jpg"
+    },
+    {
+        "DepartmentCode": 24109,
+        "DepartmentName": "Career Development Centre (CDC-CET)",
         "title": "Dr. Suresh P",
         "url": "https://www.srmist.edu.in/faculty/dr-suresh-p/",
         "Designation": "Assistant professor",
@@ -185,11 +185,20 @@ export const urls = [
     {
         "DepartmentCode": 24109,
         "DepartmentName": "Career Development Centre (CDC-CET)",
+        "title": "Dr. Vijayalakshmi B",
+        "url": "https://www.srmist.edu.in/faculty/dr-vijayalakshmi-b/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Untitled-21.jpg"
+    },
+    {
+        "DepartmentCode": 24109,
+        "DepartmentName": "Career Development Centre (CDC-CET)",
         "title": "Dr. Vijayashree T",
         "url": "https://www.srmist.edu.in/faculty/dr-vijayashree-t/",
         "Designation": "Assistant Professor",
         "Specialization": "Image Processing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/viji-removebg-preview.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-09-at-9.48.59-AM.jpeg"
     },
     {
         "DepartmentCode": 24109,
@@ -226,15 +235,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Verbal Aptitude and Soft Skills",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/04/DSC_7361.jpg"
-    },
-    {
-        "DepartmentCode": 24109,
-        "DepartmentName": "Career Development Centre (CDC-CET)",
-        "title": "Mr. Mahendran K",
-        "url": "https://www.srmist.edu.in/faculty/mr-k-mahendran/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_7323.jpg"
     },
     {
         "DepartmentCode": 24109,
@@ -298,15 +298,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Verbal Aptitude, Rhetorical Devices, Rhetorical Analysis, Soft Skills",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_7305.jpg"
-    },
-    {
-        "DepartmentCode": 24109,
-        "DepartmentName": "Career Development Centre (CDC-CET)",
-        "title": "Mr. Sakthivel R",
-        "url": "https://www.srmist.edu.in/faculty/mr-r-sakthivel/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_7306.jpg"
     },
     {
         "DepartmentCode": 24109,
@@ -392,11 +383,29 @@ export const urls = [
     {
         "DepartmentCode": 24109,
         "DepartmentName": "Career Development Centre (CDC-CET)",
+        "title": "Ms. Aathira A S",
+        "url": "https://www.srmist.edu.in/faculty/ms-aathira-a-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Verbal Aptitude",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Untitled-1-1.jpg"
+    },
+    {
+        "DepartmentCode": 24109,
+        "DepartmentName": "Career Development Centre (CDC-CET)",
         "title": "Ms. Lora S",
         "url": "https://www.srmist.edu.in/faculty/ms-s-lora/",
         "Designation": "Assisstant Professor",
         "Specialization": "Communication English, Verbal Aptitude, Children's Literature, Postmodernism",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_7316.jpg"
+    },
+    {
+        "DepartmentCode": 24109,
+        "DepartmentName": "Career Development Centre (CDC-CET)",
+        "title": "Ms. Nithya T",
+        "url": "https://www.srmist.edu.in/faculty/ms-nithya-t/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Operations Research, Inventory Models",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Nithya.jpg"
     },
     {
         "DepartmentCode": 24109,
@@ -419,20 +428,20 @@ export const urls = [
     {
         "DepartmentCode": 28900,
         "DepartmentName": "Career Development Centre (CDC-CSH)",
-        "title": "Dr. Sathish K",
-        "url": "https://www.srmist.edu.in/faculty/dr-sathish-k/",
-        "Designation": "Assistant Professor and HOD",
-        "Specialization": "Mathematics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/3-1-scaled.jpg"
+        "title": "Dr. Deepalakshmi S",
+        "url": "https://www.srmist.edu.in/faculty/s-deepalakshmi/",
+        "Designation": "Assistant Professor - OG, & HOD",
+        "Specialization": "English",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/600479-new.jpg"
     },
     {
         "DepartmentCode": 28900,
         "DepartmentName": "Career Development Centre (CDC-CSH)",
-        "title": "Deepalakshmi S",
-        "url": "https://www.srmist.edu.in/faculty/s-deepalakshmi/",
-        "Designation": "Assistant Professor - OG",
-        "Specialization": "English",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/600479-new.jpg"
+        "title": "Dr. Sathish K",
+        "url": "https://www.srmist.edu.in/faculty/dr-sathish-k/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Mathematics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/3-1-scaled.jpg"
     },
     {
         "DepartmentCode": 28900,
@@ -531,7 +540,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-dhanalakshmi-k-2/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Dhanalakshmi-profile-pic-1.jpg"
     },
     {
         "DepartmentCode": 40127,
@@ -548,8 +557,8 @@ export const urls = [
         "title": "Dr. Manoraj P",
         "url": "https://www.srmist.edu.in/faculty/dr-manoraj-p/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "AYURVEDA AND YOGA",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Untitled-design_20240814_144635_0000.png"
     },
     {
         "DepartmentCode": 40127,
@@ -575,8 +584,17 @@ export const urls = [
         "title": "Dr. Vidhya Shankari S",
         "url": "https://www.srmist.edu.in/faculty/dr-vidhya-shankari-s-2/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
+        "Specialization": "Yogic philosophy, Yoga therapy",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/Dr.-Vidhya-Shankari-S.jpg"
+    },
+    {
+        "DepartmentCode": 40127,
+        "DepartmentName": "Centre for Yoga",
+        "title": "Dr. Yoganandhan V",
+        "url": "https://www.srmist.edu.in/faculty/dr-yoganandhan-v/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Yoga, Yoga Therapist, Naturopathy Therapist, Varma & Massage Therapist",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/yoga-photo.bmp"
     },
     {
         "DepartmentCode": 40127,
@@ -608,20 +626,29 @@ export const urls = [
     {
         "DepartmentCode": 13461,
         "DepartmentName": "Department of Aerospace Engineering",
-        "title": "Dr. Selvakumaran T",
-        "url": "https://www.srmist.edu.in/faculty/dr-selvakumaran-t/",
-        "Designation": "Associate Professor",
-        "Specialization": "Solid propellant combustion",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr-TS.jpg"
-    },
-    {
-        "DepartmentCode": 13461,
-        "DepartmentName": "Department of Aerospace Engineering",
         "title": "Dr. Sivakumar S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-sivakumar/",
         "Designation": "Associate Professor",
         "Specialization": "Vibrations , Aero elasticity, Aircraft Structures, Finite Element Method, Aircraft maintenance",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/s-sivakumar.png"
+    },
+    {
+        "DepartmentCode": 13461,
+        "DepartmentName": "Department of Aerospace Engineering",
+        "title": "Dr. Gurusideswar S",
+        "url": "https://www.srmist.edu.in/faculty/dr-gurusideswar-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Aerospace Engineering - Composite Structures",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr-Guru.jpg"
+    },
+    {
+        "DepartmentCode": 13461,
+        "DepartmentName": "Department of Aerospace Engineering",
+        "title": "Dr. Selvakumaran T",
+        "url": "https://www.srmist.edu.in/faculty/dr-selvakumaran-t/",
+        "Designation": "Associate Professor",
+        "Specialization": "Solid propellant combustion",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr-TS.jpg"
     },
     {
         "DepartmentCode": 13461,
@@ -644,15 +671,6 @@ export const urls = [
     {
         "DepartmentCode": 13461,
         "DepartmentName": "Department of Aerospace Engineering",
-        "title": "Dr. Gurusideswar S",
-        "url": "https://www.srmist.edu.in/faculty/dr-gurusideswar-s/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Aerospace Engineering - Composite Structures",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr-Guru.jpg"
-    },
-    {
-        "DepartmentCode": 13461,
-        "DepartmentName": "Department of Aerospace Engineering",
         "title": "Dr. Kannan B T",
         "url": "https://www.srmist.edu.in/faculty/dr-kannan-b-t/",
         "Designation": "Assistant Professor",
@@ -671,6 +689,15 @@ export const urls = [
     {
         "DepartmentCode": 13461,
         "DepartmentName": "Department of Aerospace Engineering",
+        "title": "Dr. Mahendra Perumal G",
+        "url": "https://www.srmist.edu.in/faculty/dr-mahendra-perumal-g/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Aerospace Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mr-GMP-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 13461,
+        "DepartmentName": "Department of Aerospace Engineering",
         "title": "Dr. Malaikannan G",
         "url": "https://www.srmist.edu.in/faculty/dr-malaikannan-g/",
         "Designation": "Assistant Professor",
@@ -684,7 +711,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-r-mohamed-arif/",
         "Designation": "Assistant Professor",
         "Specialization": "Aerospace Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/ARIF3.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/ARIF2.jpeg"
     },
     {
         "DepartmentCode": 13461,
@@ -694,6 +721,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "PROPULSION, AERODYNAMICS",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/MUTHURAM-PHOTO-with-blazer.jpg"
+    },
+    {
+        "DepartmentCode": 13461,
+        "DepartmentName": "Department of Aerospace Engineering",
+        "title": "Dr. Rajkumar S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-rajkumar/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Aerospace Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/DSC_3849.jpg"
     },
     {
         "DepartmentCode": 13461,
@@ -739,24 +775,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mr-Iynthezhuthon.jpg"
-    },
-    {
-        "DepartmentCode": 13461,
-        "DepartmentName": "Department of Aerospace Engineering",
-        "title": "Mr. Mahendra Perumal G",
-        "url": "https://www.srmist.edu.in/faculty/g-mahendra-perumal/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Aerospace Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mr-GMP-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 13461,
-        "DepartmentName": "Department of Aerospace Engineering",
-        "title": "Mr. Rajkumar S",
-        "url": "https://www.srmist.edu.in/faculty/mr-s-rajkumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Aerospace Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/DSC_3849.jpg"
     },
     {
         "DepartmentCode": 13461,
@@ -845,8 +863,8 @@ export const urls = [
         "title": "Dr. Kungumaselvan T",
         "url": "https://www.srmist.edu.in/faculty/dr-kungumaselvan-t/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Agricultural Extension",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Kun-copy.jpg"
     },
     {
         "DepartmentCode": 114911,
@@ -872,8 +890,8 @@ export const urls = [
         "title": "Dr. Sasmitha R",
         "url": "https://www.srmist.edu.in/faculty/dr-sasmitha-r/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Assistant Professor (Agricultural Extension)",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr.Sasmitha-R.jpg"
     },
     {
         "DepartmentCode": 28999,
@@ -995,11 +1013,11 @@ export const urls = [
     {
         "DepartmentCode": 13458,
         "DepartmentName": "Department of Automobile Engineering",
-        "title": "Dr. Rajendran R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-rajendran/",
-        "Designation": "Professor and Head",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Rajendran-New.png"
+        "title": "Dr. Kamalakkannan K",
+        "url": "https://www.srmist.edu.in/faculty/dr-k-kamalakkannan/",
+        "Designation": "Professor & Head",
+        "Specialization": "Noise Vibration Harshness, Suspension System, Vehicle Design and Development, Electric and Hybrid Vehicles",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Kamalakannan_Auto.jpg"
     },
     {
         "DepartmentCode": 13458,
@@ -1022,11 +1040,38 @@ export const urls = [
     {
         "DepartmentCode": 13458,
         "DepartmentName": "Department of Automobile Engineering",
-        "title": "Dr. Kamalakkannan K",
-        "url": "https://www.srmist.edu.in/faculty/dr-k-kamalakkannan/",
+        "title": "Dr. Rajendran R",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-rajendran/",
+        "Designation": "Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Rajendran-New.png"
+    },
+    {
+        "DepartmentCode": 13458,
+        "DepartmentName": "Department of Automobile Engineering",
+        "title": "Dr. Nanthakumar A.J.D",
+        "url": "https://www.srmist.edu.in/faculty/a-j-d-nanthakumar/",
         "Designation": "Associate Professor",
-        "Specialization": "Noise Vibration Harshness, Suspension System, Vehicle Design and Development, Electric and Hybrid Vehicles",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/IMG-20230315-WA00061.jpg"
+        "Specialization": "Computational Fluid Dynamics, Vehicle Dynamics, Simulation and Analysis",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Nanthakumar-New.png"
+    },
+    {
+        "DepartmentCode": 13458,
+        "DepartmentName": "Department of Automobile Engineering",
+        "title": "Dr. Prabhu C",
+        "url": "https://www.srmist.edu.in/faculty/dr-c-prabhu/",
+        "Designation": "Associate Professor",
+        "Specialization": "Bio-fuels , Emission control systems, Advanced Engine technology, Combustion kinetics, Low temperature combustion strategies for IC engines, Hydrogen based energy systems, Thermal Management of Automotive Systems",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Prabhu-New.png"
+    },
+    {
+        "DepartmentCode": 13458,
+        "DepartmentName": "Department of Automobile Engineering",
+        "title": "Dr. Prakash T",
+        "url": "https://www.srmist.edu.in/faculty/dr-t-prakash/",
+        "Designation": "Associate Professor",
+        "Specialization": "Automobile Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Prakash-New.png"
     },
     {
         "DepartmentCode": 13458,
@@ -1058,29 +1103,11 @@ export const urls = [
     {
         "DepartmentCode": 13458,
         "DepartmentName": "Department of Automobile Engineering",
-        "title": "Dr. Nanthakumar A.J.D",
-        "url": "https://www.srmist.edu.in/faculty/a-j-d-nanthakumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computational Fluid Dynamics, Vehicle Dynamics, Simulation and Analysis",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Nanthakumar-New.png"
-    },
-    {
-        "DepartmentCode": 13458,
-        "DepartmentName": "Department of Automobile Engineering",
-        "title": "Dr. Prabhu C",
-        "url": "https://www.srmist.edu.in/faculty/dr-c-prabhu/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Bio-fuels , Emission control systems, Advanced Engine technology, Combustion kinetics, Low temperature combustion strategies for IC engines, Hydrogen based energy systems, Thermal Management of Automotive Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Prabhu-New.png"
-    },
-    {
-        "DepartmentCode": 13458,
-        "DepartmentName": "Department of Automobile Engineering",
-        "title": "Dr. Prakash T",
-        "url": "https://www.srmist.edu.in/faculty/dr-t-prakash/",
+        "title": "Dr. Madhan Kumar S",
+        "url": "https://www.srmist.edu.in/faculty/mr-s-madhan-kumar/",
         "Designation": "Assistant Professor",
         "Specialization": "Automobile Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Prakash-New.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Madhan-New.png"
     },
     {
         "DepartmentCode": 13458,
@@ -1117,15 +1144,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Automobile Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Logeshwaran-New.png"
-    },
-    {
-        "DepartmentCode": 13458,
-        "DepartmentName": "Department of Automobile Engineering",
-        "title": "Mr. Madhan Kumar S",
-        "url": "https://www.srmist.edu.in/faculty/mr-s-madhan-kumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Automobile Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Madhan-New.png"
     },
     {
         "DepartmentCode": 13458,
@@ -1214,13 +1232,13 @@ export const urls = [
         "title": "Dr. Nithya T G",
         "url": "https://www.srmist.edu.in/faculty/dr-nithya-t-g-2/",
         "Designation": "Professor and Head",
-        "Specialization": "",
+        "Specialization": "Biochemistry, Biotechnology ,Stem cell Biology, Cancer research, Herbal research",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/600045.jpg"
     },
     {
         "DepartmentCode": 23817,
         "DepartmentName": "Department Of Biochemistry",
-        "title": "Dr. Suganya I",
+        "title": "Dr. Suganya. I",
         "url": "https://www.srmist.edu.in/faculty/suganya-i/",
         "Designation": "Assistant Professor",
         "Specialization": "Biochemistry",
@@ -1238,20 +1256,20 @@ export const urls = [
     {
         "DepartmentCode": 13509,
         "DepartmentName": "Department of Biomedical Engineering",
-        "title": "Dr. Varshini Karthik",
-        "url": "https://www.srmist.edu.in/faculty/dr-varshini-karthik/",
-        "Designation": "Professor and Head",
+        "title": "Dr. Snekhalatha U",
+        "url": "https://www.srmist.edu.in/faculty/dr-u-snekhalatha/",
+        "Designation": "Professor & Head",
         "Specialization": "Biomedical Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/10/VK-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0051_DSC_9254.jpg"
     },
     {
         "DepartmentCode": 13509,
         "DepartmentName": "Department of Biomedical Engineering",
-        "title": "Dr. Snekhalatha U",
-        "url": "https://www.srmist.edu.in/faculty/dr-u-snekhalatha/",
+        "title": "Dr. Varshini Karthik",
+        "url": "https://www.srmist.edu.in/faculty/dr-varshini-karthik/",
         "Designation": "Professor",
         "Specialization": "Biomedical Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0051_DSC_9254.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Photo-Dec-25.jpeg"
     },
     {
         "DepartmentCode": 13509,
@@ -1292,6 +1310,15 @@ export const urls = [
     {
         "DepartmentCode": 13509,
         "DepartmentName": "Department of Biomedical Engineering",
+        "title": "Deboleena Sadhukhan",
+        "url": "https://www.srmist.edu.in/faculty/deboleena-sadhukhan/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Biomedical Signal and Image Processing and Analysis, Automated health diagnosis",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13509,
+        "DepartmentName": "Department of Biomedical Engineering",
         "title": "Dr. Anitha G",
         "url": "https://www.srmist.edu.in/faculty/dr-g-anitha/",
         "Designation": "Assistant Professor",
@@ -1301,20 +1328,20 @@ export const urls = [
     {
         "DepartmentCode": 13509,
         "DepartmentName": "Department of Biomedical Engineering",
-        "title": "Dr. Ashwin Kumar N",
-        "url": "https://www.srmist.edu.in/faculty/dr-n-ashwin-kumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Biomedical Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0061_DSC_9244.jpg"
-    },
-    {
-        "DepartmentCode": 13509,
-        "DepartmentName": "Department of Biomedical Engineering",
         "title": "Dr. Bhargavi Haripriya  A",
         "url": "https://www.srmist.edu.in/faculty/a-bhargavi-haripriya/",
         "Designation": "Assistant Professor",
         "Specialization": "Biomedical Engineering, Image Processing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Bhargavi-Haripriya-A.png"
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13509,
+        "DepartmentName": "Department of Biomedical Engineering",
+        "title": "Dr. Jaligam Murali Mohan",
+        "url": "https://www.srmist.edu.in/faculty/dr-jaligam-murali-mohan/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/DSC_9309-2.jpg"
     },
     {
         "DepartmentCode": 13509,
@@ -1373,6 +1400,15 @@ export const urls = [
     {
         "DepartmentCode": 13509,
         "DepartmentName": "Department of Biomedical Engineering",
+        "title": "Dr. Shabeeb Ahamed KP",
+        "url": "https://www.srmist.edu.in/faculty/dr-shabeeb-ahamed-kp/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Biomedical Device Development",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/shabeeb.jpg"
+    },
+    {
+        "DepartmentCode": 13509,
+        "DepartmentName": "Department of Biomedical Engineering",
         "title": "Dr. Sruthi Ann Alex",
         "url": "https://www.srmist.edu.in/faculty/dr-sruthi-ann-alex/",
         "Designation": "Assistant Professor",
@@ -1391,11 +1427,11 @@ export const urls = [
     {
         "DepartmentCode": 13505,
         "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Vairamani M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-vairamani/",
-        "Designation": "Dean, School of Bio Engineering",
-        "Specialization": "Mass Spectrometry/Organic Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/10/Dr__Vairamani-Dean-Bio-a.png"
+        "title": "Dr. Sahabudeen S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-sahabudeen/",
+        "Designation": "Associate Professor and Head",
+        "Specialization": "Cellular & Molecular Neuroscience, Pharmaceutical Biotechnology, Molecular Immunology, Tissue Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/FLD_0258-copy.jpg"
     },
     {
         "DepartmentCode": 13505,
@@ -1454,15 +1490,6 @@ export const urls = [
     {
         "DepartmentCode": 13505,
         "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Habeeb S. K. M",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-k-m-habeeb/",
-        "Designation": "Associate Professor",
-        "Specialization": "Bioinformatics & Computational Biology, Genomics - Next Generation Sequencing, Computer Aided Drug Design",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr.-Habeeb-S-K-M.jpg"
-    },
-    {
-        "DepartmentCode": 13505,
-        "DepartmentName": "Department of Biotechnology",
         "title": "Dr. Iyappan S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-iyappan/",
         "Designation": "Associate Professor",
@@ -1486,15 +1513,6 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Nano-biosensor Technology for Point-of-care Diagnosis",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0021_DSC_9290.jpg"
-    },
-    {
-        "DepartmentCode": 13505,
-        "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Megala J",
-        "url": "https://www.srmist.edu.in/faculty/dr-j-megala/",
-        "Designation": "Associate Professor",
-        "Specialization": "Cancer Biology, Human Genetics, Immunogenetics, Clinical Biochemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0036_DSC_9272.jpg"
     },
     {
         "DepartmentCode": 13505,
@@ -1535,29 +1553,20 @@ export const urls = [
     {
         "DepartmentCode": 13505,
         "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Raja N. S.",
-        "url": "https://www.srmist.edu.in/faculty/dr-n-s-raja/",
-        "Designation": "Associate Professor",
-        "Specialization": "Molecular biology, Structural Biology, Membrane Biology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0025_DSC_9285.jpg"
-    },
-    {
-        "DepartmentCode": 13505,
-        "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Rajnish K.N",
-        "url": "https://www.srmist.edu.in/faculty/dr-k-n-rajnish/",
-        "Designation": "Associate Professor",
-        "Specialization": "Functional genomics, recombinant DNA technology, molecular microbiology Phone Number 91-44-27417817",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0022_DSC_9289.jpg"
-    },
-    {
-        "DepartmentCode": 13505,
-        "DepartmentName": "Department of Biotechnology",
         "title": "Dr. Ramani K",
         "url": "https://www.srmist.edu.in/faculty/dr-k-ramani/",
         "Designation": "Associate Professor",
         "Specialization": "Environmental Biotechnology, Industrial Microbiology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0019_DSC_9294.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Dr. Rex Arunraj D",
+        "url": "https://www.srmist.edu.in/faculty/dr-d-rex-arunraj/",
+        "Designation": "Associate Professor",
+        "Specialization": "Integrative Plant Biology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr.-Rex-Arunraj-D.jpg"
     },
     {
         "DepartmentCode": 13505,
@@ -1580,11 +1589,11 @@ export const urls = [
     {
         "DepartmentCode": 13505,
         "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Sahabudeen S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-sahabudeen/",
+        "title": "Dr. S. K. M. Habeeb",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-k-m-habeeb/",
         "Designation": "Associate Professor",
-        "Specialization": "Cellular & Molecular Neuroscience, Pharmaceutical Biotechnology, Molecular Immunology, Tissue Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/SAHA-2022-1.jpeg"
+        "Specialization": "Bioinformatics & Computational Biology, Genomics - Next Generation Sequencing, Computer Aided Drug Design",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr.-Habeeb-S-K-M.jpg"
     },
     {
         "DepartmentCode": 13505,
@@ -1598,11 +1607,11 @@ export const urls = [
     {
         "DepartmentCode": 13505,
         "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Senthilkumar P",
-        "url": "https://www.srmist.edu.in/faculty/dr-p-senthilkumar/",
+        "title": "Dr. Shobana.S",
+        "url": "https://www.srmist.edu.in/faculty/dr-shobana-s/",
         "Designation": "Associate Professor",
-        "Specialization": "Plant Pathogen Interactions, Bioremediation, Defense-related proteins",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_0629-copy-1-e1711969701384.png"
+        "Specialization": "Phage Biology and Computational Biology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/5784-1.jpg"
     },
     {
         "DepartmentCode": 13505,
@@ -1630,6 +1639,15 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Molecular Biology, Plant virology, Plant Biotechnology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0041_DSC_9265.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Dr. Thirumurthy Madhavan",
+        "url": "https://www.srmist.edu.in/faculty/dr-thirumurthy-madhavan/",
+        "Designation": "Associate Professor",
+        "Specialization": "Bioinformatics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG-20230405-WA0008-2.jpg"
     },
     {
         "DepartmentCode": 13505,
@@ -1670,15 +1688,6 @@ export const urls = [
     {
         "DepartmentCode": 13505,
         "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Anil Annamneedi",
-        "url": "https://www.srmist.edu.in/faculty/dr-anil-annamneedi/",
-        "Designation": "Research Assistant Professor",
-        "Specialization": "Neuroscience",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/Profile_Bio-Tech_0002_DSC_9311-1.jpg"
-    },
-    {
-        "DepartmentCode": 13505,
-        "DepartmentName": "Department of Biotechnology",
         "title": "Dr. Anju T",
         "url": "https://www.srmist.edu.in/faculty/dr-t-anju/",
         "Designation": "Assistant Professor",
@@ -1701,7 +1710,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-bibin-g-anand/",
         "Designation": "Research Assistant Professor",
         "Specialization": "Neurodegeneration and Protein Biophysics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/Bibin-.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/Bibin_edited-e1730915152588.jpg"
     },
     {
         "DepartmentCode": 13505,
@@ -1760,10 +1769,28 @@ export const urls = [
     {
         "DepartmentCode": 13505,
         "DepartmentName": "Department of Biotechnology",
+        "title": "Dr. Nitya Nandkishore",
+        "url": "https://www.srmist.edu.in/faculty/dr-nitya-nandkishore/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Developmental biology, stem cells",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/nitya.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Dr. Prabakaran D S",
+        "url": "https://www.srmist.edu.in/faculty/dr-prabakaran-d-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Radiation Resistance (X-ray, C-ion), EGFR Signaling, Notch Signaling, Epithelial Mesenchymal Transition (EMT), Cancer Stem Cells (CSCs), Cancer Immunotherapy, Radiation Protection.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Prabakaran.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
         "title": "Dr. Priya Swaminathan",
         "url": "https://www.srmist.edu.in/faculty/priya-swaminathan/",
         "Designation": "Assistant Professor",
-        "Specialization": "Bioinformatics",
+        "Specialization": "Computer aided drug designing, Bioinformatics",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0091_DSC_9211.jpg"
     },
     {
@@ -1818,16 +1845,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/satish-kumar-r/",
         "Designation": "Assistant Professor",
         "Specialization": "Biofilms and microbiomes (Probiotic & pathogen models), Nematology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Picture2-1.jpg"
-    },
-    {
-        "DepartmentCode": 13505,
-        "DepartmentName": "Department of Biotechnology",
-        "title": "Dr. Sivaramakrishnan V",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-sivaramakrishnan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Cancer Biology and Molecular cancer therapeutics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0034_DSC_9275.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/Final-SKR-Upload-2.1.2025.jpg"
     },
     {
         "DepartmentCode": 13505,
@@ -1868,6 +1886,105 @@ export const urls = [
     {
         "DepartmentCode": 13505,
         "DepartmentName": "Department of Biotechnology",
+        "title": "Dr. Viswanathan V",
+        "url": "https://www.srmist.edu.in/faculty/dr-viswanathan-v/",
+        "Designation": "Scientist",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/viswananthan.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Ms. Ambikah Gandhi Mathi A G",
+        "url": "https://www.srmist.edu.in/faculty/ms-ambikah-gandhi-mathi-a-g/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/121.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Ms. Suthamathi G",
+        "url": "https://www.srmist.edu.in/faculty/ms-suthamathi-g/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/suthamathi.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Mr. Rajasekar K",
+        "url": "https://www.srmist.edu.in/faculty/mr-rajasekar-k/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/rajasekar.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Mr. Udhayarasu B",
+        "url": "https://www.srmist.edu.in/faculty/mr-udhayarasu-b/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/udhayarasu.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Ms. Jayanthi S",
+        "url": "https://www.srmist.edu.in/faculty/ms-jayanthi-s/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "BIOENGINEERING",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/jayanthi.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Ms. Meera Bai B",
+        "url": "https://www.srmist.edu.in/faculty/ms-meera-bai-b/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/meera.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Ms. Peatrise Geofferina I",
+        "url": "https://www.srmist.edu.in/faculty/ms-peatrise-geofferina-i/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "Human Genetics and Molecular Biology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/peatrise.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Ms. Pracilin Priya I",
+        "url": "https://www.srmist.edu.in/faculty/ms-pracilin-priya-i/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "Teaching Assistant - Biology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/pracilin-priya.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Ms. Puja A",
+        "url": "https://www.srmist.edu.in/faculty/ms-puja-a/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "Plant Biotechnology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/PUJA-A-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
+        "title": "Ms. Sivasankareswari E",
+        "url": "https://www.srmist.edu.in/faculty/ms-sivasankareswari-e/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/sivasankareswari.jpg"
+    },
+    {
+        "DepartmentCode": 13505,
+        "DepartmentName": "Department of Biotechnology",
         "title": "Dr. Gobi M",
         "url": "https://www.srmist.edu.in/faculty/dr-m-gobi/",
         "Designation": "Research Associate",
@@ -1891,6 +2008,15 @@ export const urls = [
         "Designation": "Professor",
         "Specialization": "Biochemistry & Biotechnology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/16-3-1-scaled-e1677910122361.jpg"
+    },
+    {
+        "DepartmentCode": 24092,
+        "DepartmentName": "Department of Biotechnology – Science and Humanities",
+        "title": "Dr. A. Pon Ezhil Buvani",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-pon-ezhil-buvani/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 24092,
@@ -2003,11 +2129,11 @@ export const urls = [
     {
         "DepartmentCode": 13502,
         "DepartmentName": "Department of Chemical Engineering",
-        "title": "Dr. Suresh.K",
-        "url": "https://www.srmist.edu.in/faculty/dr-k-suresh/",
-        "Designation": "Associate Professor and Head Incharge",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr.-Suresh-K.jpg"
+        "title": "Dr. Vishali S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-vishali/",
+        "Designation": "Associate Professor and Head",
+        "Specialization": "Chemical Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Vishali_Chemical.jpg"
     },
     {
         "DepartmentCode": 13502,
@@ -2025,7 +2151,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-s-anandha-kumar/",
         "Designation": "Research Associate Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/Anand.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/Dr.-Anandhakumar-Sundaramurthy-2.jpg"
+    },
+    {
+        "DepartmentCode": 13502,
+        "DepartmentName": "Department of Chemical Engineering",
+        "title": "Dr. Suresh.K",
+        "url": "https://www.srmist.edu.in/faculty/dr-k-suresh/",
+        "Designation": "Associate Professor",
+        "Specialization": "Process Modeling and Simulation",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr.-Suresh-K.jpg"
     },
     {
         "DepartmentCode": 13502,
@@ -2035,15 +2170,6 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Bioenergy Specialist | Waste to Energy | Shaping the Future of Sustainability",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0076_DSC_9227.jpg"
-    },
-    {
-        "DepartmentCode": 13502,
-        "DepartmentName": "Department of Chemical Engineering",
-        "title": "Dr. Vishali S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-vishali/",
-        "Designation": "Associate Professor",
-        "Specialization": "Chemical Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/VISHALI-WHITE-BG.jpg"
     },
     {
         "DepartmentCode": 13502,
@@ -2111,15 +2237,6 @@ export const urls = [
     {
         "DepartmentCode": 13502,
         "DepartmentName": "Department of Chemical Engineering",
-        "title": "Dr. Nanditha D",
-        "url": "https://www.srmist.edu.in/faculty/d-nanditha/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Chemical Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Nanditha.jpeg"
-    },
-    {
-        "DepartmentCode": 13502,
-        "DepartmentName": "Department of Chemical Engineering",
         "title": "Dr. Poonguzhali E",
         "url": "https://www.srmist.edu.in/faculty/ms-poonguzhali-e/",
         "Designation": "Assistant Professor",
@@ -2129,11 +2246,11 @@ export const urls = [
     {
         "DepartmentCode": 13502,
         "DepartmentName": "Department of Chemical Engineering",
-        "title": "Dr. Sam David S",
+        "title": "Dr. Sam David Swaminathan",
         "url": "https://www.srmist.edu.in/faculty/dr-s-sam-david/",
         "Designation": "Assistant Professor",
-        "Specialization": "Application of multiphase system, Emulsion Liquid Membrane, Electrochemical System",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Sam-David-600-x-600.jpg"
+        "Specialization": "Particle Technology, Carbon capture/Mineralization/Release, Critical Mineral Recovery, Application of multiphase system, Emulsion Liquid Membrane, Electrochemical System",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/Website-photo-Sam-1.jpg"
     },
     {
         "DepartmentCode": 13502,
@@ -2174,6 +2291,15 @@ export const urls = [
     {
         "DepartmentCode": 13543,
         "DepartmentName": "Department of Chemistry",
+        "title": "Dr. Bernaurdshaw Neppolian",
+        "url": "https://www.srmist.edu.in/faculty/dr-bernaurdshaw-neppolian/",
+        "Designation": "Dean (Research)",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/Dr_-Bernaurdshaw-Neppolian.jpeg"
+    },
+    {
+        "DepartmentCode": 13543,
+        "DepartmentName": "Department of Chemistry",
         "title": "Dr. Arthanareeswari M",
         "url": "https://www.srmist.edu.in/faculty/dr-m-arthanareeswari/",
         "Designation": "Professor & Head",
@@ -2183,29 +2309,11 @@ export const urls = [
     {
         "DepartmentCode": 13543,
         "DepartmentName": "Department of Chemistry",
-        "title": "Dr. Ayyappanpillai Ajayaghosh",
-        "url": "https://www.srmist.edu.in/faculty/dr-ayyappanpillai-ajayaghosh/",
-        "Designation": "Shanti Swarup Bhatnagar Chair Professor",
-        "Specialization": "Fluorescent materials, Photoresponsive materials, Organogels, Molecular probes, Covalent Organic Frameworks",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4012.jpg"
-    },
-    {
-        "DepartmentCode": 13543,
-        "DepartmentName": "Department of Chemistry",
         "title": "Dr. Helen Annal Therese",
         "url": "https://www.srmist.edu.in/faculty/dr-helen-annal-therese/",
         "Designation": "Professor",
         "Specialization": "Chemistry, Nanotechnology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3977.jpg"
-    },
-    {
-        "DepartmentCode": 13543,
-        "DepartmentName": "Department of Chemistry",
-        "title": "Dr. Immanuel Selvaraj Iykkiam",
-        "url": "https://www.srmist.edu.in/faculty/dr-immanuel-selvaraj-iykkiam/",
-        "Designation": "Professor of Practice",
-        "Specialization": "Polymers, Plastics, Intellectual Property, Innovation Management",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Immanuael-1.jpg"
     },
     {
         "DepartmentCode": 13543,
@@ -2224,6 +2332,15 @@ export const urls = [
         "Designation": "Professor",
         "Specialization": "Material Chemistry",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3946.jpg"
+    },
+    {
+        "DepartmentCode": 13543,
+        "DepartmentName": "Department of Chemistry",
+        "title": "Prof. Dr. Ayyappanpillai Ajayaghosh",
+        "url": "https://www.srmist.edu.in/faculty/dr-ayyappanpillai-ajayaghosh/",
+        "Designation": "Shanti Swarup Bhatnagar Chair Professor",
+        "Specialization": "Fluorescent materials, Photoresponsive materials, Organogels, Molecular probes, Covalent Organic Frameworks",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4012.jpg"
     },
     {
         "DepartmentCode": 13543,
@@ -2330,7 +2447,7 @@ export const urls = [
         "title": "Dr. Maiyalagan T",
         "url": "https://www.srmist.edu.in/faculty/dr-t-maiyalagan/",
         "Designation": "Research Associate Professor",
-        "Specialization": "",
+        "Specialization": "Electrochemical Energy Conversion and Storage",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3997.jpg"
     },
     {
@@ -2462,6 +2579,15 @@ export const urls = [
     {
         "DepartmentCode": 13543,
         "DepartmentName": "Department of Chemistry",
+        "title": "Dr. Anju V G",
+        "url": "https://www.srmist.edu.in/faculty/dr-anju-v-g/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-2.jpg"
+    },
+    {
+        "DepartmentCode": 13543,
+        "DepartmentName": "Department of Chemistry",
         "title": "Dr. Arulmozhi R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-arulmozhi/",
         "Designation": "Assistant Professor",
@@ -2485,15 +2611,6 @@ export const urls = [
         "Designation": "Research Assistant Professor",
         "Specialization": "Electrochemical Energy Conversion Research",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3961.jpg"
-    },
-    {
-        "DepartmentCode": 13543,
-        "DepartmentName": "Department of Chemistry",
-        "title": "Dr. Dipankar Das",
-        "url": "https://www.srmist.edu.in/faculty/dr-dipankar-das/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3940.jpg"
     },
     {
         "DepartmentCode": 13543,
@@ -2597,6 +2714,15 @@ export const urls = [
     {
         "DepartmentCode": 13543,
         "DepartmentName": "Department of Chemistry",
+        "title": "Dr. Noufal Kandoth",
+        "url": "https://www.srmist.edu.in/faculty/dr-noufal-kandoth/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-6.jpg"
+    },
+    {
+        "DepartmentCode": 13543,
+        "DepartmentName": "Department of Chemistry",
         "title": "Dr. Palash Sanphui",
         "url": "https://www.srmist.edu.in/faculty/dr-palash-sanphui/",
         "Designation": "Assistant Professor",
@@ -2663,7 +2789,7 @@ export const urls = [
         "title": "Dr. Rajorshi Das",
         "url": "https://www.srmist.edu.in/faculty/dr-rajorshi-das/",
         "Designation": "Research Assistant Professor",
-        "Specialization": "Organometallic chemistry, Supramolecular chemistry, Crystal engineering, Chemistry of intertwined and interlocked molecules",
+        "Specialization": "Organometallic chemistry, Supramolecular chemistry, Crystal engineering, Chemistry of intertwined and interlocked molecules",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3956.jpg"
     },
     {
@@ -2674,15 +2800,6 @@ export const urls = [
         "Designation": "Research Assistant Professor",
         "Specialization": "Chemistry - Material Chemistry for optoelectronics and biomedical application",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3930.jpg"
-    },
-    {
-        "DepartmentCode": 13543,
-        "DepartmentName": "Department of Chemistry",
-        "title": "Dr. Sivachandiran L",
-        "url": "https://www.srmist.edu.in/faculty/dr-l-sivachandiran/",
-        "Designation": "Research Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Siva_photo-2024.jpg"
     },
     {
         "DepartmentCode": 13543,
@@ -2727,7 +2844,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-susnata-pramanik/",
         "Designation": "Assistant Professor",
         "Specialization": "Organic Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3954.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/photoSusnataPramanik-2.jpg"
     },
     {
         "DepartmentCode": 13543,
@@ -2777,15 +2894,6 @@ export const urls = [
     {
         "DepartmentCode": 13543,
         "DepartmentName": "Department of Chemistry",
-        "title": "Dr. Varathan E",
-        "url": "https://www.srmist.edu.in/faculty/dr-e-varathan/",
-        "Designation": "Research Assistant Professor",
-        "Specialization": "Computational Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/varathan.jpg"
-    },
-    {
-        "DepartmentCode": 13543,
-        "DepartmentName": "Department of Chemistry",
         "title": "Dr. Vedhanarayanan B",
         "url": "https://www.srmist.edu.in/faculty/dr-vedhanarayanan-b/",
         "Designation": "Research Assistant Professor",
@@ -2800,6 +2908,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3975.jpg"
+    },
+    {
+        "DepartmentCode": 13543,
+        "DepartmentName": "Department of Chemistry",
+        "title": "Santi Prasad Rath",
+        "url": "https://www.srmist.edu.in/faculty/santi-prasad-rath/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13543,
@@ -2824,7 +2941,7 @@ export const urls = [
         "DepartmentName": "Department of Civil Engineering",
         "title": "Prof. Augustine Maniraj Pandian G",
         "url": "https://www.srmist.edu.in/faculty/g-augustine-maniraj-pandian/",
-        "Designation": "Professor",
+        "Designation": "Professor and Dean",
         "Specialization": "Structural Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Augustine_Photo-Cream.jpeg"
     },
@@ -3006,7 +3123,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-sachikanta-nanda-2/",
         "Designation": "Associate Professor",
         "Specialization": "Geology, Remote sensing & GIS, EIA, Disaster Management Studies, Surveying",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Sachikanta-Nanda-SRM-1.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Sachikanta-Nanda_Pic.jpg"
     },
     {
         "DepartmentCode": 13216,
@@ -3195,7 +3312,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-s-muthu-kumar-2/",
         "Designation": "Assistant Professor",
         "Specialization": "Civil – Structural Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/srm-faculty-profile-photo-smk-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/srm-faculty-profile-photo-smk-scaled-e1730961529411.jpg"
     },
     {
         "DepartmentCode": 13216,
@@ -3281,6 +3398,15 @@ export const urls = [
     {
         "DepartmentCode": 13216,
         "DepartmentName": "Department of Civil Engineering",
+        "title": "Dr. Sabarigirivasan L",
+        "url": "https://www.srmist.edu.in/faculty/l-sabari-giri/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Structural Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Passport-Pic-2.jpg"
+    },
+    {
+        "DepartmentCode": 13216,
+        "DepartmentName": "Department of Civil Engineering",
         "title": "Dr. Shaik Niyazuddin Guntakal",
         "url": "https://www.srmist.edu.in/faculty/mr-shaik-niyazuddin-guntakal/",
         "Designation": "Assistant Professor",
@@ -3303,7 +3429,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-m-b-sridhar/",
         "Designation": "ASSISTANT PROFESSOR",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/SRI-2021_Emanager.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Sri_Pic_pp_01.09.2023_80kb.jpg"
     },
     {
         "DepartmentCode": 13216,
@@ -3313,6 +3439,24 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Structural Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Ms. C. Sudha.jpg"
+    },
+    {
+        "DepartmentCode": 13216,
+        "DepartmentName": "Department of Civil Engineering",
+        "title": "Dr. Syed Abdul Rahman S",
+        "url": "https://www.srmist.edu.in/faculty/mr-s-syed-abdul-rahman-2/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Structural Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG_0750-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 13216,
+        "DepartmentName": "Department of Civil Engineering",
+        "title": "Dr. Thiagu H",
+        "url": "https://www.srmist.edu.in/faculty/mr-h-thiagu-2/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Structural Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG_0760-scaled.jpg"
     },
     {
         "DepartmentCode": 13216,
@@ -3362,15 +3506,6 @@ export const urls = [
     {
         "DepartmentCode": 13216,
         "DepartmentName": "Department of Civil Engineering",
-        "title": "Mr. Sabarigirivasan L",
-        "url": "https://www.srmist.edu.in/faculty/l-sabari-giri/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Structural Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Passport-Pic-2.jpg"
-    },
-    {
-        "DepartmentCode": 13216,
-        "DepartmentName": "Department of Civil Engineering",
         "title": "Mr. Senthil Kumar G",
         "url": "https://www.srmist.edu.in/faculty/mr-g-senthil-kumar-2/",
         "Designation": "Assistant Professor",
@@ -3385,24 +3520,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Transportation Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Website-1.jpg"
-    },
-    {
-        "DepartmentCode": 13216,
-        "DepartmentName": "Department of Civil Engineering",
-        "title": "Mr. Syed Abdul Rahman S",
-        "url": "https://www.srmist.edu.in/faculty/mr-s-syed-abdul-rahman-2/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Structural Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG_0750-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 13216,
-        "DepartmentName": "Department of Civil Engineering",
-        "title": "Mr. Thiagu H",
-        "url": "https://www.srmist.edu.in/faculty/mr-h-thiagu-2/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Structural Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG_0760-scaled.jpg"
     },
     {
         "DepartmentCode": 13216,
@@ -3429,7 +3546,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/karthiga-s-2/",
         "Designation": "Assistant Professor",
         "Specialization": "Structural Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/IMG-0026-Original-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Karthiga-S.jpg"
     },
     {
         "DepartmentCode": 13216,
@@ -3443,11 +3560,38 @@ export const urls = [
     {
         "DepartmentCode": 13216,
         "DepartmentName": "Department of Civil Engineering",
+        "title": "Dr. Krishna R Reddy",
+        "url": "https://www.srmist.edu.in/faculty/dr-krishna-r-reddy/",
+        "Designation": "Adjunct Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13216,
+        "DepartmentName": "Department of Civil Engineering",
+        "title": "Dr. Mohammed Alias Yusof",
+        "url": "https://www.srmist.edu.in/faculty/dr-mohammed-alias-yusof/",
+        "Designation": "Adjunct Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13216,
+        "DepartmentName": "Department of Civil Engineering",
         "title": "Mr. Srinivasasenthil S",
         "url": "https://www.srmist.edu.in/faculty/mr-s-srinivasasenthil/",
         "Designation": "Teaching. Asst",
         "Specialization": "Energy Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/IMG_0748-4-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 28850,
+        "DepartmentName": "Department of Commerce",
+        "title": "Dr. Kavitha A",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-k-kavitha/",
+        "Designation": "Associate Professor and Head",
+        "Specialization": "Commerce",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/5-1-scaled.jpg"
     },
     {
         "DepartmentCode": 28850,
@@ -3461,29 +3605,11 @@ export const urls = [
     {
         "DepartmentCode": 28850,
         "DepartmentName": "Department of Commerce",
-        "title": "Dr. Kavitha A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-k-kavitha/",
-        "Designation": "Associate Professor",
-        "Specialization": "Commerce",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/5-1-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 28850,
-        "DepartmentName": "Department of Commerce",
         "title": "Dr. Sankar P",
         "url": "https://www.srmist.edu.in/faculty/dr-p-sankar/",
         "Designation": "Associate Professor",
         "Specialization": "Commerce",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr.-Sankar-P.jpg"
-    },
-    {
-        "DepartmentCode": 28850,
-        "DepartmentName": "Department of Commerce",
-        "title": "Dr. Sridharan R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-sridharan/",
-        "Designation": "Associate Professor",
-        "Specialization": "Commerce",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/1-scaled.jpg"
     },
     {
         "DepartmentCode": 28850,
@@ -3650,6 +3776,15 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Lakshmi C",
+        "url": "https://www.srmist.edu.in/faculty/c-lakshmi/",
+        "Designation": "Professor and Associate Chairperson",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Dr.C.Lakshmi-Profile_photo.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Annie Uthra R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-annie-uthra/",
         "Designation": "Professor and Head",
@@ -3659,11 +3794,20 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Lakshmi C",
-        "url": "https://www.srmist.edu.in/faculty/c-lakshmi/",
+        "title": "Dr. Alice Nithya A",
+        "url": "https://www.srmist.edu.in/faculty/mrs-a-alice-nithya/",
         "Designation": "Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Dr.C.Lakshmi-Profile_photo.jpg"
+        "Specialization": "Artificial Intelligence, Machine Learning, Computer Vision, Image Processing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Alice-Nithya.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Ferni Ukrit M",
+        "url": "https://www.srmist.edu.in/faculty/ms-m-ferni-ukrit/",
+        "Designation": "Professor",
+        "Specialization": "Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, IOT",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Dr.M.Ferni-Ukrit.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -3677,20 +3821,29 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Saad Yunus Sait",
+        "url": "https://www.srmist.edu.in/faculty/dr-saad-yunus-sait/",
+        "Designation": "Professor",
+        "Specialization": "or Subject Computer Science Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4456.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Uma M",
+        "url": "https://www.srmist.edu.in/faculty/dr-m-uma/",
+        "Designation": "Professor",
+        "Specialization": "Computer Science Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4339.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr.  Abirami M. S",
         "url": "https://www.srmist.edu.in/faculty/dr-m-s-abirami/",
         "Designation": "Associate Professor",
         "Specialization": "Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, Pattern Recognition, Parallel and Distributed Computing, Internet of Things.",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4393_M.S.Abirami.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Alice Nithya A",
-        "url": "https://www.srmist.edu.in/faculty/mrs-a-alice-nithya/",
-        "Designation": "Associate Professor",
-        "Specialization": "Artificial Intelligence, Machine Learning, Computer Vision, Image Processing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Alice-Nithya.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -3722,11 +3875,38 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Ferni Ukrit M",
-        "url": "https://www.srmist.edu.in/faculty/ms-m-ferni-ukrit/",
+        "title": "Dr. Aruna S",
+        "url": "https://www.srmist.edu.in/faculty/aruna-s/",
         "Designation": "Associate Professor",
-        "Specialization": "Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, IOT",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Ferni.jpg"
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4495-2.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Athira Nambiar",
+        "url": "https://www.srmist.edu.in/faculty/dr-athira-m-nambiar/",
+        "Designation": "Research Associate Professor",
+        "Specialization": "Artificial Intelligence (18CSC305J), Digital Image Processing (18CSE353T), Deep Learning Techniques(18AIC301J)",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4480.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Babu R",
+        "url": "https://www.srmist.edu.in/faculty/dr-babu-r/",
+        "Designation": "Associate Professor",
+        "Specialization": "Cloud Computing, Artificial Intelligence",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4422.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Beaulah Jeyavathana R",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-beaulah-jeyavathana/",
+        "Designation": "Associate Professor",
+        "Specialization": "Machine Learning, Software Engineering.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4338-3.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -3736,6 +3916,15 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Cloud Computing , Machine Learning, Internet of Things, Computer Networks",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4331.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Jothi B",
+        "url": "https://www.srmist.edu.in/faculty/b-jothi/",
+        "Designation": "Associate Professor",
+        "Specialization": "Department of Computational Intelligence",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-10-at-2.38.11-PM.jpeg"
     },
     {
         "DepartmentCode": 13534,
@@ -3753,7 +3942,34 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-krishnaveni-s/",
         "Designation": "Associate Professor",
         "Specialization": "Cyber Security, Cloud Computing, IoT, Machine Learning and Deep Learning.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4493.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/krishnaveni.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Maheshwari A",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-maheshwari/",
+        "Designation": "Associate Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/Mahee-Passport-size-photo.jpeg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Maheswari M",
+        "url": "https://www.srmist.edu.in/faculty/m-maheswari/",
+        "Designation": "Associate Professor",
+        "Specialization": "Data Analytic/Networking/Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Maheswari-Profile-photo.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Nagendra Prabhu S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-nagendra-prabhu/",
+        "Designation": "Associate Professor",
+        "Specialization": "Network Security, Cloud Computing, Machine Learning, Image Processing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4457.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -3767,11 +3983,11 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Saad Yunus Sait",
-        "url": "https://www.srmist.edu.in/faculty/dr-saad-yunus-sait/",
+        "title": "Dr. Robert Singh A",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-robert-singh/",
         "Designation": "Associate Professor",
-        "Specialization": "or Subject Computer Science Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4456.jpg"
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/DSC_4357.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -3781,6 +3997,24 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Machine Learning in Computer Vision, Medical Image Analysis",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Sadagopan-Photo.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Sakthi U",
+        "url": "https://www.srmist.edu.in/faculty/dr-u-sakthi/",
+        "Designation": "Associate Professor",
+        "Specialization": "Machine Learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/SAKTHISRMPROFILE-2.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Saranya A",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-saranya/",
+        "Designation": "Associate Professor",
+        "Specialization": "Computational Intelligence",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-05-at-12.40.16-PM-1.jpeg"
     },
     {
         "DepartmentCode": 13534,
@@ -3839,11 +4073,20 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Uma M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-uma/",
-        "Designation": "Associate Professor",
-        "Specialization": "Computer Science Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4339.jpg"
+        "title": "Dr. Sudha Rajesh",
+        "url": "https://www.srmist.edu.in/faculty/dr-sudha-rajesh/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Artificial Intelligence, Machine Learning, Data Mining and Software Engineering.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/Dr.-Sudha-Rajesh-Profile-1.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Sumathy G",
+        "url": "https://www.srmist.edu.in/faculty/dr-sumathy-g/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Computational Intelligence",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Dr.Sumathy-website-photo.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -3929,15 +4172,6 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Aruna S",
-        "url": "https://www.srmist.edu.in/faculty/aruna-s/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4495-2.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Arunarani A R",
         "url": "https://www.srmist.edu.in/faculty/dr-ar-aruna-rani/",
         "Designation": "Assistant Professor",
@@ -3956,15 +4190,6 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Athira. M. Nambiar",
-        "url": "https://www.srmist.edu.in/faculty/dr-athira-m-nambiar/",
-        "Designation": "Research Assistant Professor",
-        "Specialization": "Artificial Intelligence (18CSC305J), Digital Image Processing (18CSE353T), Deep Learning Techniques(18AIC301J)",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4480.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Babu K",
         "url": "https://www.srmist.edu.in/faculty/dr-k-babu/",
         "Designation": "Assistant Professor",
@@ -3974,38 +4199,11 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Babu R",
-        "url": "https://www.srmist.edu.in/faculty/dr-babu-r/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Cloud Computing, Artificial Intelligence",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4422.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Beaulah Jeyavathana R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-beaulah-jeyavathana/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Machine Learning, Software Engineering.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4338-3.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Dhilsath Fathima M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-dhilsath-fathima/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Healthcare Informatics, Machine Learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/103125.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Dinesh G",
         "url": "https://www.srmist.edu.in/faculty/dr-dinesh-g/",
         "Designation": "Assistant Professor",
         "Specialization": "Cognitive Radio Networks, Mobile Computing, Data Science, Networking",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr_-Dinesh-G.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Dinesh.jpeg"
     },
     {
         "DepartmentCode": 13534,
@@ -4037,11 +4235,29 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Gowtham Padmanabhan",
+        "url": "https://www.srmist.edu.in/faculty/dr-gowtham-p/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/gowtham.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Grace Shalini T",
         "url": "https://www.srmist.edu.in/faculty/dr-grace-shalini-t/",
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/9.png"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Hariprasad S",
+        "url": "https://www.srmist.edu.in/faculty/dr-hariprasad-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/5Y0A6197-copy-scaled-e1729236133115.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -4091,15 +4307,6 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Jothi B",
-        "url": "https://www.srmist.edu.in/faculty/b-jothi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Software Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4492-1.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Kaavya Kanagaraj",
         "url": "https://www.srmist.edu.in/faculty/dr-kaavya-kanagaraj/",
         "Designation": "Assistant Professor",
@@ -4122,7 +4329,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-n-kanimozhi/",
         "Designation": "Assistant Professor",
         "Specialization": "ARTIFICIAL INTELLIGENCE, MACHINE LEARNING AND DEEP LEARNING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/Kanimozhi-new.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/Kanimozhi_NEW.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -4140,7 +4347,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-karpagam-m/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4354.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/srm-faculty-8-1.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -4154,20 +4361,20 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Maheshwari A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-maheshwari/",
+        "title": "Dr. Krunal Dhanraj Randive",
+        "url": "https://www.srmist.edu.in/faculty/dr-krunal-dhanraj-randive/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4399.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/406117001-Photo.jpg"
     },
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Maheswari M",
-        "url": "https://www.srmist.edu.in/faculty/m-maheswari/",
+        "title": "Dr. Lakshmi Narayanan K",
+        "url": "https://www.srmist.edu.in/faculty/dr-lakshmi-narayanan-k/",
         "Designation": "Assistant Professor",
-        "Specialization": "Data Analytic/Networking/Security",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Maheswari-Profile-photo.jpg"
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13534,
@@ -4199,6 +4406,15 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Megha Sahu",
+        "url": "https://www.srmist.edu.in/faculty/dr-megha-sahu/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Mohandas R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-mohandas/",
         "Designation": "Assistant Professor",
@@ -4208,20 +4424,20 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Nagendra Prabhu S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-nagendra-prabhu/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Network Security, Cloud Computing, Machine Learning, Image Processing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4457.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Naveen P",
         "url": "https://www.srmist.edu.in/faculty/mr-naveen-p/",
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/2-6.png"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Navneet Nayan",
+        "url": "https://www.srmist.edu.in/faculty/dr-navneet-nayan/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Pattern Recognition, Computer Vision, Digital Image Processing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/navneet.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -4282,7 +4498,7 @@ export const urls = [
         "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Priyadharshini G",
         "url": "https://www.srmist.edu.in/faculty/mrs-priyadharshini-g/",
-        "Designation": "Assistant Professor (Jr)",
+        "Designation": "Assistant Professor",
         "Specialization": "Machine Learning,Deep Learning",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4439-1.jpg"
     },
@@ -4298,29 +4514,20 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Rajalakshmi S",
+        "url": "https://www.srmist.edu.in/faculty/dr-rajalakshmi/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Metaheuristic Algorithms, Optimization Problems, Bio-Inspired Algorithms.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/rajalakshmi.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Reshmy A K",
         "url": "https://www.srmist.edu.in/faculty/dr-a-k-reshmy/",
         "Designation": "Assistant Professor",
         "Specialization": "Computational Intelligence",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/09/Untitled-1.png"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Robert Singh A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-robert-singh/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4357-1.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Sakthi U",
-        "url": "https://www.srmist.edu.in/faculty/dr-u-sakthi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Machine Learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/SAKTHISRMPROFILE-2.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -4338,7 +4545,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-m-salomi/",
         "Designation": "Assistant Professor",
         "Specialization": "Data Analytics, Wireless Sensor Networks and Mobile & Web Application Development.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/DSC_4378.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/SalomiSamsudeen-PP-Snap-copy-2.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -4348,15 +4555,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Data Structures, C Programming, Python Programming, and Digital Electronics",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/sanjit.jpeg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Saranya A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-saranya/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computational Intelligence",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/WhatsApp-Image-2024-05-05-at-12.40.16-PM-1.jpeg"
     },
     {
         "DepartmentCode": 13534,
@@ -4374,7 +4572,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-c-sherin-shibi/",
         "Designation": "Assistant Professor",
         "Specialization": "Machine Learning, Image Processing, Deep Learning, Remote Sensing, IoT",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/SHERIN-2.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-11-28-at-16.33.42.jpeg"
     },
     {
         "DepartmentCode": 13534,
@@ -4391,8 +4589,8 @@ export const urls = [
         "title": "Dr. Sivaji Satrasupalli",
         "url": "https://www.srmist.edu.in/faculty/dr-sivaji-satrasupalli/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Computer vision and deep learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/sivaji4.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -4415,29 +4613,20 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Sudha Rajesh",
-        "url": "https://www.srmist.edu.in/faculty/dr-sudha-rajesh/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Artificial Intelligence, Machine Learning, Data Mining and Software Engineering.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/Dr.-Sudha-Rajesh-Profile-1.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
-        "title": "Dr. Sumathy G",
-        "url": "https://www.srmist.edu.in/faculty/dr-sumathy-g/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computational Intelligence",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Dr.Sumathy-website-photo.jpg"
-    },
-    {
-        "DepartmentCode": 13534,
-        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Suresh K",
         "url": "https://www.srmist.edu.in/faculty/dr-k-suresh-2/",
         "Designation": "Assistant Professor",
         "Specialization": "Machine Learning, Deep Learning, Soft Computing, Artificial Intelligence, Software Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Dr_K_Suresh_Photo.jpeg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Suresh Kumar S",
+        "url": "https://www.srmist.edu.in/faculty/dr-suresh-kumar-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Digital Image Compression and Denoising, Internet of Things, Machine and Deep Learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/Suresh-Photo.jpg"
     },
     {
         "DepartmentCode": 13534,
@@ -4469,6 +4658,15 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
+        "title": "Dr. Vaissnave V",
+        "url": "https://www.srmist.edu.in/faculty/dr-vaissnave-v/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Deep Learning, Natural Language Processing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/vaishnavee.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
         "title": "Dr. Velliangiri S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-velliangiri/",
         "Designation": "Assistant Professor",
@@ -4481,8 +4679,8 @@ export const urls = [
         "title": "Dr. Vidhya B",
         "url": "https://www.srmist.edu.in/faculty/dr-vidhya-b/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Image Processing, Computer Networks, Machine Learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Untitled-design.png"
     },
     {
         "DepartmentCode": 13534,
@@ -4519,6 +4717,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Computer Science",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/PhotoRoom-20230928-222337.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Mr. Gopinath N",
+        "url": "https://www.srmist.edu.in/faculty/mr-gopinath-n/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13534,
@@ -4604,6 +4811,15 @@ export const urls = [
     {
         "DepartmentCode": 13534,
         "DepartmentName": "Department of Computational Intelligence",
+        "title": "Mrs. Ratna kumari M",
+        "url": "https://www.srmist.edu.in/faculty/m-ratna-kumari/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/DSC_4475-2.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
         "title": "Mrs. Shaik Rasheeda Begum",
         "url": "https://www.srmist.edu.in/faculty/mrs-shaik-rasheeda-begum/",
         "Designation": "Assistant Professor (Jr)",
@@ -4645,6 +4861,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Internet Of Things, Machine Learning",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/J.V. Vidhya.jpg"
+    },
+    {
+        "DepartmentCode": 13534,
+        "DepartmentName": "Department of Computational Intelligence",
+        "title": "Sageengrana S",
+        "url": "https://www.srmist.edu.in/faculty/sageengrana-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "DEEP LEARNING, MACHINE LEARNING",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13534,
@@ -4703,6 +4928,15 @@ export const urls = [
     {
         "DepartmentCode": 24094,
         "DepartmentName": "Department of Computer Applications",
+        "title": "Dr. Angel Nancy A",
+        "url": "https://www.srmist.edu.in/faculty/dr-angel-nancy-a/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/angel.jpg"
+    },
+    {
+        "DepartmentCode": 24094,
+        "DepartmentName": "Department of Computer Applications",
         "title": "Dr. Anita Smiles J",
         "url": "https://www.srmist.edu.in/faculty/anita-smiles-j/",
         "Designation": "Assistant Professor",
@@ -4726,6 +4960,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Computer Applications",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/4-2-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 24094,
+        "DepartmentName": "Department of Computer Applications",
+        "title": "Dr. Balamurugan S",
+        "url": "https://www.srmist.edu.in/faculty/dr-balamurugan-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Big Data Analytics, Machine Learning, Web Application Development",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/11-1.jpg"
     },
     {
         "DepartmentCode": 24094,
@@ -4775,6 +5018,15 @@ export const urls = [
     {
         "DepartmentCode": 24094,
         "DepartmentName": "Department of Computer Applications",
+        "title": "Dr. Elavarasi G",
+        "url": "https://www.srmist.edu.in/faculty/dr-elavarasi-g/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Computer Applications",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/Dr.G.Elavarasi.jpeg"
+    },
+    {
+        "DepartmentCode": 24094,
+        "DepartmentName": "Department of Computer Applications",
         "title": "Dr. Helen D",
         "url": "https://www.srmist.edu.in/faculty/dr-d-helen/",
         "Designation": "Assistant Professor",
@@ -4793,11 +5045,11 @@ export const urls = [
     {
         "DepartmentCode": 24094,
         "DepartmentName": "Department of Computer Applications",
-        "title": "Dr. Kamalakumari J",
-        "url": "https://www.srmist.edu.in/faculty/dr-j-kamalakumari-j/",
+        "title": "Dr. Kanmani K",
+        "url": "https://www.srmist.edu.in/faculty/ms-k-kanmani/",
         "Designation": "Assistant Professor",
         "Specialization": "Computer Applications",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/12/3-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/kan-website-photo-4.jpg"
     },
     {
         "DepartmentCode": 24094,
@@ -4856,6 +5108,15 @@ export const urls = [
     {
         "DepartmentCode": 24094,
         "DepartmentName": "Department of Computer Applications",
+        "title": "Dr. Reena Rose R",
+        "url": "https://www.srmist.edu.in/faculty/dr-reena-rose-k/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Computer Applications",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 24094,
+        "DepartmentName": "Department of Computer Applications",
         "title": "Dr. Sathya K",
         "url": "https://www.srmist.edu.in/faculty/dr-sathya-k/",
         "Designation": "ASSISTANT PROFESSOR",
@@ -4870,6 +5131,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "COMPUTER APPLICATIONS",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/11/4-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 24094,
+        "DepartmentName": "Department of Computer Applications",
+        "title": "Dr. Sivakumar S",
+        "url": "https://www.srmist.edu.in/faculty/dr-sivakumar-s-2/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Network Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/Dr.S.Sivakumar-600669.jpg"
     },
     {
         "DepartmentCode": 24094,
@@ -4892,10 +5162,10 @@ export const urls = [
     {
         "DepartmentCode": 24094,
         "DepartmentName": "Department of Computer Applications",
-        "title": "Dr. Sudha M R",
+        "title": "Dr. SUDHA M R",
         "url": "https://www.srmist.edu.in/faculty/ms-sudha-m-r/",
         "Designation": "Assistant Professor",
-        "Specialization": "Computer Applications",
+        "Specialization": "Computer Science",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/12-2-scaled.jpg"
     },
     {
@@ -4937,20 +5207,20 @@ export const urls = [
     {
         "DepartmentCode": 24094,
         "DepartmentName": "Department of Computer Applications",
+        "title": "Leena Nesamani S",
+        "url": "https://www.srmist.edu.in/faculty/leena-nesamani-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/leena.jpg"
+    },
+    {
+        "DepartmentCode": 24094,
+        "DepartmentName": "Department of Computer Applications",
         "title": "Mr. Venkata Subramanian J",
         "url": "https://www.srmist.edu.in/faculty/j-venkata-subramanian/",
         "Designation": "Assistant Professor",
         "Specialization": "Computer Applications",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/11-3-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 24094,
-        "DepartmentName": "Department of Computer Applications",
-        "title": "Ms. Kanmani K",
-        "url": "https://www.srmist.edu.in/faculty/ms-k-kanmani/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Applications",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/kan-website-photo-4.jpg"
     },
     {
         "DepartmentCode": 24094,
@@ -4962,13 +5232,22 @@ export const urls = [
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/9-scaled.jpg"
     },
     {
+        "DepartmentCode": 24094,
+        "DepartmentName": "Department of Computer Applications",
+        "title": "Seeja R D",
+        "url": "https://www.srmist.edu.in/faculty/seeja-r-d/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/seeja.jpg"
+    },
+    {
         "DepartmentCode": 23797,
         "DepartmentName": "Department of Computer Science",
-        "title": "Dr. Kalpana G",
-        "url": "https://www.srmist.edu.in/faculty/dr-g-kalpana/",
+        "title": "Dr. Muthulakshmi.P",
+        "url": "https://www.srmist.edu.in/faculty/dr-p-muthulakshmi/",
         "Designation": "Professor & Head",
         "Specialization": "Computer Science",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/Kalpana-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/SMTPM.jpg"
     },
     {
         "DepartmentCode": 23797,
@@ -4982,11 +5261,11 @@ export const urls = [
     {
         "DepartmentCode": 23797,
         "DepartmentName": "Department of Computer Science",
-        "title": "Dr. Muthulakshmi.P",
-        "url": "https://www.srmist.edu.in/faculty/dr-p-muthulakshmi/",
+        "title": "Dr. Kalpana G",
+        "url": "https://www.srmist.edu.in/faculty/dr-g-kalpana/",
         "Designation": "Professor",
         "Specialization": "Computer Science",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/SMTPM-2-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/Kalpana-scaled.jpg"
     },
     {
         "DepartmentCode": 23797,
@@ -5004,7 +5283,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-elangovan-d/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Dr.D.Elangovan-profile-pic-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/1261-scaled.jpg"
     },
     {
         "DepartmentCode": 23797,
@@ -5027,20 +5306,20 @@ export const urls = [
     {
         "DepartmentCode": 23797,
         "DepartmentName": "Department of Computer Science",
-        "title": "Dr. Kavitha P",
-        "url": "https://www.srmist.edu.in/faculty/dr-kavitha-p/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Wireless Networks",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/9422-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 23797,
-        "DepartmentName": "Department of Computer Science",
         "title": "Dr. Mahalakshmi. B",
         "url": "https://www.srmist.edu.in/faculty/dr-mahalakshmi-b/",
         "Designation": "Assistant Professor",
         "Specialization": "Cloud Computing, Machine Learning",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-11-at-1.19.28-PM.jpeg"
+    },
+    {
+        "DepartmentCode": 23797,
+        "DepartmentName": "Department of Computer Science",
+        "title": "Dr. Meenakshi S",
+        "url": "https://www.srmist.edu.in/faculty/dr-meenakshi-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 23797,
@@ -5101,9 +5380,18 @@ export const urls = [
         "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Pushpalatha M",
         "url": "https://www.srmist.edu.in/faculty/dr-m-pushpalatha/",
-        "Designation": "Professor & Head",
+        "Designation": "Professor and Associate Chairperson",
         "Specialization": "Wireless Networks, Internet of Things and Data Analytics, Edge Computing, Quantum Computing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Pushpalatha.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Niranjana G",
+        "url": "https://www.srmist.edu.in/faculty/dr-g-niranjana/",
+        "Designation": "Professor & Head",
+        "Specialization": "Image Processing, Pattern Recognition, Networks and Data Structures",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/niranjana-e1716472946340.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5117,6 +5405,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Baranidharan B",
+        "url": "https://www.srmist.edu.in/faculty/dr-b-baranidharan/",
+        "Designation": "Professor",
+        "Specialization": "Artificial Intelligence, Wireless Sensor Networks, Internet of Things",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Baranidharan.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Indhumathi R",
         "url": "https://www.srmist.edu.in/faculty/dr-indhumathi-r/",
         "Designation": "Professor",
@@ -5126,11 +5423,38 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Kavitha S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-kavitha/",
+        "Designation": "Professor",
+        "Specialization": "Data Mining and Artificial Intelligence",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/kavitha.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Madhavan P",
+        "url": "https://www.srmist.edu.in/faculty/dr-p-madhavan/",
+        "Designation": "Professor",
+        "Specialization": "Computer Networks, Data Structures and algorithm, Object Oriented Programming",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Madhavan.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Malathi D",
         "url": "https://www.srmist.edu.in/faculty/d-malathi/",
         "Designation": "Professor",
         "Specialization": "Artificial Neural Networks and Digital Image Processing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Malathi.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Manoranjitham T",
+        "url": "https://www.srmist.edu.in/faculty/t-manoranjitham/",
+        "Designation": "Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Manoranjtham.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5149,15 +5473,6 @@ export const urls = [
         "Designation": "Professor",
         "Specialization": "Computer Science and Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Murali-M.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Niranjana G",
-        "url": "https://www.srmist.edu.in/faculty/dr-g-niranjana/",
-        "Designation": "Professor",
-        "Specialization": "Image Processing, Pattern Recognition, Networks and Data Structures",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/niranjana-e1716472946340.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5198,11 +5513,65 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Subalalitha C N",
+        "url": "https://www.srmist.edu.in/faculty/subalalitha-c-n/",
+        "Designation": "Professor",
+        "Specialization": "Natural Language Processing, Machine Learning, Discourse Analysis and Computational Linguistics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Subalalitha.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Umadevi M",
+        "url": "https://www.srmist.edu.in/faculty/dr-m-umadevi/",
+        "Designation": "Professor",
+        "Specialization": "Data Mining, Information Retrieval",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Umadevi.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Usha G",
+        "url": "https://www.srmist.edu.in/faculty/dr-g-usha/",
+        "Designation": "Professor",
+        "Specialization": "or Subject Network Security, Wireless Networks, Cryptography, Big data Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Usha.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Vijaya K",
+        "url": "https://www.srmist.edu.in/faculty/dr-k-vijaya/",
+        "Designation": "Professor",
+        "Specialization": "Computer Science",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Vijaya-K.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Akilandeswari P",
         "url": "https://www.srmist.edu.in/faculty/p-akilandeswari/",
         "Designation": "Associate Professor",
         "Specialization": "Computer Science and Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Akila.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Anitha K",
+        "url": "https://www.srmist.edu.in/faculty/dr-anitha-k/",
+        "Designation": "Associate Professor",
+        "Specialization": "Image Processing, Machine Learning, Wireless Sensor Networks",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Anitha.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Anto Arockia Rosaline R",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-anto-arockia-rosaline/",
+        "Designation": "Associate Professor",
+        "Specialization": "Machine Learning, Data Science, Data Analytics, Text Analytics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/RAAR_Updated.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5225,6 +5594,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Arunachalam N",
+        "url": "https://www.srmist.edu.in/faculty/dr-n-arunachalam/",
+        "Designation": "Associate Professor",
+        "Specialization": "Artificial Intelligence, Machine Learning, Deep Learning and Algorithms",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Arunachalam.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Babu S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-babu/",
         "Designation": "Associate Professor",
@@ -5234,20 +5612,20 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Baranidharan B",
-        "url": "https://www.srmist.edu.in/faculty/dr-b-baranidharan/",
-        "Designation": "Associate Professor",
-        "Specialization": "Artificial Intelligence, Wireless Sensor Networks, Internet of Things",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Baranidharan.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Baskar M",
         "url": "https://www.srmist.edu.in/faculty/dr-m-baskar/",
         "Designation": "Associate Professor",
         "Specialization": "Computer Networks and Security(CSE)",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Baskar.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Deeba K",
+        "url": "https://www.srmist.edu.in/faculty/k-deeba/",
+        "Designation": "Associate Professor",
+        "Specialization": "Theory of computation, Neural networks, Pattern Recognition",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Deeba.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5270,10 +5648,19 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Gayathri M",
+        "url": "https://www.srmist.edu.in/faculty/m-gayathri/",
+        "Designation": "Associate Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Gayathri.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Gnanavel S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-gnanavel-2/",
         "Designation": "Associate Professor",
-        "Specialization": "Multimedia transmission on Wireless Networks Internet of Things  cloud security. Machine Learning cyber security  cloud computing",
+        "Specialization": "Multimedia transmission on Wireless Networks Internet of Things  cloud security. Machine Learning cyber security  cloud computing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Gnanavel.jpg"
     },
     {
@@ -5284,6 +5671,15 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Artificial Intelligence",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Godfrey.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Jansi K R",
+        "url": "https://www.srmist.edu.in/faculty/k-r-jansi/",
+        "Designation": "Associate Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Jansi.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5351,11 +5747,11 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Kavitha S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-kavitha/",
+        "title": "Dr. Kavisankar L",
+        "url": "https://www.srmist.edu.in/faculty/dr-l-kavisankar/",
         "Designation": "Associate Professor",
-        "Specialization": "Data Mining and Artificial Intelligence",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/kavitha.jpg"
+        "Specialization": "Cyber Security, Blockchain, Computer Network, IoT",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/DSCN3134-scaled-e1682523753169.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5365,24 +5761,6 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Computing Systems, Internet of Things, Theoretical Computer Science and Computational Intelligence",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Kowsigan.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Madhavan P",
-        "url": "https://www.srmist.edu.in/faculty/dr-p-madhavan/",
-        "Designation": "Associate Professor",
-        "Specialization": "Computer Networks, Data Structures and algorithm, Object Oriented Programming",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Madhavan.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Manoranjitham T",
-        "url": "https://www.srmist.edu.in/faculty/t-manoranjitham/",
-        "Designation": "Associate Professor",
-        "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Manoranjtham.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5401,6 +5779,24 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Computer Science and Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/BM.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Nancy P",
+        "url": "https://www.srmist.edu.in/faculty/dr-p-nancy/",
+        "Designation": "Associate Professor",
+        "Specialization": "Data Structures, Operating Systems, Machine Learning, Data Mining",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/nancy.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Padmapriya G",
+        "url": "https://www.srmist.edu.in/faculty/dr-g-padmapriya/",
+        "Designation": "Associate Professor",
+        "Specialization": "Data Mining, Artificial Intelligence, Machine Learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Padmapriya.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5454,16 +5850,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-s-pradeep/",
         "Designation": "Associate Professor",
         "Specialization": "Internet of Things, Machine Learning and Deep Learning, Network Security",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/pradeep.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Rajkamal R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-rajkamal/",
-        "Designation": "Associate Professor",
-        "Specialization": "Data Science, Machine Learning, Deep Learning, Artificial Intelligence",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Rajkamal.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/DSC_5220.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5486,11 +5873,29 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Santhanakrishnan C",
+        "url": "https://www.srmist.edu.in/faculty/c-santhanakrishnan/",
+        "Designation": "Associate Professor",
+        "Specialization": "IoT, Computer Networks, Virtual Reality, Bio Inspired Computing.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Santhu.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Saranya P",
         "url": "https://www.srmist.edu.in/faculty/ms-p-saranya/",
         "Designation": "Associate Professor",
         "Specialization": "Medical Image processing, Deep learning, Machine Learning, Artificial Intelligence, Wireless Sensor Networks, Big Data.",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/P-Saranya-e1716520944506.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Saravanan Santhanam",
+        "url": "https://www.srmist.edu.in/faculty/s-saravanan/",
+        "Designation": "Associate Professor",
+        "Specialization": "AI and Machine learning, Big data Analytics and Data mining",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Saravanan.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5549,11 +5954,20 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Subalalitha C N",
-        "url": "https://www.srmist.edu.in/faculty/subalalitha-c-n/",
+        "title": "Dr. Srinivasan R",
+        "url": "https://www.srmist.edu.in/faculty/mr-r-srinivasan/",
         "Designation": "Associate Professor",
-        "Specialization": "Natural Language Processing, Machine Learning, Discourse Analysis and Computational Linguistics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Subalalitha.jpg"
+        "Specialization": "Natural Language Processing, Computer Vision, Database Management Systems",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/srinivasan2-2.jpeg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Subash R",
+        "url": "https://www.srmist.edu.in/faculty/r-subash/",
+        "Designation": "Associate Professor",
+        "Specialization": "Internet Of Things, Social Internet Of Things, Data Mining, Networking and Blockchain",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Subash.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5576,6 +5990,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Thilagavathy R",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-thilagavathy-2/",
+        "Designation": "Associate Professor",
+        "Specialization": "Data Mining, Natural Language Processing,  Artificial Intelligence",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Thilagavathy.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Uma Maheswari K M",
         "url": "https://www.srmist.edu.in/faculty/k-m-uma-maheswari/",
         "Designation": "Associate Professor",
@@ -5585,29 +6008,11 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Umadevi M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-umadevi/",
+        "title": "Dr. Vidhya R",
+        "url": "https://www.srmist.edu.in/faculty/r-vidhya/",
         "Designation": "Associate Professor",
-        "Specialization": "Data Mining, Information Retrieval",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Umadevi.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Usha G",
-        "url": "https://www.srmist.edu.in/faculty/dr-g-usha/",
-        "Designation": "Associate Professor",
-        "Specialization": "or Subject Network Security, Wireless Networks, Cryptography, Big data Security",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Usha.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Vijaya K",
-        "url": "https://www.srmist.edu.in/faculty/dr-k-vijaya/",
-        "Designation": "Associate Professor",
-        "Specialization": "Computer Science",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Vijaya-K.jpg"
+        "Specialization": "Learning Analytics, Big Data, Machine Learning and Data Mining",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Vidhya-R.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5617,6 +6022,15 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Computer Vision,  Computer Networks and Quantum Computing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Vijayakumaran.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Vinod D",
+        "url": "https://www.srmist.edu.in/faculty/dr-d-vinod/",
+        "Designation": "Associate Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Vinod.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5657,15 +6071,6 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Amirthasaravanan A",
-        "url": "https://www.srmist.edu.in/faculty/dr-amirthasaravanan-a/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Network Security, Fog Computing,Cloud Computing,Networks,Operating Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Amithrasaravan.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Anbarasi A",
         "url": "https://www.srmist.edu.in/faculty/dr-a-anbarasi/",
         "Designation": "Assistant Professor",
@@ -5702,24 +6107,6 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Anitha K",
-        "url": "https://www.srmist.edu.in/faculty/dr-anitha-k/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Image Processing, Machine Learning, Wireless Sensor Networks",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Anitha.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Anto Arockia Rosaline R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-anto-arockia-rosaline/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Machine Learning, Data Science, Data Analytics, Text Analytics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Anto.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Arul Prakash M",
         "url": "https://www.srmist.edu.in/faculty/m-arul-prakash/",
         "Designation": "Assistant Professor",
@@ -5752,15 +6139,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Security in Adhoc Networks",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Arun-V.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Arunachalam N",
-        "url": "https://www.srmist.edu.in/faculty/dr-n-arunachalam/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Artificial Intelligence, Machine Learning, Deep Learning and Algorithms",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Arunachalam.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5846,15 +6224,6 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Deeba K",
-        "url": "https://www.srmist.edu.in/faculty/k-deeba/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Theory of computation, Neural networks, Pattern Recognition",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Deeba.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Deepa R",
         "url": "https://www.srmist.edu.in/faculty/dr-deepa-r/",
         "Designation": "Assistant Professor",
@@ -5873,11 +6242,11 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Devipriya A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-devipriya/",
+        "title": "Dr. Divya Mohan",
+        "url": "https://www.srmist.edu.in/faculty/dr-divya-mohan/",
         "Designation": "Assistant Professor",
-        "Specialization": "Information Technology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Devipriya.jpg"
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/divya.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5887,15 +6256,6 @@ export const urls = [
         "Designation": "Assistant Professor (Senior Grade)",
         "Specialization": "Big data Analytics, Optical Routing, Database system",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Eliazer.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Gayathri M",
-        "url": "https://www.srmist.edu.in/faculty/m-gayathri/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Gayathri.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -5945,6 +6305,24 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Hariharan R",
+        "url": "https://www.srmist.edu.in/faculty/dr-hariharan-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Computer Vision , Image processing , Health care",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Hariharan.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Harriet Linda C",
+        "url": "https://www.srmist.edu.in/faculty/dr-harriet-linda-c/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/srm-faculty-43.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Ida Seraphim B",
         "url": "https://www.srmist.edu.in/faculty/b-ida-seraphim/",
         "Designation": "Assistant Professor",
@@ -5963,6 +6341,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Ishwarya K",
+        "url": "https://www.srmist.edu.in/faculty/dr-ishwarya-k/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Image Processing, Machine Learning, IOT and Big Data Analytics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/1.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Jagadeesan S",
         "url": "https://www.srmist.edu.in/faculty/s-jagadeesan/",
         "Designation": "Assistant Professor",
@@ -5975,26 +6362,17 @@ export const urls = [
         "title": "Dr. Jagadeesh M",
         "url": "https://www.srmist.edu.in/faculty/dr-jagadeesh-m/",
         "Designation": "Assistant Professor",
-        "Specialization": "Computer Science and Engineering",
+        "Specialization": "Applications of AI| ML| DL, Software Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/04.jpg"
     },
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Jane Olive Sharon P",
-        "url": "https://www.srmist.edu.in/faculty/ms-p-jane-olive-sharon/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Graph Theory, Machine Learning, AI",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Jane.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Jansi K R",
-        "url": "https://www.srmist.edu.in/faculty/k-r-jansi/",
+        "title": "Dr. Janani M",
+        "url": "https://www.srmist.edu.in/faculty/ms-janani-m/",
         "Designation": "Assistant Professor",
         "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Jansi.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Janani.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6044,11 +6422,11 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Kavisankar L",
-        "url": "https://www.srmist.edu.in/faculty/dr-l-kavisankar/",
+        "title": "Dr. Kavitha R",
+        "url": "https://www.srmist.edu.in/faculty/dr-kavitha-r/",
         "Designation": "Assistant Professor",
-        "Specialization": "Cyber Security, Blockchain, Computer Network, IoT",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/DSCN3134-scaled-e1682523753169.jpg"
+        "Specialization": "CTECH: Information Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/4.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6161,6 +6539,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Mohideen Abdulkader M",
+        "url": "https://www.srmist.edu.in/faculty/dr-mohideen-abdulkader-m/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Blockchain Technology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Mohideen.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Muralidharan C",
         "url": "https://www.srmist.edu.in/faculty/dr-c-muralidharan/",
         "Designation": "Assistant Professor",
@@ -6197,15 +6584,6 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Nancy P",
-        "url": "https://www.srmist.edu.in/faculty/dr-p-nancy/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Data Structures, Operating Systems, Machine Learning, Data Mining",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/nancy.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Nikkath Bushra S",
         "url": "https://www.srmist.edu.in/faculty/dr-nikkath-bushra-s/",
         "Designation": "Assistant Professor",
@@ -6233,20 +6611,20 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Nithyakani P",
+        "url": "https://www.srmist.edu.in/faculty/p-nithyakani/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Visual Computing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Nithyakani.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Nithyashri J",
         "url": "https://www.srmist.edu.in/faculty/dr-j-nithyashri/",
         "Designation": "Assistant Professor",
         "Specialization": "Image Processing Techniques, Pattern Recognition Techniques, Machine Learning, Data Science",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Nithyasri.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Padmapriya G",
-        "url": "https://www.srmist.edu.in/faculty/dr-g-padmapriya/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Data Mining, Artificial Intelligence, Machine Learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Padmapriya.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6260,11 +6638,38 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Pavithra Guru R",
+        "url": "https://www.srmist.edu.in/faculty/dr-pavithra-guru/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Design Algorithms in the Field of VLSI",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/05-copy-1.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Pavithra S",
+        "url": "https://www.srmist.edu.in/faculty/dr-pavithra-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Prakash B",
         "url": "https://www.srmist.edu.in/faculty/dr-b-prakash/",
         "Designation": "Assistant Professor",
         "Specialization": "Wireless Sensor Networks, Software Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Prakash-B.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Prakash U M",
+        "url": "https://www.srmist.edu.in/faculty/mr-u-m-prakash/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Bio Statistics and Machine learning Algorithms",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/prakash.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6332,6 +6737,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Rajathi V",
+        "url": "https://www.srmist.edu.in/faculty/dr-rajathi-v/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/WhatsApp-Image-2025-01-08-at-4.58.36-PM.jpeg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Rajmohan R",
         "url": "https://www.srmist.edu.in/faculty/dr-rajmohan-r/",
         "Designation": "Assistant Professor",
@@ -6386,6 +6800,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Ranjani M",
+        "url": "https://www.srmist.edu.in/faculty/ms-m-ranjani/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Deep Learning , Networking",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/ranjana.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Revathi M",
         "url": "https://www.srmist.edu.in/faculty/mrs-m-revathi/",
         "Designation": "Assistant Professor",
@@ -6404,6 +6827,24 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Saminathan S",
+        "url": "https://www.srmist.edu.in/faculty/mr-s-saminathan/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Saminathan.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Samsudeen S",
+        "url": "https://www.srmist.edu.in/faculty/dr-samsudeen-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Sankara Narayanan S",
         "url": "https://www.srmist.edu.in/faculty/dr-sankara-narayanan-s/",
         "Designation": "Assistant Professor",
@@ -6413,11 +6854,11 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Santhanakrishnan C",
-        "url": "https://www.srmist.edu.in/faculty/c-santhanakrishnan/",
-        "Designation": "Assistant Professor (Sr.G)",
-        "Specialization": "IoT, Computer Networks, Virtual Reality, Bio Inspired Computing.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Santhu.jpg"
+        "title": "Dr. Saranya S S",
+        "url": "https://www.srmist.edu.in/faculty/s-s-saranya/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Network Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Saranya-S-S.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6436,15 +6877,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Computer Science and Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Saravanan-P.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Saravanan Santhanam",
-        "url": "https://www.srmist.edu.in/faculty/s-saravanan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "AI and Machine learning, Big data Analytics and Data mining",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Saravanan.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6557,6 +6989,15 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Sivasakthi Selvan S",
+        "url": "https://www.srmist.edu.in/faculty/dr-sivasakthi-selvan-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Snehasish Ghosh",
         "url": "https://www.srmist.edu.in/faculty/dr-snehasish-ghosh-2/",
         "Designation": "Assistant Professor",
@@ -6575,20 +7016,11 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Srinivasan R",
-        "url": "https://www.srmist.edu.in/faculty/mr-r-srinivasan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Natural Language Processing, Computer Vision, Database Management Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/srinivasan2-2.jpeg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Subash R",
-        "url": "https://www.srmist.edu.in/faculty/r-subash/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Internet Of Things, Social Internet Of Things, Data Mining, Networking and Blockchain",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Subash.jpg"
+        "title": "Dr. Sudestna Nahak",
+        "url": "https://www.srmist.edu.in/faculty/sudestna-nahak/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "Signal Processing, Machine Learning, Deep Learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_5182.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6638,11 +7070,20 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Thilagavathy R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-thilagavathy-2/",
+        "title": "Dr. Thanigaivelu P S",
+        "url": "https://www.srmist.edu.in/faculty/mr-thanigaivelu-p-s/",
         "Designation": "Assistant Professor",
-        "Specialization": "Data Mining, Natural Language Processing,  Artificial Intelligence",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Thilagavathy.jpg"
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Thanigaivelu-P-S.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Umamageswari B",
+        "url": "https://www.srmist.edu.in/faculty/ms-umamageswari-b/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Data Mining",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/3.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6670,15 +7111,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Software Testing, IoT, Image Processing, Machine Learning",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Velmurugan.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Vidhya R",
-        "url": "https://www.srmist.edu.in/faculty/r-vidhya/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Learning Analytics, Big Data, Machine Learning and Data Mining",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Vidhya-R.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6728,15 +7160,6 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Vinod D",
-        "url": "https://www.srmist.edu.in/faculty/dr-d-vinod/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Vinod.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Dr. Vinoth N A S",
         "url": "https://www.srmist.edu.in/faculty/mr-vinoth-n-a-s-2/",
         "Designation": "Assistant Professor",
@@ -6746,11 +7169,29 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Vivek Justus",
-        "url": "https://www.srmist.edu.in/faculty/dr-vivek-justus/",
+        "title": "Dr. Vinu S",
+        "url": "https://www.srmist.edu.in/faculty/dr-vinu-s/",
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Vivek Justus",
+        "url": "https://www.srmist.edu.in/faculty/dr-vivek-justus/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/IMG_4162-e1720053717238.jpg"
+    },
+    {
+        "DepartmentCode": 13519,
+        "DepartmentName": "Department of Computing Technologies",
+        "title": "Dr. Viveka S",
+        "url": "https://www.srmist.edu.in/faculty/ms-viveka-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/viveka.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6778,15 +7219,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Computer Science and Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Mr.-Gowtham-R.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Dr. Gowtham P",
-        "url": "https://www.srmist.edu.in/faculty/dr-gowtham-p/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/gowtham.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6827,47 +7259,11 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Mr. Prakash U M",
-        "url": "https://www.srmist.edu.in/faculty/mr-u-m-prakash/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Bio Statistics and Machine learning Algorithms",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/prakash.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Mr. Rohit Ravi",
         "url": "https://www.srmist.edu.in/faculty/rohit-ravi/",
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_5217.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Mr. Saminathan S",
-        "url": "https://www.srmist.edu.in/faculty/mr-s-saminathan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Saminathan.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Mr. Thamizhikkavi P",
-        "url": "https://www.srmist.edu.in/faculty/mr-thamizhikkavi-p-2/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Cryptography, Python, Networking.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Thamizhikkavi-P.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Mr. Thanigaivelu P S",
-        "url": "https://www.srmist.edu.in/faculty/mr-thanigaivelu-p-s/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Thanigaivelu-P-S.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6899,15 +7295,6 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Mrs. Divya Mohan",
-        "url": "https://www.srmist.edu.in/faculty/mrs-divya-mohan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/divya.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Mrs. Kanmani S",
         "url": "https://www.srmist.edu.in/faculty/mrs-kanmani-sivagar/",
         "Designation": "Assistant Professor",
@@ -6922,15 +7309,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Computer Science and Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/IMG-20230406-WA0046-e1685240602766.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Mrs. Nithyakani P",
-        "url": "https://www.srmist.edu.in/faculty/p-nithyakani/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Visual Computing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Nithyakani.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -6953,15 +7331,6 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Mrs. Ranjani M",
-        "url": "https://www.srmist.edu.in/faculty/ms-m-ranjani/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Deep Learning , Networking",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/ranjana.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Mrs. Rekha G",
         "url": "https://www.srmist.edu.in/faculty/mrs-rekha-g/",
         "Designation": "Assistant Professor",
@@ -6980,15 +7349,6 @@ export const urls = [
     {
         "DepartmentCode": 13519,
         "DepartmentName": "Department of Computing Technologies",
-        "title": "Mrs. Saranya S S",
-        "url": "https://www.srmist.edu.in/faculty/s-s-saranya/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Network Security",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Saranya-S-S.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
         "title": "Mrs. Selvameena P",
         "url": "https://www.srmist.edu.in/faculty/mrs-selvameena-p/",
         "Designation": "Assistant Professor",
@@ -7002,7 +7362,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-k-sorna-lakshmi/",
         "Designation": "Assistant Professor",
         "Specialization": "Wireless Sensor Networks, Internet of Things",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Sornalakshmi.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Sornalakshmi-scaled.jpg"
     },
     {
         "DepartmentCode": 13519,
@@ -7050,31 +7410,13 @@ export const urls = [
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Hema.jpg"
     },
     {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Ms. Janani M",
-        "url": "https://www.srmist.edu.in/faculty/ms-janani-m/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Janani.jpg"
-    },
-    {
-        "DepartmentCode": 13519,
-        "DepartmentName": "Department of Computing Technologies",
-        "title": "Ms. Sudestna Nahak",
-        "url": "https://www.srmist.edu.in/faculty/sudestna-nahak/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Signal Processing, Machine Learning, Deep Learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_5182.jpg"
-    },
-    {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Lakshmi M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-lakshmi/",
+        "title": "Dr. Kavitha V",
+        "url": "https://www.srmist.edu.in/faculty/dr-v-kavitha/",
         "Designation": "Professor & Head",
-        "Specialization": "Machine Learning,",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4325.jpg"
+        "Specialization": "Data Mining and Digital Image Processing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4251.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7088,20 +7430,29 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Kavitha V",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-kavitha/",
-        "Designation": "Professor",
-        "Specialization": "Data Mining and Digital Image Processing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4251.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
         "title": "Dr. Murugan A",
         "url": "https://www.srmist.edu.in/faculty/dr-a-murugan/",
         "Designation": "Professor",
         "Specialization": "Computer Science & Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/dr-murugan-a.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Prakash M",
+        "url": "https://www.srmist.edu.in/faculty/dr-m-prakash/",
+        "Designation": "Professor",
+        "Specialization": "Data Analytics, Machine Learning, Cloud Computing, Information Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4302.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Rajeswari D",
+        "url": "https://www.srmist.edu.in/faculty/dr-d-rajeswari/",
+        "Designation": "Professor",
+        "Specialization": "Big data Analytics, Cloud Computing, Evolutionary algorithms, Machine Learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Rajeswari-.-D.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7115,10 +7466,19 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Shanthini A",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-shanthini/",
+        "Designation": "Professor",
+        "Specialization": "Data Science, Machine Learning, Software Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4266.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
         "title": "Dr. Vadivu G",
         "url": "https://www.srmist.edu.in/faculty/dr-g-vadivu/",
         "Designation": "Professor",
-        "Specialization": "Deep Learning, Machine Learning, Big Data Analytics, Social Network Analytics, Semantic Web",
+        "Specialization": "Artificial Intelligence, Generative AI, Computer Vision, Deep Learning, Machine Learning, Big Data Analytics, Social Network Analytics, Semantic Web",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4242.jpg"
     },
     {
@@ -7136,8 +7496,35 @@ export const urls = [
         "title": "Dr. Hemavathi D",
         "url": "https://www.srmist.edu.in/faculty/dr-d-hemavathi/",
         "Designation": "Associate Professor",
-        "Specialization": "Distributed Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4262.jpg"
+        "Specialization": "Distributed Systems , Data Analytics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/WhatsApp-Image-2024-10-03-at-9.13.45-AM.jpeg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Jeba Sonia J",
+        "url": "https://www.srmist.edu.in/faculty/dr-j-jeba-sonia/",
+        "Designation": "Associate Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/Dr-Jeba-Sonia-photo.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Kalpana A V",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-v-kalpana/",
+        "Designation": "Associate Professor",
+        "Specialization": "Machine Learning, Data Science, IoT",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4273.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Kanmani P",
+        "url": "https://www.srmist.edu.in/faculty/dr-p-kanmani/",
+        "Designation": "Associate Professor",
+        "Specialization": "Machine Learning, Image Processing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4241.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7160,11 +7547,11 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Prakash M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-prakash/",
+        "title": "Dr. Paul T Sheeba",
+        "url": "https://www.srmist.edu.in/faculty/dr-paul-t-sheeba/",
         "Designation": "Associate Professor",
-        "Specialization": "Data Analytics, Machine Learning, Cloud Computing, Information Security",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4302.jpg"
+        "Specialization": "Computer Vision, Machine Learning, Block Chain",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/3.Photo-1.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7187,15 +7574,6 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Rajeswari D",
-        "url": "https://www.srmist.edu.in/faculty/dr-d-rajeswari/",
-        "Designation": "Associate Professor",
-        "Specialization": "Big data Analytics, Cloud Computing, Evolutionary algorithms, Machine Learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4310.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
         "title": "Dr. Rajkumar R",
         "url": "https://www.srmist.edu.in/faculty/r-rajkumar/",
         "Designation": "Associate Professor",
@@ -7214,11 +7592,11 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Shanthini A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-shanthini/",
+        "title": "Dr. Shanthini J",
+        "url": "https://www.srmist.edu.in/faculty/dr-shanthini-j/",
         "Designation": "Associate Professor",
-        "Specialization": "Data Science, Machine Learning, Software Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4266.jpg"
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/JS.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7246,15 +7624,6 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Big Data Analytics, Stream Computing, Optimization, Reinforcement Learning",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4312.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Suchitra S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-suchitra/",
-        "Designation": "Associate Professor",
-        "Specialization": "Computer Vision, AI, Machine Learning, Deep Learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4274.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7287,7 +7656,7 @@ export const urls = [
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
         "title": "Dr. Archana K S",
-        "url": "https://www.srmist.edu.in/faculty/dr-k-s-archana/",
+        "url": "https://www.srmist.edu.in/faculty/dr-archana-k-s/",
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4285.jpg"
@@ -7327,6 +7696,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "VANET,IOT",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4303.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Dhanalakshmi J",
+        "url": "https://www.srmist.edu.in/faculty/dr-dhanalakshmi-j/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/4.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7376,6 +7754,15 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Jagadish Kumar N",
+        "url": "https://www.srmist.edu.in/faculty/dr-jagadish-kumar-n/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/2.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
         "title": "Dr. Jayaraj R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-jayaraj/",
         "Designation": "Assistant Professor",
@@ -7385,38 +7772,11 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Jeba Sonia J",
-        "url": "https://www.srmist.edu.in/faculty/dr-j-jeba-sonia/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/Dr-Jeba-Sonia-photo.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
         "title": "Dr. John Deva Prasanna D S",
         "url": "https://www.srmist.edu.in/faculty/dr-john-deva-prasanna-d-s/",
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4318.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Kalpana A V",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-v-kalpana/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Machine Learning, Data Science, IoT",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4273.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Kanmani P",
-        "url": "https://www.srmist.edu.in/faculty/dr-p-kanmani/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Machine Learning, Image Processing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4241.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7439,11 +7799,20 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Mercy Theresa",
+        "title": "Dr. Maniraj S P",
+        "url": "https://www.srmist.edu.in/faculty/dr-maniraj-s-p/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Image Processing, Machine Learning, IOT, Artificial Intelligence",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/21.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Mercy Theresa M",
         "url": "https://www.srmist.edu.in/faculty/dr-mercy-theresa/",
         "Designation": "Assistant Professor",
-        "Specialization": "Digital Image Processing, Networking",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4291.jpg"
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/mercy.jpeg"
     },
     {
         "DepartmentCode": 13537,
@@ -7479,16 +7848,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/k-panimalar/",
         "Designation": "Assistant Professor",
         "Specialization": "Optimization in Wireless sensor networks",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/hhh.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Paul T Sheeba",
-        "url": "https://www.srmist.edu.in/faculty/dr-paul-t-sheeba/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Vision, Machine Learning, Block Chain",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/3.Photo-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/Pani-644.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7516,6 +7876,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Data Mining, Machine Learning",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4288.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Praveen Kumar S",
+        "url": "https://www.srmist.edu.in/faculty/dr-praveen-kumar-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Deep learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4261-1.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7605,7 +7974,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-j-shobana/",
         "Designation": "Assistant Professor",
         "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4290.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/photo_sss-small.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7615,6 +7984,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4502.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Sindhu S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-sindhu/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Data Mining, Data Analytics, IoT",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4263.jpg"
     },
     {
         "DepartmentCode": 13537,
@@ -7682,6 +8060,15 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Dr. Vasudevan N",
+        "url": "https://www.srmist.edu.in/faculty/mr-vasudevan-n/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Deep Learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4321.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
         "title": "Dr. Venkatesh S",
         "url": "https://www.srmist.edu.in/faculty/dr-venkatesh-s/",
         "Designation": "Assistant Professor",
@@ -7709,38 +8096,47 @@ export const urls = [
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Mrs. Sindhu S",
-        "url": "https://www.srmist.edu.in/faculty/mrs-s-sindhu/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Data Mining, Data Analytics, IoT",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4263.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Mrs. Yasotha B",
+        "title": "Dr. Yasotha B",
         "url": "https://www.srmist.edu.in/faculty/dr-yasotha-b/",
         "Designation": "Assistant Professor",
+        "Specialization": "Machine learning, Datamining",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/yasotha-photo2.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Mr. Balachander S",
+        "url": "https://www.srmist.edu.in/faculty/mr-balachander-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Blockchain Technology, Information Security, IoT, Privacy and Cryptography.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/5Y0A9011-copy-1-1-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Mr. Logeshwaran R",
+        "url": "https://www.srmist.edu.in/faculty/mr-logeshwaran-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Machine Learning in Underwater- Communication, Signal Processing, Image Processing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/gnhg.jpg"
+    },
+    {
+        "DepartmentCode": 13537,
+        "DepartmentName": "Department of Data Science And Business Systems",
+        "title": "Ms. Annapoorani S",
+        "url": "https://www.srmist.edu.in/faculty/ms-annapoorani-s/",
+        "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4289.jpg"
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13537,
         "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Praveen Kumar S",
-        "url": "https://www.srmist.edu.in/faculty/mr-praveen-kumar-s/",
-        "Designation": "Assistant Professor - Jr.G",
-        "Specialization": "Deep learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4261-1.jpg"
-    },
-    {
-        "DepartmentCode": 13537,
-        "DepartmentName": "Department of Data Science And Business Systems",
-        "title": "Dr. Vasudevan N",
-        "url": "https://www.srmist.edu.in/faculty/mr-vasudevan-n/",
-        "Designation": "Assistant Professor - Jr.G",
-        "Specialization": "Deep Learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4321.jpg"
+        "title": "Ms. Gayathri M",
+        "url": "https://www.srmist.edu.in/faculty/ms-gayathri-m/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13537,
@@ -7781,11 +8177,11 @@ export const urls = [
     {
         "DepartmentCode": 24100,
         "DepartmentName": "Department of Defence and Strategic Studies",
-        "title": "Dr. Surendran D",
-        "url": "https://www.srmist.edu.in/faculty/dr-d-surendran/",
-        "Designation": "Assistant Professor and HOD",
+        "title": "Mr. Beno Jones J",
+        "url": "https://www.srmist.edu.in/faculty/j-beno-jones/",
+        "Designation": "Assistant Professor and Head",
         "Specialization": "Defence and Strategic Studies",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/600566-DS-F1-1-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/11/DSC_9979.-scaled.jpg"
     },
     {
         "DepartmentCode": 24100,
@@ -7795,15 +8191,6 @@ export const urls = [
         "Designation": "Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/PP-Photo-1-2-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 24100,
-        "DepartmentName": "Department of Defence and Strategic Studies",
-        "title": "Dr. Mohammad Yusuf",
-        "url": "https://www.srmist.edu.in/faculty/dr-mohammad-yusuf/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Defence and Strategic Studies",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/2-4-scaled.jpg"
     },
     {
         "DepartmentCode": 24100,
@@ -7835,11 +8222,29 @@ export const urls = [
     {
         "DepartmentCode": 24100,
         "DepartmentName": "Department of Defence and Strategic Studies",
-        "title": "Mr. Beno Jones J",
-        "url": "https://www.srmist.edu.in/faculty/j-beno-jones/",
+        "title": "Mr. Shakthi Vigneshwaran",
+        "url": "https://www.srmist.edu.in/faculty/mr-shakthi-vigneshwaran/",
         "Designation": "Assistant Professor",
-        "Specialization": "Defence and Strategic Studies",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/11/DSC_9979.-scaled.jpg"
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-13.jpg"
+    },
+    {
+        "DepartmentCode": 24100,
+        "DepartmentName": "Department of Defence and Strategic Studies",
+        "title": "Ms. Joe Infantia",
+        "url": "https://www.srmist.edu.in/faculty/ms-joe-infantia/",
+        "Designation": "Teaching Associate",
+        "Specialization": "Disaster Management",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/5Y0A8569-scaled-e1732716636678.jpg"
+    },
+    {
+        "DepartmentCode": 24100,
+        "DepartmentName": "Department of Defence and Strategic Studies",
+        "title": "Ms. Sony J R",
+        "url": "https://www.srmist.edu.in/faculty/ms-sony-j-r/",
+        "Designation": "Teaching Associate",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Profile-pic-scaled.jpg"
     },
     {
         "DepartmentCode": 23887,
@@ -7862,20 +8267,38 @@ export const urls = [
     {
         "DepartmentCode": 23887,
         "DepartmentName": "Department of Economics",
-        "title": "Dr. Stephy Christina  S",
-        "url": "https://www.srmist.edu.in/faculty/dr-stephy-christina-s/",
+        "title": "Dr. Sankaran M",
+        "url": "https://www.srmist.edu.in/faculty/dr-sankaran-m/",
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 23887,
+        "DepartmentName": "Department of Economics",
+        "title": "Dr. Stephy Christina  S",
+        "url": "https://www.srmist.edu.in/faculty/dr-stephy-christina-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Health Economics, Econometrics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-01-at-9.32.00-AM-1.jpeg"
     },
     {
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Vijayakumar K",
         "url": "https://www.srmist.edu.in/faculty/dr-k-vijayakumar/",
-        "Designation": "Dean I/C SEEE and Head",
+        "Designation": "Dean I/C, School of Electrical and Electronics Engineering",
         "Specialization": "Power Electronics Applications in Power Systems",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Dr.-Vijayakumar-K.jpg"
+    },
+    {
+        "DepartmentCode": 9087,
+        "DepartmentName": "Department of Electrical and Electronics Engineering",
+        "title": "Dr. Sridhar R",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-sridhar/",
+        "Designation": "Professor & Head",
+        "Specialization": "Power Electronics in Renewable Energy Systems",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Sridhar_EEE.jpg"
     },
     {
         "DepartmentCode": 9087,
@@ -7885,6 +8308,15 @@ export const urls = [
         "Designation": "Professor",
         "Specialization": "Power Electronics and Drives",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/C-Bharatiraja-1.jpg"
+    },
+    {
+        "DepartmentCode": 9087,
+        "DepartmentName": "Department of Electrical and Electronics Engineering",
+        "title": "Dr. Chellammal N",
+        "url": "https://www.srmist.edu.in/faculty/dr-n-chellammal/",
+        "Designation": "Associate Professor",
+        "Specialization": "Power Electronics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/file.jpeg"
     },
     {
         "DepartmentCode": 9087,
@@ -7907,11 +8339,11 @@ export const urls = [
     {
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
-        "title": "Dr. Sridhar R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-sridhar/",
-        "Designation": "Professor",
-        "Specialization": "Power Electronics in Renewable Energy Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Sridhar-new-photo-e1666003497770.jpg"
+        "title": "Dr. Suchitra D",
+        "url": "https://www.srmist.edu.in/faculty/dr-d-suchitra/",
+        "Designation": "Associate Professor",
+        "Specialization": "Power System",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile-Pic-scaled.jpg"
     },
     {
         "DepartmentCode": 9087,
@@ -7934,20 +8366,11 @@ export const urls = [
     {
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
-        "title": "Dr. Chellammal N",
-        "url": "https://www.srmist.edu.in/faculty/dr-n-chellammal/",
-        "Designation": "Associate Professor",
-        "Specialization": "Power Electronics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Chellammal_Photo_2021-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 9087,
-        "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Divya Navamani J",
         "url": "https://www.srmist.edu.in/faculty/dr-j-divya-navamani/",
         "Designation": "Associate Professor",
         "Specialization": "Power Electronics and Industrial Drives",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Personal-photo1.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Personal-photo2-1.jpeg"
     },
     {
         "DepartmentCode": 9087,
@@ -7971,7 +8394,7 @@ export const urls = [
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Kalaiarasi N",
-        "url": "https://www.srmist.edu.in/faculty/dr-n-kalaiarasi/",
+        "url": "https://www.srmist.edu.in/faculty/dr-kalaiarasi-n/",
         "Designation": "Associate Professor",
         "Specialization": "Power Electronics",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/IMG_0673-1-scaled.jpg"
@@ -8019,7 +8442,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-u-sowmmiya/",
         "Designation": "Associate Professor",
         "Specialization": "Grid integration issues with renewable sources,Power converter design, control and power transfer techniques in drive systems.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG_0641-scaled-e1665757898454.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/IMG-20240824-WA0106.jpg"
     },
     {
         "DepartmentCode": 9087,
@@ -8029,15 +8452,6 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Power Systems  Mail subramac@srmist.edu.in",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Dr. C.Subramani.jpg"
-    },
-    {
-        "DepartmentCode": 9087,
-        "DepartmentName": "Department of Electrical and Electronics Engineering",
-        "title": "Dr. Suchitra D",
-        "url": "https://www.srmist.edu.in/faculty/dr-d-suchitra/",
-        "Designation": "Associate Professor",
-        "Specialization": "Power System",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile-Pic-scaled.jpg"
     },
     {
         "DepartmentCode": 9087,
@@ -8061,9 +8475,9 @@ export const urls = [
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Balaji C",
-        "url": "https://www.srmist.edu.in/faculty/dr-c-balaji/",
+        "url": "https://www.srmist.edu.in/faculty/dr-balaji-c/",
         "Designation": "Assistant Professor",
-        "Specialization": "Power Electronics, Renewable energy systems",
+        "Specialization": "Power Electronics, Renewable energy systems, Electric Vehicles, Wireless Power charging",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/2222.jpg"
     },
     {
@@ -8089,7 +8503,7 @@ export const urls = [
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Geetha A",
         "url": "https://www.srmist.edu.in/faculty/dr-a-geetha/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Electrical Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/gee-photo-new-e1665573654782.jpg"
     },
@@ -8151,8 +8565,8 @@ export const urls = [
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Lavanya A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-lavanya/",
-        "Designation": "Assistant Professor",
+        "url": "https://www.srmist.edu.in/faculty/dr-lavanya-a/",
+        "Designation": "Associate Professor",
         "Specialization": "Power electronics and industrial drives",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/ALA-new-photo-scaled.jpg"
     },
@@ -8188,7 +8602,7 @@ export const urls = [
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Palanisamy R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-palanisamy/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Power Electronics and Drives",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/palanisamy-r-1-scaled.jpg"
     },
@@ -8214,7 +8628,7 @@ export const urls = [
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Pradeep V",
-        "url": "https://www.srmist.edu.in/faculty/mr-v-pradeep/",
+        "url": "https://www.srmist.edu.in/faculty/dr-pradeep-v/",
         "Designation": "Assistant Professor",
         "Specialization": "Power Electronics and Drives  Mail pradeepv@srmist.edu.in",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/pradeep-v.jpeg"
@@ -8222,11 +8636,11 @@ export const urls = [
     {
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
-        "title": "Dr. Rajarajeswari R",
+        "title": "Dr. R.Rajarajeswari",
         "url": "https://www.srmist.edu.in/faculty/dr-r-rajarajeswari/",
         "Designation": "Assistant Professor",
-        "Specialization": "Power Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/08/IMG_0612-300x200-1.jpg"
+        "Specialization": "Demand Response Strategy and its Application in Smart Grid Environment",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG_0612-scaled.jpg"
     },
     {
         "DepartmentCode": 9087,
@@ -8245,6 +8659,24 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Electrical and Electronics Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/IMG_0580-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 9087,
+        "DepartmentName": "Department of Electrical and Electronics Engineering",
+        "title": "Dr. Ravichandran D",
+        "url": "https://www.srmist.edu.in/faculty/mr-d-ravichandran/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Power System Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/MY_PHOTO_REDUCED.jpg"
+    },
+    {
+        "DepartmentCode": 9087,
+        "DepartmentName": "Department of Electrical and Electronics Engineering",
+        "title": "Dr. S. Vijayalakshmi",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-vijayalakshmi/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Power Electronics and Drives",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Dr_S_Vijayalakshmi.jpg"
     },
     {
         "DepartmentCode": 9087,
@@ -8323,7 +8755,7 @@ export const urls = [
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Thamizh Thentral T M",
         "url": "https://www.srmist.edu.in/faculty/dr-t-m-thamizh-thentral/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Power Electronics and drives",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/TMT_DP_PH_1.jpg"
     },
@@ -8332,7 +8764,7 @@ export const urls = [
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Usha S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-usha/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Power Electronics",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/IMG_0662-1-scaled.jpg"
     },
@@ -8341,7 +8773,7 @@ export const urls = [
         "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Uthra R",
         "url": "https://www.srmist.edu.in/faculty/mrs-uthra-r/",
-        "Designation": "Assistant Professor (Sr. Gr)",
+        "Designation": "Assistant Professor",
         "Specialization": "Power Electronics & Drives",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/RU2-2.jpg"
     },
@@ -8357,15 +8789,6 @@ export const urls = [
     {
         "DepartmentCode": 9087,
         "DepartmentName": "Department of Electrical and Electronics Engineering",
-        "title": "Dr. Vijayalakshmi S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-vijayalakshmi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Power Electronics and Drives",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Dr_S_Vijayalakshmi.jpg"
-    },
-    {
-        "DepartmentCode": 9087,
-        "DepartmentName": "Department of Electrical and Electronics Engineering",
         "title": "Dr. Vinothkumar B",
         "url": "https://www.srmist.edu.in/faculty/mr-b-vinothkumar/",
         "Designation": "Assistant Professor",
@@ -8373,22 +8796,13 @@ export const urls = [
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/IMG_0650-scaled.jpg"
     },
     {
-        "DepartmentCode": 9087,
-        "DepartmentName": "Department of Electrical and Electronics Engineering",
-        "title": "Mr. Ravichandran D",
-        "url": "https://www.srmist.edu.in/faculty/mr-d-ravichandran/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Power System Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/MY_PHOTO_REDUCED.jpg"
-    },
-    {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Dr. Shanthi Prince",
-        "url": "https://www.srmist.edu.in/faculty/dr-shanthi-prince/",
+        "title": "Dr. Sangeetha M",
+        "url": "https://www.srmist.edu.in/faculty/dr-m-sangeetha/",
         "Designation": "Professor & Head",
-        "Specialization": "Optical Communication and Bio-Photonics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/100215-Dr.-Shanthi-Prince.jpg"
+        "Specialization": "Communication Systems",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/sangeetha-1.png"
     },
     {
         "DepartmentCode": 13473,
@@ -8474,20 +8888,20 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Dr. Sangeetha M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-sangeetha/",
-        "Designation": "Professor",
-        "Specialization": "Communication Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/100258-Dr.-M.-Sangeetha.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Selvakumar J",
         "url": "https://www.srmist.edu.in/faculty/j-selvakumar/",
         "Designation": "Professor",
         "Specialization": "VLSI and Embedded Systems",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/100232-Dr.J.-Selvakumar.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Shanthi Prince",
+        "url": "https://www.srmist.edu.in/faculty/dr-shanthi-prince/",
+        "Designation": "Professor",
+        "Specialization": "Optical Communication and Bio-Photonics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/100215-Dr.-Shanthi-Prince.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -8541,7 +8955,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-diwakar-r-marur/",
         "Designation": "Associate Professor",
         "Specialization": "Digital Image Processing, Communication Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Dr. Diwakar R. Marur.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7022.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -8591,15 +9005,6 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Dr. Manohari  R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-manohari/",
-        "Designation": "Associate Professor",
-        "Specialization": "Embedded systems, Optical signal processing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/100211-Dr.-R.-Manohari.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Maria Jossy A",
         "url": "https://www.srmist.edu.in/faculty/dr-a-maria-jossy/",
         "Designation": "Associate Professor",
@@ -8613,7 +9018,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-v-nithya/",
         "Designation": "Associate Professor",
         "Specialization": "Wireless Communication, Wireless sensor networks",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/Dr.-V.-Nithya-Profile-Photo.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Dr.-V.-Nithya-Profile-Photo-1.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -8690,11 +9095,11 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Dr. Aditya Nath Bhatt",
-        "url": "https://www.srmist.edu.in/faculty/dr-aditya-nath-bhatt/",
+        "title": "Dr. Ananda Venkatesan B",
+        "url": "https://www.srmist.edu.in/faculty/mr-b-ananda-venkatesan/",
         "Designation": "Assistant Professor",
-        "Specialization": "Microelectronics and VLSI, Nanotechnology, and Organic Electronics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/10/102964-Dr.-Aditya-Nath-Bhatt.jpg"
+        "Specialization": "Applied Electronics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101333-Mr.-B.-Ananda-Venkatesan.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -8713,6 +9118,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Communication Systems",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101334-Mrs.-A.-Anilet-Bala.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Anusooya V",
+        "url": "https://www.srmist.edu.in/faculty/dr-anusooya-v/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Photonics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/anussoya.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -8740,6 +9154,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Communication systems",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/101223-Dr.-S.-Bashyam.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Bharatha babu K",
+        "url": "https://www.srmist.edu.in/faculty/dr-bharathababu-k/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Bharath-babu.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -8774,13 +9197,22 @@ export const urls = [
         "title": "Dr. Debarati Nath",
         "url": "https://www.srmist.edu.in/faculty/dr-debarati-nath/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Organic electronics , IOT and Machine learning",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/debarati-nath.jpg"
     },
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Dr. Elamaran E",
+        "title": "Dr. Dhivya K",
+        "url": "https://www.srmist.edu.in/faculty/dr-dhivya-k-2/",
+        "Designation": "Assistant Professor",
+        "Specialization": "5G Wireless Communication",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Dhivya.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. E. Elamaran",
         "url": "https://www.srmist.edu.in/faculty/mr-e-elamaran/",
         "Designation": "Assistant Professor",
         "Specialization": "Communication System",
@@ -8844,7 +9276,7 @@ export const urls = [
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Harisudha K",
-        "url": "https://www.srmist.edu.in/faculty/mrs-k-harisudha/",
+        "url": "https://www.srmist.edu.in/faculty/dr-harisudha-k-2/",
         "Designation": "Assistant Professor (SrG)",
         "Specialization": "Telecommunication Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/100267-Dr.-K.-Harisudha.jpg"
@@ -8857,6 +9289,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Electromagnetics, Antenna Theory, Abstract Algebra, Signal Processing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/02/DSC_7033.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Heartlin Maria H",
+        "url": "https://www.srmist.edu.in/faculty/ms-heartlin-maria-h/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/heartlin.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -8906,6 +9347,15 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Kayalvizhi R",
+        "url": "https://www.srmist.edu.in/faculty/dr-kayalvizhi-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Image processing and Artificial Intelligence",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Kayalvizhi S",
         "url": "https://www.srmist.edu.in/faculty/mrs-s-kayalvizhi/",
         "Designation": "Assistant Professor",
@@ -8933,6 +9383,15 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Lokesh S",
+        "url": "https://www.srmist.edu.in/faculty/dr-lokesh-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "VLSI DESIGN",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/lokesh.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Manikandan A",
         "url": "https://www.srmist.edu.in/faculty/dr-manikandan-a/",
         "Designation": "Assistant Professor",
@@ -8947,6 +9406,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Microelectronics, Nanoelectronics, Photovoltaics",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/100244-Mr.-A.V.M.-Manikandan.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Maria Dominic Savio M",
+        "url": "https://www.srmist.edu.in/faculty/mr-m-maria-dominic-savio/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Electronics and Communication Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101555-Mr.-M.-Maria-Dominic-Savio.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -8991,7 +9459,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-m-neelaveni-ammal/",
         "Designation": "Assistant Professor",
         "Specialization": "Electronics and Communication Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/100223-Dr.-M.-Neelaveni-Ammal.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/FINAL-WHITE.png"
     },
     {
         "DepartmentCode": 13473,
@@ -9005,6 +9473,15 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Parthiban I",
+        "url": "https://www.srmist.edu.in/faculty/dr-parthiban-i/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Wireless Communication",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/partiban.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Prabhu P",
         "url": "https://www.srmist.edu.in/faculty/mr-p-prabhu/",
         "Designation": "Assistant Professor",
@@ -9014,11 +9491,20 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Prasad Jones Christydass",
+        "url": "https://www.srmist.edu.in/faculty/dr-prasad-jones-christydass/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/prasad.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Prasanna R",
         "url": "https://www.srmist.edu.in/faculty/dr-prasanna-r/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Digital Communication, UWB Antennas, Bio-Medical Antennas, IoT",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/Prasanna-1.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9050,11 +9536,29 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Priyadharshini R",
+        "url": "https://www.srmist.edu.in/faculty/dr-priyadharshini-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Information and Communication Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Priya-dharshini.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Priyalakshmi B",
         "url": "https://www.srmist.edu.in/faculty/mrs-b-priyalakshmi/",
         "Designation": "Assistant Professor",
         "Specialization": "Electronics and Communication Engineering, Telecommunication Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/100248-Dr.-B.-Priyalakshmi.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Pulkit Singh",
+        "url": "https://www.srmist.edu.in/faculty/dr-pulkit-singh/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Hardware Implementation, Lightweight Cryptography",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/pulkit-singh.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9073,6 +9577,15 @@ export const urls = [
         "Designation": "Assistant Professor(Sr.G)",
         "Specialization": "Communication Systems",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/100254-Ms.T.-Ramya.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Saminathan T",
+        "url": "https://www.srmist.edu.in/faculty/mr-t-saminathan/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Electronics and Communication Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101495-Mr.-T.-Saminathan.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9113,11 +9626,29 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Sayantani Bhattacharya",
+        "url": "https://www.srmist.edu.in/faculty/mrs-sayantani-bhattacharya/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Optical fiber sensors, Fiber Bragg Grating (FBG), Regenerated Fiber Bragg Grating sensors  design, fabrication and characterizations, High-temperature stable grating",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7042-1.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Senthil Kumaran R",
         "url": "https://www.srmist.edu.in/faculty/dr-senthil-kumaran-r/",
         "Designation": "Assistant Professor",
         "Specialization": "Wireless Sensor Networks, Mobile Adhoc Networks, Internet of Things (IoT), Communication and Signal Processing.",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/02/rsk.jpeg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Shayna Kumari",
+        "url": "https://www.srmist.edu.in/faculty/dr-shayna-kumari/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/shyana.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9134,7 +9665,7 @@ export const urls = [
         "title": "Dr. Soumyaranjan Routray",
         "url": "https://www.srmist.edu.in/faculty/dr-soumyaranjan-routray/",
         "Designation": "Research Assistant Professor",
-        "Specialization": "Nanotechnology, Photovoltaic, and Photonic Devices",
+        "Specialization": "Semiconductor Devices, Reliability and Failure Analysis, IC Design, Neuromorphic Computing, Qubit Design",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/102437-Dr.-Soumyaranjan-Routray.jpg"
     },
     {
@@ -9149,11 +9680,29 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Sowmya N",
+        "url": "https://www.srmist.edu.in/faculty/ms-sowmya-n/",
+        "Designation": "Assistant Professor",
+        "Specialization": "•Signal processing, Embedded system, IoT. •Artificial Intelligence enabled food analysis, Machine Learning, Deep Learning, Blockchain.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/sowmya.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
         "title": "Dr. Srilekha M K",
         "url": "https://www.srmist.edu.in/faculty/mrs-m-k-srilekha/",
         "Designation": "Assistant Professor",
         "Specialization": "Wireless nano sensor networks, Biosensor.",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101124-Mrs.-M.K.-Srilekha.jpg"
+    },
+    {
+        "DepartmentCode": 13473,
+        "DepartmentName": "Department of Electronics & Communication",
+        "title": "Dr. Srinath R",
+        "url": "https://www.srmist.edu.in/faculty/dr-srinath-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Bio Medical Signal Processing, AI",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/srinath.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9181,15 +9730,6 @@ export const urls = [
         "Designation": "Assistant Professor (S.G)",
         "Specialization": "VLSI Design",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/100241-Dr.-K.-Suganthi.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Dr. Suhasini S",
-        "url": "https://www.srmist.edu.in/faculty/ms-s-suhasini/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Electronics and Communication Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101559-Mrs.-S.-Suhasini.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9226,15 +9766,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "RF and Microwave",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7039.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Dr. Tulika Srivastava",
-        "url": "https://www.srmist.edu.in/faculty/dr-tulika-srivastava/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Optoelectronics, Electronic Devices",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/02/DSC_7040-1.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9338,20 +9869,20 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Dr.Parthiban I",
-        "url": "https://www.srmist.edu.in/faculty/dr-parthiban-i/",
+        "title": "Dr.S.Kolangiammal",
+        "url": "https://www.srmist.edu.in/faculty/mrs-s-kolangiammal/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Communication Systems",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7027.jpg"
     },
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mr. Ananda Venkatesan B",
-        "url": "https://www.srmist.edu.in/faculty/mr-b-ananda-venkatesan/",
+        "title": "Dr.Tulika Srivastava",
+        "url": "https://www.srmist.edu.in/faculty/dr-tulika-srivastava/",
         "Designation": "Assistant Professor",
-        "Specialization": "Applied Electronics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101333-Mr.-B.-Ananda-Venkatesan.jpg"
+        "Specialization": "Optoelectronics, Electronic Devices",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/02/DSC_7040-1.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9365,24 +9896,6 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mr. Dillybabu K",
-        "url": "https://www.srmist.edu.in/faculty/mr-dilly-babu/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/Dillybabu.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mr. Jiji Retna Kumar R",
-        "url": "https://www.srmist.edu.in/faculty/mr-jiji-rethnakumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7055.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
         "title": "Mr. Joshua Jafferson. A",
         "url": "https://www.srmist.edu.in/faculty/a-joshua-jafferson/",
         "Designation": "Assistant Professor",
@@ -9392,56 +9905,11 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mr. Maria Dominic Savio M",
-        "url": "https://www.srmist.edu.in/faculty/mr-m-maria-dominic-savio/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Electronics and Communication Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101555-Mr.-M.-Maria-Dominic-Savio.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
         "title": "Mr. MuthuKumaran B",
         "url": "https://www.srmist.edu.in/faculty/b-muthukumaran/",
         "Designation": "Assistant Professor",
         "Specialization": "Applied Electronics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/101321-Mr.-B.-Muthukumaran.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mr. Neelakandan J",
-        "url": "https://www.srmist.edu.in/faculty/mr-neelakandan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7051.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mr. Saminathan T",
-        "url": "https://www.srmist.edu.in/faculty/mr-t-saminathan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Electronics and Communication Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101495-Mr.-T.-Saminathan.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mr. Sethuraman. A",
-        "url": "https://www.srmist.edu.in/faculty/mr-sethuraman/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/sethu-1.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mr. Sujan W",
-        "url": "https://www.srmist.edu.in/faculty/mr-sujan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "RF and Microwave",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7057.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/MUTHU.JPJ_.jpeg"
     },
     {
         "DepartmentCode": 13473,
@@ -9482,29 +9950,11 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mrs. Hemavathi N",
-        "url": "https://www.srmist.edu.in/faculty/mrs-hemavathi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "VLSI and Embedded System",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/Hema.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
         "title": "Mrs. Kalaimagal G",
         "url": "https://www.srmist.edu.in/faculty/g-kalaimagal/",
         "Designation": "Assistant Professor",
         "Specialization": "Applied Electronics",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101291-Mrs.-G.-Kalaimagal.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mrs. Kolangiammal S",
-        "url": "https://www.srmist.edu.in/faculty/mrs-s-kolangiammal/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Communication Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7027.jpg"
     },
     {
         "DepartmentCode": 13473,
@@ -9536,15 +9986,6 @@ export const urls = [
     {
         "DepartmentCode": 13473,
         "DepartmentName": "Department of Electronics & Communication",
-        "title": "Mrs. Sayantani Bhattacharya",
-        "url": "https://www.srmist.edu.in/faculty/mrs-sayantani-bhattacharya/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Optical fiber sensors, Fiber Bragg Grating (FBG), Regenerated Fiber Bragg Grating sensors  design, fabrication and characterizations, High-temperature stable grating",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/DSC_7042-1.jpg"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
         "title": "Mrs. Suganthi Brindha G",
         "url": "https://www.srmist.edu.in/faculty/mrs-g-suganthi-brindha/",
         "Designation": "Assistant Professor",
@@ -9570,31 +10011,13 @@ export const urls = [
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/101161-Mrs.-A.-Vinnarasi.jpg"
     },
     {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Ms. Heartlin Maria H",
-        "url": "https://www.srmist.edu.in/faculty/ms-heartlin-maria-h/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
-    },
-    {
-        "DepartmentCode": 13473,
-        "DepartmentName": "Department of Electronics & Communication",
-        "title": "Ms. Sowmya N",
-        "url": "https://www.srmist.edu.in/faculty/ms-sowmya-n/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
-    },
-    {
         "DepartmentCode": 13499,
         "DepartmentName": "Department of Electronics & Instrumentation Engineering",
         "title": "Dr. Joselin Retna Kumar G",
         "url": "https://www.srmist.edu.in/faculty/dr-g-joselin-retna-kumar/",
-        "Designation": "Associate Professor And Head",
+        "Designation": "Professor And Head",
         "Specialization": "Process control and Instrumentation, Automation",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/DSC_5748-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/srm-faculty-6.jpg"
     },
     {
         "DepartmentCode": 13499,
@@ -9603,7 +10026,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-a-vimala-juliet/",
         "Designation": "Professor, MEMS & Microsystems",
         "Specialization": "Instrumentation Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/vj-passport-size-maroon-color-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/chocolate-saree-vjweb-1.jpg"
     },
     {
         "DepartmentCode": 13499,
@@ -9612,16 +10035,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-a-asuntha/",
         "Designation": "Assistant Professor (Sr.G)",
         "Specialization": "Process control, Adaptive control, Non Linear control, Medical Image processing, Deep Learning",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/asu-passport-size-photo-1.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/srm-faculty-13.jpg"
     },
     {
         "DepartmentCode": 13499,
         "DepartmentName": "Department of Electronics & Instrumentation Engineering",
-        "title": "Dr. Bakiyalakshmi R",
+        "title": "Dr. Bakiya lakshmi R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-bakiyalakshmi-2/",
         "Designation": "Assistant Professor",
         "Specialization": "MEMS, Control systems, Modern control systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/self-pic-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/srm-faculty-11.jpg"
     },
     {
         "DepartmentCode": 13499,
@@ -9630,7 +10053,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-a-brindha/",
         "Designation": "Assistant Professor",
         "Specialization": "Video and medical Image Processing, Data analysis and Classification, Design and development of medical instrument",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-29-at-2.00.49-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/srm-faculty-1-1.jpg"
+    },
+    {
+        "DepartmentCode": 13499,
+        "DepartmentName": "Department of Electronics & Instrumentation Engineering",
+        "title": "Dr. Indirani S",
+        "url": "https://www.srmist.edu.in/faculty/mrs-s-indirani/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Electronics  &  Instrumentation, Industrial Instrumentation, Instrumentation & Control in Iron and Steel industry",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/phto-indirani-2024-e1733911331513.jpg"
     },
     {
         "DepartmentCode": 13499,
@@ -9639,7 +10071,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-p-jekan/",
         "Designation": "Assistant Professor",
         "Specialization": "Electronics and Instrumentation Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Jekan.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-10-at-10.33.22-e1733912143336.jpeg"
     },
     {
         "DepartmentCode": 13499,
@@ -9648,7 +10080,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-c-likith-kumar/",
         "Designation": "Assistant Professor",
         "Specialization": "MEMS, Control Systems, Automation and PLC",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Likith.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Likith-e1733911973320-234x300-1.jpg"
     },
     {
         "DepartmentCode": 13499,
@@ -9657,7 +10089,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-g-y-rajaa-vikhram/",
         "Designation": "Assistant Professor",
         "Specialization": "Power System Control",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Dr. G. Y. Rajaa Vikhram.jpg"
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13499,
@@ -9666,7 +10098,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-j-sam-jeba-kumar/",
         "Designation": "Assistant Professor",
         "Specialization": "Automation",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Sam.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/srm-faculty-22.jpg"
     },
     {
         "DepartmentCode": 13499,
@@ -9675,16 +10107,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-sharanya-s/",
         "Designation": "Assistant Professor",
         "Specialization": "Bio Medical Signal Processing, Instrumentation System Design, Industrial Instrumentation, Communication Engineering, Neural Network &Fuzzy Logic, Artificial Intelligence, Process Control and Control System.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr.-Sharanya-S.jpg"
-    },
-    {
-        "DepartmentCode": 13499,
-        "DepartmentName": "Department of Electronics & Instrumentation Engineering",
-        "title": "Dr. Sridhar P A",
-        "url": "https://www.srmist.edu.in/faculty/dr-p-a-sridhar/",
-        "Designation": "Research Assistant Professor",
-        "Specialization": "Physiological Signal analysis and modelling, Neuromuscular signal processing and analysis, muscle fatigue, Biomedical instrumentation, Gait Analysis, Multi-spectral analysis",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/Sri_single-2-e1695627939583.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2025/01/srm-faculty-12.jpg"
     },
     {
         "DepartmentCode": 13499,
@@ -9693,16 +10116,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-vibha-k/",
         "Designation": "Assistant Professor",
         "Specialization": "Power Electronics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/K.Vibha_PA1713005012002.jpg"
-    },
-    {
-        "DepartmentCode": 13499,
-        "DepartmentName": "Department of Electronics & Instrumentation Engineering",
-        "title": "Dr. Indirani S",
-        "url": "https://www.srmist.edu.in/faculty/mrs-s-indirani/",
-        "Designation": "Teaching Assistant",
-        "Specialization": "Electronics  &  Instrumentation, Industrial Instrumentation, Instrumentation & Control in Iron and Steel industry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/photo.jpg"
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 23793,
@@ -9770,15 +10184,6 @@ export const urls = [
     {
         "DepartmentCode": 23793,
         "DepartmentName": "Department of English",
-        "title": "Dr. Pushpanjali S.",
-        "url": "https://www.srmist.edu.in/faculty/dr-pushpanjali/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Literature and Literary Criticism",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/3-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 23793,
-        "DepartmentName": "Department of English",
         "title": "Dr. Shalini Infanta L.",
         "url": "https://www.srmist.edu.in/faculty/dr-shalini-infanta-l/",
         "Designation": "Assistant Professor",
@@ -9806,11 +10211,29 @@ export const urls = [
     {
         "DepartmentCode": 13546,
         "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Dr. Andrei A Sychev",
+        "url": "https://www.srmist.edu.in/faculty/dr-andrei-a-sychev/",
+        "Designation": "Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/Dr.-Andrei-A-Sychev1.png"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
         "title": "Dr. Latha R",
         "url": "https://www.srmist.edu.in/faculty/dr-latha-r/",
         "Designation": "Associate Professor",
         "Specialization": "English Language Teaching and Testing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/11/Latha-R.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/Untitled-3.jpg"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Dr. Mahesh M",
+        "url": "https://www.srmist.edu.in/faculty/dr-mahesh-m/",
+        "Designation": "Associate Professor",
+        "Specialization": "Linguistics, Phonetics, Phonology, Acoustic Phonetics, Language Documentation",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/erfet.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -9819,7 +10242,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-p-tamilarasan/",
         "Designation": "Associate Professor",
         "Specialization": "English Language & Literature",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/tamilphoto.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/1722671904866.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -9828,7 +10251,25 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/busareddy-vijaya-kumar/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/busareddy.jpg"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Debashrita Dey",
+        "url": "https://www.srmist.edu.in/faculty/debashrita-dey/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/dey.png"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Dr C M Sharmi Rachel",
+        "url": "https://www.srmist.edu.in/faculty/dr-sharmi-rachel-c-m/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Creative Writing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/10/Dr.-Sharmi-Rachel.png"
     },
     {
         "DepartmentCode": 13546,
@@ -9842,11 +10283,38 @@ export const urls = [
     {
         "DepartmentCode": 13546,
         "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Dr. Alice Ligoria D",
+        "url": "https://www.srmist.edu.in/faculty/dr-d-alice-ligoria/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Afrofuturism, Science Fiction, Literary Theory and Criticism",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Alice.jpg"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
         "title": "Dr. Anderleen Diana Lazarus",
         "url": "https://www.srmist.edu.in/faculty/anderleen-diana-lazarus/",
         "Designation": "Asst Prof.,  Executive Asst. to VC & Manager Faculty Personnel",
         "Specialization": "English Language and Literature",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/DSC_8645-copys-5.jpg"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Dr. Argha Basu",
+        "url": "https://www.srmist.edu.in/faculty/argha-basu/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/basu.png"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Dr. Arul Dayanand S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-arul-dayanand/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Applied & Computational Linguistics, Educational Technology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_7352.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -9872,8 +10340,8 @@ export const urls = [
         "title": "Dr. Caleb Theodar M",
         "url": "https://www.srmist.edu.in/faculty/dr-caleb-theodar-m/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Film Adaptation Studies",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/2024-Caleb-scaled.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -9882,16 +10350,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-david-t/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
-    },
-    {
-        "DepartmentCode": 13546,
-        "DepartmentName": "Department of English and Foreign Languages",
-        "title": "Dr. Debashrita Dey",
-        "url": "https://www.srmist.edu.in/faculty/debashrita-dey/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/dey.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/David.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -9917,8 +10376,8 @@ export const urls = [
         "title": "Dr. John Joseph",
         "url": "https://www.srmist.edu.in/faculty/dr-john-joseph/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "English Language Teaching and Material Development",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/1.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -10013,19 +10472,19 @@ export const urls = [
     {
         "DepartmentCode": 13546,
         "DepartmentName": "Department of English and Foreign Languages",
-        "title": "Dr. Sharmi Rachel C M",
-        "url": "https://www.srmist.edu.in/faculty/dr-sharmi-rachel-c-m/",
+        "title": "Dr. Sandhiya Devi G",
+        "url": "https://www.srmist.edu.in/faculty/dr-sandhiya-devi-g/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/10/Dr.-Sharmi-Rachel.png"
+        "Specialization": "English Language Teaching",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/oioi.jpg"
     },
     {
         "DepartmentCode": 13546,
         "DepartmentName": "Department of English and Foreign Languages",
         "title": "Dr. Sulagna Mohanty",
         "url": "https://www.srmist.edu.in/faculty/dr-sulagna-mohanty/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
+        "Designation": "Assistant Professor of English",
+        "Specialization": "Visual Media Narrative, Myth and Folklore Studies",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/sulgana.png"
     },
     {
@@ -10034,8 +10493,8 @@ export const urls = [
         "title": "Dr. Sumathy M",
         "url": "https://www.srmist.edu.in/faculty/dr-sumathy-m/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "Indian Writing in English",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/DSC_7380-scaled.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -10058,20 +10517,20 @@ export const urls = [
     {
         "DepartmentCode": 13546,
         "DepartmentName": "Department of English and Foreign Languages",
-        "title": "Mr. Argha Basu",
-        "url": "https://www.srmist.edu.in/faculty/argha-basu/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/basu.png"
-    },
-    {
-        "DepartmentCode": 13546,
-        "DepartmentName": "Department of English and Foreign Languages",
         "title": "Mr. Sabastian Satish J",
         "url": "https://www.srmist.edu.in/faculty/j-sabastian-satish/",
         "Designation": "Assistant Professor (Sr.G)",
         "Specialization": "French, Spanish",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mr.-Sabastian-Satish-J-1.png"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Mr. Velupula Krishnaiah",
+        "url": "https://www.srmist.edu.in/faculty/velupula-krishnaiah/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Untitled-1-2.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -10108,15 +10567,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "French",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/DSC_1390-transformed.png"
-    },
-    {
-        "DepartmentCode": 13546,
-        "DepartmentName": "Department of English and Foreign Languages",
-        "title": "Mrs. Ratna kumari M",
-        "url": "https://www.srmist.edu.in/faculty/m-ratna-kumari/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Korean",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13546,
@@ -10160,17 +10610,8 @@ export const urls = [
         "title": "Ms. Sangeetha H",
         "url": "https://www.srmist.edu.in/faculty/ms-sangeetha-h/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
-    },
-    {
-        "DepartmentCode": 13546,
-        "DepartmentName": "Department of English and Foreign Languages",
-        "title": "Ms. Shwetaa S H",
-        "url": "https://www.srmist.edu.in/faculty/ms-shwetaa-s-h/",
-        "Designation": "Visiting Faculty",
-        "Specialization": "Korean language",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/11/Artboard-2@3x-100-1.jpg"
+        "Specialization": "French",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/sangeetha-EFL-SRM.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -10184,20 +10625,11 @@ export const urls = [
     {
         "DepartmentCode": 13546,
         "DepartmentName": "Department of English and Foreign Languages",
-        "title": "Velupula Krishnaiah",
-        "url": "https://www.srmist.edu.in/faculty/velupula-krishnaiah/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
-    },
-    {
-        "DepartmentCode": 13546,
-        "DepartmentName": "Department of English and Foreign Languages",
         "title": "Yantsubeni Ngullie",
         "url": "https://www.srmist.edu.in/faculty/yantsubeni-ngullie/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/B612_20240705_100650_229.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -10211,20 +10643,20 @@ export const urls = [
     {
         "DepartmentCode": 13546,
         "DepartmentName": "Department of English and Foreign Languages",
-        "title": "Mary Florence D",
-        "url": "https://www.srmist.edu.in/faculty/mary-florence-d/",
-        "Designation": "Teaching Assistant",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/11/Mary-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 13546,
-        "DepartmentName": "Department of English and Foreign Languages",
-        "title": "Mr. V Krishnamourthy",
+        "title": "Mr. Krishnamourthy V",
         "url": "https://www.srmist.edu.in/faculty/mr-v-krishnamourthy/",
         "Designation": "Visiting Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Mr.-Krishnamourthy-V.png"
+    },
+    {
+        "DepartmentCode": 13546,
+        "DepartmentName": "Department of English and Foreign Languages",
+        "title": "Ms. Mary Florence D",
+        "url": "https://www.srmist.edu.in/faculty/mary-florence-d/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/11/Mary-scaled.jpg"
     },
     {
         "DepartmentCode": 13546,
@@ -10265,20 +10697,20 @@ export const urls = [
     {
         "DepartmentCode": 114923,
         "DepartmentName": "Department of Entomology",
-        "title": "Dr. Muthukumar M",
-        "url": "https://www.srmist.edu.in/faculty/m-muthukumar/",
-        "Designation": "Head and Assistant Professor",
-        "Specialization": "Agricultural Entomology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/06/Dr.-M__Muthukumar.png"
-    },
-    {
-        "DepartmentCode": 114923,
-        "DepartmentName": "Department of Entomology",
         "title": "Dr. Murugan N",
         "url": "https://www.srmist.edu.in/faculty/dr-murugan-n/",
         "Designation": "Assistant Professor",
         "Specialization": "Sericulture",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/Muru-2-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 114923,
+        "DepartmentName": "Department of Entomology",
+        "title": "Dr. Muthukumar M",
+        "url": "https://www.srmist.edu.in/faculty/m-muthukumar/",
+        "Designation": "Assistant Professor and Head",
+        "Specialization": "Entomology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Muthukumar-2023-Jul-1-scaled.jpg"
     },
     {
         "DepartmentCode": 114923,
@@ -10384,7 +10816,7 @@ export const urls = [
         "DepartmentName": "Department of Food Process Engineering",
         "title": "Dr. Gurumoorthi P",
         "url": "https://www.srmist.edu.in/faculty/dr-p-gurumoorthi/",
-        "Designation": "Associate Professor and HoD Incharge",
+        "Designation": "Associate Professor",
         "Specialization": "Food Safety and Quality Management, Food Chemistry",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/03/Dr.-Gurumoorthy.jpg"
     },
@@ -10410,10 +10842,19 @@ export const urls = [
         "DepartmentCode": 13515,
         "DepartmentName": "Department of Food Process Engineering",
         "title": "Dr. Preetha R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-preetha/",
+        "url": "https://www.srmist.edu.in/faculty/dr-preetha-r/",
         "Designation": "Associate Professor",
         "Specialization": "Food Biotechnology and Environmental Biotechnology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr.-Preetha.jpg"
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13515,
+        "DepartmentName": "Department of Food Process Engineering",
+        "title": "Dr. Antony Catherine Flora L",
+        "url": "https://www.srmist.edu.in/faculty/dr-antony-catherine-flora-l/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Food Technology, Chemical Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/catherine.jpg"
     },
     {
         "DepartmentCode": 13515,
@@ -10449,7 +10890,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-b-gopu/",
         "Designation": "Head and Assistant Professor",
         "Specialization": "Horticulture",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/06/Dr.-Gopu-B.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/GOPU-B.jpg"
     },
     {
         "DepartmentCode": 90456,
@@ -10481,11 +10922,11 @@ export const urls = [
     {
         "DepartmentCode": 13512,
         "DepartmentName": "Department of Genetic Engineering",
-        "title": "Dr. Ramya M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-ramya/",
-        "Designation": "Professor &Head",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/ramya-prof.png"
+        "title": "Dr. Kirankumar S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-kirankumar/",
+        "Designation": "Associate Professor and Head",
+        "Specialization": "Developmental Biology & Zebrafish Disease Models",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Kiran-Profile-Picture-copy.jpg"
     },
     {
         "DepartmentCode": 13512,
@@ -10499,29 +10940,38 @@ export const urls = [
     {
         "DepartmentCode": 13512,
         "DepartmentName": "Department of Genetic Engineering",
-        "title": "Dr. Devi. A",
-        "url": "https://www.srmist.edu.in/faculty/dr-devi-a/",
-        "Designation": "Associate Professor",
+        "title": "Dr. Ramya M",
+        "url": "https://www.srmist.edu.in/faculty/dr-m-ramya/",
+        "Designation": "Professor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/ramya-prof.png"
     },
     {
         "DepartmentCode": 13512,
         "DepartmentName": "Department of Genetic Engineering",
-        "title": "Dr. Kirankumar S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-kirankumar/",
+        "title": "Dr. Megala J",
+        "url": "https://www.srmist.edu.in/faculty/dr-j-megala/",
         "Designation": "Associate Professor",
-        "Specialization": "Developmental Biology & Zebrafish Disease Models",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr. S. Kirankumar.jpg"
+        "Specialization": "Cancer Biology, Human Genetics, Immunogenetics, Clinical Biochemistry",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0036_DSC_9272.jpg"
     },
     {
         "DepartmentCode": 13512,
         "DepartmentName": "Department of Genetic Engineering",
-        "title": "Dr. Rex Arunraj D",
-        "url": "https://www.srmist.edu.in/faculty/dr-d-rex-arunraj/",
+        "title": "Dr. Raja N. S.",
+        "url": "https://www.srmist.edu.in/faculty/dr-n-s-raja/",
         "Designation": "Associate Professor",
-        "Specialization": "Integrative Plant Biology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr.-Rex-Arunraj-D.jpg"
+        "Specialization": "Molecular biology, Structural Biology, Membrane Biology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0025_DSC_9285.jpg"
+    },
+    {
+        "DepartmentCode": 13512,
+        "DepartmentName": "Department of Genetic Engineering",
+        "title": "Dr. Rajnish K.N",
+        "url": "https://www.srmist.edu.in/faculty/dr-k-n-rajnish/",
+        "Designation": "Associate Professor",
+        "Specialization": "Functional genomics, recombinant DNA technology, molecular microbiology Phone Number 91-44-27417817",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Profile_Bio-Tech_0022_DSC_9289.jpg"
     },
     {
         "DepartmentCode": 13512,
@@ -10535,20 +10985,11 @@ export const urls = [
     {
         "DepartmentCode": 13512,
         "DepartmentName": "Department of Genetic Engineering",
-        "title": "Dr. Shobana.S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-shobana/",
+        "title": "Dr. Senthilkumar P",
+        "url": "https://www.srmist.edu.in/faculty/dr-p-senthilkumar/",
         "Designation": "Associate Professor",
-        "Specialization": "Phage Biology and Computational Biology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/5784-1.jpg"
-    },
-    {
-        "DepartmentCode": 13512,
-        "DepartmentName": "Department of Genetic Engineering",
-        "title": "Dr. Thirumurthy Madhavan",
-        "url": "https://www.srmist.edu.in/faculty/dr-thirumurthy-madhavan-2/",
-        "Designation": "Associate Professor",
-        "Specialization": "Bioinformatics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG-20230405-WA0008-2.jpg"
+        "Specialization": "Plant Pathogen Interactions, Bioremediation, Defense-related proteins",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_0629-copy-1-e1711969701384.png"
     },
     {
         "DepartmentCode": 13512,
@@ -10558,24 +10999,6 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Plant Molecular Biology and Biotechnology, Polycystic Ovary Syndrome",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/05/Profile_Bio-Tech_0011_DSC_9302.jpg"
-    },
-    {
-        "DepartmentCode": 13512,
-        "DepartmentName": "Department of Genetic Engineering",
-        "title": "Kiran Kumar S",
-        "url": "https://www.srmist.edu.in/faculty/kiran-kumar-s/",
-        "Designation": "Associate Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
-    },
-    {
-        "DepartmentCode": 13512,
-        "DepartmentName": "Department of Genetic Engineering",
-        "title": "Shobana S",
-        "url": "https://www.srmist.edu.in/faculty/shobana-s-2/",
-        "Designation": "Associate Professor",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13512,
@@ -10616,11 +11039,29 @@ export const urls = [
     {
         "DepartmentCode": 13512,
         "DepartmentName": "Department of Genetic Engineering",
+        "title": "Dr. Revathi Devi S",
+        "url": "https://www.srmist.edu.in/faculty/ms-revathi-devi-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Cancer Genomics and Gene editing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/revathi.jpg"
+    },
+    {
+        "DepartmentCode": 13512,
+        "DepartmentName": "Department of Genetic Engineering",
         "title": "Dr. Selvarajan E",
         "url": "https://www.srmist.edu.in/faculty/dr-e-selvarajan/",
         "Designation": "Assistant Professor",
         "Specialization": "Environmental Biotechnology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr.-Selvarajan-E.jpg"
+    },
+    {
+        "DepartmentCode": 13512,
+        "DepartmentName": "Department of Genetic Engineering",
+        "title": "Dr. Sivaramakrishnan V",
+        "url": "https://www.srmist.edu.in/faculty/dr-v-sivaramakrishnan/",
+        "Designation": "Assistant Professor [SL.G.]",
+        "Specialization": "Cancer Biology and Molecular cancer therapeutics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/DSC_0282-scaled.jpg"
     },
     {
         "DepartmentCode": 114933,
@@ -10688,20 +11129,20 @@ export const urls = [
     {
         "DepartmentCode": 23783,
         "DepartmentName": "Department of Hindi",
-        "title": "Dr. Preeti S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-preeti/",
-        "Designation": "Head & Associate Professor",
-        "Specialization": "Hindi Literature",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/IMG-20200731-WA0104-2.jpg"
+        "title": "Dr. Md. Shwahidul Islam",
+        "url": "https://www.srmist.edu.in/faculty/dr-md-shwahidul-islam/",
+        "Designation": "Assistant Professor and Head",
+        "Specialization": "Modern Poetry",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG-20230222-WA0010.jpg"
     },
     {
         "DepartmentCode": 23783,
         "DepartmentName": "Department of Hindi",
-        "title": "Dr. Md. Shwahidul Islam",
-        "url": "https://www.srmist.edu.in/faculty/dr-md-shwahidul-islam/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Modern Poetry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG-20230222-WA0010.jpg"
+        "title": "Dr. Preeti S",
+        "url": "https://www.srmist.edu.in/faculty/dr-s-preeti/",
+        "Designation": "Associate Professor",
+        "Specialization": "Hindi Literature",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/1-2-scaled.jpg"
     },
     {
         "DepartmentCode": 23783,
@@ -10728,7 +11169,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-ganesh-s-2/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Ganesh-Sir-with-coat.jpg"
     },
     {
         "DepartmentCode": 112133,
@@ -10737,7 +11178,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-ilakiya-t/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/T.Ilakiya-1.jpg"
     },
     {
         "DepartmentCode": 112133,
@@ -10746,16 +11187,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-rajasekar-m/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/DSC_0248-copy.jpg"
     },
     {
         "DepartmentCode": 23800,
         "DepartmentName": "Department Of Journalism And Mass Communication",
-        "title": "Dr. Shiva Shankaran K.R",
-        "url": "https://www.srmist.edu.in/faculty/k-r-shiva-shankaran/",
+        "title": "Dr. Praveen Kumar P",
+        "url": "https://www.srmist.edu.in/faculty/mr-praveen-kumar/",
         "Designation": "Assistant Professor & Head",
-        "Specialization": "Journalism & Mass Communication",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/600235-scaled-e1677137779960.jpg"
+        "Specialization": "Journalism and Mass Communication",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Praveen_JMC_Cropp.jpg"
     },
     {
         "DepartmentCode": 23800,
@@ -10778,20 +11219,38 @@ export const urls = [
     {
         "DepartmentCode": 23800,
         "DepartmentName": "Department Of Journalism And Mass Communication",
-        "title": "Dr. Praveen Kumar P",
-        "url": "https://www.srmist.edu.in/faculty/mr-praveen-kumar/",
+        "title": "Dr. Shiva Shankaran K.R",
+        "url": "https://www.srmist.edu.in/faculty/k-r-shiva-shankaran/",
         "Designation": "Assistant Professor",
-        "Specialization": "Journalism and Mass Communication",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Praveen_JMC_Cropp.jpg"
+        "Specialization": "Journalism & Mass Communication",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/600235-scaled-e1677137779960.jpg"
     },
     {
         "DepartmentCode": 23800,
         "DepartmentName": "Department Of Journalism And Mass Communication",
-        "title": "Dr. Viduthalai P",
-        "url": "https://www.srmist.edu.in/faculty/viduthalai-p/",
+        "title": "Dr. MONISHA M",
+        "url": "https://www.srmist.edu.in/faculty/dr-monisha-m/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Development Communication Information Society Gender Studies",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 23800,
+        "DepartmentName": "Department Of Journalism And Mass Communication",
+        "title": "Dr. Vaishali Raj",
+        "url": "https://www.srmist.edu.in/faculty/dr-vaishali-raj/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/600562-scaled-e1677137930202.jpg"
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
+        "title": "Prof. (Dr.) P. Sree Sudha",
+        "url": "https://www.srmist.edu.in/faculty/prof-p-sree-sudha/",
+        "Designation": "Dean, School of Law",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/law-dean.jpg"
     },
     {
         "DepartmentCode": 31929,
@@ -10814,6 +11273,15 @@ export const urls = [
     {
         "DepartmentCode": 31929,
         "DepartmentName": "Department of Law",
+        "title": "Dr. Keerthana R",
+        "url": "https://www.srmist.edu.in/faculty/dr-keerthana-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/keerthana.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
         "title": "Dr. Parveen Yadav",
         "url": "https://www.srmist.edu.in/faculty/mr-parveen-yadav/",
         "Designation": "Assistant Professor",
@@ -10828,15 +11296,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Politics and Public Administration",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/WhatsApp-Imagec-2023-06-08-at-9.42.43-AM.jpeg"
-    },
-    {
-        "DepartmentCode": 31929,
-        "DepartmentName": "Department of Law",
-        "title": "Dr. Sulok S K",
-        "url": "https://www.srmist.edu.in/faculty/mr-sulok-s-k/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Intellectual Property Rights",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/07/sulok-1.jpg"
     },
     {
         "DepartmentCode": 31929,
@@ -10873,6 +11332,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Economics, Agriculture Economics. Crop Insurance",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/1-1.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
+        "title": "Jai Deep D",
+        "url": "https://www.srmist.edu.in/faculty/jai-deep-d/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 31929,
@@ -10931,24 +11399,6 @@ export const urls = [
     {
         "DepartmentCode": 31929,
         "DepartmentName": "Department of Law",
-        "title": "Mr. Debashish  Dash",
-        "url": "https://www.srmist.edu.in/faculty/mr-debashish-dash/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Intellectual Property Law, Environment  and Natural Resources Law, International Environmental Law",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/26124-10.jpg"
-    },
-    {
-        "DepartmentCode": 31929,
-        "DepartmentName": "Department of Law",
-        "title": "Mr. Deepak B D",
-        "url": "https://www.srmist.edu.in/faculty/mr-deepak-b-d/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Taxation Law, International Tax Law, Land laws and Family Laws",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/07/deepak-passport-size-photo-1.jpg"
-    },
-    {
-        "DepartmentCode": 31929,
-        "DepartmentName": "Department of Law",
         "title": "Mr. Gajendhra A K",
         "url": "https://www.srmist.edu.in/faculty/mr-a-k-gajendhra/",
         "Designation": "Assistant Professor",
@@ -10963,6 +11413,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Corporate Law",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/04/32.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
+        "title": "Mr. Jai Ganesh B",
+        "url": "https://www.srmist.edu.in/faculty/mr-jai-ganesh-b/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 31929,
@@ -10999,6 +11458,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Alternative Dispute Resolution, Competition Law",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Mohammed-Shahzad-Photo-1-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
+        "title": "Mr. Muralidhar Barik H",
+        "url": "https://www.srmist.edu.in/faculty/mr-muralidhar-barik-h/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 31929,
@@ -11048,6 +11516,24 @@ export const urls = [
     {
         "DepartmentCode": 31929,
         "DepartmentName": "Department of Law",
+        "title": "Ms. Aarthi G",
+        "url": "https://www.srmist.edu.in/faculty/ms-aarthi-g/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-1.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
+        "title": "Ms. Agnel Benita A",
+        "url": "https://www.srmist.edu.in/faculty/ms-agnel-benita-a/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-8.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
         "title": "Ms. Anviti  Mishra",
         "url": "https://www.srmist.edu.in/faculty/ms-anviti-mishra/",
         "Designation": "Assistant Professor",
@@ -11062,6 +11548,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Labour Law and Administative Law",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/Athma-Ph-2.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
+        "title": "Ms. Deepika S",
+        "url": "https://www.srmist.edu.in/faculty/ms-deepika-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "International Law",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-12.jpg"
     },
     {
         "DepartmentCode": 31929,
@@ -11192,11 +11687,29 @@ export const urls = [
     {
         "DepartmentCode": 31929,
         "DepartmentName": "Department of Law",
+        "title": "Ms. Pushpam K",
+        "url": "https://www.srmist.edu.in/faculty/ms-pushpam-k/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-9.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
         "title": "Ms. Ramadevi J",
         "url": "https://www.srmist.edu.in/faculty/ms-ramadevi-j/",
         "Designation": "Assistant Professor",
         "Specialization": "Economics and Management, General LAW",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Ms.-Ramadevi.jpg"
+    },
+    {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
+        "title": "Ms. Tapasi Mohanty",
+        "url": "https://www.srmist.edu.in/faculty/ms-tapasi-mohanty/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-7.jpg"
     },
     {
         "DepartmentCode": 31929,
@@ -11208,6 +11721,15 @@ export const urls = [
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/Vidya-photo.jpg"
     },
     {
+        "DepartmentCode": 31929,
+        "DepartmentName": "Department of Law",
+        "title": "Ms. Yuva Poornima A",
+        "url": "https://www.srmist.edu.in/faculty/ms-yuva-poornima-a/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-10.jpg"
+    },
+    {
         "DepartmentCode": 29335,
         "DepartmentName": "Department of Management",
         "title": "Dr. Shivganesh Bhargava",
@@ -11215,15 +11737,6 @@ export const urls = [
         "Designation": "Dean, Faculty of Management",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/02/Dr.-Shivganesh-Bhargava.jpg"
-    },
-    {
-        "DepartmentCode": 29335,
-        "DepartmentName": "Department of Management",
-        "title": "Dr. Krishnaraj R",
-        "url": "https://www.srmist.edu.in/faculty/r-krishnaraj/",
-        "Designation": "Professor & Chairperson (Research)",
-        "Specialization": "Marketing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/profile-1_0014_DSC_9400.jpg"
     },
     {
         "DepartmentCode": 29335,
@@ -11359,15 +11872,6 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "HR",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/profile-1_0041_DSC_9369.jpg"
-    },
-    {
-        "DepartmentCode": 29335,
-        "DepartmentName": "Department of Management",
-        "title": "Dr. Vetri Selvi.  M",
-        "url": "https://www.srmist.edu.in/faculty/dr-vetri-selvi-m/",
-        "Designation": "Associate Professor",
-        "Specialization": "Production and Operations Management",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/Vetri-Selvi-M.jpg"
     },
     {
         "DepartmentCode": 29335,
@@ -11552,15 +12056,6 @@ export const urls = [
     {
         "DepartmentCode": 29335,
         "DepartmentName": "Department of Management",
-        "title": "Dr. Jawahar Philimis",
-        "url": "https://www.srmist.edu.in/faculty/dr-jawahar-philimis/",
-        "Designation": "Assistant Professor",
-        "Specialization": "HR",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Jawa-PP.jpg"
-    },
-    {
-        "DepartmentCode": 29335,
-        "DepartmentName": "Department of Management",
         "title": "Dr. Jayanthi L",
         "url": "https://www.srmist.edu.in/faculty/l-jayanthi/",
         "Designation": "Assistant Professor & Program Coordinator (BBA)",
@@ -11615,20 +12110,20 @@ export const urls = [
     {
         "DepartmentCode": 29335,
         "DepartmentName": "Department of Management",
-        "title": "Dr. Kumar N",
-        "url": "https://www.srmist.edu.in/faculty/dr-n-kumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Economics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/Dr.-N.-Kumar.jpg"
-    },
-    {
-        "DepartmentCode": 29335,
-        "DepartmentName": "Department of Management",
         "title": "Dr. Lakshmi G",
         "url": "https://www.srmist.edu.in/faculty/dr-g-lakshmi/",
         "Designation": "Assistant Professor",
         "Specialization": "Operations",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/profile-1_0044_DSC_9366.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/DSC_9366-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 29335,
+        "DepartmentName": "Department of Management",
+        "title": "Dr. Lokesh S",
+        "url": "https://www.srmist.edu.in/faculty/dr-lokesh-s-2/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/WhatsApp-Image-2022-03-17-at-11.04.34-AM-Copy-1.png"
     },
     {
         "DepartmentCode": 29335,
@@ -11781,7 +12276,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-priya-k/",
         "Designation": "Assistant Professor",
         "Specialization": "Marketing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/priya-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/profile-1_0008_DSC_9409.jpg"
     },
     {
         "DepartmentCode": 29335,
@@ -12020,11 +12515,11 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
-        "title": "Dr. Subburayan V",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-subburayan/",
-        "Designation": "Associate Professor & Head",
-        "Specialization": "Mathematics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5240.jpg"
+        "title": "Dr. Ritesh Kumar Dubey",
+        "url": "https://www.srmist.edu.in/faculty/dr-ritesh-kumar-dubey/",
+        "Designation": "Research Associate Professor  & Head",
+        "Specialization": "Numerical analysis and PDEs,  Deep Learning and Scientific computing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5320.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12060,7 +12555,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-bapuji-pullepu/",
         "Designation": "Associate Professor",
         "Specialization": "Computational Fluid Dynamics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5311.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/DSC_0349.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12070,15 +12565,6 @@ export const urls = [
         "Designation": "Research Associate Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Harekrushna-Behera.jpg"
-    },
-    {
-        "DepartmentCode": 13540,
-        "DepartmentName": "Department of Mathematics",
-        "title": "Dr. Ritesh Kumar Dubey",
-        "url": "https://www.srmist.edu.in/faculty/dr-ritesh-kumar-dubey/",
-        "Designation": "Research Associate Professor",
-        "Specialization": "Numerical analysis and PDEs,  Deep Learning and Scientific computing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5320.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12119,11 +12605,20 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Subburayan V",
+        "url": "https://www.srmist.edu.in/faculty/dr-v-subburayan/",
+        "Designation": "Associate Professor",
+        "Specialization": "Mathematics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5240.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
         "title": "Dr. Vennila B",
         "url": "https://www.srmist.edu.in/faculty/dr-b-vennila/",
         "Designation": "Associate Professor",
         "Specialization": "Fluid Dynamics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5243.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/10/WP_20130725_003-215x300-1.jpeg"
     },
     {
         "DepartmentCode": 13540,
@@ -12218,11 +12713,38 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Bikash Koli Dey",
+        "url": "https://www.srmist.edu.in/faculty/dr-bikash-koli-dey/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "Optimization; Inventory control; Operations Research; Production Planning; Smart manufacturing; Supply Chain Management",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/bikash.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
         "title": "Dr. Celine Prabha S",
         "url": "https://www.srmist.edu.in/faculty/dr-celine-prabha-s/",
         "Designation": "Assistant Professor",
         "Specialization": "Graph Theory, Algebraic Graph Theory",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5275.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Debabrata Singh",
+        "url": "https://www.srmist.edu.in/faculty/dr-debabrata-singh/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Numerical Analysis",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Debabrata.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Deeksha Singh",
+        "url": "https://www.srmist.edu.in/faculty/dr-deeksha-singh/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Deeksha.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12250,6 +12772,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Mathematics",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5246.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Ganesamurthy S",
+        "url": "https://www.srmist.edu.in/faculty/dr-ganesamurthy-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Dr-S-Ganesamurthy-3-1.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12294,7 +12825,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-karthick-b/",
         "Designation": "Assistant Professor",
         "Specialization": "Operations Research",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_5338.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Photo-Karthick.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12335,6 +12866,15 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Krishna Kumari R",
+        "url": "https://www.srmist.edu.in/faculty/dr-krishna-kumari-r/",
+        "Designation": "Assistant professor",
+        "Specialization": "Formal Languages and Automata Theory, GBML",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/krishna-photo.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
         "title": "Dr. Krishnaveni G",
         "url": "https://www.srmist.edu.in/faculty/dr-g-krishnaveni/",
         "Designation": "Assistant Professor",
@@ -12365,7 +12905,7 @@ export const urls = [
         "title": "Dr. Leelavathy T",
         "url": "https://www.srmist.edu.in/faculty/dr-t-leelavathy/",
         "Designation": "Assistant Professor",
-        "Specialization": "Mathematics,Fuzzy Optimization and Multi Objective Optimization.",
+        "Specialization": "Mathematics, Fuzzy Optimization and Multi Objective Optimization.",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5313.jpg"
     },
     {
@@ -12560,6 +13100,15 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Sandip Maji",
+        "url": "https://www.srmist.edu.in/faculty/dr-sandip-maji/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Numerical Solutions of Fractional Differential Equations",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Sandip-1.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
         "title": "Dr. Sangeetha S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-sangeetha/",
         "Designation": "Assistant Professor",
@@ -12587,6 +13136,15 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Saravanakumar T",
+        "url": "https://www.srmist.edu.in/faculty/dr-saravanakumar-t/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Stabilization of dynamical control systems",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/saravana-.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
         "title": "Dr. Sasi Kumar J",
         "url": "https://www.srmist.edu.in/faculty/dr-j-sasi-kumar/",
         "Designation": "Assistant Professor",
@@ -12596,11 +13154,20 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Sathishkumar M",
+        "url": "https://www.srmist.edu.in/faculty/dr-sathishkumar-m/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "Systems and Control Theory",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/sathish.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
         "title": "Dr. Senthilkumar L.S",
         "url": "https://www.srmist.edu.in/faculty/l-s-senthilkumar/",
         "Designation": "Assistant Professor",
         "Specialization": "Finite Element Method, Finite Difference Method, Fuzzy Algebraic Equation",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5248.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/resize-16395919231449480155DSC0650copy.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12625,9 +13192,9 @@ export const urls = [
         "DepartmentName": "Department of Mathematics",
         "title": "Dr. Sheena Christy D.K",
         "url": "https://www.srmist.edu.in/faculty/d-k-sheena-christy/",
-        "Designation": "Assistant Professor",
+        "Designation": "Assistant Professor(Sr.G)",
         "Specialization": "Mathematics , Formal Language and Automata theory, Graph theory, Graph Grammar",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5297.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/sheena-photo-2.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12655,15 +13222,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Stability Analysis of  Neural Networks",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_5360.jpg"
-    },
-    {
-        "DepartmentCode": 13540,
-        "DepartmentName": "Department of Mathematics",
-        "title": "Dr. Subhankar Sil",
-        "url": "https://www.srmist.edu.in/faculty/dr-subhankar-sil/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Symmetry Analysis for Partial Differential Equations, Conservation laws, Integrable System and Solitons",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/10/me.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12740,15 +13298,6 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
-        "title": "Dr. Sureshkumar P",
-        "url": "https://www.srmist.edu.in/faculty/dr-sureshkumar-p/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Differential Equations",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/12/New-suresh.jpg"
-    },
-    {
-        "DepartmentCode": 13540,
-        "DepartmentName": "Department of Mathematics",
         "title": "Dr. Sushobhan Maity",
         "url": "https://www.srmist.edu.in/faculty/dr-sushobhan-maity/",
         "Designation": "Assistant Professor",
@@ -12762,7 +13311,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-v-suvitha/",
         "Designation": "Assistant Professor",
         "Specialization": "Stochastic Processes (Queueing Theory)",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5319.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/8883167430.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12770,7 +13319,7 @@ export const urls = [
         "title": "Dr. Swaraj Paul",
         "url": "https://www.srmist.edu.in/faculty/dr-swaraj-paul/",
         "Designation": "Research Assistant Professor",
-        "Specialization": "",
+        "Specialization": "Wavelets, Shearlets, Microlocal Analysis, Integral equations, Differential equations",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_5336.jpg"
     },
     {
@@ -12781,6 +13330,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Fluid Mechanics",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/pic_swarup2.jpg"
+    },
+    {
+        "DepartmentCode": 13540,
+        "DepartmentName": "Department of Mathematics",
+        "title": "Dr. Tamizhazhagan S",
+        "url": "https://www.srmist.edu.in/faculty/dr-tamizhazhagan-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Statistical Mechanics & Mathematical Modelling",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Tamizhazhagan.jpg"
     },
     {
         "DepartmentCode": 13540,
@@ -12911,15 +13469,6 @@ export const urls = [
     {
         "DepartmentCode": 13540,
         "DepartmentName": "Department of Mathematics",
-        "title": "Dr. Visalakshi V",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-visalakshi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Fuzzy topological space and soft fuzzy topological space",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_5288.jpg"
-    },
-    {
-        "DepartmentCode": 13540,
-        "DepartmentName": "Department of Mathematics",
         "title": "Mr. Sudhagar A",
         "url": "https://www.srmist.edu.in/faculty/sudhagar-a/",
         "Designation": "Teaching Assistant",
@@ -12943,24 +13492,6 @@ export const urls = [
         "Designation": "Professor and Head",
         "Specialization": "All Accounting and Finance Papers",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/salva-scaled-e1677910592663.jpg"
-    },
-    {
-        "DepartmentCode": 146423,
-        "DepartmentName": "Department of Mathematics",
-        "title": "Dr. Shanthi P",
-        "url": "https://www.srmist.edu.in/faculty/dr-p-shanthi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Marketing Management, Strategic Management, Research Methodology, Management Accounting",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr.-Shanthi-P.jpg"
-    },
-    {
-        "DepartmentCode": 146423,
-        "DepartmentName": "Department of Mathematics",
-        "title": "Dr. Thineshkumar M",
-        "url": "https://www.srmist.edu.in/faculty/dr-m-thineshkumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Intellectual Capital, Accounting and Finance",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/5-scaled.jpg"
     },
     {
         "DepartmentCode": 146423,
@@ -13082,11 +13613,29 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. Suresh Kumar K",
+        "url": "https://www.srmist.edu.in/faculty/dr-k-suresh-kumar/",
+        "Designation": "Professor  & Head",
+        "Specialization": "Mechanical Engineering, Thermal Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-79.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Chandrasekaran P",
         "url": "https://www.srmist.edu.in/faculty/mr-p-chandrasekaran/",
         "Designation": "Professor",
         "Specialization": "Mechanical Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-20.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. Cheralathan M",
+        "url": "https://www.srmist.edu.in/faculty/dr-m-cheralathan/",
+        "Designation": "Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/09/Untitled-1.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13172,15 +13721,6 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Dr. Suresh Kumar K",
-        "url": "https://www.srmist.edu.in/faculty/dr-k-suresh-kumar/",
-        "Designation": "Professor",
-        "Specialization": "Mechanical Engineering, Thermal Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-79.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Arul Jeya Kumar A",
         "url": "https://www.srmist.edu.in/faculty/dr-a-arul-jeya-kumar-2/",
         "Designation": "Professor",
@@ -13202,7 +13742,7 @@ export const urls = [
         "title": "Dr. Infanta Mary Priya I",
         "url": "https://www.srmist.edu.in/faculty/dr-i-infanta-mary-priya/",
         "Designation": "Associate Professor",
-        "Specialization": "Mechanical",
+        "Specialization": "Advanced Composite Materials, Nanocomposites, Tribology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-52.jpg"
     },
     {
@@ -13248,7 +13788,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-v-magesh-2/",
         "Designation": "Associate Professor",
         "Specialization": "Computer Aided Design",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-56.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/MAGESH.V_Photo.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13257,14 +13797,14 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-s-murali/",
         "Designation": "Associate Professor",
         "Specialization": "Human Factors and Ergonomics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/Murali-SRM-Profile-2.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Murali-SRM-Profile-LightYellowBG.png"
     },
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Prakash M",
         "url": "https://www.srmist.edu.in/faculty/dr-m-prakash-3/",
-        "Designation": "Associate Professor",
+        "Designation": "Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-66.jpg"
     },
@@ -13280,10 +13820,19 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. Selvam C",
+        "url": "https://www.srmist.edu.in/faculty/dr-c-selvam/",
+        "Designation": "Associate Professor",
+        "Specialization": "Thermal Engineering, Refrigeration and Air-Conditioning, Heat and Mass Transfer",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/08/932-Selvam-a.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Senthil R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-senthil/",
-        "Designation": "Associate Professor",
-        "Specialization": "Solar Energy",
+        "Designation": "Professor",
+        "Specialization": "Thermal Engineering : Solar Energy -Thermal Energy Storage - Building Thermal Comfort",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-14.jpg"
     },
     {
@@ -13292,7 +13841,7 @@ export const urls = [
         "title": "Dr. Sumit Pramanik",
         "url": "https://www.srmist.edu.in/faculty/dr-sumit-pramanik/",
         "Designation": "Research Associate Professor",
-        "Specialization": "Materials & Manufacturing",
+        "Specialization": "Materials & Manufacturing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-45.jpg"
     },
     {
@@ -13301,7 +13850,7 @@ export const urls = [
         "title": "Dr. Vijaya A",
         "url": "https://www.srmist.edu.in/faculty/dr-a-vijaya/",
         "Designation": "Associate Professor",
-        "Specialization": "Experimental Mechanics, Metrology, Vision system, Computer Aided manufacturing",
+        "Specialization": "Experimental Mechanics, Metrology, Vision system, Computer Aided manufacturing , Nano finsihing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-61.jpg"
     },
     {
@@ -13327,18 +13876,18 @@ export const urls = [
         "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Ambigai R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-ambigai/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Functionally Graded Composites, Metal Matrix Composite, Tribology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-60.jpg"
     },
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Dr. Balaji S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-balaji/",
+        "title": "Dr. Arun N",
+        "url": "https://www.srmist.edu.in/faculty/mr-n-arun/",
         "Designation": "Assistant Professor",
-        "Specialization": "Internal Combustion Engine and Hydrogen Production Technique (Electrolysis)",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/5Y0A6658.jpg"
+        "Specialization": "Design",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/9789233486.....jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13388,11 +13937,20 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Dr. Harshavardhana N",
+        "title": "Dr. Harshavardhana N.",
         "url": "https://www.srmist.edu.in/faculty/dr-n-harshavardhana/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Manufacturing engineering and material science.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-90.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Mech-Photos-901.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. Joji Johnson",
+        "url": "https://www.srmist.edu.in/faculty/mr-joji-johnson/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Solar Energy / Thermal Engineering  / Mechanical Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-photo-2.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13406,9 +13964,18 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. Manikanda Raja G",
+        "url": "https://www.srmist.edu.in/faculty/mr-g-manikanda-raja/",
+        "Designation": "Assistant Professor",
+        "Specialization": "(Thermal Engineering, Alternate Fuels, Heat Exchangers, Refrigeration, Waste Heat Recovery Systems)",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/5H0A3678-1.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Manikandan S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-manikandan/",
-        "Designation": "Research Assistant Professor",
+        "Designation": "Assistant Professor",
         "Specialization": "Renewable Energy",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-25.jpg"
     },
@@ -13435,9 +14002,18 @@ export const urls = [
         "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Murugesan R",
         "url": "https://www.srmist.edu.in/faculty/dr-r-murugesan/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Manufacturing Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-72.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Murugesan_photo_convocation-1.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. Nagaraj C M",
+        "url": "https://www.srmist.edu.in/faculty/dr-nagaraj-c-m/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Manufacturing Processes & Metallurgy",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/My-Photo_Profess.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13460,18 +14036,9 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Dr. Piyush Sharma",
-        "url": "https://www.srmist.edu.in/faculty/dr-piyush-sharma/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Thermal Engineering/Solar Energy Utilization, Thermal Energy Storage Systems, Fluid Mechanics, Coal combustion in drop tube furnace, Hydrogen combustion",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-74.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Praveena V",
         "url": "https://www.srmist.edu.in/faculty/dr-v-praveena/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "IC Engines, Applied thermal engineering, Heat and mass transfer",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-6.jpg"
     },
@@ -13523,6 +14090,15 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. S. Malarmannan",
+        "url": "https://www.srmist.edu.in/faculty/s-malarmannan/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Mechanical / Thermal Power Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Malarmannan.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Sandipan Roy",
         "url": "https://www.srmist.edu.in/faculty/dr-sandipan-roy/",
         "Designation": "Research Assistant Professor",
@@ -13534,9 +14110,9 @@ export const urls = [
         "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Santhakumar J",
         "url": "https://www.srmist.edu.in/faculty/mr-j-santha-kumar/",
-        "Designation": "Assistant Professor(Sr.G)",
+        "Designation": "Associate Professor",
         "Specialization": "CAD/CAM",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-94.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/santhakumar-1.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13559,20 +14135,20 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. Sasikumar S",
+        "url": "https://www.srmist.edu.in/faculty/mr-s-sasikumar/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Casting, Physical Metallurgy, Additive Manufacturing-3D Printing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mech-Photos-81.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Sathishkumar A",
         "url": "https://www.srmist.edu.in/faculty/mr-sathishkumar-a/",
         "Designation": "Assistant Professor",
         "Specialization": "Cool Thermal Energy Storage Systems, Building Cooling applications",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/A.-Sathishkumar.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Dr. Selvam C",
-        "url": "https://www.srmist.edu.in/faculty/dr-c-selvam/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Thermal Engineering, Refrigeration and Air-Conditioning, Heat and Mass Transfer",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/08/932-Selvam-a.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13624,7 +14200,7 @@ export const urls = [
         "DepartmentName": "Department of Mechanical Engineering",
         "title": "Dr. Sudhakar P",
         "url": "https://www.srmist.edu.in/faculty/dr-p-sudhakar/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Mechanical Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/10/DSC_8946-scaled-e1678960205747.jpg"
     },
@@ -13672,6 +14248,15 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Thermal Sciences",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-49.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Dr. Umasekar V G",
+        "url": "https://www.srmist.edu.in/faculty/v-g-umasekar/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Mechanical (Manufacturing Engineering)",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-53.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13726,15 +14311,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Thermal Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-22.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Mr. Arun N",
-        "url": "https://www.srmist.edu.in/faculty/mr-n-arun/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Design",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mr. N. Arun.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13811,15 +14387,6 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Mr. Joji Johnson",
-        "url": "https://www.srmist.edu.in/faculty/mr-joji-johnson/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Solar Energy / Thermal Engineering  / Mechanical Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-photo-2.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Mr. Karthikeyan N",
         "url": "https://www.srmist.edu.in/faculty/mr-n-karthikeyan/",
         "Designation": "Assistant Professor",
@@ -13843,24 +14410,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Engineering Design",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-58.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Mr. Malarmannan S",
-        "url": "https://www.srmist.edu.in/faculty/s-malarmannan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Mechanical / Thermal Power Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/malarxy-1.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Mr. Manikanda Raja G",
-        "url": "https://www.srmist.edu.in/faculty/mr-g-manikanda-raja/",
-        "Designation": "Assistant Professor",
-        "Specialization": "(Thermal Engineering, Alternate Fuels, Heat Exchangers, Refrigeration, Waste Heat Recovery Systems)",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-59.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -13928,15 +14477,6 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Mr. Sasikumar S",
-        "url": "https://www.srmist.edu.in/faculty/mr-s-sasikumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Manufacturing engineering, Casting, Physical and Mechanical metallurgy Mail sasikums@srmist.edu.in",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mr. S. Sasikumar.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Mr. Sathiyamoorthy K",
         "url": "https://www.srmist.edu.in/faculty/mr-k-sathiyamoorthy/",
         "Designation": "Assistant Professor",
@@ -14000,15 +14540,6 @@ export const urls = [
     {
         "DepartmentCode": 13455,
         "DepartmentName": "Department of Mechanical Engineering",
-        "title": "Mr. Umasekar V G",
-        "url": "https://www.srmist.edu.in/faculty/v-g-umasekar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Mechanical (Manufacturing Engineering)",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-53.jpg"
-    },
-    {
-        "DepartmentCode": 13455,
-        "DepartmentName": "Department of Mechanical Engineering",
         "title": "Mr. Veeranaath V",
         "url": "https://www.srmist.edu.in/faculty/mr-veeranaath-v/",
         "Designation": "Assistant Professor",
@@ -14023,6 +14554,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Thermal Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Mech-Photos-102.jpg"
+    },
+    {
+        "DepartmentCode": 13455,
+        "DepartmentName": "Department of Mechanical Engineering",
+        "title": "Mrs. Anusuya K",
+        "url": "https://www.srmist.edu.in/faculty/ms-anusuya-k/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/anusuya.jpg"
     },
     {
         "DepartmentCode": 13455,
@@ -14045,20 +14585,29 @@ export const urls = [
     {
         "DepartmentCode": 13465,
         "DepartmentName": "Department of Mechatronics Engineering",
-        "title": "Dr. Murali G",
-        "url": "https://www.srmist.edu.in/faculty/dr-g-murali/",
+        "title": "Dr. Muthuramalingam T",
+        "url": "https://www.srmist.edu.in/faculty/dr-t-muthuramalingam/",
         "Designation": "Professor and Head",
-        "Specialization": "Manufacturing Engineering and Micro electro Mechanical Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/Dr__Murali.png"
+        "Specialization": "Mechatronics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/DSC_3100-scaled.jpg"
     },
     {
         "DepartmentCode": 13465,
         "DepartmentName": "Department of Mechatronics Engineering",
-        "title": "Dr. Muthuramalingam T",
-        "url": "https://www.srmist.edu.in/faculty/dr-t-muthuramalingam/",
+        "title": "Dr. Belsam Jeba Ananth .M",
+        "url": "https://www.srmist.edu.in/faculty/belsam-ananth-m/",
         "Designation": "Professor",
-        "Specialization": "Mechatronics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Dr_Muthuramalingam_new-removebg-1.png"
+        "Specialization": "Automation, Drives & Control",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/Dr_Belsam_Jeba_Ananth__M.png"
+    },
+    {
+        "DepartmentCode": 13465,
+        "DepartmentName": "Department of Mechatronics Engineering",
+        "title": "Dr. Murali G",
+        "url": "https://www.srmist.edu.in/faculty/dr-g-murali/",
+        "Designation": "Professor",
+        "Specialization": "Manufacturing Engineering and Micro electro Mechanical Systems",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/Dr__Murali.png"
     },
     {
         "DepartmentCode": 13465,
@@ -14068,15 +14617,6 @@ export const urls = [
         "Designation": "Professor",
         "Specialization": "Mechatronics Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr__Senthilnathan_R.png"
-    },
-    {
-        "DepartmentCode": 13465,
-        "DepartmentName": "Department of Mechatronics Engineering",
-        "title": "Dr. Belsam Jeba Ananth .M",
-        "url": "https://www.srmist.edu.in/faculty/belsam-ananth-m/",
-        "Designation": "Associate Professor",
-        "Specialization": "Automation, Drives & Control",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/Dr_Belsam_Jeba_Ananth__M.png"
     },
     {
         "DepartmentCode": 13465,
@@ -14113,6 +14653,15 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Mechatronics Engineering and Vehicle controls",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr_M_Mohamed_Rabik.png"
+    },
+    {
+        "DepartmentCode": 13465,
+        "DepartmentName": "Department of Mechatronics Engineering",
+        "title": "Dr. Priya Esther B",
+        "url": "https://www.srmist.edu.in/faculty/dr-b-priya-esther/",
+        "Designation": "Associate Professor",
+        "Specialization": "Smart grid and Power Electronics & Drives",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-12-at-16.07.29.jpeg"
     },
     {
         "DepartmentCode": 13465,
@@ -14162,29 +14711,11 @@ export const urls = [
     {
         "DepartmentCode": 13465,
         "DepartmentName": "Department of Mechatronics Engineering",
-        "title": "Dr. Priya Esther B",
-        "url": "https://www.srmist.edu.in/faculty/dr-b-priya-esther/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Drives & Control, Smart Grid ,Automation Systems",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/01/Dr__B__Priya_Esther.png"
-    },
-    {
-        "DepartmentCode": 13465,
-        "DepartmentName": "Department of Mechatronics Engineering",
         "title": "Dr. Ranjith Pillai R",
         "url": "https://www.srmist.edu.in/faculty/mr-ranjith-pillai-r/",
         "Designation": "Assistant Professor",
         "Specialization": "Mechatronics, Robotics & Control, Smart Actuators and Mechanisms, AI , IoT",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr__Ranjith.png"
-    },
-    {
-        "DepartmentCode": 13465,
-        "DepartmentName": "Department of Mechatronics Engineering",
-        "title": "Dr. Sarathkumar L",
-        "url": "https://www.srmist.edu.in/faculty/dr-sarathkumar-l/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Lasers in materials processing, Modelling and simulation of laser interaction (FE Model), Additive manufacturing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/3760-.jpg"
     },
     {
         "DepartmentCode": 13465,
@@ -14211,7 +14742,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-v-sujatha/",
         "Designation": "Assistant Professor",
         "Specialization": "Electronics and Communication/ Instrumentation Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Dr__Sujatha.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/SUJATHA-V.jpg"
+    },
+    {
+        "DepartmentCode": 13465,
+        "DepartmentName": "Department of Mechatronics Engineering",
+        "title": "Dr. Thiyagarajan J",
+        "url": "https://www.srmist.edu.in/faculty/j-thiyagarajan/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Mechatronics Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/thia.jpg"
     },
     {
         "DepartmentCode": 13465,
@@ -14219,7 +14759,7 @@ export const urls = [
         "title": "Dr. Vani S",
         "url": "https://www.srmist.edu.in/faculty/dr-vani-s/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
+        "Specialization": "Biosignal Processing, Machine Learning and Deep Learning,Embedded  Systems",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr__S__Vani.png"
     },
     {
@@ -14291,8 +14831,8 @@ export const urls = [
         "title": "Mr. Saravanan K",
         "url": "https://www.srmist.edu.in/faculty/k-saravanan/",
         "Designation": "Assistant Professor",
-        "Specialization": "Two -Legged walking Robot and Manufacturing Processes",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/K__Saravanan.png"
+        "Specialization": "Mechatronics Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/DSC_7088-1.jpg"
     },
     {
         "DepartmentCode": 13465,
@@ -14302,24 +14842,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/Mr_M_Thirugnanam.png"
-    },
-    {
-        "DepartmentCode": 13465,
-        "DepartmentName": "Department of Mechatronics Engineering",
-        "title": "Mr. Thiyagarajan J",
-        "url": "https://www.srmist.edu.in/faculty/j-thiyagarajan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Mechatronics Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/thia.jpg"
-    },
-    {
-        "DepartmentCode": 13465,
-        "DepartmentName": "Department of Mechatronics Engineering",
-        "title": "Mr. Vigneshwaran S",
-        "url": "https://www.srmist.edu.in/faculty/vigneshwaran-s/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/02/Vigneshwaran_S.png"
     },
     {
         "DepartmentCode": 13465,
@@ -14346,7 +14868,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-m-nandhini/",
         "Designation": "Assistant Professor",
         "Specialization": "Mechatronics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Ms__M_Nandhini.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/nandhini.png"
     },
     {
         "DepartmentCode": 13465,
@@ -14444,17 +14966,35 @@ export const urls = [
         "title": "Dr. Revathi Venkataraman",
         "url": "https://www.srmist.edu.in/faculty/dr-revathi-venkataraman/",
         "Designation": "Professor and Chair Person",
-        "Specialization": "Wireless Network Security, Trust Computing, Internet of Things",
+        "Specialization": "Wireless Network Security, Trust Computing, Internet of Things, Responsible AI",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Prof.-Revathi-Venkataraman.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Lakshmi M",
+        "url": "https://www.srmist.edu.in/faculty/dr-m-lakshmi/",
+        "Designation": "Professor & Head",
+        "Specialization": "Machine Learning,",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4325.jpg"
     },
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Annapurani Panaiyappan K",
         "url": "https://www.srmist.edu.in/faculty/dr-annapurani-panaiyappan-k/",
-        "Designation": "Professor & HOD",
+        "Designation": "Professor",
         "Specialization": "Computer Science and Engineering",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3760.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Krishnaraj N",
+        "url": "https://www.srmist.edu.in/faculty/dr-n-krishnaraj/",
+        "Designation": "Professor",
+        "Specialization": "Biometrics, Artificial Intelligence, Internet of Things , Wireless Sensor Networks",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3751.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -14504,20 +15044,29 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Anbarasu V",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-anbarasu/",
-        "Designation": "Associate Professor",
-        "Specialization": "Human Computer Interaction, Image Processing, Cyber Security, IoT, Machine Learning, Pervasive computing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3770.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Arokiaraj Jovith A",
         "url": "https://www.srmist.edu.in/faculty/mr-a-arokiaraj-jovith/",
         "Designation": "Assistant Professor",
         "Specialization": "Information Security and Cloud Computing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/jovith.png"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Arun A",
+        "url": "https://www.srmist.edu.in/faculty/dr-arun-a/",
+        "Designation": "Associate Professor",
+        "Specialization": "Image Processing & Networks.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4227.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Balaji Srikaanth P",
+        "url": "https://www.srmist.edu.in/faculty/dr-p-balaji-srikaanth/",
+        "Designation": "Associate Professor",
+        "Specialization": "Cyber Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3769.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -14567,6 +15116,15 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Helen Victoria A",
+        "url": "https://www.srmist.edu.in/faculty/ms-a-helen-victoria/",
+        "Designation": "Associate Professor",
+        "Specialization": "Big Data Analytics,Cloud Computing,Software Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3783.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Hemamalini V",
         "url": "https://www.srmist.edu.in/faculty/dr-v-hemamalini/",
         "Designation": "Associate Professor",
@@ -14585,11 +15143,20 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Krishnaraj N",
-        "url": "https://www.srmist.edu.in/faculty/dr-n-krishnaraj/",
+        "title": "Dr. Kayalvizhi R",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-kayalvizhi/",
         "Designation": "Associate Professor",
-        "Specialization": "Biometrics, Artificial Intelligence, Internet of Things , Wireless Sensor Networks",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3751.jpg"
+        "Specialization": "Cryptography, Wireless Sensor Security, Internet of Things",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4223.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Lakshminarayanan R",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-lakshminarayanan/",
+        "Designation": "Associate Professor",
+        "Specialization": "Wireless Sensor Networks, IoT, Image Processing, Networking, Cloud Computing, Machine Learning, Artificial Intelligence",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4226.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -14630,15 +15197,6 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Naresh R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-naresh/",
-        "Designation": "Associate Professor",
-        "Specialization": "Cloud Computing, Distributed Networks, Group Key Management, Web Security",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3758.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Nimala K",
         "url": "https://www.srmist.edu.in/faculty/dr-k-nimala/",
         "Designation": "Associate Professor",
@@ -14666,6 +15224,24 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Radhika R",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-radhika/",
+        "Designation": "Associate Professor",
+        "Specialization": "Internet of Things ,Cloud Computing , Data Analytics",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3812.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Rajaram V",
+        "url": "https://www.srmist.edu.in/faculty/dr-v-rajaram/",
+        "Designation": "Associate Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3765.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Srinivas L N B",
         "url": "https://www.srmist.edu.in/faculty/dr-l-n-b-srinivas/",
         "Designation": "Associate Professor",
@@ -14679,7 +15255,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-p-supraja/",
         "Designation": "Associate Professor",
         "Specialization": "Deep Learning, Computer Vision, Machine Learning, Cognitive Computing, Optimization Algorithms, Soft Computing, Cognitive radio",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4214.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/IMG_20240902_223558-1.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -14711,6 +15287,24 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Ushasukhanya S",
+        "url": "https://www.srmist.edu.in/faculty/ushasukhanya-s/",
+        "Designation": "Associate Professor",
+        "Specialization": "Computer Science and Engineering",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4221.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Vaishnavi Moorthy",
+        "url": "https://www.srmist.edu.in/faculty/vaishnavi-moorthy/",
+        "Designation": "Associate Professor",
+        "Specialization": "Artificial Intelligence, Cyber Security, AR/VR/MR technologies, Generative AI",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/vaish-pic.png"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Venkatesh K",
         "url": "https://www.srmist.edu.in/faculty/dr-k-venkatesh/",
         "Designation": "Associate Professor",
@@ -14724,7 +15318,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-c-n-s-vinoth-kumar/",
         "Designation": "Associate Professor",
         "Specialization": "Cyber Security | Forensics | Networks",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3844.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/DSC_3844.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -14738,11 +15332,20 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Yamini B",
-        "url": "https://www.srmist.edu.in/faculty/dr-b-yamini/",
+        "title": "Dr.R.Naresh",
+        "url": "https://www.srmist.edu.in/faculty/dr-r-naresh/",
         "Designation": "Associate Professor",
-        "Specialization": "Cyber Security, Image Processing, Wireless Sensor Networks, System Design, Machine Learning, Network Security",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3803.jpg"
+        "Specialization": "Cloud Computing, Distributed Networks, Group Key Management, Web Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3758.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Abinaya G",
+        "url": "https://www.srmist.edu.in/faculty/ms-abinaya-g/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/abinaya.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -14765,15 +15368,6 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Arun A",
-        "url": "https://www.srmist.edu.in/faculty/dr-arun-a/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Networks & Image Processing.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4227.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Balachander T",
         "url": "https://www.srmist.edu.in/faculty/t-balachander/",
         "Designation": "Assistant Professor",
@@ -14783,20 +15377,11 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Balaji Srikaanth P",
-        "url": "https://www.srmist.edu.in/faculty/dr-p-balaji-srikaanth/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Cyber Security",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3769.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Balakiruthiga B",
         "url": "https://www.srmist.edu.in/faculty/dr-b-balakrithiga/",
         "Designation": "Assistant Professor",
         "Specialization": "NETWORKING AND COMMUNICATIONS",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3778.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Balakiruthiga-Photograph.jpeg"
     },
     {
         "DepartmentCode": 13522,
@@ -14846,6 +15431,15 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. G. Ramya",
+        "url": "https://www.srmist.edu.in/faculty/dr-g-ramya-2/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Software Defined Networks, Network Function Virtualization, Blockchain",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Geetha G",
         "url": "https://www.srmist.edu.in/faculty/geetha-g/",
         "Designation": "Assistant Professor",
@@ -14873,15 +15467,6 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Helen Victoria A",
-        "url": "https://www.srmist.edu.in/faculty/ms-a-helen-victoria/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Big Data Analytics,Cloud Computing,Software Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3783.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Jeyaselvi M",
         "url": "https://www.srmist.edu.in/faculty/dr-m-jeyaselvi/",
         "Designation": "Assistant Professor",
@@ -14900,29 +15485,11 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Kayalvizhi R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-kayalvizhi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Cryptography, Wireless Sensor Security, Internet of Things",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4223.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Lakshmi Dhevi B",
         "url": "https://www.srmist.edu.in/faculty/dr-lakshmi-dhevi/",
         "Designation": "Assistant Professor",
         "Specialization": "Machine Learning, Artificial Intelligence, Computer Networks",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3781.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Lakshminarayanan R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-lakshminarayanan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Wireless Sensor Networks, IoT, Image Processing, Networking, Cloud Computing, Machine Learning, Artificial Intelligence",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4226.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -14977,6 +15544,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Data Mining, Machine Learning, Image Processing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3832.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Mursal Hamdani",
+        "url": "https://www.srmist.edu.in/faculty/dr-mursal-hamdani/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Cryptography, Quantum Communication, Quantum Optics, Photonic Integrated Circuits.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/IMG_4968.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -15053,20 +15629,11 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Radhika R",
-        "url": "https://www.srmist.edu.in/faculty/dr-r-radhika/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Internet of Things ,Cloud Computing , Data Analytics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3812.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Rajaram V",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-rajaram/",
+        "title": "Dr. Rajeshkumar K",
+        "url": "https://www.srmist.edu.in/faculty/dr-rajeshkumar-k/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3765.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/srm-faculty-1-3.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -15118,7 +15685,7 @@ export const urls = [
         "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Senthamarai N",
         "url": "https://www.srmist.edu.in/faculty/dr-n-senthamarai/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Cloud Computing",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4212.jpg"
     },
@@ -15134,11 +15701,29 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Shanmuganathan V",
+        "url": "https://www.srmist.edu.in/faculty/mr-shanmuganathan-v/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Internet of Things, Network Security, Wireless Sensor Networks and Wireless Networks.",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/Mr.-Shanmuganathan-V.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Sivakumar M",
         "url": "https://www.srmist.edu.in/faculty/dr-sivakumar-m/",
         "Designation": "Assistant Professor",
-        "Specialization": "Object Oriented Programming, Machine Learning, Computer Networks, Web Development",
+        "Specialization": "Programming, Machine Learning, Computer Networks, Web Development",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3753.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Sivamohan S",
+        "url": "https://www.srmist.edu.in/faculty/dr-sivamohan-s/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13522,
@@ -15179,24 +15764,6 @@ export const urls = [
     {
         "DepartmentCode": 13522,
         "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Ushasukhanya S",
-        "url": "https://www.srmist.edu.in/faculty/ushasukhanya-s/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Computer Science and Engineering",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4221.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
-        "title": "Dr. Vaishnavi Moorthy",
-        "url": "https://www.srmist.edu.in/faculty/vaishnavi-moorthy/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Artificial Intelligence, Cyber Security, AR/VR/MR technologies, Generative AI",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_3784.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
         "title": "Dr. Varun kumar K A",
         "url": "https://www.srmist.edu.in/faculty/dr-k-a-varun-kumar/",
         "Designation": "Assistant Professor",
@@ -15220,6 +15787,24 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Ad hoc Networks",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4233.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Dr. Yamini B",
+        "url": "https://www.srmist.edu.in/faculty/dr-b-yamini/",
+        "Designation": "Associate Professor",
+        "Specialization": "Cyber Security, Image Processing, Wireless Sensor Networks, System Design, Machine Learning, Network Security",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/DSC_3803.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Indra Bhooshan Sharma",
+        "url": "https://www.srmist.edu.in/faculty/mr-indra-bhooshan-sharma/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13522,
@@ -15256,15 +15841,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Information Technology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/senthil_photo.jpg"
-    },
-    {
-        "DepartmentCode": 13522,
-        "DepartmentName": "Department of Networking And Communications",
-        "title": "Mr. Shanmuganathan V",
-        "url": "https://www.srmist.edu.in/faculty/mr-shanmuganathan-v/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Internet of Things, Network Security, Wireless Sensor Networks and Wireless Networks.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/Mr.-Shanmuganathan-V.jpg"
     },
     {
         "DepartmentCode": 13522,
@@ -15366,13 +15942,31 @@ export const urls = [
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4220.jpg"
     },
     {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Justina Michael J",
+        "url": "https://www.srmist.edu.in/faculty/justina-michael-j/",
+        "Designation": "Teaching Associate",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/justina.jpg"
+    },
+    {
+        "DepartmentCode": 13522,
+        "DepartmentName": "Department of Networking And Communications",
+        "title": "Mr. Pradeshwaran V",
+        "url": "https://www.srmist.edu.in/faculty/mr-pradeshwaran-v/",
+        "Designation": "Teaching Assistant",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
         "DepartmentCode": 54609,
         "DepartmentName": "Department of Pharmaceutical Analysis",
         "title": "Prof. Manikandan K",
         "url": "https://www.srmist.edu.in/faculty/dr-k-manikandan/",
         "Designation": "Professor and Head",
         "Specialization": "Pharmaceutical Analysis",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Manikandan.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/27.jpg"
     },
     {
         "DepartmentCode": 54609,
@@ -15390,7 +15984,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-j-kavitha/",
         "Designation": "Associate Professor",
         "Specialization": "Pharmaceutical Analysis",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_0082-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/kavitha-photo.jpg"
     },
     {
         "DepartmentCode": 54609,
@@ -15399,7 +15993,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-k-s-kokilambigai/",
         "Designation": "Associate Professor",
         "Specialization": "Pharmaceutical Analysis",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/12/Kokilambigai-K.-S.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Staff-profile-Photo.jpg"
     },
     {
         "DepartmentCode": 54609,
@@ -15408,7 +16002,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-r-seetharaman/",
         "Designation": "Associate Professor",
         "Specialization": "Pharmaceutical Analysis",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/12/seetharaman-Pass-port-size-03-09-2022-4-2.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/2024-09-Seetharaman-for-website.jpeg"
     },
     {
         "DepartmentCode": 54618,
@@ -15417,16 +16011,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-m-k-kathiravan/",
         "Designation": "Professor and Head",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/WhatsApp-Image-2022-12-02-at-18.26.47.jpeg"
-    },
-    {
-        "DepartmentCode": 54618,
-        "DepartmentName": "Department of Pharmaceutical Chemistry",
-        "title": "Dr. Velmurugan V",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-velmurugan/",
-        "Designation": "Associate Professor",
-        "Specialization": "Pharmaceutical Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/IMG-20240327-WA0008.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/unnamed-300x300-1.jpg"
     },
     {
         "DepartmentCode": 54618,
@@ -15435,16 +16020,34 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-t-sundarrajan/",
         "Designation": "Associate Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-27-at-2.12.41-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/42.jpg"
     },
     {
         "DepartmentCode": 54618,
         "DepartmentName": "Department of Pharmaceutical Chemistry",
-        "title": "Dr. D.Priya",
+        "title": "Dr. Velmurugan V",
+        "url": "https://www.srmist.edu.in/faculty/dr-v-velmurugan/",
+        "Designation": "Associate Professor",
+        "Specialization": "Pharmaceutical Chemistry",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/30-1.jpg"
+    },
+    {
+        "DepartmentCode": 54618,
+        "DepartmentName": "Department of Pharmaceutical Chemistry",
+        "title": "Dr. Gandi Sony Pears",
+        "url": "https://www.srmist.edu.in/faculty/dr-gandhi-sony-pears/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/13-2-300x300-1.jpg"
+    },
+    {
+        "DepartmentCode": 54618,
+        "DepartmentName": "Department of Pharmaceutical Chemistry",
+        "title": "Dr. Priya D",
         "url": "https://www.srmist.edu.in/faculty/dr-d-priya/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmaceutical Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-22-at-8.31.23-AM-2.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Re.jpg"
     },
     {
         "DepartmentCode": 54618,
@@ -15453,7 +16056,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-b-shanthakumar/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmaceutical Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Photo-College.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/15-3.jpg"
     },
     {
         "DepartmentCode": 54618,
@@ -15462,7 +16065,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-g-v-anjana/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-22-at-8.32.52-AM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/36-300x300-1.jpg"
+    },
+    {
+        "DepartmentCode": 54629,
+        "DepartmentName": "Department of Pharmaceutical Quality Assurance",
+        "title": "Dr. Manimaran V",
+        "url": "https://www.srmist.edu.in/faculty/dr-v-manimaran/",
+        "Designation": "Associate Professor and Head",
+        "Specialization": "Pharmaceutical Quality Assurance",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/43.jpg"
     },
     {
         "DepartmentCode": 54629,
@@ -15471,7 +16083,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-kanaka-parvathi-k/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmaceutical Quality Assurance",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-26-at-10.30.44_69e78ee5.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/23.jpg"
     },
     {
         "DepartmentCode": 54629,
@@ -15480,16 +16092,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-kella-alekhya/",
         "Designation": "Research Assistant Professor",
         "Specialization": "Pharmaceutical Analysis and Quality Assurance",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/WhatsApp-Image-2024-03-18-at-8.20.42-AM-1.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/24.jpg"
     },
     {
         "DepartmentCode": 54626,
         "DepartmentName": "Department of Pharmaceutical Regulatory Affairs",
-        "title": "Mr. Tirumala Chetty Sudheer Kumar",
+        "title": "Dr. Tirumala Chetty Sudheer Kumar",
         "url": "https://www.srmist.edu.in/faculty/mr-tirumala-chetty-sudheer-kumar/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmaceutical Regulatory Affairs",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/WhatsApp-Image-2024-02-13-at-11.02.40-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/44.jpg"
     },
     {
         "DepartmentCode": 54598,
@@ -15498,7 +16110,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-n-damodharan/",
         "Designation": "Vice Principal / Professor & Head",
         "Specialization": "Pharmaceutics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/IMG-20221201-WA0004.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/4.jpg"
     },
     {
         "DepartmentCode": 54598,
@@ -15516,7 +16128,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-s-sangeetha/",
         "Designation": "Professor",
         "Specialization": "Pharmaceutics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/WhatsApp-Image-2023-01-29-at-10.46.40-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-09-at-10.02.38-AM.jpeg"
     },
     {
         "DepartmentCode": 54598,
@@ -15525,16 +16137,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-m-s-umashankar/",
         "Designation": "Professor",
         "Specialization": "PHARMACEUTICS",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/MY-COLLEGE-PHOTO.jpg"
-    },
-    {
-        "DepartmentCode": 54598,
-        "DepartmentName": "Department of Pharmaceutics",
-        "title": "Dr. Manimaran V",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-manimaran/",
-        "Designation": "Associate Professor",
-        "Specialization": "Pharmaceutics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/WhatsApp-Image-2023-01-31-at-3.17.43-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/10-1.jpg"
     },
     {
         "DepartmentCode": 54598,
@@ -15543,7 +16146,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-r-kavitha/",
         "Designation": "Associate Professor",
         "Specialization": "Pharmaceutics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/IMG-20221202-WA0003.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/19.jpg"
     },
     {
         "DepartmentCode": 54598,
@@ -15552,7 +16155,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-p-n-remya/",
         "Designation": "Associate Professor",
         "Specialization": "Pharmaceutics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Remya-Photo.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Remya-PN-Photo.jpg"
     },
     {
         "DepartmentCode": 54598,
@@ -15561,7 +16164,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-t-s-saraswathi/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmaceutics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/IMG-20221202-WA0000.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/20.jpg"
+    },
+    {
+        "DepartmentCode": 54598,
+        "DepartmentName": "Department of Pharmaceutics",
+        "title": "Dr. Farhath Sherin",
+        "url": "https://www.srmist.edu.in/faculty/dr-farhath-sherin/",
+        "Designation": "Assistant Professor",
+        "Specialization": "PHARMACEUTICS",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/PHOTO-2024-09-03-09-57-05-1.jpg"
     },
     {
         "DepartmentCode": 54598,
@@ -15570,7 +16182,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-h-gayathri/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmaceutics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/WhatsApp-Image-2022-12-01-at-4.13.37-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/22-1.jpg"
     },
     {
         "DepartmentCode": 54622,
@@ -15579,7 +16191,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-r-kamaraj/",
         "Designation": "Professor and Head",
         "Specialization": "Pharmaceutical Regulatory Affairs, Clinical Research, Pharmacovigilance and Medical Writing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/WhatsApp-Image-2024-02-13-at-1.07.09-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/5.jpg"
     },
     {
         "DepartmentCode": 54622,
@@ -15588,7 +16200,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-m-thirumal/",
         "Designation": "Associate Professor",
         "Specialization": "Pharmacognosy and Phytochemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Thirumal-M-photo-3.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/25.jpg"
     },
     {
         "DepartmentCode": 54622,
@@ -15597,7 +16209,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-sakthi-priyadharshini-s/",
         "Designation": "Assistant Professor",
         "Specialization": "PHARMACOGNOSY, PHYTOCHEMISTRY, NATURAL PRODUCTS RESEARCH, ANTI-CANCER RESEARCH",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/WhatsApp-Image-2024-01-31-at-8.07.08-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/38.jpg"
     },
     {
         "DepartmentCode": 54622,
@@ -15606,16 +16218,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-k-shalini/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/35-copy-1-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/40.jpg"
     },
     {
         "DepartmentCode": 54606,
         "DepartmentName": "Department of Pharmacology",
         "title": "Dr. Chitra V",
         "url": "https://www.srmist.edu.in/faculty/prof-v-chitra/",
-        "Designation": "Dean, Professor & Head, Department of Pharmaceutics, College of Pharmacy",
+        "Designation": "Dean, Professor & Head, Department of Pharmacology, College of Pharmacy",
         "Specialization": "Neuroscience, Metabolic disease, Diabetes",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Dr.-V.-Chitra-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/1-1.jpg"
     },
     {
         "DepartmentCode": 54606,
@@ -15624,16 +16236,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-m-sumithra/",
         "Designation": "Associate Professor",
         "Specialization": "Neuropharmacology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/IMG-20221201-WA0016-2-3.jpg"
-    },
-    {
-        "DepartmentCode": 54606,
-        "DepartmentName": "Department of Pharmacology",
-        "title": "Dr. Tamilanban T",
-        "url": "https://www.srmist.edu.in/faculty/dr-t-tamilanban/",
-        "Designation": "Associate Professor",
-        "Specialization": "Pharmacology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_0071-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/33-1.jpg"
     },
     {
         "DepartmentCode": 54606,
@@ -15642,7 +16245,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-k-gowri/",
         "Designation": "Assistant Professor",
         "Specialization": "OSTEOARTHRITIS, IN-VIVO, EX-OVO AND IN-VITRO METHODS",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/044A9588-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/34-1.jpg"
+    },
+    {
+        "DepartmentCode": 54606,
+        "DepartmentName": "Department of Pharmacology",
+        "title": "Dr. Krishna Prabha N",
+        "url": "https://www.srmist.edu.in/faculty/mrs-n-krishna-prabha/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Neuroscience",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/39.jpg"
     },
     {
         "DepartmentCode": 54606,
@@ -15651,7 +16263,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-j-narayanan/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmacology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DSC_0090-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/3-2.jpg"
     },
     {
         "DepartmentCode": 54606,
@@ -15660,7 +16272,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-k-gayathri/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/gayathiri-k-Photo.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/17-2.jpg"
     },
     {
         "DepartmentCode": 54606,
@@ -15669,7 +16281,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-r-sri-devi/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmacology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Passport-photo01-12-22-1-1.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/12.jpg"
     },
     {
         "DepartmentCode": 54633,
@@ -15678,13 +16290,13 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-t-m-vijayakumar/",
         "Designation": "Professor and Head",
         "Specialization": "Pharmacy Practice/Clinical Pharmacy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Picture1-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/vijayakumar.jpg"
     },
     {
         "DepartmentCode": 54633,
         "DepartmentName": "Department of Pharmacy Practice",
         "title": "Dr. Rajanandh M G",
-        "url": "https://www.srmist.edu.in/faculty/118252/",
+        "url": "https://www.srmist.edu.in/faculty/dr-rajanandh-m-g/",
         "Designation": "Professor",
         "Specialization": "Clinical Research, Pharmacovigilance, Pharmacoepidemiology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/MGR.jpg"
@@ -15696,7 +16308,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-s-sarumathy/",
         "Designation": "Associate Professor",
         "Specialization": "Pharmacy Practice",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/WhatsApp-Image-2023-01-25-at-3.35.42-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/26.jpg"
     },
     {
         "DepartmentCode": 54633,
@@ -15723,30 +16335,12 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-a-priyadharshini/",
         "Designation": "Assistant Professor",
         "Specialization": "Pharmacy Practice",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/IMG-20230125-WA0083.jpg"
-    },
-    {
-        "DepartmentCode": 54633,
-        "DepartmentName": "Department of Pharmacy Practice",
-        "title": "Dr. Sriram A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-sriram/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Pharmacy Practice, Clinical Pharmacy,  Pharmacoepidemiology and Pharmacoeconomics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/WhatsApp-Image-2023-01-25-at-3.34.40-PM.jpeg"
-    },
-    {
-        "DepartmentCode": 54633,
-        "DepartmentName": "Department of Pharmacy Practice",
-        "title": "Mrs. Krishna Prabha N",
-        "url": "https://www.srmist.edu.in/faculty/mrs-n-krishna-prabha/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Neuroscience",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/NKP-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/35.jpg"
     },
     {
         "DepartmentCode": 24110,
         "DepartmentName": "Department of Physical Education & Sports Sciences",
-        "title": "Prof. Mohana Krishnan R",
+        "title": "Dr. Mohana Krishnan R",
         "url": "https://www.srmist.edu.in/faculty/dr-mohana-krishnan-r/",
         "Designation": "Director, Sports",
         "Specialization": "",
@@ -15789,6 +16383,15 @@ export const urls = [
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/siva.jpg"
     },
     {
+        "DepartmentCode": 24110,
+        "DepartmentName": "Department of Physical Education & Sports Sciences",
+        "title": "Dr. GOKUL RAJ M",
+        "url": "https://www.srmist.edu.in/faculty/179464/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Physical Education",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Gokul.jpg"
+    },
+    {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
         "title": "Dr. John Thiruvadigal D",
@@ -15800,11 +16403,11 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
-        "title": "Dr. Karthigeyan A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-karthigeyan/",
-        "Designation": "Professor and Head Incharge",
-        "Specialization": "Physics & Nanotechnology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4701.jpg"
+        "title": "Dr. Senthil Kumar E",
+        "url": "https://www.srmist.edu.in/faculty/dr-e-senthil-kumar/",
+        "Designation": "Research Associate Professor & Head",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/Senthil-Kumar.png"
     },
     {
         "DepartmentCode": 13468,
@@ -15814,6 +16417,15 @@ export const urls = [
         "Designation": "Professor (Emeritus)",
         "Specialization": "Computational design and Experimental studies in nano material",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Dr.KI_.jpg"
+    },
+    {
+        "DepartmentCode": 13468,
+        "DepartmentName": "Department of Physics and Nanotechnology",
+        "title": "Dr. Karthigeyan A",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-karthigeyan/",
+        "Designation": "Professor",
+        "Specialization": "Physics & Nanotechnology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4701.jpg"
     },
     {
         "DepartmentCode": 13468,
@@ -15867,7 +16479,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-j-archana/",
         "Designation": "Associate Professor (Research)",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-01-at-6.56.06-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Archana_Physics-a.jpg"
     },
     {
         "DepartmentCode": 13468,
@@ -15904,15 +16516,6 @@ export const urls = [
         "Designation": "Associate Professor",
         "Specialization": "Nanomedicine",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Profile-Picture.jpg"
-    },
-    {
-        "DepartmentCode": 13468,
-        "DepartmentName": "Department of Physics and Nanotechnology",
-        "title": "Dr. Gopalakrishnan C",
-        "url": "https://www.srmist.edu.in/faculty/dr-c-gopalakrishnan/",
-        "Designation": "Associate Professor",
-        "Specialization": "Nanostructured materials, Nanomagnetic Thin films and nanoparticles, magnetic hyperthermia based drug delivery system.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4693.jpg"
     },
     {
         "DepartmentCode": 13468,
@@ -16025,11 +16628,11 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
-        "title": "Dr. Yuvaraj S",
-        "url": "https://www.srmist.edu.in/faculty/dr-s-yuvaraj-2/",
-        "Designation": "Research Associate Professor",
-        "Specialization": "Materials Science and Sensor Technology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/08/YUVARAJ.jpg"
+        "title": "Dr. A. Naga Rajesh",
+        "url": "https://www.srmist.edu.in/faculty/dr-a-naga-rajesh/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Atmospheric Science",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/NagaRajesh.jpg"
     },
     {
         "DepartmentCode": 13468,
@@ -16097,6 +16700,15 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
+        "title": "Dr. Anil Kumar Pal",
+        "url": "https://www.srmist.edu.in/faculty/dr-anil-kumar-pal/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13468,
+        "DepartmentName": "Department of Physics and Nanotechnology",
         "title": "Dr. Arnab Ganguly",
         "url": "https://www.srmist.edu.in/faculty/dr-arnab-ganguly/",
         "Designation": "Research Assistant Professor",
@@ -16115,7 +16727,7 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
-        "title": "Dr. Bakiyaraj Ganesamoorthy",
+        "title": "Dr. Bakiyaraj Ganeshamoorthy",
         "url": "https://www.srmist.edu.in/faculty/g-bakiyaraj/",
         "Designation": "Assistant Professor (Sr. Gr)",
         "Specialization": "",
@@ -16151,11 +16763,29 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
+        "title": "Dr. Dibyendu Dey",
+        "url": "https://www.srmist.edu.in/faculty/dr-dibyendu-dey/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "Computational Condensed Matter and Materials Physics",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13468,
+        "DepartmentName": "Department of Physics and Nanotechnology",
         "title": "Dr. Elangovan Elamurugu",
         "url": "https://www.srmist.edu.in/faculty/dr-elangovan-elamurugu/",
         "Designation": "Assistant Professor",
         "Specialization": "Device Fabrication (Thin-films, Nanoparticles, Materials Synthesis, 2D Materials, Crystal Growth)",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Photo_Elangovan-Elamurugu-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/PP_Elangovan-Elamurugu.jpg"
+    },
+    {
+        "DepartmentCode": 13468,
+        "DepartmentName": "Department of Physics and Nanotechnology",
+        "title": "Dr. Eswara Vara Prasadarao Komarala",
+        "url": "https://www.srmist.edu.in/faculty/mr-eswara-vara-prasadarao/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "Materials Science",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13468,
@@ -16198,9 +16828,9 @@ export const urls = [
         "DepartmentName": "Department of Physics and Nanotechnology",
         "title": "Dr. Harish S",
         "url": "https://www.srmist.edu.in/faculty/dr-s-harish/",
-        "Designation": "Assistant Professor",
+        "Designation": "Associate Professor",
         "Specialization": "Nanotechnology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/Passport-size-photo.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Dr.-S.-Harish.png"
     },
     {
         "DepartmentCode": 13468,
@@ -16226,8 +16856,8 @@ export const urls = [
         "title": "Dr. Justin Jesuraj P",
         "url": "https://www.srmist.edu.in/faculty/dr-p-justin-jesuraj/",
         "Designation": "Assistant Professor",
-        "Specialization": "Optoelectronic devices, Nanomaterials",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/my-picture.jpg"
+        "Specialization": "Optoelectronic devices, Nanomaterials for water splitting and environmental remediation",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/jj-scaled.jpg"
     },
     {
         "DepartmentCode": 13468,
@@ -16277,20 +16907,20 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
+        "title": "Dr. Manas Ranjan Panda",
+        "url": "https://www.srmist.edu.in/faculty/dr-manas-ranjan-panda/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13468,
+        "DepartmentName": "Department of Physics and Nanotechnology",
         "title": "Dr. Mani Rahulan K",
         "url": "https://www.srmist.edu.in/faculty/dr-k-mani-rahulan/",
         "Designation": "Assistant Professor",
         "Specialization": "Intense field laser-matter Interaction, Nanophotonics and Nanomedicine.",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4764.jpg"
-    },
-    {
-        "DepartmentCode": 13468,
-        "DepartmentName": "Department of Physics and Nanotechnology",
-        "title": "Dr. Mathimalar S",
-        "url": "https://www.srmist.edu.in/faculty/dr-mathimalar-s/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Topological materials spectroscopic studies",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-26-at-13.45.40.jpeg"
     },
     {
         "DepartmentCode": 13468,
@@ -16313,15 +16943,6 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
-        "title": "Dr. Naga Rajesh A",
-        "url": "https://www.srmist.edu.in/faculty/dr-a-naga-rajesh/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Atmospheric Dynamics, Climate Science",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/NagaRajesh.jpg"
-    },
-    {
-        "DepartmentCode": 13468,
-        "DepartmentName": "Department of Physics and Nanotechnology",
         "title": "Dr. Payel Bandyopadhyay",
         "url": "https://www.srmist.edu.in/faculty/dr-payel-bandyopadhyay/",
         "Designation": "Assistant Professor",
@@ -16336,6 +16957,15 @@ export const urls = [
         "Designation": "Research Assistant Professor",
         "Specialization": "Advanced Materials Research",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/Radhamani-photo_24th-April-24.jpg"
+    },
+    {
+        "DepartmentCode": 13468,
+        "DepartmentName": "Department of Physics and Nanotechnology",
+        "title": "Dr. Raja Rajendran",
+        "url": "https://www.srmist.edu.in/faculty/mr-raja-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Materials Science",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13468,
@@ -16367,11 +16997,20 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
+        "title": "Dr. Rohit Chakraborty",
+        "url": "https://www.srmist.edu.in/faculty/dr-rohit-chakraborty/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "Weather Extremes, Climate Change, Remote Sensing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/rohit.jpg"
+    },
+    {
+        "DepartmentCode": 13468,
+        "DepartmentName": "Department of Physics and Nanotechnology",
         "title": "Dr. Rudra Banerjee",
         "url": "https://www.srmist.edu.in/faculty/dr-rudra-banerjee/",
         "Designation": "Assistant Professor",
         "Specialization": "Computational Condensed Matter Physics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/DSC_4717_2.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Dr.-Rudra-Banerjee.jpg"
     },
     {
         "DepartmentCode": 13468,
@@ -16430,15 +17069,6 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
-        "title": "Dr. Srijani Mallik",
-        "url": "https://www.srmist.edu.in/faculty/srijani-mallik/",
-        "Designation": "Research Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/05/DSC_4719.jpg"
-    },
-    {
-        "DepartmentCode": 13468,
-        "DepartmentName": "Department of Physics and Nanotechnology",
         "title": "Dr. Subhajit Sarkar",
         "url": "https://www.srmist.edu.in/faculty/subhajit-sarkar/",
         "Designation": "Research Assistant Professor",
@@ -16457,11 +17087,11 @@ export const urls = [
     {
         "DepartmentCode": 13468,
         "DepartmentName": "Department of Physics and Nanotechnology",
-        "title": "Dr. Surya V J",
-        "url": "https://www.srmist.edu.in/faculty/dr-v-j-surya/",
+        "title": "Dr. Sujit Kumar",
+        "url": "https://www.srmist.edu.in/faculty/dr-sujit-kumar/",
         "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/19263C.jpg"
+        "Specialization": "Energy Materials and Devices",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/sujit.jpg"
     },
     {
         "DepartmentCode": 13468,
@@ -16547,15 +17177,6 @@ export const urls = [
     {
         "DepartmentCode": 114898,
         "DepartmentName": "Department of Plant Pathology",
-        "title": "Dr. Vinod Kumar. S",
-        "url": "https://www.srmist.edu.in/faculty/dr-vinod-kumar-s/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Plant pathology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/05/Vinod-pp-2019.jpeg"
-    },
-    {
-        "DepartmentCode": 114898,
-        "DepartmentName": "Department of Plant Pathology",
         "title": "Ms. Aruna G",
         "url": "https://www.srmist.edu.in/faculty/aruna-g/",
         "Designation": "Assistant Professor",
@@ -16628,11 +17249,11 @@ export const urls = [
     {
         "DepartmentCode": 24102,
         "DepartmentName": "Department of Psychology",
-        "title": "Dr. Shyamala Dinakar",
-        "url": "https://www.srmist.edu.in/faculty/ms-shyamala-dinakar/",
-        "Designation": "Visiting Faculty",
+        "title": "Mrs. Divya M",
+        "url": "https://www.srmist.edu.in/faculty/mrs-divya-m/",
+        "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/IMG-20221228-WA0002-3.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/divya.jpg"
     },
     {
         "DepartmentCode": 24102,
@@ -16646,6 +17267,15 @@ export const urls = [
     {
         "DepartmentCode": 24102,
         "DepartmentName": "Department of Psychology",
+        "title": "Ms. Shifa Hansa",
+        "url": "https://www.srmist.edu.in/faculty/ms-shifa-hansa/",
+        "Designation": "Teaching Associate",
+        "Specialization": "Teaching Associate in Psychology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/IMG-20230228-WA0018.jpg"
+    },
+    {
+        "DepartmentCode": 24102,
+        "DepartmentName": "Department of Psychology",
         "title": "Ms. Sujatha Sathiya",
         "url": "https://www.srmist.edu.in/faculty/ms-sujatha-sathiya/",
         "Designation": "Teaching Associate",
@@ -16655,11 +17285,11 @@ export const urls = [
     {
         "DepartmentCode": 24102,
         "DepartmentName": "Department of Psychology",
-        "title": "Ms. Shifa Hansa",
-        "url": "https://www.srmist.edu.in/faculty/ms-shifa-hansa/",
+        "title": "Ms. Keerthana P",
+        "url": "https://www.srmist.edu.in/faculty/ms-keerthana-p/",
         "Designation": "Teaching Associate",
-        "Specialization": "Teaching Associate in Psychology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/01/IMG-20230228-WA0018.jpg"
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/1-3-scaled.jpg"
     },
     {
         "DepartmentCode": 90484,
@@ -16745,20 +17375,20 @@ export const urls = [
     {
         "DepartmentCode": 114941,
         "DepartmentName": "Department of Soil Science and Agricultural Chemistry",
+        "title": "Mr. Ravisankar. K",
+        "url": "https://www.srmist.edu.in/faculty/k-ravisankar/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Soil Science & Agrl. Chemistry",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/06/Ravi-1-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 114941,
+        "DepartmentName": "Department of Soil Science and Agricultural Chemistry",
         "title": "Prabhakaran S",
         "url": "https://www.srmist.edu.in/faculty/mr-s-prabhakaran/",
         "Designation": "Assistant Professor",
         "Specialization": "Microbiology",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/06/Mr.-S.-Prabhakaran.jpg"
-    },
-    {
-        "DepartmentCode": 114941,
-        "DepartmentName": "Department of Soil Science and Agricultural Chemistry",
-        "title": "Mr. Ravisankar. K",
-        "url": "https://www.srmist.edu.in/faculty/k-ravisankar/",
-        "Designation": "Tutor",
-        "Specialization": "Soil Science & Agrl. Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/06/Ravi-1-scaled.jpg"
     },
     {
         "DepartmentCode": 23907,
@@ -16795,15 +17425,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Tamil",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/3-2-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 23907,
-        "DepartmentName": "Department of Tamil",
-        "title": "Dr. Logeshwaran M",
-        "url": "https://www.srmist.edu.in/faculty/dr-logeshwaran-m/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Tamil",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/51431-scaled.jpg"
     },
     {
         "DepartmentCode": 23907,
@@ -16857,7 +17478,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-padmanabhan-t/",
         "Designation": "Assistant Professor & Head",
         "Specialization": "New Media Studies, Information and Communication Technology, Film Studies, and Cultural and Gender Studies",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/Dr.T.P-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/padmanabhan.png"
     },
     {
         "DepartmentCode": 24767,
@@ -16898,18 +17519,9 @@ export const urls = [
     {
         "DepartmentCode": 24767,
         "DepartmentName": "Department of Visual Communication",
-        "title": "Dr. Saravana Kumar T K",
-        "url": "https://www.srmist.edu.in/faculty/dr-t-k-saravana-kumar/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Advertising and Digital Media",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/2-5-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 24767,
-        "DepartmentName": "Department of Visual Communication",
         "title": "Dr. Ansu Elsa Joy",
         "url": "https://www.srmist.edu.in/faculty/ansu-elsa-joy/",
-        "Designation": "Teaching Associate",
+        "Designation": "Assistant Professor",
         "Specialization": "Film Studies, Gender Studies and Cultural Studies",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Ansu-scaled.jpg"
     },
@@ -16918,7 +17530,7 @@ export const urls = [
         "DepartmentName": "Department of Visual Communication",
         "title": "Dr. Lakshmipriya M",
         "url": "https://www.srmist.edu.in/faculty/lakshmipriya-m/",
-        "Designation": "Teaching Associate",
+        "Designation": "Assistant Professor",
         "Specialization": "Photography, Film Studies, Women Studies and Cultural Studies",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Priya-scaled.jpg"
     },
@@ -16975,6 +17587,15 @@ export const urls = [
         "Designation": "Multimedia Designer",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/IMG_9385-2-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 24767,
+        "DepartmentName": "Department of Visual Communication",
+        "title": "",
+        "url": "https://www.srmist.edu.in/faculty/182586/",
+        "Designation": "Instructor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/work-scaled.jpg"
     },
     {
         "DepartmentCode": 87478,
@@ -17123,11 +17744,38 @@ export const urls = [
     {
         "DepartmentCode": 86713,
         "DepartmentName": "Nanotechnology Research Center",
-        "title": "Dr. Senthil Kumar E",
-        "url": "https://www.srmist.edu.in/faculty/dr-e-senthil-kumar/",
-        "Designation": "Research Associate Professor",
+        "title": "Dr. Geerthana M",
+        "url": "https://www.srmist.edu.in/faculty/dr-geerthana-m/",
+        "Designation": "Assistant Professor (Research)",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/senthil-kumar.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Dr.-M.-Geerthana.jpg"
+    },
+    {
+        "DepartmentCode": 86713,
+        "DepartmentName": "Nanotechnology Research Center",
+        "title": "Dr. Vinoth E",
+        "url": "https://www.srmist.edu.in/faculty/dr-vinoth-e/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/Photo-Vinoth.jpg"
+    },
+    {
+        "DepartmentCode": 86713,
+        "DepartmentName": "Nanotechnology Research Center",
+        "title": "Mr. Mohamed Jibri K P",
+        "url": "https://www.srmist.edu.in/faculty/mr-mohamed-jibri-k-p/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 86713,
+        "DepartmentName": "Nanotechnology Research Center",
+        "title": "Mr. Vijay V",
+        "url": "https://www.srmist.edu.in/faculty/mr-vijay-v/",
+        "Designation": "Research Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 142099,
@@ -17136,7 +17784,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-g-p-pazhani/",
         "Designation": "Research Associate Professor",
         "Specialization": "Pharmaceutical Chemistry and Molecular Microbiology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/photo_19-02-2024-2.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Pazhani.jpg"
     },
     {
         "DepartmentCode": 142099,
@@ -17145,7 +17793,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-c-h-hemanth-kumar/",
         "Designation": "Research Assistant Professor",
         "Specialization": "Pharmaceutical Analysis",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/044A9580-scaled-e1711531211135.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/14.jpg"
     },
     {
         "DepartmentCode": 142099,
@@ -17154,7 +17802,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-jaividhya-p/",
         "Designation": "Research Assistant Professor",
         "Specialization": "Bioinorganic Chemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/06/044A9608-scaled-e1713418549783-1024x927-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/29.jpg"
     },
     {
         "DepartmentCode": 142099,
@@ -17163,16 +17811,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-priya-darshani-s/",
         "Designation": "Research Assistant Professor",
         "Specialization": "Pharmaceutical Chemistry, Phytochemistry",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/044A9605-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 114227,
-        "DepartmentName": "Research",
-        "title": "Dr. Bernaurdshaw Neppolian",
-        "url": "https://www.srmist.edu.in/faculty/dr-bernaurdshaw-neppolian/",
-        "Designation": "Dean (Research)",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/Dr_-Bernaurdshaw-Neppolian.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/pppppppppppppppppppppppppppppppp.jpg"
     },
     {
         "DepartmentCode": 13448,
@@ -17249,6 +17888,24 @@ export const urls = [
     {
         "DepartmentCode": 13448,
         "DepartmentName": "School of Architecture and Interior Design",
+        "title": "Mr. Arun S.K",
+        "url": "https://www.srmist.edu.in/faculty/mr-s-k-arun/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Mr.S.K.Arun_.jpg"
+    },
+    {
+        "DepartmentCode": 13448,
+        "DepartmentName": "School of Architecture and Interior Design",
+        "title": "Mr. Gajendran.T",
+        "url": "https://www.srmist.edu.in/faculty/mr-gajendran-t/",
+        "Designation": "Associate Professor",
+        "Specialization": "Urban Design, Housing, Computer Application in Design & Environmental Science",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Gajendran-1-scaled.jpg"
+    },
+    {
+        "DepartmentCode": 13448,
+        "DepartmentName": "School of Architecture and Interior Design",
         "title": "Mr. Purnachandar P",
         "url": "https://www.srmist.edu.in/faculty/p-purnachandar/",
         "Designation": "Associate Professor",
@@ -17303,11 +17960,11 @@ export const urls = [
     {
         "DepartmentCode": 13448,
         "DepartmentName": "School of Architecture and Interior Design",
-        "title": "Mr. Arun S.K",
-        "url": "https://www.srmist.edu.in/faculty/mr-s-k-arun/",
+        "title": "Mr. Antony Joe V",
+        "url": "https://www.srmist.edu.in/faculty/mr-antony-joe-v/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/Mr.S.K.Arun_.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/antony.jpg"
     },
     {
         "DepartmentCode": 13448,
@@ -17335,15 +17992,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Mr.-Dharani-S-Dharan.jpeg"
-    },
-    {
-        "DepartmentCode": 13448,
-        "DepartmentName": "School of Architecture and Interior Design",
-        "title": "Mr. Gajendran.T",
-        "url": "https://www.srmist.edu.in/faculty/mr-gajendran-t/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Urban Design, Housing, Computer Application in Design & Environmental Science",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Gajendran-1-scaled.jpg"
     },
     {
         "DepartmentCode": 13448,
@@ -17420,6 +18068,15 @@ export const urls = [
     {
         "DepartmentCode": 13448,
         "DepartmentName": "School of Architecture and Interior Design",
+        "title": "Mr. Vignaeshwar C",
+        "url": "https://www.srmist.edu.in/faculty/mr-vignaeshwar-c/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/vigneshwaran.jpg"
+    },
+    {
+        "DepartmentCode": 13448,
+        "DepartmentName": "School of Architecture and Interior Design",
         "title": "Ms. Abinaya T L",
         "url": "https://www.srmist.edu.in/faculty/ms-t-l-abinaya/",
         "Designation": "Assistant Professor",
@@ -17443,6 +18100,24 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Architecture and Interior Design",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Ms.-Aruna.-V.jpeg"
+    },
+    {
+        "DepartmentCode": 13448,
+        "DepartmentName": "School of Architecture and Interior Design",
+        "title": "Ms. Deepthi KP",
+        "url": "https://www.srmist.edu.in/faculty/ms-deepthi-kp/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+    },
+    {
+        "DepartmentCode": 13448,
+        "DepartmentName": "School of Architecture and Interior Design",
+        "title": "Ms. Divyaa P R",
+        "url": "https://www.srmist.edu.in/faculty/ms-divyaa-p-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/divyaa.jpg"
     },
     {
         "DepartmentCode": 13448,
@@ -17523,7 +18198,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/shanmuga-priya-s/",
         "Designation": "Assistant Professor",
         "Specialization": "Architecture, Interior Design , Architectural Conservation, Urban planning and development",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Shanmugapriya-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/DSC_0066-copy.jpg"
     },
     {
         "DepartmentCode": 13448,
@@ -17546,11 +18221,20 @@ export const urls = [
     {
         "DepartmentCode": 13448,
         "DepartmentName": "School of Architecture and Interior Design",
-        "title": "Ms. Susetha N",
-        "url": "https://www.srmist.edu.in/faculty/ms-n-susetha/",
+        "title": "Ms. Tharangini K",
+        "url": "https://www.srmist.edu.in/faculty/tharangini-k/",
         "Designation": "Assistant Professor",
-        "Specialization": "Interior Design, Basic Design Studio, Furniture Design, Lighting and Color, Arts and crafts, Textile Design etc.",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/Ms. N.Susetha.jpg"
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/tharangini.jpg"
+    },
+    {
+        "DepartmentCode": 13448,
+        "DepartmentName": "School of Architecture and Interior Design",
+        "title": "Ms. Vaishalee H",
+        "url": "https://www.srmist.edu.in/faculty/ms-vaishalee-h/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Heritage and Architectural Conservation, Design Studio",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/07/vaishalee.jpg"
     },
     {
         "DepartmentCode": 13448,
@@ -17569,6 +18253,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Architectural Design, Computer studio",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/04/IMG-20230519-WA0007.jpg"
+    },
+    {
+        "DepartmentCode": 13448,
+        "DepartmentName": "School of Architecture and Interior Design",
+        "title": "Ms. Sunitha M",
+        "url": "https://www.srmist.edu.in/faculty/ms-sunitha-m/",
+        "Designation": "Visiting Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 13448,
@@ -17627,15 +18320,6 @@ export const urls = [
     {
         "DepartmentCode": 114947,
         "DepartmentName": "Section of Animal Sciences",
-        "title": "Dr. Thamizhannal M",
-        "url": "https://www.srmist.edu.in/faculty/dr-thamizhannal-m/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Livestock Products Technology (Dairy Science and Meat Science)",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/Thamizh-Dr-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 114947,
-        "DepartmentName": "Section of Animal Sciences",
         "title": "Dr. Sreyass K S",
         "url": "https://www.srmist.edu.in/faculty/dr-sreyass-k-s/",
         "Designation": "Assistant Professor",
@@ -17663,11 +18347,11 @@ export const urls = [
     {
         "DepartmentCode": 31371,
         "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Kanniammal C",
-        "url": "https://www.srmist.edu.in/faculty/dr-kanniammal-c/",
-        "Designation": "Dean,  College of Nursing",
-        "Specialization": "Medical Surgical Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/Dr.-KANNIAMMAL.jpg"
+        "title": "Dr.Helen Shaji J C",
+        "url": "https://www.srmist.edu.in/faculty/dr-helen-shaji-j-c/",
+        "Designation": "Dean, SRM College of Nursing",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/helen-shaji.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17676,7 +18360,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-r-vijayalakshmi/",
         "Designation": "Vice Principal, College of Nursing",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/vp-mam.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/11/Dr.-Vijayalakshmi-R.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17685,7 +18369,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-n-bamini-devi/",
         "Designation": "Professor",
         "Specialization": "MEDICAL SURGICAL NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/bamini-mam.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Dr.-N.-Baminidevi.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17694,25 +18378,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/m-kalavalli/",
         "Designation": "Professor",
         "Specialization": "Mental Health Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/InShot_20221230_224258249.jpg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Angelin Dhanalakshmi M",
-        "url": "https://www.srmist.edu.in/faculty/mrs-m-angelin-dhanalakshmi/",
-        "Designation": "Associate Professor",
-        "Specialization": "COMMUNITY HEALTH NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/ANGELIN-MAM.jpg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Deenajothy R",
-        "url": "https://www.srmist.edu.in/faculty/mrs-r-deenajothy/",
-        "Designation": "Associate Professor",
-        "Specialization": "OBSTETRICS AND GYNAECOLOGY NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/deena-mam.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Dr.-M.-Kalavalli.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17721,16 +18387,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-d-rajeshwari/",
         "Designation": "Associate Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/PHOTO-2024-03-21-16-38-42.jpg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Sheeba Jebakani A",
-        "url": "https://www.srmist.edu.in/faculty/a-sheeba-jebakani/",
-        "Designation": "Associate Professor",
-        "Specialization": "MEDICAL SURGICAL NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/12/PHOTO-2023-12-15-07-35-45.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Dr.-Rajeshwari.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17739,7 +18396,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-t-suseelal/",
         "Designation": "Associate Professor",
         "Specialization": "MEDICAL AND SURGICAL NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/susheelal-mam.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Dr.-Suseelal.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17748,52 +18405,34 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/k-ambiga/",
         "Designation": "Associate Professor",
         "Specialization": "MEDICAL SURGICAL NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/ambika-mam.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-Ambiga.-K.jpg"
     },
     {
         "DepartmentCode": 31371,
         "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Kanmani K",
-        "url": "https://www.srmist.edu.in/faculty/mrs-kanmani-k/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Community Health Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/KANMANI.jpeg"
+        "title": "Mrs. Angelin Dhanalakshmi M",
+        "url": "https://www.srmist.edu.in/faculty/mrs-m-angelin-dhanalakshmi/",
+        "Designation": "Associate Professor",
+        "Specialization": "COMMUNITY HEALTH NURSING",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-Angelin-Dhanalakshmi.jpg"
     },
     {
         "DepartmentCode": 31371,
         "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Kavitha P",
-        "url": "https://www.srmist.edu.in/faculty/mrs-kavitha-p/",
-        "Designation": "Assistant Professor",
-        "Specialization": "MENTAL HEALTH NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/photo-kavitha.jpg"
+        "title": "Mrs. Deenajothy R",
+        "url": "https://www.srmist.edu.in/faculty/mrs-r-deenajothy/",
+        "Designation": "Associate Professor",
+        "Specialization": "OBSTETRICS AND GYNAECOLOGY NURSING",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-Deena-Jothy.jpg"
     },
     {
         "DepartmentCode": 31371,
         "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Priya V",
-        "url": "https://www.srmist.edu.in/faculty/mrs-v-priya/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/priya-mam.jpg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Priyadharsini M",
-        "url": "https://www.srmist.edu.in/faculty/m-priyadharsini/",
-        "Designation": "Assistant Professor",
+        "title": "Mrs. Sheeba Jebakani A",
+        "url": "https://www.srmist.edu.in/faculty/a-sheeba-jebakani/",
+        "Designation": "Associate Professor",
         "Specialization": "MEDICAL SURGICAL NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/InShot_20221230_225745325.jpg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Selva Mary Devakani J",
-        "url": "https://www.srmist.edu.in/faculty/mrs-j-selva-mary-devakani/",
-        "Designation": "Assistant Professor",
-        "Specialization": "MENTAL HEALTH NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/InShot_20221230_224948408.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-Sheebajebakani.-A.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17802,34 +18441,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-shaini-g-s/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/shyni-mam.jpg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Suganthi K",
-        "url": "https://www.srmist.edu.in/faculty/mrs-k-suganthi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Medical Surgical Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/suganthi-mam.jpg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Tamilselvi S",
-        "url": "https://www.srmist.edu.in/faculty/mrs-s-tamilselvi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "CHILD HEALTH ( PAEDIATRIC) NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/tamil-mam.jpg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Ushapriya M",
-        "url": "https://www.srmist.edu.in/faculty/ms-ushapriya-m/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Pediatric Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Ushapriya-1.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Dr.-G.-S.-Shaini.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17838,7 +18450,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/v-valarmathi/",
         "Designation": "Assistant Professor",
         "Specialization": "Mental Health (Psychiatric) Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/valar-mam.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Dr.V.-Valarmathi.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17847,7 +18459,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/dr-deepika-t/",
         "Designation": "Assistant Professor",
         "Specialization": "Mental Health Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/12/DEEPIKA-2.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-Deepika.-T.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17856,16 +18468,79 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/k-geetha/",
         "Designation": "Assistant Professor",
         "Specialization": "COMMUNITY HEALTH NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/geetha-mam.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-Geetha.K.jpg"
     },
     {
         "DepartmentCode": 31371,
         "DepartmentName": "SRM College of Nursing",
-        "title": "Dr. Abizha G",
-        "url": "https://www.srmist.edu.in/faculty/abizha-g/",
-        "Designation": "Nursing tutor",
+        "title": "Mrs. Kanmani K",
+        "url": "https://www.srmist.edu.in/faculty/mrs-kanmani-k/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Community Health Nursing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-K.-Kanmani.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Kavitha P",
+        "url": "https://www.srmist.edu.in/faculty/mrs-kavitha-p/",
+        "Designation": "Assistant Professor",
+        "Specialization": "MENTAL HEALTH NURSING",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-P.-Kavitha.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Priya V",
+        "url": "https://www.srmist.edu.in/faculty/mrs-v-priya/",
+        "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/pass.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-V.Priya_.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Priyadharsini M",
+        "url": "https://www.srmist.edu.in/faculty/m-priyadharsini/",
+        "Designation": "Assistant Professor",
+        "Specialization": "MEDICAL SURGICAL NURSING",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-M.-Priyadharshini.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Selva Mary Devakani J",
+        "url": "https://www.srmist.edu.in/faculty/mrs-j-selva-mary-devakani/",
+        "Designation": "Assistant Professor",
+        "Specialization": "MENTAL HEALTH NURSING",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/12/PHOTO-2024-12-10-22-34-27.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Suganthi K",
+        "url": "https://www.srmist.edu.in/faculty/mrs-k-suganthi/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Medical Surgical Nursing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-K.-Suganthi.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Tamilselvi S",
+        "url": "https://www.srmist.edu.in/faculty/mrs-s-tamilselvi/",
+        "Designation": "Assistant Professor",
+        "Specialization": "CHILD HEALTH ( PAEDIATRIC) NURSING",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-S.-Tamilselvi.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Ushapriya M",
+        "url": "https://www.srmist.edu.in/faculty/ms-ushapriya-m/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Pediatric Nursing",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-M.-Ushapriya.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17874,7 +18549,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-sathish-a-m/",
         "Designation": "Tutor",
         "Specialization": "Medical surgical nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Sathish-3.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mr.-A.M.-Sathish.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Abizha G",
+        "url": "https://www.srmist.edu.in/faculty/abizha-g/",
+        "Designation": "Nursing tutor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-Abizha-G.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17883,16 +18567,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-n-dhivya/",
         "Designation": "Tutor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/DIVYA.jpeg"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Mrs. Saraswathi M",
-        "url": "https://www.srmist.edu.in/faculty/mrs-m-saraswathi/",
-        "Designation": "Tutor",
-        "Specialization": "Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/1711434113606.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-N.-Dhivya.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17901,7 +18576,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-g-sasikala/",
         "Designation": "Tutor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Document-62_1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-G.-Sasikala.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17910,7 +18585,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-selvi-s/",
         "Designation": "Tutor",
         "Specialization": "CHILD HEALTH(PAEDIATRIC) NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/SELVI.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-Selvi.-S.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17919,7 +18594,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-shiyamala-p/",
         "Designation": "Tutor",
         "Specialization": "Medical surgical nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/SHAYMALA.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-P.-Shiyamala.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17928,7 +18603,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/suganya-n/",
         "Designation": "Tutor",
         "Specialization": "MEDICAL SURGICAL NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/suganya.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-N.-Suganya.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17937,7 +18612,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/vinitha-d/",
         "Designation": "Tutor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/VINITHA.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Mrs.-D.-Vinitha.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17946,7 +18621,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-aswathy-nair-2/",
         "Designation": "Tutor",
         "Specialization": "PAEDIATRIC NURSING",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/ASWATHY.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Ms.-Aswathy-Nair.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17955,16 +18630,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-jenitha-r/",
         "Designation": "Tutor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/JENI.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Ms.-R.-Jenitha.jpg"
     },
     {
         "DepartmentCode": 31371,
         "DepartmentName": "SRM College of Nursing",
-        "title": "Ms. Samundeeswari J",
-        "url": "https://www.srmist.edu.in/faculty/ms-samundeeswari-j/",
-        "Designation": "Clinical Instructor",
-        "Specialization": "Medical Surgical Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-04-03-09-30-32.jpg"
+        "title": "Ms.Pusphpa G",
+        "url": "https://www.srmist.edu.in/faculty/ms-pusphpa-g/",
+        "Designation": "",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/PUSHPA-G-1.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17973,7 +18648,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-simeon-2/",
         "Designation": "Clinical Instructor",
         "Specialization": "Medical Surgical Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-03-31-18-31-38.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/SIMION.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17982,7 +18657,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-viswanath/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-04-01-15-25-26.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Mr.-Viswanath.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -17991,7 +18666,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-p-beaula-priya-tharisini/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/PHOTO-2024-03-20-11-54-54-Photoroom.png-Photoroom.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/Photoroom_20240812_165809.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18000,7 +18675,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-cynthial-queeni/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-03-20-11-02-07.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/CYNTHIAL-QUEENI.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Jayamalli N",
+        "url": "https://www.srmist.edu.in/faculty/mrs-jayamalli-n/",
+        "Designation": "Nursing Tutor",
+        "Specialization": "Department of Obstetrics and Gynacology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/10/Mrs.N.-Jaya-Malli.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18009,13 +18693,22 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-jothi-c/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/PHOTO-2024-03-20-11-54-14-Photoroom.png-Photoroom.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/JOTHI-C.jpg"
     },
     {
         "DepartmentCode": 31371,
         "DepartmentName": "SRM College of Nursing",
         "title": "Mrs. Louismary A",
         "url": "https://www.srmist.edu.in/faculty/a-louismary/",
+        "Designation": "Clinical Instructor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/LOUIS-MARY.jpg"
+    },
+    {
+        "DepartmentCode": 31371,
+        "DepartmentName": "SRM College of Nursing",
+        "title": "Mrs. Nithiya R",
+        "url": "https://www.srmist.edu.in/faculty/mrs-nithiya-r/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
         "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
@@ -18027,7 +18720,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-g-pushpa/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-04-03-12-02-39-Photoroom.png-Photoroom.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/PUSHPA-G.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18036,7 +18729,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/m-rukmani/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-03-31-17-50-25-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/RUKUMANI-1.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18045,7 +18738,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/s-sumathi/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/SUMATHI.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18054,7 +18747,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-anbarasi-r/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/PHOTO-2024-03-20-11-52-11-Photoroom.png-Photoroom.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/ANBARASI.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18063,7 +18756,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-annie-jasline-b/",
         "Designation": "Clinical Instructor",
         "Specialization": "Community Health Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/PHOTO-2024-03-20-21-31-12.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/ANNIE.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18072,7 +18765,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/anu-n/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/aedb4af4-043f-4c21-8ecd-5e48dedfc27e-Photoroom.png-Photoroom.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/ANU.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18090,7 +18783,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-p-anusuya/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-04-03-12-00-30.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/ANUSUYA-P.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18099,7 +18792,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/m-aswini/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-04-03-12-01-12.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/4-1.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18117,16 +18810,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-divya-r/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/IMG_9319-Photoroom.png-Photoroom.png"
-    },
-    {
-        "DepartmentCode": 31371,
-        "DepartmentName": "SRM College of Nursing",
-        "title": "Ms. Femina Sheeba L",
-        "url": "https://www.srmist.edu.in/faculty/ms-femina-sheeba-l/",
-        "Designation": "Clinical Instructor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-03-31-19-42-47.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/DIVYA-R.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18135,7 +18819,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-helen-christinal-y/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-03-20-11-32-46-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/HELEN-CRISTINAL.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18144,7 +18828,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/r-hema-rajakumari/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Hemarajakumari.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/HEMA.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18153,7 +18837,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-jenifer-r/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-03-31-18-16-32.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/JENIFER.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18162,7 +18846,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-kavitha-g-2/",
         "Designation": "Clinical Instructor",
         "Specialization": "Medical Surgical Nursing",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-03-31-17-49-22.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/KAVITHA.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18171,7 +18855,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-latha-kumari-c/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-04-01-15-25-26-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/LATHA-KUMARI.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18180,7 +18864,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/k-pavithra/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-04-01-07-17-35.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/Mrs.-Pavithra-K.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18198,7 +18882,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/s-prema/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/2b0692e0-a269-41bd-a5c7-0c2643c57264.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/PREMA.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18207,7 +18891,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-sasikala-k/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/PHOTO-2024-03-31-17-50-25.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/2.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18216,7 +18900,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-r-p-sumi/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/IMG_9314.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/R-P-SUMI.jpg"
     },
     {
         "DepartmentCode": 31371,
@@ -18225,7 +18909,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/s-vanaja/",
         "Designation": "Clinical Instructor",
         "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/VANAJA-B.jpg"
     },
     {
         "DepartmentCode": 31373,
@@ -18253,15 +18937,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Neurosciences",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/1579841315717-31a6bd78-0e12-481c-a717-da6aac674228_.jpg"
-    },
-    {
-        "DepartmentCode": 31373,
-        "DepartmentName": "SRM College of Occupational Therapy",
-        "title": "Ms. Indrani Bose",
-        "url": "https://www.srmist.edu.in/faculty/indrani-bose/",
-        "Designation": "Assistant Professor",
-        "Specialization": "orthopedics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Scanned_15465138052233136.jpg"
     },
     {
         "DepartmentCode": 31373,
@@ -18306,7 +18981,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-t-s-veeragoudhaman/",
         "Designation": "Dean i/c, College of Physiotherapy",
         "Specialization": "Hand Conditions",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/Prof.-T.S.-Veeragoudhaman.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-28-at-9.59.29-AM.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18315,7 +18990,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-t-n-suresh/",
         "Designation": "Vice - Principal, College of Physiotherapy",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Dr.-Suresh-T.N.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-9.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18324,7 +18999,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-d-malarvizhi/",
         "Designation": "Professor",
         "Specialization": "Paediatrics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Malar-2.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-28-at-9.59.17-AM.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18333,7 +19008,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mani-kumar-m/",
         "Designation": "Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/IMG-20220328-WA0017.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-02-at-2.30.45-PM.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18342,7 +19017,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-k-vadivelan/",
         "Designation": "Professor",
         "Specialization": "Pediatric Physiotherapy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Dr.K.Vadivelan-.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-02-at-2.29.35-PM-1.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18351,7 +19026,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-j-ayyappan/",
         "Designation": "Professor",
         "Specialization": "Orthopedic Physiotherapy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Ayyappan-photo.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-45.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18360,7 +19035,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-p-kamalanathan/",
         "Designation": "Professor",
         "Specialization": "Community Physiotherapy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/kamalanathan-photo.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-59.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18369,7 +19044,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-m-saravana-hari-ganesh/",
         "Designation": "Professor",
         "Specialization": "Neurological Physiotherapy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Saravana-Hari-ganesh.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-14.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18378,7 +19053,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/prof-d-anandhi/",
         "Designation": "Professor",
         "Specialization": "Physiotherapy in Cardiopulmonary Sciences",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/ANANDHI-PIC-1.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-28-at-9.59.19-AM.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18387,7 +19062,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/harikrishnan-r/",
         "Designation": "Associate Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Hari-PP-picture-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-54.jpg"
+    },
+    {
+        "DepartmentCode": 31393,
+        "DepartmentName": "SRM College of Physiotherapy",
+        "title": "Dr. M. Anbu Priya MPT.,PhD.,",
+        "url": "https://www.srmist.edu.in/faculty/mrs-m-anbu-priya/",
+        "Designation": "Associate Professor",
+        "Specialization": "Obstetrics and gynecological physiotherapy",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/IMG-20240824-WA0002-new.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18396,7 +19080,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/suresh-j/",
         "Designation": "Associate Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/prof-suresh.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-28-at-9.59.16-AM.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18405,16 +19089,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-balamurugan-j/",
         "Designation": "Research Associate",
         "Specialization": "Research in Physiotherapy, Epidemiology, Clinical Outcome measure in rehabilitation, and Musculo-skeletal rehabilitation rehabilitation",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/PASS-SIZE-NEW-1-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/WhatsApp-Image-2024-09-03-at-5.30.36-PM.jpeg"
     },
     {
         "DepartmentCode": 31393,
         "DepartmentName": "SRM College of Physiotherapy",
-        "title": "Mrs. Anbu Priya M",
-        "url": "https://www.srmist.edu.in/faculty/mrs-m-anbu-priya/",
-        "Designation": "Associate Professor",
-        "Specialization": "Obstetrics and gynecological physiotherapy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/anbu.jpg"
+        "title": "Dr. Ashish Mathew",
+        "url": "https://www.srmist.edu.in/faculty/dr-ashish-mathew/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 31393,
@@ -18423,7 +19107,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/arvind-m/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/83016090-61D4-4782-878C-4F17D0F30A87.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-8.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18432,16 +19116,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/chandrakumar-k/",
         "Designation": "Assistant Professor",
         "Specialization": "ORTHOPEADICS",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/01-scaled.jpg"
-    },
-    {
-        "DepartmentCode": 31393,
-        "DepartmentName": "SRM College of Physiotherapy",
-        "title": "Mr. Hariharan S",
-        "url": "https://www.srmist.edu.in/faculty/mr-hariharan/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/IMG_20230518_113250-2.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-56.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18450,7 +19125,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-e-jayakanthan/",
         "Designation": "Assistant Professor",
         "Specialization": "Physiotherapy  and Yoga Therapy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/jk-photo.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-48.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18459,7 +19134,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/manova-prasanna-kumar/",
         "Designation": "Assistant Professor",
         "Specialization": "MUSCULOSKELETAL AND SPORTS DISORDERS",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Manova-Prasanna-Kumar.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-57.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18468,16 +19143,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/rajkumar-m/",
         "Designation": "Assistant Professor",
         "Specialization": "orthopedics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/DSC0002-copy-2.jpg"
-    },
-    {
-        "DepartmentCode": 31393,
-        "DepartmentName": "SRM College of Physiotherapy",
-        "title": "Mr. Swatheeshwaran S",
-        "url": "https://www.srmist.edu.in/faculty/swatheeshwaran-s/",
-        "Designation": "Assistant Professor",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/0C2ADCF7-C70F-4524-B409-4DA202AF0C1E.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-55.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18486,7 +19152,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-s-f-mariyam-farzana/",
         "Designation": "Assistant Professor",
         "Specialization": "OBSTETRICS AND GYNAECOLOGY",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Picture-1-1.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-17.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18504,7 +19170,25 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-priyanka-b-2/",
         "Designation": "Assistant Professor",
         "Specialization": "Orthopaedics",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/09/ph-rotated-e1695569621284.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-10.jpg"
+    },
+    {
+        "DepartmentCode": 31393,
+        "DepartmentName": "SRM College of Physiotherapy",
+        "title": "Mrs. R.Karthiga",
+        "url": "https://www.srmist.edu.in/faculty/mrs-karthiga-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Neurology",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/MY-PROFILE-PICTURE.jpg"
+    },
+    {
+        "DepartmentCode": 31393,
+        "DepartmentName": "SRM College of Physiotherapy",
+        "title": "Mrs. Shrisruthi S",
+        "url": "https://www.srmist.edu.in/faculty/ms-s-shrisruthi/",
+        "Designation": "Assistant Professor",
+        "Specialization": "Paediatric Physiotherapy",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-28-at-9.59.47-AM.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18513,7 +19197,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-m-sowmiya/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/PHOTO-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-28-at-09.59.44.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18522,7 +19206,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-subicha-t-s/",
         "Designation": "Assistant Professor",
         "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/1666421859846-e1711364530413.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-16.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18531,7 +19215,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mrs-yasmeen-g/",
         "Designation": "Assistant Professor",
         "Specialization": "Orthopaedic Physiotherapy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/04/yasmeen.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/WhatsApp-Image-2024-08-28-at-9.59.46-AM-1.jpeg"
+    },
+    {
+        "DepartmentCode": 31393,
+        "DepartmentName": "SRM College of Physiotherapy",
+        "title": "Ms. Divya Varshini R",
+        "url": "https://www.srmist.edu.in/faculty/dr-divya-varshini-r/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/2024-09-03-21-07-28-430-1.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18540,16 +19233,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-gayathri-k-2/",
         "Designation": "Assistant Professor",
         "Specialization": "CARDIOPULMONARY SCIENCES",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Gayathri-2-copy-e1710998010684.jpg"
-    },
-    {
-        "DepartmentCode": 31393,
-        "DepartmentName": "SRM College of Physiotherapy",
-        "title": "Ms. Karthiga R",
-        "url": "https://www.srmist.edu.in/faculty/mrs-karthiga-r/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Neurology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Karthiga.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/IMG-20240828-WA0020.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18558,16 +19242,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-kaviya-m/",
         "Designation": "Assistant Professor",
         "Specialization": "Cardiopulmonary sciences",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/Kaviya.jpg"
-    },
-    {
-        "DepartmentCode": 31393,
-        "DepartmentName": "SRM College of Physiotherapy",
-        "title": "Ms. Shrisruthi S",
-        "url": "https://www.srmist.edu.in/faculty/ms-s-shrisruthi/",
-        "Designation": "Assistant Professor",
-        "Specialization": "Paediatric Physiotherapy",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/CROPED-PIC-scaled.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/WhatsApp-Image-2024-08-28-at-09.59.49-min.jpeg"
     },
     {
         "DepartmentCode": 31393,
@@ -18576,7 +19251,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/valaramathy-n/",
         "Designation": "Assistant Professor",
         "Specialization": "Orthopedics and traumatology condition, Musculoskeletal conditions ,Post surgical and Geriatric rehabilitation",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/WhatsApp-Image-2024-03-21-at-11.20.27-AM-e1711792686405.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/photoclip.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18585,7 +19260,16 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-n-ashok/",
         "Designation": "Senior Physio Therapist",
         "Specialization": "Senior Physiotherapist",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/WhatsApp-Image-2022-11-30-at-2.24.52-PM.jpeg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-49.jpg"
+    },
+    {
+        "DepartmentCode": 31393,
+        "DepartmentName": "SRM College of Physiotherapy",
+        "title": "Ms. Nandhini S",
+        "url": "https://www.srmist.edu.in/faculty/ms-nandhini-s/",
+        "Designation": "Clinical Therapist",
+        "Specialization": "",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/IMG-20240828-WA0020.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18594,7 +19278,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-diwagar-b/",
         "Designation": "Clinical Therapist",
         "Specialization": "PHYSIOTHERAPY",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/diwagar.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-61.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18612,7 +19296,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/mr-ragupathi-s/",
         "Designation": "Clinical Physiotherapist",
         "Specialization": "PHYSIOTHERAPIST",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/ragu-ph-1.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/IMG-20240828-WA0019.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18620,17 +19304,8 @@ export const urls = [
         "title": "Ms. Jothilakshmi A",
         "url": "https://www.srmist.edu.in/faculty/ms-jothi-lakshmi-a/",
         "Designation": "Clinical Physiotherapist",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/IMG_20230208_084834.jpg"
-    },
-    {
-        "DepartmentCode": 31393,
-        "DepartmentName": "SRM College of Physiotherapy",
-        "title": "Ms. Mohana Priya M",
-        "url": "https://www.srmist.edu.in/faculty/ms-mohana-priya-m/",
-        "Designation": "Clinical Physiotherapist",
-        "Specialization": "",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "Specialization": "physical medicine and rehabilitation",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/IMG-20240828-WA0032-1.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18639,7 +19314,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-revathi-g/",
         "Designation": "Clinical Therapist",
         "Specialization": "General medicine and  General surgery, OPD",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/IMG-20230526-WA0020.jpg"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/IMG-20240828-WA0007.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18648,7 +19323,7 @@ export const urls = [
         "url": "https://www.srmist.edu.in/faculty/ms-santhiya-g/",
         "Designation": "Clinical Physiotherapist",
         "Specialization": "PHYSIOTHERAPY",
-        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/09/College-of-Physiotherapy-1.jpg"
     },
     {
         "DepartmentCode": 31393,
@@ -18656,26 +19331,8 @@ export const urls = [
         "title": "Ms. VijiPriya S",
         "url": "https://www.srmist.edu.in/faculty/ms-viji-priya-s/",
         "Designation": "Clinical Physiotherapist",
-        "Specialization": "Obstetrics and gynaecology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/20211229045754__MG_6509_copy_350x450_1-1.jpg"
-    },
-    {
-        "DepartmentCode": 31393,
-        "DepartmentName": "SRM College of Physiotherapy",
-        "title": "Ms. Vinitha Arasu",
-        "url": "https://www.srmist.edu.in/faculty/ms-a-vinitha/",
-        "Designation": "Clinical Physiotherapist",
-        "Specialization": "",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Photo-from-A-Vinitha.jpg"
-    },
-    {
-        "DepartmentCode": 31393,
-        "DepartmentName": "SRM College of Physiotherapy",
-        "title": "Mrs. Priyanka B",
-        "url": "https://www.srmist.edu.in/faculty/ms-b-priyanka/",
-        "Designation": "Clinical Physiotherapist",
-        "Specialization": "Obstetrics and gynaecology",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/03/IMG_20240331_130054.png"
+        "Specialization": "CARDIORESPIRATORY CONDITIONS",
+        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2024/08/IMG-20240828-WA0031.jpg"
     },
     {
         "DepartmentCode": 158669,
@@ -18775,6 +19432,15 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/10/19.Dr_.M.S.-Sivaraj-Medical-Research.jpg"
+    },
+    {
+        "DepartmentCode": 158669,
+        "DepartmentName": "SRM Medical Research Centre",
+        "title": "Dr. Subhashis Pal",
+        "url": "https://www.srmist.edu.in/faculty/dr-subhashis-pal/",
+        "Designation": "Assistant Professor",
+        "Specialization": "",
+        "ImageURL": "/wp-content/uploads/2022/04/user-avatar-placeholder.png"
     },
     {
         "DepartmentCode": 158669,
@@ -18919,15 +19585,6 @@ export const urls = [
         "Designation": "Assistant Professor",
         "Specialization": "Health Promotion, Public Health",
         "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2023/03/Ms.Geetha-Veliah.jpg"
-    },
-    {
-        "DepartmentCode": 31378,
-        "DepartmentName": "SRM School of Public Health",
-        "title": "Dr. JudyAngel D",
-        "url": "https://www.srmist.edu.in/faculty/dr-judyangel-d/",
-        "Designation": "Program Associate",
-        "Specialization": "Public Health",
-        "ImageURL": "https://www.srmist.edu.in/wp-content/uploads/2022/11/Judy.png"
     },
     {
         "DepartmentCode": 31378,
