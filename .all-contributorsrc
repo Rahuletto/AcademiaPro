@@ -1,50 +1,71 @@
 {
-	"projectName": "ClassPro",
-	"projectOwner": "Rahuletto",
-	"commitConvention": "eslint",
-	"files": ["README.md"],
-	"commitType": "docs",
-	"contributorsPerLine": 7,
-	"contributors": [
-		{
-			"login": "Rahuletto",
-			"name": "Rahul Marban",
-			"avatar_url": "https://avatars.githubusercontent.com/u/71836991?v=4",
-			"profile": "http://marban.is-a.dev",
-			"contributions": [
-				"code",
-				"design",
-				"bug",
-				"a11y",
-				"infra",
-				"maintenance",
-				"projectManagement",
-				"review",
-				"security",
-				"tool"
-			]
-		},
-		{
-			"login": "root-daemon",
-			"name": "Srivishal Sivasubramanian",
-			"avatar_url": "https://avatars.githubusercontent.com/u/47695678?v=4",
-			"profile": "https://github.com/root-daemon",
-			"contributions": ["code", "bug", "maintenance", "review"]
-		},
-		{
-			"login": "DebadityaMalakar",
-			"name": "Debaditya Malakar",
-			"avatar_url": "https://avatars.githubusercontent.com/u/123065261?v=4",
-			"profile": "https://portfolio-debaditya.vercel.app/",
-			"contributions": ["design"]
-		},
-		{
-			"login": "Aakarsh-Kumar",
-			"name": "Aakarsh Kumar",
-			"avatar_url": "https://avatars.githubusercontent.com/u/72206467?v=4",
-			"profile": "https://github.com/Aakarsh-Kumar",
-			"contributions": ["code", "bug"]
-		}
-	],
-	"repoType": "github"
+  "projectName": "ClassPro",
+  "projectOwner": "Rahuletto",
+  "commitConvention": "eslint",
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "contributorsPerLine": 7,
+  "contributors": [
+    {
+      "login": "Rahuletto",
+      "name": "Rahul Marban",
+      "avatar_url": "https://avatars.githubusercontent.com/u/71836991?v=4",
+      "profile": "http://marban.is-a.dev",
+      "contributions": [
+        "code",
+        "design",
+        "bug",
+        "a11y",
+        "infra",
+        "maintenance",
+        "projectManagement",
+        "review",
+        "security",
+        "tool"
+      ]
+    },
+    {
+      "login": "root-daemon",
+      "name": "Srivishal Sivasubramanian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/47695678?v=4",
+      "profile": "https://github.com/root-daemon",
+      "contributions": [
+        "code",
+        "bug",
+        "maintenance",
+        "review"
+      ]
+    },
+    {
+      "login": "DebadityaMalakar",
+      "name": "Debaditya Malakar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/123065261?v=4",
+      "profile": "https://portfolio-debaditya.vercel.app/",
+      "contributions": [
+        "design"
+      ]
+    },
+    {
+      "login": "Aakarsh-Kumar",
+      "name": "Aakarsh Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/72206467?v=4",
+      "profile": "https://github.com/Aakarsh-Kumar",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "harsshhan",
+      "name": "HARSHAN A M",
+      "avatar_url": "https://avatars.githubusercontent.com/u/146644928?v=4",
+      "profile": "https://github.com/harsshhan",
+      "contributions": [
+        "data"
+      ]
+    }
+  ],
+  "repoType": "github"
 }
