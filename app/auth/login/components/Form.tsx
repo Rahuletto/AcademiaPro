@@ -5,12 +5,12 @@ import PasswordInput from "./form/PasswordInput";
 import rotateUrl from "@/utils/URL";
 import Button from "@/components/Button";
 import { token } from "@/utils/Tokenize";
-import { useRouter } from "next/navigation";
+import { useTransitionRouter } from "next-view-transitions";
 import Link from "next/link";
 import { setCookie } from "@/utils/Cookies";
 
 export default function Form() {
-	const router = useRouter();
+	const router = useTransitionRouter();
 	const [uid, setUid] = useState("");
 	const [pass, setPass] = useState("");
 

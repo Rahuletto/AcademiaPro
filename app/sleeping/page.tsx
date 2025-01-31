@@ -1,11 +1,11 @@
 "use client";
-import { useRouter } from "next/navigation";
+import { useTransitionRouter } from "next-view-transitions";
 import React from "react";
 import { HiServerStack } from "react-icons/hi2";
 import { RiZzzFill } from "react-icons/ri";
 
 export default function Sleeping() {
-	const router = useRouter();
+	const router = useTransitionRouter();
 	return (
 		<main className="h-screen w-screen bg-light-info-background flex-col dark:bg-dark-info-background flex items-center justify-center">
 			<div className="flex w-fit flex-col items-center justify-center relative">
