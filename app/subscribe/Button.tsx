@@ -103,15 +103,17 @@ export default function Button({ user }: { user: UserInfo }) {
 
 	return (
 		<button
-			onClick={processPayment}
+			// onClick={processPayment}
 			type="button"
+			disabled
 			className="rounded-full flex group justify-between items-center w-full px-5 py-2 font-semibold bg-light-accent dark:bg-dark-accent text-light-background-light dark:text-dark-background-dark mt-6"
 		>
-			<div className="flex items-center justify-center gap-2">
+			{/* <div className="flex items-center justify-center gap-2">
 				<SiRazorpay className="group-hover:text-base transition-all duration-150 text-[0px]" />
 				<span>Support Me</span>
 			</div>
-			<FaArrowRightLong />
+			<FaArrowRightLong /> */}
+			Temporarily Shut down
 		</button>
 	);
 }
