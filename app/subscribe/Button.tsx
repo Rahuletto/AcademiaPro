@@ -46,12 +46,13 @@ export default function Button({ user }: { user: UserInfo }) {
 				description: `Supporting ClassPro - ${user.regNumber}`,
 				order_id: orderId,
 				handler: async (response: any) => {
-					const data = {
-						orderCreationId: orderId,
-						razorpayPaymentId: response.razorpay_payment_id,
-						razorpayOrderId: response.razorpay_order_id,
-						razorpaySignature: response.razorpay_signature,
-					};
+
+     const data = {
+      orderCreationId: orderId,
+      razorpayPaymentId: response.razorpay_payment_id,
+      razorpayOrderId: response.razorpay_order_id,
+      razorpaySignature: response.razorpay_signature,
+     };
 
 					const result = await fetch("/api/payment/verify", {
 						method: "POST",

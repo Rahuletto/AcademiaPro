@@ -1,58 +1,65 @@
-import { type NextRequest, NextResponse } from "next/server";
-import crypto from "node:crypto";
-// import { supabase } from "@/utils/Database/supabase";
-// import { cookies } from "next/headers";
-// import { encode } from "@/utils/Cookies";
+import { NextRequest, NextResponse } from 'next/server';
+import crypto from 'crypto';
 
 const generatedSignature = (
-	razorpayOrderId: string,
-	razorpayPaymentId: string,
+    razorpayOrderId: string,
+    razorpayPaymentId: string
 ) => {
-	const keySecret = process.env.RAZOR_SECRET;
-	if (!keySecret) {
-		throw new Error(
-			"Razorpay key secret is not defined in environment variables.",
-		);
-	}
-	const sig = crypto
-		.createHmac("sha256", keySecret)
-		.update(`${razorpayOrderId}|${razorpayPaymentId}`)
-		.digest("hex");
-	return sig;
+    const keySecret = process.env.RAZOR_SECRET;
+    if (!keySecret) {
+        throw new Error(
+            'Razorpay key secret is not defined in environment variables.'
+        );
+    }
+    // Create signature string in correct format
+    const signatureString = `${razorpayOrderId}|${razorpayPaymentId}`;
+    const sig = crypto
+        .createHmac('sha256', keySecret)
+        .update(signatureString)
+        .digest('hex');
+    return sig;
 };
 
 export async function POST(request: NextRequest) {
-	// const cookie = await cookies();
-	// const key = cookie.get("key")?.value ?? "";
+    try {
+        const { orderCreationId, razorpayPaymentId, razorpaySignature } =
+            await request.json();
 
-	const { orderCreationId, razorpayPaymentId, razorpaySignature } =
-		await request.json();
+        // Log the received data for debugging
+        console.log('Verification Data:', {
+            orderCreationId,
+            razorpayPaymentId,
+            razorpaySignature
+        });
 
-	const signature = generatedSignature(orderCreationId, razorpayPaymentId);
-	if (signature !== razorpaySignature) {
-		console.log(signature, razorpaySignature)
-		return NextResponse.json(
-			{ message: "Payment failed! Signature didnt match, please report to developers!", success: false },
-			{ status: 400 },
-		);
-	}
+        const signature = generatedSignature(orderCreationId, razorpayPaymentId);
+        
+        // Log generated and received signatures
+        console.log('Generated Signature:', signature);
+        console.log('Received Signature:', razorpaySignature);
 
-	// const { error } = await supabase
-	// 	.from("goscrape")
-	// 	.update({ subscribed: true, subscribedSince: Date.now() })
-	// 	.eq("token", encode(key));
-
-	// if (error) {
-	// 	return Response.json(
-	// 		{ error: error.message },
-	// 		{
-	// 			status: 400,
-	// 		},
-	// 	);
-	// }
-
-	return NextResponse.json(
-		{ message: "Payment verified!", success: true },
-		{ status: 200 },
-	);
+        if (signature !== razorpaySignature) {
+            return NextResponse.json(
+                { 
+                    message: 'Payment Verification Failed', 
+                    success: false,
+                    debug: {
+                        generated: signature,
+                        received: razorpaySignature
+                    }
+                },
+                { status: 400 }
+            );
+        }
+        return NextResponse.json(
+            { message: 'Payment Verified Successfully', success: true },
+            { status: 200 }
+        );
+    } catch (error) {
+        console.error('Verification Error:', error);
+        return NextResponse.json(
+            { message: 'Verification Error', success: false, error: String(error) },
+            { status: 500 }
+        );
+    }
 }
