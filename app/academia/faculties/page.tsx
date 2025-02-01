@@ -3,6 +3,7 @@ import PayRequired from "../../payment";
 import { supabase } from "@/utils/Database/supabase";
 import { cookies } from "next/headers";
 import { encodeString } from "@/misc/encode";
+import { encode } from "@/utils/Cookies";
 
 export default async function Faculties() {
 	const cookie = (await cookies()).get("key")
@@ -10,7 +11,7 @@ export default async function Faculties() {
 	const { data, error } = await supabase
 		.from("goscrape")
 		.select("subscribed, subscribedSince")
-		.eq("token", encodeString(cookie?.value ?? ""))
+		.eq("token", encode(cookie?.value ?? ""))
 		.single();
 
 	if (error) {
