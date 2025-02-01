@@ -2,7 +2,6 @@ import React from "react";
 import PayRequired from "../../payment";
 import { supabase } from "@/utils/Database/supabase";
 import { cookies } from "next/headers";
-import { encodeString } from "@/misc/encode";
 import { encode } from "@/utils/Cookies";
 
 export default async function Faculties() {
