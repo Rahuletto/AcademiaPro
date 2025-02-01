@@ -30,6 +30,7 @@ export async function POST(request: NextRequest) {
 
 	const signature = generatedSignature(orderCreationId, razorpayPaymentId);
 	if (signature !== razorpaySignature) {
+		console.log(signature, razorpaySignature)
 		return NextResponse.json(
 			{ message: "Payment failed! Signature didnt match, please report to developers!", success: false },
 			{ status: 400 },
