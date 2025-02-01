@@ -181,6 +181,7 @@ export default async function Subscribe() {
 						)}
 					</div>
 				</div>
+					<div className="text-light-color dark:text-dark-color mt-12">Logged in as <span className="capitalize text-light-accent font-semibold dark:text-dark-accent">{user.name.toLocaleLowerCase()}</span></div>
 			</main>
 		</>
 	);

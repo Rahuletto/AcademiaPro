@@ -69,6 +69,7 @@ export default function Button({ user }: { user: UserInfo }) {
 							.eq("regNumber", user.regNumber)
 							.then((a) => {
 								alert("Payment success!");
+								window.location.reload();
 							});
 					} else {
 						alert(res.message);
