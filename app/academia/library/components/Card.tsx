@@ -21,7 +21,7 @@ export default function Card({ result }: { result: CoursePapers }) {
 								Semester {urlGroup.semester}
 							</span>
 						</div>
-						<div className="flex flex-col gap-2 border-l-2 border-light-accent dark:border-dark-accent ml-2 p-2 border-dashed rounded-bl-lg">
+						<div className="flex flex-col gap-2 border-l-2 border-light-accent dark:border-dark-accent w-full ml-2 p-2 border-dashed rounded-bl-lg">
 							{urlGroup.urls.map((url) => (
 								<PaperLink
 									key={url.period}
