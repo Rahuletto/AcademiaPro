@@ -22,10 +22,11 @@ const generatedSignature = (
 
 export async function POST(request: NextRequest) {
     try {
-        const { orderCreationId, razorpayPaymentId, razorpaySignature } =
+        const { data, response } =
             await request.json();
 
-        // Log the received data for debugging
+        const { orderCreationId, razorpayPaymentId, razorpaySignature } = data;
+        console.log("Response: ", response)
         console.log('Verification Data:', {
             orderCreationId,
             razorpayPaymentId,
@@ -33,15 +34,13 @@ export async function POST(request: NextRequest) {
         });
 
         const signature = generatedSignature(orderCreationId, razorpayPaymentId);
-        
-        // Log generated and received signatures
-        console.log('Generated Signature:', signature);
-        console.log('Received Signature:', razorpaySignature);
 
-        if (signature !== razorpaySignature) {
+        const rpSig = razorpaySignature ?? response.razorpay_signature;
+
+        if (signature !== rpSig) {
             return NextResponse.json(
-                { 
-                    message: 'Payment Verification Failed', 
+                {
+                    message: 'Payment Verification Failed',
                     success: false,
                     debug: {
                         generated: signature,

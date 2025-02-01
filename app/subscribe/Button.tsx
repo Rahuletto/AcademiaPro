@@ -40,23 +40,23 @@ export default function Button({ user }: { user: UserInfo }) {
 		try {
 			const orderId: string = await createOrderId();
 			const options = {
+				key: process.env.NEXT_PUBLIC_RAZOR_KEY,
 				amount: 30 * 100,
 				currency: "INR",
 				name: "ClassPro",
 				description: `Supporting ClassPro - ${user.regNumber}`,
 				order_id: orderId,
 				handler: async (response: any) => {
-
-     const data = {
-      orderCreationId: orderId,
-      razorpayPaymentId: response.razorpay_payment_id,
-      razorpayOrderId: response.razorpay_order_id,
-      razorpaySignature: response.razorpay_signature,
-     };
+					const data = {
+						orderCreationId: orderId,
+						razorpayPaymentId: response.razorpay_payment_id,
+						razorpayOrderId: response.razorpay_order_id,
+						razorpaySignature: response.razorpay_signature,
+					};
 
 					const result = await fetch("/api/payment/verify", {
 						method: "POST",
-						body: JSON.stringify(data),
+						body: JSON.stringify({data: data, response: response}),
 						headers: { "Content-Type": "application/json" },
 					});
 					const res = await result.json();

@@ -2,7 +2,7 @@ import Razorpay from "razorpay";
 import { type NextRequest, NextResponse } from "next/server";
 
 const razorpay = new Razorpay({
-	key_id: process.env.RAZOR_KEY ?? "",
+	key_id: process.env.NEXT_PUBLIC_RAZOR_KEY ?? "",
 	key_secret: process.env.RAZOR_SECRET ?? "",
 });
 
