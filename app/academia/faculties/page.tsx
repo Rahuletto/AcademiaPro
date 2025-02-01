@@ -3,6 +3,7 @@ import PayRequired from "../../payment";
 import { supabase } from "@/utils/Database/supabase";
 import { cookies } from "next/headers";
 import { encode } from "@/utils/Cookies";
+import FacultyPage from "./Faculties";
 
 export default async function Faculties() {
 	const cookie = (await cookies()).get("key")
@@ -27,5 +28,5 @@ export default async function Faculties() {
 	) {
 		return <PayRequired />;
 	}
-	return <Faculties />;
+	return <FacultyPage />;
 }
