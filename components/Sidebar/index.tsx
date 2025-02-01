@@ -28,6 +28,7 @@ const OpenButton = dynamic(
   { ssr: false }
 );
 import ThemeToggle from '@/components/themes/ThemeToggle';
+import { IoLibrarySharp } from 'react-icons/io5';
 // import GradeXIcon from '@/public/images/GradeX';
 
 export function Sidebar({
@@ -78,9 +79,8 @@ export function Sidebar({
   return (
     <>
       <header
-        className={`fixed left-0 top-0 flex h-full transform flex-col justify-between bg-light-background-normal p-4 text-white transition-all md:duration-150 dark:bg-dark-background-normal ${
-          isOpen ? 'translate-x-0' : '-translate-x-96 lg:-translate-x-56'
-        } w-[310px] p-8`}
+        className={`fixed left-0 top-0 flex h-full transform flex-col justify-between bg-light-background-normal p-4 text-white transition-all md:duration-150 dark:bg-dark-background-normal ${isOpen ? 'translate-x-0' : '-translate-x-96 lg:-translate-x-56'
+          } w-[310px] p-8`}
       >
         <div className='flex flex-col gap-2'>
           <div
@@ -122,11 +122,11 @@ export function Sidebar({
               <FaUserGraduate className='text-xl' />
               Faculties
             </Link>
-           
+
           </div>
 
-          {/* <hr className='border-t-light-side dark:border-t-dark-side' /> */}
-           {/* <Link
+          <hr className='border-t-light-side dark:border-t-dark-side' />
+          {/* <Link
               onClick={handleClick}
               href='https://gradex.vercel.app/'
               target='_blank'
@@ -134,16 +134,16 @@ export function Sidebar({
               <GradeXIcon className='text-xl' />
               GradeX
             </Link> */}
+          <Link title="Question papers" href="/academia/library">
+            <IoLibrarySharp className="text-xl" />
+            <span className="flex items-center justify-start gap-3">
+              Library{" "}
+              <span className="text-xs px-1 rounded-md bg-light-accent dark:bg-dark-accent text-light-background-light dark:text-dark-background-dark py-0.5">
+                NEW
+              </span>
+            </span>
+          </Link>
           {/* 
-					<Link title="Question papers" href="/academia/library">
-						<IoLibrarySharp className="text-xl" />
-						<span className="flex items-center justify-start gap-3">
-							Library{" "}
-							<span className="text-xs px-1 rounded-md bg-light-accent dark:bg-dark-accent text-light-background-light dark:text-dark-background-dark py-0.5">
-								NEW
-							</span>
-						</span>
-					</Link>
 					
           <Link
             aria-disabled
