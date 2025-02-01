@@ -12,9 +12,11 @@ export default function TimetableStack({
 	schedule,
 	today,
 	ophours,
+	tomorrow
 }: {
 	schedule: Schedule[];
 	today: Day;
+		tomorrow: Day;
 	ophours: string[];
 }) {
 	const [dOrder, setDo] = useState<string>(
@@ -142,6 +144,13 @@ export default function TimetableStack({
 				>
 					Today
 				</button>
+				{currentTime && currentTime.getHours() >= 17 && Number(tomorrow.dayOrder) > 0 && <button
+					type="button"
+					onClick={() => setDo(tomorrow.dayOrder)}
+					className={`rounded-full px-4 py-1 font-medium text-sm border border-dashed dark:bg-dark-info-background bg-light-info-background border-light-info-color dark:border-dark-info-color text-light-info-color dark:text-dark-info-color `}
+				>
+					Tom: DO{Number(dOrder) + 1}
+				</button>}
 			</div>
 		</>
 	);

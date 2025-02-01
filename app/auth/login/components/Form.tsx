@@ -41,6 +41,11 @@ export default function Form() {
 		if (loginResponse.authenticated) {
 			setStatus(2);
 			setMessage("Loading data...");
+			if(!loginResponse.cookies) {
+				setStatus(-1);
+				setMessage("No cookies received. Wrong password.");
+				return;
+			}
 			setCookie("key", loginResponse.cookies);
 			
 			router.push("/academia");

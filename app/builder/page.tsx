@@ -91,6 +91,7 @@ export default function Demo() {
 						<div id="items" className="flex flex-col gap-12 relative">
 							<Suspense fallback={<Loading size="xl" />}>
 								<Timetable
+									user = {json.user as UserInfo}
 									ophours={[]}
 									schedule={json.timetable?.schedule as Schedule[]}
 								/>

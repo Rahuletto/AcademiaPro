@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+
 const protectedRoutes = [
 	"/academia",
 	"/academia/courses",
@@ -12,9 +13,8 @@ const home = ["/"];
 const MAINTENANCE = false;
 
 const isAuthenticated = (request: NextRequest): boolean => {
-	const token = request.cookies.get("key");
-
-	return !!token;
+    const token = request.cookies.get("key");
+    return !!token?.value;
 };
 
 export function middleware(request: NextRequest) {

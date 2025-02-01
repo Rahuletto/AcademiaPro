@@ -38,6 +38,7 @@ export default async function Academia() {
 			<div id="items" className="flex flex-col gap-12 relative">
 				<Suspense fallback={<Loading size="xl" />}>
 					<Timetable
+						user={json.user}
 						ophours={ophours ?? []}
 						schedule={json.timetable?.schedule}
 					/>
