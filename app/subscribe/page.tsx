@@ -9,7 +9,6 @@ import {
 import { FaCrown } from "react-icons/fa6";
 import { fetchUserData } from "@/hooks/fetchUserData";
 import Button from "./Button";
-import Script from "next/script";
 import { supabase } from "@/utils/Database/supabase";
 
 export default async function Subscribe() {
@@ -32,10 +31,6 @@ export default async function Subscribe() {
 
 	return (
 		<>
-			<Script
-				id="razorpay-checkout-js"
-				src="https://checkout.razorpay.com/v1/checkout.js"
-			/>
 			<main className="flex relative flex-col items-center justify-start gap-4 bg-light-background-normal p-4 pt-24 dark:bg-dark-background-dark w-screen min-h-screen">
 				<div className="flex absolute top-4 left-0 w-screen justify-between px-4 pl-8">
 					<div className="flex items-center justify-center gap-4">

@@ -25,13 +25,15 @@ export async function POST(request: NextRequest) {
         const { data, response } =
             await request.json();
 
-        const { orderCreationId, razorpayPaymentId, razorpaySignature } = data;
+        const obj = {
+            orderCreationId: data?.orderCreationId,
+            razorpayPaymentId: data?.razorpayPaymentId,
+            razorpaySignature: data?.razorpaySignature
+        }
+
+        const { orderCreationId, razorpayPaymentId, razorpaySignature } = obj;
         console.log("Response: ", response)
-        console.log('Verification Data:', {
-            orderCreationId,
-            razorpayPaymentId,
-            razorpaySignature
-        });
+        console.log('Verification Data:', obj);
 
         const signature = generatedSignature(orderCreationId, razorpayPaymentId);
 

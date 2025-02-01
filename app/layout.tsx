@@ -10,6 +10,7 @@ import { ViewTransitions } from "next-view-transitions";
 import ErrorBoundary from "./Boundary";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { ReactNode } from "react";
+import Script from "next/script";
 
 const APP_NAME = "ClassPro";
 const APP_DEFAULT_TITLE = "ClassPro";
@@ -97,6 +98,10 @@ export default async function RootLayout({
 				lang="en"
 				className={`dark h-screen bg-light-background-normal dark:bg-dark-background-normal ${GeistSans.variable} ${GeistMono.variable}`}
 			>
+				<Script
+				id="razorpay-checkout-js"
+				src="https://checkout.razorpay.com/v1/checkout.js"
+			/>
 				<ErrorBoundary>
 					<ThemeProvider>
 						<meta name="apple-mobile-web-app-title" content="ClassPro" />
