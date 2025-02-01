@@ -16,29 +16,30 @@ export default function Button({ user }: { user: UserInfo }) {
 		try {
 			const response = await fetch("/api/payment/order", {
 				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({
-					amount: 30 * 100,
-					currency: "INR",
-				}),
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify({ amount: 30 * 100, currency: "INR" }),
 			});
 
 			if (!response.ok) {
-				throw new Error("Network response was not ok");
+				throw new Error("Failed to create order ID");
 			}
 
 			const data = await response.json();
 			return data.orderId;
 		} catch (error) {
-			console.error("There was a problem with your fetch operation:", error);
+			console.error("Order ID Error:", error);
+			return null;
 		}
 	};
 
 	const processPayment = async () => {
 		try {
-			const orderId: string = await createOrderId();
+			const orderId = await createOrderId();
+			if (!orderId) {
+				alert("Failed to create order. Please try again.");
+				return;
+			}
+
 			const options = {
 				key: process.env.NEXT_PUBLIC_RAZOR_KEY,
 				amount: 30 * 100,
@@ -47,6 +48,8 @@ export default function Button({ user }: { user: UserInfo }) {
 				description: `Supporting ClassPro - ${user.regNumber}`,
 				order_id: orderId,
 				handler: async (response: any) => {
+					console.log("Payment Response:", response);
+
 					const data = {
 						orderCreationId: orderId,
 						razorpayPaymentId: response.razorpay_payment_id,
@@ -54,26 +57,30 @@ export default function Button({ user }: { user: UserInfo }) {
 						razorpaySignature: response.razorpay_signature,
 					};
 
+					if (!data.razorpaySignature) {
+						console.error("Missing signature, possible failed or incomplete payment.");
+						alert("Payment verification failed. Please contact support.");
+						return;
+					}
+
 					const result = await fetch("/api/payment/verify", {
 						method: "POST",
-						body: JSON.stringify({data: data, response: response}),
+						body: JSON.stringify(data),
 						headers: { "Content-Type": "application/json" },
 					});
+
 					const res = await result.json();
+
 					if (res.success) {
-						supabase
-							.from("goscrape")
-							.update({
-								subscribed: res.success,
-								subscribedSince: Date.now(),
-							})
-							.eq("regNumber", user.regNumber)
-							.then((a) => {
-								alert("Payment success!");
-								window.location.reload();
-							});
+						await supabase.from("goscrape").update({
+							subscribed: true,
+							subscribedSince: Date.now(),
+						}).eq("regNumber", user.regNumber);
+
+						alert("Payment successful!");
+						window.location.reload();
 					} else {
-						alert(res.message);
+						alert(res.message || "Payment verification failed.");
 					}
 				},
 				prefill: {
@@ -81,13 +88,16 @@ export default function Button({ user }: { user: UserInfo }) {
 					phone: user.mobile,
 				},
 			};
+
 			const paymentObject = new window.Razorpay(options);
 			paymentObject.on("payment.failed", (response: any) => {
+				console.error("Payment Failed:", response);
 				alert(response.error.description);
 			});
 			paymentObject.open();
 		} catch (error) {
-			console.log(error);
+			console.error("Payment Error:", error);
+			alert("An error occurred during payment. Please try again.");
 		}
 	};
 
@@ -100,7 +110,7 @@ export default function Button({ user }: { user: UserInfo }) {
 			<div className="flex items-center justify-center gap-2">
 				<SiRazorpay className="group-hover:text-base transition-all duration-150 text-[0px]" />
 				<span>Support Me</span>
-			</div>{" "}
+			</div>
 			<FaArrowRightLong />
 		</button>
 	);
