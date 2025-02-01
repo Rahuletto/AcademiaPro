@@ -3,27 +3,29 @@
 import * as React from "react";
 import { format, isWithinInterval, startOfToday } from "date-fns";
 import { LuTrash2 } from "react-icons/lu";
+import { LuCrown } from "react-icons/lu";
 
 import { cn } from "@/lib/utils";
 import { Calendar as CalendarComp } from "@/components/ui/calendar";
 import type { CategorizedDateRange } from "@/types/Attendance";
 import type { Calendar as CalendarType } from "@/types/Calendar";
 import { months } from "..";
+import { FaCrown } from "react-icons/fa6";
 
 type DateCategory = "Leave" | "OD";
 
 interface LeaveOdRangeCalendarProps {
-	categorizedRanges: CategorizedDateRange[];
-	setCategorizedRanges: React.Dispatch<
-		React.SetStateAction<CategorizedDateRange[]>
-	>;
-	calendar: CalendarType[];
+    categorizedRanges: CategorizedDateRange[];
+    setCategorizedRanges: React.Dispatch<React.SetStateAction<CategorizedDateRange[]>>;
+    calendar: CalendarType[];
+    isSubscribed?: boolean; // Add this prop
 }
 
 export function LeaveODRangeCalendar({
-	categorizedRanges,
-	setCategorizedRanges,
-	calendar,
+    categorizedRanges,
+    setCategorizedRanges,
+    calendar,
+    isSubscribed = false, // Default to false
 }: LeaveOdRangeCalendarProps) {
 	const [dateRange, setDateRange] = React.useState<{
 		from: Date | undefined;
@@ -39,6 +41,14 @@ export function LeaveODRangeCalendar({
 		if (window.navigator.vibrate) {
 			window.navigator.vibrate(30);
 		}
+		if (!isSubscribed && categorizedRanges.length >= 1) {
+            alert("Please subscribe to add more ranges");
+            return;
+        }
+        if (!isSubscribed && category === "OD") {
+            alert("OD/ML feature is available for premium users only");
+            return;
+        }
 		if (dateRange.from && dateRange.to) {
 			const newRange = { from: dateRange.from, to: dateRange.to, category };
 
@@ -258,11 +268,12 @@ export function LeaveODRangeCalendar({
 						!dateRange.from ||
 						!dateRange.to ||
 						dateRange.from < today ||
-						dateRange.to < today
+						dateRange.to < today ||
+						(!isSubscribed && categorizedRanges.length >= 1)
 					}
 					className="flex-1 rounded-lg py-2 border-light-error-color bg-light-error-background font-semibold text-light-error-color hover:bg-light-error-color hover:text-dark-error-background disabled:cursor-not-allowed disabled:opacity-50 dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color dark:hover:bg-dark-error-color"
 				>
-					Add as Leave
+					{!isSubscribed && categorizedRanges.length >= 1 && <FaCrown className="inline mr-2" />} Add as Leave 
 				</button>
 				<button
 					onClick={() => handleCategoryAdd("OD")}
@@ -271,11 +282,12 @@ export function LeaveODRangeCalendar({
 						!dateRange.from ||
 						!dateRange.to ||
 						dateRange.from > today ||
-						dateRange.to > today
+						dateRange.to > today ||
+						!isSubscribed
 					}
-					className="flex-1 rounded-lg py-2 border-light-success-color bg-light-success-background font-semibold text-light-success-color hover:bg-light-success-color hover:text-dark-success-background disabled:cursor-not-allowed disabled:opacity-50 dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color dark:hover:bg-dark-success-color"
+					className="flex-1 rounded-lg py-2 border-light-success-color bg-light-success-background font-semibold text-light-success-color hover:bg-light-success-color hover:text-dark-success-background disabled:cursor-not-allowed disabled:opacity-50 dark:border-dark-success-color dark:bg-dark-success-background dark:text-dark-success-color dark:hover:bg-dark-success-color flex items-center justify-center gap-2"
 				>
-					Add as OD/ML
+					{!isSubscribed && <FaCrown className="inline" />} Add as OD/ML 
 				</button>
 			</div>
 		</div>

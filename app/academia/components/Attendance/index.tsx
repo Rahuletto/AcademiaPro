@@ -3,6 +3,7 @@ import Prediction from "./Prediction";
 import type { AllResponse } from "@/types/Response";
 import { fetchCalendar } from "@/hooks/fetchCalendar";
 import Loading from "@/components/States/Loading";
+import { supabase } from "@/utils/Database/supabase";
 
 export const months = [
 	"Jan",
@@ -21,6 +22,7 @@ export const months = [
 
 export default async function Attendance({ data }: { data: AllResponse }) {
 	const cal = await fetchCalendar();
+
 	if (!cal || !cal?.calendar) return (
 		<>
 			<section id="attendance">
@@ -31,6 +33,22 @@ export default async function Attendance({ data }: { data: AllResponse }) {
 			</section>
 		</>
 	);
+
+	const { data: subscriptionData, error } = await supabase
+		.from("goscrape")
+		.select("subscribed, subscribedSince")
+		.eq("regNumber", data.user?.regNumber)
+		.single();
+
+	if (error) {
+		console.warn("Cannot find data?", data.user?.regNumber, data);
+	}
+
+	const subscribedSince = subscriptionData?.subscribedSince ?? null;
+	const isSubscriptionValid = subscribedSince 
+		? new Date(subscribedSince).getTime() + (30 * 24 * 60 * 60 * 1000) > new Date().getTime() 
+		: false;
+	const subscribed = (data?.subscribed ?? false) && isSubscriptionValid;
 
 	const mappedCal = cal.calendar?.flatMap((day) => {
 		const month = months.findIndex(
@@ -58,7 +76,12 @@ export default async function Attendance({ data }: { data: AllResponse }) {
 						<div id="attendance-title-suffix" />
 					</div>
 					<Suspense fallback={<Loading size="xl" />}>
-						<Prediction data={data} cal={mappedCal} calendar={cal.calendar} />
+						<Prediction 
+							data={data} 
+							cal={mappedCal} 
+							calendar={cal.calendar}
+							subscribed={subscribed}
+						/>
 					</Suspense>
 				</div>
 				<div id="attendance-list" />

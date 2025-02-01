@@ -10,6 +10,7 @@ export default function Prediction({
 	data,
 	cal,
 	calendar,
+	subscribed
 }: {
 	data: AllResponse;
 	cal: {
@@ -19,6 +20,7 @@ export default function Prediction({
 		dateObj: Date;
 	}[];
 	calendar: Calendar[];
+	subscribed: boolean;
 }) {
 	const [isOpen, setIsOpen] = useState(false);
 
@@ -33,6 +35,7 @@ export default function Prediction({
 			</button>
 			<Suspense fallback={<Loading size="xl" />}>
 				<Predictor
+					subscribed={subscribed}
 					data={data}
 					cal={cal}
 					calendar={calendar}

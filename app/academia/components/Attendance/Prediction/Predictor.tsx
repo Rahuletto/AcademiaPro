@@ -24,10 +24,12 @@ export default function Predictor({
 	cal,
 	calendar,
 	setIsOpen,
+	subscribed,
 	isOpen,
 }: {
 	data: AllResponse;
 	calendar: Calendar[];
+	subscribed: boolean;
 	cal: {
 		date: string;
 		month: number;
@@ -154,6 +156,7 @@ export default function Predictor({
 									categorizedRanges={categorizedRanges}
 									setCategorizedRanges={setCategorizedRanges}
 									calendar={calendar}
+									isSubscribed={subscribed}
 								/>
 							</Suspense>
 						</div>
