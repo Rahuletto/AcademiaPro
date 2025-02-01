@@ -10,6 +10,7 @@ import dynamic from "next/dynamic";
 import type { UserInfo } from "@/types/User";
 import { useTheme } from "@/provider/ThemeProvider";
 import { FaCrown } from "react-icons/fa6";
+import { Link } from "next-view-transitions";
 
 const UserDialog = dynamic(
 	() => import("./UserDialog").then((a) => a.default),
@@ -45,7 +46,10 @@ export default function ProfileBadge({
 	};
 
 	return (
-		<>
+		<div className="flex flex-col gap-4">
+			{!subscribed && <Link href="/subscribe" className={`px-5 py-2 flex items-center justify-center lg:w-[82%] gap-3 rounded-xl font-semibold bg-light-warn-background dark:bg-dark-warn-background text-light-warn-color dark:text-dark-warn-color`}>
+				<FaCrown className="inline text-xl" /> Support us
+			</Link>}
 			<div
 				aria-haspopup="dialog"
 				// biome-ignore lint/a11y/useSemanticElements: this acts as backdrop
@@ -94,6 +98,6 @@ export default function ProfileBadge({
 					/>,
 					dialogRoot,
 				)}
-		</>
+		</div>
 	);
 }

@@ -270,7 +270,7 @@ export function LeaveODRangeCalendar({
 						dateRange.from < today ||
 						dateRange.to < today ||
 						(!isSubscribed && categorizedRanges.length >= 1)
-					}
+					} 
 					className="flex-1 rounded-lg py-2 border-light-error-color bg-light-error-background font-semibold text-light-error-color hover:bg-light-error-color hover:text-dark-error-background disabled:cursor-not-allowed disabled:opacity-50 dark:border-dark-error-color dark:bg-dark-error-background dark:text-dark-error-color dark:hover:bg-dark-error-color"
 				>
 					{!isSubscribed && categorizedRanges.length >= 1 && <FaCrown className="inline mr-2" />} Add as Leave 

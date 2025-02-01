@@ -45,9 +45,8 @@ export default function ErrorComponent({ error }: { error: Error | string }) {
 	};
 
 	return (
-		<div className="h-screen p-4">
-			<div className="h-full w-full rounded-2xl bg-dark-background-dark p-2">
-				<div className="flex h-full animate-fadeIn flex-col items-center justify-center gap-2 rounded-xl bg-light-error-background p-8 text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
+
+				<main className="flex h-screen w-screen animate-fadeIn flex-col items-center justify-center gap-2 rounded-xl bg-light-error-background p-8 text-light-error-color dark:bg-dark-error-background dark:text-dark-error-color">
 					<BiError className="mb-3 text-4xl" />
 					<h1 className="text-2xl font-medium text-light-error-color dark:text-dark-error-color">
 						Error.
@@ -62,8 +61,6 @@ export default function ErrorComponent({ error }: { error: Error | string }) {
 							<div className="opacity-80">{getDebugInfo()}</div>
 						</code>
 					</pre>
-				</div>
-			</div>
-		</div>
+				</main>
 	);
 }

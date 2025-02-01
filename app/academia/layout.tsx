@@ -48,6 +48,7 @@ export default async function RootLayout({
 						</Link>
 					) : (
 						<ProfileBadge
+						
 							user={json?.user as UserInfo}
 							subscribed={subscribed}
 						/>
