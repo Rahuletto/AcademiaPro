@@ -3,9 +3,23 @@ import React, { Suspense } from "react";
 import CourseCard from "./components/Card";
 import Indicator from "@/components/Indicator";
 import Loading from "@/components/States/Loading";
+import { supabase } from "@/utils/Database/supabase";
 
 export default async function Courses() {
 	const json = await fetchUserData();
+
+	const { data, error } = await supabase
+		.from("goscrape")
+		.select("subscribed, subscribedSince")
+		.eq("regNumber", json.user?.regNumber)
+		.single();
+
+	if (error) {
+		console.warn("Cannot find data?", json.user?.regNumber, json);
+	}
+
+	const subscribed = data?.subscribed ?? false;
+
 
 	return (
 		<div className="flex flex-col gap-12">
@@ -16,7 +30,7 @@ export default async function Courses() {
 						{json.courses?.courses
 							.filter((a) => a.slotType === "Theory")
 							.map((course, i) => (
-								<CourseCard key={i} course={course} />
+								<CourseCard key={i} subscribed={subscribed} course={course} />
 							))}
 					</div>
 					<Indicator type="Practical" separator />
@@ -24,7 +38,7 @@ export default async function Courses() {
 						{json.courses?.courses
 							.filter((a) => a.slotType === "Practical")
 							.map((course, i) => (
-								<CourseCard key={i} course={course} />
+								<CourseCard key={i} subscribed={subscribed} course={course} />
 							))}
 					</div>
 				</Suspense>
