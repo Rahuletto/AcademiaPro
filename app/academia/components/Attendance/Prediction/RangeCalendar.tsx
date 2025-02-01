@@ -137,7 +137,7 @@ export function LeaveODRangeCalendar({
 									month.days.some(
 										(day) =>
 											format(date, "dd") === day.date.padStart(2, "0") &&
-											day.dayOrder === "-",
+											day?.dayOrder === "-",
 									),
 								),
 						}}

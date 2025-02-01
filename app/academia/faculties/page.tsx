@@ -1,19 +1,20 @@
 import React from "react";
-import { fetchUserData } from "@/hooks/fetchUserData";
 import PayRequired from "../../payment";
 import { supabase } from "@/utils/Database/supabase";
+import { cookies } from "next/headers";
+import { encodeString } from "@/misc/encode";
 
 export default async function Faculties() {
-	const { user } = await fetchUserData();
+	const cookie = (await cookies()).get("key")
 
 	const { data, error } = await supabase
 		.from("goscrape")
 		.select("subscribed, subscribedSince")
-		.eq("regNumber", user?.regNumber)
+		.eq("token", encodeString(cookie?.value ?? ""))
 		.single();
 
 	if (error) {
-		console.warn("Cannot find data?", user?.regNumber, user);
+
 	}
 
 	const subscribed = data?.subscribed ?? false;

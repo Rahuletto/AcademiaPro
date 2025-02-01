@@ -115,7 +115,7 @@ export default function CalendarGrid({
 				))}
 				<Suspense fallback={<Loading size="xl" />}>
 					{days
-						.filter((a) => a.dayOrder.length <= 1)
+						.filter((a) => a?.dayOrder?.length <= 1)
 						.map((day, index) => (
 							<DayCell
 								key={index}

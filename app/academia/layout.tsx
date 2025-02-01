@@ -7,6 +7,9 @@ import { Link } from "next-view-transitions";
 import type { ReactNode } from "react";
 import { BiLogInCircle } from "react-icons/bi";
 import { supabase } from "@/utils/Database/supabase";
+import rotateUrl from "@/utils/URL";
+import { cookies } from "next/headers";
+import { token } from "@/utils/Tokenize";
 
 export default async function RootLayout({
 	children,
@@ -22,6 +25,20 @@ export default async function RootLayout({
 		.single();
 
 	if (error) {
+		const url = rotateUrl()
+		const cookie = (await cookies()).get("key");
+		await fetch(`${url}/get`, {
+			method: "GET",
+			cache: "force-cache",
+			next: {
+				revalidate: 60,
+			},
+			headers: {
+				"Content-Type": "application/json",
+				"X-CSRF-Token": cookie?.value ?? "",
+				Authorization: `Bearer ${token()}`,
+			},
+		})
 		console.warn("Cannot find data?", json?.user?.regNumber, json);
 	}
 
@@ -48,7 +65,6 @@ export default async function RootLayout({
 						</Link>
 					) : (
 						<ProfileBadge
-						
 							user={json?.user as UserInfo}
 							subscribed={subscribed}
 						/>

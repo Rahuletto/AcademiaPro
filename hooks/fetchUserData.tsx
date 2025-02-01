@@ -27,7 +27,6 @@ async function fetchData(): Promise<AllResponse> {
 
 	try {
 		const url = rotateUrl()
-		console.log(url)
 		const response = await fetch(`${url}/get`, {
 			method: "GET",
 			cache: "force-cache",

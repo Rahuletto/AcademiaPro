@@ -58,7 +58,7 @@ export default async function Attendance({ data }: { data: AllResponse }) {
 		return day.days.map((date) => ({
 			date: date.date,
 			month: month,
-			order: date.dayOrder,
+			order: date?.dayOrder,
 			dateObj: new Date(
 				new Date().getFullYear(),
 				month,
