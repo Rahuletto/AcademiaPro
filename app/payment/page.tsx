@@ -16,12 +16,14 @@ export default function PayRequired() {
                     </p>
                 </div>
             </div>
+            <div className="flex gap-3">
             <Link href="/subscribe" className="bg-light-warn-color dark:bg-dark-warn-color text-light-warn-background dark:text-dark-warn-background rounded-xl p-2 px-4 w-fit font-semibold">
                 Support
             </Link>
-            <Link href="/academia" className="bg-light-accent text-light-background dark:bg-dark-accent dark:text-dark-background rounded-xl p-2 px-4 w-fit font-semibold">
+            <Link href="/academia" className="border-light-accent text-light-accent dark:border-dark-accent dark:text-dark-accent border rounded-xl p-2 px-4 w-fit font-semibold">
                 Back
             </Link>
+            </div>
         </main>
     );
 }
