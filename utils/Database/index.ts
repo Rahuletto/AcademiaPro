@@ -65,7 +65,7 @@ class Database {
 	async getData(regNumber: string): Promise<DatabaseRecord | null> {
 		try {
 			const { data, error } = await supabase
-				.from("proscrape") // Replace with your actual table name
+				.from("goscrape") // Replace with your actual table name
 				.select("*")
 				.eq("regNumber", regNumber)
 				.single(); // Use single() to return a single record
@@ -89,7 +89,7 @@ class Database {
 	): Promise<DatabaseRecord | null> {
 		try {
 			const { data, error } = await supabase
-				.from("proscrape") // Replace with your actual table name
+				.from("goscrape") // Replace with your actual table name
 				.select(selector)
 				.eq("token", encode(cookie))
 				.single(); // Use single() to return a single record
@@ -108,65 +108,10 @@ class Database {
 		}
 	}
 
-	async getRegFromHash(regNum: string, hash: string): Promise<object> {
-		let authData: any;
-		const { data, error: authErr } = await supabase
-			.from("auth") // Replace with your actual table name
-			.select("*")
-			.eq("hash", hash)
-			.single();
-
-		authData = data;
-		if (authErr) {
-			if (authErr.code === "PGRST116" || !authData) {
-				const { data, error } = await supabase
-					.from("auth")
-					.insert({ regNumber: regNum, hash });
-
-				authData = data;
-			}
-		}
-
-		return authData;
-	}
-
-	async authCheck(
-		regNum: string,
-		hash: string,
-	): Promise<DatabaseRecord | null> {
-		const { data: authData, error: authErr } = await supabase
-			.from("auth") // Replace with your actual table name
-			.select("*")
-			.eq("hash", hash)
-			.single();
-
-		if (authErr) {
-			if (authErr.code === "PGRST116" || !authData)
-				await supabase.from("auth").insert({ hash, regNumber: regNum });
-		}
-
-		const reg = authData?.regNumber || regNum;
-
-		const { data, error } = await supabase
-			.from("proscrape") // Replace with your actual table name
-			.select("*")
-			.eq("regNumber", reg)
-			.single();
-
-		if (error) {
-			if (error.code === "PGRST116") return null;
-
-			console.error(`Error fetching data: ${error.message}`);
-			return null;
-		}
-
-		return data as DatabaseRecord;
-	}
-
 	async checkCookie(cookie: string): Promise<DatabaseRecord | null> {
 		try {
 			const { data, error } = await supabase
-				.from("proscrape") // Replace with your actual table name
+				.from("goscrape") // Replace with your actual table name
 				.select("*")
 				.eq("token", encode(cookie))
 				.single(); // Use single() to return a single record
@@ -189,7 +134,7 @@ class Database {
 	async deleteData(regNumber: string): Promise<void> {
 		try {
 			const { error } = await supabase
-				.from("proscrape") // Replace with your actual table name
+				.from("goscrape") // Replace with your actual table name
 				.delete()
 				.eq("regNumber", regNumber);
 

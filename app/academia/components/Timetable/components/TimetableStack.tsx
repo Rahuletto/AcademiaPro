@@ -149,7 +149,7 @@ export default function TimetableStack({
 					onClick={() => setDo(tomorrow.dayOrder)}
 					className={`rounded-full px-4 py-1 font-medium text-sm border border-dashed dark:bg-dark-info-background bg-light-info-background border-light-info-color dark:border-dark-info-color text-light-info-color dark:text-dark-info-color `}
 				>
-					Tom: DO{Number(dOrder) + 1}
+					Tom: DO{Number(tomorrow.dayOrder)}
 				</button>}
 			</div>
 		</>
