@@ -10,7 +10,7 @@ export default async function Courses() {
 
 	const { data, error } = await supabase
 		.from("goscrape")
-		.select("subscribed, subscribedSince")
+		.select("subscribed, subscribedSince, freesub")
 		.eq("regNumber", json.user?.regNumber)
 		.single();
 
@@ -18,7 +18,7 @@ export default async function Courses() {
 		console.warn("Cannot find data?", json.user?.regNumber, json);
 	}
 
-	const subscribed = data?.subscribed ?? false;
+	const subscribed = data?.freesub ? true : data?.subscribed ?? false;
 
 
 	return (

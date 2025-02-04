@@ -1,6 +1,5 @@
 "use client";
 import type { UserInfo } from "@/types/User";
-import { supabase } from "@/utils/Database/supabase";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { SiRazorpay } from "react-icons/si";
@@ -42,7 +41,7 @@ export default function Button({ user }: { user: UserInfo }) {
 
 			const options = {
 				key: process.env.NEXT_PUBLIC_RAZOR_KEY,
-				amount: 30 * 100,
+				amount: 29.99 * 100,
 				currency: "INR",
 				name: "ClassPro",
 				description: `Supporting ClassPro - ${user.regNumber}`,

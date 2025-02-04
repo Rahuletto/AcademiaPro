@@ -29,6 +29,7 @@ const OpenButton = dynamic(
 );
 import ThemeToggle from '@/components/themes/ThemeToggle';
 import { IoLibrarySharp } from 'react-icons/io5';
+import FreeTrial from './Free';
 // import GradeXIcon from '@/public/images/GradeX';
 
 export function Sidebar({
@@ -184,6 +185,7 @@ export function Sidebar({
       </header>
 
       <Popup />
+      <FreeTrial />
 
       <OpenButton
         mobile

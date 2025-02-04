@@ -10,7 +10,7 @@ export default async function Faculties() {
 
 	const { data, error } = await supabase
 		.from("goscrape")
-		.select("subscribed, subscribedSince")
+		.select("subscribed, subscribedSince, freesub")
 		.eq("token", encode(cookie?.value ?? ""))
 		.single();
 
@@ -18,8 +18,8 @@ export default async function Faculties() {
 
 	}
 
-	const subscribed = data?.subscribed ?? false;
-	const subscribedSince = data?.subscribedSince ?? null;
+	const subscribed = data?.freesub ? true : data?.subscribed ?? false;
+	const subscribedSince = data?.freesub ? Date.now() : data?.subscribedSince ?? null;
 
 	if (
 		!subscribed ||

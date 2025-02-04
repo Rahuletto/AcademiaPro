@@ -18,7 +18,7 @@ export default async function Subscribe() {
 
 	const { data, error } = await supabase
 		.from("goscrape")
-		.select("subscribed, subscribedSince")
+		.select("subscribed, subscribedSince, freesub")
 		.eq("regNumber", user?.regNumber)
 		.single();
 
@@ -26,8 +26,8 @@ export default async function Subscribe() {
 		console.warn("Cannot find");
 	}
 
-	const subscribed = data?.subscribed ?? false;
-	const subscribedSince = data?.subscribedSince ?? 0;
+	const subscribed = data?.freesub ? true : data?.subscribed ?? false;
+	const subscribedSince = data?.freesub ? Date.now() : data?.subscribedSince ?? 0;
 
 	return (
 		<>
@@ -128,7 +128,7 @@ export default async function Subscribe() {
 							Supporter
 						</h3>
 						<h1 className="text-5xl mt-1 text-light-color dark:text-dark-color font-semibold text-center">
-							₹30<span className="opacity-80 text-sm">/month</span>
+							₹29<span className="opacity-80 text-sm">/month</span>
 						</h1>
 						<div className="flex flex-col gap-2 text-left items-start justify-start mx-3 mt-8 px-5">
 							<p className="text-light-color dark:text-dark-color flex flex-row items-center justify-start gap-2 text-left opacity-80">

@@ -8,7 +8,7 @@ export function setCookie(name:string, value: string, expirationMonths = 3) {
 
 		const cookieString = `${name}=${encodedValue}; expires=${exdate.toUTCString()}; path=/; ${
 			window.location.hostname === "localhost" ? "" : "Secure; "
-		}HttpOnly; SameSite=Lax`;
+		} SameSite=Lax`;
 
 		document.cookie = cookieString;
 

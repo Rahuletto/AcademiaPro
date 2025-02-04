@@ -36,7 +36,7 @@ export default async function Attendance({ data }: { data: AllResponse }) {
 
 	const { data: subscriptionData, error } = await supabase
 		.from("goscrape")
-		.select("subscribed, subscribedSince")
+		.select("subscribed, subscribedSince, freesub")
 		.eq("regNumber", data.user?.regNumber)
 		.single();
 
@@ -45,10 +45,10 @@ export default async function Attendance({ data }: { data: AllResponse }) {
 	}
 
 	const subscribedSince = subscriptionData?.subscribedSince ?? null;
-	const isSubscriptionValid = subscribedSince 
+	const isSubscriptionValid = subscriptionData?.freesub ? subscriptionData?.freesub : subscribedSince 
 		? new Date(subscribedSince).getTime() + (30 * 24 * 60 * 60 * 1000) > new Date().getTime() 
 		: false;
-	const subscribed = (data?.subscribed ?? false) && isSubscriptionValid;
+	const subscribed = subscriptionData?.freesub ? true : (data?.subscribed ?? false) && isSubscriptionValid;
 
 	const mappedCal = cal.calendar?.flatMap((day) => {
 		const month = months.findIndex(
