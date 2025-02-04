@@ -1,4 +1,5 @@
-import type { CoursePapers } from "../pyq/PYQ";
+
+import { CoursePapers } from "@/types/CoursePapers";
 import CourseCode from "./Code";
 import PaperLink from "./PaperLink";
 
