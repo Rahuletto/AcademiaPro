@@ -1,5 +1,5 @@
 import React from "react";
-import Library from "./Library";
+import Library from "@/app/academia/library/LibraryHome";
 import { fetchUserData } from "@/hooks/fetchUserData";
 import PayRequired from "../../payment";
 import { supabase } from "@/utils/Database/supabase";
