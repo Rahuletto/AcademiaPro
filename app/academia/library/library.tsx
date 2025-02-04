@@ -2,7 +2,7 @@ import { Link } from 'next-view-transitions'
 import Image from 'next/image'
 import React from 'react'
 
-export default function library() {
+export default function Library() {
   return (
     <main
       className="relative p-2 flex items-center justify-center flex-col h-full w-full gap-5"
