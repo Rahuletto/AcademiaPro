@@ -4,9 +4,7 @@ import { FaFolder, FaFolderOpen, FaFile, FaFilePdf, FaFileWord, FaFileExcel, FaF
 import { BsFileImage } from 'react-icons/bs';
 import { FaChevronRight } from 'react-icons/fa';
 import type { Folders, Folder, Children } from '@/types/Folders';
-import { useRouter } from 'next/navigation';
 import Fuse from 'fuse.js';
-import { SearchBar } from '../components/SearchBar';
 
 interface ResourcesProps {
   folders: Folders;

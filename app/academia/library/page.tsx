@@ -1,12 +1,11 @@
 import React from "react";
 import Library from "./Library";
 import { fetchUserData } from "@/hooks/fetchUserData";
-import { fetchFileArray } from "@/hooks/fetchFiles";
 import PayRequired from "../../payment";
 import { supabase } from "@/utils/Database/supabase";
 
 export default async function Docupro() {
-	const { courses, user } = await fetchUserData();
+	const { user } = await fetchUserData();
 
 	const { data, error } = await supabase
 		.from("goscrape")

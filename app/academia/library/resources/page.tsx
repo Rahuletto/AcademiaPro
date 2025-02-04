@@ -6,7 +6,7 @@ import Resources from "./Resources";
 import { fetchResourcesArray } from "@/hooks/fetchResources";
 
 export default async function Docupro() {
-	const { courses, user } = await fetchUserData();
+	const { user } = await fetchUserData();
 
 	const { data, error } = await supabase
 		.from("goscrape")
