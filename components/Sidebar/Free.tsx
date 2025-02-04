@@ -42,7 +42,7 @@ export default function FreeTrial() {
 							className="text-4xl text-light-accent dark:text-dark-accent"
 						/>
 						<h2 className="text-2xl -mb-3 font-semibold capitalize text-light-color dark:text-dark-color">
-							Received Supporters
+							Received Trial
 						</h2>
 						{/* <p className="-mt-3 text-sm underline text-light-color dark:text-dark-color decoration-light-accent opacity-40 dark:decoration-dark-accent">
             AcademiaPro is now ClassPro
