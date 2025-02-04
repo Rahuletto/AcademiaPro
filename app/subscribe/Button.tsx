@@ -47,9 +47,8 @@ export default function Button({ user }: { user: UserInfo }) {
 				name: "ClassPro",
 				description: `Supporting ClassPro - ${user.regNumber}`,
 				order_id: orderId,
-				handler: async (response: any) => {
-					console.log("Payment Response:", response);
-
+				handler: async function (response: any) {
+					
 					const data = {
 						orderCreationId: orderId,
 						razorpayPaymentId: response.razorpay_payment_id,
@@ -63,6 +62,7 @@ export default function Button({ user }: { user: UserInfo }) {
 						return;
 					}
 
+					console.log(data)
 					const result = await fetch("/api/payment/verify", {
 						method: "POST",
 						body: JSON.stringify(data),
@@ -72,10 +72,10 @@ export default function Button({ user }: { user: UserInfo }) {
 					const res = await result.json();
 
 					if (res.success) {
-						await supabase.from("goscrape").update({
-							subscribed: true,
-							subscribedSince: Date.now(),
-						}).eq("regNumber", user.regNumber);
+						// await supabase.from("goscrape").update({
+						// 	subscribed: true,
+						// 	subscribedSince: Date.now(),
+						// }).eq("regNumber", user.regNumber);
 
 						alert("Payment successful!");
 						window.location.reload();
@@ -103,17 +103,17 @@ export default function Button({ user }: { user: UserInfo }) {
 
 	return (
 		<button
-			// onClick={processPayment}
+			onClick={processPayment}
 			type="button"
-			disabled
+			// disabled
 			className="rounded-full flex group justify-between items-center w-full px-5 py-2 font-semibold bg-light-accent dark:bg-dark-accent text-light-background-light dark:text-dark-background-dark mt-6"
 		>
-			{/* <div className="flex items-center justify-center gap-2">
+			<div className="flex items-center justify-center gap-2">
 				<SiRazorpay className="group-hover:text-base transition-all duration-150 text-[0px]" />
 				<span>Support Me</span>
 			</div>
-			<FaArrowRightLong /> */}
-			Temporarily Shut down
+			<FaArrowRightLong />
+			{/* Temporarily Shut down */}
 		</button>
 	);
 }

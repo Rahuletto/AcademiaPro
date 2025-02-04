@@ -1,9 +1,9 @@
 import React from "react";
-import Library from "./Library";
 import { fetchUserData } from "@/hooks/fetchUserData";
-import { fetchFileArray } from "@/hooks/fetchFiles";
-import PayRequired from "../../payment";
+import PayRequired from "../../../payment";
 import { supabase } from "@/utils/Database/supabase";
+import Resources from "./Resources";
+import { fetchResourcesArray } from "@/hooks/fetchResources";
 
 export default async function Docupro() {
 	const { courses, user } = await fetchUserData();
@@ -28,6 +28,6 @@ export default async function Docupro() {
 	) {
 		return <PayRequired />;
 	}
-
-	return <Library />;
+	const folders = await fetchResourcesArray();
+	return <Resources folders={folders} />;
 }

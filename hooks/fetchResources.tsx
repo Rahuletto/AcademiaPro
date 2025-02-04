@@ -2,13 +2,13 @@
 import { cache } from "react";
 import { cookies } from "next/headers";
 import { filesUrl } from "@/utils/URL";
-import { CoursePapers } from "@/types/CoursePapers";
+import { Folders } from "@/types/Folders";
 
 
-async function fetchFiles() {
+async function fetchResources() {
     const cookie = (await cookies()).get("key");
 
-    const response = await fetch(`${filesUrl}/files`, {
+    const response = await fetch(`${filesUrl}/resources`, {
         method: "GET",
         cache: "force-cache",
         next: {
@@ -20,11 +20,11 @@ async function fetchFiles() {
         },
     });
 
-    const json: CoursePapers[] = await response.json();
+    const json: Folders = await response.json();
 
     return json;
 }
 
-export const fetchFileArray = cache(async () => {
-    return await fetchFiles();
+export const fetchResourcesArray = cache(async () => {
+    return await fetchResources();
 });

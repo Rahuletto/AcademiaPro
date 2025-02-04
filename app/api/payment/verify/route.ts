@@ -22,7 +22,7 @@ const generatedSignature = (
 
 export async function POST(request: NextRequest) {
     try {
-        const { data, response } =
+        const data =
             await request.json();
 
         const obj = {
@@ -32,12 +32,11 @@ export async function POST(request: NextRequest) {
         }
 
         const { orderCreationId, razorpayPaymentId, razorpaySignature } = obj;
-        console.log("Response: ", response)
         console.log('Verification Data:', obj);
 
         const signature = generatedSignature(orderCreationId, razorpayPaymentId);
 
-        const rpSig = razorpaySignature ?? response.razorpay_signature;
+        const rpSig = razorpaySignature;
 
         if (signature !== rpSig) {
             return NextResponse.json(
