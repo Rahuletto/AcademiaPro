@@ -137,7 +137,7 @@ export function Sidebar({
             </Link> */}
           <Link title="Question papers" href="/academia/library">
             <IoLibrarySharp className="text-xl" />
-            <span className="flex items-center justify-start gap-3">
+            <span className="flex items-center justify-start gap-3 text-light-color dark:text-dark-color">
               Library{" "}
               <span className="text-xs px-1 rounded-md bg-light-accent dark:bg-dark-accent text-light-background-light dark:text-dark-background-dark py-0.5">
                 NEW
