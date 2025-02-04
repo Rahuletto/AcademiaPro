@@ -15,7 +15,7 @@ async function fetchData(): Promise<AllResponse> {
 
 	const cachedData = dataCache.get(userKey);
 	const now = Date.now();
-	if (cachedData && now - cachedData.timestamp < 5 * 60 * 1000) {
+	if (cachedData && now - cachedData.timestamp < 2 * 60 * 1000) {
 		return cachedData.data;
 	}
 

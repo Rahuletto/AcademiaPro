@@ -25,7 +25,7 @@ export default function TimetableStack({
 	const [currentTime, setTime] = useState<Date>(getIstTime());
 
 	const scheduleToday =
-		schedule?.find((item) => item.day === Number(dOrder)) ?? schedule[0];
+		schedule?.find((item) => item.day === Number(dOrder)) ?? schedule?.[0];
 	const theoryPosition = scheduleToday?.table
 		?.slice(0, 5)
 		.some((item) => item?.courseType === "Theory")
