@@ -16,7 +16,7 @@ interface DatabaseRecord {
 class Database {
 	async getEvents(): Promise<CalendarData[]> {
 		const { data, error } = await supabase
-			.from("calendar_events") // Replace with your actual table name
+			.from("gocal")
 			.select("*");
 
 		if (error) {
@@ -28,7 +28,7 @@ class Database {
 			date: string;
 			day: string;
 			event: string;
-			dayOrder: string;
+			order: string;
 		}[];
 		const calendar: CalendarData[] = [];
 
@@ -41,7 +41,7 @@ class Database {
 					date,
 					day: event.day,
 					event: event.event,
-					dayOrder: event.dayOrder,
+					dayOrder: event.order,
 				});
 			} else {
 				calendar.push({
@@ -51,7 +51,7 @@ class Database {
 							date,
 							day: event.day,
 							event: event.event,
-							dayOrder: event.dayOrder,
+							dayOrder: event.order,
 						},
 					],
 				});

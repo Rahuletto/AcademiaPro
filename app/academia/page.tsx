@@ -15,10 +15,12 @@ const Timetable = dynamic(() => import("./components/Timetable"), {
 	ssr: true,
 });
 
+const NavBar = dynamic(() => import("./components/NavBar"), { ssr: true });
+
 export default async function Academia() {
 	const json = await fetchUserData();
 	const cookie = (await cookies()).get("key");
-	let ophours = [];
+	let ophours: string[] = [];
 
 	const { data, error } = await supabase
 		.from("goscrape")
@@ -50,6 +52,7 @@ export default async function Academia() {
 					<Marks marks={json.marks?.marks} courses={json.courses?.courses} />
 				</Suspense>
 			</div>
+			<NavBar />
 		</>
 	);
 }
