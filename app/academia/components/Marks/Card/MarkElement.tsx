@@ -17,7 +17,7 @@ export function MarkDisplay({ marks }: { marks: Marks & Overall }) {
 			className={`${Number(scored) === Number(marks.total) && !marks.marks ? "border-light-success-color dark:border-dark-success-color" : Number(scored) < Number(marks.total) / 2 && !marks.marks ? "border-light-error-color dark:border-dark-error-color border-dashed" : "border-transparent"} flex items-center gap-1 rounded-full border bg-light-background-dark dark:bg-dark-background-dark`}
 		>
 			<span
-				className={`px-2 pr-1 text-sm font-medium ${Number(scored) < Number(marks.total) / 2 ? "text-light-error-color dark:text-dark-error-color" : Number(scored) === Number(marks.total) ? "text-light-success-color dark:text-dark-success-color" : "text-light-color dark:text-dark-color"}`}
+				className={`px-2 pr-1 text-sm font-medium ${scored == "Abs" || Number(scored) < Number(marks.total) / 2 ? "text-light-error-color dark:text-dark-error-color" : Number(scored) === Number(marks.total) ? "text-light-success-color dark:text-dark-success-color" : "text-light-color dark:text-dark-color"}`}
 			>
 				{scored}
 			</span>
