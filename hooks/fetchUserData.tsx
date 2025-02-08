@@ -43,7 +43,19 @@ async function fetchData(): Promise<AllResponse> {
 
 		clearTimeout(timeoutId);
 
-		const json: AllResponse = await response.json();
+		let json: AllResponse;
+		try {
+			const text = await response.text();
+			if (text.trim().startsWith('<!DOCTYPE')) {
+				redirect('/suspended');
+			}
+			json = JSON.parse(text);
+		} catch (e) {
+			if (e instanceof SyntaxError && e.message.includes('Unexpected token')) {
+				redirect('/suspended');
+			}
+			throw e;
+		}
 
 		if (json.tokenInvalid) redirect("/invalid");
 		if (json.ratelimit) redirect("/ratelimit");

@@ -14,55 +14,20 @@ export default function Resources({ folders }: ResourcesProps) {
   const [expandedFolders, setExpandedFolders] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState("");
 
-  const flattenItems = (items: Folders): (Folder | Children)[] => {
-    return items.reduce((acc: (Folder | Children)[], item) => {
-      acc.push(item);
-      if (item.type === 'dir' && item.children) {
-        // @ts-expect-error
-        acc.push(...flattenItems(item.children));
-      }
-      return acc;
-    }, []);
-  };
-
-  const fuse = useMemo(() => {
-    const flatItems = flattenItems(folders);
-    return new Fuse(flatItems, {
-      keys: ['name'],
-      threshold: 0.4,
-      includeMatches: true
-    });
-  }, [folders]);
+  const fuse = new Fuse(folders, {
+    keys: ["name"],
+    threshold: 0.4,
+  });
 
   const filteredFolders = useMemo(() => {
     if (!searchQuery) return folders;
 
+
     const searchResults = fuse.search(searchQuery);
-    const matchedPaths = new Set(searchResults.map(result => result.item.path));
 
-    const filterItems = (items: Folders): Folders => {
-      return items.reduce<Folders>((acc, item) => {
-        if (matchedPaths.has(item.path)) {
-          if (item.type === 'dir' && item.children) {
-        // @ts-expect-error
-            const filteredChildren = filterItems(item.children);
-            acc.push({ ...item, children: filteredChildren });
-          } else {
-            acc.push(item);
-          }
-        } else if (item.type === 'dir' && item.children) {
-        // @ts-expect-error
-          const filteredChildren = filterItems(item.children);
-          if (filteredChildren.length > 0) {
-            acc.push({ ...item, children: filteredChildren });
-          }
-        }
-        return acc;
-      }, []);
-    };
+    return searchResults.map((result) => result.item)
 
-    return filterItems(folders);
-  }, [folders, searchQuery, fuse]);
+  }, [searchQuery])
 
   const toggleFolder = (path: string) => {
     const newExpanded = new Set(expandedFolders);
@@ -109,7 +74,7 @@ export default function Resources({ folders }: ResourcesProps) {
               (() => {
                 const ext = item.name.split('.').pop()?.toLowerCase();
                 const IconComponent = (() => {
-                  switch(ext) {
+                  switch (ext) {
                     case 'pdf': return FaFilePdf;
                     case 'doc':
                     case 'docx': return FaFileWord;
