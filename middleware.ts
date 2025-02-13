@@ -6,7 +6,6 @@ const protectedRoutes = [
 	"/academia",
 	"/academia/courses",
 	"/academia/library",
-	"/subscribe",
 	"/academia/faculties",
 ];
 const home = ["/"];

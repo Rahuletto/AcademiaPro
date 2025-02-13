@@ -18,18 +18,8 @@ export default async function Timetable({
 }) {
 	const { today, tomorrow } = await fetchCalendar();
 
-	const { data, error } = await supabase
-		.from("goscrape")
-		.select("subscribed, subscribedSince, freesub")
-		.eq("regNumber", user?.regNumber)
-		.single();
-
-	if (error) {
-		console.warn("Cannot find data?", user?.regNumber, user);
-	}
-
-	const subscribed = data?.freesub ? true : data?.subscribed ?? false;
-	const subscribedSince = data?.freesub ? true : data?.subscribedSince ?? null;
+	const subscribed = true
+	const subscribedSince = Date.now()
 
 
 	return (
@@ -37,7 +27,7 @@ export default async function Timetable({
 			<div className="flex justify-between items-center px-2 mb-1">
 				<h1 className="text-2xl font-semibold">Timetable</h1>
 				<div className="flex items-center justify-center gap-3">
-					{(data?.freesub ? true : (subscribed && subscribedSince && (new Date().getTime() - subscribedSince) < (30 * 24 * 60 * 60 * 1000)) )? (
+					{((subscribed && subscribedSince && (new Date().getTime() - subscribedSince) < (30 * 24 * 60 * 60 * 1000)) )? (
 						<a
 							href="/api/timetable"
 							download

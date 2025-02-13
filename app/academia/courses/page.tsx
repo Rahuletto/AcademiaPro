@@ -8,17 +8,7 @@ import { supabase } from "@/utils/Database/supabase";
 export default async function Courses() {
 	const json = await fetchUserData();
 
-	const { data, error } = await supabase
-		.from("goscrape")
-		.select("subscribed, subscribedSince, freesub")
-		.eq("regNumber", json.user?.regNumber)
-		.single();
-
-	if (error) {
-		console.warn("Cannot find data?", json.user?.regNumber, json);
-	}
-
-	const subscribed = data?.freesub ? true : data?.subscribed ?? false;
+	const subscribed = true
 
 
 	return (

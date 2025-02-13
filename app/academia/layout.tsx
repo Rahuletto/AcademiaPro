@@ -18,32 +18,7 @@ export default async function RootLayout({
 }>) {
 	const json = await fetchUserData();
 
-	const { data, error } = await supabase
-		.from("goscrape")
-		.select("subscribed, subscribedSince")
-		.eq("regNumber", json?.user?.regNumber)
-		.single();
-
-	if (error) {
-		const url = rotateUrl()
-		const cookie = (await cookies()).get("key");
-		await fetch(`${url}/get`, {
-			method: "GET",
-			cache: "force-cache",
-			next: {
-				revalidate: 60,
-			},
-			headers: {
-				"Content-Type": "application/json",
-				"X-CSRF-Token": cookie?.value ?? "",
-				Authorization: `Bearer ${token()}`,
-			},
-		})
-		console.warn("Cannot find data?", json?.user?.regNumber, json);
-	}
-
-	const subscribed = data?.subscribed ?? false;
-
+	const subscribed = true;
 	return (
 		<div className="h-screen shrink-0 w-full flex flex-row bg-light-background-normal lg:p-2 transition-all duration-150 text-light-color dark:bg-dark-background-normal dark:text-dark-color">
 			<div id="attendance-predict" className="z-30" />

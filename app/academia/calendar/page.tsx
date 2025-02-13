@@ -12,24 +12,14 @@ export default async function Calendar() {
 	const { calendar, index } = await fetchCalendar();
 	const { user } = await fetchUserData();
 
-	const { data, error } = await supabase
-		.from("goscrape")
-		.select("subscribed, subscribedSince, freesub")
-		.eq("regNumber", user?.regNumber)
-		.single();
-
-	if (error) {
-		console.warn("Cannot find data?", user?.regNumber, user);
-	}
-
-	const subscribed = data?.freesub ? true : data?.subscribed ?? false;
-	const subscribedSince = data?.freesub ? true : data?.subscribedSince ?? null;
+	const subscribed = true;
+	const subscribedSince = Date.now();
 
 
 	return (
 		<main className="pb-3">
 			<Suspense fallback={<Loading size="xl" />}>
-				<CalendarGrid freesub={data?.freesub} subscribed={subscribed} subscribedSince={subscribedSince} calendar={calendar} index={index} isDownload={false} />
+				<CalendarGrid freesub={false} subscribed={subscribed} subscribedSince={subscribedSince} calendar={calendar} index={index} isDownload={false} />
 			</Suspense>
 		</main>
 	);
